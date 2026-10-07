@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Use the printed local URL. Search with `/` or Ctrl/Cmd+K. Drag the canvas, scroll/pinch to zoom, and click a capability to inspect it. **Full tree** applies category/era filters across the whole catalog. **Connections** shows two steps upstream and downstream from the selected capability. URL hashes such as `#node=microscope` can be bookmarked or shared without server routing.
+Use the printed local URL. Search with `/` or Ctrl/Cmd+K. Scroll or drag to pan in any direction; pinch or Ctrl/Cmd+scroll to zoom. Click a capability to inspect it. **Full tree** applies category/era filters across the whole catalog. **Connections** shows two steps upstream and downstream from the selected capability. URL hashes such as `#node=microscope` can be bookmarked or shared without server routing.
 
 ```sh
 npm run check          # Svelte and TypeScript
@@ -40,7 +40,9 @@ Connections answer **“How did this help make that possible?”** They are dire
 | Enabling condition | A capability or institution that supported development, adoption, or scale. |
 | Historical influence | An earlier idea or practice that shaped a particular development. |
 
-This is not a game, an unlock system, or a universal sequence every society must follow. Religion, treaties, and institutions are first-class subjects; they are never presumed to be universal requirements for technological development. Nodes are arranged by dependency depth, with approximate dates displayed, rather than a proportional chronological axis. Era names are navigation aids and do not describe every region's periodization.
+This is not a game, an unlock system, or a universal sequence every society must follow. Religion, treaties, and institutions are first-class subjects; they are never presumed to be universal requirements for technological development. Nodes are arranged in dependency layers, with approximate dates displayed, rather than a proportional chronological axis. Era names are navigation aids and do not describe every region's periodization.
+
+The layout is calculated from the current view's nodes and connections, using [ELK's layered algorithm](https://eclipse.dev/elk/reference/algorithms/org-eclipse-elk-layered.html) in a local web worker. Each relationship gets its own attachment points and orthogonal route; crowded nodes and routing corridors expand as needed. The algorithm minimizes crossings, and a small visual gap distinguishes remaining crossings from junctions. Filtering or changing the focused neighborhood recalculates the arrangement. Panning and zooming keep positions stable, and the canvas has no pan boundary. **Fit visible tree** includes the entire current view and its routed connections.
 
 ## Catalog and editorial status
 
@@ -91,4 +93,4 @@ The frontend works if image hosts are unavailable. External images and fonts req
 
 ## Project structure
 
-`src/App.svelte` owns browsing state and panels; `src/lib/Graph.svelte` owns the canvas; `src/lib/graph.js` contains independently tested layout, neighborhood, search, and filter functions. `src/lib/config.ts` defines domains, eras, and relation labels. The graph renders only the visible part of the canvas to keep the 1,000-node view usable.
+`src/App.svelte` owns browsing state and panels; `src/lib/Graph.svelte` owns the canvas; `src/lib/graph.js` contains neighborhood, search, and filter functions. `src/lib/layout.js` calculates positions and routes, and `src/lib/layout-client.js` manages the local worker and recent-view cache. `src/lib/config.ts` defines domains, eras, and relation labels. The graph renders only the visible part of the canvas to keep the 1,000-node view usable. Layout tests check the complete catalog and smaller views for overlapping cards, connections crossing cards, shared routes, and detached endpoints.

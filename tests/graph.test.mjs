@@ -1,22 +1,12 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-import { neighborhood, layoutGraph, matchesFilters, searchNodes } from '../src/lib/graph.js'
+import { neighborhood, matchesFilters, searchNodes } from '../src/lib/graph.js'
 const { nodes } = JSON.parse(await readFile(new URL('../public/data/catalog.json', import.meta.url), 'utf8'))
 test('microscope connects instruments to biological discovery', () => {
   const near = neighborhood(nodes, 'microscope', 2)
   assert(near.some(n => n.id === 'bacteria'))
   assert(near.some(n => n.id === 'optical-lens'))
-})
-test('full catalog has a collision-free layout and finite positions', () => {
-  const positions = layoutGraph(nodes)
-  assert.equal(positions.size, nodes.length)
-  const slots = new Set()
-  for (const p of positions.values()) {
-    assert(Number.isFinite(p.x) && Number.isFinite(p.y))
-    const key = `${p.x},${p.y}`
-    assert(!slots.has(key)); slots.add(key)
-  }
 })
 test('search is case insensitive, matches multiword terms, and ranks exact titles', () => {
   assert.equal(searchNodes(nodes, 'MICROSCOPE')[0].id, 'microscope')

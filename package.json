@@ -14,8 +14,9 @@
     "data:enrich": "node scripts/enrich-wikipedia.mjs"
   },
   "dependencies": {
-    "@xyflow/svelte": "^1.7.0",
     "@lucide/svelte": "^1.52.0",
+    "@xyflow/svelte": "^1.7.0",
+    "elkjs": "^0.12.0",
     "svelte": "^5.57.2"
   },
   "devDependencies": {
