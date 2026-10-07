@@ -1,0 +1,4181 @@
+[
+  {
+    "id": "oral-tradition",
+    "title": "Oral tradition",
+    "wiki": "Oral tradition",
+    "year": -100000,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Communities preserve knowledge, stories, and customary rules through spoken transmission.",
+    "parents": []
+  },
+  {
+    "id": "ritual-burial",
+    "title": "Ritual burial",
+    "wiki": "Burial",
+    "year": -100000,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Deliberate treatment of the dead preserves social ties and sometimes material expressions of ritual.",
+    "parents": []
+  },
+  {
+    "id": "cave-painting",
+    "title": "Cave painting",
+    "wiki": "Cave painting",
+    "year": -45000,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Painted cave surfaces preserve images made by Paleolithic communities.",
+    "parents": []
+  },
+  {
+    "id": "music",
+    "title": "Music",
+    "wiki": "Music",
+    "year": -40000,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Organized sound supports performance, ceremony, memory, and collective participation.",
+    "parents": []
+  },
+  {
+    "id": "dance",
+    "title": "Dance",
+    "wiki": "Dance",
+    "year": -9000,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Patterned bodily movement provides a shared form of performance and ritual expression.",
+    "parents": [
+      {
+        "id": "music",
+        "type": "enabler",
+        "reason": "Rhythm and musical performance help coordinate many dance traditions."
+      }
+    ]
+  },
+  {
+    "id": "religion",
+    "title": "Religion",
+    "wiki": "Religion",
+    "year": -40000,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Shared beliefs, ritual practices, and sacred narratives organize many communities' relationships with the world.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Spoken transmission preserves sacred narratives and ritual instructions."
+      }
+    ]
+  },
+  {
+    "id": "trade",
+    "title": "Trade",
+    "wiki": "Trade",
+    "year": -100000,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Exchange moves goods between people and communities beyond their places of production.",
+    "parents": []
+  },
+  {
+    "id": "gift-economy",
+    "title": "Gift exchange",
+    "wiki": "Gift economy",
+    "year": -10000,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Giving and reciprocal obligations distribute goods while maintaining social relationships.",
+    "parents": []
+  },
+  {
+    "id": "sedentism",
+    "title": "Sedentary settlements",
+    "wiki": "Sedentism",
+    "year": -12000,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Long-term residence allows communities to invest in shared places and durable local institutions.",
+    "parents": []
+  },
+  {
+    "id": "cities",
+    "title": "Cities",
+    "wiki": "City",
+    "year": -4000,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Dense settlements concentrate households, specialized work, exchange, and public institutions.",
+    "parents": [
+      {
+        "id": "sedentism",
+        "type": "enabler",
+        "reason": "Long-term settlement permits accumulated investment in concentrated residential and civic spaces."
+      },
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Exchange supports concentrations of people engaged in specialized occupations."
+      }
+    ]
+  },
+  {
+    "id": "uruk",
+    "title": "Uruk",
+    "wiki": "Uruk",
+    "year": -4000,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Uruk became a major Mesopotamian urban center with temple administration and extensive accounting.",
+    "parents": [
+      {
+        "id": "sedentism",
+        "type": "enabler",
+        "reason": "Established settlement supported the growth of a large permanent urban population."
+      }
+    ]
+  },
+  {
+    "id": "jericho",
+    "title": "Early Jericho settlement",
+    "wiki": "Tell es-Sultan",
+    "year": -9000,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Tell es-Sultan preserves an early permanent settlement with communal monumental structures.",
+    "parents": [
+      {
+        "id": "sedentism",
+        "type": "enabler",
+        "reason": "Permanent residence made sustained communal investment in the settlement practical."
+      }
+    ]
+  },
+  {
+    "id": "catalhoyuk",
+    "title": "Çatalhöyük",
+    "wiki": "Çatalhöyük",
+    "year": -7100,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Çatalhöyük supported a dense settlement of adjoining houses with elaborate domestic cultural practices.",
+    "parents": [
+      {
+        "id": "sedentism",
+        "type": "enabler",
+        "reason": "Permanent households provided the setting for its dense residential organization."
+      }
+    ]
+  },
+  {
+    "id": "mohenjo-daro",
+    "title": "Mohenjo-daro",
+    "wiki": "Mohenjo-daro",
+    "year": -2600,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Mohenjo-daro organized a large Indus settlement around planned streets and shared urban facilities.",
+    "parents": [
+      {
+        "id": "cities",
+        "type": "enabler",
+        "reason": "Urban concentration created demand for coordinated streets and communal services."
+      }
+    ]
+  },
+  {
+    "id": "caral",
+    "title": "Caral",
+    "wiki": "Caral",
+    "year": -2600,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Caral was an early Andean center with large public complexes and regional exchange connections.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Coastal and inland exchange helped sustain the center's regional relationships."
+      }
+    ]
+  },
+  {
+    "id": "teotihuacan",
+    "title": "Teotihuacan",
+    "wiki": "Teotihuacan",
+    "year": 100,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Teotihuacan combined monumental precincts with extensive apartment compounds and regional exchange.",
+    "parents": [
+      {
+        "id": "cities",
+        "type": "enabler",
+        "reason": "Concentrated settlement supported extensive shared residential and ceremonial spaces."
+      }
+    ]
+  },
+  {
+    "id": "angkor",
+    "title": "Angkor",
+    "wiki": "Angkor",
+    "year": 802,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Angkor developed as a Khmer political and religious center within an extensive settlement landscape.",
+    "parents": [
+      {
+        "id": "cities",
+        "type": "enabler",
+        "reason": "Urban concentration supported court administration and large ceremonial precincts."
+      }
+    ]
+  },
+  {
+    "id": "great-zimbabwe",
+    "title": "Great Zimbabwe",
+    "wiki": "Great Zimbabwe",
+    "year": 1100,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Great Zimbabwe linked a regional political center with long-distance trade in southeastern Africa.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Connections to regional and Indian Ocean exchange strengthened the center's economic role."
+      }
+    ]
+  },
+  {
+    "id": "timbuktu",
+    "title": "Timbuktu",
+    "wiki": "Timbuktu",
+    "year": 1100,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Timbuktu became a Saharan trading center and a major setting for manuscript scholarship.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Trans-Saharan commerce supported merchants, patrons, and visiting scholars."
+      }
+    ]
+  },
+  {
+    "id": "tenochtitlan",
+    "title": "Tenochtitlan",
+    "wiki": "Tenochtitlan",
+    "year": 1325,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Tenochtitlan organized an island capital with neighborhoods, markets, and ceremonial institutions.",
+    "parents": [
+      {
+        "id": "cities",
+        "type": "enabler",
+        "reason": "Urban institutions supported the coordination of a dense island population."
+      }
+    ]
+  },
+  {
+    "id": "cahokia",
+    "title": "Cahokia",
+    "wiki": "Cahokia",
+    "year": 1050,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Cahokia gathered a large Mississippian population around plazas and monumental earthen mounds.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Regional exchange networks connected the center to surrounding communities."
+      }
+    ]
+  },
+  {
+    "id": "kyoto",
+    "title": "Heian-kyō",
+    "wiki": "Heian-kyō",
+    "year": 794,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Heian-kyō established a planned Japanese imperial capital that became modern Kyoto.",
+    "parents": [
+      {
+        "id": "changan",
+        "type": "influence",
+        "reason": "Chinese capital planning provided a model for its grid and court-centered layout."
+      }
+    ]
+  },
+  {
+    "id": "baghdad",
+    "title": "Round City of Baghdad",
+    "wiki": "Round City of Baghdad",
+    "year": 762,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "The Abbasid foundation of Baghdad created a new administrative capital and scholarly center.",
+    "parents": [
+      {
+        "id": "cities",
+        "type": "enabler",
+        "reason": "Established urban administration provided a framework for concentrating court and civic functions."
+      }
+    ]
+  },
+  {
+    "id": "cordoba",
+    "title": "Caliphal Córdoba",
+    "wiki": "Córdoba, Spain",
+    "year": 929,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Córdoba became an Andalusi capital supporting court culture, markets, and scholarship.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Commercial connections helped sustain its court and urban scholarly communities."
+      }
+    ]
+  },
+  {
+    "id": "changan",
+    "title": "Chang'an",
+    "wiki": "Chang'an",
+    "year": -202,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Chang'an served as an imperial capital and an important node of Eurasian exchange.",
+    "parents": [
+      {
+        "id": "cities",
+        "type": "enabler",
+        "reason": "Concentrated civic institutions supported imperial administration and metropolitan markets."
+      }
+    ]
+  },
+  {
+    "id": "writing",
+    "title": "Writing",
+    "wiki": "Writing",
+    "year": -3400,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Graphic signs record language so messages can survive beyond speech and immediate presence.",
+    "parents": [
+      {
+        "id": "uruk",
+        "type": "enabler",
+        "reason": "Uruk's administrative demands supplied a setting for early written records."
+      }
+    ]
+  },
+  {
+    "id": "cuneiform",
+    "title": "Cuneiform",
+    "wiki": "Cuneiform",
+    "year": -3200,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Wedge-shaped signs recorded multiple languages on clay and other durable surfaces.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "foundation",
+        "reason": "Language recording supplied the basic function developed by the cuneiform sign system."
+      }
+    ]
+  },
+  {
+    "id": "egyptian-hieroglyphs",
+    "title": "Egyptian hieroglyphs",
+    "wiki": "Egyptian hieroglyphs",
+    "year": -3200,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Egyptian hieroglyphic signs combined phonetic and semantic elements for inscriptions and texts.",
+    "parents": []
+  },
+  {
+    "id": "oracle-bone-script",
+    "title": "Oracle bone script",
+    "wiki": "Oracle bone script",
+    "year": -1250,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Shang inscriptions recorded divination questions and outcomes in an early attested Chinese script.",
+    "parents": []
+  },
+  {
+    "id": "phoenician-alphabet",
+    "title": "Phoenician alphabet",
+    "wiki": "Phoenician alphabet",
+    "year": -1050,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A consonantal alphabet supported writing across Phoenician commercial and cultural networks.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Mediterranean exchange carried the alphabet between ports and language communities."
+      }
+    ]
+  },
+  {
+    "id": "greek-alphabet",
+    "title": "Greek alphabet",
+    "wiki": "Greek alphabet",
+    "year": -800,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Greek writers adapted a consonantal script to represent vowels systematically.",
+    "parents": [
+      {
+        "id": "phoenician-alphabet",
+        "type": "foundation",
+        "reason": "Greek letters adapted Phoenician signs and reassigned several to vowel sounds."
+      }
+    ]
+  },
+  {
+    "id": "latin-alphabet",
+    "title": "Latin alphabet",
+    "wiki": "Latin alphabet",
+    "year": -700,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "The Latin alphabet developed in Italy and spread with Latin literacy and later many other languages.",
+    "parents": [
+      {
+        "id": "greek-alphabet",
+        "type": "influence",
+        "reason": "Greek-derived Etruscan letter forms mediated the formation of the Latin alphabet."
+      }
+    ]
+  },
+  {
+    "id": "aramaic-alphabet",
+    "title": "Aramaic alphabet",
+    "wiki": "Aramaic alphabet",
+    "year": -800,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Aramaic writing spread widely through commerce and imperial administration.",
+    "parents": [
+      {
+        "id": "phoenician-alphabet",
+        "type": "foundation",
+        "reason": "The Aramaic script developed from Phoenician letter forms."
+      }
+    ]
+  },
+  {
+    "id": "brahmi-script",
+    "title": "Brahmi script",
+    "wiki": "Brahmi script",
+    "year": -250,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Brahmi provided a major early South Asian script attested extensively in Ashokan inscriptions.",
+    "parents": []
+  },
+  {
+    "id": "maya-script",
+    "title": "Maya writing",
+    "wiki": "Maya script",
+    "year": -300,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Maya scribes combined syllabic and logographic signs to record language, history, and ritual.",
+    "parents": []
+  },
+  {
+    "id": "geez-script",
+    "title": "Ge'ez script",
+    "wiki": "Ge'ez script",
+    "year": 350,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "The Ethiopic writing tradition developed vowel-marked syllabic signs from an earlier consonantal script.",
+    "parents": []
+  },
+  {
+    "id": "arabic-script",
+    "title": "Arabic script",
+    "wiki": "Arabic script",
+    "year": 400,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Arabic letter forms supported literary and administrative writing across many languages.",
+    "parents": [
+      {
+        "id": "aramaic-alphabet",
+        "type": "influence",
+        "reason": "The Nabataean branch of Aramaic writing contributed the letter forms from which Arabic developed."
+      }
+    ]
+  },
+  {
+    "id": "kana",
+    "title": "Japanese kana",
+    "wiki": "Kana",
+    "year": 800,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Japanese syllabaries adapted Chinese-derived signs to record Japanese sound patterns.",
+    "parents": [
+      {
+        "id": "oracle-bone-script",
+        "type": "influence",
+        "reason": "The Chinese character tradition descending from early inscriptions supplied the source signs adapted into kana."
+      }
+    ]
+  },
+  {
+    "id": "hangul",
+    "title": "Hangul",
+    "wiki": "Hangul",
+    "year": 1443,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Hangul introduced an organized Korean alphabet with letters designed around speech articulation.",
+    "parents": []
+  },
+  {
+    "id": "cherokee-syllabary",
+    "title": "Cherokee syllabary",
+    "wiki": "Cherokee syllabary",
+    "year": 1821,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Sequoyah's syllabary enabled written communication and rapid literacy in Cherokee.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "influence",
+        "reason": "Awareness of written communication inspired Sequoyah's independent creation of signs for Cherokee syllables."
+      }
+    ]
+  },
+  {
+    "id": "quipu",
+    "title": "Quipu record keeping",
+    "wiki": "Quipu",
+    "year": 700,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Andean knotted cords stored administrative information through patterned knots, colors, and arrangements.",
+    "parents": []
+  },
+  {
+    "id": "wampum",
+    "title": "Wampum diplomacy",
+    "wiki": "Wampum",
+    "year": 1500,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Shell-bead belts preserve and communicate diplomatic commitments within Indigenous northeastern North America.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Recitation and custodial teaching transmit the meanings associated with particular belts."
+      }
+    ]
+  },
+  {
+    "id": "paper",
+    "title": "Paper",
+    "wiki": "Paper",
+    "year": -100,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Fiber sheets provided a versatile surface for written records, books, and images.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Demand for portable written records encouraged the development and adoption of paper surfaces."
+      }
+    ]
+  },
+  {
+    "id": "parchment",
+    "title": "Parchment",
+    "wiki": "Parchment",
+    "year": -500,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Prepared animal skins provided a durable surface for manuscripts and documents.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Written texts created demand for durable, reusable manuscript materials."
+      }
+    ]
+  },
+  {
+    "id": "codex",
+    "title": "Codex book form",
+    "wiki": "Codex",
+    "year": 100,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Bound leaves allowed readers to navigate texts differently from continuous scrolls.",
+    "parents": [
+      {
+        "id": "parchment",
+        "type": "enabler",
+        "reason": "Durable flexible skins could be folded and assembled into bound gatherings."
+      }
+    ]
+  },
+  {
+    "id": "woodblock-printing",
+    "title": "Woodblock printing",
+    "wiki": "Woodblock printing",
+    "year": 650,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Carved relief blocks reproduced text and images in multiple impressions.",
+    "parents": [
+      {
+        "id": "paper",
+        "type": "enabler",
+        "reason": "Paper supplied a practical surface for transferring inked relief impressions."
+      }
+    ]
+  },
+  {
+    "id": "movable-type",
+    "title": "Movable type",
+    "wiki": "Movable type",
+    "year": 1040,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Reusable individual characters allowed text to be composed and rearranged for printing.",
+    "parents": [
+      {
+        "id": "woodblock-printing",
+        "type": "influence",
+        "reason": "Existing relief printing established workflows that movable characters reorganized."
+      }
+    ]
+  },
+  {
+    "id": "printing-press",
+    "title": "Printing press",
+    "wiki": "Printing press",
+    "year": 1450,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Gutenberg's printing system enabled substantial production of books from composed movable type.",
+    "parents": [
+      {
+        "id": "movable-type",
+        "type": "foundation",
+        "reason": "Reusable characters supplied the composable text used in press printing."
+      },
+      {
+        "id": "paper",
+        "type": "enabler",
+        "reason": "Paper provided a widely available substrate for large editions."
+      }
+    ]
+  },
+  {
+    "id": "typography",
+    "title": "Typography",
+    "wiki": "Typography",
+    "year": 1450,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "The arrangement and design of type shapes the legibility and appearance of printed texts.",
+    "parents": [
+      {
+        "id": "movable-type",
+        "type": "enabler",
+        "reason": "Reusable type made character design and consistent composition central to printing."
+      }
+    ]
+  },
+  {
+    "id": "publishing",
+    "title": "Commercial book publishing",
+    "wiki": "Publishing",
+    "year": 1500,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Publishers organize editing, financing, production, and distribution of texts for readers.",
+    "parents": [
+      {
+        "id": "printing-press",
+        "type": "enabler",
+        "reason": "Repeated production of editions enabled larger-scale book financing and distribution."
+      }
+    ]
+  },
+  {
+    "id": "newspaper",
+    "title": "Newspaper",
+    "wiki": "Newspaper",
+    "year": 1605,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Regular printed news sheets made current reports available to recurring groups of readers.",
+    "parents": [
+      {
+        "id": "printing-press",
+        "type": "enabler",
+        "reason": "Press production supported repeated editions containing timely reports."
+      },
+      {
+        "id": "publishing",
+        "type": "enabler",
+        "reason": "Editorial and distribution businesses supplied the organization for recurring issues."
+      }
+    ]
+  },
+  {
+    "id": "dictionary",
+    "title": "Dictionaries",
+    "wiki": "Dictionary",
+    "year": -2300,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Lexical collections organize words and meanings for learning, reference, and translation.",
+    "parents": [
+      {
+        "id": "cuneiform",
+        "type": "enabler",
+        "reason": "Mesopotamian scribal writing supported early lexical lists used in training."
+      }
+    ]
+  },
+  {
+    "id": "encyclopedia",
+    "title": "Encyclopedias",
+    "wiki": "Encyclopedia",
+    "year": 77,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Reference works assemble and organize knowledge across many subjects.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Recorded texts make large collections of knowledge available for compilation and consultation."
+      }
+    ]
+  },
+  {
+    "id": "library",
+    "title": "Libraries",
+    "wiki": "Library",
+    "year": -2600,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Organized collections preserve texts and make them available to a defined community of readers.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Durable written records provide the material that libraries collect and manage."
+      }
+    ]
+  },
+  {
+    "id": "library-alexandria",
+    "title": "Library of Alexandria",
+    "wiki": "Library of Alexandria",
+    "year": -280,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "The Ptolemaic library assembled texts and supported scholarly work in Alexandria.",
+    "parents": [
+      {
+        "id": "library",
+        "type": "influence",
+        "reason": "Earlier royal and temple collections provided precedents for maintaining scholarly text collections."
+      }
+    ]
+  },
+  {
+    "id": "house-wisdom",
+    "title": "House of Wisdom",
+    "wiki": "House of Wisdom",
+    "year": 830,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "The Abbasid House of Wisdom is remembered as a court library associated with Baghdad's intellectual life.",
+    "parents": [
+      {
+        "id": "baghdad",
+        "type": "enabler",
+        "reason": "The Abbasid capital concentrated court patronage and manuscript activity."
+      }
+    ]
+  },
+  {
+    "id": "translation-movement",
+    "title": "Graeco-Arabic translation movement",
+    "wiki": "Graeco-Arabic translation movement",
+    "year": 750,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Translators rendered Greek scholarly works into Arabic, often through Syriac intermediaries.",
+    "parents": [
+      {
+        "id": "arabic-script",
+        "type": "enabler",
+        "reason": "Arabic writing allowed translated works to circulate among Arabic-reading scholars."
+      },
+      {
+        "id": "library",
+        "type": "enabler",
+        "reason": "Manuscript collections preserved source texts and supported copying and consultation."
+      }
+    ]
+  },
+  {
+    "id": "nalanda",
+    "title": "Nalanda mahavihara",
+    "wiki": "Nalanda mahavihara",
+    "year": 427,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Nalanda supported a large Buddhist monastic community with teaching and manuscript scholarship.",
+    "parents": [
+      {
+        "id": "buddhist-monasticism",
+        "type": "enabler",
+        "reason": "Monastic communities supplied its residential and educational organization."
+      }
+    ]
+  },
+  {
+    "id": "madrasah",
+    "title": "Madrasas",
+    "wiki": "Madrasa",
+    "year": 1000,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Dedicated Islamic teaching institutions supported study of law, religion, and other subjects.",
+    "parents": [
+      {
+        "id": "waqf",
+        "type": "enabler",
+        "reason": "Endowments could sustain teachers, students, and teaching premises."
+      },
+      {
+        "id": "islam",
+        "type": "influence",
+        "reason": "Islamic textual and legal study shaped the institutions' central curricula."
+      }
+    ]
+  },
+  {
+    "id": "university",
+    "title": "Corporate universities",
+    "wiki": "University",
+    "year": 1088,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Medieval European associations of teachers or students developed durable institutions for advanced study.",
+    "parents": [
+      {
+        "id": "cathedral-school",
+        "type": "influence",
+        "reason": "Cathedral schools supplied teachers, curricula, and precedents for organized advanced teaching."
+      }
+    ]
+  },
+  {
+    "id": "al-qarawiyyin",
+    "title": "Al-Qarawiyyin teaching institution",
+    "wiki": "University of al-Qarawiyyin",
+    "year": 859,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "A mosque foundation in Fez developed into an enduring center of religious education.",
+    "parents": [
+      {
+        "id": "mosque",
+        "type": "enabler",
+        "reason": "Mosque teaching provided the setting from which the educational institution developed."
+      }
+    ]
+  },
+  {
+    "id": "al-azhar",
+    "title": "Al-Azhar",
+    "wiki": "Al-Azhar University",
+    "year": 970,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Al-Azhar began as a Cairo mosque and developed a long-lived institution for Islamic scholarship.",
+    "parents": [
+      {
+        "id": "mosque",
+        "type": "enabler",
+        "reason": "The mosque provided a place and community for sustained teaching."
+      }
+    ]
+  },
+  {
+    "id": "sankore",
+    "title": "Sankoré scholarship",
+    "wiki": "Sankoré Madrasah",
+    "year": 1500,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Sankoré became a center of manuscript learning within Timbuktu's scholarly networks.",
+    "parents": [
+      {
+        "id": "timbuktu",
+        "type": "enabler",
+        "reason": "The trading city's patrons and manuscript networks supported scholarly activity."
+      },
+      {
+        "id": "madrasah",
+        "type": "influence",
+        "reason": "Islamic teaching traditions shaped instruction associated with the mosque."
+      }
+    ]
+  },
+  {
+    "id": "imperial-examination",
+    "title": "Chinese imperial examinations",
+    "wiki": "Imperial examination",
+    "year": 605,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "State examinations increasingly selected Chinese officials through assessed mastery of prescribed texts.",
+    "parents": [
+      {
+        "id": "confucianism",
+        "type": "influence",
+        "reason": "Confucian classics became central to the examinations' curriculum."
+      },
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Written examinations permitted comparable recorded assessments across candidates."
+      }
+    ]
+  },
+  {
+    "id": "platonic-academy",
+    "title": "Platonic Academy",
+    "wiki": "Platonic Academy",
+    "year": -387,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Plato's school provided a sustained community for philosophical discussion and study.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Dialogue and spoken teaching were central practices of its philosophical community."
+      }
+    ]
+  },
+  {
+    "id": "lyceum",
+    "title": "Aristotle's Lyceum",
+    "wiki": "Lyceum (classical)",
+    "year": -335,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Aristotle's school organized teaching and collaborative inquiry in Athens.",
+    "parents": [
+      {
+        "id": "platonic-academy",
+        "type": "influence",
+        "reason": "Aristotle's education in Plato's school informed his later organization of philosophical teaching."
+      }
+    ]
+  },
+  {
+    "id": "cathedral-school",
+    "title": "Cathedral schools",
+    "wiki": "Cathedral school",
+    "year": 500,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Schools associated with cathedrals trained clergy and supported broader traditions of learning.",
+    "parents": [
+      {
+        "id": "christianity",
+        "type": "influence",
+        "reason": "Clerical education supplied the schools' institutional purpose and patrons."
+      }
+    ]
+  },
+  {
+    "id": "scholasticism",
+    "title": "Scholasticism",
+    "wiki": "Scholasticism",
+    "year": 1100,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Scholastic teaching used structured questions, arguments, and textual commentary to examine disputed claims.",
+    "parents": [
+      {
+        "id": "cathedral-school",
+        "type": "enabler",
+        "reason": "School instruction supplied communities practicing formal disputation and textual commentary."
+      },
+      {
+        "id": "university",
+        "type": "enabler",
+        "reason": "Universities institutionalized the teaching and debate in which scholastic methods flourished."
+      }
+    ]
+  },
+  {
+    "id": "compulsory-education",
+    "title": "Compulsory schooling",
+    "wiki": "Compulsory education",
+    "year": 1763,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Legal schooling requirements expanded states' responsibility for children's formal education.",
+    "parents": [
+      {
+        "id": "printing-press",
+        "type": "enabler",
+        "reason": "Relatively abundant schoolbooks helped support instruction at larger scale."
+      }
+    ]
+  },
+  {
+    "id": "public-library",
+    "title": "Tax-supported public libraries",
+    "wiki": "Public library",
+    "year": 1850,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Publicly funded libraries broadened community access to circulating books and reference materials.",
+    "parents": [
+      {
+        "id": "library",
+        "type": "influence",
+        "reason": "Collection management and reader services supplied the inherited library model."
+      },
+      {
+        "id": "publishing",
+        "type": "enabler",
+        "reason": "Growing supplies of affordable editions supported larger circulating collections."
+      }
+    ]
+  },
+  {
+    "id": "kindergarten",
+    "title": "Kindergarten",
+    "wiki": "Kindergarten",
+    "year": 1837,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Friedrich Fröbel organized early childhood education around guided play and activity.",
+    "parents": [
+      {
+        "id": "compulsory-education",
+        "type": "influence",
+        "reason": "Expanding formal schooling created a context for considering preparation before primary education."
+      }
+    ]
+  },
+  {
+    "id": "montessori",
+    "title": "Montessori education",
+    "wiki": "Montessori education",
+    "year": 1907,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Montessori education organized prepared learning environments around children's self-directed activity.",
+    "parents": [
+      {
+        "id": "kindergarten",
+        "type": "influence",
+        "reason": "Earlier attention to young children's activity helped establish early education as a distinct field."
+      }
+    ]
+  },
+  {
+    "id": "distance-education",
+    "title": "Correspondence education",
+    "wiki": "Distance education",
+    "year": 1840,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Instruction by exchanged lessons allowed learners to study without attending a classroom.",
+    "parents": [
+      {
+        "id": "postal-service",
+        "type": "enabler",
+        "reason": "Reliable mail delivery carried lessons, assignments, and teacher feedback."
+      }
+    ]
+  },
+  {
+    "id": "braille",
+    "title": "Braille literacy",
+    "wiki": "Braille",
+    "year": 1824,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A compact system of raised dots enables reading and writing through touch.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "influence",
+        "reason": "The goal of independent text literacy shaped the development of a tactile notation."
+      }
+    ]
+  },
+  {
+    "id": "deaf-education",
+    "title": "Institutional deaf education",
+    "wiki": "Deaf education",
+    "year": 1760,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Dedicated schools expanded organized education for deaf learners using visual communication.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Written language supplied an additional channel for instruction alongside signs."
+      }
+    ]
+  },
+  {
+    "id": "mass-literacy",
+    "title": "Mass literacy campaigns",
+    "wiki": "Literacy",
+    "year": 1870,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Large-scale schooling and adult instruction broadened the ability to read and write.",
+    "parents": [
+      {
+        "id": "compulsory-education",
+        "type": "enabler",
+        "reason": "Broad school attendance expanded access to systematic reading and writing instruction."
+      },
+      {
+        "id": "publishing",
+        "type": "enabler",
+        "reason": "Widely available printed materials supplied reading practice and reasons to acquire literacy."
+      }
+    ]
+  },
+  {
+    "id": "buddhism",
+    "title": "Buddhism",
+    "wiki": "Buddhism",
+    "year": -500,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Buddhist traditions developed teachings and communities concerned with suffering and liberation.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Oral recitation preserved teachings before their compilation into written collections."
+      }
+    ]
+  },
+  {
+    "id": "hinduism",
+    "title": "Vedic religious traditions",
+    "wiki": "Hinduism",
+    "year": -1500,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Vedic traditions contributed ritual, textual, and philosophical practices to later Hindu traditions.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Careful memorization and recitation preserved Vedic compositions across generations."
+      }
+    ]
+  },
+  {
+    "id": "judaism",
+    "title": "Judaism",
+    "wiki": "Judaism",
+    "year": -500,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Jewish traditions organized communal life around covenant, law, worship, and textual interpretation.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Scriptural collections supported the preservation and interpretation of religious law and narrative."
+      }
+    ]
+  },
+  {
+    "id": "zoroastrianism",
+    "title": "Zoroastrianism",
+    "wiki": "Zoroastrianism",
+    "year": -1000,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Zoroastrian traditions developed teachings concerning ethical choice and the worship of Ahura Mazda.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Priestly recitation preserved Avestan religious materials before later written transmission."
+      }
+    ]
+  },
+  {
+    "id": "jainism",
+    "title": "Jainism",
+    "wiki": "Jainism",
+    "year": -500,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Jain communities developed disciplines emphasizing nonviolence, restraint, and liberation.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Teachers and reciters transmitted teachings within early Jain communities."
+      }
+    ]
+  },
+  {
+    "id": "confucianism",
+    "title": "Confucian thought",
+    "wiki": "Confucianism",
+    "year": -500,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Confucian traditions examine ethical conduct, learning, ritual, and responsible government.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Teaching and remembered dialogue contributed to collections attributed to Confucius and his followers."
+      }
+    ]
+  },
+  {
+    "id": "taoism",
+    "title": "Daoist traditions",
+    "wiki": "Taoism",
+    "year": -400,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Daoist traditions developed texts and practices concerned with the Dao and cultivation.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Written works such as the Daodejing provided enduring reference points for interpretation."
+      }
+    ]
+  },
+  {
+    "id": "christianity",
+    "title": "Christianity",
+    "wiki": "Christianity",
+    "year": 30,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Christian communities developed worship, teachings, and institutions centered on Jesus of Nazareth.",
+    "parents": [
+      {
+        "id": "judaism",
+        "type": "influence",
+        "reason": "Jewish scriptures, worship, and messianic expectations formed the setting of the early movement."
+      }
+    ]
+  },
+  {
+    "id": "islam",
+    "title": "Islam",
+    "wiki": "Islam",
+    "year": 610,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Islamic communities developed religious and social traditions around Qur'anic revelation and prophetic teaching.",
+    "parents": [
+      {
+        "id": "arabic-script",
+        "type": "enabler",
+        "reason": "Arabic writing supported the collection and transmission of Qur'anic texts."
+      }
+    ]
+  },
+  {
+    "id": "sikhism",
+    "title": "Sikhism",
+    "wiki": "Sikhism",
+    "year": 1499,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Sikh traditions developed around the teachings of Guru Nanak and subsequent Sikh gurus.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Sung teaching and recitation helped transmit the gurus' compositions."
+      }
+    ]
+  },
+  {
+    "id": "buddhist-monasticism",
+    "title": "Buddhist monastic communities",
+    "wiki": "Buddhist monasticism",
+    "year": -500,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Buddhist monastic communities organized residential life, discipline, teaching, and textual transmission.",
+    "parents": [
+      {
+        "id": "buddhism",
+        "type": "influence",
+        "reason": "Buddhist teachings and disciplinary traditions shaped the communities' purposes and rules."
+      }
+    ]
+  },
+  {
+    "id": "christian-monasticism",
+    "title": "Christian monasticism",
+    "wiki": "Christian monasticism",
+    "year": 300,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Christian monastic communities developed shared disciplines of prayer, work, and learning.",
+    "parents": [
+      {
+        "id": "christianity",
+        "type": "influence",
+        "reason": "Christian ascetic and devotional ideals motivated distinct forms of monastic life."
+      }
+    ]
+  },
+  {
+    "id": "synagogue",
+    "title": "Synagogues",
+    "wiki": "Synagogue",
+    "year": -300,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Synagogues provide communal places for Jewish worship, assembly, and study.",
+    "parents": [
+      {
+        "id": "judaism",
+        "type": "influence",
+        "reason": "Jewish communal worship and textual study shaped the institution's activities."
+      }
+    ]
+  },
+  {
+    "id": "mosque",
+    "title": "Mosques",
+    "wiki": "Mosque",
+    "year": 622,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Mosques provide communal settings for Muslim prayer and often teaching and civic activity.",
+    "parents": [
+      {
+        "id": "islam",
+        "type": "influence",
+        "reason": "Collective Muslim prayer and community organization gave mosques their principal purposes."
+      }
+    ]
+  },
+  {
+    "id": "pilgrimage",
+    "title": "Pilgrimage",
+    "wiki": "Pilgrimage",
+    "year": -2000,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Journeys to sacred places connect religious observance with movement and exchange between communities.",
+    "parents": [
+      {
+        "id": "religion",
+        "type": "influence",
+        "reason": "Recognition of sacred places and ritual duties motivates many pilgrimage traditions."
+      }
+    ]
+  },
+  {
+    "id": "waqf",
+    "title": "Waqf endowments",
+    "wiki": "Waqf",
+    "year": 700,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Islamic endowments dedicate assets or income to lasting religious and charitable purposes.",
+    "parents": [
+      {
+        "id": "islam",
+        "type": "influence",
+        "reason": "Islamic legal and charitable traditions shaped the endowment's purposes and governance."
+      }
+    ]
+  },
+  {
+    "id": "zakat",
+    "title": "Zakat",
+    "wiki": "Zakat",
+    "year": 622,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Zakat establishes a religious obligation to transfer a defined portion of wealth to specified recipients.",
+    "parents": [
+      {
+        "id": "islam",
+        "type": "influence",
+        "reason": "Islamic religious duties and rules define the obligation and its beneficiaries."
+      }
+    ]
+  },
+  {
+    "id": "sabbath",
+    "title": "Sabbath observance",
+    "wiki": "Shabbat",
+    "year": -500,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "A recurring day of rest structures Jewish communal time and religious observance.",
+    "parents": [
+      {
+        "id": "judaism",
+        "type": "influence",
+        "reason": "Jewish religious law and interpretation define Sabbath duties and customary practices."
+      }
+    ]
+  },
+  {
+    "id": "vedas",
+    "title": "Vedic textual preservation",
+    "wiki": "Vedas",
+    "year": -1500,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Vedic recitation traditions preserve extensive Sanskrit compositions through disciplined memorization.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Specialized memorization and recitation techniques transmit compositions with unusual precision."
+      }
+    ]
+  },
+  {
+    "id": "talmud",
+    "title": "Talmudic compilation",
+    "wiki": "Talmud",
+    "year": 500,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Talmudic compilations preserve rabbinic discussion of law, interpretation, and communal practice.",
+    "parents": [
+      {
+        "id": "judaism",
+        "type": "influence",
+        "reason": "Rabbinic interpretation of Jewish law supplies the compilations' subject matter."
+      },
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Written compilation preserved extensive debates for later consultation."
+      }
+    ]
+  },
+  {
+    "id": "quran",
+    "title": "Qur'anic compilation",
+    "wiki": "Quran",
+    "year": 650,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Written Qur'anic collections established an enduring textual basis for Islamic recitation and interpretation.",
+    "parents": [
+      {
+        "id": "islam",
+        "type": "influence",
+        "reason": "The community's revelations and recitation practices supplied the text being compiled."
+      },
+      {
+        "id": "arabic-script",
+        "type": "enabler",
+        "reason": "Arabic script provided the means to record and circulate the compilation."
+      }
+    ]
+  },
+  {
+    "id": "diamond-sutra",
+    "title": "Printed Diamond Sutra",
+    "wiki": "Diamond Sutra",
+    "year": 868,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A dated Chinese Diamond Sutra scroll preserves an early complete printed book.",
+    "parents": [
+      {
+        "id": "woodblock-printing",
+        "type": "enabler",
+        "reason": "Carved printing blocks reproduced the scroll's text and illustration."
+      },
+      {
+        "id": "buddhism",
+        "type": "influence",
+        "reason": "Buddhist devotion and textual circulation motivated production of the sutra."
+      }
+    ]
+  },
+  {
+    "id": "protestant-reformation",
+    "title": "Protestant Reformation",
+    "wiki": "Reformation",
+    "year": 1517,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Reform movements reconfigured Christian institutions through disputes over doctrine and church authority.",
+    "parents": [
+      {
+        "id": "printing-press",
+        "type": "enabler",
+        "reason": "Printed pamphlets and vernacular texts widened the circulation of reform arguments."
+      },
+      {
+        "id": "christianity",
+        "type": "influence",
+        "reason": "Christian doctrine and institutions supplied the subjects of reformers' disputes."
+      }
+    ]
+  },
+  {
+    "id": "edict-nantes",
+    "title": "Edict of Nantes",
+    "wiki": "Edict of Nantes",
+    "year": 1598,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The French edict granted defined protections to Huguenots while retaining Catholic predominance.",
+    "parents": [
+      {
+        "id": "protestant-reformation",
+        "type": "influence",
+        "reason": "Religious divisions and resulting conflicts created the political problem the edict addressed."
+      }
+    ]
+  },
+  {
+    "id": "logistics",
+    "title": "Organized logistics",
+    "wiki": "Logistics",
+    "year": -2500,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Coordinated provisioning organizes storage, supplies, personnel, and movement for sustained collective activity.",
+    "parents": [
+      {
+        "id": "cities",
+        "type": "enabler",
+        "reason": "Large settled populations created sustained demands for coordinated provisioning."
+      },
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Records helped administrators track stored supplies and obligations."
+      }
+    ]
+  },
+  {
+    "id": "postal-service",
+    "title": "Postal services",
+    "wiki": "Mail",
+    "year": -550,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Organized messenger systems deliver communications across managed routes.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Written messages could be transported without relying on a messenger's memory."
+      }
+    ]
+  },
+  {
+    "id": "achaemenid-relays",
+    "title": "Achaemenid courier relays",
+    "wiki": "Angarium",
+    "year": -500,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Achaemenid relay messengers linked imperial centers through organized stations and personnel.",
+    "parents": [
+      {
+        "id": "postal-service",
+        "type": "influence",
+        "reason": "State messenger organization supplied the function systematized by the courier relays."
+      },
+      {
+        "id": "logistics",
+        "type": "enabler",
+        "reason": "Station supplies and replacement personnel kept relay communications moving."
+      }
+    ]
+  },
+  {
+    "id": "cursus-publicus",
+    "title": "Roman cursus publicus",
+    "wiki": "Cursus publicus",
+    "year": -20,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Rome's state transport service organized official messengers and authorized travel through stations.",
+    "parents": [
+      {
+        "id": "achaemenid-relays",
+        "type": "influence",
+        "reason": "Earlier imperial relay services supplied a known precedent for organized state communications."
+      },
+      {
+        "id": "logistics",
+        "type": "enabler",
+        "reason": "Managed stations and requisitioned resources supported official travel."
+      }
+    ]
+  },
+  {
+    "id": "yam",
+    "title": "Mongol yam",
+    "wiki": "Yam (route)",
+    "year": 1234,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The Mongol yam coordinated relay stations, supplies, and mounts for imperial messengers.",
+    "parents": [
+      {
+        "id": "logistics",
+        "type": "enabler",
+        "reason": "Station provisioning and allocated resources sustained long-distance relay travel."
+      }
+    ]
+  },
+  {
+    "id": "chasqui",
+    "title": "Inca chasqui relays",
+    "wiki": "Chasqui",
+    "year": 1438,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Inca runners relayed oral messages, quipus, and small consignments between stations.",
+    "parents": [
+      {
+        "id": "quipu",
+        "type": "enabler",
+        "reason": "Portable knotted records allowed runners to carry administrative information."
+      },
+      {
+        "id": "logistics",
+        "type": "enabler",
+        "reason": "Scheduled runners and provisioned stations sustained repeated transfers."
+      }
+    ]
+  },
+  {
+    "id": "thurn-taxis-post",
+    "title": "Thurn and Taxis postal network",
+    "wiki": "Thurn-und-Taxis Post",
+    "year": 1490,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A contracted relay network developed into a major European postal service.",
+    "parents": [
+      {
+        "id": "postal-service",
+        "type": "influence",
+        "reason": "Established courier practices supplied the model expanded into a contracted network."
+      }
+    ]
+  },
+  {
+    "id": "universal-postal-union",
+    "title": "Universal Postal Union",
+    "wiki": "Universal Postal Union",
+    "year": 1874,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The postal union coordinated international mail exchange under common rules.",
+    "parents": [
+      {
+        "id": "postal-service",
+        "type": "enabler",
+        "reason": "Existing national mail services provided the networks connected by common international rules."
+      }
+    ]
+  },
+  {
+    "id": "silk-road",
+    "title": "Silk Road exchange networks",
+    "wiki": "Silk Road",
+    "year": -130,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Interlinked Eurasian routes carried goods, travelers, beliefs, and knowledge between regions.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Merchant exchange connected successive regional routes into long-distance networks."
+      },
+      {
+        "id": "changan",
+        "type": "enabler",
+        "reason": "The Han capital concentrated demand and political connections at an eastern end of the networks."
+      }
+    ]
+  },
+  {
+    "id": "indian-ocean-trade",
+    "title": "Indian Ocean trade",
+    "wiki": "Indian Ocean trade",
+    "year": -2000,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Maritime exchange connected ports across the Indian Ocean through recurring commercial networks.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Demand for goods from distant regions sustained interregional commercial relationships."
+      }
+    ]
+  },
+  {
+    "id": "trans-saharan-trade",
+    "title": "Trans-Saharan trade",
+    "wiki": "Trans-Saharan trade",
+    "year": 700,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Caravan networks linked Saharan and sub-Saharan markets in commodities including salt and gold.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Regional commodity exchanges supported sustained commerce across the desert."
+      }
+    ]
+  },
+  {
+    "id": "swahili-trade",
+    "title": "Swahili coastal trading towns",
+    "wiki": "Swahili coast",
+    "year": 1000,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "East African coastal towns linked inland exchange with Indian Ocean commercial networks.",
+    "parents": [
+      {
+        "id": "indian-ocean-trade",
+        "type": "enabler",
+        "reason": "Oceanic commerce connected coastal merchants to distant buyers and suppliers."
+      }
+    ]
+  },
+  {
+    "id": "caravanserai",
+    "title": "Caravanserai lodging networks",
+    "wiki": "Caravanserai",
+    "year": 1000,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Roadside lodging institutions offered merchants shelter, storage, and services along trading routes.",
+    "parents": [
+      {
+        "id": "silk-road",
+        "type": "enabler",
+        "reason": "Regular caravan travel created demand for staffed stopping places."
+      },
+      {
+        "id": "logistics",
+        "type": "enabler",
+        "reason": "Provisioning and storage practices supported travelers between stages."
+      }
+    ]
+  },
+  {
+    "id": "hanseatic-league",
+    "title": "Hanseatic League",
+    "wiki": "Hanseatic League",
+    "year": 1356,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Northern European trading towns coordinated privileges, protection, and commercial representation.",
+    "parents": [
+      {
+        "id": "guild",
+        "type": "influence",
+        "reason": "Merchant associations supplied forms of collective bargaining and commercial representation."
+      }
+    ]
+  },
+  {
+    "id": "guild",
+    "title": "Guilds",
+    "wiki": "Guild",
+    "year": 1000,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Occupational associations coordinated training, standards, mutual aid, and access to trades.",
+    "parents": [
+      {
+        "id": "cities",
+        "type": "enabler",
+        "reason": "Concentrated occupations made durable associations of merchants and craftspeople practical."
+      }
+    ]
+  },
+  {
+    "id": "apprenticeship",
+    "title": "Apprenticeship",
+    "wiki": "Apprenticeship",
+    "year": 1100,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Structured work-based training transmits specialized skills through extended supervised practice.",
+    "parents": [
+      {
+        "id": "guild",
+        "type": "enabler",
+        "reason": "Guild rules formalized training obligations and admission to skilled occupations."
+      }
+    ]
+  },
+  {
+    "id": "money",
+    "title": "Money",
+    "wiki": "Money",
+    "year": -3000,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Accepted units and media facilitate payment, valuation, and the settlement of obligations.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Repeated exchange created uses for commonly accepted payment and valuation conventions."
+      }
+    ]
+  },
+  {
+    "id": "coinage",
+    "title": "Coinage",
+    "wiki": "Coin",
+    "year": -600,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Stamped currency made issuing authorities and denominations recognizable in portable payments.",
+    "parents": [
+      {
+        "id": "money",
+        "type": "influence",
+        "reason": "Existing payment conventions supplied the economic functions performed by coined currency."
+      }
+    ]
+  },
+  {
+    "id": "paper-money",
+    "title": "Paper money",
+    "wiki": "Banknote",
+    "year": 1023,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Authorized paper claims circulated as payment instruments, including Song-era Chinese jiaozi.",
+    "parents": [
+      {
+        "id": "paper",
+        "type": "enabler",
+        "reason": "Paper supplied a portable surface for monetary claims."
+      },
+      {
+        "id": "money",
+        "type": "influence",
+        "reason": "Existing payment conventions allowed paper claims to serve as circulating money."
+      }
+    ]
+  },
+  {
+    "id": "banking",
+    "title": "Banking",
+    "wiki": "History of banking",
+    "year": -1800,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Deposit taking and lending institutions organize custody, credit, and financial obligations.",
+    "parents": [
+      {
+        "id": "money",
+        "type": "enabler",
+        "reason": "Payment and valuation conventions made deposits and loans accountable."
+      },
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Written contracts preserve obligations between lenders and borrowers."
+      }
+    ]
+  },
+  {
+    "id": "bill-exchange",
+    "title": "Bills of exchange",
+    "wiki": "Bill of exchange",
+    "year": 1200,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "Written payment orders let merchants settle obligations across places and currencies.",
+    "parents": [
+      {
+        "id": "banking",
+        "type": "enabler",
+        "reason": "Credit relationships and payment intermediaries supported settlement between distant merchants."
+      }
+    ]
+  },
+  {
+    "id": "double-entry",
+    "title": "Double-entry bookkeeping",
+    "wiki": "Double-entry bookkeeping",
+    "year": 1340,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "Paired debit and credit entries represent transactions within an interconnected accounting system.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Persistent ledgers preserve the paired entries and balances."
+      },
+      {
+        "id": "banking",
+        "type": "enabler",
+        "reason": "Complex accounts and credit relationships created demand for systematic transaction records."
+      }
+    ]
+  },
+  {
+    "id": "insurance",
+    "title": "Risk-sharing contracts",
+    "wiki": "Insurance",
+    "year": -1750,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Agreements allocate specified financial risks among contracting parties.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Commercial uncertainty created demand for agreements sharing losses and obligations."
+      },
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Recorded agreements defined contingent payments and responsibilities."
+      }
+    ]
+  },
+  {
+    "id": "marine-insurance",
+    "title": "Marine insurance",
+    "wiki": "Marine insurance",
+    "year": 1347,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Separate insurance contracts allocated the financial risks of sea voyages and cargo loss.",
+    "parents": [
+      {
+        "id": "insurance",
+        "type": "influence",
+        "reason": "Earlier risk-allocation agreements supplied contractual precedents."
+      },
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Long-distance commercial voyages exposed cargo owners to risks addressed by separate insurance contracts."
+      }
+    ]
+  },
+  {
+    "id": "joint-stock-company",
+    "title": "Joint-stock companies",
+    "wiki": "Joint-stock company",
+    "year": 1602,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Shares pooled investment while distributing ownership across multiple investors.",
+    "parents": [
+      {
+        "id": "commenda",
+        "type": "influence",
+        "reason": "Earlier trading partnerships provided precedents for separating invested capital from voyage management."
+      },
+      {
+        "id": "double-entry",
+        "type": "enabler",
+        "reason": "Systematic accounts supported tracking pooled capital and investment returns."
+      }
+    ]
+  },
+  {
+    "id": "stock-exchange",
+    "title": "Stock exchanges",
+    "wiki": "Stock exchange",
+    "year": 1602,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Organized markets support the purchase and sale of transferable securities.",
+    "parents": [
+      {
+        "id": "joint-stock-company",
+        "type": "enabler",
+        "reason": "Transferable ownership shares created instruments for regular secondary trading."
+      }
+    ]
+  },
+  {
+    "id": "central-bank",
+    "title": "Central banking",
+    "wiki": "Central bank",
+    "year": 1668,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Specialized monetary institutions developed responsibilities for public finance, currency, and banking stability.",
+    "parents": [
+      {
+        "id": "banking",
+        "type": "influence",
+        "reason": "Established banking functions supplied the financial practices consolidated in public monetary institutions."
+      }
+    ]
+  },
+  {
+    "id": "bank-england",
+    "title": "Bank of England",
+    "wiki": "Bank of England",
+    "year": 1694,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The Bank of England linked subscribed capital and banking operations with lending to government.",
+    "parents": [
+      {
+        "id": "joint-stock-company",
+        "type": "enabler",
+        "reason": "Subscribed shares pooled the capital used to finance the institution."
+      },
+      {
+        "id": "central-bank",
+        "type": "influence",
+        "reason": "Earlier public banks provided precedents for a bank serving government finance."
+      }
+    ]
+  },
+  {
+    "id": "credit-union",
+    "title": "Credit unions",
+    "wiki": "Credit union",
+    "year": 1852,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Member-owned financial cooperatives pool savings and provide credit to their members.",
+    "parents": [
+      {
+        "id": "cooperative",
+        "type": "influence",
+        "reason": "Cooperative ownership principles shaped member governance and shared benefit."
+      },
+      {
+        "id": "banking",
+        "type": "enabler",
+        "reason": "Deposit and lending practices supplied the financial services organized cooperatively."
+      }
+    ]
+  },
+  {
+    "id": "cooperative",
+    "title": "Consumer cooperatives",
+    "wiki": "Cooperative",
+    "year": 1844,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Member-owned enterprises organize economic activity through shared governance and benefits.",
+    "parents": [
+      {
+        "id": "publishing",
+        "type": "enabler",
+        "reason": "Printed cooperative arguments and association rules helped organizers share models of member ownership and governance."
+      }
+    ]
+  },
+  {
+    "id": "fair-trade",
+    "title": "Fair trade organizations",
+    "wiki": "Fair trade",
+    "year": 1946,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Fair trade organizations seek trading terms and producer arrangements that address unequal market power.",
+    "parents": [
+      {
+        "id": "cooperative",
+        "type": "enabler",
+        "reason": "Producer cooperatives provide organizations through which members can negotiate and market collectively."
+      }
+    ]
+  },
+  {
+    "id": "microfinance",
+    "title": "Microfinance programs",
+    "wiki": "Microfinance",
+    "year": 1976,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Small-scale credit and other financial services target people poorly served by conventional banking.",
+    "parents": [
+      {
+        "id": "credit-union",
+        "type": "influence",
+        "reason": "Community-oriented savings and lending institutions supplied precedents for extending financial access."
+      }
+    ]
+  },
+  {
+    "id": "hawala",
+    "title": "Hawala transfers",
+    "wiki": "Hawala",
+    "year": 800,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Trusted intermediaries transfer value by balancing obligations without transporting each payment physically.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Merchant relationships and cross-border payment needs support trusted settlement networks."
+      }
+    ]
+  },
+  {
+    "id": "hundi",
+    "title": "Hundi instruments",
+    "wiki": "Hundi",
+    "year": 1200,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "South Asian written instruments facilitated credit, remittance, and commercial payments.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Long-distance merchant obligations created demand for transferable payment instructions."
+      },
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Written instruments recorded parties and terms of payment."
+      }
+    ]
+  },
+  {
+    "id": "commenda",
+    "title": "Commenda partnerships",
+    "wiki": "Commenda",
+    "year": 1000,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Trading partnerships divided capital provision, voyage management, and returns between participants.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Voyage-based commerce created opportunities to combine investors' funds with merchants' labor."
+      }
+    ]
+  },
+  {
+    "id": "susu",
+    "title": "Susu savings associations",
+    "wiki": "Susu (informal loan club)",
+    "year": 1800,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Rotating savings arrangements pool members' contributions and distribute funds in turns.",
+    "parents": [
+      {
+        "id": "gift-economy",
+        "type": "influence",
+        "reason": "Reciprocal obligations and trust provide social resources for repeated mutual contributions."
+      }
+    ]
+  },
+  {
+    "id": "chamber-commerce",
+    "title": "Chambers of commerce",
+    "wiki": "Chamber of commerce",
+    "year": 1599,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Commercial associations represent businesses and coordinate local economic interests.",
+    "parents": [
+      {
+        "id": "guild",
+        "type": "influence",
+        "reason": "Merchant associations supplied a precedent for collective representation of commercial interests."
+      }
+    ]
+  },
+  {
+    "id": "merchant-law",
+    "title": "Law merchant",
+    "wiki": "Lex mercatoria",
+    "year": 1100,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Mercantile customs and forums developed rules for commercial dealings across local jurisdictions.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Transactions between jurisdictions created demand for shared commercial procedures."
+      }
+    ]
+  },
+  {
+    "id": "weights-measures",
+    "title": "Standardized weights and measures",
+    "wiki": "Weights and measures",
+    "year": -2500,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Shared measurement conventions let administrators and traders compare quantities consistently.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Commercial exchange created demand for agreed quantities and comparable valuations."
+      }
+    ]
+  },
+  {
+    "id": "metric-system",
+    "title": "Metric system",
+    "wiki": "Metric system",
+    "year": 1795,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A decimal system of units established common conventions for measurement and calculation.",
+    "parents": [
+      {
+        "id": "weights-measures",
+        "type": "influence",
+        "reason": "Problems coordinating older measurement conventions motivated a coherent standardized system."
+      }
+    ]
+  },
+  {
+    "id": "metre-convention",
+    "title": "Metre Convention",
+    "wiki": "Metre Convention",
+    "year": 1875,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "An international treaty established cooperation for maintaining shared metric measurement standards.",
+    "parents": [
+      {
+        "id": "metric-system",
+        "type": "enabler",
+        "reason": "Existing metric units supplied the standards to be coordinated internationally."
+      }
+    ]
+  },
+  {
+    "id": "bipm",
+    "title": "International Bureau of Weights and Measures",
+    "wiki": "International Bureau of Weights and Measures",
+    "year": 1875,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The BIPM provides a permanent intergovernmental organization for coordinating measurement standards.",
+    "parents": [
+      {
+        "id": "metre-convention",
+        "type": "foundation",
+        "reason": "The convention created the bureau and its international governance framework."
+      }
+    ]
+  },
+  {
+    "id": "si-units",
+    "title": "International System of Units",
+    "wiki": "International System of Units",
+    "year": 1960,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "International agreement organized a coherent set of measurement units and rules for their use.",
+    "parents": [
+      {
+        "id": "metric-system",
+        "type": "influence",
+        "reason": "Metric conventions supplied the decimal and coherent measurement framework."
+      },
+      {
+        "id": "bipm",
+        "type": "enabler",
+        "reason": "International metrology cooperation supported coordination and publication of shared unit definitions."
+      }
+    ]
+  },
+  {
+    "id": "iso",
+    "title": "International Organization for Standardization",
+    "wiki": "International Organization for Standardization",
+    "year": 1947,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "National standards bodies formed an international organization for developing common technical standards.",
+    "parents": [
+      {
+        "id": "weights-measures",
+        "type": "influence",
+        "reason": "Earlier coordination of standards demonstrated the value of shared specifications across jurisdictions."
+      }
+    ]
+  },
+  {
+    "id": "wto",
+    "title": "World Trade Organization",
+    "wiki": "World Trade Organization",
+    "year": 1995,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The WTO established a standing framework for trade agreements, negotiations, and dispute settlement.",
+    "parents": [
+      {
+        "id": "gatt",
+        "type": "foundation",
+        "reason": "The GATT negotiating system and Uruguay Round agreements formed the basis of the organization."
+      }
+    ]
+  },
+  {
+    "id": "gatt",
+    "title": "General Agreement on Tariffs and Trade",
+    "wiki": "General Agreement on Tariffs and Trade",
+    "year": 1947,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Participating governments agreed rules and negotiations intended to reduce trade barriers.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Cross-border commerce created the tariffs and market-access issues addressed by the agreement."
+      }
+    ]
+  },
+  {
+    "id": "customs-union",
+    "title": "Zollverein customs union",
+    "wiki": "Zollverein",
+    "year": 1834,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "German states coordinated customs rules and removed many internal trade barriers.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Regional commerce supplied incentives to replace fragmented customs arrangements."
+      }
+    ]
+  },
+  {
+    "id": "port-authority",
+    "title": "Port of London Authority",
+    "wiki": "Port of London Authority",
+    "year": 1909,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A public authority coordinated London's port management and navigation responsibilities.",
+    "parents": [
+      {
+        "id": "logistics",
+        "type": "enabler",
+        "reason": "Concentrated shipping and cargo handling required coordinated operational oversight."
+      }
+    ]
+  },
+  {
+    "id": "warehouse",
+    "title": "Warehouse administration",
+    "wiki": "Warehouse",
+    "year": -2500,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Managed storage facilities organize custody, inventories, and release of goods.",
+    "parents": [
+      {
+        "id": "logistics",
+        "type": "enabler",
+        "reason": "Provisioning systems require places and procedures for receiving and issuing stock."
+      },
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Inventory records help account for goods held and distributed."
+      }
+    ]
+  },
+  {
+    "id": "census",
+    "title": "Censuses",
+    "wiki": "Census",
+    "year": -1800,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Population enumerations supply administrators with structured information about households and obligations.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Recorded lists permit household information to be aggregated and consulted."
+      }
+    ]
+  },
+  {
+    "id": "taxation",
+    "title": "Taxation",
+    "wiki": "Tax",
+    "year": -3000,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Compulsory contributions support governing institutions and collective expenditures.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Administrative records track assessed obligations and delivered contributions."
+      }
+    ]
+  },
+  {
+    "id": "code-ur-nammu",
+    "title": "Code of Ur-Nammu",
+    "wiki": "Code of Ur-Nammu",
+    "year": -2100,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A surviving Sumerian law collection recorded offenses and prescribed penalties.",
+    "parents": [
+      {
+        "id": "cuneiform",
+        "type": "enabler",
+        "reason": "Clay-tablet writing preserved legal provisions for consultation."
+      }
+    ]
+  },
+  {
+    "id": "code-hammurabi",
+    "title": "Code of Hammurabi",
+    "wiki": "Code of Hammurabi",
+    "year": -1754,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Hammurabi's inscribed law collection presented judgments and royal claims about justice.",
+    "parents": [
+      {
+        "id": "code-ur-nammu",
+        "type": "influence",
+        "reason": "Earlier Mesopotamian law collections supplied a regional tradition of written royal legal provisions."
+      }
+    ]
+  },
+  {
+    "id": "twelve-tables",
+    "title": "Twelve Tables",
+    "wiki": "Twelve Tables",
+    "year": -450,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Rome's published legal provisions made important customary rules publicly consultable.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Written publication allowed rules to be displayed and cited beyond oral recollection."
+      }
+    ]
+  },
+  {
+    "id": "roman-law",
+    "title": "Roman jurisprudence",
+    "wiki": "Roman law",
+    "year": -450,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Roman legal practice developed categories, procedures, and juristic interpretation used across a large empire.",
+    "parents": [
+      {
+        "id": "twelve-tables",
+        "type": "influence",
+        "reason": "The published provisions became an enduring reference point in Roman legal development."
+      }
+    ]
+  },
+  {
+    "id": "justinian-code",
+    "title": "Justinian's legal compilation",
+    "wiki": "Corpus Juris Civilis",
+    "year": 529,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Imperial compilers organized Roman enactments and juristic writings into a major legal corpus.",
+    "parents": [
+      {
+        "id": "roman-law",
+        "type": "foundation",
+        "reason": "Roman statutes and jurists' writings supplied the material selected and organized."
+      }
+    ]
+  },
+  {
+    "id": "sharia",
+    "title": "Islamic jurisprudence",
+    "wiki": "Sharia",
+    "year": 750,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Islamic jurists developed methods for interpreting religious sources into legal and ethical rules.",
+    "parents": [
+      {
+        "id": "quran",
+        "type": "influence",
+        "reason": "Qur'anic passages supplied a central source interpreted alongside prophetic traditions."
+      }
+    ]
+  },
+  {
+    "id": "canon-law",
+    "title": "Gratian's canon-law compilation",
+    "wiki": "Decretum Gratiani",
+    "year": 1140,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Gratian organized and reconciled Christian legal authorities into a foundational teaching compilation.",
+    "parents": [
+      {
+        "id": "christianity",
+        "type": "influence",
+        "reason": "Church councils, papal rulings, and Christian texts supplied the legal authorities being reconciled."
+      },
+      {
+        "id": "scholasticism",
+        "type": "enabler",
+        "reason": "Questioning and reconciliation of conflicting authorities shaped the compilation's method."
+      }
+    ]
+  },
+  {
+    "id": "common-law",
+    "title": "English common law",
+    "wiki": "Common law",
+    "year": 1154,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Royal courts developed shared procedures and legal traditions across England.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Recorded writs and proceedings helped preserve and coordinate royal legal practice."
+      }
+    ]
+  },
+  {
+    "id": "magna-carta",
+    "title": "Magna Carta",
+    "wiki": "Magna Carta",
+    "year": 1215,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "An English royal charter recorded negotiated constraints and protections amid a political dispute.",
+    "parents": [
+      {
+        "id": "common-law",
+        "type": "influence",
+        "reason": "Existing English legal customs and royal justice shaped the charter's provisions."
+      }
+    ]
+  },
+  {
+    "id": "parliament",
+    "title": "English representative parliament",
+    "wiki": "Parliament of England",
+    "year": 1265,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Representatives of counties and towns joined assemblies participating in English political deliberation.",
+    "parents": [
+      {
+        "id": "magna-carta",
+        "type": "influence",
+        "reason": "Negotiated constraints on royal authority formed part of the developing context of consent and consultation."
+      }
+    ]
+  },
+  {
+    "id": "althing",
+    "title": "Althing",
+    "wiki": "Althing",
+    "year": 930,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Iceland's assembly coordinated lawmaking and dispute resolution among participating communities.",
+    "parents": [
+      {
+        "id": "thing-assembly",
+        "type": "influence",
+        "reason": "Scandinavian assembly traditions supplied a model for collective legal deliberation."
+      }
+    ]
+  },
+  {
+    "id": "athenian-democracy",
+    "title": "Athenian democracy",
+    "wiki": "Athenian democracy",
+    "year": -508,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Athens developed direct citizen participation in assemblies and offices while excluding much of its population.",
+    "parents": [
+      {
+        "id": "cities",
+        "type": "enabler",
+        "reason": "The polis concentrated civic institutions through which eligible citizens could participate."
+      }
+    ]
+  },
+  {
+    "id": "roman-republic",
+    "title": "Roman Republic",
+    "wiki": "Roman Republic",
+    "year": -509,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Roman republican institutions distributed authority among magistrates, councils, and citizen assemblies.",
+    "parents": [
+      {
+        "id": "cities",
+        "type": "enabler",
+        "reason": "Rome's civic community supplied the setting for magistracies and assemblies."
+      }
+    ]
+  },
+  {
+    "id": "ashokan-edicts",
+    "title": "Edicts of Ashoka",
+    "wiki": "Edicts of Ashoka",
+    "year": -250,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Ashokan inscriptions publicly communicated policies, ethical expectations, and royal concerns across regions.",
+    "parents": [
+      {
+        "id": "brahmi-script",
+        "type": "enabler",
+        "reason": "Brahmi writing recorded many edicts in regional Prakrit languages."
+      },
+      {
+        "id": "buddhism",
+        "type": "influence",
+        "reason": "Ashoka's Buddhist commitments contributed to his emphasis on ethical conduct and restraint."
+      }
+    ]
+  },
+  {
+    "id": "great-law-peace",
+    "title": "Haudenosaunee Great Law of Peace",
+    "wiki": "Great Law of Peace",
+    "year": 1450,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The Haudenosaunee constitutional tradition coordinates a confederacy through council roles and shared peace obligations.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Custodians transmit the constitutional narrative and responsibilities through recitation and teaching."
+      }
+    ]
+  },
+  {
+    "id": "kouroukan-fouga",
+    "title": "Kouroukan Fouga transcription",
+    "wiki": "Kouroukan Fouga",
+    "year": 1998,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "A regional workshop transcribed a Mande constitutional tradition attributed in oral narratives to Sundiata's era.",
+    "parents": [
+      {
+        "id": "griot",
+        "type": "enabler",
+        "reason": "Mande oral historians supplied narratives and remembered rules used in the transcription."
+      }
+    ]
+  },
+  {
+    "id": "satyagraha",
+    "title": "Satyagraha",
+    "wiki": "Satyagraha",
+    "year": 1906,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Gandhi organized nonviolent resistance around disciplined action and commitment to truth.",
+    "parents": [
+      {
+        "id": "jainism",
+        "type": "influence",
+        "reason": "Jain traditions of nonviolence were among the ethical influences informing Gandhi's thought."
+      }
+    ]
+  },
+  {
+    "id": "gadaa",
+    "title": "Gadaa governance",
+    "wiki": "Gadaa",
+    "year": 1500,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Oromo Gadaa institutions rotate leadership through generation-based groups and regulate communal responsibilities.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Community teaching and deliberation preserve responsibilities, laws, and leadership traditions."
+      }
+    ]
+  },
+  {
+    "id": "panchayat",
+    "title": "Village panchayats",
+    "wiki": "Panchayat",
+    "year": 500,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Village councils in South Asia organize local deliberation and dispute resolution in varied historical forms.",
+    "parents": [
+      {
+        "id": "sedentism",
+        "type": "enabler",
+        "reason": "Long-term village communities provide a setting for recurring local councils."
+      }
+    ]
+  },
+  {
+    "id": "kurultai",
+    "title": "Kurultai assemblies",
+    "wiki": "Kurultai",
+    "year": 1206,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Mongol and Turkic assemblies convened leaders to decide major political and military matters.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Public deliberation and witnessed declarations communicate assembly decisions."
+      }
+    ]
+  },
+  {
+    "id": "mita",
+    "title": "Inca mit'a administration",
+    "wiki": "Mit'a",
+    "year": 1438,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The Inca state organized rotating labor obligations for public works and state services.",
+    "parents": [
+      {
+        "id": "ayllu",
+        "type": "enabler",
+        "reason": "Local kin-based communities supplied the groups through which labor obligations were assigned."
+      },
+      {
+        "id": "quipu",
+        "type": "enabler",
+        "reason": "Quipu records helped account for people and obligations within state administration."
+      }
+    ]
+  },
+  {
+    "id": "ayllu",
+    "title": "Andean ayllu communities",
+    "wiki": "Ayllu",
+    "year": 1000,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Andean kin-based communities coordinate land use, mutual obligations, and collective identity.",
+    "parents": [
+      {
+        "id": "gift-economy",
+        "type": "enabler",
+        "reason": "Reciprocal contributions help organize labor and support within communities."
+      }
+    ]
+  },
+  {
+    "id": "thing-assembly",
+    "title": "Scandinavian thing assemblies",
+    "wiki": "Thing (assembly)",
+    "year": 800,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Local and regional assemblies convened participants for legal judgments and collective decisions.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Public recitation of law and witnessed proceedings sustained assembly-based legal practice."
+      }
+    ]
+  },
+  {
+    "id": "town-charter",
+    "title": "Municipal charters",
+    "wiki": "Municipal charter",
+    "year": 1100,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Written grants defined local privileges, obligations, and powers of self-government.",
+    "parents": [
+      {
+        "id": "cities",
+        "type": "enabler",
+        "reason": "Urban communities required rules for markets, administration, and relationships with rulers."
+      },
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Charters recorded and authenticated privileges for later reference."
+      }
+    ]
+  },
+  {
+    "id": "magdeburg-rights",
+    "title": "Magdeburg rights",
+    "wiki": "Magdeburg rights",
+    "year": 1188,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A family of municipal laws spread rules for urban self-government across central and eastern Europe.",
+    "parents": [
+      {
+        "id": "town-charter",
+        "type": "influence",
+        "reason": "Municipal grants supplied the legal form for extending town privileges and procedures."
+      }
+    ]
+  },
+  {
+    "id": "habeas-corpus",
+    "title": "Habeas Corpus Act",
+    "wiki": "Habeas Corpus Act 1679",
+    "year": 1679,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The English act strengthened procedures requiring legal scrutiny of detention.",
+    "parents": [
+      {
+        "id": "common-law",
+        "type": "influence",
+        "reason": "The act reinforced an existing writ and judicial procedures from English common law."
+      }
+    ]
+  },
+  {
+    "id": "bill-rights",
+    "title": "English Bill of Rights",
+    "wiki": "Bill of Rights 1689",
+    "year": 1689,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The English settlement set limits on royal powers and affirmed specified parliamentary rights.",
+    "parents": [
+      {
+        "id": "parliament",
+        "type": "enabler",
+        "reason": "An established representative institution could assert and exercise the powers recorded in the settlement."
+      }
+    ]
+  },
+  {
+    "id": "us-constitution",
+    "title": "United States Constitution",
+    "wiki": "Constitution of the United States",
+    "year": 1787,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A written federal constitution distributed powers among institutions and between national and state governments.",
+    "parents": [
+      {
+        "id": "bill-rights",
+        "type": "influence",
+        "reason": "English constitutional constraints contributed to the political traditions considered by the framers."
+      }
+    ]
+  },
+  {
+    "id": "declaration-rights",
+    "title": "Declaration of the Rights of Man and of the Citizen",
+    "wiki": "Declaration of the Rights of Man and of the Citizen",
+    "year": 1789,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The French declaration articulated civil rights and principles of political legitimacy.",
+    "parents": [
+      {
+        "id": "us-constitution",
+        "type": "influence",
+        "reason": "American constitutional experiments contributed to contemporary debates about written guarantees and public authority."
+      }
+    ]
+  },
+  {
+    "id": "haitian-independence",
+    "title": "Haitian independence",
+    "wiki": "Haitian Declaration of Independence",
+    "year": 1804,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Haiti's declaration established independence after a revolution that defeated colonial rule and slavery.",
+    "parents": [
+      {
+        "id": "declaration-rights",
+        "type": "influence",
+        "reason": "Universal-rights claims sharpened disputes over colonial exclusion and slavery during the revolution."
+      }
+    ]
+  },
+  {
+    "id": "slave-trade-abolition",
+    "title": "Abolition of the British slave trade",
+    "wiki": "Slave Trade Act 1807",
+    "year": 1807,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "British legislation prohibited participation in the transatlantic slave trade under British jurisdiction.",
+    "parents": [
+      {
+        "id": "publishing",
+        "type": "enabler",
+        "reason": "Printed testimony and abolitionist campaigns expanded public awareness and organized pressure."
+      }
+    ]
+  },
+  {
+    "id": "slavery-abolition",
+    "title": "British Slavery Abolition Act",
+    "wiki": "Slavery Abolition Act 1833",
+    "year": 1833,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The act initiated abolition of slavery in much of the British Empire through a deeply unequal transition.",
+    "parents": [
+      {
+        "id": "slave-trade-abolition",
+        "type": "influence",
+        "reason": "Earlier abolition campaigns and legislation created organizations and arguments used against slavery itself."
+      }
+    ]
+  },
+  {
+    "id": "women-suffrage",
+    "title": "New Zealand women's suffrage",
+    "wiki": "Women's suffrage in New Zealand",
+    "year": 1893,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "New Zealand extended parliamentary voting rights to women after organized campaigning.",
+    "parents": [
+      {
+        "id": "newspaper",
+        "type": "enabler",
+        "reason": "Press discussion and campaign publicity helped suffrage organizers reach voters and legislators."
+      }
+    ]
+  },
+  {
+    "id": "finnish-suffrage",
+    "title": "Finland's inclusive parliamentary franchise",
+    "wiki": "Parliament of Finland",
+    "year": 1906,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Finland's parliamentary reform extended voting and candidacy rights to women as well as men.",
+    "parents": [
+      {
+        "id": "women-suffrage",
+        "type": "influence",
+        "reason": "Earlier suffrage victories provided international precedents for extending the parliamentary franchise."
+      }
+    ]
+  },
+  {
+    "id": "trade-union",
+    "title": "Trade unions",
+    "wiki": "Trade union",
+    "year": 1824,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Workers' associations organize collective representation over wages, conditions, and workplace rights.",
+    "parents": [
+      {
+        "id": "guild",
+        "type": "influence",
+        "reason": "Occupational associations supplied precedents for collective support and representation."
+      }
+    ]
+  },
+  {
+    "id": "collective-bargaining",
+    "title": "Collective bargaining",
+    "wiki": "Collective bargaining",
+    "year": 1891,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Workers' representatives and employers negotiate agreements governing employment conditions.",
+    "parents": [
+      {
+        "id": "trade-union",
+        "type": "enabler",
+        "reason": "Organized worker representation makes collective negotiation possible."
+      }
+    ]
+  },
+  {
+    "id": "social-insurance",
+    "title": "Public social insurance",
+    "wiki": "Social insurance",
+    "year": 1883,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Statutory insurance pools contributions to protect against specified risks such as illness and loss of income.",
+    "parents": [
+      {
+        "id": "insurance",
+        "type": "influence",
+        "reason": "Risk pooling and contingent benefits supplied the financial model expanded into statutory programs."
+      }
+    ]
+  },
+  {
+    "id": "ilo",
+    "title": "International Labour Organization",
+    "wiki": "International Labour Organization",
+    "year": 1919,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "An international institution brings governments, employers, and workers into labor-standard negotiations.",
+    "parents": [
+      {
+        "id": "trade-union",
+        "type": "enabler",
+        "reason": "Organized worker representatives supplied one part of its tripartite governance."
+      }
+    ]
+  },
+  {
+    "id": "peace-of-westphalia",
+    "title": "Peace of Westphalia",
+    "wiki": "Peace of Westphalia",
+    "year": 1648,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Negotiated treaties ended major European conflicts and revised political and religious arrangements.",
+    "parents": [
+      {
+        "id": "protestant-reformation",
+        "type": "influence",
+        "reason": "Confessional divisions formed part of the conflicts and settlements addressed by the treaties."
+      }
+    ]
+  },
+  {
+    "id": "congress-vienna",
+    "title": "Congress of Vienna",
+    "wiki": "Congress of Vienna",
+    "year": 1815,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Diplomatic negotiations reorganized European territorial and political arrangements after the Napoleonic wars.",
+    "parents": [
+      {
+        "id": "peace-of-westphalia",
+        "type": "influence",
+        "reason": "Earlier multilateral peace negotiations supplied precedents for settling interconnected disputes through congress diplomacy."
+      }
+    ]
+  },
+  {
+    "id": "red-cross",
+    "title": "International Committee of the Red Cross",
+    "wiki": "International Committee of the Red Cross",
+    "year": 1863,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A humanitarian organization developed neutral assistance for people affected by armed conflict.",
+    "parents": [
+      {
+        "id": "publishing",
+        "type": "enabler",
+        "reason": "Henry Dunant's published account of Solferino helped mobilize support for organized humanitarian action."
+      }
+    ]
+  },
+  {
+    "id": "geneva-conventions",
+    "title": "Geneva humanitarian conventions",
+    "wiki": "Geneva Conventions",
+    "year": 1864,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Treaties established protections for specified people and services affected by armed conflict.",
+    "parents": [
+      {
+        "id": "red-cross",
+        "type": "enabler",
+        "reason": "The committee's advocacy and diplomatic work helped bring governments to negotiate humanitarian rules."
+      }
+    ]
+  },
+  {
+    "id": "hague-conventions",
+    "title": "Hague Conventions",
+    "wiki": "Hague Conventions of 1899 and 1907",
+    "year": 1899,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "International conferences codified aspects of warfare and promoted peaceful dispute procedures.",
+    "parents": [
+      {
+        "id": "geneva-conventions",
+        "type": "influence",
+        "reason": "Existing humanitarian treaties demonstrated that states could negotiate common rules for armed conflict."
+      }
+    ]
+  },
+  {
+    "id": "league-nations",
+    "title": "League of Nations",
+    "wiki": "League of Nations",
+    "year": 1920,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The League created a permanent international organization for collective security and cooperation.",
+    "parents": [
+      {
+        "id": "hague-conventions",
+        "type": "influence",
+        "reason": "Prewar arbitration and diplomatic initiatives supplied precedents for institutionalized international dispute management."
+      }
+    ]
+  },
+  {
+    "id": "united-nations",
+    "title": "United Nations",
+    "wiki": "United Nations",
+    "year": 1945,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The UN established a standing international framework for peace, security, and cooperation.",
+    "parents": [
+      {
+        "id": "league-nations",
+        "type": "influence",
+        "reason": "The League's experience informed the design and limits of the new organization's institutions."
+      }
+    ]
+  },
+  {
+    "id": "universal-human-rights",
+    "title": "Universal Declaration of Human Rights",
+    "wiki": "Universal Declaration of Human Rights",
+    "year": 1948,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The declaration articulated common civil, political, social, and economic rights.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "UN institutions provided the forum and commission that drafted and adopted the declaration."
+      },
+      {
+        "id": "declaration-rights",
+        "type": "influence",
+        "reason": "Earlier declarations contributed to the tradition of publicly articulating rights."
+      }
+    ]
+  },
+  {
+    "id": "genocide-convention",
+    "title": "Genocide Convention",
+    "wiki": "Genocide Convention",
+    "year": 1948,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "An international treaty defined genocide and committed parties to prevention and punishment.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "UN negotiations supplied the forum for drafting and adopting the convention."
+      }
+    ]
+  },
+  {
+    "id": "european-human-rights",
+    "title": "European Convention on Human Rights",
+    "wiki": "European Convention on Human Rights",
+    "year": 1950,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A regional treaty established enforceable human-rights commitments and a judicial mechanism.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "influence",
+        "reason": "The declaration provided a reference for the rights developed into regional treaty commitments."
+      }
+    ]
+  },
+  {
+    "id": "anti-apartheid",
+    "title": "Anti-Apartheid Movement",
+    "wiki": "Anti-Apartheid Movement",
+    "year": 1959,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "The British Anti-Apartheid Movement organized international boycotts and pressure against apartheid in South Africa.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "influence",
+        "reason": "Common human-rights language supported arguments against legally enforced racial exclusion."
+      },
+      {
+        "id": "satyagraha",
+        "type": "influence",
+        "reason": "Earlier South African nonviolent campaigns supplied precedents considered by some resistance organizers."
+      }
+    ]
+  },
+  {
+    "id": "indian-constitution",
+    "title": "Constitution of India",
+    "wiki": "Constitution of India",
+    "year": 1950,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "India's constitution established democratic institutions, fundamental rights, and a framework for public authority.",
+    "parents": [
+      {
+        "id": "parliament",
+        "type": "influence",
+        "reason": "Parliamentary government supplied an institutional model adapted within India's constitutional settlement."
+      },
+      {
+        "id": "us-constitution",
+        "type": "influence",
+        "reason": "The United States' written constitutional arrangements informed selected provisions and debates."
+      }
+    ]
+  },
+  {
+    "id": "slavery-convention",
+    "title": "Slavery Convention",
+    "wiki": "1926 Slavery Convention",
+    "year": 1926,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "An international agreement committed parties to suppress slavery and the slave trade.",
+    "parents": [
+      {
+        "id": "slavery-abolition",
+        "type": "influence",
+        "reason": "Earlier abolition laws and campaigns supplied precedents for international commitments."
+      },
+      {
+        "id": "league-nations",
+        "type": "enabler",
+        "reason": "League diplomacy supplied the negotiating framework for the convention."
+      }
+    ]
+  },
+  {
+    "id": "unesco",
+    "title": "UNESCO",
+    "wiki": "UNESCO",
+    "year": 1945,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "An international organization coordinates cooperation in education, science, culture, and communication.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "The UN framework provided a setting for establishing specialized international cooperation."
+      }
+    ]
+  },
+  {
+    "id": "world-heritage",
+    "title": "World Heritage Convention",
+    "wiki": "World Heritage Convention",
+    "year": 1972,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A treaty established cooperation for identifying and protecting cultural and natural heritage.",
+    "parents": [
+      {
+        "id": "unesco",
+        "type": "enabler",
+        "reason": "UNESCO coordinated negotiations and administers the convention's institutional framework."
+      }
+    ]
+  },
+  {
+    "id": "intangible-heritage",
+    "title": "Intangible Cultural Heritage Convention",
+    "wiki": "Convention for the Safeguarding of the Intangible Cultural Heritage",
+    "year": 2003,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The convention organized international support for safeguarding living cultural traditions and practices.",
+    "parents": [
+      {
+        "id": "unesco",
+        "type": "enabler",
+        "reason": "UNESCO supplied the forum for negotiations and ongoing cooperation."
+      },
+      {
+        "id": "world-heritage",
+        "type": "influence",
+        "reason": "Earlier heritage cooperation supplied precedents while revealing the need to address living traditions."
+      }
+    ]
+  },
+  {
+    "id": "nonproliferation-treaty",
+    "title": "Nuclear Non-Proliferation Treaty",
+    "wiki": "Treaty on the Non-Proliferation of Nuclear Weapons",
+    "year": 1968,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A treaty established commitments concerning nuclear weapons proliferation, peaceful use, and disarmament.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "UN-linked diplomatic forums supported negotiations over nuclear arms control."
+      }
+    ]
+  },
+  {
+    "id": "antarctic-treaty",
+    "title": "Antarctic Treaty",
+    "wiki": "Antarctic Treaty System",
+    "year": 1959,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The Antarctic treaty reserved the region for peaceful activities and scientific cooperation.",
+    "parents": [
+      {
+        "id": "logistics",
+        "type": "enabler",
+        "reason": "Organized expeditions and station provisioning sustained the Antarctic presence whose peaceful management the treaty coordinated."
+      }
+    ]
+  },
+  {
+    "id": "outer-space-treaty",
+    "title": "Outer Space Treaty",
+    "wiki": "Outer Space Treaty",
+    "year": 1967,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A treaty established principles governing states' exploration and use of outer space.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "UN negotiations provided the forum in which the treaty's principles were developed."
+      }
+    ]
+  },
+  {
+    "id": "montreal-protocol",
+    "title": "Montreal Protocol",
+    "wiki": "Montreal Protocol",
+    "year": 1987,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "An international agreement coordinated controls on substances that damage the ozone layer.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "UN environmental diplomacy supported negotiation and implementation of the agreement."
+      }
+    ]
+  },
+  {
+    "id": "paris-agreement",
+    "title": "Paris Agreement",
+    "wiki": "Paris Agreement",
+    "year": 2015,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The climate agreement organized national commitments and recurring international review of mitigation efforts.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "The UN climate treaty process supplied the negotiating and review framework."
+      }
+    ]
+  },
+  {
+    "id": "ramsar-convention",
+    "title": "Ramsar Convention",
+    "wiki": "Ramsar Convention",
+    "year": 1971,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The wetlands treaty coordinated conservation and responsible use of internationally significant wetlands.",
+    "parents": [
+      {
+        "id": "unesco",
+        "type": "enabler",
+        "reason": "UNESCO's treaty-depositary role provides formal custody and communication for the convention and its parties."
+      }
+    ]
+  },
+  {
+    "id": "cites",
+    "title": "CITES",
+    "wiki": "CITES",
+    "year": 1973,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A treaty regulates international trade in listed wildlife species through permit systems.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Cross-border wildlife commerce supplied the activity addressed by coordinated permits and restrictions."
+      }
+    ]
+  },
+  {
+    "id": "bretton-woods",
+    "title": "Bretton Woods institutions",
+    "wiki": "Bretton Woods Conference",
+    "year": 1944,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "International negotiations established frameworks for monetary cooperation and reconstruction finance.",
+    "parents": [
+      {
+        "id": "central-bank",
+        "type": "enabler",
+        "reason": "National monetary institutions provided counterparts for coordinated financial arrangements."
+      }
+    ]
+  },
+  {
+    "id": "european-economic-community",
+    "title": "European Economic Community",
+    "wiki": "European Economic Community",
+    "year": 1957,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "European states established institutions for a common market and coordinated economic policies.",
+    "parents": [
+      {
+        "id": "customs-union",
+        "type": "influence",
+        "reason": "Earlier customs unions provided a model for reducing internal barriers through shared rules."
+      }
+    ]
+  },
+  {
+    "id": "asean",
+    "title": "ASEAN",
+    "wiki": "ASEAN",
+    "year": 1967,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Southeast Asian states created a regional organization for political and economic cooperation.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "influence",
+        "reason": "The UN Charter supplied principles referenced in the organization's founding declaration."
+      }
+    ]
+  },
+  {
+    "id": "organization-african-unity",
+    "title": "Organization of African Unity",
+    "wiki": "Organisation of African Unity",
+    "year": 1963,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "African states formed a continental organization supporting cooperation, sovereignty, and decolonization.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "influence",
+        "reason": "International principles of sovereign equality informed the organization's charter."
+      }
+    ]
+  },
+  {
+    "id": "african-union",
+    "title": "African Union",
+    "wiki": "African Union",
+    "year": 2002,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The African Union established expanded continental institutions for cooperation, peace, and development.",
+    "parents": [
+      {
+        "id": "organization-african-unity",
+        "type": "foundation",
+        "reason": "The earlier organization supplied membership and institutions reworked into the African Union."
+      }
+    ]
+  },
+  {
+    "id": "pacific-islands-forum",
+    "title": "Pacific Islands Forum",
+    "wiki": "Pacific Islands Forum",
+    "year": 1971,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Pacific governments established a regional forum for shared political and economic concerns.",
+    "parents": []
+  },
+  {
+    "id": "truth-reconciliation",
+    "title": "South African Truth and Reconciliation Commission",
+    "wiki": "Truth and Reconciliation Commission (South Africa)",
+    "year": 1995,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A public commission investigated apartheid-era abuses through testimony and specified reconciliation procedures.",
+    "parents": [
+      {
+        "id": "anti-apartheid",
+        "type": "enabler",
+        "reason": "The end of apartheid created the political opening for public examination of past abuses."
+      }
+    ]
+  },
+  {
+    "id": "restorative-justice",
+    "title": "Restorative justice programs",
+    "wiki": "Restorative justice",
+    "year": 1974,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Structured processes bring affected parties into addressing harm, responsibility, and possible repair.",
+    "parents": [
+      {
+        "id": "christianity",
+        "type": "influence",
+        "reason": "Mennonite commitments to peace and reconciliation helped motivate early Canadian victim-offender mediation programs."
+      }
+    ]
+  },
+  {
+    "id": "copyright",
+    "title": "Statutory copyright",
+    "wiki": "Statute of Anne",
+    "year": 1710,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The British statute established time-limited legal rights over the printing of books.",
+    "parents": [
+      {
+        "id": "publishing",
+        "type": "enabler",
+        "reason": "The commercial book trade created conflicts over copying and ownership addressed by the statute."
+      }
+    ]
+  },
+  {
+    "id": "berne-convention",
+    "title": "Berne Convention",
+    "wiki": "Berne Convention",
+    "year": 1886,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "An international convention coordinated protection for authors' literary and artistic works.",
+    "parents": [
+      {
+        "id": "copyright",
+        "type": "influence",
+        "reason": "National author-rights laws supplied the protections extended across participating countries."
+      }
+    ]
+  },
+  {
+    "id": "chess",
+    "title": "Chess",
+    "wiki": "Chess",
+    "year": 600,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "A strategic board-game tradition developed from South Asian predecessors and spread through multiple regions.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Commercial and cultural contacts helped carry the game between regions."
+      }
+    ]
+  },
+  {
+    "id": "go",
+    "title": "Go",
+    "wiki": "Go (game)",
+    "year": -500,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "The Chinese board game uses territorial placement and capture within a highly developed strategic tradition.",
+    "parents": []
+  },
+  {
+    "id": "ancient-olympics",
+    "title": "Ancient Olympic Games",
+    "wiki": "Ancient Olympic Games",
+    "year": -776,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Recurring Greek athletic festivals combined competition with religious and intercommunity gatherings.",
+    "parents": [
+      {
+        "id": "religion",
+        "type": "influence",
+        "reason": "The sanctuary of Zeus and religious observances formed the festival's setting."
+      }
+    ]
+  },
+  {
+    "id": "association-football",
+    "title": "Codified association football",
+    "wiki": "Association football",
+    "year": 1863,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Shared rules established a widely reproducible form of team football.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Published rules allowed clubs and officials to use a common specification of play."
+      }
+    ]
+  },
+  {
+    "id": "greek-theatre",
+    "title": "Greek theatre",
+    "wiki": "Theatre of ancient Greece",
+    "year": -500,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Greek festivals developed organized dramatic performances with distinct genres and civic audiences.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "influence",
+        "reason": "Narrative and poetic performance supplied material and practices adapted into drama."
+      },
+      {
+        "id": "religion",
+        "type": "influence",
+        "reason": "Festivals honoring Dionysus provided a major institutional setting for dramatic competition."
+      }
+    ]
+  },
+  {
+    "id": "noh",
+    "title": "Noh theatre",
+    "wiki": "Noh",
+    "year": 1350,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Japanese Noh combines stylized acting, music, dance, and poetic texts in established performance forms.",
+    "parents": [
+      {
+        "id": "music",
+        "type": "enabler",
+        "reason": "Chant and instrumental accompaniment organize the timing and expression of performances."
+      },
+      {
+        "id": "dance",
+        "type": "influence",
+        "reason": "Earlier Japanese dance and performance traditions contributed stylized movement."
+      }
+    ]
+  },
+  {
+    "id": "kabuki",
+    "title": "Kabuki",
+    "wiki": "Kabuki",
+    "year": 1603,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Kabuki developed a popular Japanese theatrical tradition combining dramatic acting, dance, and music.",
+    "parents": [
+      {
+        "id": "dance",
+        "type": "influence",
+        "reason": "Izumo no Okuni's staged dance performances supplied an early setting for the new theatrical form."
+      }
+    ]
+  },
+  {
+    "id": "peking-opera",
+    "title": "Peking opera",
+    "wiki": "Peking opera",
+    "year": 1790,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Peking opera combines singing, speech, movement, and acrobatic performance within codified theatrical roles.",
+    "parents": [
+      {
+        "id": "music",
+        "type": "enabler",
+        "reason": "Distinct vocal and instrumental conventions coordinate dramatic action."
+      },
+      {
+        "id": "dance",
+        "type": "influence",
+        "reason": "Stylized movement contributes expressive gestures and staged action."
+      }
+    ]
+  },
+  {
+    "id": "sanskrit-drama",
+    "title": "Sanskrit drama",
+    "wiki": "Sanskrit drama",
+    "year": 100,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Sanskrit dramatic traditions developed literary plays and theories of staged aesthetic experience.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "influence",
+        "reason": "Poetic recitation and narrative performance supplied material for dramatic composition."
+      }
+    ]
+  },
+  {
+    "id": "epic-gilgamesh",
+    "title": "Epic of Gilgamesh",
+    "wiki": "Epic of Gilgamesh",
+    "year": -1800,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Written versions organized Mesopotamian heroic narratives into an influential literary epic.",
+    "parents": [
+      {
+        "id": "cuneiform",
+        "type": "enabler",
+        "reason": "Cuneiform tablets preserved versions of the narrative across scribal communities."
+      },
+      {
+        "id": "oral-tradition",
+        "type": "influence",
+        "reason": "Earlier heroic storytelling contributed narrative material assembled in written versions."
+      }
+    ]
+  },
+  {
+    "id": "iliad",
+    "title": "Iliad",
+    "wiki": "Iliad",
+    "year": -750,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "The Iliad organized Greek heroic tradition into an extensive poetic account of the Trojan War.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "influence",
+        "reason": "Formulaic heroic performance supplied the epic's narrative and compositional tradition."
+      },
+      {
+        "id": "greek-alphabet",
+        "type": "enabler",
+        "reason": "Alphabetic writing enabled lasting textual versions of the poem."
+      }
+    ]
+  },
+  {
+    "id": "griot",
+    "title": "Mande griot traditions",
+    "wiki": "Griot",
+    "year": 1300,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Specialist West African performers transmit genealogies, histories, praise, and advice through speech and music.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Memorized narratives and public recitation sustain historical transmission."
+      },
+      {
+        "id": "music",
+        "type": "enabler",
+        "reason": "Musical performance helps present praise and remembered narratives."
+      }
+    ]
+  },
+  {
+    "id": "calligraphy",
+    "title": "Calligraphy",
+    "wiki": "Calligraphy",
+    "year": -200,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Expressive writing traditions develop the visual form of characters into a cultivated art.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "foundation",
+        "reason": "Recognizable written characters supply the forms developed through expressive execution."
+      }
+    ]
+  },
+  {
+    "id": "illuminated-manuscripts",
+    "title": "Illuminated manuscripts",
+    "wiki": "Illuminated manuscript",
+    "year": 400,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Decorated manuscripts combine text with ornamental and pictorial programs.",
+    "parents": [
+      {
+        "id": "codex",
+        "type": "enabler",
+        "reason": "Bound pages supplied a navigable surface for coordinated text and decoration."
+      },
+      {
+        "id": "parchment",
+        "type": "enabler",
+        "reason": "Prepared skins supported durable painted and written page surfaces."
+      }
+    ]
+  },
+  {
+    "id": "persian-miniature",
+    "title": "Persian miniature painting",
+    "wiki": "Persian miniature",
+    "year": 1200,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Persian manuscript painting developed intricate pictorial compositions for literary and courtly books.",
+    "parents": [
+      {
+        "id": "paper",
+        "type": "enabler",
+        "reason": "Paper pages supported richly painted book illustrations."
+      },
+      {
+        "id": "calligraphy",
+        "type": "enabler",
+        "reason": "Calligraphic book design integrated paintings with carefully composed texts."
+      }
+    ]
+  },
+  {
+    "id": "linear-perspective",
+    "title": "Linear perspective in painting",
+    "wiki": "Perspective (graphical)",
+    "year": 1420,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Geometric projection methods organize pictured space around a consistent viewpoint.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Written artistic treatises helped explain and circulate the rules of projection."
+      }
+    ]
+  },
+  {
+    "id": "oil-painting",
+    "title": "Oil painting practice",
+    "wiki": "Oil painting",
+    "year": 1400,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Painters developed oil-based techniques supporting layered color, tonal transitions, and revised surfaces.",
+    "parents": [
+      {
+        "id": "cities",
+        "type": "enabler",
+        "reason": "Urban patronage and specialized workshops supported the refinement and transmission of painting techniques."
+      }
+    ]
+  },
+  {
+    "id": "ukiyo-e",
+    "title": "Ukiyo-e",
+    "wiki": "Ukiyo-e",
+    "year": 1650,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Japanese artists and publishers produced paintings and prints of performers, landscapes, and urban life.",
+    "parents": [
+      {
+        "id": "woodblock-printing",
+        "type": "enabler",
+        "reason": "Relief printing allowed images to circulate in multiple impressions."
+      },
+      {
+        "id": "publishing",
+        "type": "enabler",
+        "reason": "Publishers coordinated artists, craftspeople, and markets for print editions."
+      }
+    ]
+  },
+  {
+    "id": "tale-genji",
+    "title": "The Tale of Genji",
+    "wiki": "The Tale of Genji",
+    "year": 1008,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Murasaki Shikibu's long prose narrative portrayed court life and complex relationships in Heian Japan.",
+    "parents": [
+      {
+        "id": "kana",
+        "type": "enabler",
+        "reason": "Japanese syllabic writing supported the vernacular prose tradition in which the work was composed."
+      },
+      {
+        "id": "kyoto",
+        "type": "enabler",
+        "reason": "The Heian court provided the social world and literary setting of the narrative."
+      }
+    ]
+  },
+  {
+    "id": "opera",
+    "title": "Opera",
+    "wiki": "Opera",
+    "year": 1600,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Opera combined staged drama with sustained musical composition and vocal performance.",
+    "parents": [
+      {
+        "id": "music",
+        "type": "enabler",
+        "reason": "Composed vocal and instrumental forms carry the dramatic narrative."
+      },
+      {
+        "id": "greek-theatre",
+        "type": "influence",
+        "reason": "Attempts to reinterpret ancient Greek drama influenced early Florentine experiments."
+      }
+    ]
+  },
+  {
+    "id": "ballet",
+    "title": "Ballet",
+    "wiki": "Ballet",
+    "year": 1581,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Ballet developed choreographed theatrical dance through court performance and later professional training.",
+    "parents": [
+      {
+        "id": "dance",
+        "type": "foundation",
+        "reason": "Patterned movement supplied the practice formalized into choreographic and training traditions."
+      }
+    ]
+  },
+  {
+    "id": "jazz",
+    "title": "Jazz",
+    "wiki": "Jazz",
+    "year": 1900,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "African American musicians developed traditions combining improvisation, rhythmic interplay, and multiple musical influences.",
+    "parents": [
+      {
+        "id": "music",
+        "type": "enabler",
+        "reason": "Existing African American and European musical practices supplied rhythmic, melodic, and harmonic resources."
+      }
+    ]
+  },
+  {
+    "id": "samba",
+    "title": "Samba",
+    "wiki": "Samba",
+    "year": 1917,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Afro-Brazilian musical and dance traditions developed widely circulating forms associated with samba.",
+    "parents": [
+      {
+        "id": "music",
+        "type": "enabler",
+        "reason": "Percussive ensemble and song traditions organize samba performance."
+      },
+      {
+        "id": "dance",
+        "type": "enabler",
+        "reason": "Social dance provides a central setting for rhythmic participation."
+      }
+    ]
+  },
+  {
+    "id": "gamelan",
+    "title": "Gamelan",
+    "wiki": "Gamelan",
+    "year": 800,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Indonesian ensemble traditions organize interlocking musical parts within distinctive performance communities.",
+    "parents": [
+      {
+        "id": "music",
+        "type": "foundation",
+        "reason": "Layered instrumental patterns supply the musical organization of the ensemble tradition."
+      }
+    ]
+  },
+  {
+    "id": "haka",
+    "title": "Haka",
+    "wiki": "Haka",
+    "year": 1769,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Māori haka use coordinated posture, movement, and vocal expression for varied communal purposes.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Teaching and performance transmit words, histories, and purposes across generations."
+      },
+      {
+        "id": "dance",
+        "type": "enabler",
+        "reason": "Coordinated movement supports collective expression and participation."
+      }
+    ]
+  },
+  {
+    "id": "tango",
+    "title": "Tango",
+    "wiki": "Tango",
+    "year": 1880,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Río de la Plata communities developed a partner-dance and musical tradition with international circulation.",
+    "parents": [
+      {
+        "id": "dance",
+        "type": "foundation",
+        "reason": "Social partner dancing supplied practices developed into tango's distinctive movement."
+      },
+      {
+        "id": "music",
+        "type": "enabler",
+        "reason": "Distinct musical rhythms and phrasing organize dancers' timing."
+      }
+    ]
+  },
+  {
+    "id": "capoeira",
+    "title": "Capoeira",
+    "wiki": "Capoeira",
+    "year": 1700,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Afro-Brazilian capoeira combines physical contest, movement, music, and social performance.",
+    "parents": [
+      {
+        "id": "music",
+        "type": "enabler",
+        "reason": "Songs and rhythmic accompaniment organize participation and the pace of the roda."
+      },
+      {
+        "id": "dance",
+        "type": "influence",
+        "reason": "Expressive movement traditions contribute to its performed physical vocabulary."
+      }
+    ]
+  },
+  {
+    "id": "public-museum",
+    "title": "Public museums",
+    "wiki": "Museum",
+    "year": 1683,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Museums preserve collections and make selected objects accessible for public study and interpretation.",
+    "parents": [
+      {
+        "id": "university",
+        "type": "enabler",
+        "reason": "University collections and scholarly curation provided a setting for early public museum institutions."
+      }
+    ]
+  }
+]

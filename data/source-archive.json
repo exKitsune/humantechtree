@@ -1,0 +1,11 @@
+{
+  "name": "wikipedia_en_all_maxi_2026-08.zim",
+  "source": "https://download.kiwix.org/zim/wikipedia/wikipedia_en_all_maxi_2026-08.zim",
+  "manifest": "https://download.kiwix.org/zim/wikipedia/wikipedia_en_all_maxi_2026-08.zim.meta4",
+  "bytes": 127418087648,
+  "sha256": "34162d18b9f96f494eac48a73a309c72e0bc95d85f76be405d0f5de795854aa6",
+  "verified": "2026-10-07",
+  "language": "en",
+  "catalogArticlesMatched": 1000,
+  "claimReview": "pending"
+}

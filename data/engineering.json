@@ -1,0 +1,6599 @@
+[
+  {
+    "id": "stone-tools",
+    "title": "Stone tool",
+    "wiki": "Stone tool",
+    "year": -3300000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Knapped stones provided durable cutting edges for processing plants and animals.",
+    "parents": []
+  },
+  {
+    "id": "controlled-fire",
+    "title": "Controlled fire",
+    "wiki": "Control of fire by early humans",
+    "year": -400000,
+    "domain": "materials",
+    "kind": "practice",
+    "summary": "Managed fire supplied heat for cooking and later material processing.",
+    "parents": []
+  },
+  {
+    "id": "hafting",
+    "title": "Hafting",
+    "wiki": "Hafting",
+    "year": -200000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Attaching a tool head to a handle improved leverage and reach.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Stone cutting edges became working heads of composite tools."
+      }
+    ]
+  },
+  {
+    "id": "birch-tar",
+    "title": "Birch tar",
+    "wiki": "Birch tar",
+    "year": -200000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Heated birch bark yielded an adhesive used in composite tools.",
+    "parents": [
+      {
+        "id": "controlled-fire",
+        "type": "foundation",
+        "reason": "Controlled heating releases tar from bark."
+      }
+    ]
+  },
+  {
+    "id": "cordage",
+    "title": "Fiber cordage",
+    "wiki": "Rope",
+    "year": -30000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Twisted plant fibers produced strong flexible cords.",
+    "parents": []
+  },
+  {
+    "id": "sewing-needle",
+    "title": "Eyed sewing needle",
+    "wiki": "Sewing needle",
+    "year": -40000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Pierced bone needles enabled fitted sewn garments.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Stone edges shaped and perforated bone blanks."
+      }
+    ]
+  },
+  {
+    "id": "basketry",
+    "title": "Basket weaving",
+    "wiki": "Basket weaving",
+    "year": -10000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Interlaced flexible fibers formed portable containers.",
+    "parents": [
+      {
+        "id": "cordage",
+        "type": "enabler",
+        "reason": "Fiber preparation supplied pliable strands for interlacing."
+      }
+    ]
+  },
+  {
+    "id": "pottery",
+    "title": "Pottery",
+    "wiki": "Pottery",
+    "year": -20000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Firing shaped clay produced durable vessels in prehistoric East Asia.",
+    "parents": [
+      {
+        "id": "controlled-fire",
+        "type": "foundation",
+        "reason": "Fire hardened clay into a water-resistant ceramic."
+      }
+    ]
+  },
+  {
+    "id": "kiln",
+    "title": "Kiln",
+    "wiki": "Kiln",
+    "year": -6000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Enclosed firing chambers improved control of ceramic heating.",
+    "parents": [
+      {
+        "id": "pottery",
+        "type": "enabler",
+        "reason": "Pottery production created demand for controlled firing environments."
+      },
+      {
+        "id": "controlled-fire",
+        "type": "foundation",
+        "reason": "Managed combustion supplied sustained heat inside the firing chamber."
+      }
+    ]
+  },
+  {
+    "id": "weaving",
+    "title": "Weaving",
+    "wiki": "Weaving",
+    "year": -7000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Interlacing warp and weft threads created continuous fabrics.",
+    "parents": [
+      {
+        "id": "cordage",
+        "type": "enabler",
+        "reason": "Spun and twisted fibers supplied textile strands."
+      }
+    ]
+  },
+  {
+    "id": "loom",
+    "title": "Loom",
+    "wiki": "Loom",
+    "year": -6000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Frames held warp threads under tension during weaving.",
+    "parents": [
+      {
+        "id": "weaving",
+        "type": "enabler",
+        "reason": "Warp-and-weft fabric construction determined the loom's function."
+      }
+    ]
+  },
+  {
+    "id": "spindle",
+    "title": "Spinning spindle",
+    "wiki": "Spindle (textiles)",
+    "year": -7000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Rotating spindles twisted fibers into usable yarn.",
+    "parents": [
+      {
+        "id": "cordage",
+        "type": "enabler",
+        "reason": "Fiber twisting provided the operation mechanized by the spindle."
+      }
+    ]
+  },
+  {
+    "id": "felt",
+    "title": "Felt",
+    "wiki": "Felt",
+    "year": -6000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Matted animal fibers formed insulating cloth without weaving.",
+    "parents": []
+  },
+  {
+    "id": "leather",
+    "title": "Leather",
+    "wiki": "Leather",
+    "year": -5000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Treated hides supplied flexible material for clothing and equipment.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Cutting tools prepared and scraped animal hides."
+      }
+    ]
+  },
+  {
+    "id": "lime-mortar",
+    "title": "Lime mortar",
+    "wiki": "Lime mortar",
+    "year": -7000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Burned limestone supplied lime binders for masonry and plaster.",
+    "parents": [
+      {
+        "id": "controlled-fire",
+        "type": "enabler",
+        "reason": "High heat converts limestone into reactive quicklime."
+      }
+    ]
+  },
+  {
+    "id": "adobe",
+    "title": "Adobe",
+    "wiki": "Adobe",
+    "year": -8000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Sun-dried earth blocks provided reusable units for building walls.",
+    "parents": []
+  },
+  {
+    "id": "fired-brick",
+    "title": "Brick",
+    "wiki": "Brick",
+    "year": -4000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Fired clay bricks improved resistance to moisture and wear.",
+    "parents": [
+      {
+        "id": "kiln",
+        "type": "enabler",
+        "reason": "Kilns supplied sustained heat for ceramic building units."
+      }
+    ]
+  },
+  {
+    "id": "metallurgy",
+    "title": "Metalworking and metallurgy",
+    "wiki": "Metallurgy",
+    "year": -6000,
+    "domain": "materials",
+    "kind": "practice",
+    "summary": "People developed techniques for extracting and shaping useful metals.",
+    "parents": [
+      {
+        "id": "controlled-fire",
+        "type": "enabler",
+        "reason": "Heat made annealing and later ore reduction possible."
+      },
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Mining and crushing tools prepared ore and shaped early metalworking equipment."
+      }
+    ]
+  },
+  {
+    "id": "copper-smelting",
+    "title": "Copper smelting",
+    "wiki": "Copper extraction",
+    "year": -5000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Smelting copper ores expanded metal supply beyond native copper.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Metallurgical heating techniques enabled extraction from ores."
+      }
+    ]
+  },
+  {
+    "id": "bronze",
+    "title": "Bronze",
+    "wiki": "Bronze",
+    "year": -3300,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Copper alloys produced harder cast tools and objects.",
+    "parents": [
+      {
+        "id": "copper-smelting",
+        "type": "foundation",
+        "reason": "Smelted copper supplied the principal alloy constituent."
+      }
+    ]
+  },
+  {
+    "id": "lost-wax-casting",
+    "title": "Lost-wax casting",
+    "wiki": "Lost-wax casting",
+    "year": -3700,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Disposable wax models permitted casting complex metal shapes.",
+    "parents": [
+      {
+        "id": "copper-smelting",
+        "type": "enabler",
+        "reason": "Molten copper could fill refractory molds around wax patterns."
+      }
+    ]
+  },
+  {
+    "id": "forging",
+    "title": "Forging",
+    "wiki": "Forging",
+    "year": -4500,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Hammering metal changed its shape and mechanical properties.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Metalworking supplied workable metal and annealing methods."
+      }
+    ]
+  },
+  {
+    "id": "glassmaking",
+    "title": "Glassmaking",
+    "wiki": "History of glass",
+    "year": -3500,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Heating silica-rich mixtures produced manufactured glass.",
+    "parents": [
+      {
+        "id": "kiln",
+        "type": "enabler",
+        "reason": "High-temperature furnaces supplied heat to melt glass mixtures."
+      },
+      {
+        "id": "metallurgy",
+        "type": "influence",
+        "reason": "Ancient high-temperature crafts shared furnace and mineral-processing knowledge."
+      }
+    ]
+  },
+  {
+    "id": "glassblowing",
+    "title": "Glassblowing",
+    "wiki": "Glassblowing",
+    "year": -50,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Inflating molten glass made hollow vessels quickly.",
+    "parents": [
+      {
+        "id": "glassmaking",
+        "type": "foundation",
+        "reason": "Molten glass can be shaped while remaining plastic."
+      }
+    ]
+  },
+  {
+    "id": "porcelain",
+    "title": "Porcelain",
+    "wiki": "Porcelain",
+    "year": 700,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "High-fired ceramics in China combined hardness with translucency.",
+    "parents": [
+      {
+        "id": "kiln",
+        "type": "enabler",
+        "reason": "Kilns capable of sustained high heat vitrified ceramic bodies."
+      }
+    ]
+  },
+  {
+    "id": "glaze",
+    "title": "Ceramic glaze",
+    "wiki": "Ceramic glaze",
+    "year": -1500,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Glasslike surface coatings sealed and decorated ceramic wares.",
+    "parents": [
+      {
+        "id": "glassmaking",
+        "type": "foundation",
+        "reason": "Glass-forming mixtures provided fusible ceramic coatings."
+      }
+    ]
+  },
+  {
+    "id": "iron-smelting",
+    "title": "Iron smelting",
+    "wiki": "Ferrous metallurgy",
+    "year": -1500,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Ore reduction established iron as a practical toolmaking material.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Furnace control and metalworking knowledge supported iron extraction."
+      }
+    ]
+  },
+  {
+    "id": "bloomery",
+    "title": "Bloomery",
+    "wiki": "Bloomery",
+    "year": -1200,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Small furnaces reduced iron ore into workable porous blooms.",
+    "parents": [
+      {
+        "id": "iron-smelting",
+        "type": "enabler",
+        "reason": "Iron reduction supplied the operating principle of bloom furnaces."
+      }
+    ]
+  },
+  {
+    "id": "steel",
+    "title": "Iron-carbon steel",
+    "wiki": "Steel",
+    "year": -1000,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Controlled carbon content gave iron greater hardness and strength.",
+    "parents": [
+      {
+        "id": "iron-smelting",
+        "type": "enabler",
+        "reason": "Smelted iron supplied the base metal for carbon adjustment."
+      }
+    ]
+  },
+  {
+    "id": "cast-iron",
+    "title": "Cast iron",
+    "wiki": "Cast iron",
+    "year": -500,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Chinese foundries produced iron castings from liquid metal.",
+    "parents": [
+      {
+        "id": "iron-smelting",
+        "type": "enabler",
+        "reason": "Iron extraction supplied metal for higher-temperature melting."
+      }
+    ]
+  },
+  {
+    "id": "blast-furnace",
+    "title": "Blast furnace ironmaking",
+    "wiki": "Blast furnace",
+    "year": -200,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Forced-draft furnaces supported continuous production of molten iron.",
+    "parents": [
+      {
+        "id": "cast-iron",
+        "type": "enabler",
+        "reason": "Casting practice encouraged furnaces reaching iron-melting temperatures."
+      },
+      {
+        "id": "charcoal",
+        "type": "foundation",
+        "reason": "Charcoal supplied fuel and reducing carbon for early iron furnaces."
+      }
+    ]
+  },
+  {
+    "id": "wootz-steel",
+    "title": "Wootz steel",
+    "wiki": "Wootz steel",
+    "year": -300,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "South Asian crucible methods produced high-carbon steel ingots.",
+    "parents": [
+      {
+        "id": "steel",
+        "type": "foundation",
+        "reason": "Iron-carbon metallurgy supplied feedstock for controlled crucible melting."
+      }
+    ]
+  },
+  {
+    "id": "crucible-steel",
+    "title": "Crucible steel",
+    "wiki": "Crucible steel",
+    "year": 1740,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Crucible melting produced more uniform tool steel.",
+    "parents": [
+      {
+        "id": "steel",
+        "type": "foundation",
+        "reason": "Steel feedstock could be remelted and homogenized in crucibles."
+      },
+      {
+        "id": "kiln",
+        "type": "enabler",
+        "reason": "Refractory furnaces maintained the heat needed to melt steel charges."
+      }
+    ]
+  },
+  {
+    "id": "puddling",
+    "title": "Puddling (metallurgy)",
+    "wiki": "Puddling (metallurgy)",
+    "year": 1784,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Stirring molten pig iron removed carbon to make wrought iron.",
+    "parents": [
+      {
+        "id": "cast-iron",
+        "type": "foundation",
+        "reason": "High-carbon cast iron supplied feedstock for refining."
+      }
+    ]
+  },
+  {
+    "id": "bessemer",
+    "title": "Bessemer steelmaking",
+    "wiki": "Bessemer process",
+    "year": 1856,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Air blown through molten iron enabled rapid bulk steelmaking.",
+    "parents": [
+      {
+        "id": "cast-iron",
+        "type": "foundation",
+        "reason": "Molten pig iron provided carbon-rich converter feedstock."
+      },
+      {
+        "id": "blast-furnace",
+        "type": "foundation",
+        "reason": "Blast furnaces supplied molten pig iron for converter refining."
+      }
+    ]
+  },
+  {
+    "id": "open-hearth",
+    "title": "Open-hearth steelmaking",
+    "wiki": "Open hearth furnace",
+    "year": 1865,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Regenerative furnaces enabled large controlled steel batches.",
+    "parents": [
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "Steelmaking established the composition targeted by furnace refining."
+      }
+    ]
+  },
+  {
+    "id": "basic-oxygen",
+    "title": "Basic oxygen steelmaking",
+    "wiki": "Basic oxygen steelmaking",
+    "year": 1952,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Oxygen converters accelerated large-scale steel refining.",
+    "parents": [
+      {
+        "id": "bessemer",
+        "type": "enabler",
+        "reason": "Converter practice established gas-driven oxidation of molten iron."
+      }
+    ]
+  },
+  {
+    "id": "electric-arc-furnace",
+    "title": "Electric arc furnace",
+    "wiki": "Electric arc furnace",
+    "year": 1900,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Electric arcs melted scrap and alloys for steel production.",
+    "parents": [
+      {
+        "id": "electric-generator",
+        "type": "enabler",
+        "reason": "Generators supplied electricity for high-temperature arc heating."
+      },
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "Steelmaking experience supplied alloy targets and refining practice."
+      }
+    ]
+  },
+  {
+    "id": "stainless-steel",
+    "title": "Stainless steel",
+    "wiki": "Stainless steel",
+    "year": 1913,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Chromium alloying created steels with improved corrosion resistance.",
+    "parents": [
+      {
+        "id": "steel",
+        "type": "foundation",
+        "reason": "Steel alloy production permitted controlled chromium addition."
+      }
+    ]
+  },
+  {
+    "id": "galvanization",
+    "title": "Galvanization",
+    "wiki": "Galvanization",
+    "year": 1837,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Zinc coatings protected iron products against corrosion.",
+    "parents": [
+      {
+        "id": "iron-smelting",
+        "type": "enabler",
+        "reason": "Iron manufacture supplied structural products needing protective surfaces."
+      }
+    ]
+  },
+  {
+    "id": "electroplating",
+    "title": "Electroplating",
+    "wiki": "Electroplating",
+    "year": 1805,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Electric current deposited metal coatings on conductive objects.",
+    "parents": [
+      {
+        "id": "electric-battery",
+        "type": "enabler",
+        "reason": "Batteries supplied sustained current for electrodeposition."
+      }
+    ]
+  },
+  {
+    "id": "aluminium-smelting",
+    "title": "Electrolytic aluminum production",
+    "wiki": "Hall–Héroult process",
+    "year": 1886,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Molten-salt electrolysis made aluminum production commercially scalable.",
+    "parents": [
+      {
+        "id": "electric-generator",
+        "type": "enabler",
+        "reason": "Generators supplied the large continuous currents needed for electrolysis."
+      },
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Industrial metal extraction supplied ore preparation and furnace-management practice."
+      }
+    ]
+  },
+  {
+    "id": "titanium-production",
+    "title": "Kroll titanium production",
+    "wiki": "Kroll process",
+    "year": 1940,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Magnesium reduction enabled industrial production of titanium metal.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Metal extraction practice supported staged reduction and purification."
+      }
+    ]
+  },
+  {
+    "id": "portland-cement",
+    "title": "Portland cement",
+    "wiki": "Portland cement",
+    "year": 1824,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Kiln-fired clinker became the basis of modern hydraulic cement.",
+    "parents": [
+      {
+        "id": "kiln",
+        "type": "enabler",
+        "reason": "Kilns supplied the heat needed to form cement clinker."
+      }
+    ]
+  },
+  {
+    "id": "concrete",
+    "title": "Concrete",
+    "wiki": "Concrete",
+    "year": -300,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Aggregate bound with cement formed a moldable structural material.",
+    "parents": [
+      {
+        "id": "lime-mortar",
+        "type": "enabler",
+        "reason": "Lime-based binders held stone aggregate together."
+      }
+    ]
+  },
+  {
+    "id": "reinforced-concrete",
+    "title": "Reinforced concrete",
+    "wiki": "Reinforced concrete",
+    "year": 1853,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Embedded metal reinforcement carried tensile loads in concrete members.",
+    "parents": [
+      {
+        "id": "concrete",
+        "type": "foundation",
+        "reason": "Concrete supplied the compressive matrix surrounding reinforcement."
+      }
+    ]
+  },
+  {
+    "id": "prestressed-concrete",
+    "title": "Prestressed concrete",
+    "wiki": "Prestressed concrete",
+    "year": 1928,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Tensioned steel compressed concrete to improve structural performance.",
+    "parents": [
+      {
+        "id": "reinforced-concrete",
+        "type": "foundation",
+        "reason": "Steel-reinforced construction supplied composite member design and practice."
+      }
+    ]
+  },
+  {
+    "id": "plywood",
+    "title": "Plywood",
+    "wiki": "Plywood",
+    "year": 1797,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Bonded wood veneers with alternating grain created stable panels.",
+    "parents": [
+      {
+        "id": "veneer",
+        "type": "foundation",
+        "reason": "Thin wood veneers supplied layers for cross-grain laminates."
+      }
+    ]
+  },
+  {
+    "id": "veneer",
+    "title": "Wood veneer",
+    "wiki": "Wood veneer",
+    "year": -1500,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Thin wood sheets conserved decorative timber and surfaced furniture.",
+    "parents": [
+      {
+        "id": "saw",
+        "type": "enabler",
+        "reason": "Saws separated usable sheets from timber."
+      }
+    ]
+  },
+  {
+    "id": "particle-board",
+    "title": "Particle board",
+    "wiki": "Particle board",
+    "year": 1940,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Bonded wood particles turned small residues into rigid panels.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Synthetic adhesives bound otherwise loose wood particles."
+      }
+    ]
+  },
+  {
+    "id": "vulcanization",
+    "title": "Vulcanization",
+    "wiki": "Vulcanization",
+    "year": 1839,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Sulfur treatment made rubber more elastic and temperature resistant.",
+    "parents": [
+      {
+        "id": "rubber",
+        "type": "foundation",
+        "reason": "Natural rubber supplied polymer chains modified by sulfur treatment."
+      }
+    ]
+  },
+  {
+    "id": "rubber",
+    "title": "Natural rubber",
+    "wiki": "Natural rubber",
+    "year": -1600,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Mesoamerican peoples processed latex into resilient useful objects.",
+    "parents": []
+  },
+  {
+    "id": "celluloid",
+    "title": "Celluloid",
+    "wiki": "Celluloid",
+    "year": 1869,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Camphor-plasticized cellulose derivatives supplied a moldable early plastic.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Polymer modification practice supported formulating moldable materials."
+      }
+    ]
+  },
+  {
+    "id": "synthetic-resin",
+    "title": "Early manufactured resins",
+    "wiki": "Synthetic resin",
+    "year": 1856,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Chemically produced resins became binders and moldable industrial materials.",
+    "parents": []
+  },
+  {
+    "id": "bakelite",
+    "title": "Bakelite",
+    "wiki": "Bakelite",
+    "year": 1907,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Phenolic thermoset resin supplied heat-resistant molded components.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Synthetic resin chemistry supplied cross-linked molding compounds."
+      }
+    ]
+  },
+  {
+    "id": "nylon",
+    "title": "Nylon",
+    "wiki": "Nylon",
+    "year": 1935,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Synthetic polyamide fibers supplied strong textile and engineering materials.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Polymer synthesis enabled reproducible long-chain materials."
+      }
+    ]
+  },
+  {
+    "id": "polyethylene",
+    "title": "Polyethylene",
+    "wiki": "Polyethylene",
+    "year": 1933,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Industrial ethylene polymerization produced versatile insulating plastics.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Polymer manufacturing practice supported controlled chain growth."
+      }
+    ]
+  },
+  {
+    "id": "pvc",
+    "title": "Polyvinyl chloride",
+    "wiki": "Polyvinyl chloride",
+    "year": 1926,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Plasticized vinyl polymers enabled flexible and rigid manufactured products.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Synthetic polymer production supplied a processable resin."
+      }
+    ]
+  },
+  {
+    "id": "polystyrene",
+    "title": "Polystyrene",
+    "wiki": "Polystyrene",
+    "year": 1931,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Styrene polymers became widely used molding and insulation materials.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Polymer synthesis enabled large quantities of consistent resin."
+      }
+    ]
+  },
+  {
+    "id": "ptfe",
+    "title": "Polytetrafluoroethylene",
+    "wiki": "Polytetrafluoroethylene",
+    "year": 1938,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Fluoropolymer production supplied exceptionally low-friction chemical-resistant surfaces.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Synthetic polymer practice supported developing fluorinated resins."
+      }
+    ]
+  },
+  {
+    "id": "silicone",
+    "title": "Silicone",
+    "wiki": "Silicone",
+    "year": 1940,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Silicon-based polymers supplied durable sealants and flexible components.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Industrial polymer synthesis enabled tailored elastomers and resins."
+      }
+    ]
+  },
+  {
+    "id": "epoxy",
+    "title": "Epoxy",
+    "wiki": "Epoxy",
+    "year": 1936,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Reactive resins supplied strong adhesives and composite binders.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Synthetic resin manufacture supplied controllable curing systems."
+      }
+    ]
+  },
+  {
+    "id": "fiberglass",
+    "title": "Fiberglass",
+    "wiki": "Fiberglass",
+    "year": 1932,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Drawn glass fibers reinforced composites and provided insulation.",
+    "parents": [
+      {
+        "id": "glassmaking",
+        "type": "foundation",
+        "reason": "Molten glass could be drawn into continuous fine fibers."
+      }
+    ]
+  },
+  {
+    "id": "carbon-fiber",
+    "title": "Carbon fibers",
+    "wiki": "Carbon fibers",
+    "year": 1958,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Carbonized precursor fibers supplied lightweight stiff reinforcement.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Manufactured polymer fibers supplied controlled carbonization precursors."
+      }
+    ]
+  },
+  {
+    "id": "kevlar",
+    "title": "Kevlar",
+    "wiki": "Kevlar",
+    "year": 1965,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "High-strength aromatic polyamide fibers reinforced protective and structural products.",
+    "parents": [
+      {
+        "id": "nylon",
+        "type": "enabler",
+        "reason": "Polyamide fiber production supplied spinning and polymer-processing expertise."
+      }
+    ]
+  },
+  {
+    "id": "polycarbonate",
+    "title": "Polycarbonate",
+    "wiki": "Polycarbonate",
+    "year": 1953,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Tough transparent thermoplastics enabled impact-resistant glazing and parts.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Synthetic resin production enabled controlled carbonate polymer manufacture."
+      }
+    ]
+  },
+  {
+    "id": "pet",
+    "title": "Polyethylene terephthalate",
+    "wiki": "Polyethylene terephthalate",
+    "year": 1941,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Polyester production supplied fibers, films, and later packaging materials.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Polymer synthesis supplied reproducible polyester chains."
+      }
+    ]
+  },
+  {
+    "id": "float-glass",
+    "title": "Float glass",
+    "wiki": "Float glass",
+    "year": 1959,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Floating molten glass on tin produced flat sheets continuously.",
+    "parents": [
+      {
+        "id": "glassmaking",
+        "type": "foundation",
+        "reason": "Glass melting supplied liquid feed for the tin-bath process."
+      }
+    ]
+  },
+  {
+    "id": "tempered-glass",
+    "title": "Tempered glass",
+    "wiki": "Tempered glass",
+    "year": 1874,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Controlled cooling introduced stresses that strengthened glass surfaces.",
+    "parents": [
+      {
+        "id": "glassmaking",
+        "type": "foundation",
+        "reason": "Manufactured glass supplied sheets for thermal treatment."
+      }
+    ]
+  },
+  {
+    "id": "laminated-glass",
+    "title": "Laminated glass",
+    "wiki": "Laminated glass",
+    "year": 1909,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Bonded glass layers retained fragments after breakage.",
+    "parents": [
+      {
+        "id": "glassmaking",
+        "type": "foundation",
+        "reason": "Glass sheets supplied the rigid layers of safety laminates."
+      }
+    ]
+  },
+  {
+    "id": "borosilicate-glass",
+    "title": "Borosilicate glass",
+    "wiki": "Borosilicate glass",
+    "year": 1893,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Boron-containing glass improved resistance to thermal shock.",
+    "parents": [
+      {
+        "id": "glassmaking",
+        "type": "foundation",
+        "reason": "Glass batch formulation enabled changing expansion behavior."
+      }
+    ]
+  },
+  {
+    "id": "optical-fiber",
+    "title": "Optical fiber",
+    "wiki": "Optical fiber",
+    "year": 1970,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Low-loss glass fibers supported long-distance guided light transmission.",
+    "parents": [
+      {
+        "id": "glassmaking",
+        "type": "foundation",
+        "reason": "Purified glass manufacture supplied transparent drawable fiber material."
+      }
+    ]
+  },
+  {
+    "id": "industrial-diamond",
+    "title": "Industrial synthetic diamond",
+    "wiki": "Synthetic diamond",
+    "year": 1954,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "High-pressure production supplied diamond abrasives for industry.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Precision-built pressure equipment enabled reproducible synthesis conditions."
+      }
+    ]
+  },
+  {
+    "id": "powder-metallurgy",
+    "title": "Powder metallurgy",
+    "wiki": "Powder metallurgy",
+    "year": 1829,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Compacting and sintering metal powders formed difficult-to-cast components.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Metal processing supplied powders and controlled heating methods."
+      }
+    ]
+  },
+  {
+    "id": "cemented-carbide",
+    "title": "Cemented carbide",
+    "wiki": "Cemented carbide",
+    "year": 1923,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Sintered carbide particles in metal binders created durable cutting tools.",
+    "parents": [
+      {
+        "id": "powder-metallurgy",
+        "type": "foundation",
+        "reason": "Powder compaction and sintering combined hard grains with binders."
+      }
+    ]
+  },
+  {
+    "id": "superalloy",
+    "title": "Superalloy",
+    "wiki": "Superalloy",
+    "year": 1940,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Heat-resistant alloys sustained mechanical loads in hot engines.",
+    "parents": [
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "Controlled alloying established ways to tailor high-temperature properties."
+      }
+    ]
+  },
+  {
+    "id": "shape-memory-alloy",
+    "title": "Shape-memory alloy",
+    "wiki": "Shape-memory alloy",
+    "year": 1962,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Engineered alloys recovered a trained shape when heated.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Alloy processing controlled composition and phase-transforming structures."
+      }
+    ]
+  },
+  {
+    "id": "metal-foam",
+    "title": "Metal foam",
+    "wiki": "Metal foam",
+    "year": 1948,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Porous metal structures reduced weight while absorbing energy.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Metal casting and processing supplied routes to cellular structures."
+      }
+    ]
+  },
+  {
+    "id": "aerogel",
+    "title": "Aerogel",
+    "wiki": "Aerogel",
+    "year": 1931,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Drying gels without collapsing their pores produced ultralight solids.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate pressure vessels maintained conditions for drying gels without pore collapse."
+      }
+    ]
+  },
+  {
+    "id": "geopolymer",
+    "title": "Geopolymer",
+    "wiki": "Geopolymer",
+    "year": 1978,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Alkali-activated binders supplied alternatives for casting mineral materials.",
+    "parents": [
+      {
+        "id": "concrete",
+        "type": "enabler",
+        "reason": "Concrete practice supplied aggregate-and-binder construction methods."
+      }
+    ]
+  },
+  {
+    "id": "cross-laminated-timber",
+    "title": "Cross-laminated timber",
+    "wiki": "Cross-laminated timber",
+    "year": 1990,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Crosswise bonded timber layers formed large structural panels.",
+    "parents": [
+      {
+        "id": "plywood",
+        "type": "foundation",
+        "reason": "Cross-grain wood laminates demonstrated dimensional stabilization by layer orientation."
+      }
+    ]
+  },
+  {
+    "id": "saw",
+    "title": "Saw",
+    "wiki": "Saw",
+    "year": -3000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Toothed cutting tools enabled accurate timber and stone preparation.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Metalworking supplied durable thin blades with teeth."
+      }
+    ]
+  },
+  {
+    "id": "chisel",
+    "title": "Chisel",
+    "wiki": "Chisel",
+    "year": -4000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Metal chisels shaped wood and stone through concentrated cutting force.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Metalworking supplied hard edges capable of repeated impact."
+      }
+    ]
+  },
+  {
+    "id": "drill",
+    "title": "Drill",
+    "wiki": "Drill",
+    "year": -35000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Rotating points bored holes for joining and ornamentation.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Stone toolmaking supplied shaped piercing points."
+      }
+    ]
+  },
+  {
+    "id": "bow-drill",
+    "title": "Bow drill",
+    "wiki": "Bow drill",
+    "year": -5000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "A cord-driven bow rotated drilling and fire-making spindles.",
+    "parents": [
+      {
+        "id": "cordage",
+        "type": "enabler",
+        "reason": "Flexible cords transmitted reciprocating motion to a spindle."
+      }
+    ]
+  },
+  {
+    "id": "hammer",
+    "title": "Hammer",
+    "wiki": "Hammer",
+    "year": -3000000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Handheld striking tools drove shaping and crushing operations.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Stone selection supplied durable striking heads."
+      }
+    ]
+  },
+  {
+    "id": "anvil",
+    "title": "Anvil",
+    "wiki": "Anvil",
+    "year": -3000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Hard working surfaces supported metal under hammer blows.",
+    "parents": [
+      {
+        "id": "forging",
+        "type": "enabler",
+        "reason": "Forging required stable surfaces for controlled deformation."
+      }
+    ]
+  },
+  {
+    "id": "tongs",
+    "title": "Tongs",
+    "wiki": "Tongs",
+    "year": -2000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Gripping tools let workers handle hot metal safely.",
+    "parents": [
+      {
+        "id": "forging",
+        "type": "enabler",
+        "reason": "Hot forging created demand for holding heated workpieces."
+      }
+    ]
+  },
+  {
+    "id": "file",
+    "title": "File (tool)",
+    "wiki": "File (tool)",
+    "year": -1000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Hardened toothed tools removed small amounts of material accurately.",
+    "parents": [
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "Hard steel maintained abrasive teeth against softer workpieces."
+      }
+    ]
+  },
+  {
+    "id": "lathe",
+    "title": "Lathe",
+    "wiki": "Lathe",
+    "year": -1300,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Rotating workpieces enabled symmetric shaping with a stationary tool.",
+    "parents": [
+      {
+        "id": "cordage",
+        "type": "enabler",
+        "reason": "Cord drives provided an early way to rotate workpieces."
+      }
+    ]
+  },
+  {
+    "id": "screw-cutting-lathe",
+    "title": "Screw-cutting lathe",
+    "wiki": "Screw-cutting lathe",
+    "year": 1800,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Mechanically coordinated feeds produced accurate repeatable screw threads.",
+    "parents": [
+      {
+        "id": "lathe",
+        "type": "foundation",
+        "reason": "Lathes supplied rotating workholding and guided cutting geometry."
+      }
+    ]
+  },
+  {
+    "id": "precision-machining",
+    "title": "Precision machining",
+    "wiki": "Machining",
+    "year": 1774,
+    "domain": "engineering",
+    "kind": "practice",
+    "summary": "Accurate guided cutting made closely fitting mechanical parts practical.",
+    "parents": [
+      {
+        "id": "boring-machine",
+        "type": "enabler",
+        "reason": "Cylinder boring demonstrated repeatable control of large mating surfaces."
+      }
+    ]
+  },
+  {
+    "id": "boring-machine",
+    "title": "Precision cylinder boring",
+    "wiki": "Boring (manufacturing)",
+    "year": 1774,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Machine-guided boring produced accurate engine cylinders and other holes.",
+    "parents": [
+      {
+        "id": "lathe",
+        "type": "enabler",
+        "reason": "Rotating machine tools established controlled cutting around an axis."
+      }
+    ]
+  },
+  {
+    "id": "milling-machine",
+    "title": "Milling (machining)",
+    "wiki": "Milling (machining)",
+    "year": 1818,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Rotating cutters machined flat surfaces, slots, and complex profiles.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate machine frames and feeds controlled cutter motion."
+      },
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "Hardened tool steel supplied durable rotating cutting edges."
+      }
+    ]
+  },
+  {
+    "id": "metal-planer",
+    "title": "Planer (metalworking)",
+    "wiki": "Planer (metalworking)",
+    "year": 1817,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Reciprocating tables carried large metal workpieces beneath cutting tools.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Precision machine construction supplied rigid guides and controlled feeds."
+      }
+    ]
+  },
+  {
+    "id": "shaper",
+    "title": "Shaper",
+    "wiki": "Shaper",
+    "year": 1836,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "A reciprocating cutter machined flat metal surfaces.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Precision guides constrained repeated straight-line tool motion."
+      }
+    ]
+  },
+  {
+    "id": "grinding-machine",
+    "title": "Grinding machine",
+    "wiki": "Grinding machine",
+    "year": 1870,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Powered abrasive wheels finished hardened parts to close dimensions.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Precision spindles and feeds controlled abrasive material removal."
+      }
+    ]
+  },
+  {
+    "id": "turret-lathe",
+    "title": "Turret lathe",
+    "wiki": "Turret lathe",
+    "year": 1845,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Indexed tool stations accelerated repeated machining operations.",
+    "parents": [
+      {
+        "id": "lathe",
+        "type": "enabler",
+        "reason": "Lathe workholding allowed several cutters to address one part."
+      }
+    ]
+  },
+  {
+    "id": "micrometer",
+    "title": "Micrometer (device)",
+    "wiki": "Micrometer (device)",
+    "year": 1848,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Fine screw movement enabled precise dimensional measurement in workshops.",
+    "parents": [
+      {
+        "id": "screw-cutting-lathe",
+        "type": "enabler",
+        "reason": "Accurate screw threads converted rotation into calibrated small travel."
+      }
+    ]
+  },
+  {
+    "id": "vernier-caliper",
+    "title": "Vernier caliper",
+    "wiki": "Calipers",
+    "year": 1631,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Sliding jaws and graduated scales measured internal and external dimensions.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Metalworking supplied stable jaws and durable measuring scales."
+      }
+    ]
+  },
+  {
+    "id": "gauge-blocks",
+    "title": "Gauge block",
+    "wiki": "Gauge block",
+    "year": 1896,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Precision blocks established reproducible reference lengths in manufacturing.",
+    "parents": [
+      {
+        "id": "grinding-machine",
+        "type": "enabler",
+        "reason": "Fine grinding produced flat surfaces and controlled block dimensions."
+      }
+    ]
+  },
+  {
+    "id": "surface-plate",
+    "title": "Surface plate",
+    "wiki": "Surface plate",
+    "year": 1830,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Flat reference tables supported accurate marking and inspection.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Precision finishing created trustworthy flat working surfaces."
+      }
+    ]
+  },
+  {
+    "id": "interchangeable-parts",
+    "title": "Interchangeable parts",
+    "wiki": "Interchangeable parts",
+    "year": 1800,
+    "domain": "engineering",
+    "kind": "practice",
+    "summary": "Consistent dimensions let manufactured parts fit assemblies without individual adjustment.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Controlled machining reduced variation between repeated components."
+      }
+    ]
+  },
+  {
+    "id": "screw-thread-standard",
+    "title": "Standard screw threads",
+    "wiki": "British Standard Whitworth",
+    "year": 1841,
+    "domain": "engineering",
+    "kind": "practice",
+    "summary": "Standard thread profiles improved compatibility of mechanical fasteners.",
+    "parents": [
+      {
+        "id": "screw-cutting-lathe",
+        "type": "enabler",
+        "reason": "Repeatable screw cutting made shared thread dimensions practical."
+      }
+    ]
+  },
+  {
+    "id": "rolling-mill",
+    "title": "Metal rolling mills",
+    "wiki": "Rolling (metalworking)",
+    "year": 1500,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Rotating rolls reduced metal thickness and formed useful profiles.",
+    "parents": [
+      {
+        "id": "forging",
+        "type": "enabler",
+        "reason": "Metal deformation knowledge supported shaping between loaded rolls."
+      }
+    ]
+  },
+  {
+    "id": "wire-drawing",
+    "title": "Wire drawing",
+    "wiki": "Wire drawing",
+    "year": -2000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Pulling metal through dies formed long slender wires.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "foundation",
+        "reason": "Ductile processed metals could be reduced through shaped openings."
+      }
+    ]
+  },
+  {
+    "id": "stamping-press",
+    "title": "Metal stamping presses",
+    "wiki": "Stamping (metalworking)",
+    "year": 1890,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Presses and dies formed repeatable parts from metal sheet.",
+    "parents": [
+      {
+        "id": "rolling-mill",
+        "type": "enabler",
+        "reason": "Rolled sheet supplied consistent thin material for die forming."
+      }
+    ]
+  },
+  {
+    "id": "hydraulic-press",
+    "title": "Hydraulic press",
+    "wiki": "Hydraulic press",
+    "year": 1795,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Pressurized liquid multiplied force for pressing and forming work.",
+    "parents": [
+      {
+        "id": "cast-iron",
+        "type": "enabler",
+        "reason": "Cast metal cylinders and frames contained pressure and carried loads."
+      }
+    ]
+  },
+  {
+    "id": "extrusion",
+    "title": "Extrusion",
+    "wiki": "Extrusion",
+    "year": 1797,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Forcing material through a die produced continuous shaped sections.",
+    "parents": [
+      {
+        "id": "hydraulic-press",
+        "type": "enabler",
+        "reason": "High-force presses supplied the load required to push material."
+      }
+    ]
+  },
+  {
+    "id": "injection-molding",
+    "title": "Injection moulding",
+    "wiki": "Injection moulding",
+    "year": 1872,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Material injected into closed molds made repeatable complex components.",
+    "parents": [
+      {
+        "id": "celluloid",
+        "type": "foundation",
+        "reason": "Moldable early plastics supplied feedstock for injection forming."
+      }
+    ]
+  },
+  {
+    "id": "die-casting",
+    "title": "Die casting",
+    "wiki": "Die casting",
+    "year": 1838,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Reusable metal molds accelerated production of detailed cast parts.",
+    "parents": [
+      {
+        "id": "lost-wax-casting",
+        "type": "enabler",
+        "reason": "Casting practice established filling molds with molten metal."
+      }
+    ]
+  },
+  {
+    "id": "investment-casting",
+    "title": "Industrial investment casting",
+    "wiki": "Investment casting",
+    "year": 1940,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Industrial shell molds produced intricate precision castings.",
+    "parents": [
+      {
+        "id": "lost-wax-casting",
+        "type": "enabler",
+        "reason": "Lost-wax casting supplied the expendable-pattern manufacturing route."
+      }
+    ]
+  },
+  {
+    "id": "arc-welding",
+    "title": "Arc welding",
+    "wiki": "Arc welding",
+    "year": 1881,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Electric arcs fused metal joints with localized heat.",
+    "parents": [
+      {
+        "id": "electric-generator",
+        "type": "foundation",
+        "reason": "Generators provided sustained electric current for welding arcs."
+      }
+    ]
+  },
+  {
+    "id": "resistance-welding",
+    "title": "Resistance welding",
+    "wiki": "Resistance welding",
+    "year": 1877,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Electrical resistance heated contacting metal surfaces to join them.",
+    "parents": [
+      {
+        "id": "electric-generator",
+        "type": "foundation",
+        "reason": "Electric power supplied localized heating at conductive interfaces."
+      }
+    ]
+  },
+  {
+    "id": "oxy-fuel-welding",
+    "title": "Oxy-fuel welding and cutting",
+    "wiki": "Oxy-fuel welding and cutting",
+    "year": 1903,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Oxygen-fuel flames welded and cut metal components.",
+    "parents": [
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "Steel manufacture supplied structural workpieces for thermal joining."
+      }
+    ]
+  },
+  {
+    "id": "soldering",
+    "title": "Soldering",
+    "wiki": "Soldering",
+    "year": -3000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Lower-melting filler metals joined components without melting their bodies.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Metalworking supplied fusible alloys and controlled heating."
+      }
+    ]
+  },
+  {
+    "id": "brazing",
+    "title": "Brazing",
+    "wiki": "Brazing",
+    "year": -2000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Higher-temperature filler metal formed strong joints between solid components.",
+    "parents": [
+      {
+        "id": "soldering",
+        "type": "enabler",
+        "reason": "Filler-metal joining established capillary bonding of heated surfaces."
+      }
+    ]
+  },
+  {
+    "id": "laser-cutting",
+    "title": "Laser cutting",
+    "wiki": "Laser cutting",
+    "year": 1965,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Focused beams cut materials with narrow kerfs and programmable paths.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Precision motion systems positioned work and cutting heads."
+      }
+    ]
+  },
+  {
+    "id": "waterjet-cutting",
+    "title": "Water jet cutter",
+    "wiki": "Water jet cutter",
+    "year": 1970,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "High-pressure water and abrasives cut materials with limited heating.",
+    "parents": [
+      {
+        "id": "hydraulic-press",
+        "type": "enabler",
+        "reason": "High-pressure hydraulic engineering supplied pumps and pressure containment."
+      }
+    ]
+  },
+  {
+    "id": "edm",
+    "title": "Electrical discharge machining",
+    "wiki": "Electrical discharge machining",
+    "year": 1943,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Repeated electrical sparks shaped conductive materials without cutting contact.",
+    "parents": [
+      {
+        "id": "electric-generator",
+        "type": "foundation",
+        "reason": "Electric power supplied controlled discharges that erode metal."
+      }
+    ]
+  },
+  {
+    "id": "cnc-machine-tools",
+    "title": "Numerically controlled machine tools",
+    "wiki": "Numerical control",
+    "year": 1952,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Programmed machine motion automated complex repeatable cutting paths.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Precision machine tools supplied the controlled mechanical axes."
+      },
+      {
+        "id": "milling-machine",
+        "type": "enabler",
+        "reason": "Multi-axis milling supplied mechanisms suited to programmed tool paths."
+      }
+    ]
+  },
+  {
+    "id": "industrial-robot",
+    "title": "Industrial robot",
+    "wiki": "Industrial robot",
+    "year": 1961,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Programmable powered manipulators moved workpieces through factory operations.",
+    "parents": [
+      {
+        "id": "hydraulic-press",
+        "type": "enabler",
+        "reason": "Hydraulic actuation supplied high-force controlled joint movement."
+      },
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate joints and linkages enabled repeatable manipulator positioning."
+      }
+    ]
+  },
+  {
+    "id": "additive-manufacturing",
+    "title": "Additive manufacturing",
+    "wiki": "3D printing",
+    "year": 1984,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Layerwise fabrication built objects directly from digital geometry.",
+    "parents": [
+      {
+        "id": "cnc-machine-tools",
+        "type": "enabler",
+        "reason": "Programmed positioning supplied controlled motion for depositing or curing layers."
+      },
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Processable polymers supplied early printable and curable feedstocks."
+      }
+    ]
+  },
+  {
+    "id": "stereolithography",
+    "title": "Stereolithography",
+    "wiki": "Stereolithography",
+    "year": 1984,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Light cured liquid resin into solid layers for three-dimensional parts.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Curable synthetic resins supplied the photosensitive building material."
+      }
+    ]
+  },
+  {
+    "id": "selective-laser-sintering",
+    "title": "Selective laser sintering",
+    "wiki": "Selective laser sintering",
+    "year": 1988,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Selective heating fused powder beds into shaped parts.",
+    "parents": [
+      {
+        "id": "powder-metallurgy",
+        "type": "foundation",
+        "reason": "Powder processing supplied controlled particulate feedstocks and sintering practice."
+      }
+    ]
+  },
+  {
+    "id": "assembly-line",
+    "title": "Assembly line",
+    "wiki": "Assembly line",
+    "year": 1913,
+    "domain": "engineering",
+    "kind": "practice",
+    "summary": "Sequential workstations accelerated production of complex manufactured products.",
+    "parents": [
+      {
+        "id": "interchangeable-parts",
+        "type": "enabler",
+        "reason": "Parts that fit consistently reduced adjustment during rapid assembly."
+      },
+      {
+        "id": "chain-drive",
+        "type": "enabler",
+        "reason": "Chain-driven conveyors coordinated movement between successive workstations."
+      }
+    ]
+  },
+  {
+    "id": "flying-shuttle",
+    "title": "Flying shuttle",
+    "wiki": "Flying shuttle",
+    "year": 1733,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "A mechanically propelled shuttle increased weaving speed and width.",
+    "parents": [
+      {
+        "id": "loom",
+        "type": "enabler",
+        "reason": "Looms supplied tensioned warp paths for the faster shuttle."
+      }
+    ]
+  },
+  {
+    "id": "spinning-jenny",
+    "title": "Spinning jenny",
+    "wiki": "Spinning jenny",
+    "year": 1764,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Multiple spindles allowed one operator to spin several yarns.",
+    "parents": [
+      {
+        "id": "spindle",
+        "type": "foundation",
+        "reason": "Spindles supplied the fiber-twisting mechanism multiplied by the machine."
+      }
+    ]
+  },
+  {
+    "id": "water-frame",
+    "title": "Water frame",
+    "wiki": "Water frame",
+    "year": 1769,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Water-powered rollers and spindles produced strong cotton yarn continuously.",
+    "parents": [
+      {
+        "id": "waterwheel",
+        "type": "foundation",
+        "reason": "Waterwheels supplied continuous mechanical power to spinning machinery."
+      }
+    ]
+  },
+  {
+    "id": "spinning-mule",
+    "title": "Spinning mule",
+    "wiki": "Spinning mule",
+    "year": 1779,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Moving carriages combined drawing and twisting to spin fine yarn.",
+    "parents": [
+      {
+        "id": "spinning-jenny",
+        "type": "enabler",
+        "reason": "Multiple-spindle spinning established coordinated operation of many yarns."
+      }
+    ]
+  },
+  {
+    "id": "power-loom",
+    "title": "Power loom",
+    "wiki": "Power loom",
+    "year": 1785,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Powered loom motions mechanized the weaving cycle.",
+    "parents": [
+      {
+        "id": "loom",
+        "type": "foundation",
+        "reason": "Loom architecture supplied the shedding, insertion, and beating operations."
+      },
+      {
+        "id": "waterwheel",
+        "type": "enabler",
+        "reason": "Continuous mechanical power drove the repetitive weaving cycle."
+      }
+    ]
+  },
+  {
+    "id": "jacquard-loom",
+    "title": "Jacquard machine",
+    "wiki": "Jacquard machine",
+    "year": 1804,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Punched-card controls selected warp threads to weave complex patterns.",
+    "parents": [
+      {
+        "id": "loom",
+        "type": "enabler",
+        "reason": "Looms supplied individually selectable warp threads and weaving mechanisms."
+      },
+      {
+        "id": "flying-shuttle",
+        "type": "enabler",
+        "reason": "Faster weft insertion supported productive weaving of complex patterns."
+      }
+    ]
+  },
+  {
+    "id": "sewing-machine",
+    "title": "Sewing machine",
+    "wiki": "Sewing machine",
+    "year": 1846,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Powered needle mechanisms made repeatable stitches rapidly.",
+    "parents": [
+      {
+        "id": "sewing-needle",
+        "type": "foundation",
+        "reason": "Needles supplied the fabric-piercing component of machine stitching."
+      }
+    ]
+  },
+  {
+    "id": "cotton-gin",
+    "title": "Mechanized cotton ginning",
+    "wiki": "Cotton gin",
+    "year": 1793,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Mechanical seed separation increased the supply of cotton fiber.",
+    "parents": [
+      {
+        "id": "spindle",
+        "type": "influence",
+        "reason": "Yarn production created demand for cleaned spinnable cotton."
+      }
+    ]
+  },
+  {
+    "id": "knitting-machine",
+    "title": "Knitting machine",
+    "wiki": "Knitting machine",
+    "year": 1589,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Arrays of metal needles mechanized forming loops of yarn.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Metalworking supplied durable closely spaced needle mechanisms."
+      }
+    ]
+  },
+  {
+    "id": "chain-drive",
+    "title": "Chain drive",
+    "wiki": "Chain drive",
+    "year": 1400,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Linked chains transmitted rotary power between toothed wheels.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Metal links and sprockets provided positive mechanical engagement."
+      }
+    ]
+  },
+  {
+    "id": "ball-bearing",
+    "title": "Ball bearing",
+    "wiki": "Ball bearing",
+    "year": 1794,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Rolling balls reduced friction between rotating machine members.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate surfaces controlled load distribution and rolling clearances."
+      },
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "Hard steel surfaces resisted repeated concentrated rolling contact."
+      }
+    ]
+  },
+  {
+    "id": "gear-cutting",
+    "title": "Gear cutting",
+    "wiki": "Gear cutting",
+    "year": 1800,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Guided cutters produced consistently meshing gear teeth.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "foundation",
+        "reason": "Accurate machine feeds made repeatable tooth geometry possible."
+      }
+    ]
+  },
+  {
+    "id": "centrifugal-pump",
+    "title": "Centrifugal pump",
+    "wiki": "Centrifugal pump",
+    "year": 1689,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Rotating impellers moved liquids through enclosed housings.",
+    "parents": [
+      {
+        "id": "cast-iron",
+        "type": "enabler",
+        "reason": "Metal casting supplied durable shaped impellers and pressure housings."
+      }
+    ]
+  },
+  {
+    "id": "archimedes-screw",
+    "title": "Archimedean water screw",
+    "wiki": "Archimedes' screw",
+    "year": -250,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Rotating helical surfaces lifted water through a channel.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Timber fabrication supplied shafts and helical supporting structures."
+      }
+    ]
+  },
+  {
+    "id": "woodworking",
+    "title": "Wood shaping and joinery",
+    "wiki": "Woodworking",
+    "year": -300000,
+    "domain": "engineering",
+    "kind": "practice",
+    "summary": "Shaping and joining timber provided tools, shelters, and vessels.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Stone edges cut and shaped wooden workpieces."
+      }
+    ]
+  },
+  {
+    "id": "pulley",
+    "title": "Pulley",
+    "wiki": "Pulley",
+    "year": -1500,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Grooved wheels redirected ropes and combined lifting forces.",
+    "parents": [
+      {
+        "id": "cordage",
+        "type": "enabler",
+        "reason": "Ropes supplied the flexible tension member passing around wheels."
+      }
+    ]
+  },
+  {
+    "id": "crane",
+    "title": "Crane (machine)",
+    "wiki": "Crane (machine)",
+    "year": -500,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Lifting frameworks and hoists moved heavy building components.",
+    "parents": [
+      {
+        "id": "pulley",
+        "type": "enabler",
+        "reason": "Pulley systems reduced the force needed to raise loads."
+      }
+    ]
+  },
+  {
+    "id": "winch",
+    "title": "Winch",
+    "wiki": "Winch",
+    "year": -500,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Winding drums applied controlled tension for pulling and lifting.",
+    "parents": [
+      {
+        "id": "cordage",
+        "type": "enabler",
+        "reason": "Ropes transmitted pulling force from rotating drums."
+      }
+    ]
+  },
+  {
+    "id": "pile-driver",
+    "title": "Pile driver",
+    "wiki": "Pile driver",
+    "year": 1500,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Repeated heavy blows drove foundation piles into soil.",
+    "parents": [
+      {
+        "id": "crane",
+        "type": "enabler",
+        "reason": "Hoisting mechanisms raised weights for controlled repeated impacts."
+      }
+    ]
+  },
+  {
+    "id": "excavator",
+    "title": "Excavator",
+    "wiki": "Excavator",
+    "year": 1835,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Powered digging machines increased earth-moving capacity.",
+    "parents": [
+      {
+        "id": "steam-engine",
+        "type": "enabler",
+        "reason": "Steam engines supplied mechanical power for digging and lifting."
+      }
+    ]
+  },
+  {
+    "id": "tunnel-boring-machine",
+    "title": "Tunnel boring machine",
+    "wiki": "Tunnel boring machine",
+    "year": 1846,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Mechanized cutting heads excavated tunnels through earth and rock.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Machine-tool construction supplied durable guided cutting mechanisms."
+      },
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "Hard steel cutting surfaces resisted abrasion during excavation."
+      }
+    ]
+  },
+  {
+    "id": "jackhammer",
+    "title": "Jackhammer",
+    "wiki": "Jackhammer",
+    "year": 1848,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Powered impact drills accelerated breaking rock and pavement.",
+    "parents": [
+      {
+        "id": "steam-engine",
+        "type": "enabler",
+        "reason": "Steam-driven compressors supplied power for early pneumatic drills."
+      }
+    ]
+  },
+  {
+    "id": "elevator",
+    "title": "Elevator",
+    "wiki": "Elevator",
+    "year": 1853,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Safety mechanisms and powered hoists made passenger lifting practical.",
+    "parents": [
+      {
+        "id": "winch",
+        "type": "enabler",
+        "reason": "Winches supplied controllable vertical lifting of suspended platforms."
+      }
+    ]
+  },
+  {
+    "id": "escalator",
+    "title": "Escalator",
+    "wiki": "Escalator",
+    "year": 1896,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Circulating linked steps transported passengers continuously between levels.",
+    "parents": [
+      {
+        "id": "chain-drive",
+        "type": "enabler",
+        "reason": "Chain drives coordinated the movement of repeating stair elements."
+      }
+    ]
+  },
+  {
+    "id": "arch",
+    "title": "Masonry arch",
+    "wiki": "Arch",
+    "year": -2000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Curved compression structures spanned openings using masonry units.",
+    "parents": [
+      {
+        "id": "fired-brick",
+        "type": "foundation",
+        "reason": "Durable bricks supplied shaped units that carried compression."
+      }
+    ]
+  },
+  {
+    "id": "vault",
+    "title": "Masonry vault",
+    "wiki": "Vault (architecture)",
+    "year": -1500,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Extended arch forms roofed enclosed spaces in masonry.",
+    "parents": [
+      {
+        "id": "arch",
+        "type": "foundation",
+        "reason": "Arch construction supplied the compression geometry extended into roofs."
+      }
+    ]
+  },
+  {
+    "id": "dome",
+    "title": "Structural dome",
+    "wiki": "Dome",
+    "year": -1000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Curved roofs enclosed broad spaces through shell-like load paths.",
+    "parents": [
+      {
+        "id": "arch",
+        "type": "enabler",
+        "reason": "Arch principles helped organize compressive curved roof structures."
+      }
+    ]
+  },
+  {
+    "id": "truss",
+    "title": "Truss",
+    "wiki": "Truss",
+    "year": -500,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Triangulated frameworks spanned spaces with efficient load-carrying members.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Timber joining supplied structural members and their connections."
+      }
+    ]
+  },
+  {
+    "id": "suspension-bridge",
+    "title": "Suspension bridge",
+    "wiki": "Suspension bridge",
+    "year": 1801,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Suspended decks crossed long spans using tensile cables or chains.",
+    "parents": [
+      {
+        "id": "wire-drawing",
+        "type": "enabler",
+        "reason": "Metal drawing supplied strong flexible cable strands."
+      }
+    ]
+  },
+  {
+    "id": "arch-bridge",
+    "title": "Arch bridge",
+    "wiki": "Arch bridge",
+    "year": -1300,
+    "domain": "engineering",
+    "kind": "infrastructure",
+    "summary": "Compression arches carried bridge decks across waterways and valleys.",
+    "parents": [
+      {
+        "id": "arch",
+        "type": "foundation",
+        "reason": "Arch masonry provided a stable load path across openings."
+      }
+    ]
+  },
+  {
+    "id": "cantilever-bridge",
+    "title": "Cantilever bridge",
+    "wiki": "Cantilever bridge",
+    "year": 1867,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Projecting structural arms supported bridges without continuous falsework.",
+    "parents": [
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "Structural steel carried combined bending and tensile bridge loads."
+      }
+    ]
+  },
+  {
+    "id": "cable-stayed-bridge",
+    "title": "Cable-stayed bridge",
+    "wiki": "Cable-stayed bridge",
+    "year": 1955,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Direct stays connected bridge decks to supporting towers.",
+    "parents": [
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "High-strength steel supplied the tensile stay material."
+      },
+      {
+        "id": "reinforced-concrete",
+        "type": "enabler",
+        "reason": "Reinforced concrete supplied stiff durable decks and towers."
+      }
+    ]
+  },
+  {
+    "id": "skyscraper",
+    "title": "Skyscraper",
+    "wiki": "Skyscraper",
+    "year": 1885,
+    "domain": "engineering",
+    "kind": "infrastructure",
+    "summary": "Metal frames supported tall occupied buildings with lighter walls.",
+    "parents": [
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "Steel frames carried loads without massive bearing walls."
+      },
+      {
+        "id": "elevator",
+        "type": "enabler",
+        "reason": "Passenger lifts made high occupied floors practically accessible."
+      }
+    ]
+  },
+  {
+    "id": "curtain-wall",
+    "title": "Curtain wall (architecture)",
+    "wiki": "Curtain wall (architecture)",
+    "year": 1900,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Independent exterior envelopes enclosed buildings around structural frames.",
+    "parents": [
+      {
+        "id": "skyscraper",
+        "type": "enabler",
+        "reason": "Frame-supported buildings freed exterior walls from carrying floor loads."
+      }
+    ]
+  },
+  {
+    "id": "geodesic-dome",
+    "title": "Geodesic dome",
+    "wiki": "Geodesic dome",
+    "year": 1926,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Triangulated networks formed light domed structures.",
+    "parents": [
+      {
+        "id": "truss",
+        "type": "enabler",
+        "reason": "Truss geometry supplied efficient interconnected load-bearing triangles."
+      },
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "Steel connectors and struts supported thin lightweight triangulated shells."
+      }
+    ]
+  },
+  {
+    "id": "mudhif",
+    "title": "Reed mudhif buildings",
+    "wiki": "Mudhif",
+    "year": -3000,
+    "domain": "engineering",
+    "kind": "infrastructure",
+    "summary": "Mesopotamian reed builders formed large arched communal structures.",
+    "parents": [
+      {
+        "id": "cordage",
+        "type": "enabler",
+        "reason": "Tied plant bundles supplied connections for reed structural ribs."
+      }
+    ]
+  },
+  {
+    "id": "inca-rope-bridge",
+    "title": "Inca rope bridge",
+    "wiki": "Inca rope bridge",
+    "year": 1400,
+    "domain": "engineering",
+    "kind": "infrastructure",
+    "summary": "Andean communities built suspension crossings from bundled plant fibers.",
+    "parents": [
+      {
+        "id": "cordage",
+        "type": "foundation",
+        "reason": "Twisted fiber ropes supplied tensile main cables and deck supports."
+      }
+    ]
+  },
+  {
+    "id": "stepwell",
+    "title": "Stepwell",
+    "wiki": "Stepwell",
+    "year": 600,
+    "domain": "engineering",
+    "kind": "infrastructure",
+    "summary": "Stepped masonry wells provided access to groundwater as levels changed.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Stone shaping supplied durable steps and retaining masonry."
+      }
+    ]
+  },
+  {
+    "id": "qanat",
+    "title": "Qanat",
+    "wiki": "Qanat",
+    "year": -800,
+    "domain": "engineering",
+    "kind": "infrastructure",
+    "summary": "Gently sloping underground channels transported groundwater by gravity.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Timber equipment supported excavation and removal of tunnel spoil."
+      },
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Rock-working tools excavated shafts and sloping underground passages."
+      }
+    ]
+  },
+  {
+    "id": "roman-aqueduct",
+    "title": "Roman aqueduct",
+    "wiki": "Roman aqueduct",
+    "year": -312,
+    "domain": "engineering",
+    "kind": "infrastructure",
+    "summary": "Engineered channels delivered water across varied terrain to settlements.",
+    "parents": [
+      {
+        "id": "arch",
+        "type": "enabler",
+        "reason": "Masonry arches supported gravity channels across valleys."
+      }
+    ]
+  },
+  {
+    "id": "dujiangyan",
+    "title": "Dujiangyan",
+    "wiki": "Dujiangyan",
+    "year": -256,
+    "domain": "engineering",
+    "kind": "infrastructure",
+    "summary": "A Chinese diversion system distributed river water while managing floods.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Stone-working enabled durable river-control embankments and structures."
+      }
+    ]
+  },
+  {
+    "id": "polder",
+    "title": "Polder",
+    "wiki": "Polder",
+    "year": 1100,
+    "domain": "engineering",
+    "kind": "infrastructure",
+    "summary": "Diked and drained land expanded usable low-lying terrain.",
+    "parents": [
+      {
+        "id": "drainage",
+        "type": "enabler",
+        "reason": "Drainage channels removed water trapped behind enclosing dikes."
+      },
+      {
+        "id": "windmill",
+        "type": "enabler",
+        "reason": "Wind-driven pumps removed water from enclosed low-lying land."
+      }
+    ]
+  },
+  {
+    "id": "drainage",
+    "title": "Drainage",
+    "wiki": "Drainage",
+    "year": -4000,
+    "domain": "engineering",
+    "kind": "practice",
+    "summary": "Constructed channels removed excess water from fields and occupied areas.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Excavating and shaping tools cut drainage channels."
+      }
+    ]
+  },
+  {
+    "id": "cofferdam",
+    "title": "Cofferdam",
+    "wiki": "Cofferdam",
+    "year": -500,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Temporary enclosures allowed construction below surrounding water levels.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Timber piles and barriers supported watertight work enclosures."
+      }
+    ]
+  },
+  {
+    "id": "port",
+    "title": "Engineered harbor",
+    "wiki": "Port",
+    "year": -2000,
+    "domain": "engineering",
+    "kind": "infrastructure",
+    "summary": "Sheltered harbors and landing structures supported waterborne cargo handling.",
+    "parents": [
+      {
+        "id": "sail",
+        "type": "influence",
+        "reason": "Sailing vessels created demand for protected loading and repair sites."
+      }
+    ]
+  },
+  {
+    "id": "canal-lock",
+    "title": "Lock (water navigation)",
+    "wiki": "Lock (water navigation)",
+    "year": 984,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Chambers with gates moved boats between different water levels.",
+    "parents": [
+      {
+        "id": "canal",
+        "type": "foundation",
+        "reason": "Navigable canals supplied the waterway divided into level reaches."
+      }
+    ]
+  },
+  {
+    "id": "dam",
+    "title": "Water-control dams",
+    "wiki": "Dam",
+    "year": -3000,
+    "domain": "engineering",
+    "kind": "infrastructure",
+    "summary": "Water-retaining barriers stored and diverted flows for human use.",
+    "parents": [
+      {
+        "id": "adobe",
+        "type": "enabler",
+        "reason": "Earth-block construction supplied techniques for building mass barriers."
+      }
+    ]
+  },
+  {
+    "id": "sewer",
+    "title": "Covered wastewater sewers",
+    "wiki": "Sanitary sewer",
+    "year": -2500,
+    "domain": "engineering",
+    "kind": "infrastructure",
+    "summary": "Networks of covered conduits carried wastewater away from occupied spaces.",
+    "parents": [
+      {
+        "id": "drainage",
+        "type": "enabler",
+        "reason": "Drainage practice supplied gravity collection and conveyance methods."
+      }
+    ]
+  },
+  {
+    "id": "septic-tank",
+    "title": "Septic tank",
+    "wiki": "Septic tank",
+    "year": 1860,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Settling tanks treated wastewater locally before soil dispersal.",
+    "parents": [
+      {
+        "id": "sewer",
+        "type": "enabler",
+        "reason": "Wastewater collection supplied inflow for settling and decomposition."
+      }
+    ]
+  },
+  {
+    "id": "desalination",
+    "title": "Desalination",
+    "wiki": "Desalination",
+    "year": 1960,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Industrial plants converted saline water into usable freshwater.",
+    "parents": [
+      {
+        "id": "distillation",
+        "type": "enabler",
+        "reason": "Distillation supplied a proven route for separating water from salts."
+      },
+      {
+        "id": "pipe",
+        "type": "enabler",
+        "reason": "Piped systems moved feedwater and separated freshwater through treatment plants."
+      }
+    ]
+  },
+  {
+    "id": "central-heating",
+    "title": "Central heating",
+    "wiki": "Central heating",
+    "year": -100,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "A common heat source warmed multiple rooms through distribution systems.",
+    "parents": [
+      {
+        "id": "kiln",
+        "type": "enabler",
+        "reason": "Furnace construction supplied controlled combustion and hot-gas generation."
+      }
+    ]
+  },
+  {
+    "id": "air-conditioning",
+    "title": "Air conditioning",
+    "wiki": "Air conditioning",
+    "year": 1902,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Mechanical systems controlled indoor temperature and humidity.",
+    "parents": [
+      {
+        "id": "refrigeration",
+        "type": "foundation",
+        "reason": "Refrigeration supplied coils cold enough to remove heat and moisture."
+      }
+    ]
+  },
+  {
+    "id": "heat-pump",
+    "title": "Heat pump",
+    "wiki": "Heat pump",
+    "year": 1856,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Refrigeration cycles moved heat to provide useful heating.",
+    "parents": [
+      {
+        "id": "refrigeration",
+        "type": "foundation",
+        "reason": "Vapor-compression equipment transferred heat between temperature levels."
+      }
+    ]
+  },
+  {
+    "id": "fire-sprinkler",
+    "title": "Fire sprinkler",
+    "wiki": "Fire sprinkler",
+    "year": 1874,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Heat-responsive sprinkler systems applied water automatically at fires.",
+    "parents": [
+      {
+        "id": "pipe",
+        "type": "foundation",
+        "reason": "Piped water networks supplied pressurized water to distributed outlets."
+      }
+    ]
+  },
+  {
+    "id": "pipe",
+    "title": "Water conveyance pipes",
+    "wiki": "Pipe (fluid conveyance)",
+    "year": -3000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Tubular conduits transported water and other fluids through built networks.",
+    "parents": [
+      {
+        "id": "pottery",
+        "type": "enabler",
+        "reason": "Fired clay supplied durable hollow sections for water conveyance."
+      }
+    ]
+  },
+  {
+    "id": "charcoal",
+    "title": "Charcoal",
+    "wiki": "Charcoal",
+    "year": -30000,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Low-oxygen heating converted wood into concentrated solid fuel.",
+    "parents": [
+      {
+        "id": "controlled-fire",
+        "type": "foundation",
+        "reason": "Managed fires supplied heat while limiting air to wood."
+      }
+    ]
+  },
+  {
+    "id": "coal-mining",
+    "title": "Coal mining",
+    "wiki": "Coal mining",
+    "year": 1200,
+    "domain": "energy",
+    "kind": "practice",
+    "summary": "Systematic coal extraction supplied fuel for heating and industry.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Excavating tools opened seams and separated mineral fuel."
+      }
+    ]
+  },
+  {
+    "id": "coke",
+    "title": "Coke (fuel)",
+    "wiki": "Coke (fuel)",
+    "year": 1709,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Heating coal without air produced fuel suited to iron smelting.",
+    "parents": [
+      {
+        "id": "coal-mining",
+        "type": "foundation",
+        "reason": "Mined coal supplied feedstock for carbon-rich furnace fuel."
+      }
+    ]
+  },
+  {
+    "id": "oil-lamp",
+    "title": "Oil lamp",
+    "wiki": "Oil lamp",
+    "year": -4500,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Contained liquid fuel and wicks provided sustained portable light.",
+    "parents": [
+      {
+        "id": "pottery",
+        "type": "enabler",
+        "reason": "Ceramic vessels held fuel beneath a controlled flame."
+      }
+    ]
+  },
+  {
+    "id": "candle",
+    "title": "Candle",
+    "wiki": "Candle",
+    "year": -500,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Wax or fat surrounding a wick supplied compact controlled illumination.",
+    "parents": [
+      {
+        "id": "cordage",
+        "type": "enabler",
+        "reason": "Twisted fibers supplied the wick transporting molten fuel."
+      }
+    ]
+  },
+  {
+    "id": "waterwheel",
+    "title": "Water wheel",
+    "wiki": "Water wheel",
+    "year": -300,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Flowing water turned wheels to drive mills and machinery.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Timber fabrication supplied large rotating wheels and shafts."
+      }
+    ]
+  },
+  {
+    "id": "windmill",
+    "title": "Windmill",
+    "wiki": "Windmill",
+    "year": 800,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Wind-driven rotors supplied power for milling and pumping.",
+    "parents": [
+      {
+        "id": "sail",
+        "type": "foundation",
+        "reason": "Sailmaking supplied surfaces capable of capturing moving air."
+      }
+    ]
+  },
+  {
+    "id": "water-turbine",
+    "title": "Water turbine",
+    "wiki": "Water turbine",
+    "year": 1827,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Shaped hydraulic rotors converted water flow efficiently into shaft power.",
+    "parents": [
+      {
+        "id": "waterwheel",
+        "type": "enabler",
+        "reason": "Waterwheel practice established hydraulic drive and power transmission."
+      },
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate runners and bearings reduced losses in enclosed hydraulic machines."
+      }
+    ]
+  },
+  {
+    "id": "pelton-wheel",
+    "title": "Pelton wheel",
+    "wiki": "Pelton wheel",
+    "year": 1878,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Impulse buckets extracted power from high-speed water jets.",
+    "parents": [
+      {
+        "id": "water-turbine",
+        "type": "enabler",
+        "reason": "Hydraulic turbine practice supplied water-to-shaft power conversion."
+      }
+    ]
+  },
+  {
+    "id": "francis-turbine",
+    "title": "Francis turbine",
+    "wiki": "Francis turbine",
+    "year": 1849,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Mixed-flow hydraulic turbines efficiently handled substantial water flows.",
+    "parents": [
+      {
+        "id": "water-turbine",
+        "type": "enabler",
+        "reason": "Turbine engineering supplied enclosed runners and controlled water passages."
+      }
+    ]
+  },
+  {
+    "id": "kaplan-turbine",
+    "title": "Kaplan turbine",
+    "wiki": "Kaplan turbine",
+    "year": 1913,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Adjustable propeller blades improved low-head hydraulic generation.",
+    "parents": [
+      {
+        "id": "water-turbine",
+        "type": "enabler",
+        "reason": "Water-turbine design supplied runners and flow-control machinery."
+      }
+    ]
+  },
+  {
+    "id": "steam-engine",
+    "title": "Atmospheric steam engine",
+    "wiki": "Steam engine",
+    "year": 1712,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Atmospheric steam engines supplied practical mechanical power for pumping.",
+    "parents": [
+      {
+        "id": "cast-iron",
+        "type": "enabler",
+        "reason": "Cast iron supplied large pressure cylinders and durable pump components."
+      },
+      {
+        "id": "coal-mining",
+        "type": "influence",
+        "reason": "Flooded coal workings created demand for powerful drainage pumps."
+      }
+    ]
+  },
+  {
+    "id": "watt-condenser",
+    "title": "Watt's separate condenser",
+    "wiki": "Watt steam engine",
+    "year": 1769,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Separate condensers reduced steam-engine fuel consumption.",
+    "parents": [
+      {
+        "id": "steam-engine",
+        "type": "enabler",
+        "reason": "Atmospheric engines supplied the cylinder and condensation cycle improved by Watt."
+      }
+    ]
+  },
+  {
+    "id": "compound-steam-engine",
+    "title": "Compound steam engine",
+    "wiki": "Compound steam engine",
+    "year": 1781,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Successive expansion in multiple cylinders improved steam-engine efficiency.",
+    "parents": [
+      {
+        "id": "steam-engine",
+        "type": "enabler",
+        "reason": "Steam-engine practice supplied pressure cylinders and piston mechanisms."
+      }
+    ]
+  },
+  {
+    "id": "steam-turbine",
+    "title": "Steam turbine",
+    "wiki": "Steam turbine",
+    "year": 1884,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Steam expanded through blades to provide continuous rotary power.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "foundation",
+        "reason": "Accurate machining supplied close clearances and balanced turbine rotors."
+      }
+    ]
+  },
+  {
+    "id": "stirling-engine",
+    "title": "Stirling engine",
+    "wiki": "Stirling engine",
+    "year": 1816,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "External heating drove engines using cyclic compression and expansion of gas.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate cylinders and seals contained the working gas."
+      }
+    ]
+  },
+  {
+    "id": "internal-combustion",
+    "title": "Practical internal combustion engine",
+    "wiki": "Internal combustion engine",
+    "year": 1860,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Fuel burned inside cylinders to produce mechanical power.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Closely fitted pistons and cylinders contained combustion pressure."
+      }
+    ]
+  },
+  {
+    "id": "four-stroke-engine",
+    "title": "Four-stroke engine",
+    "wiki": "Four-stroke engine",
+    "year": 1876,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Separate intake, compression, power, and exhaust strokes improved engine operation.",
+    "parents": [
+      {
+        "id": "internal-combustion",
+        "type": "foundation",
+        "reason": "Combustion engines supplied the piston-cylinder power mechanism."
+      }
+    ]
+  },
+  {
+    "id": "diesel-engine",
+    "title": "Diesel engine",
+    "wiki": "Diesel engine",
+    "year": 1897,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Compression ignition enabled efficient engines using injected fuel.",
+    "parents": [
+      {
+        "id": "internal-combustion",
+        "type": "foundation",
+        "reason": "Combustion-engine construction supplied pressure-resistant cylinders and crank mechanisms."
+      }
+    ]
+  },
+  {
+    "id": "gas-turbine",
+    "title": "Gas turbine",
+    "wiki": "Gas turbine",
+    "year": 1939,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Combustion gases drove turbines for power and propulsion.",
+    "parents": [
+      {
+        "id": "steam-turbine",
+        "type": "enabler",
+        "reason": "Turbine design supplied high-speed rotary expansion machinery."
+      }
+    ]
+  },
+  {
+    "id": "electric-battery",
+    "title": "Voltaic battery",
+    "wiki": "Electric battery",
+    "year": 1800,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Stacked electrochemical cells supplied a sustained electric current.",
+    "parents": [
+      {
+        "id": "metallurgy",
+        "type": "enabler",
+        "reason": "Metal production supplied dissimilar electrodes for voltaic cells."
+      }
+    ]
+  },
+  {
+    "id": "lead-acid-battery",
+    "title": "Lead–acid battery",
+    "wiki": "Lead–acid battery",
+    "year": 1859,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Rechargeable lead-based cells stored electricity for repeated use.",
+    "parents": [
+      {
+        "id": "electric-battery",
+        "type": "foundation",
+        "reason": "Electrochemical batteries established electrodes and electrolyte assemblies."
+      }
+    ]
+  },
+  {
+    "id": "dry-cell",
+    "title": "Dry cell",
+    "wiki": "Dry cell",
+    "year": 1886,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Immobilized electrolyte made batteries more portable and spill resistant.",
+    "parents": [
+      {
+        "id": "electric-battery",
+        "type": "foundation",
+        "reason": "Battery construction supplied electrode pairs and chemical current generation."
+      }
+    ]
+  },
+  {
+    "id": "alkaline-battery",
+    "title": "Alkaline battery",
+    "wiki": "Alkaline battery",
+    "year": 1959,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Alkaline electrolytes improved capacity in common portable cells.",
+    "parents": [
+      {
+        "id": "dry-cell",
+        "type": "foundation",
+        "reason": "Dry-cell packaging supplied a practical sealed portable format."
+      }
+    ]
+  },
+  {
+    "id": "lithium-ion-battery",
+    "title": "Lithium-ion battery",
+    "wiki": "Lithium-ion battery",
+    "year": 1991,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Rechargeable lithium-intercalation cells supplied compact high-energy storage.",
+    "parents": [
+      {
+        "id": "electric-battery",
+        "type": "enabler",
+        "reason": "Rechargeable battery engineering supplied cell packaging and charge-management practice."
+      },
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Polymer separators helped isolate electrodes while allowing ion transport."
+      }
+    ]
+  },
+  {
+    "id": "electric-generator",
+    "title": "Electromagnetic generator",
+    "wiki": "Electric generator",
+    "year": 1831,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Moving magnetic fields relative to conductors generated electric power.",
+    "parents": [
+      {
+        "id": "wire-drawing",
+        "type": "enabler",
+        "reason": "Drawn conductive wire supplied coils in early generators."
+      },
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Machined shafts and bearings supported controlled conductor rotation."
+      }
+    ]
+  },
+  {
+    "id": "dynamo",
+    "title": "Dynamo",
+    "wiki": "Dynamo",
+    "year": 1866,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Self-excited generators supplied useful direct current at industrial scale.",
+    "parents": [
+      {
+        "id": "electric-generator",
+        "type": "foundation",
+        "reason": "Generator construction supplied rotating coils and commutation mechanisms."
+      }
+    ]
+  },
+  {
+    "id": "alternator",
+    "title": "Alternator",
+    "wiki": "Alternator",
+    "year": 1832,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Rotating electrical machines produced alternating current.",
+    "parents": [
+      {
+        "id": "electric-generator",
+        "type": "foundation",
+        "reason": "Generator geometry enabled repeatedly reversing induced current."
+      }
+    ]
+  },
+  {
+    "id": "electric-motor",
+    "title": "Electric motor",
+    "wiki": "Electric motor",
+    "year": 1834,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Electric current drove mechanical motion through electromagnetic forces.",
+    "parents": [
+      {
+        "id": "electric-battery",
+        "type": "enabler",
+        "reason": "Batteries supplied sustained current to early motor windings."
+      },
+      {
+        "id": "wire-drawing",
+        "type": "foundation",
+        "reason": "Conductive wire formed coils carrying the motor current."
+      }
+    ]
+  },
+  {
+    "id": "induction-motor",
+    "title": "Induction motor",
+    "wiki": "Induction motor",
+    "year": 1887,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Rotating alternating-current fields drove rugged electric motors.",
+    "parents": [
+      {
+        "id": "alternator",
+        "type": "foundation",
+        "reason": "Alternating-current generation supplied the changing fields needed for induction."
+      }
+    ]
+  },
+  {
+    "id": "transformer",
+    "title": "Transformer",
+    "wiki": "Transformer",
+    "year": 1885,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Coupled coils changed alternating-current voltage for power distribution.",
+    "parents": [
+      {
+        "id": "alternator",
+        "type": "foundation",
+        "reason": "Alternating current supplied time-varying magnetic flux between windings."
+      }
+    ]
+  },
+  {
+    "id": "power-grid",
+    "title": "Electrical grid",
+    "wiki": "Electrical grid",
+    "year": 1882,
+    "domain": "energy",
+    "kind": "infrastructure",
+    "summary": "Connected generation and distribution systems supplied electricity to many users.",
+    "parents": [
+      {
+        "id": "electric-generator",
+        "type": "enabler",
+        "reason": "Generators provided electric power for distribution networks."
+      },
+      {
+        "id": "wire-drawing",
+        "type": "foundation",
+        "reason": "Conductive wires carried generated power to distributed loads."
+      }
+    ]
+  },
+  {
+    "id": "ac-power",
+    "title": "AC power",
+    "wiki": "AC power",
+    "year": 1891,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "High-voltage alternating-current systems transmitted power over long distances.",
+    "parents": [
+      {
+        "id": "transformer",
+        "type": "enabler",
+        "reason": "Transformers raised transmission voltage and lowered it for use."
+      }
+    ]
+  },
+  {
+    "id": "hvdc",
+    "title": "High-voltage direct current",
+    "wiki": "High-voltage direct current",
+    "year": 1954,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Controlled high-voltage DC links transmitted electricity over long distances.",
+    "parents": [
+      {
+        "id": "power-grid",
+        "type": "enabler",
+        "reason": "Grid infrastructure supplied generation, receiving networks, and switchyards."
+      }
+    ]
+  },
+  {
+    "id": "hydroelectricity",
+    "title": "Hydroelectricity",
+    "wiki": "Hydroelectricity",
+    "year": 1882,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Water-driven generators converted river energy into electricity.",
+    "parents": [
+      {
+        "id": "water-turbine",
+        "type": "foundation",
+        "reason": "Water turbines supplied shaft power to electrical generators."
+      },
+      {
+        "id": "electric-generator",
+        "type": "foundation",
+        "reason": "Electrical generators converted turbine rotation into electric current."
+      }
+    ]
+  },
+  {
+    "id": "pumped-storage",
+    "title": "Pumped-storage hydroelectricity",
+    "wiki": "Pumped-storage hydroelectricity",
+    "year": 1907,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Pumping water uphill stored energy for later electrical generation.",
+    "parents": [
+      {
+        "id": "hydroelectricity",
+        "type": "foundation",
+        "reason": "Hydroelectric machines and reservoirs supplied the generation side of storage."
+      }
+    ]
+  },
+  {
+    "id": "wind-turbine",
+    "title": "Wind turbine",
+    "wiki": "Wind turbine",
+    "year": 1887,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Wind-driven rotors coupled to generators supplied electricity.",
+    "parents": [
+      {
+        "id": "windmill",
+        "type": "foundation",
+        "reason": "Windmills supplied rotor and wind-power transmission experience."
+      },
+      {
+        "id": "electric-generator",
+        "type": "foundation",
+        "reason": "Electrical generators converted wind-driven shaft rotation into current."
+      }
+    ]
+  },
+  {
+    "id": "solar-cell",
+    "title": "Practical silicon solar cell",
+    "wiki": "Solar cell",
+    "year": 1954,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Practical semiconductor cells converted sunlight into electric power.",
+    "parents": [
+      {
+        "id": "wire-drawing",
+        "type": "enabler",
+        "reason": "Conductive wire connected cells into usable photovoltaic power supplies."
+      }
+    ]
+  },
+  {
+    "id": "solar-thermal",
+    "title": "Solar water heating",
+    "wiki": "Solar thermal energy",
+    "year": 1891,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Glazed collectors captured sunlight as useful heat.",
+    "parents": [
+      {
+        "id": "glassmaking",
+        "type": "enabler",
+        "reason": "Glass covers admitted sunlight while limiting convective heat losses."
+      }
+    ]
+  },
+  {
+    "id": "concentrated-solar",
+    "title": "Concentrated solar power",
+    "wiki": "Concentrated solar power",
+    "year": 1913,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Reflectors concentrated sunlight to heat fluids and drive power machinery.",
+    "parents": [
+      {
+        "id": "steam-engine",
+        "type": "enabler",
+        "reason": "Steam engines converted collected thermal energy into mechanical work."
+      }
+    ]
+  },
+  {
+    "id": "geothermal-power",
+    "title": "Geothermal power",
+    "wiki": "Geothermal power",
+    "year": 1904,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Underground heat supplied steam or hot fluids for electric generation.",
+    "parents": [
+      {
+        "id": "steam-turbine",
+        "type": "foundation",
+        "reason": "Steam turbines converted geothermal steam flow into shaft power."
+      }
+    ]
+  },
+  {
+    "id": "tidal-power",
+    "title": "Tidal power",
+    "wiki": "Tidal power",
+    "year": 1966,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Tidal water movement drove machines to generate electricity.",
+    "parents": [
+      {
+        "id": "water-turbine",
+        "type": "foundation",
+        "reason": "Hydraulic turbines extracted power from controlled water flows."
+      }
+    ]
+  },
+  {
+    "id": "wave-power",
+    "title": "Wave power",
+    "wiki": "Wave power",
+    "year": 1965,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Wave-driven mechanisms converted ocean motion into electricity.",
+    "parents": [
+      {
+        "id": "electric-generator",
+        "type": "enabler",
+        "reason": "Generators converted captured mechanical wave motion into current."
+      }
+    ]
+  },
+  {
+    "id": "fuel-cell",
+    "title": "Fuel cell",
+    "wiki": "Fuel cell",
+    "year": 1839,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Electrochemical devices generated electricity from continuously supplied reactants.",
+    "parents": [
+      {
+        "id": "electric-battery",
+        "type": "enabler",
+        "reason": "Battery research supplied electrode and electrolyte arrangements."
+      }
+    ]
+  },
+  {
+    "id": "biogas",
+    "title": "Captured biogas",
+    "wiki": "Biogas",
+    "year": 1859,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Captured decomposition gas became fuel for heating and power.",
+    "parents": [
+      {
+        "id": "sewer",
+        "type": "enabler",
+        "reason": "Wastewater collection concentrated organic feedstock for digestion."
+      }
+    ]
+  },
+  {
+    "id": "anaerobic-digester",
+    "title": "Controlled anaerobic digesters",
+    "wiki": "Anaerobic digestion",
+    "year": 1895,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Controlled oxygen-free tanks stabilized organic waste and recovered gas.",
+    "parents": [
+      {
+        "id": "biogas",
+        "type": "enabler",
+        "reason": "Biogas collection established useful fuel production from decomposition."
+      }
+    ]
+  },
+  {
+    "id": "petroleum-refining",
+    "title": "Petroleum refining processes",
+    "wiki": "Petroleum refining processes",
+    "year": 1850,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Refineries separated and converted crude oil into useful products.",
+    "parents": [
+      {
+        "id": "distillation",
+        "type": "foundation",
+        "reason": "Distillation separated crude petroleum fractions by boiling range."
+      }
+    ]
+  },
+  {
+    "id": "oil-well",
+    "title": "Drilled petroleum wells",
+    "wiki": "Oil well",
+    "year": 1859,
+    "domain": "energy",
+    "kind": "infrastructure",
+    "summary": "Drilled wells brought petroleum from underground reservoirs to the surface.",
+    "parents": [
+      {
+        "id": "drill",
+        "type": "enabler",
+        "reason": "Boring technology supplied controlled penetration into subsurface formations."
+      }
+    ]
+  },
+  {
+    "id": "natural-gas",
+    "title": "Piped natural gas",
+    "wiki": "Natural gas",
+    "year": 1821,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Captured geological gas supplied fuel through distribution pipes.",
+    "parents": [
+      {
+        "id": "pipe",
+        "type": "enabler",
+        "reason": "Pipes transported combustible gas from wells to users."
+      }
+    ]
+  },
+  {
+    "id": "gas-lighting",
+    "title": "Gas lighting",
+    "wiki": "Gas lighting",
+    "year": 1792,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Manufactured fuel gas illuminated streets and buildings.",
+    "parents": [
+      {
+        "id": "coal-mining",
+        "type": "enabler",
+        "reason": "Coal supplied feedstock for early illuminating gas production."
+      }
+    ]
+  },
+  {
+    "id": "kerosene",
+    "title": "Kerosene",
+    "wiki": "Kerosene",
+    "year": 1846,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Refined middle petroleum fractions supplied dependable lamp and heating fuel.",
+    "parents": [
+      {
+        "id": "distillation",
+        "type": "foundation",
+        "reason": "Distillation separated a useful liquid fuel boiling range."
+      }
+    ]
+  },
+  {
+    "id": "fluid-catalytic-cracking",
+    "title": "Fluid catalytic cracking",
+    "wiki": "Fluid catalytic cracking",
+    "year": 1942,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Circulating catalyst particles converted heavy oil into lighter fuel products.",
+    "parents": [
+      {
+        "id": "petroleum-refining",
+        "type": "foundation",
+        "reason": "Refineries supplied separated heavy fractions for further conversion."
+      }
+    ]
+  },
+  {
+    "id": "nuclear-reactor",
+    "title": "Controlled nuclear reactor",
+    "wiki": "Nuclear reactor",
+    "year": 1942,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Engineered assemblies sustained and controlled nuclear chain reactions.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Precision fabrication supplied controlled component geometry and instrumentation hardware."
+      }
+    ]
+  },
+  {
+    "id": "nuclear-power",
+    "title": "Nuclear electricity generation",
+    "wiki": "Nuclear power",
+    "year": 1954,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Reactor heat generated electricity through thermal power cycles.",
+    "parents": [
+      {
+        "id": "nuclear-reactor",
+        "type": "foundation",
+        "reason": "Controlled reactors supplied continuous recoverable thermal energy."
+      }
+    ]
+  },
+  {
+    "id": "pressurized-water-reactor",
+    "title": "Pressurized water reactor",
+    "wiki": "Pressurized water reactor",
+    "year": 1954,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Pressurized coolant transferred reactor heat without boiling in the core.",
+    "parents": [
+      {
+        "id": "nuclear-reactor",
+        "type": "foundation",
+        "reason": "Reactor engineering supplied controlled fuel assemblies and core structures."
+      }
+    ]
+  },
+  {
+    "id": "fast-breeder",
+    "title": "Breeder reactor",
+    "wiki": "Breeder reactor",
+    "year": 1951,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Reactor arrangements produced additional fissile material while generating heat.",
+    "parents": [
+      {
+        "id": "nuclear-reactor",
+        "type": "foundation",
+        "reason": "Controlled reactor cores supplied neutron flux for fuel conversion."
+      }
+    ]
+  },
+  {
+    "id": "district-heating",
+    "title": "District heating",
+    "wiki": "District heating",
+    "year": 1877,
+    "domain": "energy",
+    "kind": "infrastructure",
+    "summary": "Shared plants distributed heat through networks to multiple buildings.",
+    "parents": [
+      {
+        "id": "central-heating",
+        "type": "enabler",
+        "reason": "Central heating established heat generation and circulation outside occupied rooms."
+      }
+    ]
+  },
+  {
+    "id": "combined-cycle",
+    "title": "Combined cycle power plant",
+    "wiki": "Combined cycle power plant",
+    "year": 1961,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Gas-turbine exhaust supplied a second steam power cycle.",
+    "parents": [
+      {
+        "id": "gas-turbine",
+        "type": "foundation",
+        "reason": "Gas turbines provided high-temperature exhaust containing recoverable heat."
+      }
+    ]
+  },
+  {
+    "id": "cogeneration",
+    "title": "Combined heat and power",
+    "wiki": "Cogeneration",
+    "year": 1882,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Power plants recovered useful heat alongside mechanical or electrical output.",
+    "parents": [
+      {
+        "id": "steam-engine",
+        "type": "enabler",
+        "reason": "Steam machinery supplied both power output and usable exhaust heat."
+      },
+      {
+        "id": "electric-generator",
+        "type": "enabler",
+        "reason": "Generators added electric output to heat-producing engine plants."
+      }
+    ]
+  },
+  {
+    "id": "flywheel-storage",
+    "title": "Modern flywheel energy storage",
+    "wiki": "Flywheel energy storage",
+    "year": 1970,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Fast-spinning rotors stored mechanical energy for later recovery.",
+    "parents": [
+      {
+        "id": "ball-bearing",
+        "type": "enabler",
+        "reason": "Low-friction bearings supported efficient high-speed rotating storage."
+      }
+    ]
+  },
+  {
+    "id": "wheel",
+    "title": "Wheel",
+    "wiki": "Wheel",
+    "year": -3500,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Rotating wheels reduced friction for moving loads over land.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Wood shaping supplied hubs, rims, and supporting axles."
+      }
+    ]
+  },
+  {
+    "id": "cart",
+    "title": "Cart",
+    "wiki": "Cart",
+    "year": -3500,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Wheeled platforms carried goods with animal or human traction.",
+    "parents": [
+      {
+        "id": "wheel",
+        "type": "foundation",
+        "reason": "Wheels supported rolling loads on axles."
+      }
+    ]
+  },
+  {
+    "id": "chariot",
+    "title": "Chariot",
+    "wiki": "Chariot",
+    "year": -2000,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Light spoked-wheel vehicles increased the speed of animal-drawn transport.",
+    "parents": [
+      {
+        "id": "wheel",
+        "type": "foundation",
+        "reason": "Wheel construction supplied low-friction running gear."
+      }
+    ]
+  },
+  {
+    "id": "spoked-wheel",
+    "title": "Light spoked wheel",
+    "wiki": "Spoke",
+    "year": -2000,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Spoked structures reduced wheel weight while retaining useful strength.",
+    "parents": [
+      {
+        "id": "wheel",
+        "type": "foundation",
+        "reason": "Existing wheels supplied hub-and-rim geometry improved by spokes."
+      }
+    ]
+  },
+  {
+    "id": "horse-collar",
+    "title": "Horse collar",
+    "wiki": "Horse collar",
+    "year": 500,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Padded collars transmitted pulling loads without pressing on horses' throats.",
+    "parents": [
+      {
+        "id": "leather",
+        "type": "enabler",
+        "reason": "Leatherworking supplied flexible durable harness surfaces."
+      }
+    ]
+  },
+  {
+    "id": "horseshoe",
+    "title": "Horseshoe",
+    "wiki": "Horseshoe",
+    "year": 900,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Fitted metal shoes protected working horses' hooves.",
+    "parents": [
+      {
+        "id": "forging",
+        "type": "enabler",
+        "reason": "Forging shaped metal to fit and protect individual hooves."
+      }
+    ]
+  },
+  {
+    "id": "saddle",
+    "title": "Saddle",
+    "wiki": "Saddle",
+    "year": -700,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Structured seats improved riders' support and load distribution.",
+    "parents": [
+      {
+        "id": "leather",
+        "type": "enabler",
+        "reason": "Leather supplied flexible coverings and durable straps."
+      }
+    ]
+  },
+  {
+    "id": "stirrup",
+    "title": "Stirrup",
+    "wiki": "Stirrup",
+    "year": 300,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Hanging foot supports stabilized mounted riders.",
+    "parents": [
+      {
+        "id": "saddle",
+        "type": "enabler",
+        "reason": "Saddles supplied anchor points for suspended foot supports."
+      }
+    ]
+  },
+  {
+    "id": "sled",
+    "title": "Sled",
+    "wiki": "Sled",
+    "year": -8000,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Runner-supported platforms moved loads over snow and other surfaces.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Woodworking supplied broad smooth runners and load frames."
+      }
+    ]
+  },
+  {
+    "id": "canoe",
+    "title": "Canoe",
+    "wiki": "Canoe",
+    "year": -8000,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Shaped wooden hulls carried people and cargo across water.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Timber hollowing and joining supplied buoyant hull structures."
+      }
+    ]
+  },
+  {
+    "id": "raft",
+    "title": "Raft",
+    "wiki": "Raft",
+    "year": -10000,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Bound floating materials formed simple platforms for water transport.",
+    "parents": [
+      {
+        "id": "cordage",
+        "type": "foundation",
+        "reason": "Ropes secured logs or bundles into a stable platform."
+      }
+    ]
+  },
+  {
+    "id": "oar",
+    "title": "Oar",
+    "wiki": "Oar",
+    "year": -5000,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Long handled blades converted human effort into boat propulsion.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "foundation",
+        "reason": "Wood shaping supplied stiff shafts and broad water-engaging blades."
+      }
+    ]
+  },
+  {
+    "id": "sail",
+    "title": "Wind-powered sailing",
+    "wiki": "Sail",
+    "year": -3500,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Fabric surfaces captured wind to propel watercraft.",
+    "parents": [
+      {
+        "id": "weaving",
+        "type": "foundation",
+        "reason": "Woven cloth supplied large lightweight wind-catching surfaces."
+      }
+    ]
+  },
+  {
+    "id": "outrigger",
+    "title": "Outrigger boat",
+    "wiki": "Outrigger boat",
+    "year": -2000,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Lateral floats increased stability of narrow sailing hulls.",
+    "parents": [
+      {
+        "id": "canoe",
+        "type": "enabler",
+        "reason": "Canoe hull construction supplied the central buoyant vessel."
+      }
+    ]
+  },
+  {
+    "id": "catamaran",
+    "title": "Catamaran",
+    "wiki": "Catamaran",
+    "year": -1500,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Paired hulls provided stable watercraft with broad working decks.",
+    "parents": [
+      {
+        "id": "outrigger",
+        "type": "enabler",
+        "reason": "Multi-hull stabilization practice supported connecting parallel floats."
+      }
+    ]
+  },
+  {
+    "id": "lateen-sail",
+    "title": "Lateen",
+    "wiki": "Lateen",
+    "year": 200,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Triangular fore-and-aft sails improved maneuvering across wind directions.",
+    "parents": [
+      {
+        "id": "sail",
+        "type": "foundation",
+        "reason": "Sailmaking supplied shaped fabric and rigging for wind propulsion."
+      }
+    ]
+  },
+  {
+    "id": "junk-rig",
+    "title": "Junk rig",
+    "wiki": "Junk rig",
+    "year": 100,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Battened sails allowed efficient reefing and control on East Asian vessels.",
+    "parents": [
+      {
+        "id": "sail",
+        "type": "foundation",
+        "reason": "Sail and rigging construction supplied flexible wind-powered surfaces."
+      }
+    ]
+  },
+  {
+    "id": "rudder",
+    "title": "Mounted ship rudder",
+    "wiki": "Rudder",
+    "year": 100,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Mounted steering surfaces controlled vessel heading through water forces.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Timber fabrication supplied blades and their supporting fittings."
+      }
+    ]
+  },
+  {
+    "id": "carvel-building",
+    "title": "Carvel (boat building)",
+    "wiki": "Carvel (boat building)",
+    "year": 1300,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Edge-joined planks created smooth hull skins on internal frames.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Timber shaping and joining supplied fitted hull planks."
+      }
+    ]
+  },
+  {
+    "id": "clinker-building",
+    "title": "Clinker (boat building)",
+    "wiki": "Clinker (boat building)",
+    "year": 300,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Overlapping planks produced strong flexible hulls.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Timber fabrication supplied thin planks and watertight connections."
+      }
+    ]
+  },
+  {
+    "id": "watertight-bulkhead",
+    "title": "Watertight ship compartments",
+    "wiki": "Bulkhead (partition)",
+    "year": 1100,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Internal hull partitions limited flooding between vessel compartments.",
+    "parents": [
+      {
+        "id": "junk-rig",
+        "type": "enabler",
+        "reason": "Large East Asian vessels supplied settings for compartmented hull design."
+      }
+    ]
+  },
+  {
+    "id": "dry-dock",
+    "title": "Dry dock",
+    "wiki": "Dry dock",
+    "year": 200,
+    "domain": "transport",
+    "kind": "infrastructure",
+    "summary": "Drained enclosures exposed ship hulls for construction and repair.",
+    "parents": [
+      {
+        "id": "dam",
+        "type": "enabler",
+        "reason": "Water-retaining barriers enabled enclosed basins to be isolated."
+      }
+    ]
+  },
+  {
+    "id": "canal",
+    "title": "Canal",
+    "wiki": "Canal",
+    "year": -2000,
+    "domain": "transport",
+    "kind": "infrastructure",
+    "summary": "Excavated waterways transported boats and redirected water.",
+    "parents": [
+      {
+        "id": "drainage",
+        "type": "foundation",
+        "reason": "Channel excavation and flow management supplied basic canal-building methods."
+      }
+    ]
+  },
+  {
+    "id": "suez-canal",
+    "title": "Suez Canal",
+    "wiki": "Suez Canal",
+    "year": 1869,
+    "domain": "transport",
+    "kind": "infrastructure",
+    "summary": "An excavated sea-level route linked the Mediterranean and Red Sea.",
+    "parents": [
+      {
+        "id": "canal",
+        "type": "enabler",
+        "reason": "Canal engineering supplied excavation and waterway management practice."
+      }
+    ]
+  },
+  {
+    "id": "panama-canal",
+    "title": "Panama Canal",
+    "wiki": "Panama Canal",
+    "year": 1914,
+    "domain": "transport",
+    "kind": "infrastructure",
+    "summary": "Lock-controlled waterways connected the Atlantic and Pacific across Panama.",
+    "parents": [
+      {
+        "id": "canal-lock",
+        "type": "foundation",
+        "reason": "Locks raised and lowered ships between sea and summit levels."
+      }
+    ]
+  },
+  {
+    "id": "road",
+    "title": "Prepared roads",
+    "wiki": "Road",
+    "year": -4000,
+    "domain": "transport",
+    "kind": "infrastructure",
+    "summary": "Prepared land routes supported repeated travel and movement of goods.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Earthworking tools cleared and graded travel surfaces."
+      }
+    ]
+  },
+  {
+    "id": "roman-road",
+    "title": "Roman roads",
+    "wiki": "Roman roads",
+    "year": -312,
+    "domain": "transport",
+    "kind": "infrastructure",
+    "summary": "Engineered layered roads supported durable long-distance land travel.",
+    "parents": [
+      {
+        "id": "road",
+        "type": "enabler",
+        "reason": "Existing roadbuilding supplied alignment and surface-construction practice."
+      }
+    ]
+  },
+  {
+    "id": "macadam",
+    "title": "Macadam",
+    "wiki": "Macadam",
+    "year": 1820,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Compacted graded stone layers produced durable drained road surfaces.",
+    "parents": [
+      {
+        "id": "road",
+        "type": "enabler",
+        "reason": "Road construction supplied the prepared foundation for stone surfacing."
+      }
+    ]
+  },
+  {
+    "id": "asphalt-paving",
+    "title": "Asphalt concrete",
+    "wiki": "Asphalt concrete",
+    "year": 1870,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Bituminous binders held aggregate together in durable pavement.",
+    "parents": [
+      {
+        "id": "petroleum-refining",
+        "type": "enabler",
+        "reason": "Petroleum processing supplied asphalt binders for road mixtures."
+      }
+    ]
+  },
+  {
+    "id": "railway",
+    "title": "Powered rail transport",
+    "wiki": "Rail transport",
+    "year": 1804,
+    "domain": "transport",
+    "kind": "infrastructure",
+    "summary": "Powered vehicles on guided rails moved heavy loads efficiently.",
+    "parents": [
+      {
+        "id": "steam-engine",
+        "type": "enabler",
+        "reason": "Steam engines supplied traction power independent of draft animals."
+      },
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "Durable rails later supported heavier trains and greater traffic volumes."
+      }
+    ]
+  },
+  {
+    "id": "steam-locomotive",
+    "title": "Steam locomotive",
+    "wiki": "Steam locomotive",
+    "year": 1804,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Steam-powered rail vehicles pulled trains using onboard fuel and water.",
+    "parents": [
+      {
+        "id": "steam-engine",
+        "type": "enabler",
+        "reason": "Steam engines supplied reciprocating mechanical traction power."
+      },
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate cylinders and linkages improved mobile steam machinery."
+      }
+    ]
+  },
+  {
+    "id": "electric-locomotive",
+    "title": "Electric locomotive",
+    "wiki": "Electric locomotive",
+    "year": 1879,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Electric motors drove rail vehicles from onboard or external power.",
+    "parents": [
+      {
+        "id": "electric-motor",
+        "type": "foundation",
+        "reason": "Motors converted electrical supply into wheel-driving torque."
+      }
+    ]
+  },
+  {
+    "id": "diesel-locomotive",
+    "title": "Diesel locomotive",
+    "wiki": "Diesel locomotive",
+    "year": 1912,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Diesel engines powered railway traction through mechanical or electric transmission.",
+    "parents": [
+      {
+        "id": "diesel-engine",
+        "type": "foundation",
+        "reason": "Diesel engines supplied efficient onboard prime movers."
+      }
+    ]
+  },
+  {
+    "id": "railway-brake",
+    "title": "Railway air brakes",
+    "wiki": "Railway air brake",
+    "year": 1869,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Compressed-air systems coordinated braking across multiple railway vehicles.",
+    "parents": [
+      {
+        "id": "railway",
+        "type": "influence",
+        "reason": "Long trains created a need for remotely coordinated braking."
+      }
+    ]
+  },
+  {
+    "id": "subway",
+    "title": "Urban rapid transit",
+    "wiki": "Rapid transit",
+    "year": 1863,
+    "domain": "transport",
+    "kind": "infrastructure",
+    "summary": "Dedicated urban rail routes moved large numbers of passengers.",
+    "parents": [
+      {
+        "id": "railway",
+        "type": "enabler",
+        "reason": "Railways supplied guided vehicles and high-capacity train operations."
+      }
+    ]
+  },
+  {
+    "id": "high-speed-rail",
+    "title": "High-speed rail",
+    "wiki": "High-speed rail",
+    "year": 1964,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Specialized track and electric trains enabled sustained high-speed passenger travel.",
+    "parents": [
+      {
+        "id": "electric-locomotive",
+        "type": "enabler",
+        "reason": "Electric traction supplied powerful controllable drive for fast trains."
+      },
+      {
+        "id": "railway-brake",
+        "type": "enabler",
+        "reason": "Coordinated train braking supported safe high-speed operation."
+      }
+    ]
+  },
+  {
+    "id": "maglev",
+    "title": "Maglev",
+    "wiki": "Maglev",
+    "year": 1984,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Magnetic support and propulsion moved vehicles with minimal wheel contact.",
+    "parents": [
+      {
+        "id": "electric-motor",
+        "type": "enabler",
+        "reason": "Electric propulsion supplied controllable electromagnetic forces."
+      }
+    ]
+  },
+  {
+    "id": "bicycle",
+    "title": "Bicycle",
+    "wiki": "Bicycle",
+    "year": 1817,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Two aligned wheels supported efficient human-powered personal transport.",
+    "parents": [
+      {
+        "id": "wheel",
+        "type": "enabler",
+        "reason": "Wheel-and-axle construction supplied low-friction rolling support."
+      }
+    ]
+  },
+  {
+    "id": "safety-bicycle",
+    "title": "Safety bicycle",
+    "wiki": "Safety bicycle",
+    "year": 1885,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Chain-driven rear wheels and similar wheel sizes improved bicycle usability.",
+    "parents": [
+      {
+        "id": "chain-drive",
+        "type": "foundation",
+        "reason": "Chain drives transmitted pedal power to a separate rear axle."
+      }
+    ]
+  },
+  {
+    "id": "pneumatic-tire",
+    "title": "Pneumatic tire",
+    "wiki": "Pneumatic tire",
+    "year": 1888,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Air-filled elastic tires cushioned rolling vehicles.",
+    "parents": [
+      {
+        "id": "vulcanization",
+        "type": "foundation",
+        "reason": "Vulcanized rubber supplied flexible airtight tire casings."
+      }
+    ]
+  },
+  {
+    "id": "automobile",
+    "title": "Combustion-powered automobile",
+    "wiki": "Car",
+    "year": 1886,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Self-propelled road vehicles combined onboard engines with wheeled chassis.",
+    "parents": [
+      {
+        "id": "internal-combustion",
+        "type": "foundation",
+        "reason": "Compact combustion engines supplied road-vehicle traction power."
+      }
+    ]
+  },
+  {
+    "id": "motorcycle",
+    "title": "Motorcycle",
+    "wiki": "Motorcycle",
+    "year": 1885,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Engines powered compact two-wheeled road vehicles.",
+    "parents": [
+      {
+        "id": "internal-combustion",
+        "type": "foundation",
+        "reason": "Combustion engines supplied an onboard mechanical drive source."
+      }
+    ]
+  },
+  {
+    "id": "electric-car",
+    "title": "Battery electric car",
+    "wiki": "Electric car",
+    "year": 1890,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Battery-fed electric motors propelled road vehicles.",
+    "parents": [
+      {
+        "id": "electric-motor",
+        "type": "foundation",
+        "reason": "Electric motors supplied controllable torque for vehicle traction."
+      }
+    ]
+  },
+  {
+    "id": "hybrid-vehicle",
+    "title": "Hybrid vehicle",
+    "wiki": "Hybrid vehicle",
+    "year": 1900,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Combined electric and fuel-powered drives shared vehicle propulsion duties.",
+    "parents": [
+      {
+        "id": "electric-motor",
+        "type": "enabler",
+        "reason": "Electric motors enabled an additional independently controlled drive path."
+      }
+    ]
+  },
+  {
+    "id": "automatic-transmission",
+    "title": "Automatic transmission",
+    "wiki": "Automatic transmission",
+    "year": 1939,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Automatic gear selection reduced driver effort while matching engine and road speed.",
+    "parents": [
+      {
+        "id": "gear-cutting",
+        "type": "enabler",
+        "reason": "Accurate gear manufacture supplied reliable multi-ratio drive trains."
+      }
+    ]
+  },
+  {
+    "id": "differential",
+    "title": "Differential (mechanical device)",
+    "wiki": "Differential (mechanical device)",
+    "year": 1827,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Gear assemblies let driven wheels rotate at different speeds while turning.",
+    "parents": [
+      {
+        "id": "gear-cutting",
+        "type": "foundation",
+        "reason": "Machined gears supplied controlled division of shaft rotation."
+      }
+    ]
+  },
+  {
+    "id": "disc-brake",
+    "title": "Disc brake",
+    "wiki": "Disc brake",
+    "year": 1902,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Clamping friction pads against rotating discs controlled vehicle speed.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate metal machining supplied smooth discs and fitted calipers."
+      }
+    ]
+  },
+  {
+    "id": "seat-belt",
+    "title": "Three-point seat belt",
+    "wiki": "Seat belt",
+    "year": 1959,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Three-point restraints distributed crash forces across occupants' bodies.",
+    "parents": [
+      {
+        "id": "weaving",
+        "type": "enabler",
+        "reason": "Strong woven webbing supplied flexible load-bearing restraint straps."
+      }
+    ]
+  },
+  {
+    "id": "airbag",
+    "title": "Airbag",
+    "wiki": "Airbag",
+    "year": 1971,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Rapidly inflated cushions reduced contact forces during vehicle collisions.",
+    "parents": [
+      {
+        "id": "nylon",
+        "type": "enabler",
+        "reason": "Strong lightweight nylon fabric supplied foldable inflatable cushions."
+      }
+    ]
+  },
+  {
+    "id": "traffic-signal",
+    "title": "Traffic light",
+    "wiki": "Traffic light",
+    "year": 1914,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Electric signals coordinated conflicting road movements at intersections.",
+    "parents": [
+      {
+        "id": "power-grid",
+        "type": "enabler",
+        "reason": "Distributed electricity powered reliable illuminated signals."
+      }
+    ]
+  },
+  {
+    "id": "containerization",
+    "title": "Containerization",
+    "wiki": "Containerization",
+    "year": 1956,
+    "domain": "transport",
+    "kind": "practice",
+    "summary": "Standard cargo boxes transferred efficiently among ships, trains, and trucks.",
+    "parents": [
+      {
+        "id": "crane",
+        "type": "enabler",
+        "reason": "Cranes lifted whole loaded containers between transport modes."
+      }
+    ]
+  },
+  {
+    "id": "forklift",
+    "title": "Forklift",
+    "wiki": "Forklift",
+    "year": 1917,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Powered industrial vehicles lifted and positioned palletized loads.",
+    "parents": [
+      {
+        "id": "hydraulic-press",
+        "type": "enabler",
+        "reason": "Hydraulic cylinders supplied compact high-force lifting mechanisms."
+      }
+    ]
+  },
+  {
+    "id": "air-cushion-vehicle",
+    "title": "Hovercraft",
+    "wiki": "Hovercraft",
+    "year": 1959,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Pressurized air cushions supported vehicles above land or water surfaces.",
+    "parents": [
+      {
+        "id": "internal-combustion",
+        "type": "enabler",
+        "reason": "Engines supplied power to lift fans and propulsion systems."
+      }
+    ]
+  },
+  {
+    "id": "steamboat",
+    "title": "Steamboat",
+    "wiki": "Steamboat",
+    "year": 1807,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Onboard steam machinery propelled vessels independently of wind.",
+    "parents": [
+      {
+        "id": "steam-engine",
+        "type": "foundation",
+        "reason": "Steam engines supplied mechanical power for paddles or propellers."
+      }
+    ]
+  },
+  {
+    "id": "marine-propeller",
+    "title": "Screw propeller propulsion",
+    "wiki": "Propeller",
+    "year": 1836,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Rotating helical blades converted shaft power into vessel thrust.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate metalworking supplied durable balanced propeller geometry."
+      }
+    ]
+  },
+  {
+    "id": "ironclad",
+    "title": "Ironclad warship",
+    "wiki": "Ironclad warship",
+    "year": 1859,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Iron armor protected steam-powered ships from contemporary projectiles.",
+    "parents": [
+      {
+        "id": "rolling-mill",
+        "type": "enabler",
+        "reason": "Rolled metal supplied large protective armor plates."
+      }
+    ]
+  },
+  {
+    "id": "submarine",
+    "title": "Crewed submersible vessel",
+    "wiki": "Submarine",
+    "year": 1620,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Enclosed underwater vessels transported crews beneath the surface.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Hull construction supplied watertight structures capable of carrying crews."
+      }
+    ]
+  },
+  {
+    "id": "scuba",
+    "title": "Demand-regulated scuba",
+    "wiki": "Scuba set",
+    "year": 1943,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Demand-regulated compressed air enabled independent underwater breathing.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Precision valves controlled gas pressure and breathing delivery."
+      }
+    ]
+  },
+  {
+    "id": "balloon",
+    "title": "Crewed hot-air balloon",
+    "wiki": "Hot air balloon",
+    "year": 1783,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Heated air in fabric envelopes enabled human flight.",
+    "parents": [
+      {
+        "id": "weaving",
+        "type": "enabler",
+        "reason": "Woven fabric supplied large lightweight gas-containing envelopes."
+      }
+    ]
+  },
+  {
+    "id": "airship",
+    "title": "Airship",
+    "wiki": "Airship",
+    "year": 1852,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Powered lighter-than-air vessels added controlled propulsion to buoyant flight.",
+    "parents": [
+      {
+        "id": "balloon",
+        "type": "enabler",
+        "reason": "Balloon envelopes supplied gas-based lift for larger flying structures."
+      }
+    ]
+  },
+  {
+    "id": "glider",
+    "title": "Glider (aircraft)",
+    "wiki": "Glider (aircraft)",
+    "year": 1891,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Unpowered winged aircraft demonstrated controlled sustained aerodynamic flight.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Light wooden construction supplied stiff wings and supporting frames."
+      }
+    ]
+  },
+  {
+    "id": "powered-airplane",
+    "title": "Controlled powered airplane",
+    "wiki": "Airplane",
+    "year": 1903,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Engine-driven propellers enabled sustained controlled powered flight.",
+    "parents": [
+      {
+        "id": "internal-combustion",
+        "type": "enabler",
+        "reason": "Compact combustion engines supplied sufficient airborne propulsion power."
+      },
+      {
+        "id": "glider",
+        "type": "influence",
+        "reason": "Glider experiments developed wing geometry and flight-control practice."
+      }
+    ]
+  },
+  {
+    "id": "helicopter",
+    "title": "Helicopter",
+    "wiki": "Helicopter",
+    "year": 1936,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Powered rotating wings enabled vertical takeoff and hovering.",
+    "parents": [
+      {
+        "id": "internal-combustion",
+        "type": "enabler",
+        "reason": "Engines supplied continuous rotary power for lifting rotors."
+      }
+    ]
+  },
+  {
+    "id": "jet-engine",
+    "title": "Jet engine",
+    "wiki": "Jet engine",
+    "year": 1939,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Continuous combustion and exhaust acceleration propelled aircraft at high speed.",
+    "parents": [
+      {
+        "id": "gas-turbine",
+        "type": "foundation",
+        "reason": "Gas turbines supplied compressors and hot-gas expansion machinery."
+      }
+    ]
+  },
+  {
+    "id": "turbofan",
+    "title": "Turbofan",
+    "wiki": "Turbofan",
+    "year": 1960,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Large bypass fans improved propulsion efficiency for many jet aircraft.",
+    "parents": [
+      {
+        "id": "jet-engine",
+        "type": "foundation",
+        "reason": "Jet engines supplied the core driving the additional fan."
+      }
+    ]
+  },
+  {
+    "id": "pressurized-cabin",
+    "title": "Cabin pressurization",
+    "wiki": "Cabin pressurization",
+    "year": 1938,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Pressure-controlled cabins permitted comfortable high-altitude passenger flight.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate pressure-control valves regulated airflow in sealed cabins."
+      }
+    ]
+  },
+  {
+    "id": "supersonic-transport",
+    "title": "Supersonic transport",
+    "wiki": "Supersonic transport",
+    "year": 1968,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Passenger aircraft sustained flight faster than sound.",
+    "parents": [
+      {
+        "id": "jet-engine",
+        "type": "enabler",
+        "reason": "Jet propulsion supplied sufficient thrust at high flight speeds."
+      }
+    ]
+  },
+  {
+    "id": "airport",
+    "title": "Airport",
+    "wiki": "Airport",
+    "year": 1909,
+    "domain": "transport",
+    "kind": "infrastructure",
+    "summary": "Prepared airfields organized takeoff, landing, maintenance, and passenger handling.",
+    "parents": [
+      {
+        "id": "powered-airplane",
+        "type": "influence",
+        "reason": "Powered aircraft created demand for reliable ground operating facilities."
+      }
+    ]
+  },
+  {
+    "id": "gunpowder",
+    "title": "Black powder propellant",
+    "wiki": "Gunpowder",
+    "year": 900,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Prepared saltpeter, sulfur, and charcoal mixtures supplied early propellant.",
+    "parents": [
+      {
+        "id": "charcoal",
+        "type": "foundation",
+        "reason": "Charcoal supplied the combustible carbon component of black powder."
+      }
+    ]
+  },
+  {
+    "id": "rocket",
+    "title": "Gunpowder rocket",
+    "wiki": "Rocket",
+    "year": 1200,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Burning propellant expelled gas to propel devices without external traction.",
+    "parents": [
+      {
+        "id": "gunpowder",
+        "type": "foundation",
+        "reason": "Gunpowder supplied energetic gas-generating rocket propellant."
+      }
+    ]
+  },
+  {
+    "id": "liquid-fuel-rocket",
+    "title": "Liquid-propellant rocket",
+    "wiki": "Liquid-propellant rocket",
+    "year": 1926,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Metered liquid fuels and oxidizers enabled controllable powerful rockets.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate valves and combustion hardware controlled liquid propellant flow."
+      }
+    ]
+  },
+  {
+    "id": "multistage-rocket",
+    "title": "Multistage rocket",
+    "wiki": "Multistage rocket",
+    "year": 1949,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Discarding spent stages improved rockets' ability to reach high speeds.",
+    "parents": [
+      {
+        "id": "liquid-fuel-rocket",
+        "type": "enabler",
+        "reason": "Liquid-propellant engines supplied repeatable staged propulsion units."
+      }
+    ]
+  },
+  {
+    "id": "satellite",
+    "title": "Artificial Earth satellite",
+    "wiki": "Satellite",
+    "year": 1957,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Artificial spacecraft maintained orbital motion around Earth.",
+    "parents": [
+      {
+        "id": "multistage-rocket",
+        "type": "foundation",
+        "reason": "Staged launch rockets supplied sufficient speed to enter orbit."
+      }
+    ]
+  },
+  {
+    "id": "crewed-spaceflight",
+    "title": "Human spaceflight",
+    "wiki": "Human spaceflight",
+    "year": 1961,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Life-supported spacecraft carried humans beyond Earth's atmosphere.",
+    "parents": [
+      {
+        "id": "liquid-fuel-rocket",
+        "type": "enabler",
+        "reason": "Liquid-fuel launch vehicles supplied the required ascent capability."
+      }
+    ]
+  },
+  {
+    "id": "space-suit",
+    "title": "Space pressure suit",
+    "wiki": "Space suit",
+    "year": 1961,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Sealed protective garments maintained habitable conditions outside ordinary atmosphere.",
+    "parents": [
+      {
+        "id": "synthetic-resin",
+        "type": "enabler",
+        "reason": "Synthetic materials supplied airtight flexible seals and protective layers."
+      },
+      {
+        "id": "weaving",
+        "type": "enabler",
+        "reason": "Fabric layers supplied abrasion protection and structural restraint around pressure bladders."
+      }
+    ]
+  },
+  {
+    "id": "lunar-landing",
+    "title": "Crewed lunar landing",
+    "wiki": "Apollo 11",
+    "year": 1969,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "A crewed spacecraft landed people on the Moon and returned them.",
+    "parents": [
+      {
+        "id": "crewed-spaceflight",
+        "type": "enabler",
+        "reason": "Crewed spacecraft engineering supplied life support and human-rated systems."
+      },
+      {
+        "id": "multistage-rocket",
+        "type": "foundation",
+        "reason": "Staged launch vehicles accelerated spacecraft toward the Moon."
+      }
+    ]
+  },
+  {
+    "id": "space-station",
+    "title": "Space station",
+    "wiki": "Space station",
+    "year": 1971,
+    "domain": "transport",
+    "kind": "infrastructure",
+    "summary": "Orbital facilities supported extended crewed work beyond Earth.",
+    "parents": [
+      {
+        "id": "crewed-spaceflight",
+        "type": "enabler",
+        "reason": "Human spaceflight supplied transportation and life-support experience."
+      }
+    ]
+  },
+  {
+    "id": "reusable-spacecraft",
+    "title": "Reusable orbital spacecraft",
+    "wiki": "Space Shuttle",
+    "year": 1981,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Reusable orbiters carried crews and cargo between Earth and orbit.",
+    "parents": [
+      {
+        "id": "crewed-spaceflight",
+        "type": "enabler",
+        "reason": "Crewed spaceflight supplied life support, reentry, and launch integration."
+      }
+    ]
+  },
+  {
+    "id": "reusable-booster",
+    "title": "Landing an orbital booster",
+    "wiki": "Falcon 9",
+    "year": 2015,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Controlled booster landings allowed orbital launch stages to be flown again.",
+    "parents": [
+      {
+        "id": "liquid-fuel-rocket",
+        "type": "enabler",
+        "reason": "Liquid propulsion supplied throttling and restart capability for landing burns."
+      }
+    ]
+  },
+  {
+    "id": "solar-sail",
+    "title": "Solar-sail propulsion",
+    "wiki": "Solar sail",
+    "year": 2010,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Reflective deployed surfaces used sunlight pressure for spacecraft propulsion.",
+    "parents": [
+      {
+        "id": "satellite",
+        "type": "enabler",
+        "reason": "Orbital spacecraft supplied deployment platforms outside atmospheric drag."
+      }
+    ]
+  },
+  {
+    "id": "ion-thruster",
+    "title": "Ion thruster",
+    "wiki": "Ion thruster",
+    "year": 1964,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Electric fields accelerated ions for efficient spacecraft propulsion.",
+    "parents": [
+      {
+        "id": "electric-generator",
+        "type": "enabler",
+        "reason": "Electric power generation supplied energy for ionization and acceleration."
+      }
+    ]
+  },
+  {
+    "id": "space-probe",
+    "title": "Interplanetary space probe",
+    "wiki": "Space probe",
+    "year": 1959,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Uncrewed spacecraft traveled beyond Earth orbit to inspect other worlds.",
+    "parents": [
+      {
+        "id": "satellite",
+        "type": "enabler",
+        "reason": "Satellite engineering supplied autonomous spacecraft hardware and communications."
+      }
+    ]
+  },
+  {
+    "id": "space-docking",
+    "title": "Orbital spacecraft docking",
+    "wiki": "Docking and berthing of spacecraft",
+    "year": 1966,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "Controlled rendezvous joined separately launched spacecraft in orbit.",
+    "parents": [
+      {
+        "id": "crewed-spaceflight",
+        "type": "enabler",
+        "reason": "Crewed spacecraft supplied controllable vehicles and sealed docking interfaces."
+      },
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate mating mechanisms supported alignment and sealing between spacecraft."
+      }
+    ]
+  },
+  {
+    "id": "spacewalk",
+    "title": "Extravehicular activity",
+    "wiki": "Extravehicular activity",
+    "year": 1965,
+    "domain": "transport",
+    "kind": "practice",
+    "summary": "Astronauts worked outside spacecraft in protective pressure suits.",
+    "parents": [
+      {
+        "id": "space-suit",
+        "type": "foundation",
+        "reason": "Pressure suits supplied independent protection against vacuum."
+      }
+    ]
+  },
+  {
+    "id": "agriculture",
+    "title": "Managed food production",
+    "wiki": "Agriculture",
+    "year": -10000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Cultivating plants and managing animals made food production more predictable.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "influence",
+        "reason": "Cutting and digging tools supported land preparation and harvesting."
+      }
+    ]
+  },
+  {
+    "id": "wheat-domestication",
+    "title": "Wheat domestication",
+    "wiki": "Wheat",
+    "year": -9500,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Southwest Asian cultivators selected wheat with traits suited to harvesting.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Cultivation repeatedly exposed plants to human harvesting and selection."
+      }
+    ]
+  },
+  {
+    "id": "rice-domestication",
+    "title": "Rice domestication",
+    "wiki": "Rice",
+    "year": -7000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "East Asian communities developed domesticated rice and specialized cultivation systems.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Managed planting enabled selection of rice populations over generations."
+      }
+    ]
+  },
+  {
+    "id": "maize-domestication",
+    "title": "Maize domestication",
+    "wiki": "Maize",
+    "year": -7000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Mesoamerican cultivation transformed teosinte relatives into productive maize.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Repeated cultivation enabled selection for useful ears and kernels."
+      }
+    ]
+  },
+  {
+    "id": "potato-domestication",
+    "title": "Potato domestication",
+    "wiki": "Potato",
+    "year": -6000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Andean farmers developed cultivated potatoes adapted to varied mountain conditions.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Managed cultivation enabled selecting productive edible tubers."
+      }
+    ]
+  },
+  {
+    "id": "cassava-domestication",
+    "title": "Cassava domestication",
+    "wiki": "Cassava",
+    "year": -8000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "South American growers developed productive cassava crops from wild relatives.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Cultivation and vegetative propagation maintained selected root-producing plants."
+      }
+    ]
+  },
+  {
+    "id": "sorghum-domestication",
+    "title": "Sorghum domestication",
+    "wiki": "Sorghum bicolor",
+    "year": -4000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "African farmers developed sorghum as a crop suited to seasonal dryness.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Cultivation enabled selection of harvestable grain and drought-tolerant plants."
+      }
+    ]
+  },
+  {
+    "id": "millet-cultivation",
+    "title": "Millet cultivation",
+    "wiki": "Millet",
+    "year": -6000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Small-grained millet crops supported farming in several relatively dry regions.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Cultivation enabled reliable planting and harvesting of small grains."
+      }
+    ]
+  },
+  {
+    "id": "banana-domestication",
+    "title": "Banana domestication",
+    "wiki": "Banana",
+    "year": -5000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Tropical growers propagated bananas with useful seedless fruits.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Managed vegetative propagation preserved desirable fruit-producing varieties."
+      }
+    ]
+  },
+  {
+    "id": "soybean-domestication",
+    "title": "Soybean domestication",
+    "wiki": "Soybean",
+    "year": -3000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "East Asian cultivation developed soybeans for food and other uses.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Repeated planting supported selection of useful edible seed traits."
+      }
+    ]
+  },
+  {
+    "id": "sugarcane-domestication",
+    "title": "Sugarcane domestication",
+    "wiki": "Sugarcane",
+    "year": -4000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "New Guinea cultivators developed sugar-rich cane varieties for propagation.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Vegetative crop management preserved desirable sweet-stemmed plants."
+      }
+    ]
+  },
+  {
+    "id": "peanut-domestication",
+    "title": "Peanut domestication",
+    "wiki": "Peanut",
+    "year": -3500,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "South American cultivators developed peanuts as an oil-rich food crop.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Cultivation and seed selection maintained productive edible-seeded plants."
+      }
+    ]
+  },
+  {
+    "id": "sheep-domestication",
+    "title": "Sheep domestication",
+    "wiki": "Domestic sheep",
+    "year": -9000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Managed sheep herds supplied meat, skins, and later wool and milk.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Animal husbandry concentrated breeding and human selection in managed herds."
+      }
+    ]
+  },
+  {
+    "id": "cattle-domestication",
+    "title": "Cattle domestication",
+    "wiki": "Cattle",
+    "year": -8500,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Domesticated cattle supplied food and eventually traction in several regions.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Herd management enabled controlled breeding and repeated human selection."
+      }
+    ]
+  },
+  {
+    "id": "pig-domestication",
+    "title": "Pig domestication",
+    "wiki": "Domestic pig",
+    "year": -8000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Managed pigs converted varied feed resources into meat.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Settled cultivation supplied food residues and settings for animal management."
+      }
+    ]
+  },
+  {
+    "id": "chicken-domestication",
+    "title": "Chicken domestication",
+    "wiki": "Chicken",
+    "year": -1500,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Domesticated junglefowl developed into widely kept meat and egg animals.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Cultivated landscapes supplied grain and conditions for close animal management."
+      }
+    ]
+  },
+  {
+    "id": "horse-domestication",
+    "title": "Domestication of the horse",
+    "wiki": "Domestication of the horse",
+    "year": -3500,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Managed horse populations supplied milk, movement, and later draft power.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Herd management enabled repeated handling and selective breeding."
+      }
+    ]
+  },
+  {
+    "id": "camel-domestication",
+    "title": "Camel domestication",
+    "wiki": "Camel",
+    "year": -2500,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Domesticated camels supported food production and transport in arid regions.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Animal husbandry supplied methods for breeding and handling managed herds."
+      }
+    ]
+  },
+  {
+    "id": "beekeeping",
+    "title": "Beekeeping",
+    "wiki": "Beekeeping",
+    "year": -2500,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Managed colonies increased access to honey and beeswax.",
+    "parents": [
+      {
+        "id": "pottery",
+        "type": "enabler",
+        "reason": "Ceramic containers supplied durable early constructed hive forms."
+      }
+    ]
+  },
+  {
+    "id": "aquaculture",
+    "title": "Aquaculture",
+    "wiki": "Aquaculture",
+    "year": -2000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Managed aquatic environments produced fish and other useful organisms.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Food-production practice encouraged control of growth environments and harvests."
+      }
+    ]
+  },
+  {
+    "id": "steel-plow",
+    "title": "Self-scouring steel plow",
+    "wiki": "John Deere (inventor)",
+    "year": 1837,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Polished steel plows improved turning of sticky prairie soils.",
+    "parents": [
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "Steel supplied strong smooth shares that shed adhering soil."
+      }
+    ]
+  },
+  {
+    "id": "ard",
+    "title": "Scratch plow",
+    "wiki": "Ard (plough)",
+    "year": -4000,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Simple scratch plows opened shallow furrows without fully turning soil.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Timber shaping supplied beams and traction-driven soil-working bodies."
+      }
+    ]
+  },
+  {
+    "id": "moldboard-plow",
+    "title": "Soil-turning moldboard plow",
+    "wiki": "Mouldboard plough",
+    "year": 900,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Shaped metal plows turned soil and buried surface vegetation.",
+    "parents": [
+      {
+        "id": "iron-smelting",
+        "type": "enabler",
+        "reason": "Ironworking supplied durable shares and soil-turning surfaces."
+      }
+    ]
+  },
+  {
+    "id": "seed-drill",
+    "title": "Seed drill",
+    "wiki": "Seed drill",
+    "year": 1701,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Mechanisms placed seeds at controlled spacing and depth.",
+    "parents": [
+      {
+        "id": "ard",
+        "type": "enabler",
+        "reason": "Furrow-making implements prepared paths for systematic seed placement."
+      }
+    ]
+  },
+  {
+    "id": "sickle",
+    "title": "Sickle",
+    "wiki": "Sickle",
+    "year": -10000,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Curved or composite blades efficiently cut stems during harvesting.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Sharp stone edges supplied the cutting elements of early sickles."
+      }
+    ]
+  },
+  {
+    "id": "scythe",
+    "title": "Scythe",
+    "wiki": "Scythe",
+    "year": -500,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Long handled steel blades cut broad swaths of grass or grain.",
+    "parents": [
+      {
+        "id": "steel",
+        "type": "enabler",
+        "reason": "Steel supplied thin durable edges for large sweeping blades."
+      }
+    ]
+  },
+  {
+    "id": "threshing",
+    "title": "Threshing",
+    "wiki": "Threshing",
+    "year": -8000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Mechanical action separated edible grain from harvested stalks and husks.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "enabler",
+        "reason": "Cereal cultivation supplied harvests requiring separation before storage."
+      }
+    ]
+  },
+  {
+    "id": "threshing-machine",
+    "title": "Threshing machine",
+    "wiki": "Threshing machine",
+    "year": 1786,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Powered machinery mechanized separation of grain from stalks.",
+    "parents": [
+      {
+        "id": "threshing",
+        "type": "enabler",
+        "reason": "Established threshing operations defined the separation work to mechanize."
+      }
+    ]
+  },
+  {
+    "id": "mechanical-reaper",
+    "title": "Mechanical grain reaper",
+    "wiki": "Reaper",
+    "year": 1831,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Wheeled cutting machines accelerated grain harvesting.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate metal mechanisms coordinated cutters, wheels, and crop handling."
+      }
+    ]
+  },
+  {
+    "id": "combine-harvester",
+    "title": "Combine harvester",
+    "wiki": "Combine harvester",
+    "year": 1834,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "A single machine combined cutting, threshing, and grain cleaning.",
+    "parents": [
+      {
+        "id": "threshing-machine",
+        "type": "enabler",
+        "reason": "Mechanical threshing supplied the grain-separation stage of combined harvesting."
+      },
+      {
+        "id": "mechanical-reaper",
+        "type": "foundation",
+        "reason": "Mechanical cutting supplied the harvesting stage before threshing."
+      }
+    ]
+  },
+  {
+    "id": "tractor",
+    "title": "Tractor",
+    "wiki": "Tractor",
+    "year": 1892,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Powered farm vehicles supplied traction and drive to agricultural implements.",
+    "parents": [
+      {
+        "id": "internal-combustion",
+        "type": "enabler",
+        "reason": "Combustion engines provided portable sustained power for field work."
+      },
+      {
+        "id": "gear-cutting",
+        "type": "enabler",
+        "reason": "Machined gears matched engine speed to traction and implement loads."
+      }
+    ]
+  },
+  {
+    "id": "irrigation",
+    "title": "Irrigation",
+    "wiki": "Irrigation",
+    "year": -6000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Managed water delivery expanded cropping beyond rainfall alone.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Digging implements cut diversion channels and field furrows."
+      }
+    ]
+  },
+  {
+    "id": "shaduf",
+    "title": "Shadoof",
+    "wiki": "Shadoof",
+    "year": -2000,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Counterweighted levers lifted water for irrigation and domestic use.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Timber poles supplied balanced lifting arms and supports."
+      }
+    ]
+  },
+  {
+    "id": "noria",
+    "title": "Noria",
+    "wiki": "Noria",
+    "year": -300,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Flow-driven wheels raised water in attached containers.",
+    "parents": [
+      {
+        "id": "waterwheel",
+        "type": "enabler",
+        "reason": "Waterwheels supplied a rotating mechanism powered by river flow."
+      },
+      {
+        "id": "pottery",
+        "type": "enabler",
+        "reason": "Durable vessels could collect and lift water around the wheel rim."
+      }
+    ]
+  },
+  {
+    "id": "terracing",
+    "title": "Agricultural terraces",
+    "wiki": "Terrace (earthworks)",
+    "year": -2000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Stepped landforms stabilized slopes and retained soil and water for crops.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "influence",
+        "reason": "Cultivation on sloping ground motivated controlled reshaping of fields."
+      }
+    ]
+  },
+  {
+    "id": "chinampa",
+    "title": "Chinampa raised-field farming",
+    "wiki": "Chinampa",
+    "year": 1000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Raised plots within shallow lake environments supported intensive Mesoamerican farming.",
+    "parents": [
+      {
+        "id": "irrigation",
+        "type": "influence",
+        "reason": "Managed water channels controlled moisture and access around planting beds."
+      }
+    ]
+  },
+  {
+    "id": "crop-rotation",
+    "title": "Crop rotation",
+    "wiki": "Crop rotation",
+    "year": -1000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Alternating crops on the same land helped manage soil fertility and pests.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "influence",
+        "reason": "Repeated cultivation made differences between crop effects observable."
+      }
+    ]
+  },
+  {
+    "id": "three-field-system",
+    "title": "Three-field system",
+    "wiki": "Three-field system",
+    "year": 800,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Rotating winter crops, spring crops, and fallow reorganized arable land use.",
+    "parents": [
+      {
+        "id": "crop-rotation",
+        "type": "influence",
+        "reason": "Crop rotation supplied the principle of sequential land management."
+      }
+    ]
+  },
+  {
+    "id": "selective-breeding",
+    "title": "Selective breeding",
+    "wiki": "Selective breeding",
+    "year": -8000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Choosing breeding plants and animals changed useful inherited traits.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "influence",
+        "reason": "Managed populations allowed people to choose reproductive individuals."
+      }
+    ]
+  },
+  {
+    "id": "grafting",
+    "title": "Grafting",
+    "wiki": "Grafting",
+    "year": -1000,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Joining plant tissues propagated useful varieties on selected root systems.",
+    "parents": [
+      {
+        "id": "selective-breeding",
+        "type": "enabler",
+        "reason": "Selected crop varieties created demand for reliable clonal propagation."
+      }
+    ]
+  },
+  {
+    "id": "greenhouse",
+    "title": "Greenhouse",
+    "wiki": "Greenhouse",
+    "year": 1600,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Glazed enclosures created warmer sheltered environments for growing plants.",
+    "parents": [
+      {
+        "id": "glassmaking",
+        "type": "enabler",
+        "reason": "Glass transmitted sunlight while enclosing a protected growing space."
+      },
+      {
+        "id": "agriculture",
+        "type": "influence",
+        "reason": "Crop cultivation created demand for protected growing environments."
+      }
+    ]
+  },
+  {
+    "id": "hydroponics",
+    "title": "Hydroponics",
+    "wiki": "Hydroponics",
+    "year": 1930,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Nutrient solutions supported plant growth without ordinary soil.",
+    "parents": [
+      {
+        "id": "fertilizer",
+        "type": "enabler",
+        "reason": "Formulated fertilizers supplied measured plant nutrients in solution."
+      }
+    ]
+  },
+  {
+    "id": "drip-irrigation",
+    "title": "Drip irrigation",
+    "wiki": "Drip irrigation",
+    "year": 1965,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Small distributed outlets delivered water close to plant roots.",
+    "parents": [
+      {
+        "id": "pipe",
+        "type": "enabler",
+        "reason": "Pipes conveyed pressurized water to precise delivery points."
+      }
+    ]
+  },
+  {
+    "id": "center-pivot",
+    "title": "Center-pivot irrigation",
+    "wiki": "Center-pivot irrigation",
+    "year": 1948,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Moving sprinkler booms irrigated circular fields with reduced manual labor.",
+    "parents": [
+      {
+        "id": "pipe",
+        "type": "enabler",
+        "reason": "Pipe systems carried water along long rotating sprinkler assemblies."
+      }
+    ]
+  },
+  {
+    "id": "fertilizer",
+    "title": "Nutrient additions to farmland",
+    "wiki": "Fertilizer",
+    "year": -4000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Adding nutrient-rich substances helped maintain crop productivity.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "influence",
+        "reason": "Sustained cropping created a need to replenish soil nutrients."
+      }
+    ]
+  },
+  {
+    "id": "haber-bosch",
+    "title": "Industrial ammonia synthesis",
+    "wiki": "Haber process",
+    "year": 1913,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "High-pressure industrial synthesis produced ammonia for nitrogen fertilizers.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate pressure vessels and compressors maintained demanding synthesis conditions."
+      },
+      {
+        "id": "fertilizer",
+        "type": "influence",
+        "reason": "Demand for nitrogen nutrients motivated scalable ammonia production."
+      }
+    ]
+  },
+  {
+    "id": "superphosphate",
+    "title": "Superphosphate fertilizer",
+    "wiki": "Superphosphate",
+    "year": 1842,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Acid-treated phosphate minerals supplied more accessible crop nutrients.",
+    "parents": [
+      {
+        "id": "fertilizer",
+        "type": "enabler",
+        "reason": "Fertilizer practice established adding concentrated nutrients to farmland."
+      }
+    ]
+  },
+  {
+    "id": "pesticide",
+    "title": "Crop protection substances",
+    "wiki": "Pesticide",
+    "year": -2000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Applied substances reduced organisms damaging crops and stored food.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "influence",
+        "reason": "Managed crops created concentrated resources requiring protection from pests."
+      }
+    ]
+  },
+  {
+    "id": "grain-mill",
+    "title": "Water-powered grain mill",
+    "wiki": "Gristmill",
+    "year": -300,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Powered mills ground grain into meal and flour.",
+    "parents": [
+      {
+        "id": "waterwheel",
+        "type": "enabler",
+        "reason": "Waterwheels supplied continuous power to turn grinding stones."
+      },
+      {
+        "id": "quern",
+        "type": "influence",
+        "reason": "Hand grinding established the stone-on-grain processing action mechanized by mills."
+      }
+    ]
+  },
+  {
+    "id": "quern",
+    "title": "Hand grinding stones",
+    "wiki": "Quern-stone",
+    "year": -20000,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Paired grinding stones processed grains and other foods by hand.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Stone shaping supplied durable abrasive food-processing surfaces."
+      }
+    ]
+  },
+  {
+    "id": "roller-mill",
+    "title": "Roller flour milling",
+    "wiki": "Roller mill",
+    "year": 1870,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Controlled rollers broke and ground grain for industrial flour production.",
+    "parents": [
+      {
+        "id": "rolling-mill",
+        "type": "enabler",
+        "reason": "Roll manufacture supplied accurately spaced rotating processing surfaces."
+      }
+    ]
+  },
+  {
+    "id": "cooking",
+    "title": "Cooking",
+    "wiki": "Cooking",
+    "year": -400000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Heating food changed texture, flavor, and digestibility.",
+    "parents": [
+      {
+        "id": "controlled-fire",
+        "type": "enabler",
+        "reason": "Managed fire supplied a controllable heat source for food."
+      }
+    ]
+  },
+  {
+    "id": "bread",
+    "title": "Bread",
+    "wiki": "Bread",
+    "year": -12000,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Ground plant foods mixed and heated into portable staple foods.",
+    "parents": [
+      {
+        "id": "quern",
+        "type": "foundation",
+        "reason": "Grinding stones supplied meal and flour for dough preparation."
+      },
+      {
+        "id": "cooking",
+        "type": "foundation",
+        "reason": "Heating transformed prepared dough into a stable cooked food."
+      }
+    ]
+  },
+  {
+    "id": "fermentation",
+    "title": "Managed food fermentation",
+    "wiki": "Fermentation in food processing",
+    "year": -7000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Managed microbial transformations produced preserved and altered foods and drinks.",
+    "parents": [
+      {
+        "id": "pottery",
+        "type": "enabler",
+        "reason": "Vessels held food mixtures through controlled storage and transformation."
+      }
+    ]
+  },
+  {
+    "id": "beer",
+    "title": "Grain beer brewing",
+    "wiki": "Beer",
+    "year": -5000,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Fermented grain drinks converted cereal sugars into alcoholic beverages.",
+    "parents": [
+      {
+        "id": "fermentation",
+        "type": "foundation",
+        "reason": "Food fermentation supplied the microbial conversion of sugars."
+      }
+    ]
+  },
+  {
+    "id": "wine",
+    "title": "Fruit wine production",
+    "wiki": "Wine",
+    "year": -6000,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Fermenting fruit juice produced storable alcoholic drinks.",
+    "parents": [
+      {
+        "id": "fermentation",
+        "type": "foundation",
+        "reason": "Fermentation converted fruit sugars into alcohol and acids."
+      }
+    ]
+  },
+  {
+    "id": "cheese",
+    "title": "Cheesemaking",
+    "wiki": "Cheese",
+    "year": -5500,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Coagulating and processing milk produced concentrated storable foods.",
+    "parents": [
+      {
+        "id": "cattle-domestication",
+        "type": "enabler",
+        "reason": "Managed dairy animals supplied repeated quantities of milk."
+      },
+      {
+        "id": "fermentation",
+        "type": "enabler",
+        "reason": "Microbial acidification supported coagulation and later cheese ripening."
+      }
+    ]
+  },
+  {
+    "id": "yogurt",
+    "title": "Cultured milk foods",
+    "wiki": "Yogurt",
+    "year": -5000,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Lactic fermentation thickened milk into an acidic food.",
+    "parents": [
+      {
+        "id": "fermentation",
+        "type": "enabler",
+        "reason": "Food fermentation supplied acid-producing microbial transformation."
+      }
+    ]
+  },
+  {
+    "id": "tofu",
+    "title": "Soybean curd production",
+    "wiki": "Tofu",
+    "year": 100,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Coagulated soybean milk produced a versatile protein-rich food.",
+    "parents": [
+      {
+        "id": "soybean-domestication",
+        "type": "foundation",
+        "reason": "Cultivated soybeans supplied the raw material for extracted soy milk."
+      }
+    ]
+  },
+  {
+    "id": "sugar-refining",
+    "title": "Cane sugar crystallization",
+    "wiki": "Sugar refinery",
+    "year": 500,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Clarification, evaporation, and crystallization produced concentrated cane sugar.",
+    "parents": [
+      {
+        "id": "sugarcane-domestication",
+        "type": "foundation",
+        "reason": "Sugar-rich cultivated cane supplied extractable sweet juice."
+      }
+    ]
+  },
+  {
+    "id": "distillation",
+    "title": "Liquid distillation",
+    "wiki": "Distillation",
+    "year": 800,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Evaporation and condensation separated volatile liquids from mixtures.",
+    "parents": [
+      {
+        "id": "pottery",
+        "type": "enabler",
+        "reason": "Ceramic vessels supplied heated containers and collection apparatus."
+      }
+    ]
+  },
+  {
+    "id": "food-drying",
+    "title": "Food drying",
+    "wiki": "Food drying",
+    "year": -10000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Removing moisture prolonged storage of many plant and animal foods.",
+    "parents": []
+  },
+  {
+    "id": "food-smoking",
+    "title": "Smoke preservation",
+    "wiki": "Smoking (cooking)",
+    "year": -10000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Smoke exposure and heating helped preserve and flavor food.",
+    "parents": [
+      {
+        "id": "controlled-fire",
+        "type": "foundation",
+        "reason": "Managed fire supplied smoke and heat for food treatment."
+      }
+    ]
+  },
+  {
+    "id": "salting",
+    "title": "Salt preservation",
+    "wiki": "Salting (food)",
+    "year": -6000,
+    "domain": "food",
+    "kind": "practice",
+    "summary": "Salt drew moisture from foods and inhibited spoilage.",
+    "parents": [
+      {
+        "id": "food-drying",
+        "type": "enabler",
+        "reason": "Drying practice established reducing available moisture as a preservation route."
+      }
+    ]
+  },
+  {
+    "id": "pickling",
+    "title": "Pickling and brining",
+    "wiki": "Pickling",
+    "year": -2400,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Acidic or salty liquids preserved vegetables and other foods.",
+    "parents": [
+      {
+        "id": "pottery",
+        "type": "enabler",
+        "reason": "Ceramic vessels held food immersed in preserving liquids."
+      }
+    ]
+  },
+  {
+    "id": "canning",
+    "title": "Heat-preserved sealed food",
+    "wiki": "Canning",
+    "year": 1810,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Heat treatment and sealed containers extended food storage life.",
+    "parents": [
+      {
+        "id": "glassmaking",
+        "type": "enabler",
+        "reason": "Glass vessels supplied early sealable containers for heated foods."
+      },
+      {
+        "id": "cooking",
+        "type": "foundation",
+        "reason": "Heating reduced spoilage before food containers were sealed."
+      }
+    ]
+  },
+  {
+    "id": "refrigeration",
+    "title": "Mechanical refrigeration",
+    "wiki": "Refrigeration",
+    "year": 1834,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Mechanical cooling removed heat to preserve food and support industry.",
+    "parents": [
+      {
+        "id": "precision-machining",
+        "type": "enabler",
+        "reason": "Accurate compressors and valves enabled closed refrigeration cycles."
+      }
+    ]
+  },
+  {
+    "id": "pasteurization",
+    "title": "Food pasteurization",
+    "wiki": "Pasteurization",
+    "year": 1864,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Controlled heating reduced spoilage organisms in liquids and foods.",
+    "parents": [
+      {
+        "id": "controlled-fire",
+        "type": "enabler",
+        "reason": "Heat control supplied repeatable temperature treatment without full sterilization."
+      }
+    ]
+  },
+  {
+    "id": "freeze-drying",
+    "title": "Freeze-drying",
+    "wiki": "Freeze-drying",
+    "year": 1906,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Frozen water was removed under reduced pressure to preserve products.",
+    "parents": [
+      {
+        "id": "refrigeration",
+        "type": "foundation",
+        "reason": "Refrigeration supplied the frozen starting condition for sublimation drying."
+      }
+    ]
+  },
+  {
+    "id": "frozen-food",
+    "title": "Rapid-frozen food",
+    "wiki": "Frozen food",
+    "year": 1924,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Rapid freezing preserved food quality for later distribution and consumption.",
+    "parents": [
+      {
+        "id": "refrigeration",
+        "type": "foundation",
+        "reason": "Mechanical refrigeration supplied temperatures below food's freezing point."
+      }
+    ]
+  },
+  {
+    "id": "granary",
+    "title": "Granary",
+    "wiki": "Granary",
+    "year": -9000,
+    "domain": "food",
+    "kind": "infrastructure",
+    "summary": "Dedicated stores protected accumulated grain harvests between growing seasons.",
+    "parents": [
+      {
+        "id": "agriculture",
+        "type": "influence",
+        "reason": "Cultivation generated seasonal grain surpluses requiring storage."
+      }
+    ]
+  },
+  {
+    "id": "silo",
+    "title": "Large bulk-storage silos",
+    "wiki": "Silo",
+    "year": 1873,
+    "domain": "food",
+    "kind": "infrastructure",
+    "summary": "Large enclosed stores supported bulk grain and fermented fodder management.",
+    "parents": [
+      {
+        "id": "concrete",
+        "type": "enabler",
+        "reason": "Concrete supplied durable walls for large vertical storage structures."
+      }
+    ]
+  },
+  {
+    "id": "cold-chain",
+    "title": "Refrigerated food distribution",
+    "wiki": "Cold chain",
+    "year": 1870,
+    "domain": "food",
+    "kind": "infrastructure",
+    "summary": "Temperature-controlled storage and transport connected producers with distant consumers.",
+    "parents": [
+      {
+        "id": "refrigeration",
+        "type": "enabler",
+        "reason": "Refrigeration equipment maintained low temperatures through distribution stages."
+      },
+      {
+        "id": "steamboat",
+        "type": "enabler",
+        "reason": "Powered shipping enabled scheduled carriage of refrigerated food cargoes."
+      }
+    ]
+  },
+  {
+    "id": "fishhook",
+    "title": "Line fishing hooks",
+    "wiki": "Fish hook",
+    "year": -20000,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Shaped hooks attached to lines increased access to aquatic food.",
+    "parents": [
+      {
+        "id": "stone-tools",
+        "type": "enabler",
+        "reason": "Stone shaping tools prepared bone and other hook materials."
+      }
+    ]
+  },
+  {
+    "id": "fishing-net",
+    "title": "Fiber fishing nets",
+    "wiki": "Fishing net",
+    "year": -8000,
+    "domain": "food",
+    "kind": "technology",
+    "summary": "Knotted fiber meshes captured multiple fish through trapping and sweeping.",
+    "parents": [
+      {
+        "id": "cordage",
+        "type": "foundation",
+        "reason": "Cordage supplied flexible strands for interconnected net meshes."
+      }
+    ]
+  }
+]
