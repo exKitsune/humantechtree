@@ -2,6 +2,17 @@
 
 A purely exploratory atlas of **2,090 human capabilities**: discoveries, tools, machines, infrastructure, institutions, and cultural practices. Built with Svelte 5, TypeScript, Vite, and Svelte Flow. The industrial interface takes inspiration from Factorio; it uses no Factorio assets.
 
+## Design and agent workflow
+
+The next development phase treats this as one inspectable knowledge system: versioned sources support evidence, evidence supports scoped claims, and the graph supplies reproducible views. The plan prioritizes reusable research and justified decisions alongside the nodes and connections.
+
+- [Agent entry point](AGENTS.md): current rules and a short reading map.
+- [System design](docs/SYSTEM.md): abstraction boundaries, evidence, review freshness, and coherent control.
+- [Agent workflow](docs/AGENT-WORKFLOW.md): today's operating loop and clearly labeled future interface contracts.
+- [Implementation roadmap](docs/ROADMAP.md): ordered milestones, migrations, and measurable acceptance gates.
+
+These documents distinguish implemented behavior from planned tooling. They do not add a backend or change the current catalog or frontend.
+
 ## Run locally
 
 Requires Node.js 22.12+ (Node 22 LTS recommended).
