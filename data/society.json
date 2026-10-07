@@ -47,13 +47,7 @@
     "domain": "culture",
     "kind": "practice",
     "summary": "Patterned bodily movement provides a shared form of performance and ritual expression.",
-    "parents": [
-      {
-        "id": "music",
-        "type": "enabler",
-        "reason": "Rhythm and musical performance help coordinate many dance traditions."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "religion",
@@ -456,9 +450,10 @@
     "summary": "The Latin alphabet developed in Italy and spread with Latin literacy and later many other languages.",
     "parents": [
       {
-        "id": "greek-alphabet",
+        "id": "etruscan-alphabet",
         "type": "influence",
-        "reason": "Greek-derived Etruscan letter forms mediated the formation of the Latin alphabet."
+        "reason": "Etruscan letter forms supplied the immediate graphic model adapted for early Latin.",
+        "source": "https://en.wikipedia.org/wiki/Etruscan_alphabet"
       }
     ]
   },
@@ -518,9 +513,10 @@
     "summary": "Arabic letter forms supported literary and administrative writing across many languages.",
     "parents": [
       {
-        "id": "aramaic-alphabet",
+        "id": "nabataean-script",
         "type": "influence",
-        "reason": "The Nabataean branch of Aramaic writing contributed the letter forms from which Arabic developed."
+        "reason": "Cursive Nabataean letter forms developed into the Arabic alphabet.",
+        "source": "https://en.wikipedia.org/wiki/Nabataean_script"
       }
     ]
   },
@@ -534,9 +530,10 @@
     "summary": "Japanese syllabaries adapted Chinese-derived signs to record Japanese sound patterns.",
     "parents": [
       {
-        "id": "oracle-bone-script",
+        "id": "manyogana",
         "type": "influence",
-        "reason": "The Chinese character tradition descending from early inscriptions supplied the source signs adapted into kana."
+        "reason": "Phonetically used Chinese characters were simplified or excerpted into hiragana and katakana signs.",
+        "source": "https://en.wikipedia.org/wiki/Kana"
       }
     ]
   },
@@ -689,7 +686,9 @@
       {
         "id": "paper",
         "type": "enabler",
-        "reason": "Paper provided a widely available substrate for large editions."
+        "reason": "Paper provided a widely available substrate for large editions.",
+        "directContribution": "Paper sheets are the physical substrate receiving impressions from the press; that use is separate from the history of movable characters.",
+        "source": "https://en.wikipedia.org/wiki/Printing_press"
       }
     ]
   },
@@ -737,7 +736,9 @@
       {
         "id": "printing-press",
         "type": "enabler",
-        "reason": "Press production supported repeated editions containing timely reports."
+        "reason": "Press production supported repeated editions containing timely reports.",
+        "directContribution": "Presses physically reproduce each newspaper edition, while publishing describes the separate editorial and distribution organization.",
+        "source": "https://en.wikipedia.org/wiki/Newspaper"
       },
       {
         "id": "publishing",
@@ -878,9 +879,10 @@
         "reason": "Endowments could sustain teachers, students, and teaching premises."
       },
       {
-        "id": "islam",
+        "id": "sharia",
         "type": "influence",
-        "reason": "Islamic textual and legal study shaped the institutions' central curricula."
+        "reason": "Instruction in fiqh supplied the legal curriculum around which many medieval madrasas organized advanced study.",
+        "source": "https://en.wikipedia.org/wiki/Madrasa"
       }
     ]
   },
@@ -963,14 +965,10 @@
     "summary": "State examinations increasingly selected Chinese officials through assessed mastery of prescribed texts.",
     "parents": [
       {
-        "id": "confucianism",
+        "id": "confucian-classics",
         "type": "influence",
-        "reason": "Confucian classics became central to the examinations' curriculum."
-      },
-      {
-        "id": "writing",
-        "type": "enabler",
-        "reason": "Written examinations permitted comparable recorded assessments across candidates."
+        "reason": "The classical texts supplied examinable subjects and authoritative passages for candidates’ literary and interpretive work.",
+        "source": "https://en.wikipedia.org/wiki/Imperial_examination"
       }
     ]
   },
@@ -1034,7 +1032,9 @@
       {
         "id": "cathedral-school",
         "type": "enabler",
-        "reason": "School instruction supplied communities practicing formal disputation and textual commentary."
+        "reason": "School instruction supplied communities practicing formal disputation and textual commentary.",
+        "directContribution": "Cathedral schools practiced textual commentary and disputation themselves, alongside university teaching rather than merely preceding it.",
+        "source": "https://en.wikipedia.org/wiki/Scholasticism"
       },
       {
         "id": "university",
@@ -1088,13 +1088,7 @@
     "domain": "culture",
     "kind": "institution",
     "summary": "Friedrich Fröbel organized early childhood education around guided play and activity.",
-    "parents": [
-      {
-        "id": "compulsory-education",
-        "type": "influence",
-        "reason": "Expanding formal schooling created a context for considering preparation before primary education."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "montessori",
@@ -1317,13 +1311,7 @@
     "domain": "culture",
     "kind": "institution",
     "summary": "Islamic communities developed religious and social traditions around Qur'anic revelation and prophetic teaching.",
-    "parents": [
-      {
-        "id": "arabic-script",
-        "type": "enabler",
-        "reason": "Arabic writing supported the collection and transmission of Qur'anic texts."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "sikhism",
@@ -1495,14 +1483,10 @@
     "summary": "Talmudic compilations preserve rabbinic discussion of law, interpretation, and communal practice.",
     "parents": [
       {
-        "id": "judaism",
-        "type": "influence",
-        "reason": "Rabbinic interpretation of Jewish law supplies the compilations' subject matter."
-      },
-      {
-        "id": "writing",
-        "type": "enabler",
-        "reason": "Written compilation preserved extensive debates for later consultation."
+        "id": "mishnah",
+        "type": "foundation",
+        "reason": "The Talmud’s Gemara discusses and interprets the Mishnah’s legal rulings and organization.",
+        "source": "https://en.wikipedia.org/wiki/Mishnah"
       }
     ]
   },
@@ -1523,7 +1507,9 @@
       {
         "id": "arabic-script",
         "type": "enabler",
-        "reason": "Arabic script provided the means to record and circulate the compilation."
+        "reason": "Arabic script provided the means to record and circulate the compilation.",
+        "directContribution": "Arabic letters directly encode the written compilation; the community supplying the recited text contributes a different role.",
+        "source": "https://en.wikipedia.org/wiki/Quran"
       }
     ]
   },
@@ -1653,14 +1639,10 @@
     "summary": "Rome's state transport service organized official messengers and authorized travel through stations.",
     "parents": [
       {
-        "id": "achaemenid-relays",
-        "type": "influence",
-        "reason": "Earlier imperial relay services supplied a known precedent for organized state communications."
-      },
-      {
-        "id": "logistics",
+        "id": "roman-road",
         "type": "enabler",
-        "reason": "Managed stations and requisitioned resources supported official travel."
+        "reason": "The Roman road network linked the relay stations and destinations used for official transport.",
+        "source": "https://en.wikipedia.org/wiki/Cursus_publicus"
       }
     ]
   },
@@ -1742,11 +1724,6 @@
     "kind": "practice",
     "summary": "Interlinked Eurasian routes carried goods, travelers, beliefs, and knowledge between regions.",
     "parents": [
-      {
-        "id": "trade",
-        "type": "enabler",
-        "reason": "Merchant exchange connected successive regional routes into long-distance networks."
-      },
       {
         "id": "changan",
         "type": "enabler",
@@ -1971,14 +1948,10 @@
     "summary": "Paired debit and credit entries represent transactions within an interconnected accounting system.",
     "parents": [
       {
-        "id": "writing",
-        "type": "enabler",
-        "reason": "Persistent ledgers preserve the paired entries and balances."
-      },
-      {
         "id": "banking",
         "type": "enabler",
-        "reason": "Complex accounts and credit relationships created demand for systematic transaction records."
+        "reason": "Medieval deposit, credit, and currency-exchange transactions created accounts requiring systematic balancing of claims and obligations.",
+        "source": "https://en.wikipedia.org/wiki/Double-entry_bookkeeping"
       }
     ]
   },
@@ -2018,9 +1991,10 @@
         "reason": "Earlier risk-allocation agreements supplied contractual precedents."
       },
       {
-        "id": "trade",
-        "type": "enabler",
-        "reason": "Long-distance commercial voyages exposed cargo owners to risks addressed by separate insurance contracts."
+        "id": "commenda",
+        "type": "influence",
+        "reason": "Medieval commenda and maritime-loan contracts were earlier ways of allocating voyage risk before separate marine insurance policies.",
+        "source": "https://en.wikipedia.org/wiki/Marine_insurance"
       }
     ]
   },
@@ -2344,7 +2318,9 @@
       {
         "id": "metric-system",
         "type": "influence",
-        "reason": "Metric conventions supplied the decimal and coherent measurement framework."
+        "reason": "Metric conventions supplied the decimal and coherent measurement framework.",
+        "directContribution": "SI directly retains metric unit organization and decimal prefixes; the bureau contributes the separate institutional coordination of definitions.",
+        "source": "https://en.wikipedia.org/wiki/International_System_of_Units"
       },
       {
         "id": "bipm",
@@ -2446,11 +2422,6 @@
         "id": "logistics",
         "type": "enabler",
         "reason": "Provisioning systems require places and procedures for receiving and issuing stock."
-      },
-      {
-        "id": "writing",
-        "type": "enabler",
-        "reason": "Inventory records help account for goods held and distributed."
       }
     ]
   },
@@ -2592,9 +2563,10 @@
     "summary": "Gratian organized and reconciled Christian legal authorities into a foundational teaching compilation.",
     "parents": [
       {
-        "id": "christianity",
+        "id": "ivo-canonical-collections",
         "type": "influence",
-        "reason": "Church councils, papal rulings, and Christian texts supplied the legal authorities being reconciled."
+        "reason": "Gratian drew legal authorities from collections including the Tripartita and Panormia associated with Ivo.",
+        "source": "https://en.wikipedia.org/wiki/Decretum_Gratiani"
       },
       {
         "id": "scholasticism",
@@ -3310,11 +3282,6 @@
     "summary": "India's constitution established democratic institutions, fundamental rights, and a framework for public authority.",
     "parents": [
       {
-        "id": "parliament",
-        "type": "influence",
-        "reason": "Parliamentary government supplied an institutional model adapted within India's constitutional settlement."
-      },
-      {
         "id": "us-constitution",
         "type": "influence",
         "reason": "The United States' written constitutional arrangements informed selected provisions and debates."
@@ -3386,7 +3353,9 @@
       {
         "id": "unesco",
         "type": "enabler",
-        "reason": "UNESCO supplied the forum for negotiations and ongoing cooperation."
+        "reason": "UNESCO supplied the forum for negotiations and ongoing cooperation.",
+        "directContribution": "UNESCO directly organized the 2003 convention and administers its cooperation mechanisms, independently of lessons from the earlier heritage convention.",
+        "source": "https://en.wikipedia.org/wiki/Convention_for_the_Safeguarding_of_the_Intangible_Cultural_Heritage"
       },
       {
         "id": "world-heritage",
@@ -3453,9 +3422,10 @@
     "summary": "An international agreement coordinated controls on substances that damage the ozone layer.",
     "parents": [
       {
-        "id": "united-nations",
-        "type": "enabler",
-        "reason": "UN environmental diplomacy supported negotiation and implementation of the agreement."
+        "id": "vienna-ozone-convention",
+        "type": "foundation",
+        "reason": "The ozone convention supplied the treaty framework under which the Montreal Protocol imposed substance-control obligations.",
+        "source": "https://en.wikipedia.org/wiki/Vienna_Convention_for_the_Protection_of_the_Ozone_Layer"
       }
     ]
   },
@@ -3469,9 +3439,10 @@
     "summary": "The climate agreement organized national commitments and recurring international review of mitigation efforts.",
     "parents": [
       {
-        "id": "united-nations",
-        "type": "enabler",
-        "reason": "The UN climate treaty process supplied the negotiating and review framework."
+        "id": "un-climate-convention",
+        "type": "foundation",
+        "reason": "The climate convention’s conference process negotiated Paris and supplies its continuing institutional framework.",
+        "source": "https://en.wikipedia.org/wiki/Paris_Agreement"
       }
     ]
   },
@@ -3729,14 +3700,16 @@
     "summary": "Greek festivals developed organized dramatic performances with distinct genres and civic audiences.",
     "parents": [
       {
-        "id": "oral-tradition",
-        "type": "influence",
-        "reason": "Narrative and poetic performance supplied material and practices adapted into drama."
+        "id": "city-dionysia",
+        "type": "enabler",
+        "reason": "Recurring Athenian festival contests supplied the organized public occasion for producing and judging tragedies.",
+        "source": "https://en.wikipedia.org/wiki/Dionysia"
       },
       {
-        "id": "religion",
+        "id": "iliad",
         "type": "influence",
-        "reason": "Festivals honoring Dionysus provided a major institutional setting for dramatic competition."
+        "reason": "Homeric heroic narratives supplied characters and episodes reworked by Greek dramatists.",
+        "source": "https://en.wikipedia.org/wiki/Theatre_of_ancient_Greece"
       }
     ]
   },
@@ -3910,7 +3883,9 @@
       {
         "id": "parchment",
         "type": "enabler",
-        "reason": "Prepared skins supported durable painted and written page surfaces."
+        "reason": "Prepared skins supported durable painted and written page surfaces.",
+        "directContribution": "Parchment is the actual decorated page surface, independently of the codex format that binds those pages together.",
+        "source": "https://en.wikipedia.org/wiki/Illuminated_manuscript"
       }
     ]
   },
@@ -3979,7 +3954,9 @@
       {
         "id": "woodblock-printing",
         "type": "enabler",
-        "reason": "Relief printing allowed images to circulate in multiple impressions."
+        "reason": "Relief printing allowed images to circulate in multiple impressions.",
+        "directContribution": "Carved relief blocks physically reproduce the images; publishers separately commission, finance, and distribute editions.",
+        "source": "https://en.wikipedia.org/wiki/Ukiyo-e"
       },
       {
         "id": "publishing",

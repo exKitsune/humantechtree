@@ -1,23 +1,98 @@
 [
-  {"id":"glassmaking","target":"optical-lens","type":"enabler","reason":"Glassworking provided transparent materials that could be shaped into lenses; early lenses could also use rock crystal."},
-  {"id":"writing","target":"positional-numerals","type":"enabler","reason":"Written notation let scribes preserve place-value calculations and transmit numerical conventions."},
-  {"id":"agriculture","target":"cities","type":"enabler","reason":"Agricultural food supplies supported dense settlements and people specializing outside food production."},
-  {"id":"metallurgy","target":"coinage","type":"foundation","reason":"Smelting and working metal supplied the durable, shaped pieces used for metal coinage."},
-  {"id":"trade","target":"sail","type":"enabler","reason":"Exchange between settlements encouraged investment in boats capable of transporting cargo using wind power."},
-  {"id":"printing-press","target":"scientific-method","type":"enabler","reason":"Printed accounts circulated experiments and criticism, helping investigators compare and reproduce observations."},
-  {"id":"university","target":"scientific-method","type":"enabler","reason":"Universities provided settings for teaching, disputation, and preserving texts, alongside other sites of scientific work."},
-  {"id":"guild","target":"precision-machining","type":"enabler","reason":"Craft apprenticeship transmitted metalworking skills that later precision workshops built upon."},
-  {"id":"precision-machining","target":"mass-spectrometry","type":"enabler","reason":"Precisely made components supported the alignment, vacuum integrity, and repeatability of mass spectrometers."},
-  {"id":"vacuum-pump","target":"vacuum-tube","type":"foundation","reason":"Removing gas from a sealed tube allowed controlled electron flow in early vacuum electronic devices."},
-  {"id":"vacuum-pump","target":"electron-microscope","type":"foundation","reason":"Evacuated chambers allowed electron beams to travel without excessive scattering by air molecules."},
-  {"id":"precision-machining","target":"electron-microscope","type":"enabler","reason":"Accurate instrument parts helped align electron optics and maintain stable specimen positioning."},
-  {"id":"electromagnetic-induction","target":"electric-generator","type":"foundation","reason":"Generators convert mechanical motion into electrical energy by changing magnetic flux through conductors."},
-  {"id":"electromagnetism","target":"electric-motor","type":"foundation","reason":"Forces between electric currents and magnetic fields provide the motion produced by electromagnetic motors."},
-  {"id":"electric-battery","target":"electric-telegraph","type":"foundation","reason":"Batteries supplied the controlled electrical current used in early practical electric telegraph systems."},
-  {"id":"power-grid","target":"computer","type":"enabler","reason":"Reliable electric supply supported sustained operation of early electronic computing installations."},
-  {"id":"optical-fiber","target":"optical-communication","type":"foundation","reason":"Low-loss glass fibers made long-distance transmission of light signals through cables practical."},
-  {"id":"satellite","target":"satellite-communication","type":"foundation","reason":"Orbiting spacecraft provided the relay platforms used in satellite communications."},
-  {"id":"metric-system","target":"gauge-blocks","type":"enabler","reason":"Shared measurement standards made precisely sized blocks useful for comparing and transferring dimensions between workshops."},
-  {"id":"germ-theory","target":"pasteurization","type":"enabler","reason":"Understanding microbial causes of spoilage informed heat treatments that reduce microorganisms in food and drink."},
-  {"id":"logistics","target":"containerization","type":"enabler","reason":"Organized freight operations created the need and coordination for transferring standardized cargo containers between transport modes."}
+  {
+    "id": "glassmaking",
+    "target": "optical-lens",
+    "type": "enabler",
+    "reason": "Glassworking provided transparent materials that could be shaped into lenses; early lenses could also use rock crystal."
+  },
+  {
+    "id": "writing",
+    "target": "positional-numerals",
+    "type": "enabler",
+    "reason": "Written notation let scribes preserve place-value calculations and transmit numerical conventions."
+  },
+  {
+    "id": "agriculture",
+    "target": "cities",
+    "type": "enabler",
+    "reason": "Agricultural food supplies supported dense settlements and people specializing outside food production."
+  },
+  {
+    "id": "metallurgy",
+    "target": "coinage",
+    "type": "enabler",
+    "reason": "Metalworking supplies the shaped metal blanks struck or cast into coins; monetary conventions supply the separate payment role."
+  },
+  {
+    "id": "publishing",
+    "type": "enabler",
+    "reason": "Publication of experimental accounts made detailed procedures and arguments available for comparison and criticism.",
+    "source": "https://en.wikipedia.org/wiki/Scientific_method",
+    "target": "scientific-method"
+  },
+  {
+    "id": "precision-machining",
+    "target": "mass-spectrometry",
+    "type": "enabler",
+    "reason": "Precisely made components supported the alignment, vacuum integrity, and repeatability of mass spectrometers."
+  },
+  {
+    "id": "vacuum-pump",
+    "target": "electron-microscope",
+    "type": "foundation",
+    "reason": "Evacuated chambers allowed electron beams to travel without excessive scattering by air molecules.",
+    "directContribution": "Pumps directly evacuate the electron-beam chamber during imaging, independently of the earlier experiments establishing electron properties.",
+    "source": "https://en.wikipedia.org/wiki/Electron_microscope"
+  },
+  {
+    "id": "precision-machining",
+    "target": "electron-microscope",
+    "type": "enabler",
+    "reason": "Accurate instrument parts helped align electron optics and maintain stable specimen positioning."
+  },
+  {
+    "id": "electromagnetic-induction",
+    "target": "electric-generator",
+    "type": "foundation",
+    "reason": "Generators convert mechanical motion into electrical energy by changing magnetic flux through conductors."
+  },
+  {
+    "id": "electromagnetism",
+    "target": "electric-motor",
+    "type": "foundation",
+    "reason": "Forces between electric currents and magnetic fields provide the motion produced by electromagnetic motors."
+  },
+  {
+    "id": "electric-battery",
+    "target": "electric-telegraph",
+    "type": "foundation",
+    "reason": "Batteries supplied the controlled electrical current used in early practical electric telegraph systems.",
+    "directContribution": "Batteries directly power the current sent through telegraph circuits; discovering the magnetic effect of that current supplies a separate operating principle.",
+    "source": "https://en.wikipedia.org/wiki/Electrical_telegraph"
+  },
+  {
+    "id": "power-grid",
+    "target": "computer",
+    "type": "enabler",
+    "reason": "Reliable electric supply supported sustained operation of early electronic computing installations."
+  },
+  {
+    "id": "optical-fiber",
+    "target": "optical-communication",
+    "type": "foundation",
+    "reason": "Low-loss glass fibers made long-distance transmission of light signals through cables practical."
+  },
+  {
+    "id": "satellite",
+    "target": "satellite-communication",
+    "type": "foundation",
+    "reason": "Orbiting spacecraft provided the relay platforms used in satellite communications."
+  },
+  {
+    "id": "fermentation-biology",
+    "type": "enabler",
+    "reason": "Pasteur’s experiments connecting fermentation and spoilage with living microorganisms informed heating procedures for wine.",
+    "source": "https://en.wikipedia.org/wiki/Pasteurization",
+    "target": "pasteurization"
+  }
 ]

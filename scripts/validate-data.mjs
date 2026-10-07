@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises'
 import assert from 'node:assert/strict'
+import { auditConnections } from './lib/connection-audit.mjs'
 const { nodes } = JSON.parse(await readFile('public/data/catalog.json', 'utf8'))
 const domains = new Set(['materials','engineering','energy','transport','food','science','medicine','information','society','culture'])
 const kinds = new Set(['technology','discovery','infrastructure','institution','practice'])
@@ -26,6 +27,7 @@ for (const n of nodes) {
     assert(p.id !== n.id, `Self-reference: ${n.id}`)
     assert(!seen.has(p.id), `Duplicate relationship: ${n.id} -> ${p.id}`)
     assert(types.has(p.type) && p.reason?.length > 20, `Invalid relationship: ${p.id} -> ${n.id}`)
+    if (p.directContribution !== undefined) assert(typeof p.directContribution === 'string' && p.directContribution.trim().length >= 30, `Explain the independent contribution: ${p.id} -> ${n.id}`)
     seen.add(p.id)
   }
 }
@@ -38,6 +40,8 @@ function visit(id) {
   visiting.delete(id); done.add(id)
 }
 nodes.forEach(n => visit(n.id))
+const { candidates, retained } = auditConnections(nodes)
+assert(!candidates.length, `${candidates.length} connections need directness review. Run npm run data:audit-connections.\n${candidates.slice(0, 12).map(e => `${e.source} -> ${e.target}: ${e.flags.join(', ')}`).join('\n')}`)
 const metadata = JSON.parse(await readFile('public/data/wikipedia.json', 'utf8'))
 for (const [id, entry] of Object.entries(metadata)) {
   assert(index.has(id), `Image metadata for unknown node: ${id}`)
@@ -48,3 +52,4 @@ for (const [id, entry] of Object.entries(metadata)) {
   }
 }
 console.log(`Valid: ${nodes.length} unique nodes, ${nodes.reduce((s,n)=>s+n.parents.length,0)} explained edges, no cycles or dangling links.`)
+console.log(`Directness audit: no unresolved flags; ${retained.length} independent direct contributions documented. Historical claim review remains separate.`)

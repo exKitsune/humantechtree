@@ -1,6 +1,6 @@
 export type Domain = 'materials' | 'engineering' | 'energy' | 'transport' | 'food' | 'science' | 'medicine' | 'information' | 'society' | 'culture'
 export type Relation = 'foundation' | 'enabler' | 'influence'
-export type Parent = { id: string; type: Relation; reason: string; source?: string; reviewed?: boolean }
+export type Parent = { id: string; type: Relation; reason: string; source?: string; reviewed?: boolean; directContribution?: string }
 export type Capability = {
   id: string
   title: string

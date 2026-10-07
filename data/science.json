@@ -234,7 +234,8 @@
       {
         "id": "geometry",
         "type": "foundation",
-        "reason": "Geometric curves provide the shapes represented by equations."
+        "reason": "Geometric curves provide the shapes represented by equations.",
+        "directContribution": "Geometric points and curves supply the objects represented by coordinates; that direct spatial role is distinct from algebra's manipulation of equations."
       }
     ]
   },
@@ -615,9 +616,9 @@
     "summary": "Gödel proved limits on what consistent formal arithmetic systems can establish.",
     "parents": [
       {
-        "id": "mathematical-proof",
+        "id": "predicate-logic",
         "type": "foundation",
-        "reason": "Formal deduction supplies the provability concept whose limits are established."
+        "reason": "Formal quantified syntax and inference rules provide the system whose provability limits are analyzed."
       }
     ]
   },
@@ -647,9 +648,9 @@
     "summary": "Turing described an abstract machine that precisely characterized mechanical computation.",
     "parents": [
       {
-        "id": "mathematical-proof",
-        "type": "enabler",
-        "reason": "Formal reasoning connects machine operations to computability results."
+        "id": "predicate-logic",
+        "type": "influence",
+        "reason": "The decision problem for formal logical statements motivates a precise model of mechanical computation."
       }
     ]
   },
@@ -1070,9 +1071,9 @@
     "summary": "Electric and magnetic fields separated charged particles by mass-to-charge ratio.",
     "parents": [
       {
-        "id": "electron",
-        "type": "enabler",
-        "reason": "Charged-particle physics explains ion acceleration and deflection."
+        "id": "electromagnetism",
+        "type": "foundation",
+        "reason": "Magnetic fields deflect accelerated ions according to mass and charge."
       }
     ]
   },
@@ -1134,14 +1135,15 @@
     "summary": "Electron beams and electromagnetic lenses resolved structures beyond optical microscopy.",
     "parents": [
       {
-        "id": "electron",
+        "id": "matter-waves",
         "type": "foundation",
-        "reason": "Short-wavelength electron beams supply the imaging probe."
+        "reason": "The short de Broglie wavelength of accelerated electrons supports finer resolution than visible light."
       },
       {
-        "id": "microscope",
-        "type": "influence",
-        "reason": "Optical microscopy established magnified imaging as a way to inspect tiny structures."
+        "id": "electromagnetism",
+        "type": "foundation",
+        "reason": "Magnetic fields focus and steer electron beams.",
+        "directContribution": "Electromagnetic lenses physically focus and steer the electron beam; matter-wave theory separately explains the beam's achievable wavelength and resolution."
       }
     ]
   },
@@ -1293,9 +1295,9 @@
     "summary": "Stimulated emission produced coherent light with tightly controlled wavelength.",
     "parents": [
       {
-        "id": "quantum-mechanics",
+        "id": "maser",
         "type": "foundation",
-        "reason": "Quantized energy transitions and stimulated emission supply optical gain."
+        "reason": "Stimulated-emission amplification is extended from microwave transitions into an optical resonator."
       }
     ]
   },
@@ -1442,9 +1444,9 @@
     "summary": "Electric fields moved charged particles through fluids or gels for separation.",
     "parents": [
       {
-        "id": "electroscope",
-        "type": "influence",
-        "reason": "Charge experiments established electrical behavior later used to move charged particles."
+        "id": "electric-battery",
+        "type": "foundation",
+        "reason": "A sustained electrical potential drives migration of charged particles in Reuss's experiment."
       }
     ]
   },
@@ -1654,9 +1656,9 @@
     "summary": "Leavitt linked Cepheid pulsation periods to luminosity, enabling cosmic distance estimates.",
     "parents": [
       {
-        "id": "stellar-parallax",
-        "type": "enabler",
-        "reason": "Nearby distance measurements later calibrated absolute luminosities."
+        "id": "photometer",
+        "type": "foundation",
+        "reason": "Repeated stellar brightness measurements relate pulsation period to relative luminosity."
       }
     ]
   },
@@ -1691,9 +1693,9 @@
     "summary": "Jansky detected extraterrestrial radio emissions, opening a new astronomical window.",
     "parents": [
       {
-        "id": "electromagnetic-waves",
+        "id": "radio",
         "type": "foundation",
-        "reason": "Radio radiation carries information from celestial sources."
+        "reason": "Radio receivers and antennas are adapted to detecting emission from the sky."
       }
     ]
   },
@@ -1860,9 +1862,9 @@
     "summary": "Ørsted showed that an electric current deflects a magnetic compass needle.",
     "parents": [
       {
-        "id": "electroscope",
-        "type": "influence",
-        "reason": "Earlier electrical experiments established ways to manipulate charge."
+        "id": "electric-battery",
+        "type": "foundation",
+        "reason": "A sustained current source supplies the electrical flow tested for its magnetic effect."
       }
     ]
   },
@@ -1892,9 +1894,14 @@
     "summary": "Hertz demonstrated waves consistent with Maxwell's electromagnetic theory.",
     "parents": [
       {
-        "id": "electromagnetism",
+        "id": "maxwell-equations",
         "type": "foundation",
-        "reason": "Coupled electric and magnetic fields constitute electromagnetic waves."
+        "reason": "The field equations predict electromagnetic wave propagation tested by Hertz."
+      },
+      {
+        "id": "electric-telegraph",
+        "type": "enabler",
+        "reason": "Spark and receiving circuits generate and detect high-frequency electrical disturbances."
       }
     ]
   },
@@ -2094,9 +2101,19 @@
     "summary": "Cowan and Reines detected antineutrino interactions in a reactor experiment.",
     "parents": [
       {
-        "id": "radioactivity",
+        "id": "neutrino-hypothesis",
         "type": "influence",
-        "reason": "Beta-decay energy distributions motivated the neutrino hypothesis."
+        "reason": "The predicted neutral particle defines the interaction searched for in the experiment."
+      },
+      {
+        "id": "scintillation-counting",
+        "type": "foundation",
+        "reason": "Coincidence detection registers the photons produced by neutrino interactions and subsequent neutron capture."
+      },
+      {
+        "id": "nuclear-reactor",
+        "type": "enabler",
+        "reason": "A reactor supplies an intense antineutrino source for the detection experiment."
       }
     ]
   },
@@ -2110,9 +2127,14 @@
     "summary": "Quantum theory described microscopic systems using quantized observables and probabilistic states.",
     "parents": [
       {
-        "id": "atomic-theory",
+        "id": "bohr-atomic-model",
         "type": "influence",
-        "reason": "Atomic spectra and stability required a new account of microscopic behavior."
+        "reason": "Quantized atomic orbits expose the successes and limitations a new theory must explain."
+      },
+      {
+        "id": "matter-waves",
+        "type": "influence",
+        "reason": "Particle-wave behavior motivates a wave-based account of microscopic states."
       }
     ]
   },
@@ -2186,7 +2208,8 @@
       {
         "id": "special-relativity",
         "type": "foundation",
-        "reason": "Relativistic symmetry constrains the field theory."
+        "reason": "Relativistic symmetry constrains the field theory.",
+        "directContribution": "Lorentz symmetry directly constrains the electromagnetic field theory; quantum-state rules separately specify amplitudes and quantization."
       }
     ]
   },
@@ -2232,9 +2255,15 @@
     "summary": "Kamerlingh Onnes found that cooled mercury loses measurable electrical resistance.",
     "parents": [
       {
+        "id": "liquid-helium",
+        "type": "foundation",
+        "reason": "Liquid helium provides temperatures low enough to reveal mercury's zero-resistance transition."
+      },
+      {
         "id": "thermometer",
         "type": "enabler",
-        "reason": "Low-temperature measurement identifies the transition to zero resistance."
+        "reason": "Low-temperature measurement locates the resistance transition.",
+        "directContribution": "Temperature measurement directly locates the resistance transition; helium liquefaction separately supplies the required cooling."
       }
     ]
   },
@@ -2248,9 +2277,14 @@
     "summary": "Moving lithospheric plates explained seafloor spreading, earthquakes, and mountain formation.",
     "parents": [
       {
-        "id": "radiometric-dating",
+        "id": "seafloor-spreading",
+        "type": "foundation",
+        "reason": "Creation and outward motion of ocean crust supply a mechanism for lithospheric plate motion."
+      },
+      {
+        "id": "geomagnetic-reversal",
         "type": "enabler",
-        "reason": "Rock ages help constrain crustal histories and spreading rates."
+        "reason": "Alternating magnetic signatures in oceanic rocks test spreading and plate-motion histories."
       }
     ]
   },
@@ -2416,9 +2450,9 @@
     "summary": "Researchers established that microorganisms can convert atmospheric nitrogen into usable compounds.",
     "parents": [
       {
-        "id": "bacteria",
-        "type": "foundation",
-        "reason": "Microbial identification supplies the organisms responsible for fixation."
+        "id": "pure-microbial-culture",
+        "type": "enabler",
+        "reason": "Isolated microbial cultures permit nitrogen uptake to be attributed to particular organisms rather than mixed soil activity."
       }
     ]
   },
@@ -2605,14 +2639,21 @@
     "summary": "Schleiden and Schwann identified cells as basic units of plants and animals.",
     "parents": [
       {
-        "id": "cell-discovery",
-        "type": "foundation",
-        "reason": "Cell observations supplied the structures generalized across organisms."
+        "id": "cell-nucleus",
+        "type": "influence",
+        "reason": "Recurring nuclei in living plant cells supplied a shared structural feature used in the generalization of cellular organization."
       },
       {
         "id": "microscope",
-        "type": "enabler",
-        "reason": "Repeated microscopic examination enabled comparisons among tissues."
+        "type": "foundation",
+        "reason": "Repeated microscopic examination supplies observations of living cells across plant and animal tissues.",
+        "directContribution": "Microscopes directly supply comparative observations of living tissues; nuclear observations are one body of evidence rather than a replacement for that imaging."
+      },
+      {
+        "id": "cell-discovery",
+        "type": "influence",
+        "reason": "Hooke's named cellular compartments establish a historical conceptual precedent for generalizing cellular organization.",
+        "directContribution": "Hooke's introduction of the cell concept is retained as a historical influence on the theory; it supplies neither living-tissue evidence nor the later chemical isolation methods."
       }
     ]
   },
@@ -2668,14 +2709,15 @@
     "summary": "Improved microscopy revealed chromosomes and their ordered behavior during division.",
     "parents": [
       {
-        "id": "microscope",
+        "id": "cell-nucleus",
         "type": "foundation",
-        "reason": "Microscopic imaging makes chromosomes and dividing cells observable."
+        "reason": "The identified nucleus provides the cellular compartment in which dividing chromatin structures are examined."
       },
       {
-        "id": "cell-theory",
-        "type": "influence",
-        "reason": "Cells as biological units focused attention on mechanisms of cell reproduction."
+        "id": "microscope",
+        "type": "foundation",
+        "reason": "Microscopic imaging directly resolves chromatin and chromosome movements during division.",
+        "directContribution": "The actual dividing chromosome structures are resolved optically; knowing the nucleus's location does not provide those observations."
       }
     ]
   },
@@ -2689,9 +2731,9 @@
     "summary": "Miescher isolated nuclein, the substance later identified as DNA.",
     "parents": [
       {
-        "id": "cell-theory",
-        "type": "influence",
-        "reason": "Cell research motivated chemical investigation of nuclear components."
+        "id": "cell-nucleus",
+        "type": "foundation",
+        "reason": "Nuclei isolated from leukocytes provide the material from which Miescher extracted nuclein."
       }
     ]
   },
@@ -2742,14 +2784,14 @@
     "summary": "Bacterial transformation experiments identified DNA as the hereditary transforming substance.",
     "parents": [
       {
-        "id": "dna-isolation",
+        "id": "bacterial-transformation",
         "type": "foundation",
-        "reason": "Isolated DNA supplies the candidate transforming material."
+        "reason": "Griffith's transferable pneumococcal trait supplies the assay used to test purified candidate substances."
       },
       {
-        "id": "bacteria",
-        "type": "foundation",
-        "reason": "Bacterial strains provide a testable inheritance and transformation system."
+        "id": "dische-dna-assay",
+        "type": "enabler",
+        "reason": "Chemical tests for deoxyribose help identify the active purified fraction as DNA."
       }
     ]
   },
@@ -2784,9 +2826,14 @@
     "summary": "Experiments connected nucleotide triplets to amino acids in protein synthesis.",
     "parents": [
       {
-        "id": "dna-heredity",
+        "id": "mrna-discovery",
         "type": "foundation",
-        "reason": "Nucleic acids supply the encoded hereditary instructions."
+        "reason": "Messenger RNA supplies the sequence-bearing template tested for its effects on protein synthesis."
+      },
+      {
+        "id": "isotope-tracers",
+        "type": "foundation",
+        "reason": "Radiolabeled amino acids reveal which residues enter protein in response to a defined RNA template."
       }
     ]
   },
@@ -2816,9 +2863,14 @@
     "summary": "DNA fragments from different sources were joined into new molecular combinations.",
     "parents": [
       {
-        "id": "dna-double-helix",
+        "id": "restriction-enzymes",
         "type": "foundation",
-        "reason": "Understanding DNA structure supports controlled cleavage and joining."
+        "reason": "Sequence-selective cutting prepares DNA fragments with defined ends."
+      },
+      {
+        "id": "dna-ligase",
+        "type": "foundation",
+        "reason": "Ligase joins prepared fragments into a recombinant molecule."
       }
     ]
   },
@@ -2832,9 +2884,15 @@
     "summary": "Sequence-selective enzymes gave researchers precise ways to cut DNA.",
     "parents": [
       {
-        "id": "dna-heredity",
+        "id": "bacteriophages",
         "type": "influence",
-        "reason": "DNA's biological role motivated investigation of bacterial DNA restriction."
+        "reason": "Host-specific restriction of phage growth motivates investigation of enzymes that destroy foreign DNA."
+      },
+      {
+        "id": "pure-microbial-culture",
+        "type": "enabler",
+        "reason": "Controlled host cultures permit restriction activity to be compared among bacterial strains.",
+        "directContribution": "Defined host cultures directly permit comparisons of phage restriction activity; plaque visualization separately provides a visible infection readout."
       }
     ]
   },
@@ -2848,9 +2906,19 @@
     "summary": "Sequencing methods determined the order of nucleotide bases in DNA molecules.",
     "parents": [
       {
-        "id": "dna-double-helix",
+        "id": "dna-polymerase",
         "type": "foundation",
-        "reason": "DNA's nucleotide sequence is the information read by sequencing."
+        "reason": "Template-directed synthesis generates the fragments read in the Sanger route."
+      },
+      {
+        "id": "dna-hybridization",
+        "type": "foundation",
+        "reason": "A complementary primer specifies the template position from which sequencing synthesis begins."
+      },
+      {
+        "id": "gel-electrophoresis",
+        "type": "foundation",
+        "reason": "Gel size separation orders the terminated DNA fragments for base identification."
       }
     ]
   },
@@ -2864,9 +2932,14 @@
     "summary": "Repeated thermal cycles amplified selected DNA sequences exponentially.",
     "parents": [
       {
-        "id": "dna-double-helix",
+        "id": "dna-polymerase",
         "type": "foundation",
-        "reason": "Complementary base pairing makes sequence-specific priming possible."
+        "reason": "The enzyme copies a primed DNA template during each amplification cycle."
+      },
+      {
+        "id": "dna-hybridization",
+        "type": "foundation",
+        "reason": "Complementary primers select and delimit the DNA region amplified."
       }
     ]
   },
@@ -2882,12 +2955,13 @@
       {
         "id": "dna-sequencing",
         "type": "foundation",
-        "reason": "Base-reading technologies supply the genome sequence."
+        "reason": "Sequencing supplies the measured base order of genomic fragments.",
+        "directContribution": "Sequencing physically measures the base order of fragments; assembly separately infers how those measured fragments overlap into longer sequences."
       },
       {
-        "id": "computer",
-        "type": "enabler",
-        "reason": "Computation assembles and annotates large quantities of sequence data."
+        "id": "sequence-assembly",
+        "type": "foundation",
+        "reason": "Read-overlap reconstruction combines fragments into the reference sequence."
       }
     ]
   },
@@ -2901,14 +2975,14 @@
     "summary": "Programmable guide RNA directed Cas nucleases to selected DNA targets.",
     "parents": [
       {
-        "id": "dna-double-helix",
+        "id": "crispr-adaptive-immunity",
         "type": "foundation",
-        "reason": "Complementary nucleic-acid pairing specifies genomic targets."
+        "reason": "The RNA-guided bacterial defense system supplies Cas nucleases and sequence-specific targeting."
       },
       {
         "id": "recombinant-dna",
         "type": "enabler",
-        "reason": "DNA engineering techniques support construction and testing of editing systems."
+        "reason": "Cloning and expression of Cas9 and guide-RNA constructs support programmable-cleavage experiments."
       }
     ]
   },
@@ -2922,9 +2996,9 @@
     "summary": "Double-stranded RNA was shown to trigger sequence-specific gene silencing.",
     "parents": [
       {
-        "id": "genetic-code",
+        "id": "antisense-gene-perturbation",
         "type": "influence",
-        "reason": "RNA's role in gene expression made sequence-specific silencing interpretable."
+        "reason": "Unexpected suppression in sense and antisense controls prompts experiments identifying double-stranded RNA as the active trigger."
       }
     ]
   },
@@ -2938,9 +3012,14 @@
     "summary": "Modified nucleosides reduced inflammatory recognition and improved useful mRNA expression.",
     "parents": [
       {
-        "id": "central-dogma",
+        "id": "mrna-discovery",
         "type": "foundation",
-        "reason": "Messenger RNA transfers coding information into protein production."
+        "reason": "Messenger RNA supplies the coding substrate whose nucleosides are modified."
+      },
+      {
+        "id": "cell-culture",
+        "type": "enabler",
+        "reason": "Cultured cells permit expression and inflammatory responses to modified RNA to be compared."
       }
     ]
   },
@@ -2955,13 +3034,13 @@
     "parents": [
       {
         "id": "mrna-modification",
-        "type": "enabler",
-        "reason": "Nucleoside modification improves expression and reduces unwanted innate immune activation."
+        "type": "foundation",
+        "reason": "Nucleoside modification improves expression and reduces unwanted innate recognition."
       },
       {
-        "id": "vaccination",
-        "type": "foundation",
-        "reason": "Antigen exposure trains immune responses before infection."
+        "id": "recombinant-dna",
+        "type": "enabler",
+        "reason": "Engineered DNA templates define the antigen-coding RNA manufactured for delivery."
       }
     ]
   },
@@ -3007,9 +3086,9 @@
     "summary": "Researchers maintained pluripotent cells from mouse embryos in culture.",
     "parents": [
       {
-        "id": "cell-theory",
+        "id": "cell-culture",
         "type": "foundation",
-        "reason": "Individual cells are the units isolated and propagated."
+        "reason": "Controlled culture supports isolation and continued growth of undifferentiated embryonic cells."
       }
     ]
   },
@@ -3023,14 +3102,19 @@
     "summary": "Defined transcription factors reprogrammed mature cells into pluripotent cells.",
     "parents": [
       {
-        "id": "stem-cells",
+        "id": "nuclear-reprogramming",
         "type": "influence",
-        "reason": "Embryonic stem cells established benchmarks for pluripotency."
+        "reason": "Nuclear transplantation establishes that differentiation does not irreversibly eliminate developmental potential."
       },
       {
-        "id": "recombinant-dna",
+        "id": "stem-cells",
         "type": "enabler",
-        "reason": "Engineered gene delivery introduces reprogramming factors."
+        "reason": "Embryonic stem cells provide benchmarks for pluripotency."
+      },
+      {
+        "id": "viral-gene-vector",
+        "type": "enabler",
+        "reason": "Engineered vectors introduce the transcription factors used to reprogram the cells."
       }
     ]
   },
@@ -3044,9 +3128,14 @@
     "summary": "Nuclear transfer produced a sheep from an adult somatic-cell nucleus.",
     "parents": [
       {
-        "id": "cell-theory",
+        "id": "nuclear-reprogramming",
         "type": "foundation",
-        "reason": "The nucleus of an individual cell supplies the donor genetic material."
+        "reason": "Transplanting a differentiated nucleus into an enucleated egg supplies the developmental reprogramming route."
+      },
+      {
+        "id": "cell-culture",
+        "type": "enabler",
+        "reason": "Cultured adult donor cells provide nuclei in a controlled state for transfer."
       }
     ]
   },
@@ -3083,7 +3172,8 @@
       {
         "id": "cell-culture",
         "type": "foundation",
-        "reason": "Controlled culture maintains growing tissue outside the organism."
+        "reason": "Controlled culture maintains growing tissue outside the organism.",
+        "directContribution": "Three-dimensional culture conditions directly maintain and organize the growing tissue; stem-cell identity separately supplies the starting cell population."
       }
     ]
   },
@@ -3113,9 +3203,9 @@
     "summary": "Pasteur established that microorganisms drive important fermentation processes.",
     "parents": [
       {
-        "id": "bacteria",
-        "type": "influence",
-        "reason": "Microscopic organisms provided candidates for the agents of fermentation."
+        "id": "microscope",
+        "type": "foundation",
+        "reason": "Microscopic examination identifies living yeast and other microbes associated with particular fermentations."
       }
     ]
   },
@@ -3129,14 +3219,15 @@
     "summary": "Experiments established that microorganisms can cause infectious disease.",
     "parents": [
       {
-        "id": "bacteria",
-        "type": "foundation",
-        "reason": "Identified microorganisms supply the disease-causing agents."
+        "id": "fermentation-biology",
+        "type": "influence",
+        "reason": "Demonstrating microbial action in fermentation motivates testing microbial causes and contamination in other biological processes.",
+        "directContribution": "Microbial action in fermentation supplies empirical evidence of biological causation; controlled culture separately supplies the test conditions."
       },
       {
-        "id": "scientific-method",
+        "id": "microbial-culture",
         "type": "enabler",
-        "reason": "Controlled infection and exclusion experiments distinguish microbial causes."
+        "reason": "Controlled growth and exclusion of microbes permit contamination and disease hypotheses to be tested."
       }
     ]
   },
@@ -3152,7 +3243,12 @@
       {
         "id": "germ-theory",
         "type": "foundation",
-        "reason": "Microbial causation is the hypothesis tested by isolation and reinfection."
+        "reason": "Microbial causation supplies the disease hypothesis being tested."
+      },
+      {
+        "id": "pure-microbial-culture",
+        "type": "foundation",
+        "reason": "Isolation and reinoculation of a single organism provide the experimental test of causation."
       }
     ]
   },
@@ -3166,9 +3262,9 @@
     "summary": "Covered shallow dishes supported controlled growth and isolation of microorganisms.",
     "parents": [
       {
-        "id": "bacteria",
-        "type": "influence",
-        "reason": "Microbial study created a need for visible, protected cultures."
+        "id": "agar-culture",
+        "type": "foundation",
+        "reason": "Solid growth media create a practical need for a covered flat surface supporting visible colonies."
       }
     ]
   },
@@ -3182,9 +3278,9 @@
     "summary": "Agar-solidified media provided stable surfaces for separating microbial colonies.",
     "parents": [
       {
-        "id": "bacteria",
+        "id": "pure-microbial-culture",
         "type": "foundation",
-        "reason": "Microorganisms form the colonies isolated on the growth medium."
+        "reason": "Isolation of single microbial populations supplies the objective served by stable solid media."
       }
     ]
   },
@@ -3198,9 +3294,14 @@
     "summary": "Infectious agents smaller than bacteria were recognized through filtration experiments.",
     "parents": [
       {
-        "id": "germ-theory",
+        "id": "bacteriological-filter",
+        "type": "foundation",
+        "reason": "Infectivity retained after bacteria-removing filtration reveals an agent smaller than ordinary bacteria."
+      },
+      {
+        "id": "koch-postulates",
         "type": "influence",
-        "reason": "Microbial disease research motivated tests of infectious material."
+        "reason": "Experiments connecting an infectious agent to disease supply a test framework for the filtrate."
       }
     ]
   },
@@ -3214,14 +3315,14 @@
     "summary": "Bacteria-infecting viruses were identified through destruction of bacterial cultures.",
     "parents": [
       {
-        "id": "bacteria",
+        "id": "agar-culture",
         "type": "foundation",
-        "reason": "Bacterial cultures provide the host cells and visible lysis pattern."
+        "reason": "A bacterial lawn on solid medium makes local viral lysis visible as plaques."
       },
       {
-        "id": "viruses",
-        "type": "influence",
-        "reason": "Filterable infectious agents supplied a framework for interpreting the phenomenon."
+        "id": "bacteriological-filter",
+        "type": "enabler",
+        "reason": "Bacteria-free infectious filtrates distinguish the lytic agent from contaminating bacteria."
       }
     ]
   },
@@ -3235,9 +3336,9 @@
     "summary": "Prusiner identified infectious protein agents associated with transmissible neurodegeneration.",
     "parents": [
       {
-        "id": "enzyme-catalysis",
-        "type": "enabler",
-        "reason": "Protein-sensitive treatments help distinguish protein infectivity from nucleic-acid agents."
+        "id": "proteinase-k",
+        "type": "foundation",
+        "reason": "Controlled proteinase treatment tests the unusually protease-resistant protein fraction carrying infectivity."
       }
     ]
   },
@@ -3251,9 +3352,15 @@
     "summary": "Marshall and Warren linked Helicobacter pylori infection to gastritis and peptic ulcers.",
     "parents": [
       {
-        "id": "germ-theory",
+        "id": "pure-microbial-culture",
         "type": "foundation",
-        "reason": "Microbial causation provides a testable explanation for inflammatory disease."
+        "reason": "Isolated Helicobacter cultures provide material for characterization and infection tests.",
+        "directContribution": "Isolated gastric cultures physically supply organisms for characterization and infection tests; Koch's criteria separately guide the inference of causation."
+      },
+      {
+        "id": "koch-postulates",
+        "type": "influence",
+        "reason": "Isolation and reinfection tests guide investigation of whether the organism causes gastric disease."
       }
     ]
   },
@@ -3267,9 +3374,14 @@
     "summary": "Researchers isolated the retrovirus responsible for AIDS.",
     "parents": [
       {
-        "id": "viruses",
+        "id": "cell-culture",
         "type": "foundation",
-        "reason": "Virology supplies methods to isolate and classify the infectious agent."
+        "reason": "Cultured human lymphocytes permit the suspected agent to grow and be tested."
+      },
+      {
+        "id": "reverse-transcriptase",
+        "type": "enabler",
+        "reason": "Reverse-transcriptase activity identifies a replicating retroviral agent in the cultures."
       }
     ]
   },
@@ -3283,9 +3395,14 @@
     "summary": "An enzyme was found to copy RNA templates into DNA.",
     "parents": [
       {
-        "id": "central-dogma",
+        "id": "viruses",
         "type": "influence",
-        "reason": "RNA-to-DNA copying extended the recognized routes of molecular information transfer."
+        "reason": "RNA tumor viruses create the question of how an RNA viral genome can enter a DNA-associated cellular route."
+      },
+      {
+        "id": "dna-polymerase",
+        "type": "enabler",
+        "reason": "Template-directed polymerase assays provide a method adapted to testing RNA-to-DNA copying."
       }
     ]
   },
@@ -3359,7 +3476,8 @@
       {
         "id": "xray-crystallography",
         "type": "foundation",
-        "reason": "Diffraction provides atomic structural constraints."
+        "reason": "Diffraction provides atomic structural constraints.",
+        "directContribution": "Diffraction directly supplies atomic structural constraints for the ribosome; understanding translation separately explains the structure's biological function."
       },
       {
         "id": "genetic-code",
@@ -3394,14 +3512,9 @@
     "summary": "An enzyme was identified that extends protective chromosome ends.",
     "parents": [
       {
-        "id": "chromosomes",
-        "type": "foundation",
-        "reason": "Chromosome ends define the structures maintained by telomerase."
-      },
-      {
-        "id": "dna-double-helix",
+        "id": "dna-sequencing",
         "type": "enabler",
-        "reason": "DNA sequence methods identify repeated terminal sequences."
+        "reason": "Sequence analysis identifies repeated chromosome-end DNA and the repeat-extension product."
       }
     ]
   },
@@ -3431,14 +3544,15 @@
     "summary": "Cajal established that nervous tissue consists of distinct communicating cells.",
     "parents": [
       {
-        "id": "cell-theory",
+        "id": "golgi-stain",
         "type": "foundation",
-        "reason": "Cellular organization supplies the explanatory framework."
+        "reason": "Sparse staining reveals individual neuronal outlines rather than an indistinguishable tissue mass."
       },
       {
         "id": "microscope",
         "type": "foundation",
-        "reason": "Microscopic staining reveals individual nerve-cell structures."
+        "reason": "Microscopic examination resolves the stained cells and their contacts.",
+        "directContribution": "Microscopy directly resolves stained neuronal outlines and contacts; sparse staining separately creates contrast that makes those outlines distinguishable."
       }
     ]
   },
@@ -3452,9 +3566,9 @@
     "summary": "Hodgkin and Huxley modeled electrical impulses through voltage-dependent ion conductances.",
     "parents": [
       {
-        "id": "neuron-doctrine",
-        "type": "influence",
-        "reason": "Individual neurons provide the cellular units whose signaling is explained."
+        "id": "voltage-clamp",
+        "type": "foundation",
+        "reason": "Holding membrane voltage fixed separates ionic current changes and permits conductances to be quantified."
       }
     ]
   },
@@ -3601,9 +3715,9 @@
     "summary": "Echoes of high-frequency sound formed diagnostic views of internal structures.",
     "parents": [
       {
-        "id": "scientific-method",
-        "type": "enabler",
-        "reason": "Controlled acoustic measurements relate echo timing to internal boundaries."
+        "id": "piezoelectric-effect",
+        "type": "foundation",
+        "reason": "Piezoelectric transducers convert electrical pulses into sound and returning echoes into electrical signals."
       }
     ]
   },
@@ -3659,14 +3773,14 @@
     "summary": "Detected annihilation photons mapped the distribution of radioactive tracers in the body.",
     "parents": [
       {
-        "id": "positron",
+        "id": "scintillation-counting",
         "type": "foundation",
-        "reason": "Positron annihilation produces the paired photons detected by the scanner."
+        "reason": "Scintillation detectors register coincident gamma photons from tracer annihilation."
       },
       {
         "id": "computer",
         "type": "enabler",
-        "reason": "Reconstruction converts many coincidence events into a tracer map."
+        "reason": "Numerical reconstruction converts coincidence events into a tracer-distribution map."
       }
     ]
   },
@@ -3744,14 +3858,9 @@
     "summary": "Sterile instruments and barriers prevented microorganisms from entering surgical wounds.",
     "parents": [
       {
-        "id": "germ-theory",
-        "type": "foundation",
-        "reason": "Microbial causation identifies contamination as an avoidable source of infection."
-      },
-      {
         "id": "antiseptic-surgery",
         "type": "influence",
-        "reason": "Successful infection reduction encouraged preventing contamination before it occurs."
+        "reason": "Successful microbial control encourages preventing contamination before it enters the wound."
       }
     ]
   },
@@ -3807,14 +3916,9 @@
     "summary": "Pasteur's attenuated-virus treatment prevented rabies after exposure.",
     "parents": [
       {
-        "id": "vaccination",
+        "id": "vaccine-attenuation",
         "type": "foundation",
-        "reason": "Induced immunity supplies the protective mechanism."
-      },
-      {
-        "id": "germ-theory",
-        "type": "enabler",
-        "reason": "Microbial disease research supported controlled attenuation experiments."
+        "reason": "Controlled weakening of infectious material supplies the route to a protective preparation."
       }
     ]
   },
@@ -3828,14 +3932,14 @@
     "summary": "Salk's inactivated vaccine reduced the risk of paralytic poliomyelitis.",
     "parents": [
       {
-        "id": "vaccination",
+        "id": "cell-culture",
         "type": "foundation",
-        "reason": "Antigen exposure trains protection against later infection."
+        "reason": "Propagation in cultured cells supplies poliovirus for controlled inactivation and vaccine manufacture."
       },
       {
-        "id": "cell-culture",
-        "type": "enabler",
-        "reason": "Cultured cells allow large quantities of poliovirus to be grown."
+        "id": "vaccine-attenuation",
+        "type": "influence",
+        "reason": "Earlier controlled alteration of infectious agents establishes the preventive-vaccine strategy."
       }
     ]
   },
@@ -3849,14 +3953,14 @@
     "summary": "Attenuated measles virus supplied effective protection against infection.",
     "parents": [
       {
-        "id": "vaccination",
+        "id": "cell-culture",
         "type": "foundation",
-        "reason": "Vaccination establishes immune memory before exposure."
+        "reason": "Serial culture permits growth and attenuation of the vaccine virus."
       },
       {
-        "id": "cell-culture",
-        "type": "enabler",
-        "reason": "Serial culture supports production and attenuation of vaccine virus."
+        "id": "vaccine-attenuation",
+        "type": "foundation",
+        "reason": "Reduced virulence while preserving immune stimulation supplies the live-vaccine method."
       }
     ]
   },
@@ -3870,14 +3974,14 @@
     "summary": "Virus-like particles induced protection against cancer-associated papillomavirus types.",
     "parents": [
       {
-        "id": "vaccination",
+        "id": "recombinant-dna",
         "type": "foundation",
-        "reason": "Antigen exposure generates protective immune responses."
+        "reason": "Engineered expression produces capsid proteins that assemble into vaccine particles."
       },
       {
-        "id": "recombinant-dna",
-        "type": "enabler",
-        "reason": "Engineered expression produces the viral proteins forming vaccine particles."
+        "id": "hepatitis-b-vaccine",
+        "type": "influence",
+        "reason": "Earlier viral surface-antigen vaccines demonstrate protection without a replicating vaccine virus."
       }
     ]
   },
@@ -3891,14 +3995,9 @@
     "summary": "Fleming observed a mold-derived substance that inhibited bacterial growth.",
     "parents": [
       {
-        "id": "bacteria",
-        "type": "foundation",
-        "reason": "Bacterial cultures make growth inhibition observable."
-      },
-      {
         "id": "agar-culture",
-        "type": "enabler",
-        "reason": "Solid growth media reveal the zone of inhibition."
+        "type": "foundation",
+        "reason": "A solid bacterial lawn makes the mold-associated inhibition zone observable."
       }
     ]
   },
@@ -3928,9 +4027,9 @@
     "summary": "Prontosil introduced effective synthetic antibacterial chemotherapy.",
     "parents": [
       {
-        "id": "germ-theory",
-        "type": "foundation",
-        "reason": "Bacteria as disease agents provide the targets of antibacterial treatment."
+        "id": "pure-microbial-culture",
+        "type": "enabler",
+        "reason": "Culture-based infection and growth tests identify antibacterial activity of candidate compounds."
       }
     ]
   },
@@ -3944,14 +4043,15 @@
     "summary": "A soil-microbe antibiotic supplied an effective treatment for tuberculosis.",
     "parents": [
       {
-        "id": "bacteria",
+        "id": "pure-microbial-culture",
         "type": "foundation",
-        "reason": "Microbial isolation identifies both the producing organism and target pathogen."
+        "reason": "Isolated producing microbes supply extracts for antibacterial screening.",
+        "directContribution": "Isolated producing cultures physically supply antibiotic-containing material; agar inhibition tests separately measure activity against target bacteria."
       },
       {
         "id": "agar-culture",
-        "type": "enabler",
-        "reason": "Culture assays reveal antibacterial activity."
+        "type": "foundation",
+        "reason": "Growth-inhibition tests on solid media reveal and compare antibiotic activity."
       }
     ]
   },
@@ -3965,9 +4065,9 @@
     "summary": "Pancreatic insulin preparations treated diabetes by replacing a missing hormone.",
     "parents": [
       {
-        "id": "scientific-method",
-        "type": "enabler",
-        "reason": "Controlled tests of pancreatic extracts connected treatment to reduced blood glucose."
+        "id": "pancreatic-diabetes",
+        "type": "foundation",
+        "reason": "Pancreas-removal experiments identify a missing pancreatic function that extracts can replace."
       }
     ]
   },
@@ -4034,14 +4134,14 @@
     "summary": "Anticoagulated and cooled blood could be held for later transfusion.",
     "parents": [
       {
-        "id": "blood-transfusion",
-        "type": "foundation",
-        "reason": "Transfusion supplies the clinical use for stored blood."
-      },
-      {
         "id": "blood-groups",
         "type": "enabler",
-        "reason": "Compatibility knowledge reduces dangerous transfusion reactions."
+        "reason": "Compatibility testing selects blood that can be safely transfused."
+      },
+      {
+        "id": "blood-transfusion",
+        "type": "influence",
+        "reason": "Established transfusion creates the clinical need to preserve usable blood before administration."
       }
     ]
   },
@@ -4055,9 +4155,14 @@
     "summary": "Kolff's rotating-drum kidney removed waste solutes from blood across a membrane.",
     "parents": [
       {
-        "id": "blood-circulation",
+        "id": "membrane-dialysis",
         "type": "foundation",
-        "reason": "Blood flow supplies the exchange stream cleaned by the device."
+        "reason": "Selective membrane exchange removes small waste solutes while retaining blood cells and larger molecules."
+      },
+      {
+        "id": "heparin",
+        "type": "enabler",
+        "reason": "Anticoagulation keeps blood fluid in the extracorporeal circuit."
       }
     ]
   },
@@ -4110,7 +4215,13 @@
       {
         "id": "blood-circulation",
         "type": "foundation",
-        "reason": "Understanding circulation defines the pumping and oxygenation functions replaced."
+        "reason": "The extracorporeal circuit physically replaces the pumping and gas-exchange functions of circulation.",
+        "directContribution": "The external circuit directly substitutes for circulatory pumping and oxygenation; anticoagulation separately keeps that circulating blood usable."
+      },
+      {
+        "id": "heparin",
+        "type": "enabler",
+        "reason": "Anticoagulation prevents clotting while blood passes through external tubing and oxygenators."
       }
     ]
   },
@@ -4124,14 +4235,19 @@
     "summary": "A kidney transplanted between identical twins provided lasting organ replacement.",
     "parents": [
       {
+        "id": "vascular-anastomosis",
+        "type": "foundation",
+        "reason": "Joining donor and recipient vessels restores blood supply to the transplanted kidney."
+      },
+      {
         "id": "aseptic-surgery",
         "type": "enabler",
-        "reason": "Sterile technique reduces infection in major operations."
+        "reason": "Sterile technique reduces infection during graft implantation."
       },
       {
         "id": "anesthesia",
         "type": "enabler",
-        "reason": "Controlled anesthesia permits prolonged transplant surgery."
+        "reason": "Controlled anesthesia permits the prolonged operation."
       }
     ]
   },
@@ -4145,9 +4261,14 @@
     "summary": "Drug regimens reduced immune rejection of transplanted organs.",
     "parents": [
       {
+        "id": "immune-tolerance",
+        "type": "influence",
+        "reason": "Experiments showing altered immune acceptance motivate deliberate control of transplant rejection."
+      },
+      {
         "id": "organ-transplantation",
         "type": "influence",
-        "reason": "Transplant rejection created the need to suppress immune responses."
+        "reason": "Rejection of functioning grafts supplies the clinical problem addressed by immune suppression."
       }
     ]
   },
@@ -4175,7 +4296,13 @@
     "domain": "medicine",
     "kind": "technology",
     "summary": "Hormonal tablets provided a reversible method of suppressing ovulation.",
-    "parents": []
+    "parents": [
+      {
+        "id": "oral-progestin-synthesis",
+        "type": "foundation",
+        "reason": "Orally active progestins supply the hormonal component used to suppress ovulation."
+      }
+    ]
   },
   {
     "id": "oral-rehydration",
@@ -4187,9 +4314,9 @@
     "summary": "Balanced glucose and electrolyte solutions treated dehydration through intestinal absorption.",
     "parents": [
       {
-        "id": "scientific-method",
-        "type": "enabler",
-        "reason": "Clinical studies tested whether oral solutions restore fluid balance."
+        "id": "sodium-glucose-cotransport",
+        "type": "foundation",
+        "reason": "Coupled glucose and sodium absorption explains why an oral sugar–salt solution promotes water uptake."
       }
     ]
   },
@@ -4267,14 +4394,15 @@
     "summary": "Ross established mosquitoes as carriers in the malaria parasite's transmission cycle.",
     "parents": [
       {
-        "id": "microscope",
+        "id": "malaria-parasite",
         "type": "foundation",
-        "reason": "Microscopy reveals parasite stages inside mosquitoes."
+        "reason": "Identified blood parasites supply the organism whose developmental stages are traced through mosquitoes."
       },
       {
-        "id": "germ-theory",
-        "type": "influence",
-        "reason": "Infectious causation directed attention to agents and transmission routes."
+        "id": "microscope",
+        "type": "foundation",
+        "reason": "Microscopy directly reveals parasite stages during mosquito dissection.",
+        "directContribution": "Dissection microscopy directly shows parasite stages inside mosquitoes; identifying blood parasites separately specifies the organism being traced."
       }
     ]
   },
@@ -4288,9 +4416,14 @@
     "summary": "Tu Youyou's team isolated a potent antimalarial compound from sweet wormwood.",
     "parents": [
       {
-        "id": "malaria-transmission",
-        "type": "influence",
-        "reason": "Understanding malaria as parasitic infection defines the treatment target."
+        "id": "malaria-parasite",
+        "type": "foundation",
+        "reason": "The identified parasite supplies the biological target in antimalarial activity tests."
+      },
+      {
+        "id": "chromatography",
+        "type": "enabler",
+        "reason": "Chemical fractionation separates active material from the plant extract."
       }
     ]
   },
@@ -4304,14 +4437,14 @@
     "summary": "Combining antiviral drugs durably suppressed HIV replication and improved survival.",
     "parents": [
       {
-        "id": "hiv-identification",
+        "id": "hiv-protease-inhibitors",
         "type": "foundation",
-        "reason": "Identifying HIV establishes the viral target."
+        "reason": "Protease-inhibitor drugs supply a key class used in effective mid-1990s combination therapy."
       },
       {
         "id": "reverse-transcriptase",
         "type": "enabler",
-        "reason": "The enzyme supplies a drug target for inhibiting viral replication."
+        "reason": "Reverse-transcriptase inhibition supplies the complementary drug class suppressing viral replication."
       }
     ]
   },
@@ -4325,9 +4458,9 @@
     "summary": "Cytotoxic drugs began to treat malignancies by targeting proliferating cells.",
     "parents": [
       {
-        "id": "cell-theory",
-        "type": "foundation",
-        "reason": "Cellular growth provides the biological process attacked by chemotherapy."
+        "id": "mustard-gas-leukopenia",
+        "type": "influence",
+        "reason": "Observed marrow and lymphoid toxicity motivates controlled testing of nitrogen mustards against tumors."
       }
     ]
   },
@@ -4657,7 +4790,8 @@
       {
         "id": "vacuum-pump",
         "type": "foundation",
-        "reason": "An evacuated envelope permits controlled electron flow."
+        "reason": "An evacuated envelope permits controlled electron flow.",
+        "directContribution": "Evacuation physically permits emitted electrons to cross the device without excessive gas scattering; identifying electrons separately supplies the particle model."
       }
     ]
   },
@@ -4687,9 +4821,9 @@
     "summary": "A semiconductor device switched or amplified electrical signals without a heated vacuum tube.",
     "parents": [
       {
-        "id": "quantum-mechanics",
+        "id": "semiconductor-band-theory",
         "type": "enabler",
-        "reason": "Quantum band behavior explains carrier motion in semiconductors."
+        "reason": "Band and carrier behavior explain how semiconductor junctions control conduction."
       }
     ]
   },
@@ -4756,14 +4890,14 @@
     "summary": "Programmable electronic machines performed sequences of arithmetic and logical operations.",
     "parents": [
       {
-        "id": "vacuum-tube",
-        "type": "enabler",
-        "reason": "Electronic switching enables rapid arithmetic and control."
+        "id": "switching-circuit-theory",
+        "type": "foundation",
+        "reason": "Boolean switching networks organize arithmetic and control logic."
       },
       {
-        "id": "boolean-algebra",
+        "id": "vacuum-tube",
         "type": "enabler",
-        "reason": "Boolean operations organize digital logic."
+        "reason": "Fast electronic switching executes the logic without mechanical relay delays."
       }
     ]
   },
@@ -5157,7 +5291,8 @@
       {
         "id": "prime-numbers",
         "type": "foundation",
-        "reason": "Large prime factors determine the RSA modulus and trapdoor structure."
+        "reason": "Large prime factors determine the RSA modulus and trapdoor structure.",
+        "directContribution": "Chosen prime factors directly construct the modulus and private-key relation; public-key cryptography separately defines the asymmetric security framework."
       }
     ]
   },
@@ -5750,12 +5885,13 @@
       {
         "id": "calculus",
         "type": "foundation",
-        "reason": "Derivatives measure how weights affect model error."
+        "reason": "The chain rule propagates output-error derivatives through successive network layers.",
+        "directContribution": "The chain rule directly computes derivatives across composed layers; gradient descent separately uses those derivatives to choose parameter updates."
       },
       {
-        "id": "perceptron",
-        "type": "influence",
-        "reason": "Weighted neural classifiers provided an early model extended to multiple layers."
+        "id": "gradient-descent",
+        "type": "enabler",
+        "reason": "Gradient-based optimization updates network parameters using the computed derivatives."
       }
     ]
   },
@@ -5838,9 +5974,14 @@
     "summary": "Attention-based networks modeled sequence relationships without recurrent processing.",
     "parents": [
       {
-        "id": "deep-learning",
+        "id": "neural-attention",
         "type": "foundation",
-        "reason": "Layered differentiable models provide the trainable architecture."
+        "reason": "Attention weights combine information from different sequence positions."
+      },
+      {
+        "id": "word-embeddings",
+        "type": "foundation",
+        "reason": "Learned vector representations supply the sequence-token inputs."
       }
     ]
   },
@@ -5855,13 +5996,8 @@
     "parents": [
       {
         "id": "transformer-model",
-        "type": "enabler",
-        "reason": "Attention-based sequence modeling supports scalable language training."
-      },
-      {
-        "id": "deep-learning",
         "type": "foundation",
-        "reason": "Multilayer learned representations supply the predictive model."
+        "reason": "Attention-based sequence architectures supply the scalable predictive model."
       }
     ]
   },

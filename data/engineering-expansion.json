@@ -187,7 +187,7 @@
       {
         "id": "electric-generator",
         "type": "foundation",
-        "reason": "Electric power enabled high-temperature furnace routes for silicon reduction."
+        "reason": "Electricity supplied resistive furnace heat for reducing silica in the 1890 electric-production route."
       }
     ]
   },
@@ -283,7 +283,7 @@
       {
         "id": "metallurgy",
         "type": "enabler",
-        "reason": "Metal extraction and alloying supplied purified feedstock and composition control."
+        "reason": "Controlled melting and alloy additions prepared lightweight magnesium-based casting and wrought compositions."
       }
     ]
   },
@@ -809,9 +809,9 @@
     "summary": "Transparent acrylic plastics supplied lightweight moldable glazing.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Synthetic polymer production supplied controlled transparent thermoplastic resins."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Chain polymerization of methyl methacrylate formed transparent PMMA plastic."
       }
     ]
   },
@@ -825,9 +825,9 @@
     "summary": "Blended polymer structures produced tough easily molded engineering plastics.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Polymer synthesis supplied constituent resins with complementary properties."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Copolymerization and grafting combined styrene, acrylonitrile, and butadiene into tough ABS structures."
       }
     ]
   },
@@ -841,9 +841,9 @@
     "summary": "Propylene polymers supplied lightweight durable fibers and molded products.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Synthetic polymer production enabled controlled chain growth from petrochemical feedstock."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Catalyzed addition polymerization joined propylene with controlled chain structure."
       }
     ]
   },
@@ -857,9 +857,9 @@
     "summary": "Reactive polymers supplied flexible foams, coatings, and durable elastomers.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Polymer chemistry supplied formulations whose curing tailored material properties."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Step-growth reactions between polyols and isocyanates formed urethane-linked chains and networks."
       }
     ]
   },
@@ -873,9 +873,9 @@
     "summary": "Synthetic chloroprene rubber resisted oils and weather better than many natural rubbers.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Synthetic polymer production supplied alternative elastomer chains."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Polymerization of chloroprene supplied the oil- and weather-resistant elastomer backbone."
       }
     ]
   },
@@ -889,9 +889,9 @@
     "summary": "Oil-resistant synthetic rubber enabled durable fuel-system seals.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Polymer synthesis combined monomers to tune fluid resistance."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Copolymerizing acrylonitrile with butadiene supplied the oil-resistant rubber chains."
       }
     ]
   },
@@ -905,9 +905,9 @@
     "summary": "Synthetic rubber production expanded elastomer supply for tires and equipment.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Controlled polymerization supplied repeatable rubber-like copolymers."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Copolymerization joined styrene and butadiene into the synthetic rubber backbone."
       }
     ]
   },
@@ -921,9 +921,9 @@
     "summary": "Low-permeability rubber improved airtight tubes and sealing components.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Synthetic polymer production enabled elastomers with reduced gas transmission."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Copolymerizing isobutylene with a small isoprene fraction supplied low-permeability rubber."
       }
     ]
   },
@@ -937,9 +937,9 @@
     "summary": "Weather-resistant synthetic rubber supplied durable outdoor seals and membranes.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Polymer synthesis supplied compositions resistant to ozone and exposure."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Copolymerization of ethylene, propylene, and a diene supplied weather-resistant rubber chains."
       }
     ]
   },
@@ -969,9 +969,9 @@
     "summary": "High-performance thermoplastic supplied strong heat-resistant engineering parts.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Synthetic resin production enabled carefully controlled aromatic polymer structures."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Step-growth reactions between aromatic monomers formed the ether-and-ketone-linked PEEK backbone."
       }
     ]
   },
@@ -985,9 +985,9 @@
     "summary": "Heat-resistant thermoplastics supplied durable fluid-handling and electrical components.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Polymer synthesis supplied stable aromatic resin backbones."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Step-growth polymerization joined aromatic units through ether and sulfone-containing structures."
       }
     ]
   },
@@ -1001,9 +1001,9 @@
     "summary": "Heat-resistant polymers supplied thin insulating films and demanding structural parts.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Synthetic resin chemistry supplied strongly bonded high-temperature polymer structures."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Reactions of dianhydrides with diamines formed heat-resistant imide-containing chains."
       }
     ]
   },
@@ -1033,9 +1033,9 @@
     "summary": "Hard thermosetting resins supplied durable laminates and molded surfaces.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Reactive resin manufacture supplied cross-linking and molding practice."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Condensation of melamine with formaldehyde supplied the hard cross-linked resin."
       }
     ]
   },
@@ -1049,9 +1049,9 @@
     "summary": "Curing amino resins supplied economical adhesives for wood products.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Synthetic resin chemistry supplied controllable condensation and curing reactions."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Condensation of urea with formaldehyde supplied the curing amino-resin adhesive."
       }
     ]
   },
@@ -1065,9 +1065,9 @@
     "summary": "Unsaturated resins supplied readily cured binders for reinforced products.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Polymer production supplied reactive chains suited to cross-linking."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Condensation formed unsaturated polyester chains that could subsequently cross-link during curing."
       }
     ]
   },
@@ -1081,9 +1081,9 @@
     "summary": "Engineered polymers enabled products designed to break down under suitable conditions.",
     "parents": [
       {
-        "id": "synthetic-resin",
+        "id": "polylactic-acid",
         "type": "enabler",
-        "reason": "Polymer manufacturing supplied ways to tailor chemical bonds and degradation."
+        "reason": "PLA supplied one established degradable polymer family used in later biodegradable products."
       }
     ]
   },
@@ -1097,9 +1097,9 @@
     "summary": "Lactic-acid polymers supplied processable materials from fermentable feedstocks.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Polymer synthesis converted small organic molecules into useful resin chains."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Polymerization of lactide or lactic-acid units formed biodegradable polyester chains."
       }
     ]
   },
@@ -1129,9 +1129,9 @@
     "summary": "Manufactured cellulose-based fibers supplied silk-like textile materials.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Chemical processing of polymers enabled fiber-forming solutions."
+        "id": "cellulose-nitration",
+        "type": "foundation",
+        "reason": "Dissolved nitrated cellulose supplied the spinnable material in early Chardonnet artificial silk."
       }
     ]
   },
@@ -1177,9 +1177,9 @@
     "summary": "Modified cellulose supplied fibers, films, and moldable materials.",
     "parents": [
       {
-        "id": "synthetic-resin",
+        "id": "paper",
         "type": "enabler",
-        "reason": "Polymer modification supplied routes to process naturally occurring cellulose."
+        "reason": "Plant-cellulose purification in pulp processing supplied feedstock suitable for chemical acetylation."
       }
     ]
   },
@@ -1193,9 +1193,9 @@
     "summary": "Industrial titanium pigments supplied opaque white coatings.",
     "parents": [
       {
-        "id": "metallurgy",
-        "type": "enabler",
-        "reason": "Mineral extraction and purification supplied concentrated titanium-bearing feedstock."
+        "id": "kiln",
+        "type": "foundation",
+        "reason": "Controlled calcination converted purified titanium compounds into white oxide pigment."
       }
     ]
   },
@@ -1913,9 +1913,9 @@
     "summary": "Heated particles deposited protective or functional surface coatings.",
     "parents": [
       {
-        "id": "metallurgy",
+        "id": "wire-drawing",
         "type": "foundation",
-        "reason": "Metalworking supplied sprayable feedstock and surface-preparation methods."
+        "reason": "Drawn metal wire supplied feedstock melted and atomized by early Schoop spraying equipment."
       }
     ]
   },
@@ -1945,9 +1945,9 @@
     "summary": "Deposited dry polymer powders cured into durable protective finishes.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "foundation",
-        "reason": "Curable polymer resins supplied coating particles and film formation."
+        "id": "epoxy",
+        "type": "enabler",
+        "reason": "Powdered epoxy formulations supplied early thermosetting coatings that cured after deposition."
       }
     ]
   },
@@ -1961,9 +1961,9 @@
     "summary": "Immersing and withdrawing parts produced controlled protective films.",
     "parents": [
       {
-        "id": "synthetic-resin",
+        "id": "cellulose-nitration",
         "type": "enabler",
-        "reason": "Manufactured resins supplied film-forming coating liquids."
+        "reason": "Nitrocellulose lacquers supplied film-forming coating baths for industrial immersion finishing."
       }
     ]
   },
@@ -1977,9 +1977,15 @@
     "summary": "Charged coating droplets improved deposition on conductive workpieces.",
     "parents": [
       {
-        "id": "electric-generator",
-        "type": "enabler",
-        "reason": "Electrical power supplied fields that attracted charged coating material."
+        "id": "transformer",
+        "type": "foundation",
+        "reason": "High-voltage transformers supplied the potential used to charge coating material.",
+        "directContribution": "The transformer raises supply voltage for charging the spray; the rectifier separately converts polarity and does not perform voltage transformation."
+      },
+      {
+        "id": "rectifier",
+        "type": "foundation",
+        "reason": "Rectification supplied a controlled high-voltage DC charging potential."
       }
     ]
   },
@@ -2041,9 +2047,14 @@
     "summary": "Selective chemical dissolution removed material from masked metal surfaces.",
     "parents": [
       {
-        "id": "metallurgy",
+        "id": "chemical-titration",
         "type": "enabler",
-        "reason": "Metal processing supplied prepared metal sheets and corrosion-control knowledge."
+        "reason": "Etchant analysis controlled chemical strength during selective metal dissolution."
+      },
+      {
+        "id": "neoprene",
+        "type": "enabler",
+        "reason": "Chemically resistant elastomers supplied strippable masks protecting metal regions from etchant."
       }
     ]
   },
@@ -2441,9 +2452,9 @@
     "summary": "Threaded rollers transmitted high axial loads with controlled linear movement.",
     "parents": [
       {
-        "id": "precision-machining",
+        "id": "screw-cutting-lathe",
         "type": "enabler",
-        "reason": "Accurate machining supplied coordinated threaded shaft and roller surfaces."
+        "reason": "Accurate thread manufacture supplied coordinated shaft and roller helices."
       }
     ]
   },
@@ -2473,9 +2484,9 @@
     "summary": "Cylindrical rolling elements supported concentrated loads in rotating machinery.",
     "parents": [
       {
-        "id": "precision-machining",
-        "type": "enabler",
-        "reason": "Precision machining supplied aligned raceways and accurately shaped rollers."
+        "id": "grinding-machine",
+        "type": "foundation",
+        "reason": "Controlled grinding produced the accurately fitted rolling elements and raceways."
       }
     ]
   },
@@ -2505,9 +2516,9 @@
     "summary": "Closely fitted sealing faces limited leakage around rotating shafts.",
     "parents": [
       {
-        "id": "precision-machining",
-        "type": "foundation",
-        "reason": "Precision finishing supplied flat mating faces and controlled clearances."
+        "id": "grinding-machine",
+        "type": "enabler",
+        "reason": "Fine finishing produced flat close-fitting faces limiting leakage around rotating shafts."
       }
     ]
   },
@@ -2553,9 +2564,9 @@
     "summary": "Articulated shafts transmitted rotation across changing angles.",
     "parents": [
       {
-        "id": "metallurgy",
+        "id": "forging",
         "type": "enabler",
-        "reason": "Metal fabrication supplied load-bearing pivots and crossed coupling members."
+        "reason": "Formed metal yokes and cross members carried torque through pivoted couplings."
       }
     ]
   },
@@ -2617,9 +2628,9 @@
     "summary": "Orbiting gears produced compact mechanical speed and torque relationships.",
     "parents": [
       {
-        "id": "metallurgy",
+        "id": "bronze",
         "type": "enabler",
-        "reason": "Metal gear fabrication supplied interacting toothed wheels."
+        "reason": "Worked bronze supplied toothed components in early compact epicyclic mechanisms."
       }
     ]
   },
@@ -2649,9 +2660,9 @@
     "summary": "Meshing straight and circular gears converted rotation into linear motion.",
     "parents": [
       {
-        "id": "metallurgy",
+        "id": "file",
         "type": "enabler",
-        "reason": "Metal gearmaking supplied durable interacting tooth profiles."
+        "reason": "Toothed cutting and finishing tools shaped early meshing rack and pinion profiles."
       }
     ]
   },
@@ -2713,9 +2724,9 @@
     "summary": "Compressed air drove pistons to perform repeated mechanical work.",
     "parents": [
       {
-        "id": "precision-machining",
+        "id": "air-compressor",
         "type": "foundation",
-        "reason": "Machined cylinders and seals contained air pressure and guided pistons."
+        "reason": "Compressed-air supply applied pressure to move the guided actuator piston."
       }
     ]
   },
@@ -2729,9 +2740,9 @@
     "summary": "Electromagnetic actuators controlled fluid valves remotely.",
     "parents": [
       {
-        "id": "electric-motor",
-        "type": "enabler",
-        "reason": "Electromagnetic actuator construction supplied controllable powered valve motion."
+        "id": "electromagnet",
+        "type": "foundation",
+        "reason": "An energized magnetic coil moved the valve plunger without requiring a rotating motor."
       }
     ]
   },
@@ -2777,9 +2788,9 @@
     "summary": "Sliding barriers opened or closed relatively unobstructed fluid passages.",
     "parents": [
       {
-        "id": "pipe",
+        "id": "lead-screw",
         "type": "enabler",
-        "reason": "Piped distribution supplied bounded passages for isolating valves."
+        "reason": "A threaded stem raised or lowered the gate across the flow passage."
       }
     ]
   },
@@ -2793,9 +2804,9 @@
     "summary": "Rotating bored spheres provided compact reliable fluid shutoff.",
     "parents": [
       {
-        "id": "precision-machining",
-        "type": "foundation",
-        "reason": "Accurate machining supplied sealing spheres and matched valve seats."
+        "id": "grinding-machine",
+        "type": "enabler",
+        "reason": "Accurate finishing produced a smooth rotating sphere and sealing interfaces."
       }
     ]
   },
@@ -2825,9 +2836,9 @@
     "summary": "Meshing gears displaced fluid in repeatable trapped volumes.",
     "parents": [
       {
-        "id": "metallurgy",
-        "type": "foundation",
-        "reason": "Gear fabrication supplied close-fitting rotating fluid-displacement surfaces."
+        "id": "forging",
+        "type": "enabler",
+        "reason": "Formed and fitted gear components trapped liquid and carried it between inlet and outlet."
       }
     ]
   },
@@ -2873,9 +2884,9 @@
     "summary": "Rotating helical elements moved fluid through enclosed passages.",
     "parents": [
       {
-        "id": "precision-machining",
-        "type": "foundation",
-        "reason": "Accurate helical machining supplied fitted displacement rotors."
+        "id": "screw-cutting-lathe",
+        "type": "enabler",
+        "reason": "Controlled helical machining supplied the coordinated pumping rotors."
       }
     ]
   },
@@ -2937,9 +2948,9 @@
     "summary": "Intermeshing helical rotors compressed gas continuously.",
     "parents": [
       {
-        "id": "precision-machining",
-        "type": "foundation",
-        "reason": "Accurate machining supplied coordinated close-fitting screw surfaces."
+        "id": "milling-machine",
+        "type": "enabler",
+        "reason": "Profile machining produced intermeshing helical rotors and close-fitting housings."
       }
     ]
   },
@@ -3465,9 +3476,9 @@
     "summary": "Liquefied air stored energy for later expansion and generation.",
     "parents": [
       {
-        "id": "refrigeration",
+        "id": "cryogenic-liquefaction",
         "type": "foundation",
-        "reason": "Refrigeration supplied processes for reaching gas-liquefaction temperatures."
+        "reason": "Gas-liquefaction equipment produced the compact liquid air charged into the storage system."
       }
     ]
   },
@@ -3545,9 +3556,9 @@
     "summary": "Engineered vessels and materials retained hydrogen for later industrial or energy use.",
     "parents": [
       {
-        "id": "precision-machining",
+        "id": "pressure-vessel",
         "type": "foundation",
-        "reason": "Precision pressure-vessel fittings limited leakage and managed stored gas."
+        "reason": "Pressure-bearing sealed vessels contained compressed hydrogen for later delivery."
       }
     ]
   },
@@ -3994,8 +4005,13 @@
     "parents": [
       {
         "id": "electric-motor",
+        "type": "foundation",
+        "reason": "Electric drive motors physically rotate the mounted solar collector."
+      },
+      {
+        "id": "worm-drive",
         "type": "enabler",
-        "reason": "Electric motors supplied controlled rotation of collector supports."
+        "reason": "Reduction gearing permits slow controlled motion and resists uncommanded collector rotation."
       }
     ]
   },
@@ -4009,9 +4025,9 @@
     "summary": "Conversion equipment supplied alternating current from direct-current sources.",
     "parents": [
       {
-        "id": "power-grid",
+        "id": "electric-motor",
         "type": "enabler",
-        "reason": "Electrical distribution established usable AC supplies and connected loads."
+        "reason": "Early motor-generator converters changed DC supply into mechanically generated AC output."
       }
     ]
   },
@@ -4057,9 +4073,9 @@
     "summary": "Switching and protective assemblies controlled electrical power circuits.",
     "parents": [
       {
-        "id": "electric-generator",
+        "id": "circuit-breaker",
         "type": "enabler",
-        "reason": "Power generation created circuits requiring isolation and fault control."
+        "reason": "Circuit-interruption devices later supplied fault protection within switching assemblies."
       }
     ]
   },
@@ -4073,9 +4089,9 @@
     "summary": "Resettable protective devices interrupted dangerous electrical currents.",
     "parents": [
       {
-        "id": "electric-generator",
-        "type": "enabler",
-        "reason": "Electrical generators supplied circuits in which excessive current required interruption."
+        "id": "electromagnet",
+        "type": "foundation",
+        "reason": "Magnetic current-responsive mechanisms triggered automatic interruption of excessive current."
       }
     ]
   },
@@ -4169,9 +4185,9 @@
     "summary": "Cryogenic cooling greatly reduced natural-gas volume for storage and transport.",
     "parents": [
       {
-        "id": "refrigeration",
+        "id": "cryogenic-liquefaction",
         "type": "foundation",
-        "reason": "Refrigeration supplied progressive gas cooling to liquefaction temperatures."
+        "reason": "Cryogenic gas-cooling processes brought methane-rich gas below its liquefaction temperature."
       }
     ]
   },
@@ -4249,9 +4265,14 @@
     "summary": "Natural underground heat supplied building and district heating.",
     "parents": [
       {
-        "id": "pipe",
+        "id": "central-heating",
         "type": "enabler",
-        "reason": "Pipes conveyed hot water from subsurface sources to heating loads."
+        "reason": "Existing heat-distribution systems supplied radiators and circulation arrangements for geothermal hot water."
+      },
+      {
+        "id": "pipe",
+        "type": "foundation",
+        "reason": "Hot-water conduits physically transported geothermal heat from the source to occupied buildings."
       }
     ]
   },
@@ -4585,9 +4606,14 @@
     "summary": "Assisted steering reduced driver effort when turning road wheels.",
     "parents": [
       {
-        "id": "hydraulic-press",
+        "id": "hydraulic-cylinder",
+        "type": "foundation",
+        "reason": "Pressure acting on steering pistons added force to the driver-controlled steering mechanism."
+      },
+      {
+        "id": "gear-pump",
         "type": "enabler",
-        "reason": "Hydraulic actuation supplied compact forces for steering assistance."
+        "reason": "Engine-driven hydraulic pumps supplied the fluid flow used for steering assistance."
       }
     ]
   },
@@ -4601,9 +4627,9 @@
     "summary": "Pressurized liquid distributed pedal force to wheel brakes.",
     "parents": [
       {
-        "id": "pipe",
+        "id": "hydraulic-cylinder",
         "type": "foundation",
-        "reason": "Pipes conveyed pressure from a master cylinder to separate actuators."
+        "reason": "Master and wheel cylinders transmitted pedal force through pressurized brake fluid."
       }
     ]
   },
@@ -4697,9 +4723,9 @@
     "summary": "Powered suspension actuators adjusted vehicle response to changing road conditions.",
     "parents": [
       {
-        "id": "hydraulic-press",
-        "type": "enabler",
-        "reason": "Hydraulic actuation supplied controllable forces between wheels and body."
+        "id": "hydraulic-cylinder",
+        "type": "foundation",
+        "reason": "Powered hydraulic actuators applied controlled forces between wheels and vehicle body."
       }
     ]
   },
@@ -4857,9 +4883,9 @@
     "summary": "Submerged lifting surfaces raised fast vessels above much of their water drag.",
     "parents": [
       {
-        "id": "internal-combustion",
+        "id": "marine-propeller",
         "type": "enabler",
-        "reason": "Combustion engines supplied sufficient propulsion speed to develop lifting force."
+        "reason": "Powered marine propellers supplied forward speed needed for submerged foils to generate lift."
       }
     ]
   },
@@ -5129,9 +5155,14 @@
     "summary": "Electrical commands and powered actuators replaced direct mechanical flight-control links.",
     "parents": [
       {
-        "id": "powered-airplane",
-        "type": "enabler",
-        "reason": "Powered aircraft supplied control surfaces needing coordinated movement."
+        "id": "computer",
+        "type": "foundation",
+        "reason": "The 1972 digital milestone used a computer to translate pilot inputs into flight-control commands."
+      },
+      {
+        "id": "hydraulic-cylinder",
+        "type": "foundation",
+        "reason": "Hydraulic flight actuators converted electrical control commands into surface movement."
       }
     ]
   },
@@ -5161,9 +5192,9 @@
     "summary": "Powered gyroscopes established heading references without magnetic compasses.",
     "parents": [
       {
-        "id": "precision-machining",
+        "id": "ball-bearing",
         "type": "enabler",
-        "reason": "Accurate spinning rotors and bearings supported stable gyroscopic instruments."
+        "reason": "Low-friction rotor bearings supported sustained fast gyroscopic rotation."
       }
     ]
   },
@@ -5323,7 +5354,7 @@
       {
         "id": "electric-motor",
         "type": "foundation",
-        "reason": "Electric motors supplied vacuum-compatible controllable wheel drive."
+        "reason": "Independent wheel-drive motors physically propelled the rover across the lunar surface."
       }
     ]
   },
@@ -5449,9 +5480,9 @@
     "summary": "Sealed vessels cooked food at elevated water temperatures under pressure.",
     "parents": [
       {
-        "id": "metallurgy",
-        "type": "enabler",
-        "reason": "Metalworking supplied strong vessels able to contain heated steam."
+        "id": "pressure-vessel",
+        "type": "foundation",
+        "reason": "A sealed pressure-bearing vessel retained steam above ordinary atmospheric pressure."
       }
     ]
   },
@@ -5641,9 +5672,14 @@
     "summary": "High hydrostatic pressure treated foods while limiting ordinary thermal cooking.",
     "parents": [
       {
-        "id": "hydraulic-press",
+        "id": "pressure-vessel",
         "type": "foundation",
-        "reason": "Hydraulic pressurization supplied controlled high forces through enclosed liquid."
+        "reason": "Pressure-rated chambers contained packaged food and the surrounding pressurizing liquid."
+      },
+      {
+        "id": "piston-pump",
+        "type": "enabler",
+        "reason": "Liquid pumps developed the high hydrostatic pressure applied inside the treatment chamber."
       }
     ]
   },
@@ -5657,9 +5693,9 @@
     "summary": "Short electrical pulses permeabilized cells in selected nonthermal food-processing operations.",
     "parents": [
       {
-        "id": "electric-generator",
-        "type": "enabler",
-        "reason": "Electric power generation supplied energy for controlled high-field pulses."
+        "id": "capacitor",
+        "type": "foundation",
+        "reason": "Charged capacitors released stored electrical energy as brief high-voltage treatment pulses."
       }
     ]
   },
@@ -5753,9 +5789,9 @@
     "summary": "Thin food-compatible coatings supplied barriers and carriers around food surfaces.",
     "parents": [
       {
-        "id": "fermentation",
+        "id": "membrane-food-filtration",
         "type": "enabler",
-        "reason": "Bioprocessing supplied purified biopolymers useful as coating ingredients."
+        "reason": "Membrane concentration supplied protein-rich food fractions used in edible coating formulations."
       }
     ]
   },
@@ -5785,9 +5821,14 @@
     "summary": "Atomized liquid droplets dried rapidly into powders in heated air.",
     "parents": [
       {
-        "id": "pipe",
+        "id": "piston-pump",
         "type": "enabler",
-        "reason": "Fluid conduits supplied liquid feed to atomizing nozzles."
+        "reason": "High-pressure liquid pumps delivered feed to atomizing spray nozzles."
+      },
+      {
+        "id": "powered-fan",
+        "type": "foundation",
+        "reason": "Forced heated airflow removed moisture from the dispersed droplets."
       }
     ]
   },
@@ -5849,9 +5890,9 @@
     "summary": "Pressure-driven membranes separated macromolecules and fine suspended material from liquids.",
     "parents": [
       {
-        "id": "pipe",
-        "type": "foundation",
-        "reason": "Piped pressure systems conveyed feed through controlled separation surfaces."
+        "id": "piston-pump",
+        "type": "enabler",
+        "reason": "Pressure-generating pumps drove liquid through selectively permeable membrane surfaces."
       }
     ]
   },
@@ -5865,9 +5906,9 @@
     "summary": "Pressure forced water across selective membranes while retaining many dissolved substances.",
     "parents": [
       {
-        "id": "pipe",
+        "id": "piston-pump",
         "type": "foundation",
-        "reason": "Pressure-rated fluid systems supplied controlled feed and separate product channels."
+        "reason": "High-pressure pumps forced feedwater across the membrane against the osmotic pressure difference."
       }
     ]
   },
@@ -5881,9 +5922,9 @@
     "summary": "High-pressure flow reduced fat-droplet size in milk and similar products.",
     "parents": [
       {
-        "id": "hydraulic-press",
+        "id": "piston-pump",
         "type": "foundation",
-        "reason": "Hydraulic pressure systems supplied force for passage through narrow homogenizing gaps."
+        "reason": "High-pressure reciprocating pumps forced milk through narrow homogenizing valve gaps."
       }
     ]
   },
@@ -5945,9 +5986,9 @@
     "summary": "Agitation during cooling produced smoother frozen desserts.",
     "parents": [
       {
-        "id": "refrigeration",
+        "id": "gear-cutting",
         "type": "enabler",
-        "reason": "Cooling technology later supplied reliable freezing temperatures during mixing."
+        "reason": "A geared hand crank drove the dasher that agitated the mixture while an ice-salt bath froze it."
       }
     ]
   },
@@ -6011,7 +6052,7 @@
       {
         "id": "electric-motor",
         "type": "enabler",
-        "reason": "Electric motors later supplied continuous mechanical work for mixing and shearing."
+        "reason": "In motor-driven conches, electric motors supply continuous shaft power during extended mixing and shearing."
       }
     ]
   },
@@ -6041,9 +6082,9 @@
     "summary": "Mechanized heated drums improved repeatability in roasting coffee beans.",
     "parents": [
       {
-        "id": "metallurgy",
+        "id": "rolling-mill",
         "type": "enabler",
-        "reason": "Metal fabrication supplied durable rotating heated processing chambers."
+        "reason": "Formed sheet metal supplied the rotating drum and heated processing enclosure."
       }
     ]
   },
@@ -6153,9 +6194,9 @@
     "summary": "Selected microbial preparations improved consistency of food fermentation.",
     "parents": [
       {
-        "id": "fermentation",
-        "type": "influence",
-        "reason": "Traditional food fermentation supplied useful organisms and known transformation targets."
+        "id": "fermentation-biology",
+        "type": "enabler",
+        "reason": "Identifying microorganisms as fermentation agents supported selecting and propagating consistent starter strains."
       }
     ]
   },
@@ -6345,9 +6386,15 @@
     "summary": "Spatially targeted field operations adapted inputs to measured local conditions.",
     "parents": [
       {
-        "id": "tractor",
+        "id": "computer",
         "type": "enabler",
-        "reason": "Mechanized equipment supplied controllable operations across large fields."
+        "reason": "Computers processed spatial field measurements into location-specific management decisions.",
+        "directContribution": "Computers store spatial maps and calculate management prescriptions independently of the signal processing used to interpret raw sensor readings."
+      },
+      {
+        "id": "digital-signal-processing",
+        "type": "enabler",
+        "reason": "Signal processing converted field-sensor readings into useful crop and soil measurements."
       }
     ]
   },
@@ -6361,9 +6408,14 @@
     "summary": "Automated milking systems identified animals and performed repeated extraction tasks.",
     "parents": [
       {
-        "id": "industrial-robot",
+        "id": "mechanical-milking",
         "type": "foundation",
-        "reason": "Industrial robots supplied repeatable powered manipulation and automated handling."
+        "reason": "Vacuum milking machinery supplied the milk-extraction system operated by the automated station."
+      },
+      {
+        "id": "industrial-robot",
+        "type": "enabler",
+        "reason": "Robotic manipulation positioned teat cups without continuous manual attachment."
       }
     ]
   },
@@ -6377,9 +6429,9 @@
     "summary": "Controlled heated airflow dried foods consistently in compact equipment.",
     "parents": [
       {
-        "id": "food-drying",
-        "type": "influence",
-        "reason": "Food drying supplied the preservation objective achieved by managed moisture removal."
+        "id": "powered-fan",
+        "type": "foundation",
+        "reason": "Forced airflow carried moisture away from food exposed to controlled heating."
       }
     ]
   },

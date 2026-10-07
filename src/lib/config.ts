@@ -16,9 +16,9 @@ export const domains = [
 ] as const
 export const domainInfo = Object.fromEntries(domains.map(d => [d.id, d])) as Record<Domain, typeof domains[number]>
 export const relations: Record<Relation, { label: string; color: string; description: string }> = {
-  foundation: { label: 'Technical foundation', color: '#ffd17c', description: 'A material, tool, or body of knowledge used by this particular technology or method. Other routes may exist.' },
-  enabler: { label: 'Enabling condition', color: '#51edff', description: 'An infrastructure, institution, or capability that helped development, adoption, or scale.' },
-  influence: { label: 'Historical influence', color: '#f3a0ff', description: 'An earlier idea or practice that shaped a particular historical development.' },
+  foundation: { label: 'Technical foundation', color: '#ffd17c', description: 'A material, tool, method, or result directly used in this particular development. Other routes may exist.' },
+  enabler: { label: 'Enabling condition', color: '#51edff', description: 'A specific infrastructure, institution, or capability that directly supported development, adoption, or scale.' },
+  influence: { label: 'Historical influence', color: '#f3a0ff', description: 'An identifiable idea or practice adapted or built upon in this particular historical development.' },
 }
 export const eras = [{ id: 'all', label: 'All eras', min: -Infinity, max: Infinity }, ...TIME_ERAS]
 export function formatYear(year: number) {

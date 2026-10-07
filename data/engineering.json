@@ -126,7 +126,8 @@
       {
         "id": "controlled-fire",
         "type": "foundation",
-        "reason": "Managed combustion supplied sustained heat inside the firing chamber."
+        "reason": "Managed combustion supplied sustained heat inside the firing chamber.",
+        "directContribution": "Controlled combustion directly generates heat inside the kiln; the pottery route describes the demand for a specialized firing enclosure."
       }
     ]
   },
@@ -277,9 +278,14 @@
     "summary": "Smelting copper ores expanded metal supply beyond native copper.",
     "parents": [
       {
-        "id": "metallurgy",
-        "type": "enabler",
-        "reason": "Metallurgical heating techniques enabled extraction from ores."
+        "id": "kiln",
+        "type": "foundation",
+        "reason": "Enclosed high-temperature furnaces heated copper ores during reduction."
+      },
+      {
+        "id": "charcoal",
+        "type": "foundation",
+        "reason": "Charcoal supplied heat and reducing carbon to separate copper from its ore."
       }
     ]
   },
@@ -325,9 +331,9 @@
     "summary": "Hammering metal changed its shape and mechanical properties.",
     "parents": [
       {
-        "id": "metallurgy",
-        "type": "enabler",
-        "reason": "Metalworking supplied workable metal and annealing methods."
+        "id": "copper-smelting",
+        "type": "foundation",
+        "reason": "Smelted copper supplied metal that could be heated and shaped with hammer blows."
       }
     ]
   },
@@ -410,9 +416,14 @@
     "summary": "Ore reduction established iron as a practical toolmaking material.",
     "parents": [
       {
-        "id": "metallurgy",
+        "id": "kiln",
         "type": "enabler",
-        "reason": "Furnace control and metalworking knowledge supported iron extraction."
+        "reason": "Enclosed furnace construction concentrated heat around the iron-bearing charge."
+      },
+      {
+        "id": "charcoal",
+        "type": "foundation",
+        "reason": "Carbon-rich fuel supplied heat and reduced iron oxides in early smelting furnaces."
       }
     ]
   },
@@ -481,7 +492,8 @@
       {
         "id": "charcoal",
         "type": "foundation",
-        "reason": "Charcoal supplied fuel and reducing carbon for early iron furnaces."
+        "reason": "Charcoal supplied fuel and reducing carbon for early iron furnaces.",
+        "directContribution": "Charcoal is consumed inside the furnace as fuel and chemical reductant; the ironworking route describes the charge and furnace tradition."
       }
     ]
   },
@@ -518,7 +530,8 @@
       {
         "id": "kiln",
         "type": "enabler",
-        "reason": "Refractory furnaces maintained the heat needed to melt steel charges."
+        "reason": "Refractory furnaces maintained the heat needed to melt steel charges.",
+        "directContribution": "The refractory heating enclosure directly keeps the crucible charge molten; the iron-and-steel route supplies the metal feedstock."
       }
     ]
   },
@@ -548,14 +561,15 @@
     "summary": "Air blown through molten iron enabled rapid bulk steelmaking.",
     "parents": [
       {
-        "id": "cast-iron",
-        "type": "foundation",
-        "reason": "Molten pig iron provided carbon-rich converter feedstock."
-      },
-      {
         "id": "blast-furnace",
         "type": "foundation",
         "reason": "Blast furnaces supplied molten pig iron for converter refining."
+      },
+      {
+        "id": "cast-iron",
+        "type": "foundation",
+        "reason": "Molten carbon-rich pig iron supplied the actual charge refined inside the converter.",
+        "directContribution": "The molten pig-iron charge is the material being refined; the separate blast-furnace link describes the upstream production equipment."
       }
     ]
   },
@@ -569,9 +583,14 @@
     "summary": "Regenerative furnaces enabled large controlled steel batches.",
     "parents": [
       {
-        "id": "steel",
-        "type": "enabler",
-        "reason": "Steelmaking established the composition targeted by furnace refining."
+        "id": "regenerative-heat-exchanger",
+        "type": "foundation",
+        "reason": "Regenerative chambers recovered furnace heat to preheat combustion air and fuel gas."
+      },
+      {
+        "id": "cast-iron",
+        "type": "foundation",
+        "reason": "Pig iron supplied carbon-rich feedstock that the furnace refined into steel."
       }
     ]
   },
@@ -638,9 +657,9 @@
     "summary": "Zinc coatings protected iron products against corrosion.",
     "parents": [
       {
-        "id": "iron-smelting",
-        "type": "enabler",
-        "reason": "Iron manufacture supplied structural products needing protective surfaces."
+        "id": "wrought-iron",
+        "type": "foundation",
+        "reason": "Worked iron parts supplied the substrate coated with corrosion-protecting zinc."
       }
     ]
   },
@@ -673,11 +692,6 @@
         "id": "electric-generator",
         "type": "enabler",
         "reason": "Generators supplied the large continuous currents needed for electrolysis."
-      },
-      {
-        "id": "metallurgy",
-        "type": "enabler",
-        "reason": "Industrial metal extraction supplied ore preparation and furnace-management practice."
       }
     ]
   },
@@ -691,9 +705,14 @@
     "summary": "Magnesium reduction enabled industrial production of titanium metal.",
     "parents": [
       {
-        "id": "metallurgy",
+        "id": "distillation",
         "type": "enabler",
-        "reason": "Metal extraction practice supported staged reduction and purification."
+        "reason": "Fractional purification of titanium tetrachloride supplied cleaner feedstock for magnesium reduction."
+      },
+      {
+        "id": "stainless-steel",
+        "type": "enabler",
+        "reason": "Stainless retorts contained the hot chloride reduction reaction without excessive contamination."
       }
     ]
   },
@@ -803,9 +822,9 @@
     "summary": "Bonded wood particles turned small residues into rigid panels.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Synthetic adhesives bound otherwise loose wood particles."
+        "id": "urea-formaldehyde",
+        "type": "foundation",
+        "reason": "Curing urea-formaldehyde adhesive bound wood particles into rigid pressed panels."
       }
     ]
   },
@@ -845,9 +864,9 @@
     "summary": "Camphor-plasticized cellulose derivatives supplied a moldable early plastic.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Polymer modification practice supported formulating moldable materials."
+        "id": "cellulose-nitration",
+        "type": "foundation",
+        "reason": "Nitrated cellulose supplied the polymer softened with camphor to make celluloid."
       }
     ]
   },
@@ -871,9 +890,9 @@
     "summary": "Phenolic thermoset resin supplied heat-resistant molded components.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Synthetic resin chemistry supplied cross-linked molding compounds."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Condensation of phenol with formaldehyde formed the cross-linked phenolic molding network."
       }
     ]
   },
@@ -887,9 +906,14 @@
     "summary": "Synthetic polyamide fibers supplied strong textile and engineering materials.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Polymer synthesis enabled reproducible long-chain materials."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Condensation of diamine and dicarboxylic-acid monomers formed nylon 6,6 polyamide chains."
+      },
+      {
+        "id": "rayon",
+        "type": "influence",
+        "reason": "DuPont drew on its manufactured-fiber experience when developing and commercializing nylon."
       }
     ]
   },
@@ -903,9 +927,9 @@
     "summary": "Industrial ethylene polymerization produced versatile insulating plastics.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Polymer manufacturing practice supported controlled chain growth."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Addition polymerization joined ethylene molecules into polyethylene chains."
       }
     ]
   },
@@ -919,9 +943,9 @@
     "summary": "Plasticized vinyl polymers enabled flexible and rigid manufactured products.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Synthetic polymer production supplied a processable resin."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Chain polymerization of vinyl chloride produced the PVC backbone."
       }
     ]
   },
@@ -935,9 +959,9 @@
     "summary": "Styrene polymers became widely used molding and insulation materials.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Polymer synthesis enabled large quantities of consistent resin."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Addition polymerization consumed styrene double bonds to form polystyrene chains."
       }
     ]
   },
@@ -951,9 +975,9 @@
     "summary": "Fluoropolymer production supplied exceptionally low-friction chemical-resistant surfaces.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Synthetic polymer practice supported developing fluorinated resins."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Free-radical polymerization joined tetrafluoroethylene into fluorinated PTFE chains."
       }
     ]
   },
@@ -967,9 +991,9 @@
     "summary": "Silicon-based polymers supplied durable sealants and flexible components.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Industrial polymer synthesis enabled tailored elastomers and resins."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Condensation and related reactions linked siloxane units into silicone chains and networks."
       }
     ]
   },
@@ -983,9 +1007,9 @@
     "summary": "Reactive resins supplied strong adhesives and composite binders.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Synthetic resin manufacture supplied controllable curing systems."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Reactive epoxide groups formed a cross-linked network when cured with suitable hardeners."
       }
     ]
   },
@@ -1015,9 +1039,9 @@
     "summary": "Carbonized precursor fibers supplied lightweight stiff reinforcement.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Manufactured polymer fibers supplied controlled carbonization precursors."
+        "id": "rayon",
+        "type": "foundation",
+        "reason": "The 1958 work carbonized rayon precursor fibers to produce high-performance carbon fibers."
       }
     ]
   },
@@ -1047,9 +1071,9 @@
     "summary": "Tough transparent thermoplastics enabled impact-resistant glazing and parts.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Synthetic resin production enabled controlled carbonate polymer manufacture."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Reaction of bisphenol A with carbonate-forming reagents formed polycarbonate chains."
       }
     ]
   },
@@ -1063,9 +1087,9 @@
     "summary": "Polyester production supplied fibers, films, and later packaging materials.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Polymer synthesis supplied reproducible polyester chains."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Polycondensation of ethylene glycol and terephthalate units formed the polyester backbone."
       }
     ]
   },
@@ -1114,6 +1138,11 @@
         "id": "glassmaking",
         "type": "foundation",
         "reason": "Glass sheets supplied the rigid layers of safety laminates."
+      },
+      {
+        "id": "celluloid",
+        "type": "foundation",
+        "reason": "Early safety laminates bonded glass sheets around a cellulose-nitrate interlayer."
       }
     ]
   },
@@ -1143,9 +1172,9 @@
     "summary": "Low-loss glass fibers supported long-distance guided light transmission.",
     "parents": [
       {
-        "id": "glassmaking",
+        "id": "fused-silica",
         "type": "foundation",
-        "reason": "Purified glass manufacture supplied transparent drawable fiber material."
+        "reason": "High-purity silica glass supplied the low-loss core and cladding material of modern fibers."
       }
     ]
   },
@@ -1159,9 +1188,9 @@
     "summary": "High-pressure production supplied diamond abrasives for industry.",
     "parents": [
       {
-        "id": "precision-machining",
+        "id": "hydraulic-press",
         "type": "enabler",
-        "reason": "Precision-built pressure equipment enabled reproducible synthesis conditions."
+        "reason": "High-force presses applied the extreme pressure used in early industrial diamond synthesis."
       }
     ]
   },
@@ -1207,25 +1236,30 @@
     "summary": "Heat-resistant alloys sustained mechanical loads in hot engines.",
     "parents": [
       {
-        "id": "steel",
+        "id": "vacuum-furnace",
         "type": "enabler",
-        "reason": "Controlled alloying established ways to tailor high-temperature properties."
+        "reason": "Controlled low-gas melting limited contaminants in reactive high-temperature alloy production."
       }
     ]
   },
   {
     "id": "shape-memory-alloy",
-    "title": "Shape-memory alloy",
+    "title": "Nickel-titanium shape-memory alloy",
     "wiki": "Shape-memory alloy",
     "year": 1962,
     "domain": "materials",
     "kind": "technology",
-    "summary": "Engineered alloys recovered a trained shape when heated.",
+    "summary": "Nickel-titanium alloys recovered a trained shape through temperature-driven phase changes.",
     "parents": [
       {
-        "id": "metallurgy",
+        "id": "titanium-production",
+        "type": "foundation",
+        "reason": "Purified titanium supplied a constituent of the nickel-titanium alloy demonstrated in the 1962 milestone."
+      },
+      {
+        "id": "annealing",
         "type": "enabler",
-        "reason": "Alloy processing controlled composition and phase-transforming structures."
+        "reason": "Controlled heat treatment set the trained geometry and transformation behavior of the alloy."
       }
     ]
   },
@@ -1239,9 +1273,9 @@
     "summary": "Porous metal structures reduced weight while absorbing energy.",
     "parents": [
       {
-        "id": "metallurgy",
-        "type": "enabler",
-        "reason": "Metal casting and processing supplied routes to cellular structures."
+        "id": "aluminium-smelting",
+        "type": "foundation",
+        "reason": "Molten aluminum supplied the metal matrix foamed by gas in the 1948 process."
       }
     ]
   },
@@ -1287,9 +1321,9 @@
     "summary": "Crosswise bonded timber layers formed large structural panels.",
     "parents": [
       {
-        "id": "plywood",
-        "type": "foundation",
-        "reason": "Cross-grain wood laminates demonstrated dimensional stabilization by layer orientation."
+        "id": "glulam",
+        "type": "enabler",
+        "reason": "Structural adhesive lamination supplied pressing and bonding methods for large timber layers."
       }
     ]
   },
@@ -1495,14 +1529,14 @@
     "summary": "Rotating cutters machined flat surfaces, slots, and complex profiles.",
     "parents": [
       {
-        "id": "precision-machining",
-        "type": "enabler",
-        "reason": "Accurate machine frames and feeds controlled cutter motion."
+        "id": "lead-screw",
+        "type": "foundation",
+        "reason": "Screw-driven feeds controlled the position of the workpiece relative to the rotating cutter."
       },
       {
-        "id": "steel",
-        "type": "enabler",
-        "reason": "Hardened tool steel supplied durable rotating cutting edges."
+        "id": "tool-steel",
+        "type": "foundation",
+        "reason": "Hardened tool steel supplied the durable cutting edges of early milling cutters."
       }
     ]
   },
@@ -1516,9 +1550,9 @@
     "summary": "Reciprocating tables carried large metal workpieces beneath cutting tools.",
     "parents": [
       {
-        "id": "precision-machining",
+        "id": "lead-screw",
         "type": "enabler",
-        "reason": "Precision machine construction supplied rigid guides and controlled feeds."
+        "reason": "Screw feeds advanced the cutting tool by controlled increments between table strokes."
       }
     ]
   },
@@ -1532,9 +1566,9 @@
     "summary": "A reciprocating cutter machined flat metal surfaces.",
     "parents": [
       {
-        "id": "precision-machining",
+        "id": "lead-screw",
         "type": "enabler",
-        "reason": "Precision guides constrained repeated straight-line tool motion."
+        "reason": "Screw feeds positioned work and controlled the incremental cut between ram strokes."
       }
     ]
   },
@@ -1564,9 +1598,9 @@
     "summary": "Indexed tool stations accelerated repeated machining operations.",
     "parents": [
       {
-        "id": "lathe",
+        "id": "screw-cutting-lathe",
         "type": "enabler",
-        "reason": "Lathe workholding allowed several cutters to address one part."
+        "reason": "Guided feeds and accurate workholding supported repeatable successive tool operations."
       }
     ]
   },
@@ -1580,9 +1614,9 @@
     "summary": "Fine screw movement enabled precise dimensional measurement in workshops.",
     "parents": [
       {
-        "id": "screw-cutting-lathe",
-        "type": "enabler",
-        "reason": "Accurate screw threads converted rotation into calibrated small travel."
+        "id": "lead-screw",
+        "type": "foundation",
+        "reason": "A fine-pitch measuring screw converted rotation into calibrated linear travel."
       }
     ]
   },
@@ -1727,6 +1761,11 @@
         "id": "cast-iron",
         "type": "enabler",
         "reason": "Cast metal cylinders and frames contained pressure and carried loads."
+      },
+      {
+        "id": "hydraulic-cylinder",
+        "type": "foundation",
+        "reason": "Liquid pressure acting on the load-bearing ram supplied the pressing force."
       }
     ]
   },
@@ -1772,9 +1811,9 @@
     "summary": "Reusable metal molds accelerated production of detailed cast parts.",
     "parents": [
       {
-        "id": "lost-wax-casting",
+        "id": "permanent-mold-casting",
         "type": "enabler",
-        "reason": "Casting practice established filling molds with molten metal."
+        "reason": "Reusable metal molds supplied the durable cavities needed for repeated pressure casting."
       }
     ]
   },
@@ -1884,9 +1923,14 @@
     "summary": "Focused beams cut materials with narrow kerfs and programmable paths.",
     "parents": [
       {
-        "id": "precision-machining",
+        "id": "cnc-machine-tools",
         "type": "enabler",
-        "reason": "Precision motion systems positioned work and cutting heads."
+        "reason": "Programmed motion placed the cutting head along the intended contour."
+      },
+      {
+        "id": "laser",
+        "type": "foundation",
+        "reason": "A focused laser beam supplied the concentrated energy that removed material."
       }
     ]
   },
@@ -1900,9 +1944,9 @@
     "summary": "High-pressure water and abrasives cut materials with limited heating.",
     "parents": [
       {
-        "id": "hydraulic-press",
+        "id": "piston-pump",
         "type": "enabler",
-        "reason": "High-pressure hydraulic engineering supplied pumps and pressure containment."
+        "reason": "High-pressure reciprocating pumps supplied the narrow water jet used for cutting."
       }
     ]
   },
@@ -1932,9 +1976,9 @@
     "summary": "Programmed machine motion automated complex repeatable cutting paths.",
     "parents": [
       {
-        "id": "precision-machining",
-        "type": "enabler",
-        "reason": "Precision machine tools supplied the controlled mechanical axes."
+        "id": "electric-motor",
+        "type": "foundation",
+        "reason": "Powered axis motors moved machine slides according to the numerical commands."
       },
       {
         "id": "milling-machine",
@@ -1953,9 +1997,9 @@
     "summary": "Programmable powered manipulators moved workpieces through factory operations.",
     "parents": [
       {
-        "id": "hydraulic-press",
-        "type": "enabler",
-        "reason": "Hydraulic actuation supplied high-force controlled joint movement."
+        "id": "hydraulic-cylinder",
+        "type": "foundation",
+        "reason": "Hydraulic actuators moved the joints of the early Unimate manipulators."
       },
       {
         "id": "precision-machining",
@@ -1979,9 +2023,9 @@
         "reason": "Programmed positioning supplied controlled motion for depositing or curing layers."
       },
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Processable polymers supplied early printable and curable feedstocks."
+        "id": "stereolithography",
+        "type": "influence",
+        "reason": "Vat photopolymerization supplied the 1984 fabrication route represented by this early additive milestone."
       }
     ]
   },
@@ -1995,9 +2039,14 @@
     "summary": "Light cured liquid resin into solid layers for three-dimensional parts.",
     "parents": [
       {
-        "id": "synthetic-resin",
-        "type": "enabler",
-        "reason": "Curable synthetic resins supplied the photosensitive building material."
+        "id": "polymerization",
+        "type": "foundation",
+        "reason": "Light-triggered polymerization solidified selected regions of the liquid resin."
+      },
+      {
+        "id": "laser",
+        "type": "foundation",
+        "reason": "A scanned laser supplied the localized exposure used in the early stereolithography route."
       }
     ]
   },
@@ -2014,6 +2063,11 @@
         "id": "powder-metallurgy",
         "type": "foundation",
         "reason": "Powder processing supplied controlled particulate feedstocks and sintering practice."
+      },
+      {
+        "id": "laser",
+        "type": "foundation",
+        "reason": "Localized laser heating fused selected powder regions into the intended shape."
       }
     ]
   },
@@ -2136,11 +2190,6 @@
         "id": "loom",
         "type": "enabler",
         "reason": "Looms supplied individually selectable warp threads and weaving mechanisms."
-      },
-      {
-        "id": "flying-shuttle",
-        "type": "enabler",
-        "reason": "Faster weft insertion supported productive weaving of complex patterns."
       }
     ]
   },
@@ -2170,9 +2219,9 @@
     "summary": "Mechanical seed separation increased the supply of cotton fiber.",
     "parents": [
       {
-        "id": "spindle",
+        "id": "spinning-jenny",
         "type": "influence",
-        "reason": "Yarn production created demand for cleaned spinnable cotton."
+        "reason": "Mechanized cotton spinning expanded demand for efficiently cleaned seed-free fiber."
       }
     ]
   },
@@ -2202,9 +2251,9 @@
     "summary": "Linked chains transmitted rotary power between toothed wheels.",
     "parents": [
       {
-        "id": "metallurgy",
+        "id": "forging",
         "type": "enabler",
-        "reason": "Metal links and sprockets provided positive mechanical engagement."
+        "reason": "Metal forming produced load-bearing links and sprocket blanks for positive-engagement drives."
       }
     ]
   },
@@ -2404,9 +2453,9 @@
     "summary": "Powered impact drills accelerated breaking rock and pavement.",
     "parents": [
       {
-        "id": "steam-engine",
-        "type": "enabler",
-        "reason": "Steam-driven compressors supplied power for early pneumatic drills."
+        "id": "air-compressor",
+        "type": "foundation",
+        "reason": "Compressed air supplied the repeated piston impacts of early pneumatic rock drills."
       }
     ]
   },
@@ -2696,9 +2745,9 @@
         "reason": "Timber equipment supported excavation and removal of tunnel spoil."
       },
       {
-        "id": "stone-tools",
+        "id": "chisel",
         "type": "enabler",
-        "reason": "Rock-working tools excavated shafts and sloping underground passages."
+        "reason": "Rock-working metal chisels cut shafts and underground gallery surfaces."
       }
     ]
   },
@@ -2916,7 +2965,7 @@
       {
         "id": "refrigeration",
         "type": "foundation",
-        "reason": "Refrigeration supplied coils cold enough to remove heat and moisture."
+        "reason": "A vapor-compression refrigeration circuit supplied cold coils that removed indoor heat and moisture."
       }
     ]
   },
@@ -2933,6 +2982,12 @@
         "id": "refrigeration",
         "type": "foundation",
         "reason": "Vapor-compression equipment transferred heat between temperature levels."
+      },
+      {
+        "id": "reciprocating-compressor",
+        "type": "foundation",
+        "reason": "Compressing refrigerant raised its temperature before releasing useful heat.",
+        "directContribution": "The compressor is a physical part of the vapor-compression circuit; the refrigeration edge describes the heat-transfer cycle reused as a system."
       }
     ]
   },
@@ -3167,6 +3222,11 @@
         "id": "coal-mining",
         "type": "influence",
         "reason": "Flooded coal workings created demand for powerful drainage pumps."
+      },
+      {
+        "id": "steam-boiler",
+        "type": "foundation",
+        "reason": "A boiler supplied the steam admitted into the atmospheric engine cylinder."
       }
     ]
   },
@@ -3215,6 +3275,11 @@
         "id": "precision-machining",
         "type": "foundation",
         "reason": "Accurate machining supplied close clearances and balanced turbine rotors."
+      },
+      {
+        "id": "steam-boiler",
+        "type": "foundation",
+        "reason": "Boiler-generated steam expanded through turbine passages to turn the rotor."
       }
     ]
   },
@@ -3244,9 +3309,9 @@
     "summary": "Fuel burned inside cylinders to produce mechanical power.",
     "parents": [
       {
-        "id": "precision-machining",
-        "type": "enabler",
-        "reason": "Closely fitted pistons and cylinders contained combustion pressure."
+        "id": "steam-engine",
+        "type": "influence",
+        "reason": "Existing piston engines supplied cylinder, crank, and valve arrangements adapted for internal combustion."
       }
     ]
   },
@@ -3377,9 +3442,9 @@
         "reason": "Rechargeable battery engineering supplied cell packaging and charge-management practice."
       },
       {
-        "id": "synthetic-resin",
+        "id": "polyethylene",
         "type": "enabler",
-        "reason": "Polymer separators helped isolate electrodes while allowing ion transport."
+        "reason": "Porous polyolefin separator films isolated electrodes while permitting ionic transport."
       }
     ]
   },
@@ -3448,7 +3513,8 @@
       {
         "id": "electric-battery",
         "type": "enabler",
-        "reason": "Batteries supplied sustained current to early motor windings."
+        "reason": "Batteries supplied sustained current to early motor windings.",
+        "directContribution": "Batteries physically supplied sustained current to the early motor windings; the electromagnetism route supplied knowledge of magnetic forces rather than operating electrical energy."
       },
       {
         "id": "wire-drawing",
@@ -3506,7 +3572,8 @@
       {
         "id": "wire-drawing",
         "type": "foundation",
-        "reason": "Conductive wires carried generated power to distributed loads."
+        "reason": "Conductive wires carried generated power to distributed loads.",
+        "directContribution": "Conductive distribution cables physically carry current between generators and loads; generator windings use wire for a different local function."
       }
     ]
   },
@@ -3610,9 +3677,9 @@
     "summary": "Practical semiconductor cells converted sunlight into electric power.",
     "parents": [
       {
-        "id": "wire-drawing",
+        "id": "transistor",
         "type": "enabler",
-        "reason": "Conductive wire connected cells into usable photovoltaic power supplies."
+        "reason": "Semiconductor purification and junction-fabrication methods supported Bell Labs silicon photovoltaic cells."
       }
     ]
   },
@@ -3850,9 +3917,9 @@
     "summary": "Engineered assemblies sustained and controlled nuclear chain reactions.",
     "parents": [
       {
-        "id": "precision-machining",
-        "type": "enabler",
-        "reason": "Precision fabrication supplied controlled component geometry and instrumentation hardware."
+        "id": "nuclear-fission-discovery",
+        "type": "foundation",
+        "reason": "Fission supplied the neutron-producing reaction sustained and regulated in the reactor."
       }
     ]
   },
@@ -4574,9 +4641,9 @@
     "summary": "Magnetic support and propulsion moved vehicles with minimal wheel contact.",
     "parents": [
       {
-        "id": "electric-motor",
-        "type": "enabler",
-        "reason": "Electric propulsion supplied controllable electromagnetic forces."
+        "id": "electromagnet",
+        "type": "foundation",
+        "reason": "Controllable magnets supplied the lift and guidance forces that replaced ordinary wheel contact."
       }
     ]
   },
@@ -4814,9 +4881,9 @@
     "summary": "Powered industrial vehicles lifted and positioned palletized loads.",
     "parents": [
       {
-        "id": "hydraulic-press",
-        "type": "enabler",
-        "reason": "Hydraulic cylinders supplied compact high-force lifting mechanisms."
+        "id": "hydraulic-cylinder",
+        "type": "foundation",
+        "reason": "Hydraulic lift cylinders raised and lowered the loaded fork carriage."
       }
     ]
   },
@@ -4830,9 +4897,9 @@
     "summary": "Pressurized air cushions supported vehicles above land or water surfaces.",
     "parents": [
       {
-        "id": "internal-combustion",
-        "type": "enabler",
-        "reason": "Engines supplied power to lift fans and propulsion systems."
+        "id": "powered-fan",
+        "type": "foundation",
+        "reason": "Lift fans and blowers delivered the large low-pressure airflow maintaining the supporting cushion."
       }
     ]
   },
@@ -4910,9 +4977,9 @@
     "summary": "Demand-regulated compressed air enabled independent underwater breathing.",
     "parents": [
       {
-        "id": "precision-machining",
-        "type": "enabler",
-        "reason": "Precision valves controlled gas pressure and breathing delivery."
+        "id": "pressure-regulator",
+        "type": "foundation",
+        "reason": "Demand pressure regulation reduced cylinder pressure and delivered breathable gas during inhalation."
       }
     ]
   },
@@ -5043,9 +5110,9 @@
     "summary": "Pressure-controlled cabins permitted comfortable high-altitude passenger flight.",
     "parents": [
       {
-        "id": "precision-machining",
-        "type": "enabler",
-        "reason": "Accurate pressure-control valves regulated airflow in sealed cabins."
+        "id": "pressure-regulator",
+        "type": "foundation",
+        "reason": "Pressure control maintained a selected cabin pressure as external air pressure changed."
       }
     ]
   },
@@ -5123,9 +5190,9 @@
     "summary": "Metered liquid fuels and oxidizers enabled controllable powerful rockets.",
     "parents": [
       {
-        "id": "precision-machining",
+        "id": "pressure-regulator",
         "type": "enabler",
-        "reason": "Accurate valves and combustion hardware controlled liquid propellant flow."
+        "reason": "Controlled tank pressure and propellant delivery maintained flow into early combustion chambers."
       }
     ]
   },
@@ -5187,9 +5254,9 @@
     "summary": "Sealed protective garments maintained habitable conditions outside ordinary atmosphere.",
     "parents": [
       {
-        "id": "synthetic-resin",
+        "id": "butyl-rubber",
         "type": "enabler",
-        "reason": "Synthetic materials supplied airtight flexible seals and protective layers."
+        "reason": "Low-permeability elastomer layers helped retain breathing gas inside flexible suit structures."
       },
       {
         "id": "weaving",
@@ -5293,9 +5360,9 @@
     "summary": "Electric fields accelerated ions for efficient spacecraft propulsion.",
     "parents": [
       {
-        "id": "electric-generator",
+        "id": "space-solar-array",
         "type": "enabler",
-        "reason": "Electric power generation supplied energy for ionization and acceleration."
+        "reason": "Solar arrays supply the sustained electrical power used in solar-electric ion-propulsion missions."
       }
     ]
   },
@@ -5332,7 +5399,8 @@
       {
         "id": "precision-machining",
         "type": "enabler",
-        "reason": "Accurate mating mechanisms supported alignment and sealing between spacecraft."
+        "reason": "Accurate mating mechanisms supported alignment and sealing between spacecraft.",
+        "directContribution": "Machining directly makes the accurately mating docking latches and alignment surfaces; the launch-and-flight route makes propulsion hardware for reaching the rendezvous."
       }
     ]
   },
@@ -6038,9 +6106,14 @@
     "summary": "Nutrient solutions supported plant growth without ordinary soil.",
     "parents": [
       {
-        "id": "fertilizer",
+        "id": "chemical-titration",
         "type": "enabler",
-        "reason": "Formulated fertilizers supplied measured plant nutrients in solution."
+        "reason": "Solution analysis supported measuring and adjusting dissolved nutrient concentrations."
+      },
+      {
+        "id": "fertilizer",
+        "type": "foundation",
+        "reason": "Dissolved fertilizer nutrients supplied essential mineral elements without ordinary soil."
       }
     ]
   },
@@ -6054,9 +6127,14 @@
     "summary": "Small distributed outlets delivered water close to plant roots.",
     "parents": [
       {
-        "id": "pipe",
+        "id": "polyethylene",
         "type": "enabler",
-        "reason": "Pipes conveyed pressurized water to precise delivery points."
+        "reason": "Flexible polymer tubing supplied economical distributed water-delivery lines."
+      },
+      {
+        "id": "pressure-regulator",
+        "type": "enabler",
+        "reason": "Regulating supply pressure helped emitters deliver consistent low water flows."
       }
     ]
   },
@@ -6071,8 +6149,13 @@
     "parents": [
       {
         "id": "pipe",
+        "type": "foundation",
+        "reason": "The pivoted pipe carried irrigation water to the distributed sprinklers."
+      },
+      {
+        "id": "hydraulic-cylinder",
         "type": "enabler",
-        "reason": "Pipe systems carried water along long rotating sprinkler assemblies."
+        "reason": "Early Zybach systems used water-powered hydraulic movement to propel the support towers."
       }
     ]
   },
@@ -6102,14 +6185,19 @@
     "summary": "High-pressure industrial synthesis produced ammonia for nitrogen fertilizers.",
     "parents": [
       {
-        "id": "precision-machining",
-        "type": "enabler",
-        "reason": "Accurate pressure vessels and compressors maintained demanding synthesis conditions."
+        "id": "reciprocating-compressor",
+        "type": "foundation",
+        "reason": "Gas compressors maintained the high reactant pressure needed for industrial ammonia synthesis."
       },
       {
         "id": "fertilizer",
         "type": "influence",
         "reason": "Demand for nitrogen nutrients motivated scalable ammonia production."
+      },
+      {
+        "id": "chemical-equilibrium",
+        "type": "enabler",
+        "reason": "Equilibrium analysis guided pressure, temperature, and product-removal choices."
       }
     ]
   },
@@ -6457,9 +6545,9 @@
     "summary": "Mechanical cooling removed heat to preserve food and support industry.",
     "parents": [
       {
-        "id": "precision-machining",
-        "type": "enabler",
-        "reason": "Accurate compressors and valves enabled closed refrigeration cycles."
+        "id": "reciprocating-compressor",
+        "type": "foundation",
+        "reason": "A compressor drove the refrigerant pressure cycle in the 1834 vapor-compression machine."
       }
     ]
   },
@@ -6473,9 +6561,9 @@
     "summary": "Controlled heating reduced spoilage organisms in liquids and foods.",
     "parents": [
       {
-        "id": "controlled-fire",
-        "type": "enabler",
-        "reason": "Heat control supplied repeatable temperature treatment without full sterilization."
+        "id": "thermometer",
+        "type": "foundation",
+        "reason": "Temperature measurement controlled the heat treatment applied to spoilage-prone food and drink."
       }
     ]
   },
@@ -6554,13 +6642,8 @@
     "parents": [
       {
         "id": "refrigeration",
-        "type": "enabler",
-        "reason": "Refrigeration equipment maintained low temperatures through distribution stages."
-      },
-      {
-        "id": "steamboat",
-        "type": "enabler",
-        "reason": "Powered shipping enabled scheduled carriage of refrigerated food cargoes."
+        "type": "foundation",
+        "reason": "Refrigerated stores and transport equipment maintained low product temperatures through successive distribution stages."
       }
     ]
   },

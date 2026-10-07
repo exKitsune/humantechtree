@@ -1,0 +1,156 @@
+[
+  {
+    "id": "polymerization",
+    "title": "Polymer-forming reactions",
+    "wiki": "Polymerization",
+    "year": 1839,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Reactions joining small molecules into chains supplied the synthesis route for manufactured polymers.",
+    "parents": [
+      {
+        "id": "distillation",
+        "type": "enabler",
+        "reason": "Distillation isolated styrene in the 1839 work that observed its conversion into a solid polymer."
+      }
+    ]
+  },
+  {
+    "id": "cellulose-nitration",
+    "title": "Cellulose nitration",
+    "wiki": "Nitrocellulose",
+    "year": 1846,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Nitrating cotton cellulose produced material used in later plastics, coatings, and propellants.",
+    "parents": [
+      {
+        "id": "cotton-gin",
+        "type": "enabler",
+        "reason": "Separated cotton lint supplied cellulose-rich fiber feedstock for the 1846 nitration route."
+      }
+    ]
+  },
+  {
+    "id": "hydraulic-cylinder",
+    "title": "Hydraulic cylinder actuator",
+    "wiki": "Hydraulic cylinder",
+    "year": 1795,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Pressurized liquid acting on a sealed piston supplied controllable linear force.",
+    "parents": [
+      {
+        "id": "piston-pump",
+        "type": "foundation",
+        "reason": "Piston pumps supplied pressurized liquid to move a load-bearing actuator piston."
+      }
+    ]
+  },
+  {
+    "id": "electromagnet",
+    "title": "Iron-core electromagnet",
+    "wiki": "Electromagnet",
+    "year": 1824,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Current flowing through a coil magnetized an iron core for controllable magnetic force.",
+    "parents": [
+      {
+        "id": "electromagnetism",
+        "type": "foundation",
+        "reason": "The magnetic effect of electric current supplied the operating principle of the energized coil."
+      },
+      {
+        "id": "wire-drawing",
+        "type": "foundation",
+        "reason": "Drawn conductive wire supplied repeated turns around the magnetic core."
+      }
+    ]
+  },
+  {
+    "id": "pressure-vessel",
+    "title": "Engineered pressure vessel",
+    "wiki": "Pressure vessel",
+    "year": 1679,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Strong sealed chambers contained liquids or gases at pressure different from their surroundings.",
+    "parents": [
+      {
+        "id": "forging",
+        "type": "enabler",
+        "reason": "Metal forming produced strong vessel walls and pressure-bearing fittings."
+      }
+    ]
+  },
+  {
+    "id": "steam-boiler",
+    "title": "Steam-generating boiler",
+    "wiki": "Boiler",
+    "year": 1698,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Heated sealed vessels supplied steam for practical pumping and later power machinery.",
+    "parents": [
+      {
+        "id": "pressure-vessel",
+        "type": "foundation",
+        "reason": "Pressure-bearing vessel construction contained the heated water and generated steam."
+      }
+    ]
+  },
+  {
+    "id": "cryogenic-liquefaction",
+    "title": "Cryogenic gas liquefaction",
+    "wiki": "Liquefaction of gases",
+    "year": 1877,
+    "domain": "energy",
+    "kind": "technology",
+    "summary": "Compression and strong cooling converted permanent gases into compact liquids.",
+    "parents": [
+      {
+        "id": "reciprocating-compressor",
+        "type": "foundation",
+        "reason": "Gas compressors supplied the pressure needed before expansion and deep cooling."
+      },
+      {
+        "id": "joule-thomson-effect",
+        "type": "enabler",
+        "reason": "Expansion-cooling measurements informed throttling and regenerative gas-liquefaction cycles."
+      }
+    ]
+  },
+  {
+    "id": "powered-fan",
+    "title": "Powered air-moving fan",
+    "wiki": "Fan (machine)",
+    "year": 1556,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Mechanically driven impellers moved air for mine ventilation and later industrial systems.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Shaped blades, shafts, and housings supplied the working structures of early ventilation fans."
+      }
+    ]
+  },
+  {
+    "id": "capacitor",
+    "title": "Capacitor charge storage",
+    "wiki": "Capacitor",
+    "year": 1745,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Separated conductive surfaces stored electrical charge across an insulating layer.",
+    "parents": [
+      {
+        "id": "glassmaking",
+        "type": "foundation",
+        "reason": "Glass jars supplied the insulating dielectric between the conductive layers of early Leyden capacitors."
+      }
+    ]
+  }
+]

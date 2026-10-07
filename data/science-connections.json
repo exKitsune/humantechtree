@@ -1,0 +1,935 @@
+[
+  {
+    "id": "microbial-culture",
+    "title": "Controlled microbial culture",
+    "wiki": "Microbiological culture",
+    "year": 1860,
+    "domain": "science",
+    "kind": "practice",
+    "summary": "Pasteur's liquid-media culture methods enabled microorganisms to be grown under controlled laboratory conditions.",
+    "parents": [
+      {
+        "id": "fermentation-biology",
+        "type": "influence",
+        "reason": "Experiments connecting microbes to fermentation motivated controlled growth in nutrient media."
+      }
+    ]
+  },
+  {
+    "id": "pure-microbial-culture",
+    "title": "Isolation of pure microbial cultures",
+    "wiki": "Microbiological culture",
+    "year": 1876,
+    "domain": "science",
+    "kind": "practice",
+    "summary": "Koch maintained isolated anthrax cultures to connect a particular organism with a particular disease.",
+    "parents": [
+      {
+        "id": "microbial-culture",
+        "type": "foundation",
+        "reason": "Controlled culture provides the growth conditions used to isolate a single microbial population."
+      }
+    ]
+  },
+  {
+    "id": "pneumococcus-isolation",
+    "title": "Isolation of pneumococcus",
+    "wiki": "Streptococcus pneumoniae",
+    "year": 1881,
+    "domain": "medicine",
+    "kind": "discovery",
+    "summary": "Sternberg and Pasteur isolated the bacterium later used in pneumococcal disease and transformation experiments.",
+    "parents": [
+      {
+        "id": "microbial-culture",
+        "type": "foundation",
+        "reason": "Culturing permits the organism to be isolated and propagated."
+      },
+      {
+        "id": "microscope",
+        "type": "enabler",
+        "reason": "Microscopic inspection distinguishes the isolated bacterial forms.",
+        "directContribution": "Optical inspection directly characterizes the cultured organisms; nutrient culture separately propagates them for isolation."
+      }
+    ]
+  },
+  {
+    "id": "bacterial-transformation",
+    "title": "Griffith's bacterial transformation experiment",
+    "wiki": "Griffith's experiment",
+    "year": 1928,
+    "domain": "science",
+    "kind": "discovery",
+    "summary": "Killed virulent pneumococci transferred a stable virulent trait to living nonvirulent pneumococci.",
+    "parents": [
+      {
+        "id": "pneumococcus-isolation",
+        "type": "foundation",
+        "reason": "Pneumococcal isolates provide the contrasting strains used in the experiment."
+      },
+      {
+        "id": "pure-microbial-culture",
+        "type": "foundation",
+        "reason": "Separate strain cultures permit controlled mixing and recovery of transformed bacteria."
+      }
+    ]
+  },
+  {
+    "id": "deoxyribose-identification",
+    "title": "Identification of deoxyribose in DNA",
+    "wiki": "Deoxyribose",
+    "year": 1929,
+    "domain": "science",
+    "kind": "discovery",
+    "summary": "Levene identified the sugar distinguishing DNA from ribose-containing nucleic acid.",
+    "parents": [
+      {
+        "id": "dna-isolation",
+        "type": "foundation",
+        "reason": "Isolated nucleic acid supplies the material analyzed for its sugar component."
+      }
+    ]
+  },
+  {
+    "id": "dische-dna-assay",
+    "title": "Dische's DNA chemical assay",
+    "wiki": "Dische test",
+    "year": 1930,
+    "domain": "science",
+    "kind": "practice",
+    "summary": "A diphenylamine color reaction helped distinguish and measure deoxyribose-containing DNA.",
+    "parents": [
+      {
+        "id": "deoxyribose-identification",
+        "type": "foundation",
+        "reason": "Deoxyribose supplies the chemical feature detected by the assay."
+      }
+    ]
+  },
+  {
+    "id": "bacteriological-filter",
+    "title": "Chamberland bacterial filtration",
+    "wiki": "Chamberland filter",
+    "year": 1884,
+    "domain": "science",
+    "kind": "technology",
+    "summary": "Porous porcelain filtration removed bacteria from liquids while allowing smaller infectious agents to pass.",
+    "parents": [
+      {
+        "id": "porcelain",
+        "type": "foundation",
+        "reason": "A porous ceramic element supplies the physical filtration barrier."
+      },
+      {
+        "id": "pure-microbial-culture",
+        "type": "enabler",
+        "reason": "Culture tests determine whether the filtrate still contains growing bacteria."
+      }
+    ]
+  },
+  {
+    "id": "vaccine-attenuation",
+    "title": "Laboratory attenuation for vaccines",
+    "wiki": "Attenuated vaccine",
+    "year": 1879,
+    "domain": "medicine",
+    "kind": "practice",
+    "summary": "Pasteur's chicken-cholera work developed weakened microbial preparations that retained protective activity.",
+    "parents": [
+      {
+        "id": "microbial-culture",
+        "type": "foundation",
+        "reason": "Repeated growth and controlled handling permit changes in microbial virulence."
+      },
+      {
+        "id": "vaccination",
+        "type": "influence",
+        "reason": "Earlier protective inoculation established the goal of inducing immunity without severe disease."
+      }
+    ]
+  },
+  {
+    "id": "toxoid-preparation",
+    "title": "Toxoid preparation",
+    "wiki": "Toxoid",
+    "year": 1923,
+    "domain": "medicine",
+    "kind": "technology",
+    "summary": "Chemical inactivation rendered bacterial toxins less harmful while preserving their immunizing properties.",
+    "parents": [
+      {
+        "id": "antibodies",
+        "type": "enabler",
+        "reason": "Antitoxin assays measure whether modified toxin still elicits protective recognition."
+      },
+      {
+        "id": "bacteriological-filter",
+        "type": "enabler",
+        "reason": "Bacteria-free toxin-containing filtrates provide material for controlled inactivation."
+      }
+    ]
+  },
+  {
+    "id": "egg-virus-culture",
+    "title": "Virus cultivation in embryonated eggs",
+    "wiki": "Viral culture",
+    "year": 1931,
+    "domain": "science",
+    "kind": "practice",
+    "summary": "Goodpasture's embryo-based culture work supplied living tissue for growing viruses used in vaccine research.",
+    "parents": [
+      {
+        "id": "viruses",
+        "type": "influence",
+        "reason": "Recognition of filterable infectious agents motivated cultivation in living host tissue."
+      },
+      {
+        "id": "aseptic-surgery",
+        "type": "enabler",
+        "reason": "Sterile tissue-handling methods limit bacterial contamination during inoculation."
+      }
+    ]
+  },
+  {
+    "id": "hepatitis-b-antigen",
+    "title": "Identification of hepatitis B surface antigen",
+    "wiki": "HBsAg",
+    "year": 1965,
+    "domain": "medicine",
+    "kind": "discovery",
+    "summary": "The Australia antigen provided a detectable surface protein later linked to hepatitis B infection.",
+    "parents": [
+      {
+        "id": "antibodies",
+        "type": "foundation",
+        "reason": "Serological antigen–antibody reactions reveal the unusual serum antigen."
+      }
+    ]
+  },
+  {
+    "id": "rsv-prefusion-antigen",
+    "title": "Stabilized prefusion RSV antigen",
+    "wiki": "Respiratory syncytial virus vaccine",
+    "year": 2013,
+    "domain": "medicine",
+    "kind": "technology",
+    "summary": "Structure-guided stabilization preserved RSV's prefusion F protein as a potent vaccine antigen.",
+    "parents": [
+      {
+        "id": "protein-crystallography",
+        "type": "foundation",
+        "reason": "Protein structures identify the prefusion conformation to preserve."
+      },
+      {
+        "id": "recombinant-dna",
+        "type": "enabler",
+        "reason": "Engineered expression produces the stabilized antigen constructs."
+      }
+    ]
+  },
+  {
+    "id": "varicella-attenuation",
+    "title": "Oka-strain varicella vaccine",
+    "wiki": "Varicella vaccine",
+    "year": 1974,
+    "domain": "medicine",
+    "kind": "technology",
+    "summary": "Serial tissue-culture passage produced the attenuated Oka strain used in varicella and later shingles vaccines.",
+    "parents": [
+      {
+        "id": "cell-culture",
+        "type": "foundation",
+        "reason": "Serial growth in cultured cells supplies the attenuation route."
+      },
+      {
+        "id": "vaccine-attenuation",
+        "type": "influence",
+        "reason": "Earlier attenuation methods established weakened live organisms as protective preparations."
+      }
+    ]
+  },
+  {
+    "id": "viral-gene-vector",
+    "title": "Engineered viral gene vectors",
+    "wiki": "Viral vector",
+    "year": 1972,
+    "domain": "science",
+    "kind": "technology",
+    "summary": "Engineered viral DNA supplied a route for carrying selected genetic sequences into cells.",
+    "parents": [
+      {
+        "id": "recombinant-dna",
+        "type": "foundation",
+        "reason": "Joining DNA from different sources creates a viral construct with an added payload."
+      }
+    ]
+  },
+  {
+    "id": "aav-gene-vector",
+    "title": "Recombinant AAV gene vectors",
+    "wiki": "Adeno-associated virus",
+    "year": 1984,
+    "domain": "science",
+    "kind": "technology",
+    "summary": "Recombinant adeno-associated viral constructs delivered foreign genes into mammalian cells.",
+    "parents": [
+      {
+        "id": "viral-gene-vector",
+        "type": "foundation",
+        "reason": "Viral payload delivery provides the vector strategy adapted to AAV."
+      }
+    ]
+  },
+  {
+    "id": "engineered-oncolytic-virus",
+    "title": "Engineered oncolytic viruses",
+    "wiki": "Oncolytic virus",
+    "year": 1991,
+    "domain": "medicine",
+    "kind": "technology",
+    "summary": "Genetically altered herpesvirus was investigated for selective replication in and destruction of tumors.",
+    "parents": [
+      {
+        "id": "viral-gene-vector",
+        "type": "foundation",
+        "reason": "Engineered viral constructs permit selective replication and payload changes."
+      },
+      {
+        "id": "cancer-chemotherapy",
+        "type": "influence",
+        "reason": "The need to attack tumors selectively motivated virus-based therapeutic investigation."
+      }
+    ]
+  },
+  {
+    "id": "crispr-adaptive-immunity",
+    "title": "CRISPR adaptive immunity in bacteria",
+    "wiki": "CRISPR",
+    "year": 2007,
+    "domain": "science",
+    "kind": "discovery",
+    "summary": "Phage-challenge experiments showed that acquired CRISPR spacers protect bacteria against matching viruses.",
+    "parents": [
+      {
+        "id": "bacteriophages",
+        "type": "foundation",
+        "reason": "Bacterial viruses provide controlled infection challenges."
+      },
+      {
+        "id": "dna-sequencing",
+        "type": "enabler",
+        "reason": "Spacer sequences identify the acquired genetic records matching the attacking phage."
+      }
+    ]
+  },
+  {
+    "id": "fluorescent-antibody-labeling",
+    "title": "Fluorescent antibody labeling",
+    "wiki": "Immunofluorescence",
+    "year": 1941,
+    "domain": "science",
+    "kind": "technology",
+    "summary": "Coons linked fluorescent dyes to antibodies to locate specific biological targets optically.",
+    "parents": [
+      {
+        "id": "antibodies",
+        "type": "foundation",
+        "reason": "Specific antibody binding selects the biological target."
+      },
+      {
+        "id": "fluorescence-microscopy",
+        "type": "foundation",
+        "reason": "Fluorescence optics detects the attached marker."
+      }
+    ]
+  },
+  {
+    "id": "voltage-clamp",
+    "title": "Voltage-clamp recording",
+    "wiki": "Voltage clamp",
+    "year": 1949,
+    "domain": "science",
+    "kind": "technology",
+    "summary": "Feedback-controlled electrodes held membrane voltage steady while measuring ionic currents.",
+    "parents": [
+      {
+        "id": "galvanometer",
+        "type": "enabler",
+        "reason": "Sensitive electrical measurement permits small biological currents to be recorded."
+      }
+    ]
+  },
+  {
+    "id": "nuclear-reprogramming",
+    "title": "Nuclear reprogramming by transplantation",
+    "wiki": "John Gurdon",
+    "year": 1962,
+    "domain": "science",
+    "kind": "discovery",
+    "summary": "Gurdon showed that differentiated cell nuclei could direct development when transferred into enucleated eggs.",
+    "parents": [
+      {
+        "id": "microscope",
+        "type": "foundation",
+        "reason": "Micromanipulation directly places donor nuclei into enucleated eggs."
+      }
+    ]
+  },
+  {
+    "id": "pancreatic-diabetes",
+    "title": "Pancreatic cause of diabetes",
+    "wiki": "Insulin",
+    "year": 1889,
+    "domain": "medicine",
+    "kind": "discovery",
+    "summary": "Pancreas-removal experiments established a connection between the organ and diabetes.",
+    "parents": [
+      {
+        "id": "human-anatomy",
+        "type": "enabler",
+        "reason": "Knowledge of pancreatic anatomy permits controlled removal and comparison."
+      }
+    ]
+  },
+  {
+    "id": "sodium-glucose-cotransport",
+    "title": "Intestinal sodium–glucose cotransport",
+    "wiki": "Sodium-glucose transport proteins",
+    "year": 1960,
+    "domain": "science",
+    "kind": "discovery",
+    "summary": "Crane described coupled sodium and glucose transport underlying intestinal glucose absorption.",
+    "parents": [
+      {
+        "id": "lipid-bilayer",
+        "type": "enabler",
+        "reason": "A selective cell membrane supplies the boundary across which coupled transport occurs."
+      }
+    ]
+  },
+  {
+    "id": "membrane-dialysis",
+    "title": "Selective membrane dialysis",
+    "wiki": "Dialysis (chemistry)",
+    "year": 1861,
+    "domain": "science",
+    "kind": "practice",
+    "summary": "Graham used selective membrane passage to separate small dissolved substances from larger colloidal material.",
+    "parents": [
+      {
+        "id": "chemical-titration",
+        "type": "enabler",
+        "reason": "Solution analysis measures which dissolved substances cross the membrane."
+      }
+    ]
+  },
+  {
+    "id": "piezoelectric-effect",
+    "title": "Piezoelectric effect",
+    "wiki": "Piezoelectricity",
+    "year": 1880,
+    "domain": "science",
+    "kind": "discovery",
+    "summary": "The Curie brothers found that mechanical stress generates electric charge in certain crystals.",
+    "parents": [
+      {
+        "id": "electroscope",
+        "type": "enabler",
+        "reason": "Charge-sensitive measurement detects electricity produced by stressed crystals."
+      }
+    ]
+  },
+  {
+    "id": "photomultiplier",
+    "title": "Photomultiplier tube",
+    "wiki": "Photomultiplier tube",
+    "year": 1934,
+    "domain": "science",
+    "kind": "technology",
+    "summary": "Successive electron multiplication amplified weak optical signals into measurable currents.",
+    "parents": [
+      {
+        "id": "photoelectric-effect",
+        "type": "foundation",
+        "reason": "Incident photons release the initial photoelectrons."
+      },
+      {
+        "id": "vacuum-tube",
+        "type": "foundation",
+        "reason": "An evacuated electronic device transports and multiplies the electron signal."
+      }
+    ]
+  },
+  {
+    "id": "scintillation-counting",
+    "title": "Electronic scintillation counting",
+    "wiki": "Scintillation counter",
+    "year": 1944,
+    "domain": "science",
+    "kind": "technology",
+    "summary": "Light flashes from radiation interactions were amplified and counted electronically.",
+    "parents": [
+      {
+        "id": "photomultiplier",
+        "type": "foundation",
+        "reason": "Electron multiplication converts faint scintillation flashes into electrical pulses."
+      },
+      {
+        "id": "radioactivity",
+        "type": "enabler",
+        "reason": "Ionizing emissions supply events used to test and calibrate the detector."
+      }
+    ]
+  },
+  {
+    "id": "sequence-alignment",
+    "title": "Computational sequence alignment",
+    "wiki": "Sequence alignment",
+    "year": 1970,
+    "domain": "information",
+    "kind": "practice",
+    "summary": "Dynamic-programming methods aligned biological sequences to identify related positions.",
+    "parents": [
+      {
+        "id": "dynamic-programming",
+        "type": "foundation",
+        "reason": "Optimal subproblem reuse determines the best scoring alignment."
+      },
+      {
+        "id": "sanger-protein-sequence",
+        "type": "enabler",
+        "reason": "Known protein sequences supply biological strings for comparison."
+      }
+    ]
+  },
+  {
+    "id": "sequence-assembly",
+    "title": "DNA sequence assembly",
+    "wiki": "Sequence assembly",
+    "year": 1979,
+    "domain": "information",
+    "kind": "practice",
+    "summary": "Computational overlap reconstruction combined fragment reads into longer DNA sequences.",
+    "parents": [
+      {
+        "id": "dna-sequencing",
+        "type": "foundation",
+        "reason": "Read sequences supply the fragments to be assembled."
+      },
+      {
+        "id": "sequence-alignment",
+        "type": "enabler",
+        "reason": "Sequence comparison identifies compatible overlaps between reads."
+      }
+    ]
+  },
+  {
+    "id": "recurrent-neural-networks",
+    "title": "Recurrent neural networks",
+    "wiki": "Recurrent neural network",
+    "year": 1982,
+    "domain": "information",
+    "kind": "technology",
+    "summary": "Feedback connections gave neural networks a state that could persist across successive inputs.",
+    "parents": [
+      {
+        "id": "perceptron",
+        "type": "influence",
+        "reason": "Weighted neural units supplied components extended with recurrent connections."
+      }
+    ]
+  },
+  {
+    "id": "gradient-descent",
+    "title": "Gradient descent",
+    "wiki": "Gradient descent",
+    "year": 1847,
+    "domain": "science",
+    "kind": "practice",
+    "summary": "Cauchy's method iteratively adjusted variables in a direction reducing a differentiable objective.",
+    "parents": [
+      {
+        "id": "calculus",
+        "type": "foundation",
+        "reason": "Partial derivatives determine the direction of local objective change."
+      }
+    ]
+  },
+  {
+    "id": "binary-search-tree",
+    "title": "Binary search trees",
+    "wiki": "Binary search tree",
+    "year": 1960,
+    "domain": "information",
+    "kind": "technology",
+    "summary": "An ordered branching data structure supported searching by progressively narrowing key ranges.",
+    "parents": [
+      {
+        "id": "computer",
+        "type": "enabler",
+        "reason": "Addressable storage implements linked search nodes and key comparisons."
+      }
+    ]
+  },
+  {
+    "id": "linked-list",
+    "title": "Linked lists",
+    "wiki": "Linked list",
+    "year": 1955,
+    "domain": "information",
+    "kind": "technology",
+    "summary": "Explicit links connected stored records without requiring adjacent memory locations.",
+    "parents": [
+      {
+        "id": "computer",
+        "type": "enabler",
+        "reason": "Addressable memory stores records and the references connecting them."
+      }
+    ]
+  },
+  {
+    "id": "program-recursion",
+    "title": "Recursion in programming",
+    "wiki": "Recursion (computer science)",
+    "year": 1956,
+    "domain": "information",
+    "kind": "practice",
+    "summary": "Self-invoking procedures expressed solutions through smaller instances of the same problem.",
+    "parents": [
+      {
+        "id": "lambda-calculus",
+        "type": "enabler",
+        "reason": "Recursive function definitions supply a formal model for self-referential computation."
+      }
+    ]
+  },
+  {
+    "id": "predicate-logic",
+    "title": "Modern predicate logic",
+    "wiki": "First-order logic",
+    "year": 1879,
+    "domain": "science",
+    "kind": "discovery",
+    "summary": "Frege's quantified logic formalized statements about objects, properties, and relations.",
+    "parents": [
+      {
+        "id": "mathematical-proof",
+        "type": "influence",
+        "reason": "Deductive mathematical arguments motivated a precise symbolic language for inference."
+      }
+    ]
+  },
+  {
+    "id": "neutrino-hypothesis",
+    "title": "Pauli's neutrino hypothesis",
+    "wiki": "Neutrino",
+    "year": 1930,
+    "domain": "science",
+    "kind": "discovery",
+    "summary": "Pauli proposed an unseen neutral particle to account for missing energy in beta decay.",
+    "parents": [
+      {
+        "id": "radioactivity",
+        "type": "foundation",
+        "reason": "Beta-decay measurements supply the unexplained energy distribution."
+      },
+      {
+        "id": "energy-conservation",
+        "type": "foundation",
+        "reason": "Energy balance motivates an additional particle carrying the missing energy."
+      }
+    ]
+  },
+  {
+    "id": "bohr-atomic-model",
+    "title": "Bohr atomic model",
+    "wiki": "Bohr model",
+    "year": 1913,
+    "domain": "science",
+    "kind": "discovery",
+    "summary": "Quantized electron orbits accounted for characteristic hydrogen spectral lines.",
+    "parents": [
+      {
+        "id": "atomic-nucleus",
+        "type": "foundation",
+        "reason": "A central nucleus supplies the atom's electrostatic structure."
+      },
+      {
+        "id": "spectroscopy",
+        "type": "enabler",
+        "reason": "Measured hydrogen wavelengths constrain the predicted energy differences."
+      }
+    ]
+  },
+  {
+    "id": "joule-thomson-effect",
+    "title": "Joule–Thomson effect",
+    "wiki": "Joule–Thomson effect",
+    "year": 1852,
+    "domain": "science",
+    "kind": "discovery",
+    "summary": "Joule and Thomson measured temperature changes when gas expands through a restriction without external work.",
+    "parents": [
+      {
+        "id": "thermodynamics",
+        "type": "foundation",
+        "reason": "Energy and enthalpy relationships explain the throttling experiment."
+      }
+    ]
+  },
+  {
+    "id": "liquid-helium",
+    "title": "Liquid helium production",
+    "wiki": "Liquid helium",
+    "year": 1908,
+    "domain": "science",
+    "kind": "technology",
+    "summary": "Kamerlingh Onnes liquefied helium, opening an experimental route to extremely low temperatures.",
+    "parents": [
+      {
+        "id": "joule-thomson-effect",
+        "type": "foundation",
+        "reason": "Regenerative expansion cooling supplies a step in helium liquefaction."
+      }
+    ]
+  },
+  {
+    "id": "switching-circuit-theory",
+    "title": "Boolean switching-circuit theory",
+    "wiki": "Switching circuit theory",
+    "year": 1937,
+    "domain": "information",
+    "kind": "discovery",
+    "summary": "Shannon showed how Boolean algebra describes relay circuits for symbolic switching and computation.",
+    "parents": [
+      {
+        "id": "boolean-algebra",
+        "type": "foundation",
+        "reason": "Boolean operations model the on/off behavior of interconnected switches."
+      },
+      {
+        "id": "electric-telegraph",
+        "type": "enabler",
+        "reason": "Relay-based electrical signaling provides physical switches whose combinations can be analyzed."
+      }
+    ]
+  },
+  {
+    "id": "semiconductor-band-theory",
+    "title": "Semiconductor band theory",
+    "wiki": "Electronic band structure",
+    "year": 1931,
+    "domain": "science",
+    "kind": "discovery",
+    "summary": "Wilson's band model explained conduction differences among metals, semiconductors, and insulators.",
+    "parents": [
+      {
+        "id": "quantum-mechanics",
+        "type": "foundation",
+        "reason": "Quantum electron states in solids produce allowed bands and energy gaps."
+      }
+    ]
+  },
+  {
+    "id": "abc-language",
+    "title": "ABC programming language",
+    "wiki": "ABC (programming language)",
+    "year": 1987,
+    "domain": "information",
+    "kind": "technology",
+    "summary": "ABC provided an interactive language with readable blocks and high-level data operations.",
+    "parents": [
+      {
+        "id": "structured-programming",
+        "type": "enabler",
+        "reason": "Block-structured control supplies the organization of its executable statements."
+      }
+    ]
+  },
+  {
+    "id": "decision-tree-learning",
+    "title": "ID3 decision-tree learning",
+    "wiki": "ID3 algorithm",
+    "year": 1986,
+    "domain": "information",
+    "kind": "practice",
+    "summary": "Quinlan's ID3 selected informative attributes to grow classification trees from labeled examples.",
+    "parents": [
+      {
+        "id": "information-theory",
+        "type": "foundation",
+        "reason": "Entropy and information gain determine the attribute-selection criterion."
+      }
+    ]
+  },
+  {
+    "id": "progesterone-identification",
+    "title": "Identification of progesterone",
+    "wiki": "Progesterone",
+    "year": 1934,
+    "domain": "medicine",
+    "kind": "discovery",
+    "summary": "Isolation of the corpus-luteum hormone identified a chemical regulator of reproduction.",
+    "parents": [
+      {
+        "id": "human-anatomy",
+        "type": "enabler",
+        "reason": "Identifying ovarian corpus-luteum tissue provides material for extracting the hormone."
+      }
+    ]
+  },
+  {
+    "id": "oral-progestin-synthesis",
+    "title": "Orally active progestin synthesis",
+    "wiki": "Norethisterone",
+    "year": 1951,
+    "domain": "medicine",
+    "kind": "technology",
+    "summary": "Synthesis of norethisterone supplied an orally active progestin later used in contraceptive pills.",
+    "parents": [
+      {
+        "id": "progesterone-identification",
+        "type": "influence",
+        "reason": "Progesterone's biological activity defines the effect sought in an orally effective compound."
+      },
+      {
+        "id": "structural-formula",
+        "type": "enabler",
+        "reason": "Defined steroid connectivity guides the chemical modifications made during synthesis."
+      }
+    ]
+  },
+  {
+    "id": "cell-nucleus",
+    "title": "Identification of the cell nucleus",
+    "wiki": "Cell nucleus",
+    "year": 1831,
+    "domain": "science",
+    "kind": "discovery",
+    "summary": "Brown identified recurring nuclei as structures within plant cells.",
+    "parents": [
+      {
+        "id": "microscope",
+        "type": "foundation",
+        "reason": "Microscopic examination reveals the nucleus within prepared plant cells."
+      }
+    ]
+  },
+  {
+    "id": "gel-electrophoresis",
+    "title": "Gel electrophoresis",
+    "wiki": "Gel electrophoresis",
+    "year": 1955,
+    "domain": "science",
+    "kind": "technology",
+    "summary": "Gel matrices enabled size-dependent separation of biological macromolecules in an electric field.",
+    "parents": [
+      {
+        "id": "electrophoresis",
+        "type": "foundation",
+        "reason": "Electric-field-driven molecular transport supplies the separation force."
+      }
+    ]
+  },
+  {
+    "id": "ethidium-dna-fluorescence",
+    "title": "Ethidium DNA fluorescence assay",
+    "wiki": "Ethidium bromide",
+    "year": 1967,
+    "domain": "science",
+    "kind": "practice",
+    "summary": "Enhanced fluorescence after ethidium binds nucleic acid provided a sensitive DNA-measurement signal.",
+    "parents": [
+      {
+        "id": "dna-double-helix",
+        "type": "enabler",
+        "reason": "Intercalation into duplex nucleic acid explains the enhanced bound-dye fluorescence."
+      }
+    ]
+  },
+  {
+    "id": "golgi-stain",
+    "title": "Golgi's neural staining method",
+    "wiki": "Golgi's method",
+    "year": 1873,
+    "domain": "science",
+    "kind": "practice",
+    "summary": "Silver-based staining revealed detailed outlines of a small fraction of neurons in tissue.",
+    "parents": [
+      {
+        "id": "microscope",
+        "type": "foundation",
+        "reason": "Microscopic imaging resolves the stained neuron processes."
+      }
+    ]
+  },
+  {
+    "id": "proteinase-k",
+    "title": "Proteinase K characterization",
+    "wiki": "Proteinase K",
+    "year": 1974,
+    "domain": "science",
+    "kind": "discovery",
+    "summary": "A robust fungal protease supplied an enzyme for digesting proteins during biochemical analysis.",
+    "parents": [
+      {
+        "id": "enzyme-kinetics",
+        "type": "enabler",
+        "reason": "Controlled activity measurements characterize the protease's substrate degradation."
+      }
+    ]
+  },
+  {
+    "id": "malaria-parasite",
+    "title": "Identification of the malaria parasite",
+    "wiki": "Plasmodium",
+    "year": 1880,
+    "domain": "medicine",
+    "kind": "discovery",
+    "summary": "Laveran identified parasites in the blood of malaria patients.",
+    "parents": [
+      {
+        "id": "microscope",
+        "type": "foundation",
+        "reason": "Blood microscopy reveals the organisms associated with disease."
+      }
+    ]
+  },
+  {
+    "id": "mustard-gas-leukopenia",
+    "title": "Mustard-gas suppression of blood cells",
+    "wiki": "Chemotherapy",
+    "year": 1919,
+    "domain": "medicine",
+    "kind": "discovery",
+    "summary": "Blood and bone-marrow injury after gas exposure supplied evidence later used to investigate cytotoxic cancer drugs.",
+    "parents": [
+      {
+        "id": "microscope",
+        "type": "enabler",
+        "reason": "Blood-cell examination detects the leukocyte depletion associated with exposure."
+      }
+    ]
+  },
+  {
+    "id": "antisense-gene-perturbation",
+    "title": "Antisense RNA gene-perturbation experiments",
+    "wiki": "RNA interference",
+    "year": 1995,
+    "domain": "science",
+    "kind": "practice",
+    "summary": "Sense and antisense RNA injections were tested for targeted gene suppression in nematodes.",
+    "parents": [
+      {
+        "id": "dna-hybridization",
+        "type": "foundation",
+        "reason": "Complementary sequences specify the RNA target under investigation."
+      },
+      {
+        "id": "recombinant-dna",
+        "type": "enabler",
+        "reason": "Defined gene-derived constructs supply the experimental RNA sequences."
+      }
+    ]
+  }
+]

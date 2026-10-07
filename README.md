@@ -1,6 +1,6 @@
 # Humanity — the technology tree
 
-A purely exploratory atlas of **2,000 human capabilities**: discoveries, tools, machines, infrastructure, institutions, and cultural practices. Built with Svelte 5, TypeScript, Vite, and Svelte Flow. The industrial interface takes inspiration from Factorio; it uses no Factorio assets.
+A purely exploratory atlas of **2,090 human capabilities**: discoveries, tools, machines, infrastructure, institutions, and cultural practices. Built with Svelte 5, TypeScript, Vite, and Svelte Flow. The industrial interface takes inspiration from Factorio; it uses no Factorio assets.
 
 ## Run locally
 
@@ -36,9 +36,9 @@ Connections answer **“How did this help make that possible?”** They are dire
 
 | Relationship | Meaning |
 | --- | --- |
-| Technical foundation | A tool, material, or body of knowledge used by the particular technology or method shown. It is not a claim that no alternative route exists. |
-| Enabling condition | A capability or institution that supported development, adoption, or scale. |
-| Historical influence | An earlier idea or practice that shaped a particular development. |
+| Technical foundation | A material, tool, method, or result directly used in this particular development. Other routes may exist. |
+| Enabling condition | Specific infrastructure, an institution, or a capability that directly supported development, adoption, or scale. |
+| Historical influence | An identifiable idea or practice adapted or built upon in this particular historical development. |
 
 This is not a game, an unlock system, or a universal sequence every society must follow. Religion, treaties, and institutions are first-class subjects; they are never presumed to be universal requirements for technological development. Nodes occupy chronological periods that expand with their population, rather than a proportional time axis. Same-period prerequisites advance through additional columns. Dates are approximate milestones. Era names are navigation aids and do not describe every region's periodization.
 
@@ -62,16 +62,35 @@ Node and edge spatial indexes avoid scanning the full graph every frame. Density
 - `data/science.json`: 350 science, medicine, and information entries.
 - `data/society.json`: 250 institutional and cultural entries.
 - `data/*-expansion.json`: another 400 engineering/material/energy/transport/food, 350 science/medicine/information, and 250 society/culture entries.
+- `data/*-connections.json`: researched intermediate capabilities added while refining the routes between existing milestones.
 - `data/connections.json`: explicit cross-domain contributions.
 - `public/data/catalog.json`: compiled, static application data.
 - `public/data/wikipedia.json`: cached article identifiers, Wikimedia image URLs, and attribution metadata.
 - `public/data/offline-index.json`: article matches in the local ZIM, once imported.
 
-The expansion brings the catalog to 2,000 nodes and 2,302 explained connections; all 2,000 article references resolve in the local archive. Every new entry has at least one incoming connection.
+The initial 2,000-node catalog now includes 90 additional intermediate capabilities. All 2,090 article references resolve in the local archive. Connection review revised the parents of 348 existing nodes, replacing remote ancestry with specific contributions and documenting independently used tools and materials.
 
-Edit the source catalogs, then run `npm run data:compile` to update the local preview. Production builds also compile the catalogs automatically. Every edge must name an existing node, carry a relationship type, and explain a specific contribution. Validation checks unique IDs and titles, schema, references, chronological direction, and cycles. It **does not establish historical truth**.
+Edit the source catalogs, then run `npm run data:compile` to update the local preview. Production builds also compile the catalogs automatically. Every edge must name an existing node, carry a relationship type, and explain a specific contribution. Validation checks unique IDs and titles, schema, references, chronological direction, cycles, and unresolved connection-review flags. It **does not establish historical truth**.
 
 The expanded catalog is an editorial draft. Dates are approximate milestones, not always the earliest instance worldwide. Relationships are proposed interpretations awaiting individual source review. A resolved Wikipedia URL or offline article match only proves that the reference exists. Treat disputed origins, independent inventions, and socially contingent claims with particular care.
+
+### Making connections
+
+Connect the **nearest specific contribution** to the target milestone. Match the parent's actual scope: observing bacteria, growing a pure bacterial culture, and demonstrating bacterial transformation are different capabilities. For DNA as hereditary material, the transformation experiments and DNA preparation supply much more immediate experimental contributions than the first observation of bacteria. Earlier discoveries remain reachable through intermediate steps and branches.
+
+Use an existing intermediate where it explains the dependency; add a supported missing capability when necessary. An article link, shared topic, chronological order, or distant common ancestor does not establish a dependency. Preserve multiple independent inputs. A microscope, vacuum pump, material, or mathematical method can still contribute directly alongside a longer chain of discoveries.
+
+```sh
+npm run data:audit-connections
+npm run data:audit-connections -- --json
+npm run data:audit-connections -- --check
+npm run data:compile
+npm run validate:data
+```
+
+The audit reads the current source catalogs, including added intermediates and supplemental connections. It flags edges with an alternate multi-step path, and discovery/observation/isolation milestones reused at least 100 years later. The latter is a review heuristic for missing methods, not a historical cutoff. Reports include the alternate route and its relationship types; mixed types do not imply logical equivalence. No edges are automatically inferred, removed, or replaced.
+
+Resolve a flag by correcting the shortcut or documenting the independent direct role in that parent's `directContribution` field. The detail panel shows that explanation as **Direct role**. Keep a supporting URL in `source` when checked. Explanations must describe the concrete contribution rather than merely dismiss the audit; validation checks their presence, not their truth. Builds fail on unresolved flags so later catalog additions cannot silently introduce a newly redundant route. See [AGENTS.md](AGENTS.md) for the authoring rules.
 
 ## Offline-first research
 

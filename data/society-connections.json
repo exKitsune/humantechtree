@@ -1,0 +1,411 @@
+[
+  {
+    "id": "etruscan-alphabet",
+    "title": "Etruscan alphabet",
+    "wiki": "Etruscan alphabet",
+    "year": -700,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "Etruscan writers adapted western Greek letters into a script subsequently used as a model for Latin.",
+    "parents": [
+      {
+        "id": "greek-alphabet",
+        "type": "influence",
+        "reason": "Western Greek letter forms supplied the inventory adapted for Etruscan sounds.",
+        "source": "https://en.wikipedia.org/wiki/Etruscan_alphabet"
+      }
+    ]
+  },
+  {
+    "id": "nabataean-script",
+    "title": "Nabataean script",
+    "wiki": "Nabataean script",
+    "year": -200,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "Nabataean Aramaic inscriptions used letter forms whose cursive development contributed to Arabic writing.",
+    "parents": [
+      {
+        "id": "aramaic-alphabet",
+        "type": "influence",
+        "reason": "Nabataean writing adapted the Aramaic consonantal letter tradition.",
+        "source": "https://en.wikipedia.org/wiki/Nabataean_script"
+      }
+    ]
+  },
+  {
+    "id": "manyogana",
+    "title": "Phonetic man’yōgana writing",
+    "wiki": "Man'yōgana",
+    "year": 650,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "Japanese scribes used Chinese characters for their sounds to represent Japanese syllables.",
+    "parents": []
+  },
+  {
+    "id": "gupta-script",
+    "title": "Gupta script",
+    "wiki": "Gupta script",
+    "year": 350,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "Northern Indian Brahmi forms developed distinctive Sanskrit inscriptional and manuscript conventions.",
+    "parents": [
+      {
+        "id": "brahmi-script",
+        "type": "influence",
+        "reason": "Gupta-period scribes modified the letter forms and vowel marking of Brahmi.",
+        "source": "https://en.wikipedia.org/wiki/Gupta_script"
+      }
+    ]
+  },
+  {
+    "id": "siddham-script",
+    "title": "Siddhaṃ script",
+    "wiki": "Siddhaṃ script",
+    "year": 600,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "Siddhaṃ developed post-Gupta letter forms used for Sanskrit texts and later regional writing traditions.",
+    "parents": [
+      {
+        "id": "gupta-script",
+        "type": "influence",
+        "reason": "Gupta letter forms evolved into the post-Gupta Siddhaṃ inventory.",
+        "source": "https://en.wikipedia.org/wiki/Siddha%E1%B9%83_script"
+      }
+    ]
+  },
+  {
+    "id": "nagari-script",
+    "title": "Early Nāgarī writing",
+    "wiki": "Nāgarī script",
+    "year": 700,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "Northern Indian scribes developed Nāgarī forms ancestral to Devanagari and related scripts.",
+    "parents": [
+      {
+        "id": "siddham-script",
+        "type": "influence",
+        "reason": "Siddhamātṛkā consonants, vowel signs, and ligatures supplied intermediate forms developed into Nāgarī.",
+        "source": "https://en.wikipedia.org/wiki/N%C4%81gar%C4%AB_script"
+      }
+    ]
+  },
+  {
+    "id": "pallava-script",
+    "title": "Pallava script",
+    "wiki": "Pallava script",
+    "year": 400,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "Southern Indian inscriptional letters supplied models adapted by several Southeast Asian writing traditions.",
+    "parents": [
+      {
+        "id": "tamil-brahmi",
+        "type": "influence",
+        "reason": "Pallava letter forms developed from the southern Tamil-Brahmi tradition.",
+        "source": "https://en.wikipedia.org/wiki/Pallava_script"
+      }
+    ]
+  },
+  {
+    "id": "kawi-script",
+    "title": "Kawi script",
+    "wiki": "Kawi script",
+    "year": 800,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "Kawi recorded Old Javanese and other languages in maritime Southeast Asian inscriptions and manuscripts.",
+    "parents": [
+      {
+        "id": "pallava-script",
+        "type": "influence",
+        "reason": "Regional Pallava-derived letters became the more cursive Kawi forms used in inscriptions and documents.",
+        "source": "https://en.wikipedia.org/wiki/Kawi_script"
+      }
+    ]
+  },
+  {
+    "id": "sogdian-alphabet",
+    "title": "Sogdian alphabet",
+    "wiki": "Sogdian alphabet",
+    "year": 100,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "Sogdian writers adapted Aramaic-derived consonantal letters for Central Asian texts.",
+    "parents": [
+      {
+        "id": "aramaic-alphabet",
+        "type": "influence",
+        "reason": "Aramaic-derived letter forms supplied the Sogdian inventory and its consonantal writing conventions.",
+        "source": "https://en.wikipedia.org/wiki/Sogdian_alphabet"
+      }
+    ]
+  },
+  {
+    "id": "confucian-classics",
+    "title": "Five Classics examination corpus",
+    "wiki": "Four Books and Five Classics",
+    "year": -136,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Han institutions recognized the Five Classics as an authoritative body of texts for scholarly teaching.",
+    "parents": [
+      {
+        "id": "confucianism",
+        "type": "influence",
+        "reason": "Confucian teaching and commentary established the authority attributed to the classical texts.",
+        "source": "https://en.wikipedia.org/wiki/Four_Books_and_Five_Classics"
+      }
+    ]
+  },
+  {
+    "id": "mishnah",
+    "title": "Mishnah compilation",
+    "wiki": "Mishnah",
+    "year": 200,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Rabbinic scholars organized Jewish oral legal traditions into a written collection of topical tractates.",
+    "parents": [
+      {
+        "id": "judaism",
+        "type": "influence",
+        "reason": "Jewish oral legal interpretation supplied the rulings and debates organized into the tractates.",
+        "source": "https://en.wikipedia.org/wiki/Mishnah"
+      }
+    ]
+  },
+  {
+    "id": "ivo-canonical-collections",
+    "title": "Ivo’s canonical collections",
+    "wiki": "Ivo of Chartres",
+    "year": 1095,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Collections associated with Ivo of Chartres assembled church rulings for legal consultation and reconciliation.",
+    "parents": []
+  },
+  {
+    "id": "city-dionysia",
+    "title": "City Dionysia dramatic contests",
+    "wiki": "Dionysia",
+    "year": -534,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Athens organized festival competitions that gave tragedians a recurring setting for public performance.",
+    "parents": []
+  },
+  {
+    "id": "natya-shastra",
+    "title": "Nāṭya Śāstra performance treatise",
+    "wiki": "Natya Shastra",
+    "year": 200,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "A Sanskrit treatise systematized dramatic composition, gesture, music, and aesthetic response.",
+    "parents": []
+  },
+  {
+    "id": "partial-test-ban-treaty",
+    "title": "Partial Test Ban Treaty",
+    "wiki": "Partial Nuclear Test Ban Treaty",
+    "year": 1963,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The treaty prohibited nuclear test explosions in the atmosphere, outer space, and underwater.",
+    "parents": []
+  },
+  {
+    "id": "vienna-ozone-convention",
+    "title": "Vienna ozone convention",
+    "wiki": "Vienna Convention for the Protection of the Ozone Layer",
+    "year": 1985,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "States agreed a framework for research and cooperation on protecting the ozone layer.",
+    "parents": []
+  },
+  {
+    "id": "un-climate-convention",
+    "title": "UN climate framework convention",
+    "wiki": "United Nations Framework Convention on Climate Change",
+    "year": 1992,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The convention established continuing international negotiations and reporting on climate change.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "The UN-convened negotiation and 1992 conference provided the process for adopting the framework treaty.",
+        "source": "https://en.wikipedia.org/wiki/United_Nations_Framework_Convention_on_Climate_Change"
+      }
+    ]
+  },
+  {
+    "id": "caribbean-free-trade-association",
+    "title": "Caribbean Free Trade Association",
+    "wiki": "Caribbean Free Trade Association",
+    "year": 1968,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Caribbean governments operated a regional free-trade association later replaced by CARICOM.",
+    "parents": []
+  },
+  {
+    "id": "east-african-community-predecessor",
+    "title": "Original East African Community",
+    "wiki": "East African Community",
+    "year": 1967,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Kenya, Tanzania, and Uganda established a community to administer regional cooperation and shared services.",
+    "parents": []
+  },
+  {
+    "id": "trans-pacific-partnership",
+    "title": "Trans-Pacific Partnership agreement",
+    "wiki": "Trans-Pacific Partnership",
+    "year": 2016,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Twelve governments signed a proposed Pacific trade agreement that did not enter into force.",
+    "parents": []
+  },
+  {
+    "id": "american-rights-declaration",
+    "title": "American rights declaration",
+    "wiki": "American Declaration of the Rights and Duties of Man",
+    "year": 1948,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "American states adopted a regional declaration defining individual rights and duties.",
+    "parents": [
+      {
+        "id": "organization-american-states",
+        "type": "enabler",
+        "reason": "The founding inter-American conference adopted the declaration within the new regional organization’s framework.",
+        "source": "https://en.wikipedia.org/wiki/American_Declaration_of_the_Rights_and_Duties_of_Man"
+      }
+    ]
+  },
+  {
+    "id": "child-rights-declaration",
+    "title": "UN child-rights declaration",
+    "wiki": "Declaration of the Rights of the Child",
+    "year": 1959,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The UN adopted ten principles addressing children’s protection, development, and access to education.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "influence",
+        "reason": "The universal declaration’s protections were elaborated into principles addressing children’s particular needs.",
+        "source": "https://en.wikipedia.org/wiki/Declaration_of_the_Rights_of_the_Child"
+      }
+    ]
+  },
+  {
+    "id": "inter-caetera",
+    "title": "Inter caetera demarcation bull",
+    "wiki": "Inter caetera",
+    "year": 1493,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A papal bull asserted a demarcation of Spanish overseas claims that Spain and Portugal subsequently renegotiated.",
+    "parents": []
+  },
+  {
+    "id": "international-law-commission",
+    "title": "International Law Commission",
+    "wiki": "International Law Commission",
+    "year": 1947,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The UN established an expert commission to draft and codify international legal rules.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "foundation",
+        "reason": "The General Assembly created the commission under its Charter mandate to develop and codify international law.",
+        "source": "https://en.wikipedia.org/wiki/International_Law_Commission"
+      }
+    ]
+  },
+  {
+    "id": "oeec",
+    "title": "European recovery coordination organization",
+    "wiki": "OECD",
+    "year": 1948,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The OEEC coordinated European allocation of Marshall Plan assistance before its reconstitution as the OECD.",
+    "parents": [
+      {
+        "id": "marshall-plan",
+        "type": "enabler",
+        "reason": "The allocation and administration of European recovery aid supplied the organization’s initial operational task.",
+        "source": "https://en.wikipedia.org/wiki/OECD"
+      }
+    ]
+  },
+  {
+    "id": "sufi-devotional-practice",
+    "title": "Sufi devotional practice",
+    "wiki": "Sufism",
+    "year": 800,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Sufi communities developed disciplines of remembrance, spiritual instruction, and devotional participation.",
+    "parents": [
+      {
+        "id": "islam",
+        "type": "influence",
+        "reason": "Islamic devotional teachings supplied the concepts and religious commitments elaborated in Sufi disciplines.",
+        "source": "https://en.wikipedia.org/wiki/Sufism"
+      }
+    ]
+  },
+  {
+    "id": "binary-musical-form",
+    "title": "Binary musical form",
+    "wiki": "Binary form",
+    "year": 1600,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Composers organized pieces into two related sections, commonly repeated and linked through contrasting keys.",
+    "parents": []
+  },
+  {
+    "id": "african-american-spirituals",
+    "title": "African American spirituals",
+    "wiki": "Spirituals",
+    "year": 1750,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Enslaved African Americans developed devotional songs combining biblical subjects with communal musical practices.",
+    "parents": []
+  },
+  {
+    "id": "women-equality-declaration",
+    "title": "UN declaration on women’s equality",
+    "wiki": "Declaration on the Elimination of Discrimination Against Women",
+    "year": 1967,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The UN proclaimed principles against discrimination that preceded a binding women’s rights convention.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "influence",
+        "reason": "The declaration elaborated the universal declaration’s equal-rights principles into articles addressing discrimination against women.",
+        "source": "https://en.wikipedia.org/wiki/Declaration_on_the_Elimination_of_Discrimination_Against_Women"
+      }
+    ]
+  }
+]

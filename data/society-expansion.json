@@ -151,13 +151,7 @@
     "domain": "society",
     "kind": "practice",
     "summary": "Eligible voters decide specified public questions directly through a formal ballot.",
-    "parents": [
-      {
-        "id": "us-constitution",
-        "type": "influence",
-        "reason": "Written constitutional settlements supplied examples of foundational rules subject to public ratification."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "citizens-assembly",
@@ -729,9 +723,10 @@
     "summary": "An international treaty articulated children's rights and corresponding public responsibilities.",
     "parents": [
       {
-        "id": "universal-human-rights",
+        "id": "child-rights-declaration",
         "type": "influence",
-        "reason": "Universal rights principles were developed into obligations addressing children's circumstances."
+        "reason": "The 1959 declaration supplied child-specific principles developed into binding treaty duties.",
+        "source": "https://en.wikipedia.org/wiki/Convention_on_the_Rights_of_the_Child"
       }
     ]
   },
@@ -745,9 +740,10 @@
     "summary": "The treaty committed parties to address discrimination against women in public and private life.",
     "parents": [
       {
-        "id": "women-suffrage",
+        "id": "women-equality-declaration",
         "type": "influence",
-        "reason": "Earlier campaigns for political equality contributed to the broader movement for enforceable women's rights."
+        "reason": "The 1967 declaration supplied women-specific principles developed into the binding convention’s obligations.",
+        "source": "https://en.wikipedia.org/wiki/Declaration_on_the_Elimination_of_Discrimination_Against_Women"
       }
     ]
   },
@@ -791,13 +787,7 @@
     "domain": "society",
     "kind": "institution",
     "summary": "Consumer policy establishes protections concerning safety, information, choice, and redress.",
-    "parents": [
-      {
-        "id": "universal-human-rights",
-        "type": "influence",
-        "reason": "Rights-oriented public policy supplied a framework for articulating protections in market relationships."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "egypt-hittite-treaty",
@@ -825,9 +815,10 @@
     "summary": "Castile and Portugal negotiated a demarcation of competing claims beyond Europe.",
     "parents": [
       {
-        "id": "christianity",
+        "id": "inter-caetera",
         "type": "influence",
-        "reason": "Papal grants and mediation formed part of the diplomatic framework the two Christian monarchies renegotiated."
+        "reason": "The bull’s demarcation of claimed overseas territories supplied the line Spain and Portugal renegotiated in the treaty.",
+        "source": "https://en.wikipedia.org/wiki/Inter_caetera"
       }
     ]
   },
@@ -855,13 +846,7 @@
     "domain": "society",
     "kind": "institution",
     "summary": "A series of agreements settled major disputes arising from the War of the Spanish Succession.",
-    "parents": [
-      {
-        "id": "peace-of-westphalia",
-        "type": "influence",
-        "reason": "Earlier multilateral settlements supplied precedents for negotiating territorial and dynastic disputes together."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "paris-treaty-1763",
@@ -921,9 +906,10 @@
     "summary": "The treaty codified diplomatic functions, privileges, and immunities.",
     "parents": [
       {
-        "id": "congress-vienna",
-        "type": "influence",
-        "reason": "The congress's rules on diplomatic rank were an earlier step in codifying diplomatic practice."
+        "id": "international-law-commission",
+        "type": "enabler",
+        "reason": "The commission’s draft articles supplied the immediate text considered by the diplomatic conference.",
+        "source": "https://en.wikipedia.org/wiki/Vienna_Convention_on_Diplomatic_Relations"
       }
     ]
   },
@@ -937,9 +923,10 @@
     "summary": "The treaty codified consular functions and protections for consular personnel.",
     "parents": [
       {
-        "id": "united-nations",
+        "id": "international-law-commission",
         "type": "enabler",
-        "reason": "UN legal work and diplomatic conferences supplied the mechanism for negotiating the convention."
+        "reason": "The commission’s draft articles supplied the negotiating text for the Vienna consular conference.",
+        "source": "https://en.wikipedia.org/wiki/Vienna_Convention_on_Consular_Relations"
       }
     ]
   },
@@ -953,9 +940,10 @@
     "summary": "The convention organized rules for making, interpreting, and ending treaties between states.",
     "parents": [
       {
-        "id": "united-nations",
+        "id": "international-law-commission",
         "type": "enabler",
-        "reason": "The International Law Commission and UN conference process supported codification of treaty rules."
+        "reason": "The commission prepared draft treaty-law articles that became the basis of the 1968–1969 Vienna conference.",
+        "source": "https://en.wikipedia.org/wiki/Vienna_Convention_on_the_Law_of_Treaties"
       }
     ]
   },
@@ -1193,9 +1181,10 @@
     "summary": "A regional treaty established human-rights commitments and mechanisms for the Americas.",
     "parents": [
       {
-        "id": "universal-human-rights",
+        "id": "american-rights-declaration",
         "type": "influence",
-        "reason": "Universal rights principles informed the rights codified in the regional convention."
+        "reason": "The regional declaration supplied rights commitments elaborated into the later convention and its protection system.",
+        "source": "https://en.wikipedia.org/wiki/American_Declaration_of_the_Rights_and_Duties_of_Man"
       }
     ]
   },
@@ -1303,13 +1292,7 @@
     "domain": "society",
     "kind": "institution",
     "summary": "South American states established a regional framework for trade and economic coordination.",
-    "parents": [
-      {
-        "id": "trade",
-        "type": "enabler",
-        "reason": "Regional commercial flows created practical incentives to coordinate tariffs and market access."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "nafta",
@@ -1337,9 +1320,10 @@
     "summary": "Participating Pacific-region economies established shared trade and investment commitments.",
     "parents": [
       {
-        "id": "wto",
-        "type": "influence",
-        "reason": "Existing multilateral obligations provided a baseline supplemented by the agreement's regional rules."
+        "id": "trans-pacific-partnership",
+        "type": "foundation",
+        "reason": "The CPTPP incorporated most of the signed TPP text while suspending specified provisions.",
+        "source": "https://en.wikipedia.org/wiki/Trans-Pacific_Partnership"
       }
     ]
   },
@@ -1367,13 +1351,7 @@
     "domain": "society",
     "kind": "institution",
     "summary": "West African states established institutions for regional economic integration and cooperation.",
-    "parents": [
-      {
-        "id": "trade",
-        "type": "enabler",
-        "reason": "Cross-border commerce supplied concrete tariff and movement issues for regional coordination."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "east-african-community",
@@ -1385,9 +1363,10 @@
     "summary": "A renewed regional community organized cooperation and economic integration among East African states.",
     "parents": [
       {
-        "id": "trade",
-        "type": "enabler",
-        "reason": "Interdependent regional markets created demand for common customs and movement arrangements."
+        "id": "east-african-community-predecessor",
+        "type": "influence",
+        "reason": "The earlier community’s shared services and institutional experience supplied a regional precedent deliberately revived by the new treaty.",
+        "source": "https://en.wikipedia.org/wiki/East_African_Community"
       }
     ]
   },
@@ -1401,9 +1380,10 @@
     "summary": "Caribbean states established institutions for economic integration and regional cooperation.",
     "parents": [
       {
-        "id": "trade",
-        "type": "enabler",
-        "reason": "Commercial connections between small economies supported coordination of markets and external representation."
+        "id": "caribbean-free-trade-association",
+        "type": "foundation",
+        "reason": "CARICOM succeeded CARIFTA, extending the existing regional trade organization into a wider community.",
+        "source": "https://en.wikipedia.org/wiki/Caribbean_Free_Trade_Association"
       }
     ]
   },
@@ -1415,13 +1395,7 @@
     "domain": "society",
     "kind": "institution",
     "summary": "Participating Gulf states organized regional political and economic coordination.",
-    "parents": [
-      {
-        "id": "trade",
-        "type": "enabler",
-        "reason": "Closely connected regional markets provided recurring matters for shared economic policies."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "arab-league",
@@ -1431,13 +1405,7 @@
     "domain": "society",
     "kind": "institution",
     "summary": "Arab states established a regional organization for coordinating shared political and social concerns.",
-    "parents": [
-      {
-        "id": "writing",
-        "type": "enabler",
-        "reason": "Shared Arabic textual and administrative communication supports coordination across member states."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "opec",
@@ -1481,9 +1449,10 @@
     "summary": "A reorganized international body expanded policy cooperation beyond its European reconstruction origins.",
     "parents": [
       {
-        "id": "marshall-plan",
-        "type": "influence",
-        "reason": "European coordination of recovery assistance helped establish the organizational predecessor later reconstituted as the OECD."
+        "id": "oeec",
+        "type": "foundation",
+        "reason": "The OECD convention reconstituted the OEEC’s organization with a wider membership and mandate.",
+        "source": "https://en.wikipedia.org/wiki/OECD"
       }
     ]
   },
@@ -1511,13 +1480,7 @@
     "domain": "society",
     "kind": "institution",
     "summary": "United States and Soviet negotiations produced agreements limiting specified strategic weapons arrangements.",
-    "parents": [
-      {
-        "id": "nonproliferation-treaty",
-        "type": "influence",
-        "reason": "Existing nuclear disarmament commitments formed part of the diplomatic context for strategic-arms negotiations."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "start-treaty",
@@ -1545,9 +1508,10 @@
     "summary": "A negotiated treaty established a prohibition on nuclear explosions and an international verification framework.",
     "parents": [
       {
-        "id": "nonproliferation-treaty",
+        "id": "partial-test-ban-treaty",
         "type": "influence",
-        "reason": "Nuclear nonproliferation and disarmament commitments supplied motivations for negotiating a comprehensive test prohibition."
+        "reason": "The earlier treaty’s exclusion of underground tests left the specific gap addressed by a comprehensive prohibition.",
+        "source": "https://en.wikipedia.org/wiki/Partial_Nuclear_Test_Ban_Treaty"
       }
     ]
   },
@@ -1753,9 +1717,10 @@
     "summary": "An Indic-derived script supported Tibetan administration and religious translation.",
     "parents": [
       {
-        "id": "brahmi-script",
+        "id": "gupta-script",
         "type": "influence",
-        "reason": "Brahmi-descended Indic scripts supplied structural and graphic models adapted for Tibetan."
+        "reason": "Gupta-related northern Indian forms are the commonly identified model for Tibetan letters; precise origins remain uncertain.",
+        "source": "https://en.wikipedia.org/wiki/Tibetan_script"
       }
     ]
   },
@@ -1769,9 +1734,10 @@
     "summary": "A developed Indic script records several South Asian languages through consonant and vowel combinations.",
     "parents": [
       {
-        "id": "brahmi-script",
+        "id": "nagari-script",
         "type": "influence",
-        "reason": "The Brahmi-derived script family supplied the consonant-vowel organization inherited through later forms."
+        "reason": "Earlier Nāgarī forms developed into the consonants, vowel marks, and headline conventions of Devanagari.",
+        "source": "https://en.wikipedia.org/wiki/N%C4%81gar%C4%AB_script"
       }
     ]
   },
@@ -1817,9 +1783,10 @@
     "summary": "An Indic-derived writing system recorded Khmer inscriptions and later manuscripts.",
     "parents": [
       {
-        "id": "brahmi-script",
+        "id": "pallava-script",
         "type": "influence",
-        "reason": "Southern Brahmi-descended scripts supplied signs and consonant-vowel conventions adapted for Khmer."
+        "reason": "Pallava-derived inscriptional letters supplied forms adapted for early Khmer.",
+        "source": "https://en.wikipedia.org/wiki/Pallava_script"
       }
     ]
   },
@@ -1847,27 +1814,22 @@
     "domain": "culture",
     "kind": "technology",
     "summary": "A regional Indic-derived script supported Burmese inscriptions and literary traditions.",
-    "parents": [
-      {
-        "id": "brahmi-script",
-        "type": "influence",
-        "reason": "Brahmi-descended scripts transmitted through regional writing supplied its inherited sign organization."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "javanese-script",
     "title": "Javanese script",
     "wiki": "Javanese script",
-    "year": 800,
+    "year": 1400,
     "domain": "culture",
     "kind": "technology",
-    "summary": "Javanese writing developed through Kawi and related Indic-derived inscriptional traditions.",
+    "summary": "Later Javanese letter forms developed from Kawi for literary, administrative, and everyday writing.",
     "parents": [
       {
-        "id": "brahmi-script",
+        "id": "kawi-script",
         "type": "influence",
-        "reason": "Southern Indic script traditions supplied the ancestry and syllabic organization of early Javanese writing."
+        "reason": "Regional Kawi manuscript forms evolved into the later Javanese writing system.",
+        "source": "https://en.wikipedia.org/wiki/Javanese_script"
       }
     ]
   },
@@ -1881,9 +1843,10 @@
     "summary": "An adapted Central Asian alphabet supported Uyghur textual traditions in a vertical writing format.",
     "parents": [
       {
-        "id": "aramaic-alphabet",
+        "id": "sogdian-alphabet",
         "type": "influence",
-        "reason": "Aramaic-derived Sogdian writing transmitted the alphabetic lineage adapted into Old Uyghur."
+        "reason": "Sogdian letters were adapted and reoriented into the vertical Old Uyghur script.",
+        "source": "https://en.wikipedia.org/wiki/Old_Uyghur_alphabet"
       }
     ]
   },
@@ -1991,13 +1954,7 @@
     "domain": "culture",
     "kind": "technology",
     "summary": "A Philippine Brahmic writing tradition recorded local languages before and during early colonial contact.",
-    "parents": [
-      {
-        "id": "brahmi-script",
-        "type": "influence",
-        "reason": "Indic-derived regional writing traditions supplied its inherited consonant-vowel sign structure."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "printed-primer",
@@ -2055,13 +2012,7 @@
     "domain": "culture",
     "kind": "institution",
     "summary": "A national archival institution organized custody of public records after the French Revolution.",
-    "parents": [
-      {
-        "id": "civil-registration",
-        "type": "enabler",
-        "reason": "Established public recordkeeping supplied documentary series requiring continued custody and consultation."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "diplomatics",
@@ -2311,13 +2262,7 @@
     "domain": "culture",
     "kind": "institution",
     "summary": "Institutions organized advanced instruction directed toward technical and applied fields.",
-    "parents": [
-      {
-        "id": "apprenticeship",
-        "type": "influence",
-        "reason": "Occupational training needs supplied practical subjects developed into formal advanced curricula."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "research-university",
@@ -2697,9 +2642,10 @@
     "summary": "African American musicians developed expressive song traditions using recurring tonal and phrase conventions.",
     "parents": [
       {
-        "id": "music",
-        "type": "enabler",
-        "reason": "Work songs, spirituals, and other existing musical practices supplied performance resources reshaped into blues."
+        "id": "african-american-spirituals",
+        "type": "influence",
+        "reason": "Spirituals’ songcraft supplied vocal and musical resources reshaped alongside work songs and other sources in blues.",
+        "source": "https://en.wikipedia.org/wiki/Spirituals"
       }
     ]
   },
@@ -2729,9 +2675,10 @@
     "summary": "Christian devotional music developed prominent African American performance and composition traditions.",
     "parents": [
       {
-        "id": "christianity",
-        "type": "enabler",
-        "reason": "Church worship and religious teaching provide settings and subjects for gospel performance."
+        "id": "african-american-spirituals",
+        "type": "influence",
+        "reason": "African American spirituals supplied devotional repertoire and communal singing practices developed in gospel performance.",
+        "source": "https://en.wikipedia.org/wiki/Spirituals"
       }
     ]
   },
@@ -2825,9 +2772,10 @@
     "summary": "South Asian Sufi performance combines devotional poetry, singing, and coordinated musical response.",
     "parents": [
       {
-        "id": "islam",
+        "id": "sufi-devotional-practice",
         "type": "influence",
-        "reason": "Sufi devotional settings and concepts supply the religious purposes and textual subjects of the performance."
+        "reason": "Sufi devotional gatherings and practices of spiritual listening supplied the performance’s ritual setting and purposes.",
+        "source": "https://en.wikipedia.org/wiki/Qawwali"
       }
     ]
   },
@@ -2905,9 +2853,10 @@
     "summary": "Composers organize large instrumental movements through contrasting and returning musical materials.",
     "parents": [
       {
-        "id": "music",
-        "type": "enabler",
-        "reason": "Established tonal and thematic practices supply material organized through the form."
+        "id": "binary-musical-form",
+        "type": "influence",
+        "reason": "Baroque two-section layouts and their tonal contrast supplied formal procedures expanded in sonata movements.",
+        "source": "https://en.wikipedia.org/wiki/Binary_form"
       }
     ]
   },
@@ -2999,13 +2948,7 @@
     "domain": "culture",
     "kind": "institution",
     "summary": "Specialist institutions organize sustained training in musical performance and composition.",
-    "parents": [
-      {
-        "id": "apprenticeship",
-        "type": "influence",
-        "reason": "Supervised practical skill training supplied a model expanded through specialist courses and examinations."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "choral-society",
@@ -3111,13 +3054,7 @@
     "domain": "culture",
     "kind": "practice",
     "summary": "Kanō Jigorō organized a martial training system around selected techniques and educational aims.",
-    "parents": [
-      {
-        "id": "apprenticeship",
-        "type": "enabler",
-        "reason": "Extended supervised martial instruction supplied techniques and teaching relationships reorganized within the new system."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "karate-standardization",
@@ -3177,9 +3114,10 @@
     "summary": "Performers and institutions reshaped a South Indian dance tradition into a prominent concert form.",
     "parents": [
       {
-        "id": "sanskrit-drama",
+        "id": "natya-shastra",
         "type": "influence",
-        "reason": "Classical theories of expressive gesture and aesthetic response informed the dance's performance vocabulary."
+        "reason": "The treatise’s accounts of gesture and aesthetic response supplied a textual reference for classical dance theory.",
+        "source": "https://en.wikipedia.org/wiki/Bharatanatyam"
       }
     ]
   },
@@ -3399,13 +3337,7 @@
     "domain": "culture",
     "kind": "institution",
     "summary": "Youth organizations developed shared programs of outdoor activity, service, and practical learning.",
-    "parents": [
-      {
-        "id": "apprenticeship",
-        "type": "influence",
-        "reason": "Learning by supervised practice supplied a method adapted to staged youth skill development."
-      }
-    ]
+    "parents": []
   },
   {
     "id": "girl-guiding",

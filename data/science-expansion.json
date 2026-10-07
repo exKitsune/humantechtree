@@ -80,7 +80,8 @@
       {
         "id": "positional-numerals",
         "type": "foundation",
-        "reason": "Digit position determines powers-of-ten value."
+        "reason": "Digit position determines powers-of-ten value.",
+        "directContribution": "Decimal position directly determines each digit's value; zero separately records an empty position and cannot substitute for the place-value rule."
       }
     ]
   },
@@ -303,7 +304,8 @@
       {
         "id": "geometry",
         "type": "foundation",
-        "reason": "Surface geometry supplies the object whose curvature is measured."
+        "reason": "Surface geometry supplies the object whose curvature is measured.",
+        "directContribution": "The surface metric and its geometric distances are the objects whose curvature is defined; differential calculus separately supplies local derivative operations."
       }
     ]
   },
@@ -1078,9 +1080,9 @@
     "summary": "Cox's model compared covariate effects on event hazards without fully specifying baseline risk.",
     "parents": [
       {
-        "id": "kaplan-meier",
-        "type": "influence",
-        "reason": "Survival estimation helped establish time-to-event analysis as a clinical method."
+        "id": "maximum-likelihood",
+        "type": "foundation",
+        "reason": "Likelihood-based inference supplies the estimation framework extended by Cox's partial-likelihood construction."
       }
     ]
   },
@@ -1254,7 +1256,8 @@
       {
         "id": "calculus",
         "type": "foundation",
-        "reason": "Variational differentiation determines equations of motion."
+        "reason": "Variational differentiation determines equations of motion.",
+        "directContribution": "Variational differentiation directly yields equations from the action; Newtonian mechanics supplies the earlier dynamical theory being reformulated."
       }
     ]
   },
@@ -1334,7 +1337,8 @@
       {
         "id": "electromagnetism",
         "type": "foundation",
-        "reason": "Electric and magnetic interactions supply the fields being unified."
+        "reason": "Electric and magnetic interactions supply the fields being unified.",
+        "directContribution": "Electric and magnetic field relationships directly supply the quantities and forces unified; induction contributes one distinct relationship within that system."
       },
       {
         "id": "electromagnetic-induction",
@@ -1514,7 +1518,8 @@
       {
         "id": "special-relativity",
         "type": "foundation",
-        "reason": "Relativistic symmetry constrains the equation."
+        "reason": "Relativistic symmetry constrains the equation.",
+        "directContribution": "Lorentz-compatible dynamics directly constrains the equation; nonrelativistic quantum states alone do not supply that relativistic requirement."
       }
     ]
   },
@@ -1577,7 +1582,8 @@
       {
         "id": "quantum-mechanics",
         "type": "enabler",
-        "reason": "Atomic transition physics guides resonant scattering."
+        "reason": "Atomic transition physics guides resonant scattering.",
+        "directContribution": "Atomic energy levels and recoil directly determine resonant momentum transfer; the laser independently supplies controllable incident light."
       }
     ]
   },
@@ -1598,7 +1604,8 @@
       {
         "id": "quantum-mechanics",
         "type": "foundation",
-        "reason": "Quantum statistics permits many bosons to occupy one state."
+        "reason": "Quantum statistics permits many bosons to occupy one state.",
+        "directContribution": "Bosonic quantum statistics determines the shared-state condensation itself; laser cooling separately supplies a means of reaching low temperatures."
       }
     ]
   },
@@ -1965,7 +1972,8 @@
       {
         "id": "telescope",
         "type": "enabler",
-        "reason": "Precision stellar position measurements reveal the small annual effect."
+        "reason": "Precision stellar position measurements reveal the small annual effect.",
+        "directContribution": "Precision telescopic positions directly reveal the annual angular shift; finite light speed separately supplies the explanation of that shift."
       }
     ]
   },
@@ -2496,7 +2504,8 @@
       {
         "id": "thermodynamics",
         "type": "foundation",
-        "reason": "Heat and work relationships define the potential."
+        "reason": "Heat and work relationships define the potential.",
+        "directContribution": "Temperature, pressure, internal energy and work constraints define the thermodynamic potential; entropy supplies a separate term in that definition."
       },
       {
         "id": "entropy",
@@ -2702,7 +2711,8 @@
       {
         "id": "spectroscopy",
         "type": "foundation",
-        "reason": "Spectral signals identify the reacting molecular states."
+        "reason": "Spectral signals identify the reacting molecular states.",
+        "directContribution": "Spectral readout identifies reacting molecular states during the experiment; laser generation independently supplies the short excitation pulses."
       }
     ]
   },
@@ -2750,12 +2760,7 @@
       {
         "id": "microscope",
         "type": "foundation",
-        "reason": "Microscopy reveals cells surrounding and internalizing particles."
-      },
-      {
-        "id": "cell-theory",
-        "type": "enabler",
-        "reason": "Cells provide the units assigned a defensive biological function."
+        "reason": "Live-cell microscopy reveals particles being engulfed rather than remaining outside the cell."
       }
     ]
   },
@@ -2930,7 +2935,8 @@
       {
         "id": "recombinant-dna",
         "type": "foundation",
-        "reason": "Gene engineering installs the chimeric receptor."
+        "reason": "Gene engineering installs the chimeric receptor.",
+        "directContribution": "Engineered DNA physically installs the chimeric receptor in patient T cells; receptor identification separately supplies knowledge of antigen-recognition biology."
       }
     ]
   },
@@ -2944,14 +2950,14 @@
     "summary": "An attenuated mycobacterial vaccine supplied protection against severe forms of tuberculosis.",
     "parents": [
       {
-        "id": "vaccination",
+        "id": "vaccine-attenuation",
         "type": "foundation",
-        "reason": "Antigen exposure generates protective immune responses."
+        "reason": "Repeatedly weakening a cultured organism while preserving protective activity supplies the live-vaccine route."
       },
       {
-        "id": "bacteria",
+        "id": "pure-microbial-culture",
         "type": "foundation",
-        "reason": "Mycobacteria supply the attenuated vaccine organism."
+        "reason": "Controlled mycobacterial cultures provide the organisms subjected to serial passage."
       }
     ]
   },
@@ -2965,14 +2971,9 @@
     "summary": "Inactivated bacterial toxin induced immunity without producing diphtheria poisoning.",
     "parents": [
       {
-        "id": "vaccination",
+        "id": "toxoid-preparation",
         "type": "foundation",
-        "reason": "Prior antigen exposure supplies the protective mechanism."
-      },
-      {
-        "id": "antibodies",
-        "type": "enabler",
-        "reason": "Antitoxin research establishes the protective response to the toxin."
+        "reason": "Inactivated diphtheria toxin supplies a protective antigen without its original toxicity."
       }
     ]
   },
@@ -2986,14 +2987,9 @@
     "summary": "Detoxified tetanus toxin stimulated protective antitoxin immunity.",
     "parents": [
       {
-        "id": "vaccination",
+        "id": "toxoid-preparation",
         "type": "foundation",
-        "reason": "Immunization generates protection before infection."
-      },
-      {
-        "id": "antibodies",
-        "type": "enabler",
-        "reason": "Toxin-specific antibody responses supply the protective effect."
+        "reason": "Detoxified tetanus toxin supplies the immunizing material."
       }
     ]
   },
@@ -3007,14 +3003,9 @@
     "summary": "Inactivated influenza virus became available as a licensed preventive vaccine.",
     "parents": [
       {
-        "id": "vaccination",
+        "id": "egg-virus-culture",
         "type": "foundation",
-        "reason": "Antigen exposure establishes protective immune memory."
-      },
-      {
-        "id": "viruses",
-        "type": "foundation",
-        "reason": "Identified influenza viruses supply the vaccine antigens."
+        "reason": "Embryonated eggs provide host tissue for producing vaccine virus."
       }
     ]
   },
@@ -3028,14 +3019,14 @@
     "summary": "The attenuated 17D vaccine entered use to prevent yellow fever.",
     "parents": [
       {
-        "id": "vaccination",
+        "id": "egg-virus-culture",
         "type": "foundation",
-        "reason": "Immunization supplies protection before exposure."
+        "reason": "Serial growth in chick-embryo tissue supplies the production and attenuation route."
       },
       {
-        "id": "viruses",
+        "id": "vaccine-attenuation",
         "type": "foundation",
-        "reason": "Controlled viral attenuation supplies the vaccine agent."
+        "reason": "Controlled loss of virulence while preserving immunity supplies the live-vaccine principle."
       }
     ]
   },
@@ -3049,14 +3040,9 @@
     "summary": "Purified hepatitis B surface antigen enabled vaccination against a cancer-associated virus.",
     "parents": [
       {
-        "id": "vaccination",
+        "id": "hepatitis-b-antigen",
         "type": "foundation",
-        "reason": "Antigen-specific immune memory supplies protection."
-      },
-      {
-        "id": "viruses",
-        "type": "foundation",
-        "reason": "Viral surface antigens define the preventive target."
+        "reason": "Identified surface antigen supplies the material purified for the first vaccine."
       }
     ]
   },
@@ -3070,14 +3056,14 @@
     "summary": "Linking bacterial polysaccharide to a protein carrier improved protective responses in young children.",
     "parents": [
       {
-        "id": "vaccination",
-        "type": "foundation",
-        "reason": "The conjugated antigen trains protective immunity."
-      },
-      {
         "id": "t-b-cell-functions",
         "type": "enabler",
-        "reason": "T-cell help explains why protein-linked antigens improve antibody responses."
+        "reason": "T-cell assistance explains the improved response to protein-linked bacterial polysaccharide."
+      },
+      {
+        "id": "pneumococcal-vaccine",
+        "type": "influence",
+        "reason": "Earlier capsular-polysaccharide vaccines establish both the protective target and the limitations addressed by conjugation."
       }
     ]
   },
@@ -3091,14 +3077,9 @@
     "summary": "Capsular polysaccharides induced protection against multiple pneumococcal types.",
     "parents": [
       {
-        "id": "vaccination",
+        "id": "pneumococcus-isolation",
         "type": "foundation",
-        "reason": "Exposure to selected antigens establishes protective immunity."
-      },
-      {
-        "id": "bacteria",
-        "type": "foundation",
-        "reason": "Bacterial capsules provide the immunizing material."
+        "reason": "Defined pneumococcal strains supply the capsules selected as vaccine antigens."
       }
     ]
   },
@@ -3112,14 +3093,14 @@
     "summary": "Modern oral vaccines reduced severe rotavirus gastroenteritis in infants.",
     "parents": [
       {
-        "id": "vaccination",
+        "id": "cell-culture",
         "type": "foundation",
-        "reason": "Vaccination establishes protection before viral exposure."
+        "reason": "Cultured host cells permit vaccine-virus propagation and characterization."
       },
       {
-        "id": "viruses",
+        "id": "vaccine-attenuation",
         "type": "foundation",
-        "reason": "Rotavirus supplies the antigenic target."
+        "reason": "Weakening live virus while preserving immune stimulation supplies the oral-vaccine route."
       }
     ]
   },
@@ -3133,14 +3114,9 @@
     "summary": "Vaccination reduced shingles risk by strengthening immunity against varicella-zoster virus.",
     "parents": [
       {
-        "id": "vaccination",
+        "id": "varicella-attenuation",
         "type": "foundation",
-        "reason": "Immune stimulation supplies protection against later disease."
-      },
-      {
-        "id": "viruses",
-        "type": "foundation",
-        "reason": "The latent virus defines the target of renewed immunity."
+        "reason": "The attenuated Oka strain supplies the live virus used in the first shingles vaccine."
       }
     ]
   },
@@ -3154,14 +3130,9 @@
     "summary": "Approved vaccines provided prevention against respiratory syncytial virus disease.",
     "parents": [
       {
-        "id": "vaccination",
+        "id": "rsv-prefusion-antigen",
         "type": "foundation",
-        "reason": "Antigen presentation induces protective immunity."
-      },
-      {
-        "id": "viruses",
-        "type": "foundation",
-        "reason": "RSV surface proteins supply the vaccine targets."
+        "reason": "Stabilized prefusion F protein supplies the protective antigen in the approved protein vaccines."
       }
     ]
   },
@@ -3192,13 +3163,13 @@
     "parents": [
       {
         "id": "genetic-code",
-        "type": "foundation",
-        "reason": "Codon-to-amino-acid translation defines the adaptor function."
+        "type": "influence",
+        "reason": "The need to translate codons into amino acids defines the biological adaptor problem."
       },
       {
-        "id": "sanger-protein-sequence",
-        "type": "influence",
-        "reason": "Sequence determination established approaches adapted to biological polymers."
+        "id": "chromatography",
+        "type": "enabler",
+        "reason": "Separation of RNA-digestion fragments supports determination of the transfer-RNA sequence."
       }
     ]
   },
@@ -3228,9 +3199,9 @@
     "summary": "Enzymes were identified that join breaks in the DNA backbone.",
     "parents": [
       {
-        "id": "dna-double-helix",
-        "type": "foundation",
-        "reason": "The DNA backbone supplies the substrate whose breaks are sealed."
+        "id": "dna-polymerase",
+        "type": "influence",
+        "reason": "DNA-replication assays expose the need to join discontinuous or nicked DNA products."
       }
     ]
   },
@@ -3276,14 +3247,14 @@
     "summary": "Transferred DNA fragments were detected with sequence-specific probes.",
     "parents": [
       {
-        "id": "electrophoresis",
+        "id": "gel-electrophoresis",
         "type": "foundation",
-        "reason": "Electrophoretic separation organizes fragments by size."
+        "reason": "Gel separation organizes DNA fragments by size before transfer."
       },
       {
         "id": "dna-hybridization",
         "type": "foundation",
-        "reason": "Complementary probes identify matching fragments."
+        "reason": "Complementary probes identify matching DNA fragments."
       }
     ]
   },
@@ -3318,9 +3289,9 @@
     "summary": "Antibodies identified selected proteins after electrophoretic separation and transfer.",
     "parents": [
       {
-        "id": "electrophoresis",
+        "id": "gel-electrophoresis",
         "type": "foundation",
-        "reason": "Separation resolves proteins before detection."
+        "reason": "Gel separation resolves proteins before transfer."
       },
       {
         "id": "antibodies",
@@ -3346,7 +3317,8 @@
       {
         "id": "microscope",
         "type": "enabler",
-        "reason": "Imaging shows the probe signal's position within specimens."
+        "reason": "Imaging shows the probe signal's position within specimens.",
+        "directContribution": "Imaging directly locates the probe signal inside the specimen; complementary binding separately determines which molecular target receives that signal."
       }
     ]
   },
@@ -3478,12 +3450,12 @@
       {
         "id": "pcr",
         "type": "foundation",
-        "reason": "PCR supplies the amplification process measured in real time."
+        "reason": "PCR supplies the amplification process measured while the reaction runs."
       },
       {
-        "id": "fluorescence-microscopy",
-        "type": "influence",
-        "reason": "Fluorescent molecular detection supplied sensitive reporting methods."
+        "id": "ethidium-dna-fluorescence",
+        "type": "foundation",
+        "reason": "DNA-dependent ethidium fluorescence supplies the reporting signal used in the early real-time method."
       }
     ]
   },
@@ -3771,9 +3743,14 @@
     "summary": "Small regulatory RNAs were found to control expression through sequence-specific interactions.",
     "parents": [
       {
-        "id": "central-dogma",
+        "id": "genetic-linkage",
+        "type": "enabler",
+        "reason": "Mapping of developmental mutants localizes the regulatory locus."
+      },
+      {
+        "id": "dna-sequencing",
         "type": "foundation",
-        "reason": "RNA-mediated gene expression supplies the process regulated."
+        "reason": "Sequence analysis identifies the short non-protein-coding RNA associated with the locus."
       }
     ]
   },
@@ -3821,12 +3798,7 @@
       {
         "id": "atp-discovery",
         "type": "foundation",
-        "reason": "ATP supplies the product whose synthesis is investigated."
-      },
-      {
-        "id": "enzyme-catalysis",
-        "type": "foundation",
-        "reason": "Enzymatic activity defines the biological conversion."
+        "reason": "ATP assays identify the product formed by the isolated enzyme complex."
       }
     ]
   },
@@ -3842,12 +3814,17 @@
       {
         "id": "atp-synthase",
         "type": "foundation",
-        "reason": "ATP-producing machinery supplies the process explained."
+        "reason": "ATP-producing machinery supplies the process to be explained."
       },
       {
-        "id": "thermodynamics",
-        "type": "enabler",
-        "reason": "Free-energy differences connect ion gradients to chemical work."
+        "id": "gibbs-free-energy",
+        "type": "foundation",
+        "reason": "Free-energy differences connect an ion gradient with the work of ATP formation."
+      },
+      {
+        "id": "lipid-bilayer",
+        "type": "foundation",
+        "reason": "A selectively permeable membrane permits the electrochemical gradient to be maintained."
       }
     ]
   },
@@ -4083,14 +4060,14 @@
     "summary": "Allfrey's experiments linked acetylation of histone proteins to transcriptional activity.",
     "parents": [
       {
-        "id": "chromosomes",
+        "id": "isotope-tracers",
         "type": "foundation",
-        "reason": "Chromosomal histones supply the DNA-associated proteins whose acetylation is investigated."
+        "reason": "Labeled acetate tracks incorporation into histones and its relation to transcription."
       },
       {
-        "id": "dna-heredity",
+        "id": "chromatography",
         "type": "enabler",
-        "reason": "DNA's genetic role makes altered transcription a mechanism for regulating gene activity."
+        "reason": "Chemical separation distinguishes acetylated protein components during analysis."
       }
     ]
   },
@@ -4328,7 +4305,8 @@
       {
         "id": "optical-lens",
         "type": "foundation",
-        "reason": "A refracting lens replaces the removed natural optical element."
+        "reason": "A refracting lens replaces the removed natural optical element.",
+        "directContribution": "The implanted refracting lens physically restores focusing; surgical infection control independently permits safer implantation."
       },
       {
         "id": "aseptic-surgery",
@@ -4370,7 +4348,8 @@
       {
         "id": "optical-lens",
         "type": "foundation",
-        "reason": "Refractive optics defines the focusing correction being achieved."
+        "reason": "Focusing optics deliver a controlled laser spot to the corneal tissue being reshaped.",
+        "directContribution": "Delivery optics physically set the treatment beam's focus on the cornea; generating coherent laser light is a different contribution."
       }
     ]
   },
@@ -4442,14 +4421,14 @@
     "summary": "An adeno-associated viral vector delivered a functional gene for lipoprotein lipase deficiency.",
     "parents": [
       {
-        "id": "gene-therapy",
+        "id": "aav-gene-vector",
         "type": "foundation",
-        "reason": "Therapeutic gene delivery supplies the treatment strategy."
+        "reason": "Recombinant AAV supplies the gene-delivery vehicle used in the treatment."
       },
       {
-        "id": "viruses",
-        "type": "enabler",
-        "reason": "Viral-vector biology provides a route into patient cells."
+        "id": "gene-therapy",
+        "type": "influence",
+        "reason": "Clinical gene replacement establishes the therapeutic route adapted to lipoprotein lipase deficiency."
       }
     ]
   },
@@ -4463,14 +4442,9 @@
     "summary": "An engineered herpesvirus entered cancer treatment by selectively attacking tumors and promoting immune responses.",
     "parents": [
       {
-        "id": "recombinant-dna",
+        "id": "engineered-oncolytic-virus",
         "type": "foundation",
-        "reason": "Genetic engineering modifies the therapeutic virus."
-      },
-      {
-        "id": "viruses",
-        "type": "foundation",
-        "reason": "Viral replication supplies the tumor-directed biological agent."
+        "reason": "Genetically altered tumor-directed herpesvirus supplies the replicating therapeutic agent."
       }
     ]
   },
@@ -4595,14 +4569,9 @@
     "summary": "Blocking a viral protein-processing enzyme disrupted production of infectious HIV particles.",
     "parents": [
       {
-        "id": "hiv-identification",
-        "type": "foundation",
-        "reason": "HIV supplies the viral target."
-      },
-      {
-        "id": "enzyme-catalysis",
+        "id": "recombinant-dna",
         "type": "enabler",
-        "reason": "Enzyme inhibition provides the therapeutic mechanism."
+        "reason": "Recombinant viral protease and defined substrates support controlled inhibitor-screening assays."
       }
     ]
   },
@@ -4616,14 +4585,14 @@
     "summary": "Drugs prevented HIV DNA from integrating into the host genome.",
     "parents": [
       {
-        "id": "hiv-identification",
-        "type": "foundation",
-        "reason": "HIV biology defines the integration step targeted by treatment."
+        "id": "recombinant-dna",
+        "type": "enabler",
+        "reason": "Recombinant integrase and defined DNA substrates support assays measuring inhibition of the integration reaction."
       },
       {
-        "id": "dna-heredity",
-        "type": "enabler",
-        "reason": "DNA's genomic role explains why integration sustains infection."
+        "id": "reverse-transcriptase",
+        "type": "foundation",
+        "reason": "Reverse transcription produces the viral DNA substrate whose integration is blocked."
       }
     ]
   },
@@ -4732,14 +4701,9 @@
     "summary": "Transferred marrow-forming cells restored blood-cell production after intensive treatment.",
     "parents": [
       {
-        "id": "blood-transfusion",
+        "id": "radiotherapy",
         "type": "influence",
-        "reason": "Cell replacement through the circulation supplied an earlier therapeutic precedent."
-      },
-      {
-        "id": "cell-culture",
-        "type": "enabler",
-        "reason": "Cell-handling methods support preparation and assessment of donor material."
+        "reason": "Marrow damage after irradiation establishes the clinical need for replacement blood-forming cells."
       }
     ]
   },
@@ -5013,14 +4977,14 @@
     "summary": "Randomly layered links enabled efficient search and updates in ordered data.",
     "parents": [
       {
-        "id": "probability-theory",
+        "id": "linked-list",
         "type": "foundation",
-        "reason": "Random level selection controls the expected search cost."
+        "reason": "Linked ordered records supply the structure extended with higher-level shortcuts."
       },
       {
-        "id": "computer",
+        "id": "probability-theory",
         "type": "foundation",
-        "reason": "Pointer-based stored structures implement the linked layers."
+        "reason": "Randomly chosen levels determine expected search depth."
       }
     ]
   },
@@ -5050,9 +5014,9 @@
     "summary": "Local rotations maintained logarithmic search depth after updates.",
     "parents": [
       {
-        "id": "computer",
+        "id": "binary-search-tree",
         "type": "foundation",
-        "reason": "Stored linked nodes and executable rotations implement the balanced structure."
+        "reason": "Ordered binary branching supplies the search structure kept balanced by rotations."
       }
     ]
   },
@@ -5098,9 +5062,14 @@
     "summary": "Recursive partitioning around pivots efficiently ordered stored values.",
     "parents": [
       {
-        "id": "computer",
+        "id": "program-recursion",
         "type": "foundation",
-        "reason": "Array access and repeated comparisons execute the partitioning process."
+        "reason": "Recursive partition subproblems organize the repeated sorting procedure."
+      },
+      {
+        "id": "computer",
+        "type": "enabler",
+        "reason": "Addressable arrays and comparisons execute the partitioning operations."
       }
     ]
   },
@@ -5305,9 +5274,9 @@
     "summary": "Logic clauses and automated inference expressed programs through relations rather than command sequences.",
     "parents": [
       {
-        "id": "artificial-intelligence",
-        "type": "influence",
-        "reason": "Symbolic reasoning tasks motivated executable logical representations."
+        "id": "predicate-logic",
+        "type": "foundation",
+        "reason": "Logical clauses and unification express the relations executed by the interpreter."
       }
     ]
   },
@@ -5379,9 +5348,9 @@
     "summary": "An interpreted language emphasized readable syntax and flexible general-purpose programming.",
     "parents": [
       {
-        "id": "structured-programming",
+        "id": "abc-language",
         "type": "influence",
-        "reason": "Explicit blocks and disciplined control shaped the language's organization."
+        "reason": "ABC's readable interactive syntax and high-level data operations shape Python's design."
       }
     ]
   },
@@ -5427,9 +5396,9 @@
     "summary": "Ownership-based checks supported systems programming with stronger memory-safety guarantees.",
     "parents": [
       {
-        "id": "c-language",
+        "id": "cpp-language",
         "type": "influence",
-        "reason": "Systems-language requirements motivated low-level control with safer resource handling."
+        "reason": "C++-style systems-programming requirements inform low-level control and abstraction choices."
       }
     ]
   },
@@ -5724,14 +5693,9 @@
     "summary": "A shared character standard represented text from many writing systems in digital form.",
     "parents": [
       {
-        "id": "writing",
-        "type": "foundation",
-        "reason": "Written scripts supply the characters being encoded."
-      },
-      {
         "id": "computer",
         "type": "enabler",
-        "reason": "Digital systems require interoperable numerical character representations."
+        "reason": "Digital text processing creates a direct need for interoperable numerical character representations."
       }
     ]
   },
@@ -5809,14 +5773,9 @@
     "summary": "Distributed version history supported branching and collaboration across complete local repositories.",
     "parents": [
       {
-        "id": "sccs-version-control",
-        "type": "influence",
-        "reason": "Earlier revision systems established tracked history as a development tool."
-      },
-      {
-        "id": "cryptographic-hash",
-        "type": "enabler",
-        "reason": "Content digests identify and verify stored objects."
+        "id": "merkle-tree",
+        "type": "foundation",
+        "reason": "Hash-linked content structures permit independent verification and identification of stored history objects."
       }
     ]
   },
@@ -5864,7 +5823,8 @@
       {
         "id": "computer",
         "type": "foundation",
-        "reason": "Programmable machines execute partitioned transformations."
+        "reason": "Programmable machines execute partitioned transformations.",
+        "directContribution": "Processors directly execute each partition's transformations; network communication separately transfers tasks and results among those processors."
       },
       {
         "id": "internet",
@@ -5994,14 +5954,15 @@
     "summary": "Ensembles of randomized decision trees improved prediction through aggregated results.",
     "parents": [
       {
-        "id": "probability-theory",
+        "id": "decision-tree-learning",
         "type": "foundation",
-        "reason": "Randomized sampling and feature choices diversify the ensemble."
+        "reason": "Trainable classification trees supply the ensemble's component models."
       },
       {
-        "id": "computer",
+        "id": "probability-theory",
         "type": "enabler",
-        "reason": "Computation trains and evaluates many trees."
+        "reason": "Random resampling and feature selection diversify the component trees.",
+        "directContribution": "Random sample and feature selection directly diversify the forest; entropy-based splitting separately determines choices inside a component tree."
       }
     ]
   },
@@ -6015,9 +5976,14 @@
     "summary": "Gated recurrent units retained useful sequence information across long spans.",
     "parents": [
       {
+        "id": "recurrent-neural-networks",
+        "type": "foundation",
+        "reason": "Recurrent state supplies sequence memory to which the gates are added."
+      },
+      {
         "id": "backpropagation",
         "type": "foundation",
-        "reason": "Gradient-based learning trains recurrent network parameters."
+        "reason": "Gradient propagation trains the recurrent and gating parameters."
       }
     ]
   },
