@@ -1,5 +1,5 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
-const files = ['engineering', 'science', 'society']
+const files = ['engineering', 'science', 'society', 'engineering-expansion', 'science-expansion', 'society-expansion']
 const nodes = (await Promise.all(files.map(async f => JSON.parse(await readFile(`data/${f}.json`, 'utf8'))))).flat()
 let extra = []
 try { extra = JSON.parse(await readFile('data/connections.json', 'utf8')) } catch (error) { if (error.code !== 'ENOENT') throw error }

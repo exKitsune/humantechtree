@@ -6,7 +6,7 @@ import { createScene, planFrame, spatialIndex, hitTest, MAX_CARDS, MAX_MARKS, MA
 import { multiplyCatalog } from './fixtures.mjs'
 
 const { nodes } = JSON.parse(await readFile(new URL('../public/data/catalog.json', import.meta.url), 'utf8'))
-const large = multiplyCatalog(nodes, 20)
+const large = multiplyCatalog(nodes, Math.ceil(20000 / nodes.length)).slice(0, 20000)
 const start = performance.now()
 const layout = await layoutGraph(large)
 const arranged = performance.now()
@@ -27,7 +27,14 @@ test('20,000 nodes stay in the ten branch bands with prerequisites advancing rig
 })
 
 test('overview retains every node in aggregates, without mounting cards or edges', () => {
-  for (const level of scene.levels) assert.equal(level.marks.reduce((sum, m) => sum + m.count, 0), 20000)
+  for (const level of scene.levels) {
+    assert.equal(level.marks.reduce((sum, m) => sum + m.count, 0), 20000)
+    for (const mark of level.marks) {
+      const era = layout.timeBands.find(era => era.id === mark.era)
+      assert(mark.minX >= era.x && mark.maxX <= era.x + era.width)
+      assert(mark.cx >= era.x && mark.cx <= era.x + era.width)
+    }
+  }
   const frame = planFrame(scene, fit, 1200, 800, '0:microscope')
   assert.equal(frame.mode, 'density')
   assert.equal(frame.cards.length, 0)

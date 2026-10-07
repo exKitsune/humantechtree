@@ -1,6 +1,6 @@
 # Humanity — the technology tree
 
-A purely exploratory atlas of **1,000 human capabilities**: discoveries, tools, machines, infrastructure, institutions, and cultural practices. Built with Svelte 5, TypeScript, Vite, and Svelte Flow. The industrial interface takes inspiration from Factorio; it uses no Factorio assets.
+A purely exploratory atlas of **2,000 human capabilities**: discoveries, tools, machines, infrastructure, institutions, and cultural practices. Built with Svelte 5, TypeScript, Vite, and Svelte Flow. The industrial interface takes inspiration from Factorio; it uses no Factorio assets.
 
 ## Run locally
 
@@ -40,11 +40,11 @@ Connections answer **“How did this help make that possible?”** They are dire
 | Enabling condition | A capability or institution that supported development, adoption, or scale. |
 | Historical influence | An earlier idea or practice that shaped a particular development. |
 
-This is not a game, an unlock system, or a universal sequence every society must follow. Religion, treaties, and institutions are first-class subjects; they are never presumed to be universal requirements for technological development. Nodes are arranged in dependency layers, with approximate dates displayed, rather than a proportional chronological axis. Era names are navigation aids and do not describe every region's periodization.
+This is not a game, an unlock system, or a universal sequence every society must follow. Religion, treaties, and institutions are first-class subjects; they are never presumed to be universal requirements for technological development. Nodes occupy chronological periods that expand with their population, rather than a proportional time axis. Same-period prerequisites advance through additional columns. Dates are approximate milestones. Era names are navigation aids and do not describe every region's periodization.
 
-The layout is calculated from the current view's nodes and connections in a local web worker. The ten existing branches form horizontal bands; prerequisites advance from left to right. Band heights and the space between columns grow with the visible nodes and their connections. Starting points remain inside their own branches.
+The layout is calculated from the current view's nodes and connections in a local web worker. The ten existing branches form horizontal bands; prerequisites advance from left to right. Vertical bands use the same eras as the filters. The displayed population determines their subdivisions: periods with more than 24 capabilities split by powers of ten down to individual years. Single years expand into extra columns, with at most six cards from a branch in one column. Empty periods use no columns. Date boundaries, widths, branch heights, and routing corridors are recalculated whenever the displayed graph changes; adding catalog entries requires no hand-positioned bands. Starting points remain inside their own branches.
 
-Each node's outbound relationships are routed together as an ordered fan-out. Destination bands, columns and heights determine the attachment-point order and nested routing tracks. Long links use reserved horizontal corridors above the cards. Links from the same source remain separate without crossing or touching; unrelated sources can still cross, with a visual break distinguishing crossings from junctions. Filtering or changing the focused neighborhood recalculates the arrangement. Panning and zooming keep positions stable, and the canvas has no pan boundary. **Fit visible tree** includes the entire current view and its routed connections. Click a band label to fit that branch's area.
+Each node's outbound relationships are routed together as an ordered fan-out. Destination bands, columns and heights determine the attachment-point order and nested routing tracks. Long links use reserved horizontal corridors above the cards. Links from the same source remain separate without crossing or touching; unrelated sources can still cross, with a visual break distinguishing crossings from junctions. Filtering or changing the focused neighborhood recalculates the arrangement. Panning and zooming keep positions stable. Dragging, scrolling, keyboard commands, zoom controls and minimap navigation stop at the occupied cards and routed detours plus a 240-world-unit margin on all four sides. A viewport larger than that area centers it. **Fit visible tree** includes the entire current view and its routed connections. Click a branch, era or date label to fit its area. Cyan dashed enablers, pink dotted influences and amber foundations retain their colors even when unselected, with screen-sized strokes and dark crossing outlines.
 
 An article reference is not a dependency. Importing more Wikipedia content will not automatically establish useful prerequisites. Nodes without parents may be starting points or incomplete research; nodes without any links need further editorial connections. Filters can also hide an otherwise connected node's neighbors.
 
@@ -54,21 +54,24 @@ The canvas uses three levels of detail: aggregate counts at overview scale, ligh
 
 Node and edge spatial indexes avoid scanning the full graph every frame. Density levels are built once per layout; canvas drawing is coalesced with animation frames. At most 120 DOM cards are mounted, with budgets of 1,800 raster marks and 700 routed links. Dense views switch detail levels rather than mounting more cards. Overview hides individual links; intermediate views can show only the selected node's connections, as indicated on the canvas. The minimap is also a raster surface.
 
-`npm test` includes a synthetic 20,000-node / 23,280-link fixture, aggregate-count conservation, viewport picking, rendering budgets and fan-out geometry. With `npm run dev` running, open `/tests/benchmark.html` for an interactive 1,000–50,000-node fixture using the same graph component. The fixture and measurements do not enter the production build. Browser checks have also exercised 50,000 synthetic nodes; this is not a claim that all Wikipedia articles have been incorporated or that arbitrary million-node graphs are validated.
+`npm test` includes a synthetic 20,000-node fixture, aggregate-count conservation, viewport picking, rendering budgets and fan-out geometry. With `npm run dev` running, open `/tests/benchmark.html` for an interactive 1,000–50,000-node fixture using the same graph component. The fixture and measurements do not enter the production build. Browser checks have also exercised 50,000 synthetic nodes; this is not a claim that all Wikipedia articles have been incorporated or that arbitrary million-node graphs are validated.
 
 ## Catalog and editorial status
 
 - `data/engineering.json`: 400 material, machine, energy, transport, and food entries.
 - `data/science.json`: 350 science, medicine, and information entries.
 - `data/society.json`: 250 institutional and cultural entries.
+- `data/*-expansion.json`: another 400 engineering/material/energy/transport/food, 350 science/medicine/information, and 250 society/culture entries.
 - `data/connections.json`: explicit cross-domain contributions.
 - `public/data/catalog.json`: compiled, static application data.
 - `public/data/wikipedia.json`: cached article identifiers, Wikimedia image URLs, and attribution metadata.
 - `public/data/offline-index.json`: article matches in the local ZIM, once imported.
 
-Edit the source catalogs, then run `npm run data:compile` to update the local preview. Production builds also compile the catalogs automatically. Every edge must name an existing node, carry a relationship type, and explain a specific contribution. Validation checks uniqueness, schema, references, and cycles. It **does not establish historical truth**.
+The expansion brings the catalog to 2,000 nodes and 2,302 explained connections; all 2,000 article references resolve in the local archive. Every new entry has at least one incoming connection.
 
-The first edition is an editorial draft. Dates are approximate milestones, not always the earliest instance worldwide. Relationships are proposed interpretations awaiting individual source review. A resolved Wikipedia URL or offline article match only proves that the reference exists. Treat disputed origins, independent inventions, and socially contingent claims with particular care.
+Edit the source catalogs, then run `npm run data:compile` to update the local preview. Production builds also compile the catalogs automatically. Every edge must name an existing node, carry a relationship type, and explain a specific contribution. Validation checks unique IDs and titles, schema, references, chronological direction, and cycles. It **does not establish historical truth**.
+
+The expanded catalog is an editorial draft. Dates are approximate milestones, not always the earliest instance worldwide. Relationships are proposed interpretations awaiting individual source review. A resolved Wikipedia URL or offline article match only proves that the reference exists. Treat disputed origins, independent inventions, and socially contingent claims with particular care.
 
 ## Offline-first research
 
@@ -97,7 +100,7 @@ The importer writes article text to ignored `.cache/wiki-research/` for local re
 
 ## Images and attribution
 
-Pictures point directly at Wikimedia's CDN. `npm run data:enrich` performs **cached, throttled metadata-only requests** for article IDs, image locations, artists, and licenses. It does not fetch article bodies or scrape article pages. It runs manually, never during the normal build or in visitors' browsers. Existing results are reused; changed titles are refreshed. Use `-- --ids=microscope,bacteria --refresh` for a focused update.
+Pictures point directly at Wikimedia's CDN. `npm run data:enrich` performs **cached, throttled metadata-only requests** for article IDs, image locations, artists, and licenses. It does not fetch article bodies or scrape article pages. It runs manually, never during the normal build or in visitors' browsers. Existing results are reused; changed titles are refreshed. On Windows installations using the system certificate store, use `node --use-system-ca scripts/enrich-wikipedia.mjs` with a current Node 22 release. Use `-- --ids=microscope,bacteria --refresh` for a focused update.
 
 Some articles have no suitable lead image. These use a category symbol. Loading failures also degrade to that symbol, keeping navigation usable. Wikimedia images retain their original individual licenses, with credits and source-page links displayed beside the picture. Wikipedia article text remains attributable to its contributors under its applicable license; locally extracted text is research material, not included in the deployed bundle. Original catalog prose is not copied from Wikipedia introductions.
 
@@ -105,4 +108,4 @@ The frontend works if image hosts are unavailable. External images and fonts req
 
 ## Project structure
 
-`src/App.svelte` owns browsing state and panels; `src/lib/Graph.svelte` owns the canvas and controls. `src/lib/graph.js` contains neighborhood, search, and filter functions. `src/lib/layout.js` places the bands and dependency columns; `src/lib/fanout.js` orders outbound ports and routes. `src/lib/layout-client.js` and `src/lib/layout.worker.js` manage background layout and recent-view caching. `src/lib/scene.js` builds spatial indexes and chooses detail levels; `src/lib/draw-scene.js` draws the raster layers. `src/lib/config.ts` defines domains, eras, and relation labels.
+`src/App.svelte` owns browsing state and panels; `src/lib/Graph.svelte` owns the canvas and controls. `src/lib/graph.js` contains neighborhood, search, and filter functions. `src/lib/timeline.js` subdivides eras and allocates date columns; `src/lib/layout.js` places cards and bands; `src/lib/fanout.js` orders outbound ports and routes. `src/lib/layout-client.js` and `src/lib/layout.worker.js` manage background layout and recent-view caching. `src/lib/scene.js` builds spatial indexes and chooses detail levels; `src/lib/draw-scene.js` draws the raster layers. `src/lib/viewport.js` defines bounded navigation. `src/lib/config.ts` defines domains and relation labels; era definitions are shared with the worker through `timeline.js`.

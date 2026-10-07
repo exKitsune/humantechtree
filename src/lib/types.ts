@@ -31,10 +31,13 @@ export type Catalog = { nodes: Capability[]; generated: string; version: number 
 export type Point = { x: number; y: number }
 export type LayoutPort = Point & { id: string; type: 'source' | 'target' }
 export type LayoutNode = Point & { id: string; domain: Domain; rank: number; width: number; height: number; ports: LayoutPort[] }
+export type TimePeriod = { id: string; label: string; min: number; max: number; count: number; x: number; width: number }
+export type TimeBand = TimePeriod & { subdivisions: TimePeriod[] }
 export type GraphLayout = {
   nodes: LayoutNode[]
   edges: { id: string; source: string; target: string; type: Relation; sourceHandle: string; targetHandle: string; points: Point[] }[]
   bands: { id: Domain; y: number; height: number; count: number }[]
+  timeBands: TimeBand[]
   width: number
   height: number
 }

@@ -1,0 +1,4002 @@
+[
+  {
+    "id": "jury-trial",
+    "title": "Jury trial",
+    "wiki": "Jury trial",
+    "year": 1166,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Groups of lay participants assess facts within formal legal proceedings.",
+    "parents": [
+      {
+        "id": "common-law",
+        "type": "enabler",
+        "reason": "Royal court procedures supplied the legal setting in which English jury trials developed."
+      }
+    ]
+  },
+  {
+    "id": "equity-jurisdiction",
+    "title": "Equity jurisdiction",
+    "wiki": "Equity (law)",
+    "year": 1485,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Equity courts developed remedies addressing claims poorly served by ordinary common-law procedures.",
+    "parents": [
+      {
+        "id": "common-law",
+        "type": "influence",
+        "reason": "Limits of common-law remedies motivated a complementary jurisdiction for petitions and relief."
+      }
+    ]
+  },
+  {
+    "id": "judicial-review",
+    "title": "Constitutional judicial review",
+    "wiki": "Judicial review",
+    "year": 1803,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Courts can examine whether government actions comply with a governing constitution.",
+    "parents": [
+      {
+        "id": "us-constitution",
+        "type": "enabler",
+        "reason": "A written allocation of government powers supplied a standard against which courts could assess legislation."
+      }
+    ]
+  },
+  {
+    "id": "separation-powers",
+    "title": "Separation of powers",
+    "wiki": "Separation of powers",
+    "year": 1748,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Political theory distinguishes legislative, executive, and judicial functions to constrain concentrated authority.",
+    "parents": [
+      {
+        "id": "roman-republic",
+        "type": "influence",
+        "reason": "Classical accounts of mixed republican institutions informed later arguments about divided authority."
+      }
+    ]
+  },
+  {
+    "id": "ombudsman-office",
+    "title": "Parliamentary ombudsman",
+    "wiki": "Ombudsman",
+    "year": 1809,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "An independent parliamentary official investigates complaints about public administration.",
+    "parents": [
+      {
+        "id": "parliament",
+        "type": "enabler",
+        "reason": "Representative oversight supplies an institutional base independent of the executive being investigated."
+      }
+    ]
+  },
+  {
+    "id": "press-freedom-act",
+    "title": "Swedish Freedom of the Press Act",
+    "wiki": "Swedish Freedom of the Press Act",
+    "year": 1766,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Swedish legislation protected publication and established access to official documents.",
+    "parents": [
+      {
+        "id": "printing-press",
+        "type": "enabler",
+        "reason": "A substantial printed public sphere created the publishing activity protected by the act."
+      }
+    ]
+  },
+  {
+    "id": "freedom-information",
+    "title": "Freedom of information law",
+    "wiki": "Freedom of information laws by country",
+    "year": 1766,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Legal access rights allow people to request specified records held by public authorities.",
+    "parents": [
+      {
+        "id": "press-freedom-act",
+        "type": "foundation",
+        "reason": "The Swedish act supplied an early statutory right to consult public documents."
+      }
+    ]
+  },
+  {
+    "id": "secret-ballot",
+    "title": "Secret ballot",
+    "wiki": "Secret ballot",
+    "year": 1856,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Private voting procedures reduce opportunities for coercion based on how an individual votes.",
+    "parents": [
+      {
+        "id": "parliament",
+        "type": "enabler",
+        "reason": "Representative elections supplied the decision process reorganized through private ballot casting."
+      }
+    ]
+  },
+  {
+    "id": "proportional-representation",
+    "title": "Proportional parliamentary representation",
+    "wiki": "Proportional representation",
+    "year": 1899,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Electoral rules allocate seats in relation to participating groups' shares of votes.",
+    "parents": [
+      {
+        "id": "parliament",
+        "type": "enabler",
+        "reason": "Representative assemblies provide the seats and constituencies distributed through proportional rules."
+      }
+    ]
+  },
+  {
+    "id": "popular-referendum",
+    "title": "Constitutional referendums",
+    "wiki": "Referendum",
+    "year": 1848,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Eligible voters decide specified public questions directly through a formal ballot.",
+    "parents": [
+      {
+        "id": "us-constitution",
+        "type": "influence",
+        "reason": "Written constitutional settlements supplied examples of foundational rules subject to public ratification."
+      }
+    ]
+  },
+  {
+    "id": "citizens-assembly",
+    "title": "Citizens' assemblies",
+    "wiki": "Citizens' assembly",
+    "year": 2004,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Selected members of the public deliberate together and recommend responses to policy questions.",
+    "parents": [
+      {
+        "id": "parliament",
+        "type": "enabler",
+        "reason": "Representative governments can commission deliberative bodies and consider their recommendations."
+      }
+    ]
+  },
+  {
+    "id": "participatory-budgeting",
+    "title": "Participatory budgeting",
+    "wiki": "Participatory budgeting",
+    "year": 1989,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Residents take part in deciding how defined portions of public budgets are spent.",
+    "parents": [
+      {
+        "id": "taxation",
+        "type": "enabler",
+        "reason": "Public revenues provide the resources allocated through the participatory process."
+      }
+    ]
+  },
+  {
+    "id": "petition-right",
+    "title": "Right of petition",
+    "wiki": "Right to petition",
+    "year": 1689,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A protected petition allows people to request action or redress from public authorities.",
+    "parents": [
+      {
+        "id": "bill-rights",
+        "type": "enabler",
+        "reason": "The English rights settlement expressly protected petitioning against official retaliation."
+      }
+    ]
+  },
+  {
+    "id": "legal-aid",
+    "title": "Organized legal aid",
+    "wiki": "Legal aid",
+    "year": 1851,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Supported legal services improve access to representation for people unable to pay ordinary fees.",
+    "parents": [
+      {
+        "id": "common-law",
+        "type": "enabler",
+        "reason": "Formal court procedures create situations in which knowledgeable legal assistance affects access to remedies."
+      }
+    ]
+  },
+  {
+    "id": "public-defender",
+    "title": "Public defender offices",
+    "wiki": "Public defender",
+    "year": 1914,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Publicly supported lawyers represent eligible defendants in criminal proceedings.",
+    "parents": [
+      {
+        "id": "legal-aid",
+        "type": "influence",
+        "reason": "Organized assistance for people unable to afford counsel supplied a precedent for public criminal defense."
+      }
+    ]
+  },
+  {
+    "id": "civil-marriage",
+    "title": "Civil marriage",
+    "wiki": "Civil marriage",
+    "year": 1792,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Public law recognizes marriages through a civil procedure independent of religious solemnization.",
+    "parents": [
+      {
+        "id": "civil-registration",
+        "type": "enabler",
+        "reason": "Official registers provide a means to record and verify marital status."
+      }
+    ]
+  },
+  {
+    "id": "civil-registration",
+    "title": "Civil registration",
+    "wiki": "Civil registration",
+    "year": 1539,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Authorities maintain systematic official records of births, deaths, and other civil-status events.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Persistent written registers make individual civil-status records retrievable over time."
+      }
+    ]
+  },
+  {
+    "id": "passport-system",
+    "title": "Passports",
+    "wiki": "Passport",
+    "year": 1414,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Authorities issue travel documents identifying holders and requesting or authorizing passage.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Authenticated written documents communicate identity and permission across administrative boundaries."
+      }
+    ]
+  },
+  {
+    "id": "civil-code",
+    "title": "Napoleonic Civil Code",
+    "wiki": "Napoleonic Code",
+    "year": 1804,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A national legal compilation organized rules governing persons, property, and private obligations.",
+    "parents": [
+      {
+        "id": "justinian-code",
+        "type": "influence",
+        "reason": "Roman legal categories transmitted through civil-law traditions informed the code's organization."
+      }
+    ]
+  },
+  {
+    "id": "nationality-law",
+    "title": "Codified nationality law",
+    "wiki": "Nationality law",
+    "year": 1804,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Legal rules determine membership in a state and how that status is acquired or lost.",
+    "parents": [
+      {
+        "id": "civil-code",
+        "type": "enabler",
+        "reason": "Civil codification provided an organized legal framework for defining nationality and civil status."
+      }
+    ]
+  },
+  {
+    "id": "constitutional-monarchy",
+    "title": "Constitutional monarchy",
+    "wiki": "Constitutional monarchy",
+    "year": 1689,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Constitutional rules limit royal authority and specify its relationship with other governing institutions.",
+    "parents": [
+      {
+        "id": "bill-rights",
+        "type": "enabler",
+        "reason": "Statutory limits on royal powers supplied an important English constitutional settlement."
+      }
+    ]
+  },
+  {
+    "id": "federal-government",
+    "title": "Constitutional federal government",
+    "wiki": "Federalism",
+    "year": 1787,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A constitutional framework divides governing powers between a central authority and constituent units.",
+    "parents": [
+      {
+        "id": "us-constitution",
+        "type": "enabler",
+        "reason": "The constitution specified a durable allocation of authority between federal and state governments."
+      }
+    ]
+  },
+  {
+    "id": "municipal-corporations-reform",
+    "title": "Municipal Corporations Act reform",
+    "wiki": "Municipal Corporations Act 1835",
+    "year": 1835,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "British legislation reorganized many municipal corporations around elected councils and administrative rules.",
+    "parents": [
+      {
+        "id": "town-charter",
+        "type": "influence",
+        "reason": "Existing chartered corporations supplied the local institutions reformed by the statute."
+      }
+    ]
+  },
+  {
+    "id": "metropolitan-police",
+    "title": "Metropolitan Police Service",
+    "wiki": "Metropolitan Police",
+    "year": 1829,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "London established a professional civilian force organized for regular policing.",
+    "parents": [
+      {
+        "id": "taxation",
+        "type": "enabler",
+        "reason": "Public funding sustained salaried personnel and a continuing administrative organization."
+      }
+    ]
+  },
+  {
+    "id": "prison-reform",
+    "title": "Organized prison reform",
+    "wiki": "Prison reform",
+    "year": 1787,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Reform associations investigated confinement and advocated changes to treatment and prison conditions.",
+    "parents": [
+      {
+        "id": "publishing",
+        "type": "enabler",
+        "reason": "Published inspections and reform arguments carried information about prison conditions to wider audiences."
+      }
+    ]
+  },
+  {
+    "id": "emergency-number",
+    "title": "Public emergency telephone number",
+    "wiki": "Emergency telephone number",
+    "year": 1937,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A designated telephone number connects callers with emergency-response coordination.",
+    "parents": [
+      {
+        "id": "telephone",
+        "type": "enabler",
+        "reason": "Telephone networks allow people to request urgent assistance without traveling to a response office."
+      }
+    ]
+  },
+  {
+    "id": "insurance-fire-brigades",
+    "title": "Insurance-funded fire brigades",
+    "wiki": "History of firefighting",
+    "year": 1680,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Insurers organized firefighting services to reduce losses among covered properties.",
+    "parents": [
+      {
+        "id": "insurance",
+        "type": "enabler",
+        "reason": "Pooled premiums and exposure to fire losses supported funding dedicated response personnel."
+      }
+    ]
+  },
+  {
+    "id": "public-park",
+    "title": "Public urban parks",
+    "wiki": "Urban park",
+    "year": 1847,
+    "domain": "society",
+    "kind": "infrastructure",
+    "summary": "Publicly accessible landscaped spaces provide recreation within growing urban settlements.",
+    "parents": [
+      {
+        "id": "cities",
+        "type": "enabler",
+        "reason": "Dense urban settlement created demand for shared open spaces and public recreation."
+      }
+    ]
+  },
+  {
+    "id": "planning-law",
+    "title": "Statutory town planning",
+    "wiki": "Urban planning",
+    "year": 1909,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Planning legislation coordinates future land use and settlement development through public procedures.",
+    "parents": [
+      {
+        "id": "municipal-corporations-reform",
+        "type": "enabler",
+        "reason": "Organized local governments provide bodies able to prepare and administer development plans."
+      }
+    ]
+  },
+  {
+    "id": "zoning",
+    "title": "Land-use zoning",
+    "wiki": "Zoning",
+    "year": 1916,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Public rules distinguish areas by permitted development and land uses.",
+    "parents": [
+      {
+        "id": "planning-law",
+        "type": "enabler",
+        "reason": "Statutory planning powers provide a framework for applying spatial rules to development."
+      }
+    ]
+  },
+  {
+    "id": "tenant-right-counsel",
+    "title": "Tenant right to counsel",
+    "wiki": "Tenant right to counsel",
+    "year": 2017,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Local laws provide eligible tenants with legal representation in eviction proceedings.",
+    "parents": [
+      {
+        "id": "legal-aid",
+        "type": "foundation",
+        "reason": "Organized assistance for people unable to afford counsel supplies the service model applied to eviction defense."
+      }
+    ]
+  },
+  {
+    "id": "national-park",
+    "title": "National parks",
+    "wiki": "National park",
+    "year": 1872,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Public authorities designate areas for conservation and managed public enjoyment.",
+    "parents": [
+      {
+        "id": "public-park",
+        "type": "influence",
+        "reason": "Public reservation of landscapes for shared enjoyment provided a precedent expanded to larger natural areas."
+      }
+    ]
+  },
+  {
+    "id": "community-land-trust",
+    "title": "Community land trusts",
+    "wiki": "Community land trust",
+    "year": 1969,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Community organizations hold land to support durable local access and shared stewardship.",
+    "parents": [
+      {
+        "id": "cooperative",
+        "type": "influence",
+        "reason": "Shared ownership and member governance supplied models for organizing community control of land."
+      }
+    ]
+  },
+  {
+    "id": "social-housing",
+    "title": "Publicly supported housing programs",
+    "wiki": "Public housing",
+    "year": 1919,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Public programs fund or provide housing under defined affordability and allocation rules.",
+    "parents": [
+      {
+        "id": "municipal-corporations-reform",
+        "type": "enabler",
+        "reason": "Local public bodies supplied organizations able to commission and manage housing."
+      }
+    ]
+  },
+  {
+    "id": "housing-cooperative",
+    "title": "Housing cooperatives",
+    "wiki": "Housing cooperative",
+    "year": 1900,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Residents collectively govern an organization that owns or manages their housing.",
+    "parents": [
+      {
+        "id": "cooperative",
+        "type": "foundation",
+        "reason": "Member ownership and shared governance supply the organizational model applied to housing."
+      }
+    ]
+  },
+  {
+    "id": "unemployment-insurance",
+    "title": "Statutory unemployment insurance",
+    "wiki": "Unemployment benefits",
+    "year": 1911,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Contribution-based programs provide specified income support during qualifying periods of unemployment.",
+    "parents": [
+      {
+        "id": "social-insurance",
+        "type": "influence",
+        "reason": "Earlier statutory insurance demonstrated how contributions could fund benefits against defined risks."
+      }
+    ]
+  },
+  {
+    "id": "public-pension",
+    "title": "Public old-age pensions",
+    "wiki": "Pension",
+    "year": 1889,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Statutory programs organize income support for qualifying older people.",
+    "parents": [
+      {
+        "id": "social-insurance",
+        "type": "enabler",
+        "reason": "Contribution collection and risk-pooling administration supplied machinery for statutory retirement benefits."
+      }
+    ]
+  },
+  {
+    "id": "minimum-wage",
+    "title": "Statutory minimum wages",
+    "wiki": "Minimum wage",
+    "year": 1894,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Public rules establish a wage floor for specified employment.",
+    "parents": [
+      {
+        "id": "trade-union",
+        "type": "influence",
+        "reason": "Worker organizing and campaigns over low pay helped place minimum standards on legislative agendas."
+      }
+    ]
+  },
+  {
+    "id": "eight-hour-convention",
+    "title": "Eight-hour working-day standards",
+    "wiki": "Eight-hour day movement",
+    "year": 1919,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "International labor standards limited working hours in specified forms of industrial employment.",
+    "parents": [
+      {
+        "id": "ilo",
+        "type": "enabler",
+        "reason": "Tripartite negotiations produced an early convention addressing hours of work."
+      }
+    ]
+  },
+  {
+    "id": "paid-leave",
+    "title": "Statutory paid annual leave",
+    "wiki": "Annual leave",
+    "year": 1936,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Labor law grants eligible workers time away from work with continued pay.",
+    "parents": [
+      {
+        "id": "collective-bargaining",
+        "type": "influence",
+        "reason": "Negotiated employment benefits and labor organizing helped establish paid holidays as a policy demand."
+      }
+    ]
+  },
+  {
+    "id": "factory-child-protection",
+    "title": "Factory Act child protections",
+    "wiki": "Factory Act 1833",
+    "year": 1833,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "British factory legislation limited children's work and introduced an inspection system.",
+    "parents": [
+      {
+        "id": "parliament",
+        "type": "enabler",
+        "reason": "Legislation supplied enforceable rules and authority for inspecting covered workplaces."
+      }
+    ]
+  },
+  {
+    "id": "maternity-protection",
+    "title": "Maternity protection standards",
+    "wiki": "Maternity Protection Convention, 1919",
+    "year": 1919,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "International labor standards established specified leave and protection around childbirth.",
+    "parents": [
+      {
+        "id": "ilo",
+        "type": "enabler",
+        "reason": "The organization's first conference provided the forum for adopting maternity standards."
+      }
+    ]
+  },
+  {
+    "id": "disability-rights-convention",
+    "title": "Convention on the Rights of Persons with Disabilities",
+    "wiki": "Convention on the Rights of Persons with Disabilities",
+    "year": 2006,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The treaty established rights commitments concerning accessibility, equality, and participation for disabled people.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "influence",
+        "reason": "Universal rights provided the framework developed into disability-specific treaty obligations."
+      }
+    ]
+  },
+  {
+    "id": "marriage-equality",
+    "title": "Civil marriage equality",
+    "wiki": "Same-sex marriage",
+    "year": 2001,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Legal reforms extended civil marriage to couples of the same sex.",
+    "parents": [
+      {
+        "id": "civil-marriage",
+        "type": "enabler",
+        "reason": "Civil marriage law supplied the legal institution whose eligibility rules were expanded."
+      }
+    ]
+  },
+  {
+    "id": "racial-discrimination-convention",
+    "title": "Convention against racial discrimination",
+    "wiki": "International Convention on the Elimination of All Forms of Racial Discrimination",
+    "year": 1965,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The treaty committed parties to measures against racial discrimination.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "influence",
+        "reason": "Universal equality and nondiscrimination principles informed the treaty's commitments."
+      }
+    ]
+  },
+  {
+    "id": "child-rights-convention",
+    "title": "Convention on the Rights of the Child",
+    "wiki": "Convention on the Rights of the Child",
+    "year": 1989,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "An international treaty articulated children's rights and corresponding public responsibilities.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "influence",
+        "reason": "Universal rights principles were developed into obligations addressing children's circumstances."
+      }
+    ]
+  },
+  {
+    "id": "women-rights-convention",
+    "title": "Convention on women's equality",
+    "wiki": "Convention on the Elimination of All Forms of Discrimination Against Women",
+    "year": 1979,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The treaty committed parties to address discrimination against women in public and private life.",
+    "parents": [
+      {
+        "id": "women-suffrage",
+        "type": "influence",
+        "reason": "Earlier campaigns for political equality contributed to the broader movement for enforceable women's rights."
+      }
+    ]
+  },
+  {
+    "id": "indigenous-rights-declaration",
+    "title": "Declaration on the Rights of Indigenous Peoples",
+    "wiki": "Declaration on the Rights of Indigenous Peoples",
+    "year": 2007,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The declaration articulated collective and individual rights of Indigenous peoples.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "UN negotiation and adoption procedures supplied the international forum for the declaration."
+      }
+    ]
+  },
+  {
+    "id": "data-protection-convention",
+    "title": "International data-protection convention",
+    "wiki": "Convention for the Protection of Individuals with Regard to Automatic Processing of Personal Data",
+    "year": 1981,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A Council of Europe treaty established protections governing automated personal-data processing.",
+    "parents": [
+      {
+        "id": "european-human-rights",
+        "type": "influence",
+        "reason": "Regional privacy and rights commitments supplied a legal basis for data-specific protections."
+      }
+    ]
+  },
+  {
+    "id": "consumer-rights",
+    "title": "Consumer rights policy",
+    "wiki": "Consumer protection",
+    "year": 1962,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Consumer policy establishes protections concerning safety, information, choice, and redress.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "influence",
+        "reason": "Rights-oriented public policy supplied a framework for articulating protections in market relationships."
+      }
+    ]
+  },
+  {
+    "id": "egypt-hittite-treaty",
+    "title": "Egyptian–Hittite peace treaty",
+    "wiki": "Egyptian–Hittite peace treaty",
+    "year": -1259,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Egyptian and Hittite rulers recorded reciprocal peace, assistance, and extradition commitments.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Written versions preserved diplomatic obligations for officials in both political traditions."
+      }
+    ]
+  },
+  {
+    "id": "tordesillas-treaty",
+    "title": "Treaty of Tordesillas",
+    "wiki": "Treaty of Tordesillas",
+    "year": 1494,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Castile and Portugal negotiated a demarcation of competing claims beyond Europe.",
+    "parents": [
+      {
+        "id": "christianity",
+        "type": "influence",
+        "reason": "Papal grants and mediation formed part of the diplomatic framework the two Christian monarchies renegotiated."
+      }
+    ]
+  },
+  {
+    "id": "zaragoza-treaty",
+    "title": "Treaty of Zaragoza",
+    "wiki": "Treaty of Zaragoza",
+    "year": 1529,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Portugal and Castile negotiated the eastern division of their competing overseas claims.",
+    "parents": [
+      {
+        "id": "tordesillas-treaty",
+        "type": "foundation",
+        "reason": "The earlier division of claims created the unresolved opposite-side demarcation addressed at Zaragoza."
+      }
+    ]
+  },
+  {
+    "id": "utrecht-peace",
+    "title": "Peace of Utrecht",
+    "wiki": "Peace of Utrecht",
+    "year": 1713,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A series of agreements settled major disputes arising from the War of the Spanish Succession.",
+    "parents": [
+      {
+        "id": "peace-of-westphalia",
+        "type": "influence",
+        "reason": "Earlier multilateral settlements supplied precedents for negotiating territorial and dynastic disputes together."
+      }
+    ]
+  },
+  {
+    "id": "paris-treaty-1763",
+    "title": "Treaty of Paris of 1763",
+    "wiki": "Treaty of Paris (1763)",
+    "year": 1763,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The treaty redistributed colonial territories after the Seven Years' War.",
+    "parents": [
+      {
+        "id": "utrecht-peace",
+        "type": "influence",
+        "reason": "Earlier colonial and commercial settlements supplied claims and treaty relationships renegotiated after the war."
+      }
+    ]
+  },
+  {
+    "id": "paris-treaty-1783",
+    "title": "Treaty of Paris of 1783",
+    "wiki": "Treaty of Paris (1783)",
+    "year": 1783,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Britain recognized United States independence and agreed territorial and other settlement terms.",
+    "parents": [
+      {
+        "id": "paris-treaty-1763",
+        "type": "influence",
+        "reason": "The earlier settlement defined much of the North American territorial context revised by the independence treaty."
+      }
+    ]
+  },
+  {
+    "id": "ghent-treaty",
+    "title": "Treaty of Ghent",
+    "wiki": "Treaty of Ghent",
+    "year": 1814,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Britain and the United States agreed to end the War of 1812 and restore occupied territories.",
+    "parents": [
+      {
+        "id": "paris-treaty-1783",
+        "type": "influence",
+        "reason": "Prior recognition and boundary agreements supplied a baseline for restoring relations between the parties."
+      }
+    ]
+  },
+  {
+    "id": "diplomatic-relations-convention",
+    "title": "Vienna Convention on Diplomatic Relations",
+    "wiki": "Vienna Convention on Diplomatic Relations",
+    "year": 1961,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The treaty codified diplomatic functions, privileges, and immunities.",
+    "parents": [
+      {
+        "id": "congress-vienna",
+        "type": "influence",
+        "reason": "The congress's rules on diplomatic rank were an earlier step in codifying diplomatic practice."
+      }
+    ]
+  },
+  {
+    "id": "consular-relations-convention",
+    "title": "Vienna Convention on Consular Relations",
+    "wiki": "Vienna Convention on Consular Relations",
+    "year": 1963,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The treaty codified consular functions and protections for consular personnel.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "UN legal work and diplomatic conferences supplied the mechanism for negotiating the convention."
+      }
+    ]
+  },
+  {
+    "id": "law-treaties-convention",
+    "title": "Vienna Convention on the Law of Treaties",
+    "wiki": "Vienna Convention on the Law of Treaties",
+    "year": 1969,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The convention organized rules for making, interpreting, and ending treaties between states.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "The International Law Commission and UN conference process supported codification of treaty rules."
+      }
+    ]
+  },
+  {
+    "id": "law-sea-convention",
+    "title": "United Nations Convention on the Law of the Sea",
+    "wiki": "United Nations Convention on the Law of the Sea",
+    "year": 1982,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A comprehensive treaty allocated maritime rights and established rules for ocean uses.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "Successive UN negotiations provided a forum for coordinating maritime jurisdictions and obligations."
+      }
+    ]
+  },
+  {
+    "id": "refugee-convention",
+    "title": "Refugee Convention",
+    "wiki": "Convention Relating to the Status of Refugees",
+    "year": 1951,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The treaty defined refugee status and specified protections owed to qualifying refugees.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "influence",
+        "reason": "Recognition of asylum and fundamental rights informed the development of refugee protections."
+      }
+    ]
+  },
+  {
+    "id": "stateless-persons-convention",
+    "title": "Convention on stateless persons",
+    "wiki": "Convention Relating to the Status of Stateless Persons",
+    "year": 1954,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A treaty established a legal status and specified protections for qualifying stateless people.",
+    "parents": [
+      {
+        "id": "refugee-convention",
+        "type": "influence",
+        "reason": "Refugee protections supplied a parallel legal model while leaving non-refugee stateless people outside their scope."
+      }
+    ]
+  },
+  {
+    "id": "statelessness-reduction-convention",
+    "title": "Convention on the Reduction of Statelessness",
+    "wiki": "Convention on the Reduction of Statelessness",
+    "year": 1961,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The treaty set nationality rules intended to prevent and reduce statelessness.",
+    "parents": [
+      {
+        "id": "stateless-persons-convention",
+        "type": "influence",
+        "reason": "Earlier protection of stateless people supplied a complementary framework to prevention through nationality rules."
+      }
+    ]
+  },
+  {
+    "id": "civil-political-covenant",
+    "title": "Covenant on Civil and Political Rights",
+    "wiki": "International Covenant on Civil and Political Rights",
+    "year": 1966,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The covenant established treaty obligations concerning civil and political rights.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "foundation",
+        "reason": "The declaration's civil and political rights were developed into binding obligations for treaty parties."
+      }
+    ]
+  },
+  {
+    "id": "economic-social-covenant",
+    "title": "Covenant on Economic, Social and Cultural Rights",
+    "wiki": "International Covenant on Economic, Social and Cultural Rights",
+    "year": 1966,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The covenant established commitments concerning work, social protection, education, health, and culture.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "foundation",
+        "reason": "The declaration's social and economic rights supplied principles developed into treaty commitments."
+      }
+    ]
+  },
+  {
+    "id": "torture-convention",
+    "title": "Convention against Torture",
+    "wiki": "United Nations Convention Against Torture",
+    "year": 1984,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The treaty committed parties to prevent torture and address specified related abuses.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "influence",
+        "reason": "The declaration's prohibition of torture supplied a principle elaborated through prevention and accountability duties."
+      }
+    ]
+  },
+  {
+    "id": "disappearance-convention",
+    "title": "Convention against enforced disappearance",
+    "wiki": "International Convention for the Protection of All Persons from Enforced Disappearance",
+    "year": 2006,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The treaty established obligations addressing enforced disappearance and affected people's rights.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "UN negotiations provided the international process for defining and adopting treaty commitments."
+      }
+    ]
+  },
+  {
+    "id": "migrant-workers-convention",
+    "title": "Migrant Workers Convention",
+    "wiki": "Migrant Workers Convention",
+    "year": 1990,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The convention articulated rights protections for migrant workers and their families.",
+    "parents": [
+      {
+        "id": "ilo",
+        "type": "influence",
+        "reason": "Earlier international labor standards helped establish the rights and working conditions of migrants as a treaty concern."
+      }
+    ]
+  },
+  {
+    "id": "international-criminal-court",
+    "title": "International Criminal Court",
+    "wiki": "International Criminal Court",
+    "year": 1998,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The Rome Statute established a permanent court for specified serious international crimes.",
+    "parents": [
+      {
+        "id": "genocide-convention",
+        "type": "influence",
+        "reason": "The convention's definition and punishment commitments helped shape the international crime addressed by the court."
+      }
+    ]
+  },
+  {
+    "id": "permanent-international-court",
+    "title": "Permanent Court of International Justice",
+    "wiki": "Permanent Court of International Justice",
+    "year": 1922,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A permanent international court heard disputes and issued advisory opinions within the League-era system.",
+    "parents": [
+      {
+        "id": "league-nations",
+        "type": "enabler",
+        "reason": "The League framework provided the authority and institutional arrangements for establishing the court."
+      }
+    ]
+  },
+  {
+    "id": "international-court-justice",
+    "title": "International Court of Justice",
+    "wiki": "International Court of Justice",
+    "year": 1945,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The UN's principal judicial organ adjudicates eligible interstate disputes and gives advisory opinions.",
+    "parents": [
+      {
+        "id": "permanent-international-court",
+        "type": "influence",
+        "reason": "The predecessor's statute and judicial experience informed the new court's design."
+      }
+    ]
+  },
+  {
+    "id": "european-social-charter",
+    "title": "European Social Charter",
+    "wiki": "European Social Charter",
+    "year": 1961,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A regional treaty articulated employment and social rights alongside European civil-rights commitments.",
+    "parents": [
+      {
+        "id": "european-human-rights",
+        "type": "influence",
+        "reason": "The existing regional rights system supplied a framework complemented by social and economic protections."
+      }
+    ]
+  },
+  {
+    "id": "african-human-rights-charter",
+    "title": "African Charter on Human and Peoples' Rights",
+    "wiki": "African Charter on Human and Peoples' Rights",
+    "year": 1981,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The charter articulated individual and peoples' rights within an African regional system.",
+    "parents": [
+      {
+        "id": "organization-african-unity",
+        "type": "enabler",
+        "reason": "The continental organization provided the negotiating forum and adoption process for the charter."
+      }
+    ]
+  },
+  {
+    "id": "american-human-rights-convention",
+    "title": "American Convention on Human Rights",
+    "wiki": "American Convention on Human Rights",
+    "year": 1969,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A regional treaty established human-rights commitments and mechanisms for the Americas.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "influence",
+        "reason": "Universal rights principles informed the rights codified in the regional convention."
+      }
+    ]
+  },
+  {
+    "id": "organization-american-states",
+    "title": "Organization of American States",
+    "wiki": "Organization of American States",
+    "year": 1948,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "American states organized regional cooperation and institutions through a shared charter.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "influence",
+        "reason": "The UN Charter's regional-arrangements framework informed the organization's international role."
+      }
+    ]
+  },
+  {
+    "id": "helsinki-final-act",
+    "title": "Helsinki Final Act",
+    "wiki": "Helsinki Accords",
+    "year": 1975,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Participating states recorded commitments concerning security, cooperation, and human rights.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "influence",
+        "reason": "Established human-rights principles supplied content for the act's rights commitments."
+      }
+    ]
+  },
+  {
+    "id": "good-friday-agreement",
+    "title": "Good Friday Agreement",
+    "wiki": "Good Friday Agreement",
+    "year": 1998,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Linked agreements established power-sharing and cooperation arrangements for Northern Ireland.",
+    "parents": [
+      {
+        "id": "european-human-rights",
+        "type": "enabler",
+        "reason": "European rights commitments supplied explicit safeguards within the settlement's institutional arrangements."
+      }
+    ]
+  },
+  {
+    "id": "schengen-agreement",
+    "title": "Schengen Agreement",
+    "wiki": "Schengen Agreement",
+    "year": 1985,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Participating European states agreed to reduce checks at their shared borders.",
+    "parents": [
+      {
+        "id": "european-economic-community",
+        "type": "enabler",
+        "reason": "Existing economic integration created demand and cooperation channels for easier movement between participating states."
+      }
+    ]
+  },
+  {
+    "id": "maastricht-treaty",
+    "title": "Maastricht Treaty",
+    "wiki": "Maastricht Treaty",
+    "year": 1992,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "European governments established the European Union and agreed further integration commitments.",
+    "parents": [
+      {
+        "id": "european-economic-community",
+        "type": "foundation",
+        "reason": "Existing community institutions were reorganized within the new union framework."
+      }
+    ]
+  },
+  {
+    "id": "lisbon-treaty",
+    "title": "Treaty of Lisbon",
+    "wiki": "Treaty of Lisbon",
+    "year": 2007,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The treaty revised European Union institutions and decision procedures.",
+    "parents": [
+      {
+        "id": "maastricht-treaty",
+        "type": "foundation",
+        "reason": "The existing union and its treaty structure supplied the institutions amended at Lisbon."
+      }
+    ]
+  },
+  {
+    "id": "mercosur",
+    "title": "Mercosur",
+    "wiki": "Mercosur",
+    "year": 1991,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "South American states established a regional framework for trade and economic coordination.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Regional commercial flows created practical incentives to coordinate tariffs and market access."
+      }
+    ]
+  },
+  {
+    "id": "nafta",
+    "title": "North American Free Trade Agreement",
+    "wiki": "North American Free Trade Agreement",
+    "year": 1992,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The agreement set regional commitments governing trade and investment among three North American countries.",
+    "parents": [
+      {
+        "id": "gatt",
+        "type": "influence",
+        "reason": "Multilateral trade rules provided an existing baseline for the regional agreement's market-access commitments."
+      }
+    ]
+  },
+  {
+    "id": "cptpp",
+    "title": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership",
+    "wiki": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership",
+    "year": 2018,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Participating Pacific-region economies established shared trade and investment commitments.",
+    "parents": [
+      {
+        "id": "wto",
+        "type": "influence",
+        "reason": "Existing multilateral obligations provided a baseline supplemented by the agreement's regional rules."
+      }
+    ]
+  },
+  {
+    "id": "rcep",
+    "title": "Regional Comprehensive Economic Partnership",
+    "wiki": "Regional Comprehensive Economic Partnership",
+    "year": 2020,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "An Asia-Pacific agreement coordinated trade rules across participating economies.",
+    "parents": [
+      {
+        "id": "asean",
+        "type": "enabler",
+        "reason": "ASEAN-led negotiations supplied the regional process through which participating states reached the agreement."
+      }
+    ]
+  },
+  {
+    "id": "ecowas",
+    "title": "Economic Community of West African States",
+    "wiki": "ECOWAS",
+    "year": 1975,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "West African states established institutions for regional economic integration and cooperation.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Cross-border commerce supplied concrete tariff and movement issues for regional coordination."
+      }
+    ]
+  },
+  {
+    "id": "east-african-community",
+    "title": "East African Community",
+    "wiki": "East African Community",
+    "year": 2000,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A renewed regional community organized cooperation and economic integration among East African states.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Interdependent regional markets created demand for common customs and movement arrangements."
+      }
+    ]
+  },
+  {
+    "id": "caricom",
+    "title": "Caribbean Community",
+    "wiki": "Caribbean Community",
+    "year": 1973,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Caribbean states established institutions for economic integration and regional cooperation.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Commercial connections between small economies supported coordination of markets and external representation."
+      }
+    ]
+  },
+  {
+    "id": "gulf-cooperation-council",
+    "title": "Gulf Cooperation Council",
+    "wiki": "Gulf Cooperation Council",
+    "year": 1981,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Participating Gulf states organized regional political and economic coordination.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Closely connected regional markets provided recurring matters for shared economic policies."
+      }
+    ]
+  },
+  {
+    "id": "arab-league",
+    "title": "Arab League",
+    "wiki": "Arab League",
+    "year": 1945,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Arab states established a regional organization for coordinating shared political and social concerns.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Shared Arabic textual and administrative communication supports coordination across member states."
+      }
+    ]
+  },
+  {
+    "id": "opec",
+    "title": "Organization of the Petroleum Exporting Countries",
+    "wiki": "OPEC",
+    "year": 1960,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Petroleum-exporting states formed an organization to coordinate policies affecting oil markets.",
+    "parents": [
+      {
+        "id": "oil-well",
+        "type": "enabler",
+        "reason": "Commercial oil extraction created the export revenues and production interests represented by the organization."
+      }
+    ]
+  },
+  {
+    "id": "marshall-plan",
+    "title": "Marshall Plan",
+    "wiki": "Marshall Plan",
+    "year": 1948,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A United States assistance program supported European economic reconstruction.",
+    "parents": [
+      {
+        "id": "bretton-woods",
+        "type": "enabler",
+        "reason": "Postwar monetary and reconstruction institutions supported the financial environment for recovery programs."
+      }
+    ]
+  },
+  {
+    "id": "oecd",
+    "title": "Organisation for Economic Co-operation and Development",
+    "wiki": "OECD",
+    "year": 1961,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A reorganized international body expanded policy cooperation beyond its European reconstruction origins.",
+    "parents": [
+      {
+        "id": "marshall-plan",
+        "type": "influence",
+        "reason": "European coordination of recovery assistance helped establish the organizational predecessor later reconstituted as the OECD."
+      }
+    ]
+  },
+  {
+    "id": "council-europe",
+    "title": "Council of Europe",
+    "wiki": "Council of Europe",
+    "year": 1949,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "European states created a regional organization focused on rights, democracy, and legal cooperation.",
+    "parents": [
+      {
+        "id": "universal-human-rights",
+        "type": "influence",
+        "reason": "Postwar universal-rights principles informed the organization's rights-oriented cooperation."
+      }
+    ]
+  },
+  {
+    "id": "salt-agreements",
+    "title": "Strategic Arms Limitation Talks agreements",
+    "wiki": "Strategic Arms Limitation Talks",
+    "year": 1972,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "United States and Soviet negotiations produced agreements limiting specified strategic weapons arrangements.",
+    "parents": [
+      {
+        "id": "nonproliferation-treaty",
+        "type": "influence",
+        "reason": "Existing nuclear disarmament commitments formed part of the diplomatic context for strategic-arms negotiations."
+      }
+    ]
+  },
+  {
+    "id": "start-treaty",
+    "title": "Strategic Arms Reduction Treaty",
+    "wiki": "START I",
+    "year": 1991,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A bilateral treaty established verified reductions in specified strategic nuclear weapons.",
+    "parents": [
+      {
+        "id": "salt-agreements",
+        "type": "influence",
+        "reason": "Earlier strategic-arms negotiations supplied procedures and categories developed further in reduction talks."
+      }
+    ]
+  },
+  {
+    "id": "comprehensive-test-ban",
+    "title": "Comprehensive Nuclear-Test-Ban Treaty",
+    "wiki": "Comprehensive Nuclear-Test-Ban Treaty",
+    "year": 1996,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A negotiated treaty established a prohibition on nuclear explosions and an international verification framework.",
+    "parents": [
+      {
+        "id": "nonproliferation-treaty",
+        "type": "influence",
+        "reason": "Nuclear nonproliferation and disarmament commitments supplied motivations for negotiating a comprehensive test prohibition."
+      }
+    ]
+  },
+  {
+    "id": "ottawa-treaty",
+    "title": "Ottawa Treaty",
+    "wiki": "Ottawa Treaty",
+    "year": 1997,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The treaty prohibited specified anti-personnel mines and established clearance and assistance obligations.",
+    "parents": [
+      {
+        "id": "geneva-conventions",
+        "type": "influence",
+        "reason": "Humanitarian protections for conflict-affected people informed arguments for prohibiting indiscriminate mine effects."
+      }
+    ]
+  },
+  {
+    "id": "cluster-munitions-convention",
+    "title": "Convention on Cluster Munitions",
+    "wiki": "Convention on Cluster Munitions",
+    "year": 2008,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "The convention prohibited specified cluster munitions and established clearance and victim-assistance commitments.",
+    "parents": [
+      {
+        "id": "ottawa-treaty",
+        "type": "influence",
+        "reason": "The mine-ban process supplied a negotiating and advocacy model for a further humanitarian weapons prohibition."
+      }
+    ]
+  },
+  {
+    "id": "proto-sinaitic-script",
+    "title": "Proto-Sinaitic alphabetic writing",
+    "wiki": "Proto-Sinaitic script",
+    "year": -1800,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Early alphabetic signs adapted pictorial forms to represent sounds in a Semitic language.",
+    "parents": [
+      {
+        "id": "egyptian-hieroglyphs",
+        "type": "influence",
+        "reason": "Egyptian sign shapes supplied forms adapted through an acrophonic interpretation."
+      }
+    ]
+  },
+  {
+    "id": "ugaritic-alphabet",
+    "title": "Ugaritic alphabet",
+    "wiki": "Ugaritic alphabet",
+    "year": -1400,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "An alphabetic sign system recorded Ugaritic with cuneiform-shaped characters.",
+    "parents": [
+      {
+        "id": "cuneiform",
+        "type": "influence",
+        "reason": "Established wedge-shaped writing supplied the graphic medium adapted to an alphabetic inventory."
+      }
+    ]
+  },
+  {
+    "id": "old-persian-script",
+    "title": "Old Persian cuneiform",
+    "wiki": "Old Persian cuneiform",
+    "year": -520,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A relatively compact sign system recorded Old Persian in Achaemenid royal inscriptions.",
+    "parents": [
+      {
+        "id": "cuneiform",
+        "type": "influence",
+        "reason": "Mesopotamian wedge-sign writing provided an established inscriptional model for the newly designed script."
+      }
+    ]
+  },
+  {
+    "id": "sanskrit-grammar",
+    "title": "Pāṇinian Sanskrit grammar",
+    "wiki": "Aṣṭādhyāyī",
+    "year": -350,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A compact rule system described Sanskrit forms and their derivation with exceptional systematic detail.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Memorized teaching and recitation preserved the concise rules within Sanskrit scholarly transmission."
+      }
+    ]
+  },
+  {
+    "id": "hebrew-alphabet",
+    "title": "Hebrew alphabet",
+    "wiki": "Hebrew alphabet",
+    "year": -200,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A consonantal letter tradition recorded Hebrew and several other Jewish languages.",
+    "parents": [
+      {
+        "id": "aramaic-alphabet",
+        "type": "foundation",
+        "reason": "Aramaic-derived letter forms supplied the basis of the square Hebrew script."
+      }
+    ]
+  },
+  {
+    "id": "syriac-alphabet",
+    "title": "Syriac alphabet",
+    "wiki": "Syriac alphabet",
+    "year": 100,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "An Aramaic-derived alphabet supported Syriac religious and literary writing.",
+    "parents": [
+      {
+        "id": "aramaic-alphabet",
+        "type": "foundation",
+        "reason": "Regional Aramaic writing supplied the letter tradition developed into Syriac forms."
+      }
+    ]
+  },
+  {
+    "id": "armenian-alphabet",
+    "title": "Armenian alphabet",
+    "wiki": "Armenian alphabet",
+    "year": 405,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A dedicated alphabet enabled extensive Armenian translation and literary composition.",
+    "parents": [
+      {
+        "id": "christianity",
+        "type": "enabler",
+        "reason": "Christian teaching and translation needs helped motivate creation and adoption of an Armenian script."
+      }
+    ]
+  },
+  {
+    "id": "georgian-scripts",
+    "title": "Georgian scripts",
+    "wiki": "Georgian scripts",
+    "year": 430,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Distinct Georgian writing forms supported religious texts and a durable literary tradition.",
+    "parents": [
+      {
+        "id": "christianity",
+        "type": "enabler",
+        "reason": "Christian textual translation and inscription supplied important early settings for Georgian literacy."
+      }
+    ]
+  },
+  {
+    "id": "cyrillic-script",
+    "title": "Early Cyrillic writing",
+    "wiki": "Cyrillic script",
+    "year": 900,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A Greek-derived alphabet with additional signs supported Slavic written languages.",
+    "parents": [
+      {
+        "id": "greek-alphabet",
+        "type": "foundation",
+        "reason": "Greek letter forms supplied much of the alphabet, supplemented for Slavic sounds."
+      }
+    ]
+  },
+  {
+    "id": "glagolitic-script",
+    "title": "Glagolitic alphabet",
+    "wiki": "Glagolitic script",
+    "year": 863,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A designed alphabet supported Slavic translation and liturgical writing.",
+    "parents": [
+      {
+        "id": "christianity",
+        "type": "enabler",
+        "reason": "Missionary translation of religious texts created the immediate need for a Slavic writing system."
+      }
+    ]
+  },
+  {
+    "id": "tibetan-alphabet",
+    "title": "Tibetan alphabet",
+    "wiki": "Tibetan script",
+    "year": 650,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "An Indic-derived script supported Tibetan administration and religious translation.",
+    "parents": [
+      {
+        "id": "brahmi-script",
+        "type": "influence",
+        "reason": "Brahmi-descended Indic scripts supplied structural and graphic models adapted for Tibetan."
+      }
+    ]
+  },
+  {
+    "id": "devanagari-script",
+    "title": "Devanagari",
+    "wiki": "Devanagari",
+    "year": 1000,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A developed Indic script records several South Asian languages through consonant and vowel combinations.",
+    "parents": [
+      {
+        "id": "brahmi-script",
+        "type": "influence",
+        "reason": "The Brahmi-derived script family supplied the consonant-vowel organization inherited through later forms."
+      }
+    ]
+  },
+  {
+    "id": "tamil-brahmi",
+    "title": "Tamil-Brahmi writing",
+    "wiki": "Tamil-Brahmi",
+    "year": -200,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Adapted Brahmi signs recorded early Tamil inscriptions.",
+    "parents": [
+      {
+        "id": "brahmi-script",
+        "type": "foundation",
+        "reason": "Brahmi signs and spelling conventions were modified to represent Tamil sounds."
+      }
+    ]
+  },
+  {
+    "id": "sinhala-script",
+    "title": "Sinhala script",
+    "wiki": "Sinhala script",
+    "year": 200,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A Brahmi-descended writing tradition records Sinhala and supports Sri Lankan textual culture.",
+    "parents": [
+      {
+        "id": "brahmi-script",
+        "type": "influence",
+        "reason": "Early Brahmi inscriptions supplied the script lineage from which Sinhala forms developed."
+      }
+    ]
+  },
+  {
+    "id": "khmer-script",
+    "title": "Khmer script",
+    "wiki": "Khmer script",
+    "year": 600,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "An Indic-derived writing system recorded Khmer inscriptions and later manuscripts.",
+    "parents": [
+      {
+        "id": "brahmi-script",
+        "type": "influence",
+        "reason": "Southern Brahmi-descended scripts supplied signs and consonant-vowel conventions adapted for Khmer."
+      }
+    ]
+  },
+  {
+    "id": "thai-script",
+    "title": "Thai script",
+    "wiki": "Thai script",
+    "year": 1283,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "An adapted regional script records Thai with consonants, vowels, and tone notation.",
+    "parents": [
+      {
+        "id": "khmer-script",
+        "type": "foundation",
+        "reason": "Old Khmer letter forms supplied a major graphic basis for the Thai alphabet."
+      }
+    ]
+  },
+  {
+    "id": "burmese-script",
+    "title": "Burmese script",
+    "wiki": "Burmese alphabet",
+    "year": 1100,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A regional Indic-derived script supported Burmese inscriptions and literary traditions.",
+    "parents": [
+      {
+        "id": "brahmi-script",
+        "type": "influence",
+        "reason": "Brahmi-descended scripts transmitted through regional writing supplied its inherited sign organization."
+      }
+    ]
+  },
+  {
+    "id": "javanese-script",
+    "title": "Javanese script",
+    "wiki": "Javanese script",
+    "year": 800,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Javanese writing developed through Kawi and related Indic-derived inscriptional traditions.",
+    "parents": [
+      {
+        "id": "brahmi-script",
+        "type": "influence",
+        "reason": "Southern Indic script traditions supplied the ancestry and syllabic organization of early Javanese writing."
+      }
+    ]
+  },
+  {
+    "id": "old-uyghur-script",
+    "title": "Old Uyghur script",
+    "wiki": "Old Uyghur script",
+    "year": 800,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "An adapted Central Asian alphabet supported Uyghur textual traditions in a vertical writing format.",
+    "parents": [
+      {
+        "id": "aramaic-alphabet",
+        "type": "influence",
+        "reason": "Aramaic-derived Sogdian writing transmitted the alphabetic lineage adapted into Old Uyghur."
+      }
+    ]
+  },
+  {
+    "id": "mongolian-script",
+    "title": "Traditional Mongolian script",
+    "wiki": "Mongolian script",
+    "year": 1204,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A vertical alphabet supported Mongolian administrative and literary writing.",
+    "parents": [
+      {
+        "id": "old-uyghur-script",
+        "type": "foundation",
+        "reason": "Old Uyghur writing supplied the alphabet adapted to record Mongolian."
+      }
+    ]
+  },
+  {
+    "id": "manchu-script",
+    "title": "Manchu alphabet",
+    "wiki": "Manchu alphabet",
+    "year": 1599,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "An adapted Mongolian alphabet enabled written Manchu administration and translation.",
+    "parents": [
+      {
+        "id": "mongolian-script",
+        "type": "foundation",
+        "reason": "Mongolian letter forms were adapted and later differentiated with additional marks."
+      }
+    ]
+  },
+  {
+    "id": "thaana-script",
+    "title": "Thaana writing",
+    "wiki": "Thaana",
+    "year": 1700,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A Maldivian script developed distinctive letter forms and conventions for Dhivehi.",
+    "parents": [
+      {
+        "id": "arabic-script",
+        "type": "influence",
+        "reason": "Arabic-derived numerals and vowel marks contributed graphic elements to the new writing system."
+      }
+    ]
+  },
+  {
+    "id": "adlam-script",
+    "title": "Adlam script",
+    "wiki": "Adlam script",
+    "year": 1989,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Ibrahima and Abdoulaye Barry created an alphabet for writing Fula.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "influence",
+        "reason": "The practical value of written communication motivated a dedicated alphabet for a language underserved by existing writing."
+      }
+    ]
+  },
+  {
+    "id": "vai-syllabary",
+    "title": "Vai syllabary",
+    "wiki": "Vai syllabary",
+    "year": 1833,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A locally developed syllabary enabled Vai-language writing in West Africa.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "influence",
+        "reason": "Existing examples of literacy demonstrated that durable messages could be created for Vai as well."
+      }
+    ]
+  },
+  {
+    "id": "nko-script",
+    "title": "N'Ko script",
+    "wiki": "N'Ko script",
+    "year": 1949,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Solomana Kanté designed a script supporting written Manding languages.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "influence",
+        "reason": "The desire for sustained vernacular literacy motivated a dedicated sign system and publications."
+      }
+    ]
+  },
+  {
+    "id": "baybayin-script",
+    "title": "Baybayin",
+    "wiki": "Baybayin",
+    "year": 1500,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A Philippine Brahmic writing tradition recorded local languages before and during early colonial contact.",
+    "parents": [
+      {
+        "id": "brahmi-script",
+        "type": "influence",
+        "reason": "Indic-derived regional writing traditions supplied its inherited consonant-vowel sign structure."
+      }
+    ]
+  },
+  {
+    "id": "printed-primer",
+    "title": "Printed literacy primers",
+    "wiki": "Primer (textbook)",
+    "year": 1500,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Short teaching books organize letters, reading exercises, and elementary instruction.",
+    "parents": [
+      {
+        "id": "printing-press",
+        "type": "enabler",
+        "reason": "Repeated production made standardized beginner texts available to many learners."
+      }
+    ]
+  },
+  {
+    "id": "orbis-pictus",
+    "title": "Orbis Pictus illustrated textbook",
+    "wiki": "Orbis Pictus",
+    "year": 1658,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Comenius paired named objects with pictures in a widely used children's learning book.",
+    "parents": [
+      {
+        "id": "printed-primer",
+        "type": "influence",
+        "reason": "Elementary teaching books supplied a format expanded through coordinated illustration and vocabulary."
+      }
+    ]
+  },
+  {
+    "id": "hornbook",
+    "title": "Hornbook teaching aids",
+    "wiki": "Hornbook",
+    "year": 1500,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Compact teaching aids displayed elementary letters and texts for repeated reading practice.",
+    "parents": [
+      {
+        "id": "latin-alphabet",
+        "type": "enabler",
+        "reason": "A defined letter inventory supplied the introductory content presented to beginning readers."
+      }
+    ]
+  },
+  {
+    "id": "national-archives",
+    "title": "French National Archives",
+    "wiki": "Archives Nationales (France)",
+    "year": 1790,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "A national archival institution organized custody of public records after the French Revolution.",
+    "parents": [
+      {
+        "id": "civil-registration",
+        "type": "enabler",
+        "reason": "Established public recordkeeping supplied documentary series requiring continued custody and consultation."
+      }
+    ]
+  },
+  {
+    "id": "diplomatics",
+    "title": "Diplomatics",
+    "wiki": "Diplomatics",
+    "year": 1681,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Systematic analysis of documentary forms assists evaluation of records' origin and authenticity.",
+    "parents": [
+      {
+        "id": "parchment",
+        "type": "enabler",
+        "reason": "Surviving manuscript documents provide material whose script, seals, and physical form can be compared."
+      }
+    ]
+  },
+  {
+    "id": "respect-des-fonds",
+    "title": "Respect des fonds",
+    "wiki": "Respect des fonds",
+    "year": 1841,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Archival arrangement preserves records according to the organizations that produced them.",
+    "parents": [
+      {
+        "id": "national-archives",
+        "type": "enabler",
+        "reason": "Large public archival collections created practical demand for rules distinguishing records by provenance."
+      }
+    ]
+  },
+  {
+    "id": "cataloging-rules",
+    "title": "Systematic library cataloging rules",
+    "wiki": "Library catalog",
+    "year": 1841,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Cataloging rules make descriptions and access points more consistent across library collections.",
+    "parents": [
+      {
+        "id": "library",
+        "type": "enabler",
+        "reason": "Managed text collections created the retrieval problems addressed by standardized catalog records."
+      }
+    ]
+  },
+  {
+    "id": "dewey-classification",
+    "title": "Dewey Decimal Classification",
+    "wiki": "Dewey Decimal Classification",
+    "year": 1876,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A numbered subject scheme organizes books and their catalog descriptions for retrieval.",
+    "parents": [
+      {
+        "id": "cataloging-rules",
+        "type": "enabler",
+        "reason": "Consistent catalog descriptions provide records that can receive structured subject classifications."
+      }
+    ]
+  },
+  {
+    "id": "universal-decimal-classification",
+    "title": "Universal Decimal Classification",
+    "wiki": "Universal Decimal Classification",
+    "year": 1895,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "An expanded decimal classification uses combinations of notation to describe complex subjects.",
+    "parents": [
+      {
+        "id": "dewey-classification",
+        "type": "foundation",
+        "reason": "The decimal subject scheme supplied the starting structure extended through more detailed and combinable notation."
+      }
+    ]
+  },
+  {
+    "id": "library-congress-classification",
+    "title": "Library of Congress Classification",
+    "wiki": "Library of Congress Classification",
+    "year": 1897,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A letter-and-number subject scheme organizes large research-library collections.",
+    "parents": [
+      {
+        "id": "cataloging-rules",
+        "type": "enabler",
+        "reason": "Systematic descriptions and collection management support assignment and use of subject classes."
+      }
+    ]
+  },
+  {
+    "id": "isbn-system",
+    "title": "International Standard Book Number",
+    "wiki": "ISBN",
+    "year": 1967,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "A standardized identifier distinguishes published book editions within distribution systems.",
+    "parents": [
+      {
+        "id": "publishing",
+        "type": "enabler",
+        "reason": "Large-scale edition production and book distribution created demand for reliable product identification."
+      }
+    ]
+  },
+  {
+    "id": "issn-system",
+    "title": "International Standard Serial Number",
+    "wiki": "ISSN",
+    "year": 1975,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "A standardized identifier distinguishes continuing publications such as journals and newspapers.",
+    "parents": [
+      {
+        "id": "newspaper",
+        "type": "enabler",
+        "reason": "Recurring publications with similar names and changing issues create identification needs distinct from individual books."
+      }
+    ]
+  },
+  {
+    "id": "public-library-manifesto",
+    "title": "UNESCO Public Library Manifesto",
+    "wiki": "UNESCO Public Library Manifesto",
+    "year": 1949,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "An international statement articulated the public library's educational and community roles.",
+    "parents": [
+      {
+        "id": "unesco",
+        "type": "enabler",
+        "reason": "UNESCO provided an international forum for formulating and circulating the statement."
+      }
+    ]
+  },
+  {
+    "id": "educational-broadcasting",
+    "title": "Educational broadcasters' association",
+    "wiki": "National Association of Educational Broadcasters",
+    "year": 1925,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "An association coordinated cooperation and exchange among educational radio broadcasters.",
+    "parents": [
+      {
+        "id": "radio",
+        "type": "enabler",
+        "reason": "Radio transmission carries spoken lessons to many geographically dispersed listeners."
+      }
+    ]
+  },
+  {
+    "id": "open-university",
+    "title": "Open University",
+    "wiki": "Open University",
+    "year": 1969,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "A British university organized large-scale distance study with supported learning materials.",
+    "parents": [
+      {
+        "id": "distance-education",
+        "type": "foundation",
+        "reason": "Correspondence instruction supplied the model expanded through broadcasting and coordinated student support."
+      }
+    ]
+  },
+  {
+    "id": "adult-education",
+    "title": "Organized adult education",
+    "wiki": "Adult education",
+    "year": 1870,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Programs support learning by adults outside the ordinary childhood schooling sequence.",
+    "parents": [
+      {
+        "id": "mass-literacy",
+        "type": "enabler",
+        "reason": "Literacy campaigns supplied teaching networks and practical demand for continued adult learning."
+      }
+    ]
+  },
+  {
+    "id": "workers-educational-association",
+    "title": "Workers' Educational Association",
+    "wiki": "Workers' Educational Association",
+    "year": 1903,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "An association expanded educational opportunities for working adults through organized courses.",
+    "parents": [
+      {
+        "id": "trade-union",
+        "type": "enabler",
+        "reason": "Worker organizations provided partners and communities seeking access to continued education."
+      }
+    ]
+  },
+  {
+    "id": "women-higher-education",
+    "title": "Women's higher education institutions",
+    "wiki": "Women's college",
+    "year": 1849,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Dedicated colleges expanded advanced educational opportunities for women excluded from many universities.",
+    "parents": [
+      {
+        "id": "university",
+        "type": "influence",
+        "reason": "Established advanced curricula and qualifications supplied models adapted by women's colleges."
+      }
+    ]
+  },
+  {
+    "id": "land-grant-college",
+    "title": "Land-grant colleges",
+    "wiki": "Land-grant university",
+    "year": 1862,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Public land grants supported institutions teaching agriculture, mechanics, and broader studies.",
+    "parents": [
+      {
+        "id": "university",
+        "type": "influence",
+        "reason": "Higher-education institutions supplied organizational and curricular models expanded through public funding."
+      }
+    ]
+  },
+  {
+    "id": "polytechnic-school",
+    "title": "Polytechnic higher education",
+    "wiki": "Institute of technology",
+    "year": 1794,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Institutions organized advanced instruction directed toward technical and applied fields.",
+    "parents": [
+      {
+        "id": "apprenticeship",
+        "type": "influence",
+        "reason": "Occupational training needs supplied practical subjects developed into formal advanced curricula."
+      }
+    ]
+  },
+  {
+    "id": "research-university",
+    "title": "Research university model",
+    "wiki": "Research university",
+    "year": 1810,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "University organization increasingly combined advanced teaching with sustained scholarly research.",
+    "parents": [
+      {
+        "id": "university",
+        "type": "foundation",
+        "reason": "Existing faculties and degree structures supplied the organization expanded around research-based teaching."
+      }
+    ]
+  },
+  {
+    "id": "rhetorical-education",
+    "title": "Rhetorical education",
+    "wiki": "Rhetoric",
+    "year": -400,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Systematic instruction develops the composition and delivery of persuasive speech.",
+    "parents": [
+      {
+        "id": "athenian-democracy",
+        "type": "enabler",
+        "reason": "Public assembly and legal speech created demand for teachable techniques of persuasion."
+      }
+    ]
+  },
+  {
+    "id": "socratic-dialogue",
+    "title": "Socratic dialogue",
+    "wiki": "Socratic dialogue",
+    "year": -400,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Question-and-answer exchanges examine claims through challenges and attempted definitions.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Spoken teaching and remembered conversations supplied the setting and material for dialogic inquiry."
+      }
+    ]
+  },
+  {
+    "id": "stoic-school",
+    "title": "Stoic philosophical school",
+    "wiki": "Stoicism",
+    "year": -300,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Stoic teachers developed traditions of ethical discipline, reasoning, and reflection on nature.",
+    "parents": [
+      {
+        "id": "socratic-dialogue",
+        "type": "influence",
+        "reason": "Socratic attention to virtue and examined conduct contributed to later Stoic ethical inquiry."
+      }
+    ]
+  },
+  {
+    "id": "mahabharata",
+    "title": "Mahabharata",
+    "wiki": "Mahabharata",
+    "year": -400,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A Sanskrit epic assembled extensive narratives, ethical debates, and religious teaching.",
+    "parents": [
+      {
+        "id": "hinduism",
+        "type": "influence",
+        "reason": "Vedic and related religious traditions supplied concepts and ritual settings developed within the epic."
+      }
+    ]
+  },
+  {
+    "id": "ramayana",
+    "title": "Ramayana",
+    "wiki": "Ramayana",
+    "year": -400,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A Sanskrit epic organized narratives of Rama into a widely transmitted literary tradition.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Storytelling and recitation supplied narratives and performance practices preserved in epic versions."
+      }
+    ]
+  },
+  {
+    "id": "odyssey",
+    "title": "Odyssey",
+    "wiki": "Odyssey",
+    "year": -700,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "An extensive Greek epic recounts Odysseus's homecoming through a layered poetic narrative.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Formulaic heroic performance supplied narrative and compositional practices for the epic."
+      }
+    ]
+  },
+  {
+    "id": "aeneid",
+    "title": "Aeneid",
+    "wiki": "Aeneid",
+    "year": -19,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Virgil adapted heroic epic to narrate Aeneas's journeys and Roman origins.",
+    "parents": [
+      {
+        "id": "iliad",
+        "type": "influence",
+        "reason": "Homeric battle narrative supplied characters, episodes, and epic conventions reworked by Virgil."
+      }
+    ]
+  },
+  {
+    "id": "divine-comedy",
+    "title": "Divine Comedy",
+    "wiki": "Divine Comedy",
+    "year": 1321,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Dante composed an extended vernacular poem organizing a journey through Christian afterlife realms.",
+    "parents": [
+      {
+        "id": "christianity",
+        "type": "influence",
+        "reason": "Christian accounts of sin, judgment, and salvation supplied the poem's central imaginative structure."
+      }
+    ]
+  },
+  {
+    "id": "decameron",
+    "title": "Decameron",
+    "wiki": "The Decameron",
+    "year": 1353,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Boccaccio organized a collection of stories through an elaborate framing narrative.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Manuscript composition preserved interconnected stories and their framing structure."
+      }
+    ]
+  },
+  {
+    "id": "arabian-nights",
+    "title": "One Thousand and One Nights",
+    "wiki": "One Thousand and One Nights",
+    "year": 900,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A changing collection brought multiple storytelling traditions into interconnected frame narratives.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "enabler",
+        "reason": "Narratives circulating through performance supplied material assembled into successive written collections."
+      }
+    ]
+  },
+  {
+    "id": "shahnameh",
+    "title": "Shahnameh",
+    "wiki": "Shahnameh",
+    "year": 1010,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Ferdowsi's Persian epic preserved and reshaped narratives of Iran's legendary and historical past.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "influence",
+        "reason": "Older remembered heroic traditions contributed narrative material transmitted through prose and verse sources."
+      }
+    ]
+  },
+  {
+    "id": "popol-vuh",
+    "title": "Popol Vuh transcription",
+    "wiki": "Popol Vuh",
+    "year": 1550,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A K'iche' text preserved creation narratives, heroic accounts, and dynastic history in alphabetic writing.",
+    "parents": [
+      {
+        "id": "latin-alphabet",
+        "type": "enabler",
+        "reason": "Adapted Latin letters allowed K'iche' narratives to be recorded in a new written form."
+      }
+    ]
+  },
+  {
+    "id": "sunjata-epic",
+    "title": "Epic of Sundiata",
+    "wiki": "Epic of Sundiata",
+    "year": 1300,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Mande performers transmit narratives of Sundiata and the founding of the Mali Empire.",
+    "parents": [
+      {
+        "id": "griot",
+        "type": "enabler",
+        "reason": "Specialist oral historians preserve and perform the narrative across generations."
+      }
+    ]
+  },
+  {
+    "id": "don-quixote",
+    "title": "Don Quixote",
+    "wiki": "Don Quixote",
+    "year": 1605,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Cervantes's novel reworked chivalric narrative through layered storytelling and social observation.",
+    "parents": [
+      {
+        "id": "publishing",
+        "type": "enabler",
+        "reason": "Commercial editions carried the extended prose narrative to a broad reading public."
+      }
+    ]
+  },
+  {
+    "id": "modern-novel",
+    "title": "Commercial novel publishing",
+    "wiki": "Novel",
+    "year": 1700,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Long fictional prose narratives became an increasingly prominent form of commercial reading.",
+    "parents": [
+      {
+        "id": "publishing",
+        "type": "enabler",
+        "reason": "Edition financing and book distribution supported sustained production for expanding reading audiences."
+      }
+    ]
+  },
+  {
+    "id": "haiku",
+    "title": "Haiku",
+    "wiki": "Haiku",
+    "year": 1650,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Japanese poets developed compact verse emphasizing concise images and seasonal reference.",
+    "parents": [
+      {
+        "id": "kana",
+        "type": "enabler",
+        "reason": "Vernacular syllabic writing supports the brief Japanese poetic language used in the form."
+      }
+    ]
+  },
+  {
+    "id": "tanka",
+    "title": "Tanka poetry",
+    "wiki": "Tanka",
+    "year": 750,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Japanese poets cultivated a short verse form organized around a five-part syllabic pattern.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Written anthologies preserve short poems and make their formal conventions available for study."
+      }
+    ]
+  },
+  {
+    "id": "sonnet",
+    "title": "Sonnet",
+    "wiki": "Sonnet",
+    "year": 1230,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "A fourteen-line poetic form developed conventions for structured lyrical argument.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Written composition and copying preserve the tightly organized sequence of lines and rhymes."
+      }
+    ]
+  },
+  {
+    "id": "ghazal",
+    "title": "Ghazal",
+    "wiki": "Ghazal",
+    "year": 700,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Poets developed paired-verse lyric conventions that spread across Arabic, Persian, and other literary traditions.",
+    "parents": [
+      {
+        "id": "arabic-script",
+        "type": "enabler",
+        "reason": "Arabic literary writing preserved early forms and enabled their transmission among readers and poets."
+      }
+    ]
+  },
+  {
+    "id": "rubai",
+    "title": "Rubai poetic form",
+    "wiki": "Ruba'i",
+    "year": 1000,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Persian and related literary traditions cultivated a compact four-line poetic form.",
+    "parents": [
+      {
+        "id": "arabic-script",
+        "type": "enabler",
+        "reason": "Adapted Arabic writing supported the Persian manuscript tradition in which quatrains circulated."
+      }
+    ]
+  },
+  {
+    "id": "rap",
+    "title": "Rap performance",
+    "wiki": "Rapping",
+    "year": 1973,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Performers organize rhythmic speech through rhyme, phrasing, and musical accompaniment.",
+    "parents": [
+      {
+        "id": "music",
+        "type": "enabler",
+        "reason": "Rhythmic accompaniment provides a temporal structure against which spoken lines are performed."
+      }
+    ]
+  },
+  {
+    "id": "reggae",
+    "title": "Reggae",
+    "wiki": "Reggae",
+    "year": 1968,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Jamaican musicians developed a distinctive rhythmic style with wide cultural circulation.",
+    "parents": [
+      {
+        "id": "jazz",
+        "type": "influence",
+        "reason": "Jazz and related North American music contributed to the Jamaican musical mixtures preceding reggae."
+      }
+    ]
+  },
+  {
+    "id": "blues",
+    "title": "Blues",
+    "wiki": "Blues",
+    "year": 1900,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "African American musicians developed expressive song traditions using recurring tonal and phrase conventions.",
+    "parents": [
+      {
+        "id": "music",
+        "type": "enabler",
+        "reason": "Work songs, spirituals, and other existing musical practices supplied performance resources reshaped into blues."
+      }
+    ]
+  },
+  {
+    "id": "rock-and-roll",
+    "title": "Rock and roll",
+    "wiki": "Rock and roll",
+    "year": 1950,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Musicians combined rhythm-and-blues, country, and other influences into a widely circulating popular style.",
+    "parents": [
+      {
+        "id": "blues",
+        "type": "influence",
+        "reason": "Blues-derived forms, phrasing, and rhythmic practices contributed to early rock-and-roll performance."
+      }
+    ]
+  },
+  {
+    "id": "gospel-music",
+    "title": "Gospel music",
+    "wiki": "Gospel music",
+    "year": 1930,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Christian devotional music developed prominent African American performance and composition traditions.",
+    "parents": [
+      {
+        "id": "christianity",
+        "type": "enabler",
+        "reason": "Church worship and religious teaching provide settings and subjects for gospel performance."
+      }
+    ]
+  },
+  {
+    "id": "soul-music",
+    "title": "Soul music",
+    "wiki": "Soul music",
+    "year": 1950,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "African American musicians developed popular styles combining gospel expression with secular song traditions.",
+    "parents": [
+      {
+        "id": "gospel-music",
+        "type": "influence",
+        "reason": "Vocal techniques and call-and-response practices from gospel contributed to soul performance."
+      }
+    ]
+  },
+  {
+    "id": "son-cubano",
+    "title": "Son cubano",
+    "wiki": "Son cubano",
+    "year": 1900,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Cuban musicians combined African-derived rhythmic practices with Spanish-derived song and harmonic traditions.",
+    "parents": [
+      {
+        "id": "music",
+        "type": "enabler",
+        "reason": "Existing rhythmic, vocal, and ensemble practices supplied the materials combined in son."
+      }
+    ]
+  },
+  {
+    "id": "bossa-nova",
+    "title": "Bossa nova",
+    "wiki": "Bossa nova",
+    "year": 1958,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Brazilian musicians developed an intimate song style reworking samba rhythm and harmonic language.",
+    "parents": [
+      {
+        "id": "samba",
+        "type": "foundation",
+        "reason": "Samba's rhythmic organization supplied patterns transformed in bossa nova accompaniment and phrasing."
+      }
+    ]
+  },
+  {
+    "id": "flamenco",
+    "title": "Flamenco",
+    "wiki": "Flamenco",
+    "year": 1800,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Andalusian traditions combine song, instrumental accompaniment, and expressive dance.",
+    "parents": [
+      {
+        "id": "dance",
+        "type": "enabler",
+        "reason": "Footwork and coordinated bodily expression contribute central rhythmic and dramatic elements."
+      }
+    ]
+  },
+  {
+    "id": "fado",
+    "title": "Fado",
+    "wiki": "Fado",
+    "year": 1830,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Portuguese performers cultivated urban song traditions associated with expressive narrative and feeling.",
+    "parents": [
+      {
+        "id": "music",
+        "type": "enabler",
+        "reason": "Vocal melody and accompaniment provide the expressive means through which fado narratives are presented."
+      }
+    ]
+  },
+  {
+    "id": "qawwali",
+    "title": "Qawwali",
+    "wiki": "Qawwali",
+    "year": 1300,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "South Asian Sufi performance combines devotional poetry, singing, and coordinated musical response.",
+    "parents": [
+      {
+        "id": "islam",
+        "type": "influence",
+        "reason": "Sufi devotional settings and concepts supply the religious purposes and textual subjects of the performance."
+      }
+    ]
+  },
+  {
+    "id": "sikh-kirtan",
+    "title": "Sikh kirtan",
+    "wiki": "Kirtan",
+    "year": 1500,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Sikh communities sing sacred compositions as a central form of shared worship.",
+    "parents": [
+      {
+        "id": "sikhism",
+        "type": "enabler",
+        "reason": "The gurus' compositions and communal worship practices supply the texts and setting for devotional singing."
+      }
+    ]
+  },
+  {
+    "id": "gregorian-chant",
+    "title": "Gregorian chant",
+    "wiki": "Gregorian chant",
+    "year": 800,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Western Christian communities organized a repertoire of monophonic liturgical singing.",
+    "parents": [
+      {
+        "id": "christian-monasticism",
+        "type": "enabler",
+        "reason": "Monastic prayer schedules and teaching communities supported the repeated performance and transmission of chants."
+      }
+    ]
+  },
+  {
+    "id": "polyphonic-composition",
+    "title": "Polyphonic composition",
+    "wiki": "Polyphony",
+    "year": 1100,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Composers organize simultaneous melodic lines into coordinated musical textures.",
+    "parents": [
+      {
+        "id": "gregorian-chant",
+        "type": "influence",
+        "reason": "Liturgical chant supplied melodies around which early written multi-voice compositions were developed."
+      }
+    ]
+  },
+  {
+    "id": "fugue",
+    "title": "Fugue",
+    "wiki": "Fugue",
+    "year": 1600,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "A contrapuntal composition develops a subject through imitative entries and related passages.",
+    "parents": [
+      {
+        "id": "polyphonic-composition",
+        "type": "foundation",
+        "reason": "Coordinated independent voices supply the contrapuntal organization used in fugue."
+      }
+    ]
+  },
+  {
+    "id": "sonata-form",
+    "title": "Sonata form",
+    "wiki": "Sonata form",
+    "year": 1750,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Composers organize large instrumental movements through contrasting and returning musical materials.",
+    "parents": [
+      {
+        "id": "music",
+        "type": "enabler",
+        "reason": "Established tonal and thematic practices supply material organized through the form."
+      }
+    ]
+  },
+  {
+    "id": "symphony",
+    "title": "Symphony",
+    "wiki": "Symphony",
+    "year": 1750,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Extended orchestral compositions coordinate multiple movements and instrumental groups.",
+    "parents": [
+      {
+        "id": "sonata-form",
+        "type": "influence",
+        "reason": "Developing sonata procedures helped organize thematic contrast and return in symphonic movements."
+      }
+    ]
+  },
+  {
+    "id": "concerto",
+    "title": "Concerto",
+    "wiki": "Concerto",
+    "year": 1700,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Concertos organize musical interaction between featured performers and a larger ensemble.",
+    "parents": [
+      {
+        "id": "polyphonic-composition",
+        "type": "enabler",
+        "reason": "Techniques for coordinating multiple musical parts support exchanges between solo and ensemble voices."
+      }
+    ]
+  },
+  {
+    "id": "string-quartet",
+    "title": "String quartet tradition",
+    "wiki": "String quartet",
+    "year": 1760,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Four-part string ensembles developed a major tradition of chamber composition and coordinated performance.",
+    "parents": [
+      {
+        "id": "polyphonic-composition",
+        "type": "enabler",
+        "reason": "Independent but coordinated parts provide the compositional basis for four-player chamber works."
+      }
+    ]
+  },
+  {
+    "id": "staff-notation",
+    "title": "Staff musical notation",
+    "wiki": "Staff (music)",
+    "year": 1025,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "Positioned marks on horizontal lines indicate pitches for repeatable musical reading.",
+    "parents": [
+      {
+        "id": "gregorian-chant",
+        "type": "enabler",
+        "reason": "The need to teach and transmit chant supplied an early practical setting for pitch-based staff notation."
+      }
+    ]
+  },
+  {
+    "id": "printed-music",
+    "title": "Printed music publishing",
+    "wiki": "Sheet music",
+    "year": 1501,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Printed scores distribute compositions to performers using repeatable written notation.",
+    "parents": [
+      {
+        "id": "printing-press",
+        "type": "enabler",
+        "reason": "Press production allowed many copies of coordinated musical signs to reach performers."
+      }
+    ]
+  },
+  {
+    "id": "music-conservatory",
+    "title": "Music conservatories",
+    "wiki": "Music school",
+    "year": 1795,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Specialist institutions organize sustained training in musical performance and composition.",
+    "parents": [
+      {
+        "id": "apprenticeship",
+        "type": "influence",
+        "reason": "Supervised practical skill training supplied a model expanded through specialist courses and examinations."
+      }
+    ]
+  },
+  {
+    "id": "choral-society",
+    "title": "Choral societies",
+    "wiki": "Choir",
+    "year": 1840,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Voluntary singing organizations coordinate collective rehearsal and public vocal performance.",
+    "parents": [
+      {
+        "id": "printed-music",
+        "type": "enabler",
+        "reason": "Accessible printed parts help groups learn and coordinate larger repertoires."
+      }
+    ]
+  },
+  {
+    "id": "modern-olympics",
+    "title": "Modern Olympic Games",
+    "wiki": "Olympic Games",
+    "year": 1896,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "An international movement established recurring athletic competition among national delegations.",
+    "parents": [
+      {
+        "id": "ancient-olympics",
+        "type": "influence",
+        "reason": "The ancient festival supplied a historical model and name reinterpreted by modern organizers."
+      }
+    ]
+  },
+  {
+    "id": "cricket-laws",
+    "title": "Codified cricket",
+    "wiki": "Laws of Cricket",
+    "year": 1744,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Written cricket laws standardize play and adjudication across clubs and matches.",
+    "parents": [
+      {
+        "id": "writing",
+        "type": "enabler",
+        "reason": "Recorded rules give players and officials a shared reference for resolving disputes."
+      }
+    ]
+  },
+  {
+    "id": "rugby-union-rules",
+    "title": "Codified rugby union",
+    "wiki": "Rugby union",
+    "year": 1871,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Organized rugby institutions standardized a handling-based form of football.",
+    "parents": [
+      {
+        "id": "association-football",
+        "type": "influence",
+        "reason": "Debates over competing football rules helped clarify the separate handling-based code formalized by rugby organizations."
+      }
+    ]
+  },
+  {
+    "id": "basketball-rules",
+    "title": "Basketball",
+    "wiki": "Basketball",
+    "year": 1891,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "James Naismith devised an indoor team game with written rules for coordinated competitive play.",
+    "parents": [
+      {
+        "id": "compulsory-education",
+        "type": "enabler",
+        "reason": "Organized schooling and physical instruction supplied settings for teaching a new supervised team game."
+      }
+    ]
+  },
+  {
+    "id": "volleyball-rules",
+    "title": "Volleyball",
+    "wiki": "Volleyball",
+    "year": 1895,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "William Morgan devised a net-based team game emphasizing repeated exchanges between opposing sides.",
+    "parents": [
+      {
+        "id": "basketball-rules",
+        "type": "influence",
+        "reason": "Morgan sought a less strenuous alternative to basketball for participants in his physical-education program."
+      }
+    ]
+  },
+  {
+    "id": "judo-system",
+    "title": "Judo",
+    "wiki": "Judo",
+    "year": 1882,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Kanō Jigorō organized a martial training system around selected techniques and educational aims.",
+    "parents": [
+      {
+        "id": "apprenticeship",
+        "type": "enabler",
+        "reason": "Extended supervised martial instruction supplied techniques and teaching relationships reorganized within the new system."
+      }
+    ]
+  },
+  {
+    "id": "karate-standardization",
+    "title": "Karate training standardization",
+    "wiki": "Karate",
+    "year": 1924,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Karate schools increasingly organized instruction through shared uniforms, ranks, and formal teaching systems.",
+    "parents": [
+      {
+        "id": "judo-system",
+        "type": "influence",
+        "reason": "Judo's uniforms and ranking practices provided models adopted in modern karate teaching."
+      }
+    ]
+  },
+  {
+    "id": "breakdance",
+    "title": "Breaking",
+    "wiki": "Breakdancing",
+    "year": 1970,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Urban dancers developed competitive movement forms combining footwork, freezes, and acrobatic expression.",
+    "parents": [
+      {
+        "id": "dance",
+        "type": "foundation",
+        "reason": "Social dance supplied the expressive practice developed into breaking's distinctive vocabulary."
+      }
+    ]
+  },
+  {
+    "id": "modern-dance",
+    "title": "Modern dance",
+    "wiki": "Modern dance",
+    "year": 1900,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Choreographers developed theatrical movement traditions questioning inherited ballet conventions.",
+    "parents": [
+      {
+        "id": "ballet",
+        "type": "influence",
+        "reason": "Ballet training and conventions supplied techniques and assumptions that modern choreographers adapted or challenged."
+      }
+    ]
+  },
+  {
+    "id": "bharatanatyam",
+    "title": "Bharatanatyam revival",
+    "wiki": "Bharatanatyam",
+    "year": 1932,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Performers and institutions reshaped a South Indian dance tradition into a prominent concert form.",
+    "parents": [
+      {
+        "id": "sanskrit-drama",
+        "type": "influence",
+        "reason": "Classical theories of expressive gesture and aesthetic response informed the dance's performance vocabulary."
+      }
+    ]
+  },
+  {
+    "id": "benedictine-rule",
+    "title": "Rule of Saint Benedict",
+    "wiki": "Rule of Saint Benedict",
+    "year": 516,
+    "domain": "culture",
+    "kind": "technology",
+    "summary": "A written monastic rule organized communal prayer, work, discipline, and leadership.",
+    "parents": [
+      {
+        "id": "christian-monasticism",
+        "type": "enabler",
+        "reason": "Established monastic communities supplied the practical life and responsibilities addressed by the rule."
+      }
+    ]
+  },
+  {
+    "id": "cistercian-order",
+    "title": "Cistercian Order",
+    "wiki": "Cistercians",
+    "year": 1098,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "A monastic order organized communities around a reform of Benedictine observance.",
+    "parents": [
+      {
+        "id": "benedictine-rule",
+        "type": "foundation",
+        "reason": "The Benedictine rule supplied the shared discipline the reformers sought to implement more strictly."
+      }
+    ]
+  },
+  {
+    "id": "franciscan-order",
+    "title": "Franciscan Order",
+    "wiki": "Franciscans",
+    "year": 1209,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Franciscan communities organized religious life around poverty, preaching, and service.",
+    "parents": [
+      {
+        "id": "christian-monasticism",
+        "type": "influence",
+        "reason": "Earlier communal religious disciplines supplied practices adapted into a mendicant form of life."
+      }
+    ]
+  },
+  {
+    "id": "dominican-order",
+    "title": "Dominican Order",
+    "wiki": "Dominican Order",
+    "year": 1216,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "A religious order coordinated preaching, study, and communal life.",
+    "parents": [
+      {
+        "id": "christianity",
+        "type": "enabler",
+        "reason": "Christian preaching and theological teaching supplied the order's purposes and institutional authorization."
+      }
+    ]
+  },
+  {
+    "id": "society-jesus",
+    "title": "Society of Jesus",
+    "wiki": "Jesuits",
+    "year": 1540,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "The Jesuit order developed coordinated religious, missionary, and educational activity.",
+    "parents": [
+      {
+        "id": "christianity",
+        "type": "enabler",
+        "reason": "Christian religious commitments and papal approval supplied its purposes and institutional basis."
+      }
+    ]
+  },
+  {
+    "id": "khalsa-community",
+    "title": "Khalsa",
+    "wiki": "Khalsa",
+    "year": 1699,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Guru Gobind Singh established an initiated Sikh community with shared commitments and public identity.",
+    "parents": [
+      {
+        "id": "sikhism",
+        "type": "foundation",
+        "reason": "The existing Sikh community and teachings supplied the religious tradition organized through Khalsa initiation."
+      }
+    ]
+  },
+  {
+    "id": "sikh-langar",
+    "title": "Sikh langar",
+    "wiki": "Langar (Sikhism)",
+    "year": 1500,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Communal kitchens provide shared meals open to participants without caste distinction.",
+    "parents": [
+      {
+        "id": "sikhism",
+        "type": "enabler",
+        "reason": "Sikh teachings on equality and service supply the practice's purposes and community support."
+      }
+    ]
+  },
+  {
+    "id": "nizamiyya-schools",
+    "title": "Nizamiyya teaching institutions",
+    "wiki": "Nizamiyya",
+    "year": 1065,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Patron-supported teaching institutions organized Sunni legal and theological education.",
+    "parents": [
+      {
+        "id": "madrasah",
+        "type": "foundation",
+        "reason": "The existing madrasa form supplied the residential and teaching organization expanded through coordinated patronage."
+      }
+    ]
+  },
+  {
+    "id": "public-primary-education",
+    "title": "Public primary education systems",
+    "wiki": "Primary education",
+    "year": 1833,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Public institutions increasingly organized and financed elementary schooling for broad populations.",
+    "parents": [
+      {
+        "id": "compulsory-education",
+        "type": "enabler",
+        "reason": "Schooling requirements created responsibilities and demand for accessible elementary teaching."
+      }
+    ]
+  },
+  {
+    "id": "school-meal-program",
+    "title": "School meal programs",
+    "wiki": "School meal",
+    "year": 1906,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Organized feeding programs support pupils' access to nutrition during the school day.",
+    "parents": [
+      {
+        "id": "compulsory-education",
+        "type": "enabler",
+        "reason": "Regular school attendance provides a continuing setting for reaching children through public meal provision."
+      }
+    ]
+  },
+  {
+    "id": "school-library",
+    "title": "School libraries",
+    "wiki": "School library",
+    "year": 1900,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Libraries within schools support reading, instruction, and learners' access to information.",
+    "parents": [
+      {
+        "id": "public-library",
+        "type": "influence",
+        "reason": "Public-library collection and lending practices supplied models adapted to school learning."
+      }
+    ]
+  },
+  {
+    "id": "cuban-literacy-campaign",
+    "title": "Cuban Literacy Campaign",
+    "wiki": "Cuban literacy campaign",
+    "year": 1961,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "A nationwide campaign mobilized instructors and learners to expand reading and writing skills.",
+    "parents": [
+      {
+        "id": "mass-literacy",
+        "type": "influence",
+        "reason": "Earlier large-scale literacy efforts supplied precedents for coordinated adult instruction."
+      }
+    ]
+  },
+  {
+    "id": "nonformal-education",
+    "title": "Nonformal education programs",
+    "wiki": "Nonformal learning",
+    "year": 1967,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Organized learning outside ordinary school structures addresses defined community and learner needs.",
+    "parents": [
+      {
+        "id": "adult-education",
+        "type": "influence",
+        "reason": "Adult learning initiatives demonstrated how structured instruction could operate outside childhood schooling."
+      }
+    ]
+  },
+  {
+    "id": "scouting",
+    "title": "Scouting",
+    "wiki": "Scouting",
+    "year": 1907,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Youth organizations developed shared programs of outdoor activity, service, and practical learning.",
+    "parents": [
+      {
+        "id": "apprenticeship",
+        "type": "influence",
+        "reason": "Learning by supervised practice supplied a method adapted to staged youth skill development."
+      }
+    ]
+  },
+  {
+    "id": "girl-guiding",
+    "title": "Girl Guiding",
+    "wiki": "Girl Guides",
+    "year": 1910,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Guiding organizations adapted organized outdoor learning and service programs for girls.",
+    "parents": [
+      {
+        "id": "scouting",
+        "type": "foundation",
+        "reason": "Scouting activities and group structures supplied the model adapted by guiding organizations."
+      }
+    ]
+  },
+  {
+    "id": "credit-rating",
+    "title": "Credit-rating organizations",
+    "wiki": "Credit rating agency",
+    "year": 1841,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Commercial agencies collect information and assess borrowers' ability to meet financial obligations.",
+    "parents": [
+      {
+        "id": "banking",
+        "type": "enabler",
+        "reason": "Lending relationships create demand for information about repayment risk beyond personal acquaintance."
+      }
+    ]
+  },
+  {
+    "id": "limited-liability-law",
+    "title": "Statutory limited liability",
+    "wiki": "Limited Liability Act 1855",
+    "year": 1855,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "British legislation limited qualifying investors' exposure to company debts.",
+    "parents": [
+      {
+        "id": "joint-stock-company",
+        "type": "enabler",
+        "reason": "Share-based corporate ownership supplied the investment structure to which liability limits were applied."
+      }
+    ]
+  },
+  {
+    "id": "bankruptcy-discharge",
+    "title": "Statutory bankruptcy discharge",
+    "wiki": "Bankruptcy",
+    "year": 1705,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "English reforms allowed qualifying bankrupt debtors to obtain discharge under specified procedures.",
+    "parents": [
+      {
+        "id": "merchant-law",
+        "type": "influence",
+        "reason": "Commercial debt and creditor procedures supplied the legal problems reorganized through statutory discharge."
+      }
+    ]
+  },
+  {
+    "id": "patent-statute",
+    "title": "Statute of Monopolies",
+    "wiki": "Statute of Monopolies",
+    "year": 1624,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "English legislation constrained monopolies while preserving specified privileges for new inventions.",
+    "parents": [
+      {
+        "id": "parliament",
+        "type": "enabler",
+        "reason": "Parliamentary lawmaking provided authority to revise the Crown's granting of monopoly privileges."
+      }
+    ]
+  },
+  {
+    "id": "trademark-register",
+    "title": "Statutory trademark registration",
+    "wiki": "Trademark",
+    "year": 1875,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Registration systems provide formal protection for signs identifying commercial sources.",
+    "parents": [
+      {
+        "id": "trade",
+        "type": "enabler",
+        "reason": "Repeated exchange between unfamiliar buyers and suppliers creates demand for recognizable source identifiers."
+      }
+    ]
+  },
+  {
+    "id": "conformity-certification",
+    "title": "Kitemark certification",
+    "wiki": "Kitemark",
+    "year": 1903,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A standards organization's certification mark identifies products assessed against specified requirements.",
+    "parents": [
+      {
+        "id": "british-standards-body",
+        "type": "enabler",
+        "reason": "Published common specifications provide criteria against which assessors can judge conformity."
+      }
+    ]
+  },
+  {
+    "id": "british-standards-body",
+    "title": "British standards organization",
+    "wiki": "BSI Group",
+    "year": 1901,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A national standards organization coordinated common specifications for industry.",
+    "parents": [
+      {
+        "id": "weights-measures",
+        "type": "influence",
+        "reason": "Earlier standardization of quantities supplied a precedent for coordinating broader industrial specifications."
+      }
+    ]
+  },
+  {
+    "id": "educational-accreditation",
+    "title": "Educational accreditation",
+    "wiki": "Educational accreditation",
+    "year": 1885,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Review organizations evaluate educational institutions or programs against agreed criteria.",
+    "parents": [
+      {
+        "id": "university",
+        "type": "enabler",
+        "reason": "Established institutions and qualifications create a need to compare the quality and recognition of educational provision."
+      }
+    ]
+  },
+  {
+    "id": "quality-management",
+    "title": "Organized quality management",
+    "wiki": "Quality management",
+    "year": 1951,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Organizations coordinate procedures, improvement, and assessment to maintain desired quality.",
+    "parents": [
+      {
+        "id": "mathematical-statistics",
+        "type": "enabler",
+        "reason": "Statistical assessment supplies methods for distinguishing process variation and evaluating improvement."
+      }
+    ]
+  },
+  {
+    "id": "occupational-safety-law",
+    "title": "Modern occupational safety regulation",
+    "wiki": "Occupational Safety and Health Act (United States)",
+    "year": 1970,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "United States legislation established a coordinated federal framework for workplace safety and health.",
+    "parents": [
+      {
+        "id": "ilo",
+        "type": "influence",
+        "reason": "Earlier international labor standards helped establish workplace protection as a public regulatory responsibility."
+      }
+    ]
+  },
+  {
+    "id": "organized-disaster-relief",
+    "title": "Organized disaster relief",
+    "wiki": "Emergency management",
+    "year": 1900,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Relief organizations coordinate personnel, supplies, and assistance after major disasters.",
+    "parents": [
+      {
+        "id": "red-cross",
+        "type": "enabler",
+        "reason": "An established humanitarian organization supplies trained volunteers and coordination structures adaptable to disasters."
+      }
+    ]
+  },
+  {
+    "id": "humanitarian-logistics",
+    "title": "Humanitarian logistics",
+    "wiki": "Humanitarian logistics",
+    "year": 1990,
+    "domain": "society",
+    "kind": "practice",
+    "summary": "Relief operations coordinate purchasing, storage, transport, and distribution under crisis conditions.",
+    "parents": [
+      {
+        "id": "logistics",
+        "type": "foundation",
+        "reason": "General supply coordination provides methods adapted to urgent relief and disrupted infrastructure."
+      }
+    ]
+  },
+  {
+    "id": "adhesive-postage",
+    "title": "Prepaid adhesive postage",
+    "wiki": "Postage stamp",
+    "year": 1840,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Standardized stamps document advance payment for mail delivery.",
+    "parents": [
+      {
+        "id": "postal-service",
+        "type": "enabler",
+        "reason": "Organized mail services provide routes and accounting systems in which prepaid postage can be recognized."
+      }
+    ]
+  },
+  {
+    "id": "registered-mail",
+    "title": "Registered mail",
+    "wiki": "Registered mail",
+    "year": 1841,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Postal procedures record acceptance and handling of designated consignments.",
+    "parents": [
+      {
+        "id": "postal-service",
+        "type": "enabler",
+        "reason": "Managed delivery networks provide custody points at which valuable mail can be documented."
+      }
+    ]
+  },
+  {
+    "id": "parcel-post",
+    "title": "Parcel post",
+    "wiki": "Parcel post",
+    "year": 1883,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Postal services organize delivery of packages through standardized public arrangements.",
+    "parents": [
+      {
+        "id": "postal-service",
+        "type": "foundation",
+        "reason": "Existing routes and service administration provide a network extended to handling parcels."
+      }
+    ]
+  },
+  {
+    "id": "freight-forwarding",
+    "title": "Freight forwarding organizations",
+    "wiki": "Freight forwarder",
+    "year": 1836,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Intermediaries arrange shipment and related services across carriers and jurisdictions.",
+    "parents": [
+      {
+        "id": "logistics",
+        "type": "enabler",
+        "reason": "Coordinated movement and storage practices provide the operational tasks assembled by forwarding firms."
+      }
+    ]
+  },
+  {
+    "id": "shipping-conference",
+    "title": "Liner shipping conferences",
+    "wiki": "Liner Conference System",
+    "year": 1875,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Shipping operators formed associations to coordinate specified services and commercial terms.",
+    "parents": [
+      {
+        "id": "steamboat",
+        "type": "enabler",
+        "reason": "Scheduled steamship services created recurring capacity and pricing questions that operators coordinated."
+      }
+    ]
+  },
+  {
+    "id": "incoterms-rules",
+    "title": "Incoterms",
+    "wiki": "Incoterms",
+    "year": 1936,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Standard commercial terms allocate specified delivery responsibilities between trading parties.",
+    "parents": [
+      {
+        "id": "international-chamber-commerce",
+        "type": "enabler",
+        "reason": "The international commercial association coordinated publication of commonly interpreted trade terms."
+      }
+    ]
+  },
+  {
+    "id": "international-chamber-commerce",
+    "title": "International Chamber of Commerce",
+    "wiki": "International Chamber of Commerce",
+    "year": 1919,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "An international business organization coordinates commercial rules, representation, and dispute services.",
+    "parents": [
+      {
+        "id": "chamber-commerce",
+        "type": "foundation",
+        "reason": "National and local commercial associations supplied a representation model extended across borders."
+      }
+    ]
+  },
+  {
+    "id": "iata",
+    "title": "International Air Transport Association",
+    "wiki": "International Air Transport Association",
+    "year": 1945,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Airlines formed an association to coordinate commercial aviation practices and services.",
+    "parents": [
+      {
+        "id": "airport",
+        "type": "enabler",
+        "reason": "Established airport networks made regular airline services possible across many destinations."
+      }
+    ]
+  },
+  {
+    "id": "icao",
+    "title": "International Civil Aviation Organization",
+    "wiki": "International Civil Aviation Organization",
+    "year": 1944,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "An international organization coordinates civil aviation standards and cooperation.",
+    "parents": [
+      {
+        "id": "powered-airplane",
+        "type": "enabler",
+        "reason": "Practical powered flight created international operations requiring common safety and navigation arrangements."
+      }
+    ]
+  },
+  {
+    "id": "international-maritime-organization",
+    "title": "International Maritime Organization",
+    "wiki": "International Maritime Organization",
+    "year": 1948,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A specialized international organization coordinates maritime safety and related shipping rules.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "The postwar UN system supplied a framework for establishing a specialized shipping organization."
+      }
+    ]
+  },
+  {
+    "id": "intermodal-shipping-document",
+    "title": "Intermodal shipment documentation",
+    "wiki": "Combined transport",
+    "year": 1975,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "Coordinated documents describe consignments moving through multiple transport modes.",
+    "parents": [
+      {
+        "id": "containerization",
+        "type": "enabler",
+        "reason": "Standardized containers facilitate transfers whose custody and obligations can be tracked through combined documents."
+      }
+    ]
+  },
+  {
+    "id": "standard-time-zones",
+    "title": "International time-zone coordination",
+    "wiki": "Time zone",
+    "year": 1884,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Coordinated time conventions reduce ambiguity in schedules and communication between regions.",
+    "parents": [
+      {
+        "id": "railway",
+        "type": "enabler",
+        "reason": "Long-distance rail timetables created practical demand for consistent time conventions across localities."
+      }
+    ]
+  },
+  {
+    "id": "international-date-line",
+    "title": "International Date Line convention",
+    "wiki": "International Date Line",
+    "year": 1884,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "A shared convention distinguishes calendar dates across an approximate Pacific boundary.",
+    "parents": [
+      {
+        "id": "standard-time-zones",
+        "type": "enabler",
+        "reason": "Coordinated global timekeeping creates a need to reconcile the calendar change around the world."
+      }
+    ]
+  },
+  {
+    "id": "postal-code",
+    "title": "Postal codes",
+    "wiki": "Postal code",
+    "year": 1941,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "Area codes assist postal sorting and routing within delivery networks.",
+    "parents": [
+      {
+        "id": "postal-service",
+        "type": "enabler",
+        "reason": "Large managed delivery systems create repeated routing decisions that compact area identifiers can simplify."
+      }
+    ]
+  },
+  {
+    "id": "address-system",
+    "title": "Systematic addressing",
+    "wiki": "Address",
+    "year": 1750,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Organized place identifiers allow people, goods, and services to locate destinations reliably.",
+    "parents": [
+      {
+        "id": "cities",
+        "type": "enabler",
+        "reason": "Dense streets and buildings create navigation and delivery needs beyond personal local knowledge."
+      }
+    ]
+  },
+  {
+    "id": "street-numbering",
+    "title": "Street numbering",
+    "wiki": "House numbering",
+    "year": 1750,
+    "domain": "society",
+    "kind": "technology",
+    "summary": "Assigned building numbers distinguish destinations along named streets.",
+    "parents": [
+      {
+        "id": "address-system",
+        "type": "foundation",
+        "reason": "Structured address conventions provide the framework in which building numbers identify individual destinations."
+      }
+    ]
+  },
+  {
+    "id": "postal-money-order",
+    "title": "Postal money orders",
+    "wiki": "Money order",
+    "year": 1838,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Postal arrangements transfer designated funds through issued payment instruments.",
+    "parents": [
+      {
+        "id": "postal-service",
+        "type": "enabler",
+        "reason": "A distributed office network provides local points for issuing and redeeming payment orders."
+      }
+    ]
+  },
+  {
+    "id": "international-reply-coupon",
+    "title": "International reply coupons",
+    "wiki": "International reply coupon",
+    "year": 1906,
+    "domain": "society",
+    "kind": "institution",
+    "summary": "Exchangeable postal coupons let senders provide return postage usable in participating foreign postal services.",
+    "parents": [
+      {
+        "id": "universal-postal-union",
+        "type": "enabler",
+        "reason": "The union's international congress agreed a coupon that participating national services could redeem for postage."
+      }
+    ]
+  },
+  {
+    "id": "correspondence-chess",
+    "title": "Correspondence chess",
+    "wiki": "Correspondence chess",
+    "year": 1824,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Players conduct chess games remotely by exchanging moves over extended intervals.",
+    "parents": [
+      {
+        "id": "postal-service",
+        "type": "enabler",
+        "reason": "Reliable message delivery allows opponents in different places to exchange recorded moves."
+      }
+    ]
+  },
+  {
+    "id": "book-club",
+    "title": "Organized book clubs",
+    "wiki": "Book sales club",
+    "year": 1926,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Membership organizations select and distribute books to recurring groups of readers.",
+    "parents": [
+      {
+        "id": "publishing",
+        "type": "enabler",
+        "reason": "Commercial editions and distribution networks provide books that membership services can select and deliver."
+      }
+    ]
+  },
+  {
+    "id": "literary-festival",
+    "title": "Cheltenham Literature Festival",
+    "wiki": "Cheltenham Literature Festival",
+    "year": 1949,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "An organized public festival gathered authors and readers for literary performance and discussion.",
+    "parents": [
+      {
+        "id": "publishing",
+        "type": "enabler",
+        "reason": "Published works and author-reader networks supply the material and participants for organized literary events."
+      }
+    ]
+  },
+  {
+    "id": "mechanics-institute",
+    "title": "Mechanics' institutes",
+    "wiki": "Mechanics' institute",
+    "year": 1821,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Educational associations provided workers with lectures, libraries, and practical opportunities for learning.",
+    "parents": [
+      {
+        "id": "apprenticeship",
+        "type": "influence",
+        "reason": "Occupational skill learning supplied practical needs supplemented by workers' lectures and accessible educational collections."
+      }
+    ]
+  },
+  {
+    "id": "recorded-oral-history",
+    "title": "Oral-history interviewing",
+    "wiki": "Oral history",
+    "year": 1948,
+    "domain": "culture",
+    "kind": "practice",
+    "summary": "Researchers preserve interviews about remembered experience for later historical interpretation.",
+    "parents": [
+      {
+        "id": "oral-tradition",
+        "type": "influence",
+        "reason": "Spoken transmission of remembered events supplies a source tradition reorganized through deliberate interviews and archival preservation."
+      }
+    ]
+  },
+  {
+    "id": "community-radio",
+    "title": "Community radio",
+    "wiki": "Community radio",
+    "year": 1949,
+    "domain": "culture",
+    "kind": "institution",
+    "summary": "Locally governed broadcasters provide programming shaped by participating communities.",
+    "parents": [
+      {
+        "id": "radio",
+        "type": "enabler",
+        "reason": "Radio transmission provides the distribution medium organized through local participation and governance."
+      }
+    ]
+  }
+]

@@ -55,7 +55,7 @@ function verifyGeometry(layout, items) {
   }
 }
 
-test('all 1,000 nodes and their connections avoid cards and shared routes', () => {
+test('all catalog nodes and their connections avoid cards and shared routes', () => {
   verifyGeometry(full, nodes)
 })
 
@@ -70,7 +70,7 @@ test('focused and filtered views route only their displayed relationships', asyn
 })
 
 test('empty and single-node views remain usable', async () => {
-  assert.deepEqual(await layoutGraph([]), { nodes: [], edges: [], bands: [], width: 0, height: 0 })
+  assert.deepEqual(await layoutGraph([]), { nodes: [], edges: [], bands: [], timeBands: [], width: 0, height: 0 })
   const single = [nodes.find(n => n.id === 'microscope')]
   verifyGeometry(await layoutGraph(single), single)
 })

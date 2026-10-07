@@ -12,6 +12,18 @@ function prepare(canvas, width, height) {
 export function drawScene(canvas, scene, frame, viewport, width, height, selected, domains, relations) {
   const ctx = prepare(canvas, width, height)
   const z = viewport.zoom, sx = x => x * z + viewport.x, sy = y => y * z + viewport.y
+  for (const [i, era] of (scene.layout.timeBands ?? []).entries()) {
+    const x = sx(era.x), w = era.width * z
+    if (x + w < 0 || x > width) continue
+    ctx.fillStyle = i % 2 ? '#c1d5e90b' : '#efd6a809'; ctx.fillRect(x, 0, w, height)
+    ctx.fillStyle = '#b9c9db70'; ctx.fillRect(x, 0, 2, height)
+    for (const period of era.subdivisions) {
+      if (period.width * z < 72) continue
+      const px = sx(period.x)
+      if (px < 0 || px > width) continue
+      ctx.fillStyle = '#b9c9db26'; ctx.fillRect(px, 0, 1, height)
+    }
+  }
   for (const band of scene.layout.bands) {
     const y = sy(band.y), h = band.height * z
     if (y + h < 0 || y > height) continue
@@ -24,26 +36,27 @@ export function drawScene(canvas, scene, frame, viewport, width, height, selecte
     const points = edge.points
     ctx.beginPath(); ctx.moveTo(sx(points[0].x), sy(points[0].y))
     for (let i = 1; i < points.length; i++) ctx.lineTo(sx(points[i].x), sy(points[i].y))
-    ctx.strokeStyle = '#222623'; ctx.lineWidth = active ? 5 : 3; ctx.setLineDash([]); ctx.stroke()
-    ctx.strokeStyle = active ? relations[edge.type].color : '#6d7765'
-    ctx.globalAlpha = active ? .95 : .5
-    ctx.lineWidth = active ? 1.7 : .8
-    ctx.setLineDash(edge.type === 'enabler' ? [7, 5] : edge.type === 'influence' ? [2, 5] : [])
+    ctx.globalAlpha = 1; ctx.lineCap = 'round'
+    ctx.strokeStyle = '#171c1a'; ctx.lineWidth = active ? 5 : 4; ctx.setLineDash([]); ctx.stroke()
+    ctx.strokeStyle = relations[edge.type].color
+    ctx.globalAlpha = active ? 1 : .8
+    ctx.lineWidth = active ? 2.5 : 1.65
+    ctx.setLineDash(edge.type === 'enabler' ? [11, 6] : edge.type === 'influence' ? [2.5, 6] : [])
     ctx.stroke()
     if (z >= .25) {
       const end = points.at(-1), x = sx(end.x), y = sy(end.y), size = active ? 6 : 4
       ctx.fillStyle = ctx.strokeStyle; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x - size, y - size / 2); ctx.lineTo(x - size, y + size / 2); ctx.fill()
     }
   }
-  ctx.globalAlpha = 1; ctx.setLineDash([])
+  ctx.globalAlpha = 1; ctx.setLineDash([]); ctx.lineCap = 'butt'
   if (frame.mode === 'density') {
     ctx.font = '10px Barlow, sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'
     for (const mark of frame.marks) {
-      const x = sx(mark.cx), y = sy(mark.cy), r = Math.min(16, 3 + Math.sqrt(mark.count)), h = Math.min(10, mark.cellHeight * z * .8)
+      const x = sx(mark.cx), y = sy(mark.cy), r = Math.min(16, 3 + Math.sqrt(mark.count), mark.cellWidth * z * .4), h = Math.min(10, mark.cellHeight * z * .8)
       ctx.fillStyle = domains[mark.domain].color
       ctx.globalAlpha = Math.min(1, .45 + Math.log2(mark.count + 1) / 8)
       ctx.fillRect(x - r, y - h / 2, r * 2, h)
-      if (mark.count > 1 && h >= 9) { ctx.globalAlpha = 1; ctx.fillStyle = '#161b17'; ctx.fillText(String(mark.count), x, y) }
+      if (mark.count > 1 && h >= 9 && r * 2 >= String(mark.count).length * 6) { ctx.globalAlpha = 1; ctx.fillStyle = '#161b17'; ctx.fillText(String(mark.count), x, y) }
     }
     ctx.globalAlpha = 1
   } else if (frame.mode === 'nodes') {

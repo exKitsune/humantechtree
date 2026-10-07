@@ -6,9 +6,9 @@
   let source = $state.raw<Capability[]>([])
   let items = $state.raw<Capability[]>([])
   let selected = $state('0:microscope')
-  let copies = $state(20)
+  let fixtureSize = $state(20000)
   let error = $state('')
-  function populate() { items = multiplyCatalog(source, copies) }
+  function populate() { items = multiplyCatalog(source, Math.ceil(fixtureSize / source.length)).slice(0, fixtureSize) }
   onMount(async () => {
     try { source = (await (await fetch('/data/catalog.json')).json()).nodes; populate() }
     catch (e) { error = String(e) }
@@ -18,7 +18,7 @@
   <header>
     <h1>Rendering benchmark</h1>
     <p>Synthetic catalog copies; the production catalog is unchanged. Use Fit, scroll and zoom to exercise the same graph component.</p>
-    <label>Fixture size <select bind:value={copies} onchange={populate}><option value={1}>1,000 nodes</option><option value={10}>10,000 nodes</option><option value={20}>20,000 nodes</option><option value={50}>50,000 nodes</option></select></label>
+    <label>Fixture size <select bind:value={fixtureSize} onchange={populate}><option value={1000}>1,000 nodes</option><option value={10000}>10,000 nodes</option><option value={20000}>20,000 nodes</option><option value={50000}>50,000 nodes</option></select></label>
     <output>{items.length.toLocaleString()} nodes · {items.reduce((n, item) => n + item.parents.length, 0).toLocaleString()} connections</output>
   </header>
   <div class="benchmark-stage">{#if items.length}<Graph {items} {selected} media={{}} select={(id) => selected = id} />{:else}<p>{error || 'Preparing fixture…'}</p>{/if}</div>

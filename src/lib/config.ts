@@ -1,5 +1,6 @@
 import { Hammer, FlaskConical, Landmark, Cpu, HeartPulse, Layers, Zap, Truck, Sprout, Palette } from '@lucide/svelte'
 import type { Domain, Relation } from './types'
+import { TIME_ERAS } from './timeline.js'
 
 export const domains = [
   { id: 'engineering', label: 'Tools & machines', color: '#dea352', icon: Hammer },
@@ -15,19 +16,11 @@ export const domains = [
 ] as const
 export const domainInfo = Object.fromEntries(domains.map(d => [d.id, d])) as Record<Domain, typeof domains[number]>
 export const relations: Record<Relation, { label: string; color: string; description: string }> = {
-  foundation: { label: 'Technical foundation', color: '#e5b365', description: 'A material, tool, or body of knowledge used by this particular technology or method. Other routes may exist.' },
-  enabler: { label: 'Enabling condition', color: '#89b9b1', description: 'An infrastructure, institution, or capability that helped development, adoption, or scale.' },
-  influence: { label: 'Historical influence', color: '#b4a1c8', description: 'An earlier idea or practice that shaped a particular historical development.' },
+  foundation: { label: 'Technical foundation', color: '#ffd17c', description: 'A material, tool, or body of knowledge used by this particular technology or method. Other routes may exist.' },
+  enabler: { label: 'Enabling condition', color: '#51edff', description: 'An infrastructure, institution, or capability that helped development, adoption, or scale.' },
+  influence: { label: 'Historical influence', color: '#f3a0ff', description: 'An earlier idea or practice that shaped a particular historical development.' },
 }
-export const eras = [
-  { id: 'all', label: 'All eras', min: -Infinity, max: Infinity },
-  { id: 'prehistory', label: 'Prehistory', min: -Infinity, max: -3500 },
-  { id: 'ancient', label: 'Ancient', min: -3500, max: 500 },
-  { id: 'medieval', label: 'Medieval', min: 500, max: 1450 },
-  { id: 'early-modern', label: 'Early modern', min: 1450, max: 1750 },
-  { id: 'industrial', label: 'Industrial', min: 1750, max: 1900 },
-  { id: 'modern', label: 'Modern', min: 1900, max: Infinity },
-]
+export const eras = [{ id: 'all', label: 'All eras', min: -Infinity, max: Infinity }, ...TIME_ERAS]
 export function formatYear(year: number) {
   if (year <= -1000000) return `${Number((Math.abs(year) / 1000000).toFixed(1))} million years ago`
   if (year < 0) return `${Math.abs(year).toLocaleString('en-US')} BCE`

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte'
+  import { onMount, untrack } from 'svelte'
   import { SvelteFlow, ViewportPortal, type Viewport } from '@xyflow/svelte'
   import { Plus, Minus, Maximize, LocateFixed } from '@lucide/svelte'
   import '@xyflow/svelte/dist/style.css'
@@ -8,8 +8,9 @@
   import { createLayoutClient } from './layout-client.js'
   import { createScene, planFrame, hitTest } from './scene.js'
   import { drawScene, drawOverview } from './draw-scene.js'
+  import { contentExtent, clampViewport } from './viewport.js'
   import { domainInfo, relations } from './config'
-  import type { Capability, WikipediaEntry, GraphLayout, LayoutNode } from './types'
+  import type { Capability, WikipediaEntry, GraphLayout, LayoutNode, TimeBand } from './types'
 
   let { items, selected, media, select, resetToken = 0 }: {
     items: Capability[]; selected: string; media: Record<string, WikipediaEntry>; select: (id: string) => void; resetToken?: number
@@ -22,16 +23,29 @@
   let viewport = $state<Viewport>({ x: 50, y: 50, zoom: .85 })
   let requestedViewport = $state.raw<Viewport | null>(null)
   let flowReady = $state(false)
-  let width = $state(800), height = $state(600)
+  const AXIS_HEIGHT = 54
+  let width = $state(800), outerHeight = $state(600)
+  let height = $derived(Math.max(1, outerHeight - AXIS_HEIGHT))
   let graphElement: HTMLDivElement
   let canvas = $state<HTMLCanvasElement>()
   let overview = $state<HTMLCanvasElement>()
+  let panExtent = $derived(contentExtent(scene?.layout ?? { nodes: [], edges: [] }) as [[number, number], [number, number]])
   let minZoom = $derived(Math.max(.000001, Math.min(.06, width / (scene?.layout.width || 1), Math.max(80, height - 140) / (scene?.layout.height || 1)) * .8))
   let frame = $derived(scene ? planFrame(scene, viewport, width, height, selected) : null)
   let bandLabels: (GraphLayout['bands'][number] & { screenY: number })[] = $derived((scene?.layout.bands ?? []).flatMap((band: GraphLayout['bands'][number]) => {
     const y = band.y * viewport.zoom + viewport.y, h = band.height * viewport.zoom
-    return y + h >= 20 && y < height && h >= 18 ? [{ ...band, screenY: Math.max(8, y + 3) }] : []
+    return y + h >= 26 && y < height && h >= 18 ? [{ ...band, screenY: AXIS_HEIGHT + Math.max(8, y + 3) }] : []
   }))
+  const clipPeriod = (period: { x: number; width: number }) => {
+    const left = Math.max(0, period.x * viewport.zoom + viewport.x)
+    const right = Math.min(width, (period.x + period.width) * viewport.zoom + viewport.x)
+    return { left, width: Math.max(0, right - left) }
+  }
+  let timeLabels = $derived((scene?.layout.timeBands ?? []).map((era: TimeBand) => ({
+    ...era, screen: clipPeriod(era),
+    subdivisions: era.subdivisions.map(period => ({ ...period, screen: clipPeriod(period) }))
+      .filter(period => period.screen.width >= 72),
+  })).filter((era: TimeBand & { screen: { width: number } }) => era.screen.width > 0))
 
   function resetClient() { layoutClient?.destroy(); layoutClient = createLayoutClient() }
   onMount(() => {
@@ -62,28 +76,33 @@
     })
     return () => cancelAnimationFrame(raf)
   })
+  function setView(next: Viewport) { requestedViewport = clampViewport(next, width, height, panExtent) }
   function focusNode(node: LayoutNode) {
-    requestedViewport = { x: width / 2 - (node.x + node.width / 2) * .9, y: height / 2 - (node.y + node.height / 2) * .9, zoom: .9 }
+    setView({ x: width / 2 - (node.x + node.width / 2) * .9, y: height / 2 - (node.y + node.height / 2) * .9, zoom: .9 })
   }
   function center() {
     if (!flowReady) return
     const node = scene?.byId.get(selected) ?? scene?.nodes[0]
     if (node) focusNode(node)
   }
-  $effect(() => { scene; selected; resetToken; center() })
+  $effect(() => {
+    width; height
+    untrack(() => { if (flowReady) setView(viewport) })
+  })
+  $effect(() => { scene; selected; resetToken; flowReady; untrack(center) })
   function zoom(factor: number) {
     const next = Math.max(minZoom, Math.min(1.8, viewport.zoom * factor)), ratio = next / viewport.zoom
-    requestedViewport = { x: width / 2 - (width / 2 - viewport.x) * ratio, y: height / 2 - (height / 2 - viewport.y) * ratio, zoom: next }
+    setView({ x: width / 2 - (width / 2 - viewport.x) * ratio, y: height / 2 - (height / 2 - viewport.y) * ratio, zoom: next })
   }
   function fitRect(x: number, y: number, w: number, h: number, maximum = 1) {
     const z = Math.max(minZoom, Math.min(maximum, Math.max(80, width - 70) / (w + 100), Math.max(80, height - 140) / (h + 100)))
-    requestedViewport = { x: width / 2 - (x + w / 2) * z, y: height / 2 - (y + h / 2) * z, zoom: z }
+    setView({ x: width / 2 - (x + w / 2) * z, y: height / 2 - (y + h / 2) * z, zoom: z })
   }
   function fit() { if (scene) fitRect(0, 0, scene.layout.width, scene.layout.height) }
   function pick({ event }: { event: MouseEvent }) {
     if (!scene || !frame) return
     const bounds = graphElement.getBoundingClientRect()
-    const point = { x: (event.clientX - bounds.left - viewport.x) / viewport.zoom, y: (event.clientY - bounds.top - viewport.y) / viewport.zoom }
+    const point = { x: (event.clientX - bounds.left - viewport.x) / viewport.zoom, y: (event.clientY - bounds.top - AXIS_HEIGHT - viewport.y) / viewport.zoom }
     const hit = hitTest(scene, frame, point, viewport.zoom)
     if (hit?.node) { select(hit.node.id); focusNode(hit.node) }
     else if (hit?.cluster) {
@@ -100,12 +119,12 @@
     const scale = Math.min(140 / scene.layout.width, 78 / scene.layout.height)
     const x = (event.clientX - bounds.left - (150 - scene.layout.width * scale) / 2) / scale
     const y = (event.clientY - bounds.top - (88 - scene.layout.height * scale) / 2) / scale
-    requestedViewport = { ...viewport, x: width / 2 - x * viewport.zoom, y: height / 2 - y * viewport.zoom }
+    setView({ ...viewport, x: width / 2 - x * viewport.zoom, y: height / 2 - y * viewport.zoom })
   }
   function keyboard(event: KeyboardEvent) {
     if (event.target !== graphElement) return
     const delta: Record<string, [number, number]> = { ArrowLeft: [120, 0], ArrowRight: [-120, 0], ArrowUp: [0, 120], ArrowDown: [0, -120] }
-    if (delta[event.key]) { event.preventDefault(); const [x, y] = delta[event.key]; requestedViewport = { ...viewport, x: viewport.x + x, y: viewport.y + y } }
+    if (delta[event.key]) { event.preventDefault(); const [x, y] = delta[event.key]; setView({ ...viewport, x: viewport.x + x, y: viewport.y + y }) }
     else if (event.key === '+' || event.key === '=') zoom(1.25)
     else if (event.key === '-') zoom(.8)
     else if (event.key === 'Home') { event.preventDefault(); fit() }
@@ -113,16 +132,17 @@
 </script>
 
 <!-- svelte-ignore a11y_no_noninteractive_tabindex, a11y_no_noninteractive_element_interactions (This graph implements keyboard pan/zoom and exposes named button controls.) -->
-<div class="graph" bind:this={graphElement} bind:clientWidth={width} bind:clientHeight={height} aria-busy={arranging}
+<div class="graph" bind:this={graphElement} bind:clientWidth={width} bind:clientHeight={outerHeight} aria-busy={arranging}
   role="application" aria-label="Technology tree canvas. Arrow keys pan, plus and minus zoom, Home fits the tree. Search above to find any capability."
   tabindex="0" onkeydown={keyboard} data-lod={frame?.mode} data-rendered-cards={frame?.cards.length ?? 0} data-rendered-marks={frame?.marks.length ?? 0} data-rendered-edges={frame?.edges.length ?? 0}>
+  <div class="graph-surface">
   <canvas bind:this={canvas} class="graph-raster" aria-hidden="true"></canvas>
   <SvelteFlow bind:viewport colorMode="dark" {minZoom} maxZoom={1.8} oninit={() => flowReady = true}
     nodesDraggable={false} nodesConnectable={false} elementsSelectable={false} deleteKey={[]}
     zoomOnDoubleClick={false} preventScrolling={true} onpaneclick={pick}
     panOnDrag={true} panOnScroll={true} zoomOnScroll={false} zoomOnPinch={true} paneClickDistance={5}
-    translateExtent={[[-Infinity, -Infinity], [Infinity, Infinity]]}>
-    <ViewportController target={requestedViewport} />
+    translateExtent={panExtent}>
+    <ViewportController target={requestedViewport} extent={panExtent} {minZoom} />
     <ViewportPortal target="front">
       {#each frame?.cards ?? [] as node (node.id)}
         <div class="lod-card nodrag nopan" style:transform={`translate(${node.x}px, ${node.y}px)`}>
@@ -131,6 +151,21 @@
       {/each}
     </ViewportPortal>
   </SvelteFlow>
+  </div>
+  <nav class="time-axis" aria-label="Era bands and date subdivisions">
+    {#each timeLabels as era (era.id)}
+      <button class="time-era-label" style:left={`${era.screen.left}px`} style:width={`${era.screen.width}px`}
+        title={`${era.label} · ${era.count.toLocaleString()} capabilities. Width adapts to population; click to fit this era.`}
+        onclick={() => fitRect(era.x, 0, era.width, scene!.layout.height)}>
+        <span>{era.label}</span>{#if era.screen.width >= 150}<small>{era.count.toLocaleString()}</small>{/if}
+      </button>
+      {#each era.subdivisions as period (period.id)}
+        <button class="period-label" style:left={`${period.screen.left}px`} style:width={`${period.screen.width}px`}
+          title={`${period.label} · ${period.count.toLocaleString()} capabilities. Click to fit this period.`}
+          onclick={() => fitRect(period.x, 0, period.width, scene!.layout.height)}>{period.label}</button>
+      {/each}
+    {/each}
+  </nav>
   <div class="band-labels" aria-label="Visible branch bands">
     {#each bandLabels as band (band.id)}
       <button class="band-label" style:top={`${band.screenY}px`} style:--domain={domainInfo[band.id].color}

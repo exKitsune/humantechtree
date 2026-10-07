@@ -1,4 +1,5 @@
 import { orderFanouts, assignFanoutTracks } from './fanout.js'
+import { assignTimeColumns, placeTimeBands } from './timeline.js'
 
 export const NODE_WIDTH = 204
 export const MIN_NODE_HEIGHT = 144
@@ -20,13 +21,14 @@ export function routeIntersectsRect(points, rect) {
  * travel in empty band gutters and vertical tracks between columns.
  */
 export async function layoutGraph(nodes) {
-  if (!nodes.length) return { nodes: [], edges: [], bands: [], width: 0, height: 0 }
+  if (!nodes.length) return { nodes: [], edges: [], bands: [], timeBands: [], width: 0, height: 0 }
   const ordered = [...nodes].sort((a, b) => a.year - b.year || a.id.localeCompare(b.id))
-  const index = new Map(ordered.map(n => [n.id, { ...n, rank: 0, children: [], incoming: [], outgoing: [], ports: [] }]))
+  const index = new Map(ordered.map(n => [n.id, { ...n, rank: -1, children: [], incoming: [], outgoing: [], ports: [] }]))
   const edges = []
   for (const n of index.values()) for (const p of n.parents) {
     const source = index.get(p.id)
     if (!source) continue
+    if (source.year > n.year) throw new Error(`Prerequisite is later than its target: ${source.id} → ${n.id}`)
     const edge = { id: `${p.id}--${n.id}`, source: p.id, target: n.id, type: p.type,
       sourceHandle: `${p.id}--${n.id}:out`, targetHandle: `${p.id}--${n.id}:in` }
     edges.push(edge); source.children.push(n); source.outgoing.push(edge); n.incoming.push(edge)
@@ -34,12 +36,11 @@ export async function layoutGraph(nodes) {
   const degrees = new Map([...index.values()].map(n => [n.id, n.incoming.length]))
   const queue = [...index.values()].filter(n => !degrees.get(n.id))
   for (let i = 0; i < queue.length; i++) for (const child of queue[i].children) {
-    child.rank = Math.max(child.rank, queue[i].rank + 1)
     degrees.set(child.id, degrees.get(child.id) - 1)
     if (!degrees.get(child.id)) queue.push(child)
   }
   if (queue.length !== nodes.length) throw new Error('Cannot lay out cyclic prerequisites.')
-  const rankCount = queue.reduce((max, n) => Math.max(max, n.rank), 0) + 1
+  const { periods, rankCount } = assignTimeColumns(index, queue)
   const present = new Set(ordered.map(n => n.domain))
   const bandIds = [...BAND_ORDER.filter(id => present.has(id)), ...[...present].filter(id => !BAND_ORDER.includes(id)).sort()]
   const bands = []
@@ -99,8 +100,10 @@ export async function layoutGraph(nodes) {
     x += NODE_WIDTH + Math.max(260, 120 + count * TRACK_SPACING)
   }
   const placed = [...index.values()].map(n => ({ id: n.id, domain: n.domain, rank: n.rank, x: columnX[n.rank], y: n.y, width: n.width, height: n.height, ports: n.ports }))
+  const width = columnX.at(-1) + NODE_WIDTH + 100
+  const boundaries = [0, ...columnX.slice(1).map((x, i) => (columnX[i] + NODE_WIDTH + x) / 2), width]
   return {
-    width: columnX.at(-1) + NODE_WIDTH + 100, height: top, bands, nodes: placed,
+    width, height: top, bands, timeBands: placeTimeBands(periods, boundaries), nodes: placed,
     edges: edges.map(e => {
       const source = index.get(e.source), target = index.get(e.target)
       const points = [{ x: columnX[source.rank] + NODE_WIDTH, y: e.sourceY }, { x: e.exit.x, y: e.sourceY }]
