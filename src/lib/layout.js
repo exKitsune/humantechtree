@@ -1,8 +1,11 @@
+import { orderFanouts, assignFanoutTracks } from './fanout.js'
+
 export const NODE_WIDTH = 204
 export const MIN_NODE_HEIGHT = 144
 const PORT_SPACING = 12
+const TRACK_SPACING = 26
+export const BAND_ORDER = ['engineering', 'materials', 'energy', 'science', 'medicine', 'information', 'transport', 'food', 'society', 'culture']
 
-/** Test the actual routed segments, including detours beyond the endpoints. */
 export function routeIntersectsRect(points, rect) {
   return points.some((point, i) => {
     if (!i) return false
@@ -12,65 +15,99 @@ export function routeIntersectsRect(points, rect) {
   })
 }
 
-/** Lay out exactly the supplied view, routing every relationship independently.
- * No coordinates, canvas size, or domain-specific placements are prescribed.
- * Distinct ports prevent outgoing links from becoming one indistinguishable bus.
+/** Only the displayed nodes determine ranks, band heights, ports and corridors.
+ * Cards stay in their branch; dependencies advance left to right. Long links
+ * travel in empty band gutters and vertical tracks between columns.
  */
-export async function layoutGraph(nodes, elk) {
-  if (!nodes.length) return { nodes: [], edges: [], width: 0, height: 0 }
-  const ordered = [...nodes].sort((a,b) => a.year - b.year || a.id.localeCompare(b.id))
-  const ids = new Set(ordered.map(n => n.id))
-  const edges = ordered.flatMap(n => n.parents.filter(p => ids.has(p.id)).map(p => ({
-    id: `${p.id}--${n.id}`, source: p.id, target: n.id,
-    sourceHandle: `${p.id}--${n.id}:out`, targetHandle: `${p.id}--${n.id}:in`,
-  })))
-  const ports = new Map(ordered.map(n => [n.id, []]))
-  for (const edge of edges) {
-    ports.get(edge.source).push({ id: edge.sourceHandle, side: 'EAST', type: 'source' })
-    ports.get(edge.target).push({ id: edge.targetHandle, side: 'WEST', type: 'target' })
+export async function layoutGraph(nodes) {
+  if (!nodes.length) return { nodes: [], edges: [], bands: [], width: 0, height: 0 }
+  const ordered = [...nodes].sort((a, b) => a.year - b.year || a.id.localeCompare(b.id))
+  const index = new Map(ordered.map(n => [n.id, { ...n, rank: 0, children: [], incoming: [], outgoing: [], ports: [] }]))
+  const edges = []
+  for (const n of index.values()) for (const p of n.parents) {
+    const source = index.get(p.id)
+    if (!source) continue
+    const edge = { id: `${p.id}--${n.id}`, source: p.id, target: n.id, type: p.type,
+      sourceHandle: `${p.id}--${n.id}:out`, targetHandle: `${p.id}--${n.id}:in` }
+    edges.push(edge); source.children.push(n); source.outgoing.push(edge); n.incoming.push(edge)
   }
-  const graph = await elk.layout({
-    id: 'view',
-    layoutOptions: {
-      'elk.algorithm': 'layered',
-      'elk.direction': 'RIGHT',
-      'elk.edgeRouting': 'ORTHOGONAL',
-      'elk.padding': '[top=100,left=100,bottom=100,right=100]',
-      'elk.spacing.nodeNode': '120',
-      'elk.spacing.componentComponent': '260',
-      'elk.spacing.edgeNode': '60',
-      'elk.spacing.edgeEdge': '26',
-      'elk.layered.spacing.nodeNodeBetweenLayers': '260',
-      'elk.layered.spacing.edgeNodeBetweenLayers': '60',
-      'elk.layered.spacing.edgeEdgeBetweenLayers': '26',
-      'elk.layered.mergeEdges': 'false',
-      'elk.layered.crossingMinimization.strategy': 'LAYER_SWEEP',
-      'elk.layered.nodePlacement.strategy': 'BRANDES_KOEPF',
-      'elk.randomSeed': '1',
-    },
-    children: ordered.map(node => {
-      const ps = ports.get(node.id)
-      const count = Math.max(ps.filter(p => p.type === 'source').length, ps.filter(p => p.type === 'target').length)
-      return {
-        id: node.id, width: NODE_WIDTH, height: Math.max(MIN_NODE_HEIGHT, (count + 1) * PORT_SPACING),
-        layoutOptions: { 'elk.portConstraints': 'FIXED_SIDE', 'elk.spacing.portPort': String(PORT_SPACING) },
-        ports: ps.map(p => ({ id: p.id, width: 0, height: 0, layoutOptions: { 'elk.port.side': p.side } })),
+  const degrees = new Map([...index.values()].map(n => [n.id, n.incoming.length]))
+  const queue = [...index.values()].filter(n => !degrees.get(n.id))
+  for (let i = 0; i < queue.length; i++) for (const child of queue[i].children) {
+    child.rank = Math.max(child.rank, queue[i].rank + 1)
+    degrees.set(child.id, degrees.get(child.id) - 1)
+    if (!degrees.get(child.id)) queue.push(child)
+  }
+  if (queue.length !== nodes.length) throw new Error('Cannot lay out cyclic prerequisites.')
+  const rankCount = queue.reduce((max, n) => Math.max(max, n.rank), 0) + 1
+  const present = new Set(ordered.map(n => n.domain))
+  const bandIds = [...BAND_ORDER.filter(id => present.has(id)), ...[...present].filter(id => !BAND_ORDER.includes(id)).sort()]
+  const bands = []
+  let top = 100
+  for (const domain of bandIds) {
+    const members = [...index.values()].filter(n => n.domain === domain)
+    const long = members.flatMap(n => n.outgoing).filter(e => index.get(e.target).rank > index.get(e.source).rank + 1)
+    const gutter = long.length * TRACK_SPACING + 80
+    let bottom = top + gutter
+    const columns = new Map()
+    for (const n of members) {
+      if (!columns.has(n.rank)) columns.set(n.rank, [])
+      columns.get(n.rank).push(n)
+    }
+    for (const [rank, column] of [...columns].sort((a, b) => a[0] - b[0])) {
+      const score = n => {
+        const parents = n.incoming.map(e => index.get(e.source)).filter(p => p.domain === domain && p.order !== undefined)
+        return parents.length ? parents.reduce((sum, p) => sum + p.order, 0) / parents.length : 0
       }
-    }),
-    edges: edges.map(e => ({ id: e.id, sources: [e.sourceHandle], targets: [e.targetHandle] })),
-  })
-  const routed = new Map(graph.edges.map(e => [e.id, e]))
+      column.sort((a, b) => score(a) - score(b) || a.year - b.year || a.id.localeCompare(b.id))
+      let y = top + gutter + 60
+      column.forEach((n, i) => {
+        n.order = i; n.y = y; n.width = NODE_WIDTH
+        n.height = Math.max(MIN_NODE_HEIGHT, (Math.max(n.incoming.length, n.outgoing.length) + 1) * PORT_SPACING)
+        n.incoming.forEach((edge, j) => {
+          const port = { id: edge.targetHandle, type: 'target', x: 0,
+            y: (j + 1) * PORT_SPACING + 6 + rank / (rankCount + 1) }
+          n.ports.push(port)
+          edge.targetY = y + port.y
+        })
+        y += n.height + 120
+      })
+      bottom = Math.max(bottom, y)
+    }
+    bands.push({ id: domain, y: top, height: bottom - top, count: members.length })
+    top = bottom + 100
+  }
+  orderFanouts(index, edges, bands, TRACK_SPACING, PORT_SPACING, rankCount)
+  const gaps = Array.from({ length: rankCount }, () => [])
+  for (const edge of edges) {
+    const source = index.get(edge.source), target = index.get(edge.target)
+    const long = target.rank > source.rank + 1
+    const segment = (from, to, kind) => ({ from, to, kind, edge, id: `${edge.id}:${kind}` })
+    edge.exit = segment(edge.sourceY, long ? edge.busY : edge.targetY, 'exit')
+    gaps[source.rank].push(edge.exit)
+    if (long) {
+      edge.entry = segment(edge.busY, edge.targetY, 'entry')
+      gaps[target.rank - 1].push(edge.entry)
+    }
+  }
+  const columnX = []
+  let x = 100
+  for (const gap of gaps) {
+    columnX.push(x)
+    const count = assignFanoutTracks(gap)
+    for (const segment of gap) segment.x = x + NODE_WIDTH + 60 + segment.track * TRACK_SPACING
+    x += NODE_WIDTH + Math.max(260, 120 + count * TRACK_SPACING)
+  }
+  const placed = [...index.values()].map(n => ({ id: n.id, domain: n.domain, rank: n.rank, x: columnX[n.rank], y: n.y, width: n.width, height: n.height, ports: n.ports }))
   return {
-    width: graph.width, height: graph.height,
-    nodes: graph.children.map(n => ({
-      id: n.id, x: n.x, y: n.y, width: n.width, height: n.height,
-      ports: n.ports.map(p => ({ id: p.id, x: p.x, y: p.y, type: p.id.endsWith(':out') ? 'source' : 'target' })),
-    })),
+    width: columnX.at(-1) + NODE_WIDTH + 100, height: top, bands, nodes: placed,
     edges: edges.map(e => {
-      const sections = routed.get(e.id)?.sections
-      if (sections?.length !== 1) throw new Error(`Missing route for ${e.id}`)
-      const section = sections[0]
-      return { ...e, points: [section.startPoint, ...(section.bendPoints ?? []), section.endPoint] }
+      const source = index.get(e.source), target = index.get(e.target)
+      const points = [{ x: columnX[source.rank] + NODE_WIDTH, y: e.sourceY }, { x: e.exit.x, y: e.sourceY }]
+      if (e.entry) points.push({ x: e.exit.x, y: e.busY }, { x: e.entry.x, y: e.busY }, { x: e.entry.x, y: e.targetY })
+      else points.push({ x: e.exit.x, y: e.targetY })
+      points.push({ x: columnX[target.rank], y: e.targetY })
+      return { id: e.id, source: e.source, target: e.target, type: e.type, sourceHandle: e.sourceHandle, targetHandle: e.targetHandle, points }
     }),
   }
 }

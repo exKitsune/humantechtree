@@ -1,21 +1,25 @@
-import ELK from 'elkjs/lib/elk-api.js'
-import workerUrl from 'elkjs/lib/elk-worker.min.js?url'
-import { layoutGraph } from './layout.js'
-
 export function createLayoutClient() {
-  // ELK's actual worker keeps routing off the UI thread. Vite copies the worker
-  // as a local asset, including the relative base needed for GitHub Pages.
-  const elk = new ELK({ workerFactory: () => new Worker(workerUrl) })
-  const cache = new Map()
+  const worker = new Worker(new URL('./layout.worker.js', import.meta.url), { type: 'module' })
+  const pending = new Map()
+  let request = 0
+  worker.onmessage = ({ data }) => {
+    const task = pending.get(data.request)
+    if (!task) return
+    pending.delete(data.request)
+    if (data.error) task.reject(new Error(data.error))
+    else task.resolve(data.layout)
+  }
+  worker.onerror = event => {
+    for (const task of pending.values()) task.reject(new Error(event.message || 'Layout worker failed to load.'))
+    pending.clear()
+  }
   return {
     layout(items) {
-      const key = JSON.stringify(items.map(n => [n.id, n.year, n.parents.map(p => p.id)]))
-      if (!cache.has(key)) {
-        if (cache.size >= 8) cache.delete(cache.keys().next().value)
-        cache.set(key, layoutGraph(items, elk).catch(error => { cache.delete(key); throw error }))
-      }
-      return cache.get(key)
+      return new Promise((resolve, reject) => {
+        pending.set(++request, { resolve, reject })
+        worker.postMessage({ request, items: items.map(n => ({ id: n.id, domain: n.domain, year: n.year, parents: n.parents.map(p => ({ id: p.id, type: p.type })) })) })
+      })
     },
-    destroy() { elk.terminateWorker() },
+    destroy() { worker.terminate(); for (const task of pending.values()) task.reject(new Error('Layout cancelled.')); pending.clear() },
   }
 }

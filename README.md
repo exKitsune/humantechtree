@@ -42,7 +42,19 @@ Connections answer **“How did this help make that possible?”** They are dire
 
 This is not a game, an unlock system, or a universal sequence every society must follow. Religion, treaties, and institutions are first-class subjects; they are never presumed to be universal requirements for technological development. Nodes are arranged in dependency layers, with approximate dates displayed, rather than a proportional chronological axis. Era names are navigation aids and do not describe every region's periodization.
 
-The layout is calculated from the current view's nodes and connections, using [ELK's layered algorithm](https://eclipse.dev/elk/reference/algorithms/org-eclipse-elk-layered.html) in a local web worker. Each relationship gets its own attachment points and orthogonal route; crowded nodes and routing corridors expand as needed. The algorithm minimizes crossings, and a small visual gap distinguishes remaining crossings from junctions. Filtering or changing the focused neighborhood recalculates the arrangement. Panning and zooming keep positions stable, and the canvas has no pan boundary. **Fit visible tree** includes the entire current view and its routed connections.
+The layout is calculated from the current view's nodes and connections in a local web worker. The ten existing branches form horizontal bands; prerequisites advance from left to right. Band heights and the space between columns grow with the visible nodes and their connections. Starting points remain inside their own branches.
+
+Each node's outbound relationships are routed together as an ordered fan-out. Destination bands, columns and heights determine the attachment-point order and nested routing tracks. Long links use reserved horizontal corridors above the cards. Links from the same source remain separate without crossing or touching; unrelated sources can still cross, with a visual break distinguishing crossings from junctions. Filtering or changing the focused neighborhood recalculates the arrangement. Panning and zooming keep positions stable, and the canvas has no pan boundary. **Fit visible tree** includes the entire current view and its routed connections. Click a band label to fit that branch's area.
+
+An article reference is not a dependency. Importing more Wikipedia content will not automatically establish useful prerequisites. Nodes without parents may be starting points or incomplete research; nodes without any links need further editorial connections. Filters can also hide an otherwise connected node's neighbors.
+
+## Large graphs and level of detail
+
+The canvas uses three levels of detail: aggregate counts at overview scale, lightweight node marks at medium zoom, and image cards close up. Click a group to zoom into it, or click a simplified node to open it. Search remains available at every scale. Arrow keys pan a focused canvas, `+`/`-` zoom, and Home fits the view.
+
+Node and edge spatial indexes avoid scanning the full graph every frame. Density levels are built once per layout; canvas drawing is coalesced with animation frames. At most 120 DOM cards are mounted, with budgets of 1,800 raster marks and 700 routed links. Dense views switch detail levels rather than mounting more cards. Overview hides individual links; intermediate views can show only the selected node's connections, as indicated on the canvas. The minimap is also a raster surface.
+
+`npm test` includes a synthetic 20,000-node / 23,280-link fixture, aggregate-count conservation, viewport picking, rendering budgets and fan-out geometry. With `npm run dev` running, open `/tests/benchmark.html` for an interactive 1,000–50,000-node fixture using the same graph component. The fixture and measurements do not enter the production build. Browser checks have also exercised 50,000 synthetic nodes; this is not a claim that all Wikipedia articles have been incorporated or that arbitrary million-node graphs are validated.
 
 ## Catalog and editorial status
 
@@ -93,4 +105,4 @@ The frontend works if image hosts are unavailable. External images and fonts req
 
 ## Project structure
 
-`src/App.svelte` owns browsing state and panels; `src/lib/Graph.svelte` owns the canvas; `src/lib/graph.js` contains neighborhood, search, and filter functions. `src/lib/layout.js` calculates positions and routes, and `src/lib/layout-client.js` manages the local worker and recent-view cache. `src/lib/config.ts` defines domains, eras, and relation labels. The graph renders only the visible part of the canvas to keep the 1,000-node view usable. Layout tests check the complete catalog and smaller views for overlapping cards, connections crossing cards, shared routes, and detached endpoints.
+`src/App.svelte` owns browsing state and panels; `src/lib/Graph.svelte` owns the canvas and controls. `src/lib/graph.js` contains neighborhood, search, and filter functions. `src/lib/layout.js` places the bands and dependency columns; `src/lib/fanout.js` orders outbound ports and routes. `src/lib/layout-client.js` and `src/lib/layout.worker.js` manage background layout and recent-view caching. `src/lib/scene.js` builds spatial indexes and chooses detail levels; `src/lib/draw-scene.js` draws the raster layers. `src/lib/config.ts` defines domains, eras, and relation labels.

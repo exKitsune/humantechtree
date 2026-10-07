@@ -152,7 +152,7 @@
 
     <main class="main-workspace">
       <div class="tree-heading">
-        <div><div class="breadcrumb">HUMAN KNOWLEDGE <ChevronRight size={12} /> EXPLORER</div><h1>The technology tree<span class="beta-label">EXPLORATORY ATLAS</span></h1></div>
+        <div><div class="breadcrumb view-context"><span>{focused && selected ? `Around ${selected.title}` : domain === 'all' ? 'All branches of humanity' : domainInfo[domain].label}</span><span>· {visible.length.toLocaleString()} capabilities</span>{#if domain !== 'all' || eraId !== 'all'}<button onclick={reset} aria-label="Reset filters" title="Reset filters"><RotateCcw size={12} /></button>{/if}</div><h1>The technology tree<span class="beta-label">EXPLORATORY ATLAS</span></h1></div>
         <div class="view-switch" aria-label="Tree view"><button class:active={!focused} aria-pressed={!focused} onclick={() => { focused = false }}><Layers size={15} />Full tree</button><button class:active={focused} aria-pressed={focused} onclick={focusSelection}><GitBranch size={15} />Connections</button></div>
       </div>
       <div class="era-bar"><span class="era-label"><SlidersHorizontal size={14} />ERA</span><div class="era-options">{#each eras as item}<button class:active={eraId === item.id} aria-pressed={eraId === item.id} onclick={() => filterEra(item.id)}>{item.label}</button>{/each}</div></div>
@@ -162,7 +162,6 @@
         {:else if visible.length === 0}<div class="canvas-message"><Search size={32} /><h2>No capabilities in this view</h2><p>Try another era or branch.</p><button class="primary-button" onclick={reset}>Reset filters</button></div>
         {:else}
           <Graph items={visible} selected={selectedId} {media} {select} {resetToken} />
-          <div class="canvas-context"><span class="context-dot"></span><div><strong>{focused && selected ? `Around ${selected.title.toLowerCase()}` : domain === 'all' ? 'All branches of humanity' : domainInfo[domain].label}</strong><span>{visible.length.toLocaleString()} capabilities {focused ? '· two steps in either direction' : '· follow the connections'}</span></div>{#if domain !== 'all' || eraId !== 'all'}<button onclick={reset} aria-label="Reset filters" title="Reset filters"><RotateCcw size={15} /></button>{/if}</div>
         {/if}
         {#if selected && !detailsOpen}<button class="reopen-detail" onclick={() => detailsOpen = true}><Info size={16} />{selected.title}<ChevronLeft size={15} /></button>{/if}
       </div>
@@ -215,5 +214,5 @@
   <div class="about-relations">{#each Object.entries(relations) as [key, relation]}<div><i class={key} style:--relation={relation.color}></i><div><h3>{relation.label}</h3><p>{relation.description}</p></div></div>{/each}</div>
   <h3>An evolving, editorial catalog</h3><p>This first edition contains {catalog.length.toLocaleString()} nodes and {edgeCount.toLocaleString()} connections. Summaries and relationship explanations are original editorial drafts. Wikipedia articles provide references; their presence does not verify every date or connection. Dates indicate approximate milestones and may differ by region. Era labels are navigation aids, not universal historical periods.</p>
   <h3>Sources & images</h3><p>Our research workflow uses an offline English Wikipedia archive from Kiwix. {offlineCount.toLocaleString()} references have been matched to local articles; matching an article does not verify its proposed connections. {pictureCount.toLocaleString()} catalog images link directly to Wikimedia’s image servers. Missing pictures use a category symbol. Article and image links preserve source attribution; individual image licenses vary.</p>
-  <p class="dialog-note">Scroll or drag to pan in any direction. Pinch, use Ctrl/⌘ + scroll, or use the zoom buttons to zoom. Search with / and follow the connection cards. Full tree shows the selected branches and eras; Connections shows two steps before and after a capability. Each view gets its own layout, with separate paths for connections and room for dense branches.</p>
+  <p class="dialog-note">Scroll or drag to pan. Pinch, Ctrl/⌘ + scroll, or the buttons zoom. Search with / at any scale. Full tree applies your branch and era filters; Connections shows two steps before and after a capability. Horizontal bands represent the branches. Zoomed-out groups show how many capabilities they contain; click a group to zoom in, or a simple node to open its card. Each view arranges its nodes and outbound connections automatically.</p>
 </dialog>

@@ -1,13 +1,11 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-import ELK from 'elkjs/lib/elk.bundled.js'
 import { layoutGraph, routeIntersectsRect } from '../src/lib/layout.js'
 import { neighborhood, matchesFilters } from '../src/lib/graph.js'
 
 const { nodes } = JSON.parse(await readFile(new URL('../public/data/catalog.json', import.meta.url), 'utf8'))
-const elk = new ELK()
-const full = await layoutGraph(nodes, elk)
+const full = await layoutGraph(nodes)
 const epsilon = .001
 const close = (a, b) => Math.abs(a - b) < epsilon
 const overlap = (a, b, c, d) => Math.min(Math.max(a, b), Math.max(c, d)) - Math.max(Math.min(a, b), Math.min(c, d)) > epsilon
@@ -63,18 +61,18 @@ test('all 1,000 nodes and their connections avoid cards and shared routes', () =
 
 test('focused and filtered views route only their displayed relationships', async () => {
   const near = neighborhood(nodes, 'microscope', 2)
-  const focused = await layoutGraph(near, elk)
+  const focused = await layoutGraph(near)
   verifyGeometry(focused, near)
   assert(focused.width * focused.height < full.width * full.height)
   const filtered = nodes.filter(n => matchesFilters(n, 'science', { min: 1750, max: 1900 }))
-  verifyGeometry(await layoutGraph(filtered, elk), filtered)
-  assert.deepEqual(await layoutGraph([...near].reverse(), elk), focused, 'Input ordering should not change the view')
+  verifyGeometry(await layoutGraph(filtered), filtered)
+  assert.deepEqual(await layoutGraph([...near].reverse()), focused, 'Input ordering should not change the view')
 })
 
 test('empty and single-node views remain usable', async () => {
-  assert.deepEqual(await layoutGraph([], elk), { nodes: [], edges: [], width: 0, height: 0 })
+  assert.deepEqual(await layoutGraph([]), { nodes: [], edges: [], bands: [], width: 0, height: 0 })
   const single = [nodes.find(n => n.id === 'microscope')]
-  verifyGeometry(await layoutGraph(single, elk), single)
+  verifyGeometry(await layoutGraph(single), single)
 })
 
 test('route visibility follows detours when both endpoints are offscreen', () => {

@@ -30,10 +30,11 @@ export type WikipediaEntry = {
 export type Catalog = { nodes: Capability[]; generated: string; version: number }
 export type Point = { x: number; y: number }
 export type LayoutPort = Point & { id: string; type: 'source' | 'target' }
-export type LayoutNode = Point & { id: string; width: number; height: number; ports: LayoutPort[] }
+export type LayoutNode = Point & { id: string; domain: Domain; rank: number; width: number; height: number; ports: LayoutPort[] }
 export type GraphLayout = {
   nodes: LayoutNode[]
-  edges: { id: string; source: string; target: string; sourceHandle: string; targetHandle: string; points: Point[] }[]
+  edges: { id: string; source: string; target: string; type: Relation; sourceHandle: string; targetHandle: string; points: Point[] }[]
+  bands: { id: Domain; y: number; height: number; count: number }[]
   width: number
   height: number
 }
