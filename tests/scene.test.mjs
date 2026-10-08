@@ -15,7 +15,7 @@ const indexed = performance.now()
 const fitZoom = Math.min(1100 / layout.width, 700 / layout.height)
 const fit = { x: 0, y: 0, zoom: fitZoom }
 
-test('20,000 nodes stay in the ten branch bands with prerequisites advancing right', () => {
+test('20,000 nodes stay in their branch bands with prerequisites advancing right', () => {
   assert.equal(layout.nodes.length, 20000)
   assert.deepEqual(layout.bands.map(b => b.id), BAND_ORDER)
   const bands = new Map(layout.bands.map(b => [b.id, b]))

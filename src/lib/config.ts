@@ -1,4 +1,4 @@
-import { Hammer, FlaskConical, Landmark, Cpu, HeartPulse, Layers, Zap, Truck, Sprout, Palette } from '@lucide/svelte'
+import { Hammer, FlaskConical, Landmark, Cpu, HeartPulse, Layers, Zap, Truck, Sprout, Palette, Swords } from '@lucide/svelte'
 import type { Domain, Relation } from './types'
 import { TIME_ERAS } from './timeline.js'
 
@@ -10,6 +10,7 @@ export const domains = [
   { id: 'medicine', label: 'Life & medicine', color: '#9cb789', icon: HeartPulse },
   { id: 'information', label: 'Information', color: '#93aecd', icon: Cpu },
   { id: 'transport', label: 'Transport', color: '#c0ad88', icon: Truck },
+  { id: 'warfare', label: 'Weapons & warfare', color: '#e58c7b', icon: Swords },
   { id: 'food', label: 'Food & agriculture', color: '#a5b777', icon: Sprout },
   { id: 'society', label: 'Society & institutions', color: '#b5a2c6', icon: Landmark },
   { id: 'culture', label: 'Culture & expression', color: '#c997a6', icon: Palette },

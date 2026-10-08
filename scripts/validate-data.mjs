@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises'
 import assert from 'node:assert/strict'
 import { auditConnections } from './lib/connection-audit.mjs'
 const { nodes } = JSON.parse(await readFile('public/data/catalog.json', 'utf8'))
-const domains = new Set(['materials','engineering','energy','transport','food','science','medicine','information','society','culture'])
+const domains = new Set(['materials','engineering','energy','transport','warfare','food','science','medicine','information','society','culture'])
 const kinds = new Set(['technology','discovery','infrastructure','institution','practice'])
 const types = new Set(['foundation','enabler','influence'])
 assert(nodes.length >= 2000, `Expected at least 2,000 substantive nodes, got ${nodes.length}`)
