@@ -33,7 +33,7 @@ npm run preview       # Preview dist/
 
 ## GitHub Pages
 
-The included `.github/workflows/pages.yml` builds and deploys pushes to `main` or a manual workflow run. Create/connect your GitHub repository, push this repository, and select **Settings → Pages → Source → GitHub Actions**. No remote repository is assumed or created by this project.
+The included `.github/workflows/pages.yml` builds and deploys pushes to `master` or a manual workflow run. Create/connect your GitHub repository, push this repository, and select **Settings → Pages → Source → GitHub Actions**. No remote repository is assumed or created by this project.
 
 Vite's relative asset base (`./`) and hash navigation work at either `https://USER.github.io/` or `https://USER.github.io/REPOSITORY/`. Only `dist/` is deployed. There is no backend, database, API key, or runtime article API request.
 
