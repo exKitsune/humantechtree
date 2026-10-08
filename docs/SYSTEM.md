@@ -27,6 +27,8 @@ Inspected on 2026-10-07. These are a dated baseline, not counters to maintain af
 | Rendering | Worker layout, spatial indexes, adaptive bands, bounded LOD and navigation | Rendering scale does not establish historical coverage or authoring-query performance |
 | Verification | Data checks, Svelte check, graph/layout tests, Pages workflow | CI runs tests before compilation; some tests read the previously committed catalog |
 
+Category browsing was added on 2026-10-08: optional node `category` IDs reference the shared registry in `src/lib/categories.js`. Sixteen categories organize the Information branch, its filters, search, development lists, worker placement, and density aggregation. This is implemented presentation metadata with compile-time validation; it makes no causal claims. Assign one primary category within the node's branch, preserving cross-category and cross-domain contributions. Unclassified additions remain visible. See [layout contracts](LAYOUT.md#categories-within-branches). The planned inspection, evidence, and proposal operations below remain unimplemented.
+
 ## Linked levels of meaning
 
 ```mermaid

@@ -2,7 +2,10 @@ import { readFile } from 'node:fs/promises'
 import assert from 'node:assert/strict'
 import { auditConnections } from './lib/connection-audit.mjs'
 const { nodes } = JSON.parse(await readFile('public/data/catalog.json', 'utf8'))
+import { categories, validateCategories } from '../src/lib/categories.js'
+validateCategories(nodes)
 const domains = new Set(['engineering','materials','construction','energy','measurement','science','medicine','information','transport','logistics','warfare','food','commerce','governance','society','education','religion','culture'])
+for (const category of categories) assert(domains.has(category.domain), `Unknown category branch: ${category.id}`)
 const kinds = new Set(['technology','discovery','infrastructure','institution','practice'])
 const types = new Set(['foundation','enabler','influence'])
 assert(nodes.length >= 2000, `Expected at least 2,000 substantive nodes, got ${nodes.length}`)

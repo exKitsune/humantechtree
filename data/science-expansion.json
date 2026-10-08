@@ -608,6 +608,7 @@
     "wiki": "QR algorithm",
     "year": 1961,
     "domain": "information",
+    "category": "numerical-optimization",
     "kind": "practice",
     "summary": "Repeated orthogonal factorization computed matrix eigenvalues efficiently.",
     "parents": [
@@ -1134,6 +1135,7 @@
     "wiki": "Bayesian network",
     "year": 1985,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Directed probabilistic graphs represented dependencies and supported inference from evidence.",
     "parents": [
@@ -1208,6 +1210,7 @@
     "wiki": "Kalman filter",
     "year": 1960,
     "domain": "information",
+    "category": "numerical-optimization",
     "kind": "technology",
     "summary": "Recursive estimation combined a dynamical model with noisy measurements.",
     "parents": [
@@ -1668,6 +1671,7 @@
     "wiki": "Light-emitting diode",
     "year": 1962,
     "domain": "information",
+    "category": "computer-hardware",
     "kind": "technology",
     "summary": "Semiconductor junctions produced practical visible light through electron-hole recombination.",
     "parents": [
@@ -4729,6 +4733,7 @@
     "wiki": "Dynamic programming",
     "year": 1953,
     "domain": "information",
+    "category": "numerical-optimization",
     "kind": "practice",
     "summary": "Bellman formalized solving multistage problems through reusable optimal subproblem solutions.",
     "parents": [
@@ -4745,6 +4750,7 @@
     "wiki": "Dijkstra's algorithm",
     "year": 1959,
     "domain": "information",
+    "category": "numerical-optimization",
     "kind": "practice",
     "summary": "A greedy frontier method found shortest paths in graphs with nonnegative edge weights.",
     "parents": [
@@ -4761,6 +4767,7 @@
     "wiki": "Bellman–Ford algorithm",
     "year": 1958,
     "domain": "information",
+    "category": "numerical-optimization",
     "kind": "practice",
     "summary": "Repeated relaxation found shortest paths even when some edge weights were negative.",
     "parents": [
@@ -4782,6 +4789,7 @@
     "wiki": "A* search algorithm",
     "year": 1968,
     "domain": "information",
+    "category": "numerical-optimization",
     "kind": "practice",
     "summary": "Estimated remaining cost guided a shortest-path search toward a target.",
     "parents": [
@@ -4798,6 +4806,7 @@
     "wiki": "Floyd–Warshall algorithm",
     "year": 1962,
     "domain": "information",
+    "category": "numerical-optimization",
     "kind": "practice",
     "summary": "Dynamic programming computed shortest paths between all pairs of vertices.",
     "parents": [
@@ -4819,6 +4828,7 @@
     "wiki": "Ford–Fulkerson algorithm",
     "year": 1956,
     "domain": "information",
+    "category": "numerical-optimization",
     "kind": "practice",
     "summary": "Augmenting paths computed the maximum flow through a capacity-constrained network.",
     "parents": [
@@ -4835,6 +4845,7 @@
     "wiki": "Blossom algorithm",
     "year": 1965,
     "domain": "information",
+    "category": "numerical-optimization",
     "kind": "practice",
     "summary": "Edmonds's contraction method found maximum matchings in general graphs.",
     "parents": [
@@ -4851,6 +4862,7 @@
     "wiki": "Branch and bound",
     "year": 1960,
     "domain": "information",
+    "category": "numerical-optimization",
     "kind": "practice",
     "summary": "Bounds eliminated large portions of discrete optimization searches without checking every candidate.",
     "parents": [
@@ -4867,6 +4879,7 @@
     "wiki": "NP-completeness",
     "year": 1971,
     "domain": "information",
+    "category": "computing-foundations",
     "kind": "discovery",
     "summary": "Cook's result identified a class of problems linked by polynomial-time reductions.",
     "parents": [
@@ -4883,6 +4896,7 @@
     "wiki": "Davis–Putnam algorithm",
     "year": 1960,
     "domain": "information",
+    "category": "numerical-optimization",
     "kind": "practice",
     "summary": "Systematic logical elimination decided whether propositional formulas admit satisfying assignments.",
     "parents": [
@@ -4899,6 +4913,7 @@
     "wiki": "AKS primality test",
     "year": 2002,
     "domain": "information",
+    "category": "numerical-optimization",
     "kind": "practice",
     "summary": "A deterministic polynomial-time algorithm established whether an integer is prime.",
     "parents": [
@@ -4920,6 +4935,7 @@
     "wiki": "PageRank",
     "year": 1998,
     "domain": "information",
+    "category": "web",
     "kind": "technology",
     "summary": "Link structure supplied a recursively defined score for ranking web pages.",
     "parents": [
@@ -4941,6 +4957,7 @@
     "wiki": "Knuth–Morris–Pratt algorithm",
     "year": 1977,
     "domain": "information",
+    "category": "search-data-structures",
     "kind": "practice",
     "summary": "Precomputed prefix information avoided repeating comparisons during pattern search.",
     "parents": [
@@ -4957,6 +4974,7 @@
     "wiki": "Boyer–Moore string-search algorithm",
     "year": 1977,
     "domain": "information",
+    "category": "search-data-structures",
     "kind": "practice",
     "summary": "Backward comparisons and skip rules accelerated finding patterns in text.",
     "parents": [
@@ -4973,6 +4991,7 @@
     "wiki": "Skip list",
     "year": 1989,
     "domain": "information",
+    "category": "search-data-structures",
     "kind": "technology",
     "summary": "Randomly layered links enabled efficient search and updates in ordered data.",
     "parents": [
@@ -4994,6 +5013,7 @@
     "wiki": "B-tree",
     "year": 1970,
     "domain": "information",
+    "category": "search-data-structures",
     "kind": "technology",
     "summary": "Balanced multiway trees organized large ordered indexes with few storage accesses.",
     "parents": [
@@ -5010,6 +5030,7 @@
     "wiki": "AVL tree",
     "year": 1962,
     "domain": "information",
+    "category": "search-data-structures",
     "kind": "technology",
     "summary": "Local rotations maintained logarithmic search depth after updates.",
     "parents": [
@@ -5026,6 +5047,7 @@
     "wiki": "Hash table",
     "year": 1953,
     "domain": "information",
+    "category": "search-data-structures",
     "kind": "technology",
     "summary": "Computed key hashes selected storage positions for rapid associative lookup.",
     "parents": [
@@ -5042,6 +5064,7 @@
     "wiki": "Garbage collection (computer science)",
     "year": 1959,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "Automatic tracing reclaimed memory no longer reachable by a program.",
     "parents": [
@@ -5058,6 +5081,7 @@
     "wiki": "Quicksort",
     "year": 1961,
     "domain": "information",
+    "category": "sorting",
     "kind": "practice",
     "summary": "Recursive partitioning around pivots efficiently ordered stored values.",
     "parents": [
@@ -5079,6 +5103,7 @@
     "wiki": "Merge sort",
     "year": 1945,
     "domain": "information",
+    "category": "sorting",
     "kind": "practice",
     "summary": "Repeated merging of sorted subsequences provided a predictable comparison-based sorting method.",
     "parents": [
@@ -5095,6 +5120,7 @@
     "wiki": "Heapsort",
     "year": 1964,
     "domain": "information",
+    "category": "sorting",
     "kind": "practice",
     "summary": "A heap structure repeatedly selected extreme values to sort data in place.",
     "parents": [
@@ -5111,6 +5137,7 @@
     "wiki": "Computer algebra system",
     "year": 1963,
     "domain": "information",
+    "category": "numerical-optimization",
     "kind": "technology",
     "summary": "Symbolic programs manipulated mathematical expressions rather than only numerical values.",
     "parents": [
@@ -5132,6 +5159,7 @@
     "wiki": "Finite-state machine",
     "year": 1956,
     "domain": "information",
+    "category": "computing-foundations",
     "kind": "discovery",
     "summary": "State-transition models described computations with a finite internal memory.",
     "parents": [
@@ -5148,6 +5176,7 @@
     "wiki": "Regular expression",
     "year": 1951,
     "domain": "information",
+    "category": "search-data-structures",
     "kind": "technology",
     "summary": "Kleene's symbolic notation described repeating and alternative patterns in formal languages.",
     "parents": [
@@ -5164,6 +5193,7 @@
     "wiki": "Context-free grammar",
     "year": 1956,
     "domain": "information",
+    "category": "programming",
     "kind": "discovery",
     "summary": "Production rules generated nested symbolic structures independent of surrounding context.",
     "parents": [
@@ -5180,6 +5210,7 @@
     "wiki": "LR parser",
     "year": 1965,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "Deterministic bottom-up parsing analyzed a broad class of programming-language grammars.",
     "parents": [
@@ -5201,6 +5232,7 @@
     "wiki": "ALGOL",
     "year": 1958,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "A standardized algorithmic language developed block structure and influential expression syntax.",
     "parents": [
@@ -5217,6 +5249,7 @@
     "wiki": "COBOL",
     "year": 1959,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "An English-like compiled language supported portable business data processing.",
     "parents": [
@@ -5233,6 +5266,7 @@
     "wiki": "BASIC",
     "year": 1964,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "A beginner-oriented language enabled interactive programming on time-sharing computers.",
     "parents": [
@@ -5249,6 +5283,7 @@
     "wiki": "Pascal (programming language)",
     "year": 1970,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "Wirth's language combined structured control with explicit data types.",
     "parents": [
@@ -5270,6 +5305,7 @@
     "wiki": "Prolog",
     "year": 1972,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "Logic clauses and automated inference expressed programs through relations rather than command sequences.",
     "parents": [
@@ -5286,6 +5322,7 @@
     "wiki": "Smalltalk",
     "year": 1972,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "An interactive object-based environment unified messages, objects, and graphical development tools.",
     "parents": [
@@ -5302,6 +5339,7 @@
     "wiki": "C++",
     "year": 1985,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "C++ combined C-style systems programming with classes and richer abstraction mechanisms.",
     "parents": [
@@ -5323,6 +5361,7 @@
     "wiki": "Java (programming language)",
     "year": 1995,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "Portable bytecode and managed execution supported programs across different computer systems.",
     "parents": [
@@ -5344,6 +5383,7 @@
     "wiki": "Python (programming language)",
     "year": 1991,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "An interpreted language emphasized readable syntax and flexible general-purpose programming.",
     "parents": [
@@ -5360,6 +5400,7 @@
     "wiki": "JavaScript",
     "year": 1995,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "Embedded scripting made web pages respond to user interaction inside a browser.",
     "parents": [
@@ -5376,6 +5417,7 @@
     "wiki": "Haskell",
     "year": 1990,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "A standardized lazy functional language supported programming with composable typed functions.",
     "parents": [
@@ -5392,6 +5434,7 @@
     "wiki": "Rust (programming language)",
     "year": 2010,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "Ownership-based checks supported systems programming with stronger memory-safety guarantees.",
     "parents": [
@@ -5408,6 +5451,7 @@
     "wiki": "WebAssembly",
     "year": 2017,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "A compact portable instruction format enabled efficient sandboxed execution in web browsers.",
     "parents": [
@@ -5429,6 +5473,7 @@
     "wiki": "Hindley–Milner type system",
     "year": 1969,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "Type rules inferred polymorphic expression types without requiring every annotation.",
     "parents": [
@@ -5445,6 +5490,7 @@
     "wiki": "Data Encryption Standard",
     "year": 1977,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "A standardized symmetric block cipher provided a common method for encrypting digital data.",
     "parents": [
@@ -5461,6 +5507,7 @@
     "wiki": "Advanced Encryption Standard",
     "year": 2001,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "Rijndael became a standardized symmetric cipher for protecting digital information.",
     "parents": [
@@ -5477,6 +5524,7 @@
     "wiki": "Cryptographic hash function",
     "year": 1979,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "One-way digest functions condensed data into fixed-length fingerprints for integrity mechanisms.",
     "parents": [
@@ -5493,6 +5541,7 @@
     "wiki": "SHA-1",
     "year": 1995,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "A standardized digest algorithm supported data-integrity checks and digital-signature systems.",
     "parents": [
@@ -5509,6 +5558,7 @@
     "wiki": "Merkle tree",
     "year": 1979,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "Hash-linked trees allowed efficient verification of individual pieces of a larger dataset.",
     "parents": [
@@ -5525,6 +5575,7 @@
     "wiki": "Diffie–Hellman key exchange",
     "year": 1976,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "Two parties derived a shared secret across a public communication channel.",
     "parents": [
@@ -5541,6 +5592,7 @@
     "wiki": "Elliptic-curve cryptography",
     "year": 1985,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "Elliptic-curve group operations supplied compact public-key cryptographic constructions.",
     "parents": [
@@ -5562,6 +5614,7 @@
     "wiki": "Digital signature",
     "year": 1976,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "Public-key methods enabled verifiable authentication of digital messages.",
     "parents": [
@@ -5578,6 +5631,7 @@
     "wiki": "Quantum key distribution",
     "year": 1984,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "Quantum-state transmission enabled key-establishment methods that reveal certain forms of interception.",
     "parents": [
@@ -5594,6 +5648,7 @@
     "wiki": "Lattice-based cryptography",
     "year": 1996,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "Hard lattice problems supplied cryptographic constructions investigated for quantum-resistant security.",
     "parents": [
@@ -5615,6 +5670,7 @@
     "wiki": "HTTPS",
     "year": 1994,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "Encrypted web connections protected HTTP exchanges between clients and servers.",
     "parents": [
@@ -5636,6 +5692,7 @@
     "wiki": "Secure Shell",
     "year": 1995,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "Encrypted remote login protected administrative sessions across computer networks.",
     "parents": [
@@ -5657,6 +5714,7 @@
     "wiki": "LZ77 and LZ78",
     "year": 1977,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "technology",
     "summary": "Repeated data patterns were encoded through references or dictionaries without a preset symbol model.",
     "parents": [
@@ -5673,6 +5731,7 @@
     "wiki": "PNG",
     "year": 1996,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "technology",
     "summary": "A lossless raster-image format combined predictive filtering with compressed data storage.",
     "parents": [
@@ -5689,6 +5748,7 @@
     "wiki": "Unicode",
     "year": 1991,
     "domain": "information",
+    "category": "data-representation",
     "kind": "infrastructure",
     "summary": "A shared character standard represented text from many writing systems in digital form.",
     "parents": [
@@ -5705,6 +5765,7 @@
     "wiki": "UTF-8",
     "year": 1992,
     "domain": "information",
+    "category": "data-representation",
     "kind": "technology",
     "summary": "A variable-length byte encoding represented Unicode while preserving ASCII compatibility.",
     "parents": [
@@ -5721,6 +5782,7 @@
     "wiki": "XML",
     "year": 1998,
     "domain": "information",
+    "category": "data-representation",
     "kind": "technology",
     "summary": "A general markup standard represented structured data with nested named elements.",
     "parents": [
@@ -5737,6 +5799,7 @@
     "wiki": "JSON",
     "year": 2001,
     "domain": "information",
+    "category": "data-representation",
     "kind": "technology",
     "summary": "A compact text format exchanged structured data using objects, arrays, and primitive values.",
     "parents": [
@@ -5753,6 +5816,7 @@
     "wiki": "Source Code Control System",
     "year": 1972,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "Revision storage tracked source-code changes and reconstructed earlier file versions.",
     "parents": [
@@ -5769,6 +5833,7 @@
     "wiki": "Git",
     "year": 2005,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "Distributed version history supported branching and collaboration across complete local repositories.",
     "parents": [
@@ -5785,6 +5850,7 @@
     "wiki": "OS-level virtualization",
     "year": 1979,
     "domain": "information",
+    "category": "operating-distributed-systems",
     "kind": "technology",
     "summary": "Restricted operating-system environments isolated processes while sharing a kernel.",
     "parents": [
@@ -5801,6 +5867,7 @@
     "wiki": "Docker (software)",
     "year": 2013,
     "domain": "information",
+    "category": "operating-distributed-systems",
     "kind": "technology",
     "summary": "Packaged application images and tooling made operating-system containers easier to distribute and run.",
     "parents": [
@@ -5817,6 +5884,7 @@
     "wiki": "MapReduce",
     "year": 2004,
     "domain": "information",
+    "category": "operating-distributed-systems",
     "kind": "technology",
     "summary": "Distributed map and reduce operations processed large datasets across many machines.",
     "parents": [
@@ -5839,6 +5907,7 @@
     "wiki": "Apache Hadoop",
     "year": 2006,
     "domain": "information",
+    "category": "operating-distributed-systems",
     "kind": "technology",
     "summary": "An open-source framework combined distributed storage with scalable batch processing.",
     "parents": [
@@ -5855,6 +5924,7 @@
     "wiki": "Byzantine fault",
     "year": 1982,
     "domain": "information",
+    "category": "operating-distributed-systems",
     "kind": "discovery",
     "summary": "Agreement protocols were analyzed when participants can send conflicting or faulty information.",
     "parents": [
@@ -5876,6 +5946,7 @@
     "wiki": "Paxos (computer science)",
     "year": 1989,
     "domain": "information",
+    "category": "operating-distributed-systems",
     "kind": "technology",
     "summary": "Quorum-based protocols maintained agreement across distributed machines despite failures.",
     "parents": [
@@ -5892,6 +5963,7 @@
     "wiki": "Raft (algorithm)",
     "year": 2014,
     "domain": "information",
+    "category": "operating-distributed-systems",
     "kind": "technology",
     "summary": "Leader-based replicated logs made distributed consensus easier to understand and implement.",
     "parents": [
@@ -5908,6 +5980,7 @@
     "wiki": "Hoare logic",
     "year": 1969,
     "domain": "information",
+    "category": "programming",
     "kind": "practice",
     "summary": "Assertions before and after commands supported formal reasoning about program correctness.",
     "parents": [
@@ -5929,6 +6002,7 @@
     "wiki": "Model checking",
     "year": 1981,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "Automatic state-space exploration checked whether finite system models satisfy logical properties.",
     "parents": [
@@ -5950,6 +6024,7 @@
     "wiki": "Random forest",
     "year": 2001,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Ensembles of randomized decision trees improved prediction through aggregated results.",
     "parents": [
@@ -5972,6 +6047,7 @@
     "wiki": "Long short-term memory",
     "year": 1997,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Gated recurrent units retained useful sequence information across long spans.",
     "parents": [
@@ -5993,6 +6069,7 @@
     "wiki": "Attention (machine learning)",
     "year": 2014,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Learned alignment weights let sequence models focus on relevant portions of their input.",
     "parents": [
@@ -6009,6 +6086,7 @@
     "wiki": "Word2vec",
     "year": 2013,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Predictive training mapped words into vectors that captured distributional relationships.",
     "parents": [
@@ -6030,6 +6108,7 @@
     "wiki": "Generative adversarial network",
     "year": 2014,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Competing generator and discriminator networks learned to synthesize realistic data.",
     "parents": [
@@ -6046,6 +6125,7 @@
     "wiki": "Variational autoencoder",
     "year": 2013,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Learned latent probability models generated data through encoder-decoder networks.",
     "parents": [
@@ -6067,6 +6147,7 @@
     "wiki": "Diffusion model",
     "year": 2020,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Learned reversal of progressive noise corruption generated complex data samples.",
     "parents": [
@@ -6088,6 +6169,7 @@
     "wiki": "Monte Carlo tree search",
     "year": 2006,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "practice",
     "summary": "Random simulated continuations guided selective expansion of decision trees.",
     "parents": [
@@ -6109,6 +6191,7 @@
     "wiki": "AlphaGo",
     "year": 2016,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Neural evaluation and tree search produced a system capable of defeating leading professional Go players.",
     "parents": [
@@ -6156,6 +6239,7 @@
     "wiki": "Global Positioning System",
     "year": 1995,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "infrastructure",
     "summary": "Timed signals from orbiting transmitters enabled global position determination.",
     "parents": [
@@ -6177,6 +6261,7 @@
     "wiki": "Charge-coupled device",
     "year": 1969,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "technology",
     "summary": "Clocked transfer of stored electrical charge enabled sensitive semiconductor imaging arrays.",
     "parents": [
@@ -6198,6 +6283,7 @@
     "wiki": "Active-pixel sensor",
     "year": 1993,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "technology",
     "summary": "On-pixel amplification integrated imaging with low-power semiconductor electronics.",
     "parents": [
@@ -6219,6 +6305,7 @@
     "wiki": "Lucas–Kanade method",
     "year": 1981,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "technology",
     "summary": "A differential image-registration method estimated local motion from intensity changes.",
     "parents": [

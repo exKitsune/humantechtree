@@ -487,6 +487,7 @@
     "wiki": "Sequence alignment",
     "year": 1970,
     "domain": "information",
+    "category": "computational-biology",
     "kind": "practice",
     "summary": "Dynamic-programming methods aligned biological sequences to identify related positions.",
     "parents": [
@@ -508,6 +509,7 @@
     "wiki": "Sequence assembly",
     "year": 1979,
     "domain": "information",
+    "category": "computational-biology",
     "kind": "practice",
     "summary": "Computational overlap reconstruction combined fragment reads into longer DNA sequences.",
     "parents": [
@@ -529,6 +531,7 @@
     "wiki": "Recurrent neural network",
     "year": 1982,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Feedback connections gave neural networks a state that could persist across successive inputs.",
     "parents": [
@@ -561,6 +564,7 @@
     "wiki": "Binary search tree",
     "year": 1960,
     "domain": "information",
+    "category": "search-data-structures",
     "kind": "technology",
     "summary": "An ordered branching data structure supported searching by progressively narrowing key ranges.",
     "parents": [
@@ -577,6 +581,7 @@
     "wiki": "Linked list",
     "year": 1955,
     "domain": "information",
+    "category": "search-data-structures",
     "kind": "technology",
     "summary": "Explicit links connected stored records without requiring adjacent memory locations.",
     "parents": [
@@ -593,6 +598,7 @@
     "wiki": "Recursion (computer science)",
     "year": 1956,
     "domain": "information",
+    "category": "programming",
     "kind": "practice",
     "summary": "Self-invoking procedures expressed solutions through smaller instances of the same problem.",
     "parents": [
@@ -699,6 +705,7 @@
     "wiki": "Switching circuit theory",
     "year": 1937,
     "domain": "information",
+    "category": "computing-foundations",
     "kind": "discovery",
     "summary": "Shannon showed how Boolean algebra describes relay circuits for symbolic switching and computation.",
     "parents": [
@@ -736,6 +743,7 @@
     "wiki": "ABC (programming language)",
     "year": 1987,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "ABC provided an interactive language with readable blocks and high-level data operations.",
     "parents": [
@@ -752,6 +760,7 @@
     "wiki": "ID3 algorithm",
     "year": 1986,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "practice",
     "summary": "Quinlan's ID3 selected informative attributes to grow classification trees from labeled examples.",
     "parents": [

@@ -19,27 +19,29 @@ export function createScene(layout, items) {
     return { ...e, x, y, width: Math.max(...xs) - x, height: Math.max(...ys) - y }
   })
   // Build aggregate levels once per layout, never during a pan/zoom frame.
-  // Keep domains distinct even when a cell straddles two branch boundaries.
+  // Keep branches and categories distinct even at the coarsest overview level.
   const levels = []
   const bands = new Map(layout.bands.map(b => [b.id, b]))
+  const categoryRegions = new Map(layout.bands.flatMap(b => (b.categories ?? []).map(c => [c.id, c])))
+  const regionFor = n => categoryRegions.get(n.category ?? `${n.domain}:other`) ?? bands.get(n.domain)
   const eras = layout.timeBands?.length ? layout.timeBands : [{ id: 'all', x: 0, width: layout.width, min: -Infinity, max: Infinity }]
   const nodeEras = new Map(nodes.map(n => [n.id, eras.find(era => n.entry.year >= era.min && n.entry.year < era.max)]))
   for (let size = 512; size < Math.max(layout.width, layout.height) * 2; size *= 2) {
     const bins = new Map()
     for (const n of nodes) {
       const cx = n.x + n.width / 2, cy = n.y + n.height / 2
-      const band = bands.get(n.domain)
+      const band = regionFor(n)
       const era = nodeEras.get(n.id)
       const x = era.x + Math.floor((cx - era.x) / size) * size, y = band.y + Math.floor((cy - band.y) / size) * size
-      const key = `${n.domain}:${era.id}:${x}:${y}`
-      if (!bins.has(key)) bins.set(key, { id: key, domain: n.domain, era: era.id, x, y, width: Math.min(size, era.x + era.width - x), height: size, count: 0,
+      const key = `${n.domain}:${n.category ?? ""}:${era.id}:${x}:${y}`
+      if (!bins.has(key)) bins.set(key, { id: key, domain: n.domain, category: n.category, era: era.id, x, y, width: Math.min(size, era.x + era.width - x), height: size, count: 0,
         minX: n.x, minY: n.y, maxX: n.x + n.width, maxY: n.y + n.height })
       const b = bins.get(key)
       b.count++
       b.minX = Math.min(b.minX, n.x); b.minY = Math.min(b.minY, n.y); b.maxX = Math.max(b.maxX, n.x + n.width); b.maxY = Math.max(b.maxY, n.y + n.height)
     }
     const marks = [...bins.values()].map(b => {
-      const band = bands.get(b.domain)
+      const band = regionFor(b)
       return { ...b, cx: b.x + b.width / 2, cellWidth: b.width,
         cy: b.y + Math.min(size, band.y + band.height - b.y) / 2,
         cellHeight: Math.min(size, band.y + band.height - b.y) }

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { categoryFor } from './categories.js'
   import { domainInfo, formatYear } from './config'
   import type { Capability, WikipediaEntry, LayoutPort } from './types'
   let { entry, media, active, select, ports, height }: { entry: Capability; media?: WikipediaEntry; active: boolean; select: (id: string) => void; ports: LayoutPort[]; height: number } = $props()
@@ -8,7 +9,7 @@
 </script>
 
 <button class="capability-node" class:active style:--domain={info.color}
-  style:height={`${height}px`}
+  style:height={`${height}px`} title={categoryFor(entry)?.label}
   onclick={() => select(entry.id)} aria-label={`Explore ${entry.title}`}>
   <span class="node-art" style:height={`${height - 67}px`}>
     {#if media?.thumbnail && !failed}

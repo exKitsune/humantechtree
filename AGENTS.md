@@ -28,6 +28,8 @@ Run `npm run data:audit-connections` against the complete authoring sources afte
 
 Base catalogs and expansion files contain nodes. Additional registered topic batches are `data/warfare-expansion.json`, `data/built-world-expansion.json`, and `data/institutions-expansion.json`; see `docs/research/EXPANSION-QUEUE.md` before choosing another batch. `scripts/lib/catalog.mjs` owns the explicit file list. Optional `data/engineering-connections.json`, `data/science-connections.json`, and `data/society-connections.json` contain added intermediate nodes. `data/connections.json` contains supplemental cross-domain edges. Define each source/target pair only once across all files; duplicate supplements fail compilation so an explanation can never be silently ignored. Update source files, then compile; do not edit only the generated `public/data/catalog.json`.
 
+Optional node `category` IDs reference `src/lib/categories.js` and must belong to the node's `domain`. Use its existing scope descriptions when classifying new milestones; extend that registry for a distinct topic. Categories organize browsing and placement, not historical contributions: never insert category nodes as artificial prerequisites or replace parents with group membership. Current Information milestones are classified; missing assignments remain visible as Other capabilities in a categorized band. See `docs/LAYOUT.md` for grouping and LOD contracts.
+
 Before completing a catalog change run `npm run data:compile`, `npm run validate:data`, and appropriate tests. A relationship's direction must respect the milestone dates and remain acyclic. Filters and zoom must never invent shortcuts across hidden intermediate nodes.
 
 ## Bounded work and durable knowledge

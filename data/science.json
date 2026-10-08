@@ -628,6 +628,7 @@
     "wiki": "Lambda calculus",
     "year": 1936,
     "domain": "information",
+    "category": "computing-foundations",
     "kind": "discovery",
     "summary": "Church formalized computation through functions, application, and substitution.",
     "parents": [
@@ -644,6 +645,7 @@
     "wiki": "Turing machine",
     "year": 1936,
     "domain": "information",
+    "category": "computing-foundations",
     "kind": "discovery",
     "summary": "Turing described an abstract machine that precisely characterized mechanical computation.",
     "parents": [
@@ -660,6 +662,7 @@
     "wiki": "Information theory",
     "year": 1948,
     "domain": "information",
+    "category": "computing-foundations",
     "kind": "discovery",
     "summary": "Shannon quantified information and limits on reliable communication.",
     "parents": [
@@ -676,6 +679,7 @@
     "wiki": "Fast Fourier transform",
     "year": 1965,
     "domain": "information",
+    "category": "numerical-optimization",
     "kind": "practice",
     "summary": "Efficient Fourier algorithms reduced the work needed for spectral computation.",
     "parents": [
@@ -4539,6 +4543,7 @@
     "wiki": "Abacus",
     "year": -2500,
     "domain": "information",
+    "category": "computing-foundations",
     "kind": "technology",
     "summary": "A counting frame stored quantities physically and supported arithmetic operations.",
     "parents": [
@@ -4555,6 +4560,7 @@
     "wiki": "Mechanical calculator",
     "year": 1642,
     "domain": "information",
+    "category": "computing-foundations",
     "kind": "technology",
     "summary": "Pascal's geared calculator automated addition and subtraction.",
     "parents": [
@@ -4571,6 +4577,7 @@
     "wiki": "Slide rule",
     "year": 1622,
     "domain": "information",
+    "category": "computing-foundations",
     "kind": "technology",
     "summary": "Sliding logarithmic scales enabled rapid multiplication and division.",
     "parents": [
@@ -4587,6 +4594,7 @@
     "wiki": "Analytical Engine",
     "year": 1837,
     "domain": "information",
+    "category": "computing-foundations",
     "kind": "technology",
     "summary": "Babbage designed a programmable mechanical machine with storage and processing units.",
     "parents": [
@@ -4603,6 +4611,7 @@
     "wiki": "Ada Lovelace",
     "year": 1843,
     "domain": "information",
+    "category": "computing-foundations",
     "kind": "practice",
     "summary": "Lovelace published a detailed algorithm for calculating Bernoulli numbers on the Analytical Engine.",
     "parents": [
@@ -4619,6 +4628,7 @@
     "wiki": "Punched card",
     "year": 1890,
     "domain": "information",
+    "category": "computing-foundations",
     "kind": "technology",
     "summary": "Hollerith encoded census records as holes for machine tabulation.",
     "parents": [
@@ -4635,6 +4645,7 @@
     "wiki": "Tabulating machine",
     "year": 1890,
     "domain": "information",
+    "category": "computing-foundations",
     "kind": "technology",
     "summary": "Electromechanical tabulators counted and summarized punched-card records.",
     "parents": [
@@ -4651,6 +4662,7 @@
     "wiki": "Electrical telegraph",
     "year": 1837,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "technology",
     "summary": "Electrical signals transmitted coded messages along wires.",
     "parents": [
@@ -4667,6 +4679,7 @@
     "wiki": "Morse code",
     "year": 1838,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "practice",
     "summary": "Short and long signal patterns encoded letters for telegraphic transmission.",
     "parents": [
@@ -4683,6 +4696,7 @@
     "wiki": "Telephone",
     "year": 1876,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "technology",
     "summary": "Electrical transducers carried intelligible speech between distant users.",
     "parents": [
@@ -4699,6 +4713,7 @@
     "wiki": "Telephone exchange",
     "year": 1878,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "infrastructure",
     "summary": "Switchboards connected many telephone subscribers through shared switching facilities.",
     "parents": [
@@ -4715,6 +4730,7 @@
     "wiki": "Strowger switch",
     "year": 1891,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "technology",
     "summary": "Electromechanical selectors connected calls without a human switchboard operator.",
     "parents": [
@@ -4731,6 +4747,7 @@
     "wiki": "Radio",
     "year": 1895,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "technology",
     "summary": "Wireless transmitters and receivers carried coded information through electromagnetic waves.",
     "parents": [
@@ -4747,6 +4764,7 @@
     "wiki": "Amplitude modulation",
     "year": 1906,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "technology",
     "summary": "Varying a radio carrier's amplitude transmitted speech and music.",
     "parents": [
@@ -4763,6 +4781,7 @@
     "wiki": "Frequency modulation",
     "year": 1933,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "technology",
     "summary": "Varying carrier frequency supported radio transmission with improved noise resistance.",
     "parents": [
@@ -4779,6 +4798,7 @@
     "wiki": "Vacuum tube",
     "year": 1904,
     "domain": "information",
+    "category": "computer-hardware",
     "kind": "technology",
     "summary": "Thermionic devices controlled electron flow for rectification and later amplification.",
     "parents": [
@@ -4801,6 +4821,7 @@
     "wiki": "Triode",
     "year": 1906,
     "domain": "information",
+    "category": "computer-hardware",
     "kind": "technology",
     "summary": "A control grid regulated tube current to amplify weak electrical signals.",
     "parents": [
@@ -4817,6 +4838,7 @@
     "wiki": "Transistor",
     "year": 1947,
     "domain": "information",
+    "category": "computer-hardware",
     "kind": "technology",
     "summary": "A semiconductor device switched or amplified electrical signals without a heated vacuum tube.",
     "parents": [
@@ -4833,6 +4855,7 @@
     "wiki": "Integrated circuit",
     "year": 1958,
     "domain": "information",
+    "category": "computer-hardware",
     "kind": "technology",
     "summary": "Multiple electronic components were fabricated together on a single semiconductor substrate.",
     "parents": [
@@ -4849,6 +4872,7 @@
     "wiki": "MOSFET",
     "year": 1959,
     "domain": "information",
+    "category": "computer-hardware",
     "kind": "technology",
     "summary": "An insulated-gate transistor controlled channel conduction with low gate current.",
     "parents": [
@@ -4865,6 +4889,7 @@
     "wiki": "Microprocessor",
     "year": 1971,
     "domain": "information",
+    "category": "computer-hardware",
     "kind": "technology",
     "summary": "A single integrated chip implemented the central processing functions of a computer.",
     "parents": [
@@ -4886,6 +4911,7 @@
     "wiki": "Computer",
     "year": 1945,
     "domain": "information",
+    "category": "computer-hardware",
     "kind": "technology",
     "summary": "Programmable electronic machines performed sequences of arithmetic and logical operations.",
     "parents": [
@@ -4907,6 +4933,7 @@
     "wiki": "Stored-program computer",
     "year": 1948,
     "domain": "information",
+    "category": "computer-hardware",
     "kind": "technology",
     "summary": "Computers stored executable instructions in addressable memory alongside data.",
     "parents": [
@@ -4923,6 +4950,7 @@
     "wiki": "Magnetic-core memory",
     "year": 1951,
     "domain": "information",
+    "category": "memory-storage",
     "kind": "technology",
     "summary": "Magnetized ferrite cores stored individually addressable binary states.",
     "parents": [
@@ -4944,6 +4972,7 @@
     "wiki": "Dynamic random-access memory",
     "year": 1967,
     "domain": "information",
+    "category": "memory-storage",
     "kind": "technology",
     "summary": "Capacitor charges stored dense arrays of digital bits refreshed by electronic circuits.",
     "parents": [
@@ -4960,6 +4989,7 @@
     "wiki": "Flash memory",
     "year": 1980,
     "domain": "information",
+    "category": "memory-storage",
     "kind": "technology",
     "summary": "Electrically rewritable floating-gate cells stored data without continuous power.",
     "parents": [
@@ -4976,6 +5006,7 @@
     "wiki": "Hard disk drive",
     "year": 1956,
     "domain": "information",
+    "category": "memory-storage",
     "kind": "technology",
     "summary": "Rotating magnetic disks provided reusable random-access storage for computer data.",
     "parents": [
@@ -4992,6 +5023,7 @@
     "wiki": "Solid-state drive",
     "year": 1991,
     "domain": "information",
+    "category": "memory-storage",
     "kind": "technology",
     "summary": "Flash-based drives offered persistent storage without rotating mechanical media.",
     "parents": [
@@ -5008,6 +5040,7 @@
     "wiki": "Operating system",
     "year": 1956,
     "domain": "information",
+    "category": "operating-distributed-systems",
     "kind": "technology",
     "summary": "Supervisory software coordinated execution, input-output devices, and shared computer resources.",
     "parents": [
@@ -5024,6 +5057,7 @@
     "wiki": "Compiler",
     "year": 1952,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "Compilers translated higher-level program descriptions into executable machine instructions.",
     "parents": [
@@ -5040,6 +5074,7 @@
     "wiki": "Fortran",
     "year": 1957,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "A compiled language made scientific formulas practical to express as computer programs.",
     "parents": [
@@ -5056,6 +5091,7 @@
     "wiki": "Lisp (programming language)",
     "year": 1958,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "List processing and symbolic expressions supported a language central to early AI research.",
     "parents": [
@@ -5072,6 +5108,7 @@
     "wiki": "C (programming language)",
     "year": 1972,
     "domain": "information",
+    "category": "programming",
     "kind": "technology",
     "summary": "C provided portable low-level constructs for implementing systems software.",
     "parents": [
@@ -5088,6 +5125,7 @@
     "wiki": "Structured programming",
     "year": 1968,
     "domain": "information",
+    "category": "programming",
     "kind": "practice",
     "summary": "Block structure and controlled flow improved the clarity and reasoning of programs.",
     "parents": [
@@ -5104,6 +5142,7 @@
     "wiki": "Object-oriented programming",
     "year": 1967,
     "domain": "information",
+    "category": "programming",
     "kind": "practice",
     "summary": "Objects grouped state and behavior to model systems and organize programs.",
     "parents": [
@@ -5120,6 +5159,7 @@
     "wiki": "Relational database",
     "year": 1970,
     "domain": "information",
+    "category": "data-representation",
     "kind": "technology",
     "summary": "Codd organized data as relations queried through mathematical operations.",
     "parents": [
@@ -5136,6 +5176,7 @@
     "wiki": "SQL",
     "year": 1974,
     "domain": "information",
+    "category": "data-representation",
     "kind": "technology",
     "summary": "A declarative language expressed queries and updates over relational data.",
     "parents": [
@@ -5152,6 +5193,7 @@
     "wiki": "Unix",
     "year": 1969,
     "domain": "information",
+    "category": "operating-distributed-systems",
     "kind": "technology",
     "summary": "A portable multiuser operating system combined processes, files, and composable tools.",
     "parents": [
@@ -5168,6 +5210,7 @@
     "wiki": "Personal computer",
     "year": 1975,
     "domain": "information",
+    "category": "computer-hardware",
     "kind": "technology",
     "summary": "Affordable microprocessor machines brought programmable computing to individual users.",
     "parents": [
@@ -5184,6 +5227,7 @@
     "wiki": "Graphical user interface",
     "year": 1973,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "technology",
     "summary": "Windows, icons, and pointing interaction made computer operations visually accessible.",
     "parents": [
@@ -5200,6 +5244,7 @@
     "wiki": "Computer mouse",
     "year": 1964,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "technology",
     "summary": "A handheld pointing device translated physical movement into screen-position control.",
     "parents": [
@@ -5216,6 +5261,7 @@
     "wiki": "Touchscreen",
     "year": 1965,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "technology",
     "summary": "Touch-sensitive surfaces allowed users to select positions directly on a display.",
     "parents": [
@@ -5232,6 +5278,7 @@
     "wiki": "Time-sharing",
     "year": 1961,
     "domain": "information",
+    "category": "operating-distributed-systems",
     "kind": "technology",
     "summary": "Rapid scheduling allowed several users to interact with a computer concurrently.",
     "parents": [
@@ -5248,6 +5295,7 @@
     "wiki": "Virtual machine",
     "year": 1967,
     "domain": "information",
+    "category": "operating-distributed-systems",
     "kind": "technology",
     "summary": "Software presented isolated computer environments that shared underlying hardware.",
     "parents": [
@@ -5264,6 +5312,7 @@
     "wiki": "Public-key cryptography",
     "year": 1976,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "Different public and private keys enabled secure exchange without a shared secret key.",
     "parents": [
@@ -5280,6 +5329,7 @@
     "wiki": "RSA (cryptosystem)",
     "year": 1977,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "Modular exponentiation and hard integer factorization implemented public-key encryption and signatures.",
     "parents": [
@@ -5302,6 +5352,7 @@
     "wiki": "Error correction code",
     "year": 1950,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "technology",
     "summary": "Redundant encodings made some corrupted data detectable and recoverable.",
     "parents": [
@@ -5318,6 +5369,7 @@
     "wiki": "Digital signal processing",
     "year": 1960,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "practice",
     "summary": "Sampled numerical signals could be filtered, transformed, and analyzed by computation.",
     "parents": [
@@ -5339,6 +5391,7 @@
     "wiki": "Nyquist–Shannon sampling theorem",
     "year": 1949,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "discovery",
     "summary": "Band-limited signals were shown recoverable from sufficiently frequent discrete samples.",
     "parents": [
@@ -5355,6 +5408,7 @@
     "wiki": "Data compression",
     "year": 1952,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "technology",
     "summary": "Huffman coding assigned shorter codes to frequent symbols for efficient data storage.",
     "parents": [
@@ -5371,6 +5425,7 @@
     "wiki": "JPEG",
     "year": 1992,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "technology",
     "summary": "Transform coding and quantization reduced storage needed for photographic digital images.",
     "parents": [
@@ -5392,6 +5447,7 @@
     "wiki": "MPEG-1",
     "year": 1993,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "technology",
     "summary": "Motion compensation and transform coding compressed sequences of digital video frames.",
     "parents": [
@@ -5408,6 +5464,7 @@
     "wiki": "Computer graphics",
     "year": 1963,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "technology",
     "summary": "Sketchpad demonstrated direct manipulation of geometric drawings on a computer.",
     "parents": [
@@ -5429,6 +5486,7 @@
     "wiki": "Graphics processing unit",
     "year": 1999,
     "domain": "information",
+    "category": "graphics-signals",
     "kind": "technology",
     "summary": "Dedicated processors accelerated parallel rendering operations for computer graphics.",
     "parents": [
@@ -5450,6 +5508,7 @@
     "wiki": "Packet switching",
     "year": 1965,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "technology",
     "summary": "Networks shared links by dividing messages into independently forwarded packets.",
     "parents": [
@@ -5466,6 +5525,7 @@
     "wiki": "ARPANET",
     "year": 1969,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "infrastructure",
     "summary": "A research network linked distant computers using packet-switching technology.",
     "parents": [
@@ -5482,6 +5542,7 @@
     "wiki": "Ethernet",
     "year": 1973,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "technology",
     "summary": "A local-network protocol coordinated packet communication over shared physical media.",
     "parents": [
@@ -5498,6 +5559,7 @@
     "wiki": "Internet protocol suite",
     "year": 1974,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "technology",
     "summary": "A layered protocol design joined diverse networks and supported reliable end-to-end communication.",
     "parents": [
@@ -5514,6 +5576,7 @@
     "wiki": "Internet",
     "year": 1983,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "infrastructure",
     "summary": "TCP/IP adoption connected networks into a growing interoperable global system.",
     "parents": [
@@ -5535,6 +5598,7 @@
     "wiki": "Domain Name System",
     "year": 1983,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "infrastructure",
     "summary": "A distributed naming service translated readable domain names into network addresses.",
     "parents": [
@@ -5551,6 +5615,7 @@
     "wiki": "Email",
     "year": 1971,
     "domain": "information",
+    "category": "web",
     "kind": "technology",
     "summary": "Messages could be delivered electronically between users on connected computers.",
     "parents": [
@@ -5567,6 +5632,7 @@
     "wiki": "World Wide Web",
     "year": 1989,
     "domain": "information",
+    "category": "web",
     "kind": "technology",
     "summary": "Linked documents and common protocols made information browsable across internet-connected machines.",
     "parents": [
@@ -5583,6 +5649,7 @@
     "wiki": "HTTP",
     "year": 1991,
     "domain": "information",
+    "category": "web",
     "kind": "technology",
     "summary": "A request-response protocol transferred web resources between browsers and servers.",
     "parents": [
@@ -5599,6 +5666,7 @@
     "wiki": "HTML",
     "year": 1991,
     "domain": "information",
+    "category": "web",
     "kind": "technology",
     "summary": "A markup language represented web documents with text structure and hyperlinks.",
     "parents": [
@@ -5615,6 +5683,7 @@
     "wiki": "Web browser",
     "year": 1990,
     "domain": "information",
+    "category": "web",
     "kind": "technology",
     "summary": "A client application displayed web documents and navigated their hyperlinks.",
     "parents": [
@@ -5631,6 +5700,7 @@
     "wiki": "Web search engine",
     "year": 1993,
     "domain": "information",
+    "category": "web",
     "kind": "technology",
     "summary": "Automated indexing made distributed web pages discoverable through text queries.",
     "parents": [
@@ -5647,6 +5717,7 @@
     "wiki": "Wi-Fi",
     "year": 1997,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "technology",
     "summary": "Standardized wireless local links carried digital network packets through radio signals.",
     "parents": [
@@ -5668,6 +5739,7 @@
     "wiki": "Cellular network",
     "year": 1979,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "infrastructure",
     "summary": "Geographic cells and frequency reuse supported mobile telephone service at large scale.",
     "parents": [
@@ -5689,6 +5761,7 @@
     "wiki": "GSM",
     "year": 1991,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "technology",
     "summary": "Digital radio standards supported interoperable mobile calling and later data services.",
     "parents": [
@@ -5710,6 +5783,7 @@
     "wiki": "Bluetooth",
     "year": 1999,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "technology",
     "summary": "A short-range radio standard connected personal devices without cables.",
     "parents": [
@@ -5726,6 +5800,7 @@
     "wiki": "Smartphone",
     "year": 1994,
     "domain": "information",
+    "category": "computer-hardware",
     "kind": "technology",
     "summary": "Handheld devices combined mobile telephony with programmable personal-computer functions.",
     "parents": [
@@ -5747,6 +5822,7 @@
     "wiki": "Communications satellite",
     "year": 1962,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "infrastructure",
     "summary": "Orbital radio relays connected distant ground stations for communication.",
     "parents": [
@@ -5763,6 +5839,7 @@
     "wiki": "Fiber-optic communication",
     "year": 1977,
     "domain": "information",
+    "category": "telecommunications",
     "kind": "technology",
     "summary": "Modulated light transmitted digital information through low-loss optical fiber.",
     "parents": [
@@ -5784,6 +5861,7 @@
     "wiki": "Transport Layer Security",
     "year": 1999,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "Cryptographic handshakes protected network traffic against eavesdropping and tampering.",
     "parents": [
@@ -5805,6 +5883,7 @@
     "wiki": "Cloud computing",
     "year": 2006,
     "domain": "information",
+    "category": "operating-distributed-systems",
     "kind": "infrastructure",
     "summary": "Network-accessible computing services offered expandable processing and storage on demand.",
     "parents": [
@@ -5826,6 +5905,7 @@
     "wiki": "Blockchain",
     "year": 2008,
     "domain": "information",
+    "category": "cryptography-security",
     "kind": "technology",
     "summary": "Replicated hash-linked records and consensus supported a shared ledger without a central writer.",
     "parents": [
@@ -5847,6 +5927,7 @@
     "wiki": "Artificial intelligence",
     "year": 1956,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "practice",
     "summary": "Researchers organized computational methods for tasks involving reasoning, learning, and intelligent behavior.",
     "parents": [
@@ -5863,6 +5944,7 @@
     "wiki": "Perceptron",
     "year": 1957,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Rosenblatt's learning rule adjusted weighted inputs for simple pattern classification.",
     "parents": [
@@ -5879,6 +5961,7 @@
     "wiki": "Backpropagation",
     "year": 1986,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "practice",
     "summary": "Gradient propagation efficiently trained multilayer neural networks on examples.",
     "parents": [
@@ -5901,6 +5984,7 @@
     "wiki": "Support vector machine",
     "year": 1992,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Maximum-margin methods learned separating boundaries for classification.",
     "parents": [
@@ -5917,6 +6001,7 @@
     "wiki": "Deep learning",
     "year": 2006,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "practice",
     "summary": "Training many-layer neural networks enabled increasingly powerful learned representations.",
     "parents": [
@@ -5938,6 +6023,7 @@
     "wiki": "Convolutional neural network",
     "year": 1989,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Shared local filters learned image features while reducing the number of free parameters.",
     "parents": [
@@ -5954,6 +6040,7 @@
     "wiki": "Q-learning",
     "year": 1989,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "practice",
     "summary": "Watkins introduced a reinforcement-learning method that estimates action values from experience.",
     "parents": [
@@ -5970,6 +6057,7 @@
     "wiki": "Transformer (deep learning architecture)",
     "year": 2017,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Attention-based networks modeled sequence relationships without recurrent processing.",
     "parents": [
@@ -5991,6 +6079,7 @@
     "wiki": "Large language model",
     "year": 2018,
     "domain": "information",
+    "category": "artificial-intelligence",
     "kind": "technology",
     "summary": "Large trained networks modeled text patterns for generation and language-related tasks.",
     "parents": [
@@ -6007,6 +6096,7 @@
     "wiki": "Quantum computing",
     "year": 1982,
     "domain": "information",
+    "category": "quantum-computing",
     "kind": "discovery",
     "summary": "Quantum systems were proposed as computational machines exploiting superposition and interference.",
     "parents": [
@@ -6023,6 +6113,7 @@
     "wiki": "Shor's algorithm",
     "year": 1994,
     "domain": "information",
+    "category": "quantum-computing",
     "kind": "practice",
     "summary": "A quantum algorithm showed how integer factorization could be accelerated theoretically.",
     "parents": [

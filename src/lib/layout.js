@@ -63,7 +63,7 @@ export async function layoutGraph(nodes) {
     for (const n of branch.members) n.y = contentTop + n.rowY
     const contentBottom = contentTop + branch.contentHeight
     const height = branch.topSpace + branch.contentHeight + branch.bottomSpace
-    bands.push({ id: branch.id, y: top, height, count: branch.members.length, contentBottom })
+    bands.push({ id: branch.id, y: top, height, count: branch.members.length, categories: branch.categories.map(group => ({ ...group, y: contentTop + group.y })), contentBottom })
     top += height + 100
   }
   orderFanouts(index, edges, bands, TRACK_SPACING, PORT_SPACING, rankCount)
@@ -87,7 +87,13 @@ export async function layoutGraph(nodes) {
     for (const segment of gap) segment.x = x + NODE_WIDTH + 60 + segment.track * TRACK_SPACING
     x += NODE_WIDTH + Math.max(260, 120 + count * TRACK_SPACING)
   }
-  const placed = [...index.values()].map(n => ({ id: n.id, domain: n.domain, rank: n.rank, x: columnX[n.rank], y: n.y, width: n.width, height: n.height, ports: n.ports }))
+  const placed = [...index.values()].map(n => ({ id: n.id, domain: n.domain, category: n.category, rank: n.rank, x: columnX[n.rank], y: n.y, width: n.width, height: n.height, ports: n.ports }))
+  // Category navigation fits its actual occupied dates, not the whole atlas.
+  for (const band of bands) for (const group of band.categories) {
+    const members = placed.filter(n => n.domain === band.id && (n.category ?? `${n.domain}:other`) === group.id)
+    group.x = Math.min(...members.map(n => n.x)) - 40
+    group.width = Math.max(...members.map(n => n.x + n.width)) - group.x + 40
+  }
   const width = columnX.at(-1) + NODE_WIDTH + 100
   const boundaries = [0, ...columnX.slice(1).map((x, i) => (columnX[i] + NODE_WIDTH + x) / 2), width]
   return simplifyRoutes({

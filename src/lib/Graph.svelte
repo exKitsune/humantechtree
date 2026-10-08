@@ -10,10 +10,11 @@
   import { drawScene, drawOverview } from './draw-scene.js'
   import { contentExtent, clampViewport } from './viewport.js'
   import { domainInfo, relations } from './config'
-  import type { Capability, WikipediaEntry, GraphLayout, LayoutNode, TimeBand } from './types'
+  import { categoryInfo } from './categories.js'
+  import type { Capability, WikipediaEntry, GraphLayout, LayoutNode, TimeBand, Domain, CategoryRegion } from './types'
 
-  let { items, selected, media, select, resetToken = 0 }: {
-    items: Capability[]; selected: string; media: Record<string, WikipediaEntry>; select: (id: string) => void; resetToken?: number
+  let { items, selected, media, select, resetToken = 0, fitToContents = false }: {
+    items: Capability[]; selected: string; media: Record<string, WikipediaEntry>; select: (id: string) => void; resetToken?: number; fitToContents?: boolean
   } = $props()
   let layoutClient = $state.raw<ReturnType<typeof createLayoutClient> | null>(null)
   let scene = $state.raw<ReturnType<typeof createScene> | null>(null)
@@ -37,6 +38,15 @@
   let bandLabels: (GraphLayout['bands'][number] & { screenY: number })[] = $derived((scene?.layout.bands ?? []).flatMap((band: GraphLayout['bands'][number]) => {
     const y = band.y * viewport.zoom + viewport.y, h = band.height * viewport.zoom
     return y + h >= 26 && y < height && h >= 18 ? [{ ...band, screenY: AXIS_HEIGHT + Math.max(8, y + 3) }] : []
+  }))
+  let categoryLabels: (CategoryRegion & { domain: Domain; label: string; screenY: number })[] = $derived((scene?.layout.bands ?? []).flatMap((band: GraphLayout['bands'][number]) => {
+    const branchLabel = bandLabels.find(label => label.id === band.id)
+    return (band.categories ?? []).flatMap(group => {
+      const y = group.y * viewport.zoom + viewport.y, h = group.height * viewport.zoom
+      const screenY = Math.max(AXIS_HEIGHT + 32, AXIS_HEIGHT + y + 4, (branchLabel?.screenY ?? 0) + 24)
+      return h >= 44 && screenY + 22 < AXIS_HEIGHT + Math.min(height, y + h)
+        ? [{ ...group, domain: band.id, label: group.category ? categoryInfo[group.category].label : 'Other capabilities', screenY }] : []
+    })
   }))
   const clipPeriod = (period: { x: number; width: number }) => {
     const left = Math.max(0, period.x * viewport.zoom + viewport.x)
@@ -91,7 +101,16 @@
     width; height
     untrack(() => { if (flowReady) setView(viewport) })
   })
-  $effect(() => { scene; selected; resetToken; flowReady; untrack(center) })
+  let centeredScene: typeof scene = null
+  $effect(() => {
+    scene; selected; resetToken; flowReady; fitToContents
+    untrack(() => {
+      if (!flowReady || !scene) return
+      if (fitToContents && scene !== centeredScene) fit()
+      else center()
+      centeredScene = scene
+    })
+  })
   function zoom(factor: number) {
     const next = Math.max(minZoom, Math.min(1.8, viewport.zoom * factor)), ratio = next / viewport.zoom
     setView({ x: width / 2 - (width / 2 - viewport.x) * ratio, y: height / 2 - (height / 2 - viewport.y) * ratio, zoom: next })
@@ -188,6 +207,15 @@
       <button class="band-label" style:top={`${band.screenY}px`} style:--domain={domainInfo[band.id].color}
         onclick={() => fitRect(0, band.y, scene!.layout.width, band.height)} title={`Fit ${domainInfo[band.id].label} band`}>
         {domainInfo[band.id].label}<small>{band.count.toLocaleString()}</small>
+      </button>
+    {/each}
+  </div>
+  <div class="category-labels" aria-label="Visible categories within branches">
+    {#each categoryLabels as group (group.id)}
+      <button class="category-label" style:top={`${group.screenY}px`} style:--domain={domainInfo[group.domain].color}
+        title={`Fit ${group.label} · ${group.count} capabilities in this view`}
+        onclick={() => fitRect(group.x, group.y, group.width, group.height)}>
+        <span>{group.label}</span><small>{group.count.toLocaleString()}</small>
       </button>
     {/each}
   </div>

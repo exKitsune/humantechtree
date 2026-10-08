@@ -30,6 +30,12 @@ export function drawScene(canvas, scene, frame, viewport, width, height, selecte
     const y = sy(band.y), h = band.height * z
     if (y + h < 0 || y > height) continue
     ctx.fillStyle = domains[band.id].color + '0d'; ctx.fillRect(0, y, width, h)
+    for (const [i, group] of (band.categories ?? []).entries()) {
+      const gy = sy(group.y), gh = group.height * z
+      if (gh < 3 || gy + gh < 0 || gy > height) continue
+      ctx.fillStyle = domains[band.id].color + (i % 2 ? '0a' : '16'); ctx.fillRect(0, gy, width, gh)
+      ctx.fillStyle = domains[band.id].color + '38'; ctx.fillRect(0, gy, width, 1)
+    }
     ctx.fillStyle = domains[band.id].color + '48'; ctx.fillRect(0, y, width, 1); ctx.fillRect(0, y + h, width, 1)
   }
   // All paths share one raster surface; no SVG element or listener per edge.

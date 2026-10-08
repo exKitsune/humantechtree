@@ -2,6 +2,7 @@
   import { onMount } from 'svelte'
   import { Search, Network, ChevronRight, ChevronLeft, X, ArrowUpRight, BookOpen, SlidersHorizontal, Info, Layers, Menu, RotateCcw, GitBranch, ImageOff } from '@lucide/svelte'
   import Graph from './lib/Graph.svelte'
+  import { categories, categoryInfo, categoryFor, categoryGroups } from './lib/categories.js'
   import { domains, domainInfo, eras, relations, formatYear } from './lib/config'
   import { neighborhood, matchesFilters, searchNodes } from './lib/graph.js'
   import type { Capability, Catalog, WikipediaEntry, Domain, Parent } from './lib/types'
@@ -15,6 +16,7 @@
   let focused = $state(true)
   let domain = $state<Domain | 'all'>('all')
   let eraId = $state('all')
+  let category = $state('all')
   let query = $state('')
   let searchOpen = $state(false)
   let searchInput: HTMLInputElement
@@ -31,10 +33,14 @@
   let selected = $derived(index.get(selectedId))
   let selectedMedia = $derived(media[selectedId])
   let era = $derived(eras.find(e => e.id === eraId)!)
-  let filtered = $derived(catalog.filter(n => matchesFilters(n, domain, era)))
+  let filtered = $derived(catalog.filter(n => matchesFilters(n, domain, era, category)))
   let visible = $derived(focused ? neighborhood(filtered, selectedId, 2) as Capability[] : filtered)
   let results = $derived(searchNodes(catalog, query).slice(0, 30) as Capability[])
   let children = $derived(catalog.filter(n => n.parents.some(p => p.id === selectedId)))
+  let childGroups = $derived(categoryGroups(children) as { id: string; domain: Domain; category?: string; label?: string; nodes: Capability[] }[])
+  let availableCategories = $derived(categories.filter(c => domain === 'all' || c.domain === domain))
+  let categoryCounts = $derived(Object.fromEntries(categories.map(c => [c.id, catalog.filter(n => n.category === c.id).length])))
+  let displayChildGroups = $derived(detailsTab === 'connections' ? childGroups : children.length > 6 ? [] : [{ id: 'preview', domain: selected?.domain, category: undefined, label: undefined, nodes: children.slice(0, 4) }])
   let parents = $derived(selected?.parents.filter(p => index.has(p.id)) ?? [])
   let counts = $derived(Object.fromEntries(domains.map(d => [d.id, catalog.filter(n => n.domain === d.id).length])))
   let edgeCount = $derived(catalog.reduce((sum, n) => sum + n.parents.length, 0))
@@ -43,7 +49,7 @@
 
   function readHash() {
     const id = new URLSearchParams(location.hash.slice(1)).get('node')
-    if (id && index.has(id) && id !== selectedId) { selectedId = id; domain = 'all'; eraId = 'all'; detailsOpen = true }
+    if (id && index.has(id) && id !== selectedId) { selectedId = id; domain = 'all'; eraId = 'all'; category = 'all'; detailsOpen = true }
   }
   async function load() {
     loading = true; error = ''
@@ -78,13 +84,23 @@
   $effect(() => { if (aboutDialog) { if (aboutOpen && !aboutDialog.open) aboutDialog.showModal(); else if (!aboutOpen && aboutDialog.open) aboutDialog.close() } })
   function select(id: string, clearFilters = false) {
     selectedId = id; detailsOpen = true; searchOpen = false; query = ''; sidebarOpen = false
-    if (clearFilters) { domain = 'all'; eraId = 'all' }
+    if (clearFilters) { domain = 'all'; eraId = 'all'; category = 'all' }
     location.hash = new URLSearchParams({ node: id }).toString()
   }
-  function filterDomain(value: Domain | 'all') { domain = value; focused = false; sidebarOpen = false }
+  function filterDomain(value: Domain | 'all') { domain = value; category = 'all'; focused = false; sidebarOpen = false }
+  function filterCategory(value: string) {
+    category = value
+    if (value !== 'all') domain = categoryInfo[value].domain as Domain
+    focused = false; sidebarOpen = false; resetToken++
+  }
+  function browseGroup(group: { category?: string; domain: string }) {
+    eraId = 'all'
+    if (group.category) filterCategory(group.category)
+    else filterDomain(group.domain as Domain)
+  }
   function filterEra(value: string) { eraId = value; focused = false }
-  function reset() { domain = 'all'; eraId = 'all'; focused = false; resetToken++ }
-  function focusSelection() { domain = 'all'; eraId = 'all'; focused = true; resetToken++ }
+  function reset() { domain = 'all'; eraId = 'all'; category = 'all'; focused = false; resetToken++ }
+  function focusSelection() { domain = 'all'; eraId = 'all'; category = 'all'; focused = true; resetToken++ }
   function keyboard(event: KeyboardEvent) {
     const target = event.target as HTMLElement
     if (event.key === 'Escape') { searchOpen = false; sidebarOpen = false; if (!aboutOpen) detailsOpen = false }
@@ -140,6 +156,13 @@
         {#each domains as item}<button class="domain-button" class:chosen={domain === item.id} aria-pressed={domain === item.id} onclick={() => filterDomain(item.id)} style:--domain={item.color}>
           <item.icon size={18} strokeWidth={1.6} /><span>{item.label}</span><small>{counts[item.id] || 0}</small></button>{/each}
       </nav>
+      {#if availableCategories.length}
+        <label class="sidebar-label" for="category-filter">CATEGORIES</label>
+        <select id="category-filter" class="category-filter" value={category} onchange={event => filterCategory(event.currentTarget.value)}>
+          <option value="all">All categories</option>
+          {#each availableCategories as item}<option value={item.id}>{item.label} ({categoryCounts[item.id] || 0})</option>{/each}
+        </select>
+      {/if}
       <div class="sidebar-rule"></div>
       <div class="sidebar-label">A FEW STARTING POINTS</div>
       <div class="starting-points">
@@ -152,7 +175,7 @@
 
     <main class="main-workspace">
       <div class="tree-heading">
-        <div><div class="breadcrumb view-context"><span>{focused && selected ? `Around ${selected.title}` : domain === 'all' ? 'All branches of humanity' : domainInfo[domain].label}</span><span>· {visible.length.toLocaleString()} capabilities</span>{#if domain !== 'all' || eraId !== 'all'}<button onclick={reset} aria-label="Reset filters" title="Reset filters"><RotateCcw size={12} /></button>{/if}</div><h1>The technology tree<span class="beta-label">EXPLORATORY ATLAS</span></h1></div>
+        <div><div class="breadcrumb view-context"><span>{focused && selected ? `Around ${selected.title}` : category !== 'all' ? categoryInfo[category].label : domain === 'all' ? 'All branches of humanity' : domainInfo[domain].label}</span><span>· {visible.length.toLocaleString()} capabilities</span>{#if domain !== 'all' || eraId !== 'all' || category !== 'all'}<button onclick={reset} aria-label="Reset filters" title="Reset filters"><RotateCcw size={12} /></button>{/if}</div><h1>The technology tree<span class="beta-label">EXPLORATORY ATLAS</span></h1></div>
         <div class="view-switch" aria-label="Tree view"><button class:active={!focused} aria-pressed={!focused} onclick={() => { focused = false }}><Layers size={15} />Full tree</button><button class:active={focused} aria-pressed={focused} onclick={focusSelection}><GitBranch size={15} />Connections</button></div>
       </div>
       <div class="era-bar"><span class="era-label"><SlidersHorizontal size={14} />ERA</span><div class="era-options">{#each eras as item}<button class:active={eraId === item.id} aria-pressed={eraId === item.id} onclick={() => filterEra(item.id)}>{item.label}</button>{/each}</div></div>
@@ -161,7 +184,7 @@
         {:else if error}<div class="canvas-message"><Info size={32} /><h2>Unable to open the tree</h2><p>{error}</p><button class="primary-button" onclick={load}>Try again</button></div>
         {:else if visible.length === 0}<div class="canvas-message"><Search size={32} /><h2>No capabilities in this view</h2><p>Try another era or branch.</p><button class="primary-button" onclick={reset}>Reset filters</button></div>
         {:else}
-          <Graph items={visible} selected={selectedId} {media} {select} {resetToken} />
+          <Graph items={visible} selected={selectedId} {media} {select} {resetToken} fitToContents={category !== 'all'} />
         {/if}
         {#if selected && !detailsOpen}<button class="reopen-detail" onclick={() => detailsOpen = true}><Info size={16} />{selected.title}<ChevronLeft size={15} /></button>{/if}
       </div>
@@ -182,6 +205,9 @@
           <div class="detail-content">
             <div class="detail-date">c. {formatYear(selected.year)} <span>APPROXIMATE MILESTONE</span></div>
             <h2>{selected.title}</h2>
+            {#if categoryFor(selected)}
+              <button class="detail-category" onclick={() => browseGroup({ category: selected.category, domain: selected.domain })} title="Explore this category">{categoryFor(selected)!.label}<ChevronRight size={13} /></button>
+            {/if}
             <div class="detail-tabs"><button class:active={detailsTab === 'overview'} onclick={() => detailsTab = 'overview'}>Overview</button><button class:active={detailsTab === 'connections'} onclick={() => detailsTab = 'connections'}>Connections <span>{parents.length + children.length}</span></button></div>
             {#if detailsTab === 'overview'}
               <p class="summary">{selected.summary}</p>
@@ -193,10 +219,23 @@
               <button class="connection-card" onclick={() => select(entry.id, true)}><span class="relation-bar" style:--relation={relations[parent.type].color}></span><span class="connection-body"><strong>{entry.title}</strong><small style:color={relations[parent.type].color}>{relations[parent.type].label}</small>{#if detailsTab === 'connections'}<span class="reason">{parent.reason}</span>{#if parent.directContribution}<span class="direct-contribution"><b>Direct role</b>{parent.directContribution}</span>{/if}{/if}</span><ChevronRight size={15} /></button>
             {:else}<p class="empty-connections">A starting point in this edition. Earlier foundations may still be added.</p>{/each}
             <div class="connection-heading"><span>HELPED MAKE POSSIBLE</span><small>{children.length}</small></div>
-            {#each (detailsTab === 'overview' ? children.slice(0, 4) : children) as child}
+            {#if detailsTab === 'overview' && children.length > 6}
+              <div class="child-categories" aria-label="Categories of developments">
+                {#each childGroups as group}
+                  <button onclick={() => browseGroup(group)} title={`Explore ${group.label ?? domainInfo[group.domain as Domain].label}`}>
+                    <span>{group.label ?? domainInfo[group.domain as Domain].label}</span><small>{group.nodes.length}</small><ChevronRight size={13} />
+                  </button>
+                {/each}
+              </div>
+            {/if}
+            {#each displayChildGroups as group (group.id)}
+              {#if detailsTab === 'connections'}<div class="connection-category">{group.label ?? domainInfo[group.domain as Domain].label}<small>{group.nodes.length}</small></div>{/if}
+              {#each group.nodes as child (child.id)}
               {@const relation = child.parents.find(p => p.id === selectedId) as Parent}
               <button class="connection-card" onclick={() => select(child.id, true)}><span class="relation-bar" style:--relation={relations[relation.type].color}></span><span class="connection-body"><strong>{child.title}</strong><small style:color={relations[relation.type].color}>{relations[relation.type].label}</small>{#if detailsTab === 'connections'}<span class="reason">{relation.reason}</span>{#if relation.directContribution}<span class="direct-contribution"><b>Direct role</b>{relation.directContribution}</span>{/if}{/if}</span><ChevronRight size={15} /></button>
-            {:else}<p class="empty-connections">This branch continues beyond the current catalog.</p>{/each}
+              {/each}
+            {/each}
+            {#if children.length === 0}<p class="empty-connections">This branch continues beyond the current catalog.</p>{/if}
             {#if detailsTab === 'overview' && children.length > 4}<button class="text-button" onclick={() => detailsTab = 'connections'}>Show all {children.length} developments</button>{/if}
             <div class="source-block"><a href={wikiUrl(selected)} target="_blank" rel="noreferrer"><BookOpen size={16} />Read on Wikipedia<ArrowUpRight size={14} /></a><p>{offlineIndex[selectedId]?.found ? 'Reference matched in the August 2026 offline archive.' : selectedMedia && !selectedMedia.missing ? 'Wikipedia reference located.' : 'Suggested reference · awaiting archive review.'} Dates and connections are editorial interpretations, not universal prerequisites.</p></div>
           </div>
@@ -214,5 +253,5 @@
   <div class="about-relations">{#each Object.entries(relations) as [key, relation]}<div><i class={key} style:--relation={relation.color}></i><div><h3>{relation.label}</h3><p>{relation.description}</p></div></div>{/each}</div>
   <h3>An evolving, editorial catalog</h3><p>This first edition contains {catalog.length.toLocaleString()} nodes and {edgeCount.toLocaleString()} connections. Summaries and relationship explanations are original editorial drafts. Wikipedia articles provide references; their presence does not verify every date or connection. Dates indicate approximate milestones and may differ by region. Era labels are navigation aids, not universal historical periods.</p>
   <h3>Sources & images</h3><p>Our research workflow uses an offline English Wikipedia archive from Kiwix. {offlineCount.toLocaleString()} references have been matched to local articles; matching an article does not verify its proposed connections. {pictureCount.toLocaleString()} catalog images link directly to Wikimedia’s image servers. Missing pictures use a category symbol. Article and image links preserve source attribution; individual image licenses vary.</p>
-  <p class="dialog-note">Scroll or drag to pan. Pinch, Ctrl/⌘ + scroll, or the buttons zoom. Search with / at any scale. Full tree applies your branch and era filters; Connections shows two steps before and after a capability. Horizontal bands represent branches; vertical bands represent eras. Crowded periods split into decades or years, and expand to fit their capabilities. Era widths reflect population, not elapsed time. Click a band or date label to fit that region. Click a connection to jump to its other end; hover to see the destination. Panning stops beyond the outermost nodes and routes with a margin. Zoomed-out groups show how many capabilities they contain; click a group to zoom in, or a simple node to open its card. Each view arranges its nodes and outbound connections automatically.</p>
+  <p class="dialog-note">Scroll or drag to pan. Pinch, Ctrl/⌘ + scroll, or the buttons zoom. Search with / at any scale. Full tree applies your branch, category, and era filters; Connections shows two steps before and after a capability. Horizontal bands represent branches, with named categories inside Information. Related milestones such as sorting algorithms stay together. Use the category filter or a category label to explore them. Categories organize topics; only connections describe historical contributions. Vertical bands represent eras. Crowded periods split into decades or years, and expand to fit their capabilities. Era widths reflect population, not elapsed time. Click a band or date label to fit that region. Click a connection to jump to its other end; hover to see the destination. Panning stops beyond the outermost nodes and routes with a margin. Zoomed-out groups show how many capabilities they contain; click a group to zoom in, or a simple node to open its card. Each view arranges its nodes and outbound connections automatically.</p>
 </dialog>

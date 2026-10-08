@@ -1,3 +1,5 @@
+import { categoryFor } from './categories.js'
+
 // Framework-independent graph operations, also used by data validation tests.
 export function neighborhood(nodes, id, depth = 2) {
   const index = new Map(nodes.map(n => [n.id, n]))
@@ -29,8 +31,8 @@ export function neighborhood(nodes, id, depth = 2) {
   return nodes.filter(n => seen.has(n.id))
 }
 
-export function matchesFilters(node, domain, era) {
-  return (domain === 'all' || node.domain === domain) && node.year >= era.min && node.year < era.max
+export function matchesFilters(node, domain, era, category = 'all') {
+  return (domain === 'all' || node.domain === domain) && (category === 'all' || node.category === category) && node.year >= era.min && node.year < era.max
 }
 
 export function searchNodes(nodes, query) {
@@ -38,6 +40,6 @@ export function searchNodes(nodes, query) {
   if (!normalized) return []
   const words = normalized.split(/\s+/)
   const score = n => n.title.toLowerCase() === normalized ? 0 : n.title.toLowerCase().startsWith(normalized) ? 1 : 2
-  return nodes.filter(n => words.every(word => `${n.title} ${n.wiki} ${n.summary} ${n.domain}`.toLowerCase().includes(word)))
+  return nodes.filter(n => words.every(word => `${n.title} ${n.wiki} ${n.summary} ${n.domain} ${categoryFor(n)?.label ?? ''}`.toLowerCase().includes(word)))
     .sort((a, b) => score(a) - score(b) || a.title.localeCompare(b.title))
 }
