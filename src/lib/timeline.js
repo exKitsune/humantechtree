@@ -42,11 +42,15 @@ export function assignTimeColumns(index, topologicalOrder) {
       for (const [start, group] of groups) {
         if (group.length > PERIOD_CAPACITY && step > 1) { split(group, step / 10); continue }
         const firstColumn = nextColumn, occupied = new Map()
+        // A later date cannot restart left of columns occupied by earlier dates.
+        let earliestColumn = firstColumn, previousYear = null, previousYearEnd = firstColumn
         for (const n of group) {
-          let column = firstColumn
+          if (n.year !== previousYear) { earliestColumn = previousYearEnd; previousYear = n.year }
+          let column = earliestColumn
           for (const e of n.incoming) column = Math.max(column, index.get(e.source).rank + 1)
           while ((occupied.get(`${n.domain}:${column}`) ?? 0) >= COLUMN_CAPACITY) column++
           n.rank = column
+          previousYearEnd = Math.max(previousYearEnd, column)
           const key = `${n.domain}:${column}`
           occupied.set(key, (occupied.get(key) ?? 0) + 1)
           nextColumn = Math.max(nextColumn, column + 1)

@@ -2,6 +2,7 @@ import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { layoutGraph, routeIntersectsRect } from '../src/lib/layout.js'
+import { measureLayout } from '../scripts/lib/layout-metrics.mjs'
 import { neighborhood, matchesFilters } from '../src/lib/graph.js'
 
 const { nodes } = JSON.parse(await readFile(new URL('../public/data/catalog.json', import.meta.url), 'utf8'))
@@ -79,4 +80,44 @@ test('route visibility follows detours when both endpoints are offscreen', () =>
   const points = [{ x: 0, y: 0 }, { x: 20, y: 0 }, { x: 20, y: 200 }, { x: 80, y: 200 }, { x: 80, y: 0 }, { x: 100, y: 0 }]
   assert(routeIntersectsRect(points, { x: 40, y: 180, width: 20, height: 40 }))
   assert(!routeIntersectsRect(points, { x: 40, y: 40, width: 20, height: 40 }))
+})
+
+
+test('Dirac neighborhood follows its connected spine without a Bohr detour or crossings', async () => {
+  const near = neighborhood(nodes, 'dirac-equation', 2)
+  const layout = await layoutGraph(near), byId = new Map(layout.nodes.map(n => [n.id, n]))
+  const spine = ['electromagnetic-waves', 'special-relativity', 'matter-waves', 'quantum-mechanics', 'dirac-equation']
+  assert.equal(new Set(spine.map(id => byId.get(id).y)).size, 1)
+  assert.notEqual(byId.get('bohr-atomic-model').y, byId.get('matter-waves').y)
+  assert.equal(measureLayout(layout).properCrossings, 0)
+  verifyGeometry(layout, near)
+  const scrambled = [...near].reverse().map(n => ({ ...n, parents: [...n.parents].reverse() }))
+  assert.deepEqual(await layoutGraph(scrambled), layout, 'Record or parent-array order must not change routing')
+})
+
+test('a single-successor chain crosses skipped dates without a gutter detour', async () => {
+  const fixture = [
+    { id: 'start', domain: 'science', year: 1801, parents: [] },
+    { id: 'other', domain: 'science', year: 1811, parents: [] },
+    { id: 'finish', domain: 'science', year: 1851, parents: [{ id: 'start', type: 'foundation' }] },
+  ]
+  const layout = await layoutGraph(fixture), start = layout.nodes.find(n => n.id === 'start')
+  const finish = layout.nodes.find(n => n.id === 'finish'), route = layout.edges[0]
+  assert(finish.rank > start.rank + 1)
+  assert.equal(start.y, finish.y)
+  assert(route.points.every(p => p.y > start.y && p.y < start.y + start.height), 'The whole route stays inside the empty chain row')
+  verifyGeometry(layout, fixture)
+})
+
+
+test('crossing diagnostics distinguish interior crossings from endpoints and overlaps', () => {
+  const edge = (id, a, b) => ({ id, points: [{ x: a[0], y: a[1] }, { x: b[0], y: b[1] }] })
+  const fixture = { nodes: [], width: 10, height: 10, edges: [
+    edge('horizontal', [0, 5], [10, 5]), edge('crossing', [5, 0], [5, 10]),
+    edge('endpoint', [10, 0], [10, 10]), edge('overlap', [0, 5], [4, 5]),
+  ] }
+  const result = measureLayout(fixture)
+  assert.equal(result.properCrossings, 1)
+  assert.equal(result.routeLength, 34)
+  assert.deepEqual(result.mostCrossedEdges.map(e => e.id).sort(), ['crossing', 'horizontal'])
 })

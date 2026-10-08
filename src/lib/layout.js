@@ -1,4 +1,5 @@
-import { orderFanouts, assignFanoutTracks } from './fanout.js'
+import { placeBranchRows } from './placement.js'
+import { planCorridors, orderFanouts, assignFanoutTracks } from './fanout.js'
 import { assignTimeColumns, placeTimeBands } from './timeline.js'
 
 export const NODE_WIDTH = 204
@@ -25,7 +26,7 @@ export async function layoutGraph(nodes) {
   const ordered = [...nodes].sort((a, b) => a.year - b.year || a.id.localeCompare(b.id))
   const index = new Map(ordered.map(n => [n.id, { ...n, rank: -1, children: [], incoming: [], outgoing: [], ports: [] }]))
   const edges = []
-  for (const n of index.values()) for (const p of n.parents) {
+  for (const n of index.values()) for (const p of [...n.parents].sort((a, b) => a.id.localeCompare(b.id))) {
     const source = index.get(p.id)
     if (!source) continue
     if (source.year > n.year) throw new Error(`Prerequisite is later than its target: ${source.id} → ${n.id}`)
@@ -43,46 +44,27 @@ export async function layoutGraph(nodes) {
   const { periods, rankCount } = assignTimeColumns(index, queue)
   const present = new Set(ordered.map(n => n.domain))
   const bandIds = [...BAND_ORDER.filter(id => present.has(id)), ...[...present].filter(id => !BAND_ORDER.includes(id)).sort()]
+  for (const n of index.values()) {
+    n.width = NODE_WIDTH
+    n.height = Math.max(MIN_NODE_HEIGHT, (Math.max(n.incoming.length, n.outgoing.length) + 1) * PORT_SPACING)
+  }
+  const branches = placeBranchRows(index, bandIds)
+  planCorridors(index, edges, branches, TRACK_SPACING)
   const bands = []
   let top = 100
-  for (const domain of bandIds) {
-    const members = [...index.values()].filter(n => n.domain === domain)
-    const long = members.flatMap(n => n.outgoing).filter(e => index.get(e.target).rank > index.get(e.source).rank + 1)
-    const gutter = long.length * TRACK_SPACING + 80
-    let bottom = top + gutter
-    const columns = new Map()
-    for (const n of members) {
-      if (!columns.has(n.rank)) columns.set(n.rank, [])
-      columns.get(n.rank).push(n)
-    }
-    for (const [rank, column] of [...columns].sort((a, b) => a[0] - b[0])) {
-      const score = n => {
-        const parents = n.incoming.map(e => index.get(e.source)).filter(p => p.domain === domain && p.order !== undefined)
-        return parents.length ? parents.reduce((sum, p) => sum + p.order, 0) / parents.length : 0
-      }
-      column.sort((a, b) => score(a) - score(b) || a.year - b.year || a.id.localeCompare(b.id))
-      let y = top + gutter + 60
-      column.forEach((n, i) => {
-        n.order = i; n.y = y; n.width = NODE_WIDTH
-        n.height = Math.max(MIN_NODE_HEIGHT, (Math.max(n.incoming.length, n.outgoing.length) + 1) * PORT_SPACING)
-        n.incoming.forEach((edge, j) => {
-          const port = { id: edge.targetHandle, type: 'target', x: 0,
-            y: (j + 1) * PORT_SPACING + 6 + rank / (rankCount + 1) }
-          n.ports.push(port)
-          edge.targetY = y + port.y
-        })
-        y += n.height + 120
-      })
-      bottom = Math.max(bottom, y)
-    }
-    bands.push({ id: domain, y: top, height: bottom - top, count: members.length })
-    top = bottom + 100
+  for (const branch of branches) {
+    const contentTop = top + branch.topSpace
+    for (const n of branch.members) n.y = contentTop + n.rowY
+    const contentBottom = contentTop + branch.contentHeight
+    const height = branch.topSpace + branch.contentHeight + branch.bottomSpace
+    bands.push({ id: branch.id, y: top, height, count: branch.members.length, contentBottom })
+    top += height + 100
   }
   orderFanouts(index, edges, bands, TRACK_SPACING, PORT_SPACING, rankCount)
   const gaps = Array.from({ length: rankCount }, () => [])
   for (const edge of edges) {
     const source = index.get(edge.source), target = index.get(edge.target)
-    const long = target.rank > source.rank + 1
+    const long = !edge.direct
     const segment = (from, to, kind) => ({ from, to, kind, edge, id: `${edge.id}:${kind}` })
     edge.exit = segment(edge.sourceY, long ? edge.busY : edge.targetY, 'exit')
     gaps[source.rank].push(edge.exit)
@@ -103,7 +85,7 @@ export async function layoutGraph(nodes) {
   const width = columnX.at(-1) + NODE_WIDTH + 100
   const boundaries = [0, ...columnX.slice(1).map((x, i) => (columnX[i] + NODE_WIDTH + x) / 2), width]
   return {
-    width, height: top, bands, timeBands: placeTimeBands(periods, boundaries), nodes: placed,
+    width, height: top, bands: bands.map(({ contentBottom, ...band }) => band), timeBands: placeTimeBands(periods, boundaries), nodes: placed,
     edges: edges.map(e => {
       const source = index.get(e.source), target = index.get(e.target)
       const points = [{ x: columnX[source.rank] + NODE_WIDTH, y: e.sourceY }, { x: e.exit.x, y: e.sourceY }]

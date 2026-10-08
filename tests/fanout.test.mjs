@@ -59,3 +59,18 @@ test('fan-outs stay disjoint when filters or high-degree neighborhoods change th
   for (const domain of ['engineering', 'science', 'society']) verifyFanouts(await layoutGraph(nodes.filter(n => n.domain === domain)))
   verifyFanouts(await layoutGraph(nodes.filter(n => n.year >= 1450 && n.year < 1900)))
 })
+
+
+test('mixed-band DAGs retain disjoint fan-outs after corridor and row changes', async () => {
+  let seed = 1027
+  const random = () => ((seed = (1664525 * seed + 1013904223) >>> 0) / 2 ** 32)
+  for (let sample = 0; sample < 120; sample++) {
+    const fixture = Array.from({ length: 35 }, (_, i) => ({
+      id: 'n-' + i, year: 1900 + Math.floor(i / 3),
+      domain: ['engineering', 'science', 'culture'][Math.floor(random() * 3)],
+      parents: Array.from({ length: i }, (_, j) => j).filter(() => random() < .13)
+        .map(j => ({ id: 'n-' + j, type: 'foundation' })),
+    }))
+    verifyFanouts(await layoutGraph(fixture))
+  }
+})

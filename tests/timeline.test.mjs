@@ -70,3 +70,13 @@ test('pan limits contain all cards and detours with a margin', async () => {
   const b = clampViewport({ x: 1e9, y: -1e9, zoom: .1 }, 1200, 800, singleExtent)
   assert.deepEqual(a, b, 'Views larger than their content must center instead of drifting')
 })
+
+
+test('later dates never jump left of an earlier dependency or crowded date within a period', async () => {
+  const fixture = [node('first', 1901), node('dependent', 1902, ['first']), node('later-root', 1903), node('decade-end', 1909)]
+  const layout = await layoutGraph(fixture), byId = new Map(layout.nodes.map(n => [n.id, n]))
+  for (const a of fixture) for (const b of fixture) if (a.year < b.year) assert(byId.get(a.id).x <= byId.get(b.id).x)
+  const crowded = [...Array.from({ length: 8 }, (_, i) => node('early-' + i, 1901)), node('late', 1902), node('end', 1909)]
+  const placed = await layoutGraph(crowded), late = placed.nodes.find(n => n.id === 'late')
+  assert(placed.nodes.filter(n => n.id.startsWith('early-')).every(n => n.x <= late.x))
+})

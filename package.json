@@ -12,7 +12,8 @@
     "validate:data": "node scripts/validate-data.mjs",
     "data:audit-connections": "node scripts/audit-connections.mjs",
     "data:compile": "node scripts/compile-data.mjs",
-    "data:enrich": "node scripts/enrich-wikipedia.mjs"
+    "data:enrich": "node scripts/enrich-wikipedia.mjs",
+    "layout:analyze": "node scripts/analyze-layout.mjs"
   },
   "dependencies": {
     "@lucide/svelte": "^1.52.0",

@@ -12,7 +12,7 @@ Start with `git status --short` and the relevant source files; preserve unrelate
 | Author or correct a milestone/connection | The authoring rules below, then the relevant steps in [AGENT-WORKFLOW.md](docs/AGENT-WORKFLOW.md) |
 | Change architecture, schema, provenance, or agent tooling | [SYSTEM.md](docs/SYSTEM.md), then the relevant [roadmap milestone](docs/ROADMAP.md) |
 | Implement a planned operation | Its contract in [AGENT-WORKFLOW.md](docs/AGENT-WORKFLOW.md#planned-operation-contracts) and its roadmap acceptance gates |
-| Change layout or rendering | README project map and the affected `src/lib/` modules/tests; keep historical semantics separate from geometry |
+| Change layout or rendering | [Layout pipeline and diagnostics](docs/LAYOUT.md), README project map, and the affected `src/lib/` modules/tests; keep historical semantics separate from geometry |
 
 The design documents explicitly distinguish current behavior from planned features. The proposed status/inspect/evidence/proposal operations and structured research records are not implemented yet. Do not invent commands, fields, or guarantees from those plans. Update implementation status and current instructions when a feature actually ships.
 
