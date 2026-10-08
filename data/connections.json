@@ -108,5 +108,82 @@
     "type": "enabler",
     "reason": "Spirit levels on Sisson's 1725 base plate showed when its adjusting screws had brought the instrument level for angular measurement.",
     "source": "https://en.wikipedia.org/wiki/Theodolite"
+  },
+  {
+    "id": "copperplate-textile-printing",
+    "target": "roller-printing-textiles",
+    "type": "influence",
+    "reason": "Bell's 1783 roller-printing patent was an attempt to reduce the cost of his earlier copperplate textile-printing method, which he had practiced from 1770.",
+    "source": "https://en.wikipedia.org/wiki/Roller_printing_on_textiles"
+  },
+  {
+    "id": "patio-process",
+    "target": "pan-amalgamation",
+    "type": "influence",
+    "reason": "Barba's 1609 pan process was devised to shorten the patio method's weeks-long silver treatment to hours; the source explicitly presents it as a faster alternative to the established patio process.",
+    "source": "https://en.wikipedia.org/wiki/Pan_amalgamation"
+  },
+  {
+    "id": "duncan-liverpool-sanitary-report-1840",
+    "target": "chadwick-sanitary-report",
+    "type": "influence",
+    "reason": "Duncan's 1840 report on Liverpool's laboring classes was submitted as evidence to Chadwick's Poor Law inquiry.",
+    "source": "https://en.wikipedia.org/wiki/William_Henry_Duncan"
+  },
+  {
+    "id": "liverpool-sanitary-act-1846",
+    "target": "liverpool-medical-officer-of-health",
+    "type": "foundation",
+    "reason": "The local Act recognized the need for a medical officer and directly led to Duncan's appointment in 1847.",
+    "source": "https://en.wikipedia.org/wiki/William_Henry_Duncan"
+  },
+  {
+    "id": "metropolitan-board-of-works-1856",
+    "target": "london-main-drainage",
+    "type": "enabler",
+    "reason": "The board coordinated and financed the core London sewer system, with its chief engineer Joseph Bazalgette directing much of the work.",
+    "source": "https://en.wikipedia.org/wiki/Metropolitan_Board_of_Works"
+  },
+  {
+    "id": "nyc-metropolitan-board-of-health-1866",
+    "target": "nyc-department-of-health-1870",
+    "type": "foundation",
+    "reason": "The state legislature replaced the Metropolitan Board of Health with the city Department of Health in 1870.",
+    "source": "https://en.wikipedia.org/wiki/New_York_City_Department_of_Health_and_Mental_Hygiene"
+  },
+  {
+    "id": "public-health-nursing",
+    "target": "nyc-school-nursing-service-1902",
+    "type": "foundation",
+    "reason": "Henry Street Settlement applied Wald's neighborhood nursing practice to pupils through its first public-school nurse.",
+    "source": "https://en.wikipedia.org/wiki/Henry_Street_Settlement"
+  },
+  {
+    "id": "us-marine-hospital-service",
+    "target": "hygienic-laboratory-1887",
+    "type": "foundation",
+    "reason": "The federal service established its bacteriological investigation laboratory within the Staten Island Marine Hospital.",
+    "source": "https://en.wikipedia.org/wiki/National_Institutes_of_Health"
+  },
+  {
+    "id": "liverpool-sanitary-act-1846",
+    "target": "uk-public-health-act-1848",
+    "type": "influence",
+    "reason": "The locally promoted Liverpool Act led the way and influenced drafting of the 1848 national public-health law.",
+    "source": "https://en.wikipedia.org/wiki/William_Henry_Duncan"
+  },
+  {
+    "target": "theodolite",
+    "id": "vernier-scale",
+    "type": "enabler",
+    "reason": "Sisson's 1725 theodolite used vernier scales to read fractions of the divisions on its angular circles.",
+    "source": "https://en.wikipedia.org/wiki/Theodolite"
+  },
+  {
+    "target": "vernier-caliper",
+    "id": "vernier-scale",
+    "type": "enabler",
+    "reason": "The secondary vernier scale supplied interpolation between the caliper's main-scale graduations for finer dimensional readings.",
+    "source": "https://en.wikipedia.org/wiki/Vernier_scale"
   }
 ]

@@ -1,0 +1,144 @@
+[
+  {
+    "id": "vernier-scale",
+    "title": "Vernier scale",
+    "wiki": "Vernier scale",
+    "year": 1631,
+    "domain": "measurement",
+    "kind": "technology",
+    "summary": "Vernier's 1631 subsidiary scale used coincident graduations to read fractions of a main scale division on angular or linear instruments.",
+    "parents": []
+  },
+  {
+    "id": "board-of-longitude",
+    "title": "Board of Longitude",
+    "wiki": "Board of Longitude",
+    "year": 1714,
+    "domain": "education",
+    "kind": "institution",
+    "summary": "Established by the Longitude Act, the British commission administered rewards and support for practical methods and instruments for finding longitude at sea.",
+    "parents": []
+  },
+  {
+    "id": "ramsden-screw-cutting-lathe",
+    "title": "Ramsden screw-cutting lathe",
+    "wiki": "Screw-cutting lathe",
+    "year": 1775,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Ramsden's lathe combined a leadscrew, slide rest, and change gears to cut accurate threads used in further lathes and instrument-dividing machinery.",
+    "parents": [
+      {
+        "id": "lathe",
+        "type": "foundation",
+        "reason": "Rotating workholding and cutting geometry formed the lathe on which Ramsden added controlled screw-cutting feeds.",
+        "source": "https://en.wikipedia.org/wiki/Screw-cutting_lathe",
+        "directContribution": "The lathe directly holds and rotates the workpiece during thread cutting; the leadscrew independently controls the cutting tool's axial advance."
+      },
+      {
+        "id": "lead-screw",
+        "type": "foundation",
+        "reason": "A leadscrew coordinated the cutting tool's advance with workpiece rotation to generate a repeatable thread pitch.",
+        "source": "https://en.wikipedia.org/wiki/Screw-cutting_lathe"
+      }
+    ]
+  },
+  {
+    "id": "ramsden-dividing-engine",
+    "title": "Ramsden dividing engine",
+    "wiki": "Dividing engine",
+    "year": 1777,
+    "domain": "measurement",
+    "kind": "technology",
+    "summary": "Documented in Ramsden's 1777 publication, a precision screw-indexed machine engraved regular angular graduations on measuring instruments.",
+    "parents": [
+      {
+        "id": "ramsden-screw-cutting-lathe",
+        "type": "foundation",
+        "reason": "Ramsden's accurate screw-cutting lathes produced the precision screws used to index his dividing machinery.",
+        "source": "https://en.wikipedia.org/wiki/Screw-cutting_lathe"
+      },
+      {
+        "id": "board-of-longitude",
+        "type": "enabler",
+        "reason": "The Board funded the engine on conditions requiring published construction details, access for other makers, and instruction in making copies.",
+        "source": "https://en.wikipedia.org/wiki/Dividing_engine"
+      }
+    ]
+  },
+  {
+    "id": "hounslow-survey-baseline",
+    "title": "Hounslow Heath survey baseline",
+    "wiki": "Anglo-French Survey (1784–1790)",
+    "year": 1784,
+    "domain": "measurement",
+    "kind": "infrastructure",
+    "summary": "Roy's team measured a five-mile survey base with calibrated glass rods and thermal corrections, establishing a known length for the Anglo-French triangulation.",
+    "parents": [
+      {
+        "id": "glassmaking",
+        "type": "enabler",
+        "reason": "Solid glass supplied the calibrated measuring rods used repeatedly along the baseline; their lengths resisted humidity changes during measurement.",
+        "source": "https://en.wikipedia.org/wiki/Anglo-French_Survey_(1784%E2%80%931790)"
+      }
+    ]
+  },
+  {
+    "id": "ramsden-great-theodolite",
+    "title": "Ramsden great theodolite",
+    "wiki": "Ramsden surveying instruments",
+    "year": 1787,
+    "domain": "measurement",
+    "kind": "technology",
+    "summary": "Delivered in 1787, Ramsden's large survey instrument combined accurately divided angular scales with microscope and screw readouts for very fine angle measurement.",
+    "parents": [
+      {
+        "id": "ramsden-dividing-engine",
+        "type": "foundation",
+        "reason": "One of Ramsden's dividing engines engraved the instrument's horizontal circle at regular fifteen-arcminute intervals.",
+        "source": "https://en.wikipedia.org/wiki/Ramsden_surveying_instruments#Great_theodolite"
+      },
+      {
+        "id": "microscope",
+        "type": "enabler",
+        "reason": "Microscopes with adjustable cross wires read positions between the instrument's engraved angular graduations.",
+        "source": "https://en.wikipedia.org/wiki/Ramsden_surveying_instruments#Great_theodolite"
+      },
+      {
+        "id": "telescope",
+        "type": "enabler",
+        "reason": "The sighting telescope aimed at distant survey stations while the horizontal and vertical scales recorded its orientation.",
+        "source": "https://en.wikipedia.org/wiki/Ramsden_surveying_instruments#Great_theodolite"
+      }
+    ]
+  },
+  {
+    "id": "anglo-french-triangulation",
+    "title": "Anglo-French triangulation results",
+    "wiki": "Anglo-French Survey (1784–1790)",
+    "year": 1790,
+    "domain": "measurement",
+    "kind": "practice",
+    "summary": "Completed calculations linked the Greenwich and Paris observatories through measured bases and survey triangles, demonstrating a precise geodetic survey across the Channel.",
+    "parents": [
+      {
+        "id": "hounslow-survey-baseline",
+        "type": "foundation",
+        "reason": "The measured Hounslow baseline supplied a known length from which the survey's connected triangles could be calculated.",
+        "source": "https://en.wikipedia.org/wiki/Anglo-French_Survey_(1784%E2%80%931790)"
+      },
+      {
+        "id": "ramsden-great-theodolite",
+        "type": "enabler",
+        "reason": "Ramsden's instrument measured the survey triangle angles during the 1787–1788 observations used in the final calculations.",
+        "source": "https://en.wikipedia.org/wiki/Anglo-French_Survey_(1784%E2%80%931790)"
+      },
+      {
+        "id": "triangulation-surveying",
+        "type": "foundation",
+        "reason": "Triangulation combined measured bases with observed angles to compute the relative positions of the observatories.",
+        "source": "https://en.wikipedia.org/wiki/Anglo-French_Survey_(1784%E2%80%931790)"
+      }
+    ]
+  }
+]

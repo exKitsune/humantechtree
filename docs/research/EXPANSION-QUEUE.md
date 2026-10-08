@@ -1,6 +1,6 @@
 # Wikipedia expansion queue
 
-Status: second coordinated expansion batch integrated, 2026-10-08. The graph is an editorial selection of capabilities, not a complete representation of Wikipedia. Resolving an article is not validation of its historical claims or every relationship.
+Status: third coordinated expansion batch integrated, 2026-10-08. The graph is an editorial selection of capabilities, not a complete representation of Wikipedia. Resolving an article is not validation of its historical claims or every relationship.
 
 ## First coordinated batch (2026-10-07)
 
@@ -33,11 +33,32 @@ Review separated Merrill's zinc-dust recovery from Crowe's later deaeration, cor
 
 Combined verification passed: the complete authoring-source connection audit has no unresolved flags; compilation and data validation found no duplicate IDs, dangling links, date inversions, or cycles; Svelte/TypeScript checks found no errors or warnings; all 51 tests and the static production build passed. Tests include full-catalog routing and the 20,000-node LOD fixture. No new interactive browser check was performed for this data-only batch.
 
-Twenty additions currently have neither incoming nor outgoing links. Reuse the topic notes to research their actual inputs or applications:
+At the end of the second batch, twenty additions had neither incoming nor outgoing links. Reuse the topic notes to research their actual inputs or applications:
 
 - Computing: `shellsort`, `trie`, `entity-relationship-model`, `express-olap`.
 - Production: `ball-mill`, `carding-machine`, `copper-electrorefining`, `frasch-process`, `froth-flotation`, `hydraulic-mining`, `mauveine`, `patio-process`, `roller-printing-textiles`, `synthetic-alizarin`, `synthetic-indigo`, `wool-combing-machine`.
 - Public health: `ragusa-maritime-quarantine`, `liverpool-medical-officer-of-health`, `nyc-metropolitan-board-of-health-1866`, `public-health-nursing`.
+
+## Third coordinated batch (2026-10-08)
+
+Three Luna High agents resumed their topic work, using disjoint files and proposed supplemental edges. Integration reviewed exact date and parent scope, added measurement evidence, and applied the accepted proposals once all writers finished.
+
+| Batch | Added nodes | Added edges, including supplements | Evidence |
+| --- | ---: | ---: | --- |
+| String indexes, data models, and analytics | 17 | 20 | [Computing](computing-expansion-3.md) |
+| Carding, textile mills/printing, and silver processing | 12 | 13 | [Production](production-expansion-3.md) |
+| Sanitary investigations, public administration, and laboratories | 12 | 11 | [Public health](public-health-expansion-3.md) |
+| Instrument manufacture and geodetic measurement | 7 | 13 | [Measurement](measurement-expansion-3.md) |
+
+**48 nodes and 57 edges added; total 2,292 nodes and 2,600 edges.** All new references and the corrected League health reference resolve locally. The 48 additions have 37 CDN images; 11 use the image fallback. No existing edges were removed. One existing milestone was corrected: the League's permanent Health Organization is dated to formal establishment in 1923, with official-source references retained in the public-health note. This is separate from earlier planning and provisional health activity.
+
+Eight formerly isolated entries gained supported connections: `trie`, `entity-relationship-model`, `carding-machine`, `patio-process`, `roller-printing-textiles`, `liverpool-medical-officer-of-health`, `nyc-metropolitan-board-of-health-1866`, and `public-health-nursing`. The new `venetian-forty-day-quarantine` and `public-health-laboratory-service-1946` remain isolated. The Ragusan/Venetian chronology does not alone prove a transfer, and conflicting Emergency PHLS dates remain unresolved. Further connections must explain actual contributions, not fill blank space.
+
+Useful new routes include ER model and relational theory → IDEF1 → IDEF1X; carding machinery → dated mill implementations; Duncan's local evidence and legislation → health offices; and Ramsden's screw-cutting lathe → dividing engine → great theodolite → survey results. The independently measured Hounslow baseline supplies a separate input to the last result.
+
+Most research used the local archive. Small official-history checks were needed where archive accounts contradicted one another. An empty-page issue was traced to archive-local HTML section redirects; the improved local reader recovered the Washoe and great-theodolite evidence. That finding is recorded in the operating workflow. Image metadata remains separate: the vernier crop needed its original photographer/crop credit filled from Commons file descriptions, because the API omitted the artist field.
+
+Combined verification passed: the complete authoring-source audit has zero unresolved candidates and retains 65 independently explained direct contributions. Compilation and data validation passed; Svelte/TypeScript checks found zero errors or warnings; all 51 tests and the static production build passed. The local development server was checked and serves 2,292 nodes and 2,600 edges. No interactive browser check was performed for this data-only batch.
 
 ## Next questions, in order
 
@@ -45,12 +66,12 @@ Twenty additions currently have neither incoming nor outgoing links. Reuse the t
    - `catapult`, `counterweight-trebuchet`: which documented mechanisms, construction practices, and intermediates contributed to the selected forms? Do not infer descent from membership in the broad catapult category.
    - `rifling`, `flintlock-firearm`, `percussion-cap`, `machine-gun`, `smokeless-propellant`: identify immediate manufacturing, ignition, feeding, or material contributions at the dated milestone. Distinguish the hand-powered Gatling entry from later fully automatic systems. Keep descriptions at historical capability level.
    - `standing-army`, `conscription`, `military-logistics`, `military-academy`: investigate the specific Neo-Assyrian, French, and Savoyard institutions and their documented administrative support. Avoid a universal military-institution ladder.
-   - `coordinate-measuring-machine`: research the early Ferranti two-axis instrument. Later three-axis machines, computer control, and contemporary granite/air-bearing descriptions cannot establish its original inputs. Sisson's theodolite now has supported telescope and spirit-level inputs; its vernier-scale contribution remains a separate scope question.
+   - `coordinate-measuring-machine`: research the early Ferranti two-axis instrument. Later three-axis machines, computer control, and contemporary granite/air-bearing descriptions cannot establish its original inputs. Sisson's theodolite now has telescope, spirit-level, and separately scoped vernier-scale inputs. The Ramsden instrument-manufacturing route is also represented; distinguish its 1787 Royal Society instrument from the later 1791 Board of Ordnance instrument in any national-survey extension.
    - `normal-school`, `monitorial-instruction`, `french-administrative-court`: locate the particular institutional arrangements that preceded these implementations; do not attach generic education or governance roots just to connect them.
 2. **Refine reusable rocket hardware paths.** The new Sputnik, Vostok-K, Jupiter-C, and Mercury-Redstone entries make the military-to-spaceflight route more legible. Further source work should distinguish retained R-7 stages from changes through Luna/Vostok-L, and add the particular life-support and recovery capabilities needed for human flight. Preserve independent Soviet orbital and American suborbital implementations.
 3. **Expand precision, construction, and supply where dates are supported.** Revisit optical flats, sine bars, dial indicators, calibration traceability, underpinning, and other deferred construction practices. The research note records why some were deferred. Do not manufacture an origin date to fit the current single-year schema.
 4. **Broaden institutional coverage across traditions and regions.** Revisit dated ijazah attestations, regional knowledge-preservation institutions, administrative systems, and trade/credit arrangements with specialist sources when the archive is insufficient. The current omission of an undated ijazah milestone is not a historical absence claim. Do not repeat the rejected claim that a coherent medieval Ottoman millet system existed in its later form.
-5. **Expand other capability clusters by an explanatory question.** Resume the second-batch topic notes before expanding mining, textiles, water treatment, computing, or public-health organization. Their rejected candidates and specific missing inputs are the starting queue. Food preservation, navigation, and scientific instruments are additional candidate areas. Inspect the complete current graph first: many obvious subjects already exist in the original expansion files. Article hyperlinks and category membership are discovery aids, never automatically generated edges.
+5. **Expand other capability clusters by an explanatory question.** Resume the latest second- and third-batch topic notes before expanding mining, textiles, water treatment, computing, or public-health organization. Their rejected candidates and specific missing inputs are the starting queue. Food preservation, navigation, and scientific instruments are additional candidate areas. Inspect the complete current graph first: many obvious subjects already exist in the original expansion files. Article hyperlinks and category membership are discovery aids, never automatically generated edges.
 
 ## How another team resumes
 

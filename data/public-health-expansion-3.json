@@ -1,0 +1,150 @@
+[
+  {
+    "id": "venetian-forty-day-quarantine",
+    "title": "Venetian forty-day maritime quarantine",
+    "wiki": "Quarantine",
+    "year": 1448,
+    "domain": "medicine",
+    "kind": "practice",
+    "summary": "In 1448 the Venetian Senate prolonged a maritime waiting period to forty days, giving rise to the term quarantena.",
+    "parents": []
+  },
+  {
+    "id": "duncan-liverpool-sanitary-report-1840",
+    "title": "William Henry Duncan's Liverpool sanitary report",
+    "wiki": "William Henry Duncan",
+    "year": 1840,
+    "domain": "medicine",
+    "kind": "practice",
+    "summary": "Duncan reported on the sanitary state of Liverpool's laboring classes as evidence to Edwin Chadwick's Poor Law Commission inquiry.",
+    "parents": []
+  },
+  {
+    "id": "duncan-liverpool-mortality-lecture-1843",
+    "title": "Duncan's lecture on Liverpool mortality",
+    "wiki": "William Henry Duncan",
+    "year": 1843,
+    "domain": "medicine",
+    "kind": "practice",
+    "summary": "Duncan presented and published an account of Liverpool's high mortality and its physical causes; the pamphlet moved the town council to act on sanitation.",
+    "parents": []
+  },
+  {
+    "id": "liverpool-sanitary-act-1846",
+    "title": "Liverpool Sanitary Act 1846",
+    "wiki": "William Henry Duncan",
+    "year": 1846,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "The local act set minimum housing standards, barred cellar dwellings, and recognized the need for a medical officer to address sanitation.",
+    "parents": [
+      {
+        "id": "duncan-liverpool-mortality-lecture-1843",
+        "type": "influence",
+        "reason": "Duncan's published mortality lecture immediately persuaded Liverpool's council that sanitary action was needed.",
+        "source": "https://en.wikipedia.org/wiki/William_Henry_Duncan"
+      }
+    ]
+  },
+  {
+    "id": "metropolis-management-act-1855",
+    "title": "Metropolis Management Act 1855",
+    "wiki": "Metropolis Management Act 1855",
+    "year": 1855,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "Parliament created a London-wide Metropolitan Board of Works to coordinate infrastructure and established parish and district works boards.",
+    "parents": []
+  },
+  {
+    "id": "metropolitan-board-of-works-1856",
+    "title": "Metropolitan Board of Works begins operations",
+    "wiki": "Metropolitan Board of Works",
+    "year": 1856,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "The London-wide board took over the powers and duties of the Metropolitan Commission of Sewers and coordinated major public works, including the core sewer system.",
+    "parents": [
+      {
+        "id": "metropolis-management-act-1855",
+        "type": "foundation",
+        "reason": "The 1855 Act constituted the board, which assumed its powers and duties on 1 January 1856.",
+        "source": "https://en.wikipedia.org/wiki/Metropolis_Management_Act_1855"
+      }
+    ]
+  },
+  {
+    "id": "nyc-department-of-health-1870",
+    "title": "New York City Department of Health, 1870",
+    "wiki": "New York City Department of Health and Mental Hygiene",
+    "year": 1870,
+    "domain": "medicine",
+    "kind": "institution",
+    "summary": "New York replaced its Metropolitan Board of Health with a Department of Health that also assumed street-cleaning and sanitary-permit responsibilities.",
+    "parents": []
+  },
+  {
+    "id": "nyc-municipal-bacteriology-laboratories-1892",
+    "title": "Biggs directs New York City bacteriology laboratories",
+    "wiki": "Hermann Biggs",
+    "year": 1892,
+    "domain": "medicine",
+    "kind": "institution",
+    "summary": "From 1892, Hermann Biggs directed New York City bacteriological laboratories, applying bacteriology to infectious-disease prevention and control.",
+    "parents": [
+      {
+        "id": "nyc-department-of-health-1870",
+        "type": "enabler",
+        "reason": "Biggs directed the municipal laboratories as a medical officer of the New York Department of Health.",
+        "source": "https://en.wikipedia.org/wiki/Hermann_Biggs"
+      }
+    ]
+  },
+  {
+    "id": "nyc-school-nursing-service-1902",
+    "title": "New York City public-school nursing service",
+    "wiki": "Henry Street Settlement",
+    "year": 1902,
+    "domain": "medicine",
+    "kind": "practice",
+    "summary": "Henry Street Settlement funded New York City's first public-school nurse, adapting neighborhood nursing to pupils whose treatable illnesses kept them out of school.",
+    "parents": []
+  },
+  {
+    "id": "hygienic-laboratory-1887",
+    "title": "U.S. Hygienic Laboratory",
+    "wiki": "National Institutes of Health",
+    "year": 1887,
+    "domain": "medicine",
+    "kind": "institution",
+    "summary": "The Marine Hospital Service established a bacteriological investigation laboratory at its Staten Island hospital, later moving it to Washington.",
+    "parents": []
+  },
+  {
+    "id": "national-institute-health-1930",
+    "title": "National Institute of Health, 1930",
+    "wiki": "National Institutes of Health",
+    "year": 1930,
+    "domain": "medicine",
+    "kind": "institution",
+    "summary": "The Ransdell Act redesignated the Hygienic Laboratory as the National Institute of Health and authorized new buildings for federal biomedical research.",
+    "parents": [
+      {
+        "id": "hygienic-laboratory-1887",
+        "type": "foundation",
+        "reason": "The 1930 institute was the statutory redesignation and expansion of the Hygienic Laboratory.",
+        "source": "https://en.wikipedia.org/wiki/National_Institutes_of_Health"
+      }
+    ]
+  },
+  {
+    "id": "public-health-laboratory-service-1946",
+    "title": "Public Health Laboratory Service",
+    "wiki": "Public Health Laboratory Service",
+    "year": 1946,
+    "domain": "medicine",
+    "kind": "institution",
+    "summary": "Under the NHS Act, Britain retained and formalized the laboratory network as a national service for communicable-disease surveillance, detection, and control.",
+    "parents": []
+  }
+]

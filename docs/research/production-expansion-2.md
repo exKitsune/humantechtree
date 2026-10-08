@@ -42,3 +42,7 @@ A possible incoming edge from the new `carding-machine` to the existing `water-f
 - The Elmore 1897 oil-agglomeration process was not represented as froth flotation. The later Crowe vacuum improvement was not backdated to Merrill's circa-1900 patent. Broad parent links based only on a market, application need, or later use were omitted.
 
 Archive title resolution and article statements do not independently establish every edge or replace specialist historical review. Several root entries still need more specific precursor research if future work seeks to connect them.
+
+## Subsequent lookup resolution
+
+Batch 3 recovered the previously empty Washoe entry by following its archive-local HTML section redirect to Pan amalgamation. The new [production research note](production-expansion-3.md) records the supported process and implementation dates. The former empty extraction was a reader limitation, not missing article evidence.

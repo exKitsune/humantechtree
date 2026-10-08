@@ -1,0 +1,325 @@
+[
+  {
+    "id": "patricia-trie",
+    "title": "PATRICIA binary trie",
+    "wiki": "Radix tree",
+    "year": 1968,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "In 1968, Morrison and Gwehenberger described a binary trie that records only the distinguishing bit at each branch, compressing paths while supporting keyed retrieval.",
+    "parents": [
+      {
+        "id": "trie",
+        "type": "foundation",
+        "reason": "PATRICIA is a radix-2 trie variant: it preserves trie branching by key prefixes while skipping nondiscriminating bits.",
+        "source": "https://en.wikipedia.org/wiki/Radix_tree#PATRICIA"
+      }
+    ]
+  },
+  {
+    "id": "bachman-data-structure-diagram",
+    "title": "Bachman data-structure diagrams",
+    "wiki": "Data structure diagram",
+    "year": 1969,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "Charles Bachman's 1969 diagrams represented logical data structures and record relationships separately from their physical storage arrangement.",
+    "parents": []
+  },
+  {
+    "id": "suffix-tree",
+    "title": "Suffix tree indexing",
+    "wiki": "Suffix tree",
+    "year": 1973,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "Weiner's 1973 suffix-tree concept indexed every text suffix through trie-based prefix identifiers, enabling fast substring operations; later compressed forms reduced its space and construction cost.",
+    "parents": [
+      {
+        "id": "trie",
+        "type": "foundation",
+        "reason": "Weiner's original construction stored suffix-position identifiers in a trie and extended trie structures to index all suffixes of a text.",
+        "source": "https://en.wikipedia.org/wiki/Suffix_tree"
+      }
+    ]
+  },
+  {
+    "id": "aho-corasick",
+    "title": "Aho–Corasick multi-pattern matching",
+    "wiki": "Aho–Corasick algorithm",
+    "year": 1975,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "Aho and Corasick's 1975 algorithm matched many dictionary strings in one text pass by adding failure-transition links to a trie-derived finite-state machine.",
+    "parents": [
+      {
+        "id": "trie",
+        "type": "foundation",
+        "reason": "The algorithm first builds trie paths for the dictionary strings, then augments their shared-prefix structure with fallback links.",
+        "source": "https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm"
+      },
+      {
+        "id": "finite-automata",
+        "type": "foundation",
+        "reason": "Its added transitions turn the dictionary trie into a finite-state machine that continues matching without backtracking.",
+        "source": "https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm"
+      }
+    ]
+  },
+  {
+    "id": "crow-foot-notation",
+    "title": "Crow's-foot relationship notation",
+    "wiki": "Crow's foot notation",
+    "year": 1976,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "Gordon Everest's 1976 notation used crow-foot line ends to show relationship cardinalities in data-structure diagrams.",
+    "parents": [
+      {
+        "id": "bachman-data-structure-diagram",
+        "type": "influence",
+        "reason": "The ER-model history says crow's-foot relationship lines in some diagrams owed more to earlier Bachman diagrams than to Chen's original diagrams.",
+        "source": "https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model#Crow's_foot_notation"
+      }
+    ]
+  },
+  {
+    "id": "suffix-automaton",
+    "title": "Suffix automaton",
+    "wiki": "Suffix automaton",
+    "year": 1983,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "The 1983 suffix automaton compactly represented all suffixes of a string as a minimal partial deterministic finite automaton, supporting substring-index operations.",
+    "parents": [
+      {
+        "id": "finite-automata",
+        "type": "foundation",
+        "reason": "The structure is defined as a minimal partial deterministic finite automaton recognizing the suffixes of its input string.",
+        "source": "https://en.wikipedia.org/wiki/Suffix_automaton"
+      }
+    ]
+  },
+  {
+    "id": "compacted-suffix-automaton",
+    "title": "Compacted suffix automaton",
+    "wiki": "Suffix automaton",
+    "year": 1987,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "In 1987, Blumer and colleagues compressed redundant suffix-automaton states to create the compacted suffix automaton, also called a CDAWG.",
+    "parents": [
+      {
+        "id": "suffix-automaton",
+        "type": "foundation",
+        "reason": "The compacted structure is made by removing nonfinal automaton states with a single outgoing arc and retaining the language index.",
+        "source": "https://en.wikipedia.org/wiki/Suffix_automaton"
+      },
+      {
+        "id": "suffix-tree",
+        "type": "influence",
+        "reason": "The authors explicitly applied the state-compression technique used in suffix trees to the suffix automaton to form the compacted structure.",
+        "source": "https://en.wikipedia.org/wiki/Suffix_automaton"
+      }
+    ]
+  },
+  {
+    "id": "suffix-array",
+    "title": "Suffix array indexing",
+    "wiki": "Suffix array",
+    "year": 1990,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "Manber and Myers introduced suffix arrays in 1990 as a space-efficient sorted-index alternative to suffix trees for string-search operations.",
+    "parents": [
+      {
+        "id": "suffix-tree",
+        "type": "influence",
+        "reason": "Suffix arrays were explicitly introduced as a lower-space alternative to suffix trees while supporting related string-indexing operations.",
+        "source": "https://en.wikipedia.org/wiki/Suffix_array"
+      }
+    ]
+  },
+  {
+    "id": "lcp-array",
+    "title": "Longest-common-prefix array",
+    "wiki": "LCP array",
+    "year": 1993,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "Manber and Myers's 1993 publication described using common-prefix lengths of adjacent sorted suffixes to speed string searches.",
+    "parents": [
+      {
+        "id": "suffix-array",
+        "type": "enabler",
+        "reason": "Each LCP entry records the shared-prefix length of adjacent suffixes in the suffix array, augmenting that sorted index for faster searches.",
+        "source": "https://en.wikipedia.org/wiki/LCP_array"
+      }
+    ]
+  },
+  {
+    "id": "system-r-query-optimization",
+    "title": "System R cost-based query optimization",
+    "wiki": "Query optimization",
+    "year": 1979,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "The 1979 System R access-path work pioneered dynamic-programming join-order selection, comparing scan and index alternatives to choose efficient query plans.",
+    "parents": [
+      {
+        "id": "system-r",
+        "type": "foundation",
+        "reason": "IBM's System R database project developed the join-order optimization procedure used as the pattern for most later relational query optimizers.",
+        "source": "https://en.wikipedia.org/wiki/Query_optimization"
+      },
+      {
+        "id": "dynamic-programming",
+        "type": "foundation",
+        "reason": "The optimizer evaluates reusable best subplans for relation subsets to search join orders without enumerating every complete plan independently.",
+        "source": "https://en.wikipedia.org/wiki/Query_optimization"
+      }
+    ]
+  },
+  {
+    "id": "idef1-information-model",
+    "title": "IDEF1 information-modeling method",
+    "wiki": "IDEF1X",
+    "year": 1981,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "Published by the ICAM program in 1981, IDEF1 represented the structure and semantics of information in an environment and supplied the initial method later extended as IDEF1X.",
+    "parents": [
+      {
+        "id": "entity-relationship-model",
+        "type": "foundation",
+        "reason": "The IDEF1 history identifies Chen's entity–relationship model as one of the theoretical roots for its 1981 information-modeling approach.",
+        "source": "https://en.wikipedia.org/wiki/IDEF1X"
+      },
+      {
+        "id": "relational-database",
+        "type": "foundation",
+        "reason": "The IDEF1 history identifies Codd's relational-model theory as a separate theoretical root for the 1981 method.",
+        "source": "https://en.wikipedia.org/wiki/IDEF1X"
+      }
+    ]
+  },
+  {
+    "id": "idef1x-standard",
+    "title": "IDEF1X data-modeling standard",
+    "wiki": "IDEF1X",
+    "year": 1993,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "NIST's 1993 FIPS 184 publication standardized IDEF1X, an integrated, database-neutral information model that could be transformed into user views and physical database designs.",
+    "parents": [
+      {
+        "id": "idef1-information-model",
+        "type": "foundation",
+        "reason": "IDEF1X was the Air Force method relabeled after accepted extensions to the original IDEF1 information-modeling technique; the 1993 FIPS publication standardized that evolved method.",
+        "source": "https://en.wikipedia.org/wiki/IDEF1X"
+      }
+    ]
+  },
+  {
+    "id": "codd-olap-formulation",
+    "title": "Codd's named OLAP formulation",
+    "wiki": "Online analytical processing",
+    "year": 1993,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "Codd's 1993 twelve-rule white paper gave the name and proposed criteria for OLAP after a consulting assignment for Arbor Software, whose Essbase product had appeared in 1992.",
+    "parents": [
+      {
+        "id": "essbase",
+        "type": "influence",
+        "reason": "The paper that coined OLAP explicitly referred to Essbase features and arose from Codd's consulting assignment for its developer Arbor Software.",
+        "source": "https://en.wikipedia.org/wiki/Online_analytical_processing"
+      }
+    ]
+  },
+  {
+    "id": "essbase",
+    "title": "Essbase multidimensional database",
+    "wiki": "Essbase",
+    "year": 1992,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "Arbor Software's Essbase, first released in 1992, stored multidimensional business data for analytic applications beyond the limits of spreadsheet-only models.",
+    "parents": []
+  },
+  {
+    "id": "cdawg-linear-construction",
+    "title": "Linear direct construction of CDAWGs",
+    "wiki": "Suffix automaton",
+    "year": 1997,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "Crochemore and Vérin's 1997 algorithm constructed a compacted directed acyclic word graph directly in linear time.",
+    "parents": [
+      {
+        "id": "compacted-suffix-automaton",
+        "type": "foundation",
+        "reason": "The algorithm directly constructs the compacted suffix automaton (CDAWG), rather than first building and then compressing a regular suffix automaton.",
+        "source": "https://en.wikipedia.org/wiki/Suffix_automaton"
+      }
+    ]
+  },
+  {
+    "id": "trie-cdawg-construction",
+    "title": "Trie-input CDAWG construction",
+    "wiki": "Suffix automaton",
+    "year": 2001,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "In 2001, Inenaga and colleagues described constructing a CDAWG for a set of words supplied as a trie, avoiding an explicit list of the represented strings.",
+    "parents": [
+      {
+        "id": "trie",
+        "type": "foundation",
+        "reason": "The 2001 method takes a trie as the input representation of the word set and traverses its prefix structure to build the resulting automaton.",
+        "directContribution": "This is an independent direct input: the 2001 construction consumes and traverses the trie representing the word set, rather than receiving that input through the suffix-tree route to the same automaton.",
+        "source": "https://en.wikipedia.org/wiki/Suffix_automaton"
+      },
+      {
+        "id": "compacted-suffix-automaton",
+        "type": "foundation",
+        "reason": "The constructed result is the compacted suffix automaton generalization for the set of words represented by the input trie.",
+        "source": "https://en.wikipedia.org/wiki/Suffix_automaton"
+      }
+    ]
+  },
+  {
+    "id": "powersort",
+    "title": "Powersort adaptive mergesort",
+    "wiki": "Powersort",
+    "year": 2018,
+    "domain": "information",
+    "kind": "technology",
+    "category": "sorting",
+    "summary": "Munro and Wild's 2018 Powersort replaced Timsort's run-merging heuristic with a nearly optimal policy that adapts stably to existing order in the input.",
+    "parents": [
+      {
+        "id": "timsort",
+        "type": "influence",
+        "reason": "Powersort builds on Timsort and replaces its suboptimal heuristic for choosing which ordered runs to merge, while reusing its merge implementation.",
+        "source": "https://en.wikipedia.org/wiki/Powersort"
+      }
+    ]
+  }
+]

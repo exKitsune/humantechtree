@@ -53,3 +53,7 @@ Several roots are retained where the inspected source establishes the event but 
 Useful follow-up: establish supported single-year origins and immediate inputs for rapid-sand filtration, trickling filters, ozone water disinfection, and indicator-organism water analysis. Verify physical water-distribution inputs for any future treatment edge. Do not infer a single institutional ladder between the British and U.S. developments.
 
 Not run by the topic agent: source registration, full authoring-source audit after integration, compilation, data validation, tests, or image metadata. The integration owner subsequently completed these steps; see the expansion queue.
+
+## Subsequent correction
+
+Batch 3 corrected `league-nations-health-organization` from the general article's 1920 shorthand to formal permanent establishment in 1923. The empty dedicated archive entry was an HTML section redirect, and the resolved section distinguished 1920 discussions from later organization. Official WHO and contemporary Public Health Reports accounts support the permanent date. See the [third-batch correction and sources](public-health-expansion-3.md#integration-correction-permanent-league-health-organization); the earlier 1920 discussion above describes the superseded handoff finding.

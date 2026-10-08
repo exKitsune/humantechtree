@@ -413,17 +413,17 @@
   {
     "id": "league-nations-health-organization",
     "title": "Health Organization of the League of Nations",
-    "wiki": "Health Organization of the League of Nations",
-    "year": 1920,
+    "wiki": "Organisation of the League of Nations",
+    "year": 1923,
     "domain": "governance",
     "kind": "institution",
-    "summary": "The League established a dedicated health organization in 1920; WHO later incorporated its staff, assets, and public-health duties.",
+    "summary": "The League formally established its permanent Health Organization in 1923 to coordinate health expertise and epidemiological work; WHO later inherited its staff, assets, and duties.",
     "parents": [
       {
         "id": "league-nations",
         "type": "enabler",
-        "reason": "The League established this health organization as a dedicated component of its international work.",
-        "source": "https://en.wikipedia.org/wiki/World_Health_Organization"
+        "reason": "The League Council and Assembly approved the permanent health organization in 1923 as a dedicated part of the League's technical work.",
+        "source": "https://stacks.cdc.gov/view/cdc/68253/cdc_68253_DS1.pdf"
       }
     ]
   }

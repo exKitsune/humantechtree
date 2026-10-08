@@ -18,3 +18,7 @@ Archive: `F:/Wikipedia/wikipedia_en_all_maxi_2026-08.zim`, UUID `50e94998-c1ec-b
 - Ramsden's later dividing engine and great theodolite offer a useful machine-making-instrument path. The checked articles use different approximate dates and the separate Great theodolite entry returned no useful body through the focused reader. This extension is deferred until the exact instrument and engine milestone are supported; no later screw-cutting lathe was used as an anachronistic parent.
 
 Article availability, source support, and independent historical review remain separate. No `reviewed` claim was set.
+
+## Subsequent work
+
+Batch 3 added the separate vernier-scale component and recovered the great-theodolite source through its archive-local HTML redirect. The [measurement follow-up](measurement-expansion-3.md) records the dated machine-to-instrument-to-survey route. The Ferranti CMM question remains open.

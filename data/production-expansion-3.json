@@ -1,0 +1,197 @@
+[
+  {
+    "id": "paul-wyatt-roller-spinning",
+    "title": "Paul–Wyatt roller-spinning machine",
+    "wiki": "Cotton mill",
+    "year": 1738,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Lewis Paul and John Wyatt patented roller machinery that mechanically spun cotton without fingers, an early mechanized spinning system housed in the first cotton mills.",
+    "parents": []
+  },
+  {
+    "id": "marvels-mill",
+    "title": "Water-powered cotton spinning at Marvel's Mill",
+    "wiki": "Cotton mill",
+    "year": 1742,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Marvel's Mill operated Paul–Wyatt roller-spinning machinery from 1742 and was the first cotton mill powered by a water wheel.",
+    "parents": [
+      {
+        "id": "paul-wyatt-roller-spinning",
+        "type": "foundation",
+        "reason": "The mill was built to house and operate the Paul–Wyatt roller-spinning machinery that mechanically spun cotton.",
+        "source": "https://en.wikipedia.org/wiki/Cotton_mill"
+      },
+      {
+        "id": "waterwheel",
+        "type": "enabler",
+        "reason": "The water wheel supplied the non-human power source that drove the machinery at Marvel's Mill.",
+        "source": "https://en.wikipedia.org/wiki/Cotton_mill"
+      }
+    ]
+  },
+  {
+    "id": "cromford-integrated-cotton-mill",
+    "title": "Integrated cotton production at Cromford",
+    "wiki": "Richard Arkwright",
+    "year": 1771,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Arkwright's water-powered Cromford mill opened in 1771 with mechanized carding and spinning operations, among the first factories to house both processes. The source does not identify the precise carder installed there.",
+    "parents": [
+      {
+        "id": "water-frame",
+        "type": "foundation",
+        "reason": "Arkwright installed water frames at the Cromford mill in 1771 as its powered spinning machinery.",
+        "source": "https://en.wikipedia.org/wiki/Water_frame"
+      },
+      {
+        "id": "carding-machine",
+        "type": "enabler",
+        "reason": "The 1771 Cromford mill housed mechanized carding alongside spinning; this edge records the carding operation as an independent input to its integrated production, without identifying the exact carder design.",
+        "source": "https://en.wikipedia.org/wiki/Richard_Arkwright"
+      }
+    ]
+  },
+  {
+    "id": "arkwright-carding-engine",
+    "title": "Arkwright carding engine",
+    "wiki": "Richard Arkwright",
+    "year": 1775,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Arkwright's patented rotary carding engine converted raw cotton into a continuous lap before spinning, using successively faster rollers and a bobbin-and-flyer mechanism.",
+    "parents": [
+      {
+        "id": "carding-machine",
+        "type": "influence",
+        "reason": "Arkwright improved Lewis Paul's 1748 carding machine and patented a rotary carding engine that mechanized preparation of raw cotton before spinning.",
+        "source": "https://en.wikipedia.org/wiki/Richard_Arkwright"
+      }
+    ]
+  },
+  {
+    "id": "dolobran-wool-carding-mill",
+    "title": "Mechanized wool carding at Dolobran",
+    "wiki": "Carding",
+    "year": 1789,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "A factory at Dolobran near Meifod became the first carding mill in Wales, using mechanized carders to produce yarn for the Welsh flannel industry.",
+    "parents": [
+      {
+        "id": "carding-machine",
+        "type": "foundation",
+        "reason": "The Dolobran mill used carding machines to open and prepare wool fibers for yarn production.",
+        "source": "https://en.wikipedia.org/wiki/Carding"
+      }
+    ]
+  },
+  {
+    "id": "copperplate-textile-printing",
+    "title": "Copperplate printing on textiles",
+    "wiki": "Roller printing on textiles",
+    "year": 1770,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Thomas Bell practiced textile printing from engraved copperplates, an earlier fabric-printing method that his later roller-printing patent sought to make less costly.",
+    "parents": []
+  },
+  {
+    "id": "parkinson-multicolor-calico-printing",
+    "title": "Multicolor calico printing by rollers",
+    "wiki": "Roller printing on textiles",
+    "year": 1785,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "After an improvement associated with Adam Parkinson, Bell's roller machine was successfully used at Bamber Bridge to print calico in two to six colors in one operation.",
+    "parents": [
+      {
+        "id": "roller-printing-textiles",
+        "type": "foundation",
+        "reason": "The Bamber Bridge implementation used Bell's roller-printing machine, with a later improvement allowing multiple colors to print in one operation.",
+        "source": "https://en.wikipedia.org/wiki/Roller_printing_on_textiles"
+      }
+    ]
+  },
+  {
+    "id": "walton-practical-wire-card",
+    "title": "Walton's layered carding system",
+    "wiki": "Carding",
+    "year": 1834,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "In 1834 James Walton patented a practical carding machine and a new card made of cloth and rubber layers; their combination became standard. Earlier wire-covered card machines had been patented by Lewis Paul in 1748, so this milestone does not claim first wire-card use.",
+    "parents": [
+      {
+        "id": "carding-machine",
+        "type": "foundation",
+        "reason": "Walton's patented machine and layered cloth-and-rubber card were a specific later carding-machine design, whose combination became standard in the industry.",
+        "source": "https://en.wikipedia.org/wiki/Carding"
+      }
+    ]
+  },
+  {
+    "id": "walton-standard-carding-system",
+    "title": "Walton wire-card system in commercial production",
+    "wiki": "Carding",
+    "year": 1857,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "The combination of Walton's wire card and layered cloth-and-rubber card became standard in the industry; James Walton & Sons was building it at Haughton Dale from 1857.",
+    "parents": [
+      {
+        "id": "walton-practical-wire-card",
+        "type": "foundation",
+        "reason": "The later standard carding system combined Walton's practical wire card with his cloth-and-rubber card covering, and his firm manufactured it from 1857.",
+        "source": "https://en.wikipedia.org/wiki/Carding"
+      }
+    ]
+  },
+  {
+    "id": "pan-amalgamation",
+    "title": "Pan silver amalgamation",
+    "wiki": "Pan amalgamation",
+    "year": 1609,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Alvaro Alonso Barba's Potosí process mixed silver ore with salt and mercury, sometimes with copper sulfate, and heated the charge in shallow copper vessels to shorten treatment to hours.",
+    "parents": []
+  },
+  {
+    "id": "washoe-amalgamation",
+    "title": "Washoe silver-amalgamation process",
+    "wiki": "Pan amalgamation",
+    "year": 1860,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Developed in the 1860s for Comstock ore, the Washoe variant replaced copper vessels with mechanically agitated iron pans and added grinding by a rotating muller.",
+    "parents": [
+      {
+        "id": "pan-amalgamation",
+        "type": "foundation",
+        "reason": "The Washoe process was a documented variation of pan amalgamation, retaining mercury, salt, and copper-sulfate treatment while replacing copper vessels with agitated iron pans.",
+        "source": "https://en.wikipedia.org/wiki/Pan_amalgamation#Washoe_process"
+      }
+    ]
+  },
+  {
+    "id": "reese-river-silver-process",
+    "title": "Reese River salt-roasting silver process",
+    "wiki": "Pan amalgamation",
+    "year": 1879,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Introduced in the Reese River district in 1879, this route salt-roasted sulfide ore into silver chloride before recovery in amalgamation pans, treating ores that Washoe processing handled poorly.",
+    "parents": [
+      {
+        "id": "washoe-amalgamation",
+        "type": "influence",
+        "reason": "The Reese River route retained amalgamation pans for metal recovery, as in the Washoe process, while adding salt-roasting that converted silver sulfides to silver chloride before pan treatment.",
+        "source": "https://en.wikipedia.org/wiki/Pan_amalgamation#Reese_River_process"
+      }
+    ]
+  }
+]

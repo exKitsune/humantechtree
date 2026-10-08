@@ -41,6 +41,8 @@ The example IDs illustrate syntax; use only the IDs relevant to the task. The im
 
 Capture the article identity, section, exact supported proposition, your synthesis, and caveats. A passage about the existence of bacteria does not support a later strain-culture method. If the archive does not resolve a claim, record what was searched and pursue a specific external source only when needed. Absence from one archive is not evidence of historical absence.
 
+Archive lookup caveat: some ZIM entries are short HTML `meta refresh` redirects, including section redirects, even when libzim reports `is_redirect: false`. Before treating an empty extraction as unavailable evidence, inspect the entry and resolve its relative target inside the same archive. Follow the target article and named section; bound redirect hops, detect loops, and refuse external targets. The local ignored reader `.cache/read-wiki-resolved.py` currently handles this, but is not a committed project CLI. The existing importer proves an entry matches; it does not prove that its cached body contains the target article or that a claim was checked.
+
 ### 3. Propose the smallest coherent correction
 
 Identify existing nearer contributions and independent direct inputs. Prefer changing a wrong explanation or parent over adding redundant nodes. Add a missing intermediate when its scope is distinct and evidence supports it. Preserve stable IDs and uncertainty; avoid unrelated editorial cleanup during a bounded repair.
