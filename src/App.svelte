@@ -1,11 +1,13 @@
 <script lang="ts">
-  import { onMount } from 'svelte'
-  import { Search, Network, ChevronRight, ChevronLeft, X, ArrowUpRight, BookOpen, SlidersHorizontal, Info, Layers, Menu, RotateCcw, GitBranch, ImageOff } from '@lucide/svelte'
+  import { onMount, untrack } from 'svelte'
+  import { Search, Network, ChevronRight, ChevronLeft, ChevronDown, X, ArrowUpRight, BookOpen, SlidersHorizontal, Info, Layers, Menu, RotateCcw, GitBranch, ImageOff } from '@lucide/svelte'
   import Graph from './lib/Graph.svelte'
+  import ConnectionCard from './lib/ConnectionCard.svelte'
+  import { connectionBetween, rememberView } from './lib/navigation.js'
   import { categories, categoryInfo, categoryFor, categoryGroups } from './lib/categories.js'
   import { domains, domainInfo, eras, relations, formatYear } from './lib/config'
   import { neighborhood, matchesFilters, searchNodes } from './lib/graph.js'
-  import type { Capability, Catalog, WikipediaEntry, Domain, Parent } from './lib/types'
+  import type { Capability, Catalog, WikipediaEntry, Domain, NavigationView, FollowedConnection, CameraSnapshot } from './lib/types'
 
   let catalog = $state.raw<Capability[]>([])
   let media = $state.raw<Record<string, WikipediaEntry>>({})
@@ -28,6 +30,15 @@
   let imageFailed = $state(false)
   let aboutDialog: HTMLDialogElement
   let searchIndex = $state(0)
+  let graph = $state<ReturnType<typeof Graph>>()
+  let detailScroll = $state<HTMLDivElement>()
+  let expandedGroups = $state<string[]>([])
+  let pastViews = $state.raw<NavigationView[]>([])
+  let followedConnection = $state.raw<FollowedConnection | null>(null)
+  let restoreView = $state.raw<{ token: number; viewport: CameraSnapshot | null } | null>(null)
+  let restoredScroll = $state<number | null>(null)
+  let restoreToken = 0
+  let previousView = $derived(pastViews.at(-1))
 
   let index = $derived(new Map(catalog.map(n => [n.id, n])))
   let selected = $derived(index.get(selectedId))
@@ -40,7 +51,7 @@
   let childGroups = $derived(categoryGroups(children) as { id: string; domain: Domain; category?: string; label?: string; nodes: Capability[] }[])
   let availableCategories = $derived(categories.filter(c => domain === 'all' || c.domain === domain))
   let categoryCounts = $derived(Object.fromEntries(categories.map(c => [c.id, catalog.filter(n => n.category === c.id).length])))
-  let displayChildGroups = $derived(detailsTab === 'connections' ? childGroups : children.length > 6 ? [] : [{ id: 'preview', domain: selected?.domain, category: undefined, label: undefined, nodes: children.slice(0, 4) }])
+  let groupDevelopments = $derived(children.length > 6 || detailsTab === 'connections')
   let parents = $derived(selected?.parents.filter(p => index.has(p.id)) ?? [])
   let counts = $derived(Object.fromEntries(domains.map(d => [d.id, catalog.filter(n => n.domain === d.id).length])))
   let edgeCount = $derived(catalog.reduce((sum, n) => sum + n.parents.length, 0))
@@ -49,7 +60,7 @@
 
   function readHash() {
     const id = new URLSearchParams(location.hash.slice(1)).get('node')
-    if (id && index.has(id) && id !== selectedId) { selectedId = id; domain = 'all'; eraId = 'all'; category = 'all'; detailsOpen = true }
+    if (id && index.has(id) && id !== selectedId) { saveView(); followedConnection = connectionBetween(index, selectedId, id); selectedId = id; domain = 'all'; eraId = 'all'; category = 'all'; detailsOpen = true; expandedGroups = [] }
   }
   async function load() {
     loading = true; error = ''
@@ -82,25 +93,59 @@
   $effect(() => { selectedId; imageFailed = false })
   $effect(() => { query; searchIndex = 0 })
   $effect(() => { if (aboutDialog) { if (aboutOpen && !aboutDialog.open) aboutDialog.showModal(); else if (!aboutOpen && aboutDialog.open) aboutDialog.close() } })
-  function select(id: string, clearFilters = false) {
+  $effect(() => {
+    selectedId
+    const element = detailScroll, top = restoredScroll
+    if (element) untrack(() => { element.scrollTop = top ?? 0 })
+  })
+  function saveView() {
+    pastViews = rememberView(pastViews, {
+      label: focused ? selected?.title ?? selectedId : category !== 'all' ? categoryInfo[category].label : domain !== 'all' ? domainInfo[domain].label : 'All capabilities',
+      selectedId, focused, domain, eraId, category, detailsTab, detailsOpen,
+      expandedGroups, connection: followedConnection, viewport: graph?.captureView() ?? null,
+      detailScroll: detailScroll?.scrollTop ?? 0,
+    })
+    restoreView = null; restoredScroll = null
+  }
+  function goBack() {
+    const view = pastViews.at(-1)
+    if (!view) return
+    pastViews = pastViews.slice(0, -1)
+    selectedId = view.selectedId; focused = view.focused; domain = view.domain; eraId = view.eraId; category = view.category
+    detailsTab = view.detailsTab; detailsOpen = view.detailsOpen; expandedGroups = [...view.expandedGroups]
+    followedConnection = view.connection; searchOpen = false; sidebarOpen = false
+    restoredScroll = view.detailScroll; restoreView = { token: ++restoreToken, viewport: view.viewport }
+    window.history.replaceState(null, '', `#${new URLSearchParams({ node: selectedId })}`)
+  }
+  function select(id: string, clearFilters = false, focus = false, connection = connectionBetween(index, selectedId, id)) {
+    if (!index.has(id)) return
+    if (id === selectedId && !clearFilters && !focus && !connection) { detailsOpen = true; resetToken++; return }
+    saveView()
+    followedConnection = connection
+    if (id !== selectedId) expandedGroups = []
     selectedId = id; detailsOpen = true; searchOpen = false; query = ''; sidebarOpen = false
     if (clearFilters) { domain = 'all'; eraId = 'all'; category = 'all' }
+    if (focus) focused = true
     location.hash = new URLSearchParams({ node: id }).toString()
   }
-  function filterDomain(value: Domain | 'all') { domain = value; category = 'all'; focused = false; sidebarOpen = false }
+  function follow(id: string) { select(id, true, true) }
+  function followEdge(source: string, target: string, destination: string) { select(destination, false, false, connectionBetween(index, source, target)) }
+  function filterDomain(value: Domain | 'all') { saveView(); followedConnection = null; domain = value; category = 'all'; focused = false; sidebarOpen = false }
   function filterCategory(value: string) {
-    category = value
+    saveView(); followedConnection = null; category = value
     if (value !== 'all') domain = categoryInfo[value].domain as Domain
     focused = false; sidebarOpen = false; resetToken++
   }
   function browseGroup(group: { category?: string; domain: string }) {
-    eraId = 'all'
     if (group.category) filterCategory(group.category)
     else filterDomain(group.domain as Domain)
+    eraId = 'all'
   }
-  function filterEra(value: string) { eraId = value; focused = false }
-  function reset() { domain = 'all'; eraId = 'all'; category = 'all'; focused = false; resetToken++ }
-  function focusSelection() { domain = 'all'; eraId = 'all'; category = 'all'; focused = true; resetToken++ }
+  function toggleGroup(id: string) { expandedGroups = expandedGroups.includes(id) ? expandedGroups.filter(value => value !== id) : [...expandedGroups, id] }
+  function filterEra(value: string) { saveView(); followedConnection = null; eraId = value; focused = false }
+  function reset() { saveView(); followedConnection = null; domain = 'all'; eraId = 'all'; category = 'all'; focused = false; resetToken++ }
+  function focusSelection() { saveView(); followedConnection = null; domain = 'all'; eraId = 'all'; category = 'all'; focused = true; resetToken++ }
+  function fullTree() { if (!focused) return; saveView(); followedConnection = null; focused = false }
   function keyboard(event: KeyboardEvent) {
     const target = event.target as HTMLElement
     if (event.key === 'Escape') { searchOpen = false; sidebarOpen = false; if (!aboutOpen) detailsOpen = false }
@@ -111,7 +156,7 @@
   function searchKey(event: KeyboardEvent) {
     if (event.key === 'ArrowDown') { event.preventDefault(); searchIndex = Math.min(searchIndex + 1, results.length - 1) }
     if (event.key === 'ArrowUp') { event.preventDefault(); searchIndex = Math.max(0, searchIndex - 1) }
-    if (event.key === 'Enter' && results[searchIndex]) { event.preventDefault(); focused = true; select(results[searchIndex].id, true) }
+    if (event.key === 'Enter' && results[searchIndex]) { event.preventDefault(); select(results[searchIndex].id, true, true) }
   }
   function wikiUrl(node: Capability) { return media[node.id]?.url ?? `https://en.wikipedia.org/wiki/${encodeURIComponent(node.wiki.replaceAll(' ', '_'))}` }
 </script>
@@ -139,7 +184,7 @@
           {#each results as result, i}
             {@const info = domainInfo[result.domain]}
             <button role="option" aria-selected={i === searchIndex} id={`result-${result.id}`} class:highlighted={i === searchIndex}
-              onclick={() => { focused = true; select(result.id, true) }}><info.icon size={18} style={`color:${info.color}`} /><span><strong>{result.title}</strong><small>{info.label} · c. {formatYear(result.year)}</small></span><ChevronRight size={15} /></button>
+              onclick={() => { select(result.id, true, true) }}><info.icon size={18} style={`color:${info.color}`} /><span><strong>{result.title}</strong><small>{info.label} · c. {formatYear(result.year)}</small></span><ChevronRight size={15} /></button>
           {:else}<p class="empty-search">No matches. Try “microscope”, “treaty”, or “lathe”.</p>{/each}
         </div>
       {/if}
@@ -167,16 +212,21 @@
       <div class="sidebar-label">A FEW STARTING POINTS</div>
       <div class="starting-points">
         {#each [['microscope', 'Seeing the invisible'], ['precision-machining', 'Machines making machines'], ['cities', 'Living together'], ['internet', 'A connected world']] as [id, label]}
-          <button onclick={() => { focused = true; select(id, true) }}><span>{label}</span><ChevronRight size={14} /></button>
+          <button onclick={() => { select(id, true, true) }}><span>{label}</span><ChevronRight size={14} /></button>
         {/each}
       </div>
       <div class="sidebar-bottom"><span class="edition-label">HUMANITY / FIRST EDITION</span><p>A connected history of what we<br />learned to understand, make,<br />and organize.</p><button onclick={() => aboutOpen = true}><BookOpen size={15} /> How to read this tree</button></div>
     </aside>
 
     <main class="main-workspace">
+      {#if previousView}
+        <div class="navigation-history"><button onclick={goBack} title="Restore previous selection, filters, position, and zoom"><ChevronLeft size={16} />Back to {previousView.label}</button></div>
+      {:else if category !== 'all' && selected}
+        <div class="navigation-history"><button onclick={focusSelection}><ChevronLeft size={16} />Return to {selected.title}’s connections</button></div>
+      {/if}
       <div class="tree-heading">
         <div><div class="breadcrumb view-context"><span>{focused && selected ? `Around ${selected.title}` : category !== 'all' ? categoryInfo[category].label : domain === 'all' ? 'All branches of humanity' : domainInfo[domain].label}</span><span>· {visible.length.toLocaleString()} capabilities</span>{#if domain !== 'all' || eraId !== 'all' || category !== 'all'}<button onclick={reset} aria-label="Reset filters" title="Reset filters"><RotateCcw size={12} /></button>{/if}</div><h1>The technology tree<span class="beta-label">EXPLORATORY ATLAS</span></h1></div>
-        <div class="view-switch" aria-label="Tree view"><button class:active={!focused} aria-pressed={!focused} onclick={() => { focused = false }}><Layers size={15} />Full tree</button><button class:active={focused} aria-pressed={focused} onclick={focusSelection}><GitBranch size={15} />Connections</button></div>
+        <div class="view-switch" aria-label="Tree view"><button class:active={!focused} aria-pressed={!focused} onclick={fullTree}><Layers size={15} />Full tree</button><button class:active={focused} aria-pressed={focused} onclick={focusSelection}><GitBranch size={15} />Connections</button></div>
       </div>
       <div class="era-bar"><span class="era-label"><SlidersHorizontal size={14} />ERA</span><div class="era-options">{#each eras as item}<button class:active={eraId === item.id} aria-pressed={eraId === item.id} onclick={() => filterEra(item.id)}>{item.label}</button>{/each}</div></div>
       <div class="canvas-area">
@@ -184,7 +234,7 @@
         {:else if error}<div class="canvas-message"><Info size={32} /><h2>Unable to open the tree</h2><p>{error}</p><button class="primary-button" onclick={load}>Try again</button></div>
         {:else if visible.length === 0}<div class="canvas-message"><Search size={32} /><h2>No capabilities in this view</h2><p>Try another era or branch.</p><button class="primary-button" onclick={reset}>Reset filters</button></div>
         {:else}
-          <Graph items={visible} selected={selectedId} {media} {select} {resetToken} fitToContents={category !== 'all'} />
+          <Graph bind:this={graph} {restoreView} {followEdge} items={visible} selected={selectedId} {media} {select} {resetToken} fitToContents={category !== 'all'} />
         {/if}
         {#if selected && !detailsOpen}<button class="reopen-detail" onclick={() => detailsOpen = true}><Info size={16} />{selected.title}<ChevronLeft size={15} /></button>{/if}
       </div>
@@ -195,7 +245,16 @@
       {@const info = domainInfo[selected.domain]}
       <aside class="detail-panel" aria-label={`Details for ${selected.title}`}>
         <div class="detail-top"><span><info.icon size={15} style={`color:${info.color}`} />{info.label}</span><button class="icon-button" onclick={() => detailsOpen = false} aria-label="Close details"><X size={18} /></button></div>
-        <div class="detail-scroll">
+        <div class="detail-scroll" bind:this={detailScroll}>
+          {#if followedConnection}
+            <section class="followed-connection" aria-label="Connection you followed" aria-live="polite">
+              <span class="eyebrow">CONNECTION YOU FOLLOWED</span>
+              <strong>{index.get(followedConnection.source)?.title} → {index.get(followedConnection.target)?.title}</strong>
+              <small style:color={relations[followedConnection.type].color}>{relations[followedConnection.type].label}</small>
+              <p>{followedConnection.reason}</p>
+              {#if previousView}<button onclick={goBack}><ChevronLeft size={14} />Back to {previousView.label}</button>{/if}
+            </section>
+          {/if}
           <div class="detail-image" style:--domain={info.color}>
             {#if selectedMedia?.thumbnail && !imageFailed}<img src={selectedMedia.thumbnail} alt={selectedMedia.imageDescription || selected.title} onerror={() => imageFailed = true} />
             {:else}<info.icon size={74} strokeWidth={1} /><span>{imageFailed ? 'Image unavailable' : 'Archive image pending'}</span>{/if}
@@ -216,25 +275,35 @@
             <div class="connection-heading"><span>BUILT ON</span><small>{parents.length}</small></div>
             {#each parents as parent}
               {@const entry = index.get(parent.id)!}
-              <button class="connection-card" onclick={() => select(entry.id, true)}><span class="relation-bar" style:--relation={relations[parent.type].color}></span><span class="connection-body"><strong>{entry.title}</strong><small style:color={relations[parent.type].color}>{relations[parent.type].label}</small>{#if detailsTab === 'connections'}<span class="reason">{parent.reason}</span>{#if parent.directContribution}<span class="direct-contribution"><b>Direct role</b>{parent.directContribution}</span>{/if}{/if}</span><ChevronRight size={15} /></button>
+              <ConnectionCard source={entry} target={selected} relation={parent} destination={entry} {follow} expanded={detailsTab === 'connections'} />
             {:else}<p class="empty-connections">A starting point in this edition. Earlier foundations may still be added.</p>{/each}
             <div class="connection-heading"><span>HELPED MAKE POSSIBLE</span><small>{children.length}</small></div>
-            {#if detailsTab === 'overview' && children.length > 6}
-              <div class="child-categories" aria-label="Categories of developments">
-                {#each childGroups as group}
-                  <button onclick={() => browseGroup(group)} title={`Explore ${group.label ?? domainInfo[group.domain as Domain].label}`}>
-                    <span>{group.label ?? domainInfo[group.domain as Domain].label}</span><small>{group.nodes.length}</small><ChevronRight size={13} />
-                  </button>
+            {#if groupDevelopments}
+              {#if detailsTab === 'overview'}<p class="connection-help">Expand a category to see the developments and what {selected.title} contributed.</p>{/if}
+              <div class="development-groups">
+                {#each childGroups as group (group.id)}
+                  {@const open = detailsTab === 'connections' || expandedGroups.includes(group.id)}
+                  <div class="development-group">
+                    {#if detailsTab === 'connections'}
+                      <div class="connection-category">{group.label ?? domainInfo[group.domain].label}<small>{group.nodes.length}</small></div>
+                    {:else}
+                      <button class="development-toggle" onclick={() => toggleGroup(group.id)} aria-expanded={open} aria-controls={`developments-${selected.id}-${group.id}`}>
+                        <span>{group.label ?? domainInfo[group.domain].label}<small>{group.nodes.length} {group.nodes.length === 1 ? 'development' : 'developments'}</small></span><ChevronDown size={16} class={open ? 'expanded' : ''} />
+                      </button>
+                    {/if}
+                    <div id={`developments-${selected.id}-${group.id}`} hidden={!open}>
+                      {#if open}{#each group.nodes as child (child.id)}
+                        <ConnectionCard source={selected} target={child} relation={child.parents.find(p => p.id === selectedId)!} destination={child} {follow} expanded={detailsTab === 'connections'} />
+                      {/each}{/if}
+                    </div>
+                  </div>
                 {/each}
               </div>
-            {/if}
-            {#each displayChildGroups as group (group.id)}
-              {#if detailsTab === 'connections'}<div class="connection-category">{group.label ?? domainInfo[group.domain as Domain].label}<small>{group.nodes.length}</small></div>{/if}
-              {#each group.nodes as child (child.id)}
-              {@const relation = child.parents.find(p => p.id === selectedId) as Parent}
-              <button class="connection-card" onclick={() => select(child.id, true)}><span class="relation-bar" style:--relation={relations[relation.type].color}></span><span class="connection-body"><strong>{child.title}</strong><small style:color={relations[relation.type].color}>{relations[relation.type].label}</small>{#if detailsTab === 'connections'}<span class="reason">{relation.reason}</span>{#if relation.directContribution}<span class="direct-contribution"><b>Direct role</b>{relation.directContribution}</span>{/if}{/if}</span><ChevronRight size={15} /></button>
+            {:else}
+              {#each children.slice(0, 4) as child (child.id)}
+                <ConnectionCard source={selected} target={child} relation={child.parents.find(p => p.id === selectedId)!} destination={child} {follow} />
               {/each}
-            {/each}
+            {/if}
             {#if children.length === 0}<p class="empty-connections">This branch continues beyond the current catalog.</p>{/if}
             {#if detailsTab === 'overview' && children.length > 4}<button class="text-button" onclick={() => detailsTab = 'connections'}>Show all {children.length} developments</button>{/if}
             <div class="source-block"><a href={wikiUrl(selected)} target="_blank" rel="noreferrer"><BookOpen size={16} />Read on Wikipedia<ArrowUpRight size={14} /></a><p>{offlineIndex[selectedId]?.found ? 'Reference matched in the August 2026 offline archive.' : selectedMedia && !selectedMedia.missing ? 'Wikipedia reference located.' : 'Suggested reference · awaiting archive review.'} Dates and connections are editorial interpretations, not universal prerequisites.</p></div>
@@ -253,5 +322,5 @@
   <div class="about-relations">{#each Object.entries(relations) as [key, relation]}<div><i class={key} style:--relation={relation.color}></i><div><h3>{relation.label}</h3><p>{relation.description}</p></div></div>{/each}</div>
   <h3>An evolving, editorial catalog</h3><p>This first edition contains {catalog.length.toLocaleString()} nodes and {edgeCount.toLocaleString()} connections. Summaries and relationship explanations are original editorial drafts. Wikipedia articles provide references; their presence does not verify every date or connection. Dates indicate approximate milestones and may differ by region. Era labels are navigation aids, not universal historical periods.</p>
   <h3>Sources & images</h3><p>Our research workflow uses an offline English Wikipedia archive from Kiwix. {offlineCount.toLocaleString()} references have been matched to local articles; matching an article does not verify its proposed connections. {pictureCount.toLocaleString()} catalog images link directly to Wikimedia’s image servers. Missing pictures use a category symbol. Article and image links preserve source attribution; individual image licenses vary.</p>
-  <p class="dialog-note">Scroll or drag to pan. Pinch, Ctrl/⌘ + scroll, or the buttons zoom. Search with / at any scale. Full tree applies your branch, category, and era filters; Connections shows two steps before and after a capability. Horizontal bands represent branches, with named categories inside Information. Related milestones such as sorting algorithms stay together. Use the category filter or a category label to explore them. Categories organize topics; only connections describe historical contributions. Vertical bands represent eras. Crowded periods split into decades or years, and expand to fit their capabilities. Era widths reflect population, not elapsed time. Click a band or date label to fit that region. Click a connection to jump to its other end; hover to see the destination. Panning stops beyond the outermost nodes and routes with a margin. Zoomed-out groups show how many capabilities they contain; click a group to zoom in, or a simple node to open its card. Each view arranges its nodes and outbound connections automatically.</p>
+  <p class="dialog-note">Scroll or drag to pan. Pinch, Ctrl/⌘ + scroll, or the buttons zoom. Search with / at any scale. Full tree applies your branch, category, and era filters; Connections shows two steps before and after a capability. Horizontal bands represent branches, with named categories inside Information. Related milestones such as sorting algorithms stay together. Use the category filter or a category label to explore them. Categories organize topics; only connections describe historical contributions. Vertical bands represent eras. Crowded periods split into decades or years, and expand to fit their capabilities. Era widths reflect population, not elapsed time. Click a band or date label to fit that region. Expand a development category in the details panel to read its individual connections without moving the graph. Click a connection to follow it; its direction and explanation stay in the destination panel. Use Back to restore your previous view, zoom, and expanded groups. Hover over a graph link to see its destination. Panning stops beyond the outermost nodes and routes with a margin. Zoomed-out groups show how many capabilities they contain; click a group to zoom in, or a simple node to open its card. Each view arranges its nodes and outbound connections automatically.</p>
 </dialog>

@@ -44,3 +44,20 @@ export type GraphLayout = {
   width: number
   height: number
 }
+
+export type CameraSnapshot = { x: number; y: number; zoom: number; width: number; height: number }
+export type FollowedConnection = Parent & { source: string; target: string }
+export type NavigationView = {
+  label: string
+  selectedId: string
+  focused: boolean
+  domain: Domain | 'all'
+  eraId: string
+  category: string
+  detailsTab: 'overview' | 'connections'
+  detailsOpen: boolean
+  expandedGroups: string[]
+  connection: FollowedConnection | null
+  viewport: CameraSnapshot | null
+  detailScroll: number
+}

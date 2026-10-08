@@ -9,15 +9,17 @@
   import { createScene, planFrame, hitTest, linkDestination } from './scene.js'
   import { drawScene, drawOverview } from './draw-scene.js'
   import { contentExtent, clampViewport } from './viewport.js'
+  import { restoreCamera } from './navigation.js'
   import { domainInfo, relations } from './config'
   import { categoryInfo } from './categories.js'
-  import type { Capability, WikipediaEntry, GraphLayout, LayoutNode, TimeBand, Domain, CategoryRegion } from './types'
+  import type { Capability, WikipediaEntry, GraphLayout, LayoutNode, TimeBand, Domain, CategoryRegion, CameraSnapshot } from './types'
 
-  let { items, selected, media, select, resetToken = 0, fitToContents = false }: {
-    items: Capability[]; selected: string; media: Record<string, WikipediaEntry>; select: (id: string) => void; resetToken?: number; fitToContents?: boolean
+  let { items, selected, media, select, followEdge, resetToken = 0, fitToContents = false, restoreView = null }: {
+    items: Capability[]; selected: string; media: Record<string, WikipediaEntry>; select: (id: string) => void; followEdge?: (source: string, target: string, destination: string) => void; resetToken?: number; fitToContents?: boolean; restoreView?: { token: number; viewport: CameraSnapshot | null } | null
   } = $props()
   let layoutClient = $state.raw<ReturnType<typeof createLayoutClient> | null>(null)
   let scene = $state.raw<ReturnType<typeof createScene> | null>(null)
+  let sceneItems = $state.raw<Capability[] | null>(null)
   let arranging = $state(true)
   let layoutError = $state('')
   let hoveredLink = $state.raw<GraphLayout['edges'][number] | null>(null)
@@ -71,7 +73,7 @@
     layoutClient.layout(items).then((result: unknown) => {
       if (request !== latestRequest) return
       scene = createScene(result as GraphLayout, pendingItems)
-      arranging = false
+      sceneItems = pendingItems; arranging = false
     }).catch((error: Error) => {
       if (request !== latestRequest) return
       console.error('Layout failed:', error); layoutError = error.message; arranging = false
@@ -97,16 +99,30 @@
     const node = scene?.byId.get(selected) ?? scene?.nodes[0]
     if (node) focusNode(node)
   }
+  export function captureView(): CameraSnapshot | null {
+    // A pending scene has the previous view's coordinates. Never save those
+    // against the new selection's layout during rapid navigation.
+    return scene && !arranging && sceneItems === items ? { ...viewport, width, height } : null
+  }
+  let cameraSize = { width: 800, height: 546 }
   $effect(() => {
-    width; height
-    untrack(() => { if (flowReady) setView(viewport) })
+    const w = width, h = height
+    untrack(() => {
+      if (flowReady) setView(restoreCamera({ ...viewport, ...cameraSize }, w, h, panExtent))
+      cameraSize = { width: w, height: h }
+    })
   })
   let centeredScene: typeof scene = null
+  let restoredToken = 0
   $effect(() => {
-    scene; selected; resetToken; flowReady; fitToContents
+    scene; sceneItems; items; arranging; selected; resetToken; flowReady; fitToContents; restoreView
     untrack(() => {
-      if (!flowReady || !scene) return
-      if (fitToContents && scene !== centeredScene) fit()
+      if (!flowReady || !scene || arranging || sceneItems !== items) return
+      if (restoreView && restoreView.token !== restoredToken) {
+        if (restoreView.viewport) setView(restoreCamera(restoreView.viewport, width, height, panExtent))
+        else center()
+        restoredToken = restoreView.token
+      } else if (fitToContents && scene !== centeredScene) fit()
       else center()
       centeredScene = scene
     })
@@ -134,16 +150,16 @@
     if (!scene) return
     const hit = pointerHit(event)
     hoveredLink = null
-    if (hit?.node) { select(hit.node.id); focusNode(hit.node) }
+    if (hit?.node) { select(hit.node.id) }
     else if (hit?.edge) {
       const node = scene.byId.get(linkDestination(hit.edge, selected))
-      if (node) { select(node.id); focusNode(node) }
+      if (node) { if (followEdge) followEdge(hit.edge.source, hit.edge.target, node.id); else select(node.id) }
     }
     else if (hit?.cluster) {
       const b = hit.cluster
       if (b.count === 1) {
         const node = scene.nodeIndex.query({ x: b.minX, y: b.minY, width: b.maxX - b.minX, height: b.maxY - b.minY }, 1)[0]
-        if (node) { select(node.id); focusNode(node) }
+        if (node) { select(node.id) }
       } else fitRect(b.minX, b.minY, b.maxX - b.minX, b.maxY - b.minY)
     }
   }
