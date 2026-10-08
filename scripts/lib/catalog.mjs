@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises'
 
-export const catalogFiles = ['engineering', 'science', 'society', 'engineering-expansion', 'science-expansion', 'society-expansion', 'warfare-expansion', 'built-world-expansion', 'institutions-expansion']
+export const catalogFiles = ['engineering', 'science', 'society', 'engineering-expansion', 'science-expansion', 'society-expansion', 'warfare-expansion', 'built-world-expansion', 'institutions-expansion', 'computing-expansion-2', 'production-expansion-2', 'public-health-expansion-2']
 const bridgeFiles = ['engineering-connections', 'science-connections', 'society-connections']
 
 // Read authoring sources, not yesterday's compiled output, so adding an

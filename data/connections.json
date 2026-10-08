@@ -94,5 +94,19 @@
     "reason": "Pasteur’s experiments connecting fermentation and spoilage with living microorganisms informed heating procedures for wine.",
     "source": "https://en.wikipedia.org/wiki/Pasteurization",
     "target": "pasteurization"
+  },
+  {
+    "id": "telescope",
+    "target": "theodolite",
+    "type": "enabler",
+    "reason": "A sighting telescope on Sisson's 1725 altazimuth mount let the surveyor aim at a distant target while reading its horizontal and vertical angles.",
+    "source": "https://en.wikipedia.org/wiki/Theodolite"
+  },
+  {
+    "id": "spirit-level",
+    "target": "theodolite",
+    "type": "enabler",
+    "reason": "Spirit levels on Sisson's 1725 base plate showed when its adjusting screws had brought the instrument level for angular measurement.",
+    "source": "https://en.wikipedia.org/wiki/Theodolite"
   }
 ]

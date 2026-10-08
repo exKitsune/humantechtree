@@ -1,0 +1,430 @@
+[
+  {
+    "id": "ragusa-maritime-quarantine",
+    "title": "Ragusan maritime quarantine",
+    "wiki": "Quarantine",
+    "year": 1377,
+    "domain": "medicine",
+    "kind": "practice",
+    "summary": "Ragusa imposed a thirty-day waiting period on arrivals from plague-affected places before they entered the city.",
+    "parents": []
+  },
+  {
+    "id": "chadwick-sanitary-report",
+    "title": "Chadwick's sanitary report",
+    "wiki": "Edwin Chadwick",
+    "year": 1842,
+    "domain": "medicine",
+    "kind": "practice",
+    "summary": "A systematic survey documented how urban housing, waste, and water conditions contributed to illness and premature mortality.",
+    "parents": []
+  },
+  {
+    "id": "liverpool-medical-officer-of-health",
+    "title": "Liverpool Medical Officer of Health",
+    "wiki": "History of public health in the United Kingdom",
+    "year": 1847,
+    "domain": "medicine",
+    "kind": "institution",
+    "summary": "Liverpool appointed William Henry Duncan as the first Medical Officer of Health in the United Kingdom to address municipal sanitation and population health.",
+    "parents": []
+  },
+  {
+    "id": "uk-public-health-act-1848",
+    "title": "Public Health Act 1848",
+    "wiki": "History of public health in the United Kingdom",
+    "year": 1848,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "The Act established a General Board of Health and authorized local boards and medical officers to manage sanitation and health conditions.",
+    "parents": [
+      {
+        "id": "chadwick-sanitary-report",
+        "type": "influence",
+        "reason": "Chadwick's investigation documented sanitation conditions and helped prompt government inquiry and legislation.",
+        "source": "https://en.wikipedia.org/wiki/Edwin_Chadwick"
+      }
+    ]
+  },
+  {
+    "id": "slow-sand-filtration",
+    "title": "Slow sand filtration",
+    "wiki": "Slow sand filter",
+    "year": 1804,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "John Gibb installed Robert Thom’s experimental sand filter at a Paisley bleachery in 1804 and sold surplus filtered water to the public; later refinements supplied Chelsea Waterworks in 1829.",
+    "parents": []
+  },
+  {
+    "id": "metropolis-water-act-1852",
+    "title": "Metropolis Water Act 1852",
+    "wiki": "Metropolis Water Act 1852",
+    "year": 1852,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "London law regulated water sources and required water companies to filter domestic supplies before distribution.",
+    "parents": [
+      {
+        "id": "slow-sand-filtration",
+        "type": "enabler",
+        "reason": "Existing sand-filter installations supplied a practical treatment method for the Act's filtration requirement.",
+        "source": "https://en.wikipedia.org/wiki/Metropolis_Water_Act_1852"
+      }
+    ]
+  },
+  {
+    "id": "london-main-drainage",
+    "title": "London Main Drainage",
+    "wiki": "Joseph Bazalgette",
+    "year": 1859,
+    "domain": "construction",
+    "kind": "infrastructure",
+    "summary": "Bazalgette's interceptor and street sewers diverted London's raw sewage away from streets and the tidal Thames.",
+    "parents": [
+      {
+        "id": "sewer",
+        "type": "enabler",
+        "reason": "Covered sewer conduits supplied the physical collection and conveyance method expanded into London's interceptor network.",
+        "source": "https://en.wikipedia.org/wiki/Joseph_Bazalgette"
+      }
+    ]
+  },
+  {
+    "id": "nyc-metropolitan-board-of-health-1866",
+    "title": "New York City Metropolitan Board of Health",
+    "wiki": "History of public health in the United States",
+    "year": 1866,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "A citywide health board used inspections, sanitation rules, disinfection, and quarantine to manage disease outbreaks and environmental hazards.",
+    "parents": []
+  },
+  {
+    "id": "continuous-water-chlorination",
+    "title": "Continuous municipal water chlorination",
+    "wiki": "Water chlorination",
+    "year": 1905,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Continuing chlorine doses disinfected municipal drinking-water supplies and stopped waterborne outbreaks.",
+    "parents": [
+      {
+        "id": "germ-theory",
+        "type": "foundation",
+        "reason": "Recognition that microbes cause disease supplied the rationale for disinfecting water against microbial contamination.",
+        "source": "https://en.wikipedia.org/wiki/Water_chlorination"
+      }
+    ]
+  },
+  {
+    "id": "activated-sludge",
+    "title": "Activated sludge wastewater treatment",
+    "wiki": "Activated sludge",
+    "year": 1913,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Aeration and recycled microbial floc biologically removed organic pollution from sewage at treatment works.",
+    "parents": [
+      {
+        "id": "sewer",
+        "type": "enabler",
+        "reason": "Sewer networks collected the wastewater that the aerated biological process treated at a sewage works.",
+        "source": "https://en.wikipedia.org/wiki/Activated_sludge"
+      }
+    ]
+  },
+  {
+    "id": "water-fluoridation",
+    "title": "Community water fluoridation",
+    "wiki": "Water fluoridation",
+    "year": 1945,
+    "domain": "medicine",
+    "kind": "practice",
+    "summary": "Public water systems adjusted fluoride concentrations to reduce tooth decay across a community.",
+    "parents": [
+      {
+        "id": "pipe",
+        "type": "enabler",
+        "reason": "Municipal water-distribution pipes carried a measured additive to households across the service area.",
+        "source": "https://en.wikipedia.org/wiki/Water_fluoridation"
+      }
+    ]
+  },
+  {
+    "id": "international-sanitary-conferences",
+    "title": "International Sanitary Conferences",
+    "wiki": "International Sanitary Conferences",
+    "year": 1851,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "A series of government meetings sought shared rules for quarantine and responses to cholera, plague, and yellow fever across borders.",
+    "parents": []
+  },
+  {
+    "id": "pan-american-sanitary-bureau",
+    "title": "Pan-American Sanitary Bureau",
+    "wiki": "Pan American Health Organization",
+    "year": 1902,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "Governments of the Americas established a continuing regional organization for public-health cooperation and disease control.",
+    "parents": [
+      {
+        "id": "international-sanitary-conferences",
+        "type": "influence",
+        "reason": "WHO’s history links the bureau’s 1902 founding in part to the earlier sanitary-conference series.",
+        "source": "https://en.wikipedia.org/wiki/World_Health_Organization"
+      }
+    ]
+  },
+  {
+    "id": "international-classification-of-diseases",
+    "title": "International Classification of Diseases",
+    "wiki": "International Classification of Diseases",
+    "year": 1893,
+    "domain": "medicine",
+    "kind": "practice",
+    "summary": "The Bertillon cause-of-death scheme began a standardized classification later revised for comparable morbidity and mortality statistics.",
+    "parents": [
+      {
+        "id": "civil-registration",
+        "type": "enabler",
+        "reason": "Official death records supplied events that the classification grouped into comparable cause-of-death categories.",
+        "source": "https://en.wikipedia.org/wiki/International_Classification_of_Diseases"
+      }
+    ]
+  },
+  {
+    "id": "us-marine-hospital-service",
+    "title": "Centralized U.S. Marine Hospital Service",
+    "wiki": "United States Public Health Service",
+    "year": 1871,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "A federal reorganization placed previously local marine hospitals under a centrally managed bureau and supervising surgeon.",
+    "parents": []
+  },
+  {
+    "id": "national-quarantine-act-1878",
+    "title": "U.S. National Quarantine Act and epidemic reporting",
+    "wiki": "Public Health Reports",
+    "year": 1878,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "Federal law assigned quarantine authority to the Marine Hospital Service and required consulates to send weekly reports of epidemic infections.",
+    "parents": [
+      {
+        "id": "us-marine-hospital-service",
+        "type": "enabler",
+        "reason": "The Act vested federal quarantine and epidemic-reporting duties in the centrally administered Marine Hospital Service.",
+        "source": "https://en.wikipedia.org/wiki/Public_Health_Reports"
+      }
+    ]
+  },
+  {
+    "id": "us-public-health-service",
+    "title": "United States Public Health Service",
+    "wiki": "United States Public Health Service",
+    "year": 1912,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "The Marine Hospital Service took the Public Health Service name as its federal responsibilities expanded to quarantine, disease control, health statistics, and research.",
+    "parents": [
+      {
+        "id": "us-marine-hospital-service",
+        "type": "enabler",
+        "reason": "The Public Health Service was the renamed and expanded continuation of the Marine Hospital Service.",
+        "source": "https://en.wikipedia.org/wiki/United_States_Public_Health_Service"
+      }
+    ]
+  },
+  {
+    "id": "public-health-reports",
+    "title": "U.S. Public Health Reports",
+    "wiki": "Public Health Reports",
+    "year": 1878,
+    "domain": "medicine",
+    "kind": "practice",
+    "summary": "A federal publication printed weekly reports of epidemic infections required under U.S. quarantine law.",
+    "parents": [
+      {
+        "id": "national-quarantine-act-1878",
+        "type": "enabler",
+        "reason": "The reporting duties created by the Quarantine Act supplied the weekly epidemic reports published by the Surgeon General.",
+        "source": "https://en.wikipedia.org/wiki/Public_Health_Reports"
+      }
+    ]
+  },
+  {
+    "id": "malaria-control-war-areas",
+    "title": "Office of Malaria Control in War Areas",
+    "wiki": "Centers for Disease Control and Prevention",
+    "year": 1942,
+    "domain": "medicine",
+    "kind": "institution",
+    "summary": "A wartime U.S. program used mosquito abatement and habitat control to reduce malaria around military and defense-production areas.",
+    "parents": [
+      {
+        "id": "us-public-health-service",
+        "type": "enabler",
+        "reason": "The Public Health Service's malaria-control program and personnel formed the agency that later became CDC.",
+        "source": "https://en.wikipedia.org/wiki/Centers_for_Disease_Control_and_Prevention"
+      },
+      {
+        "id": "malaria-transmission",
+        "type": "foundation",
+        "reason": "Knowing that mosquitoes carry malaria gave the program a target for abatement and habitat-control work.",
+        "source": "https://en.wikipedia.org/wiki/Centers_for_Disease_Control_and_Prevention"
+      }
+    ]
+  },
+  {
+    "id": "communicable-disease-center",
+    "title": "Communicable Disease Center",
+    "wiki": "Centers for Disease Control and Prevention",
+    "year": 1946,
+    "domain": "medicine",
+    "kind": "institution",
+    "summary": "The Communicable Disease Center began in Atlanta as the successor to wartime malaria-control work, with mosquito abatement as its primary activity.",
+    "parents": [
+      {
+        "id": "malaria-control-war-areas",
+        "type": "enabler",
+        "reason": "The center was founded as the successor to the wartime malaria-control program.",
+        "source": "https://en.wikipedia.org/wiki/Centers_for_Disease_Control_and_Prevention"
+      },
+      {
+        "id": "us-public-health-service",
+        "type": "enabler",
+        "reason": "The new center began as a branch of the U.S. Public Health Service.",
+        "source": "https://en.wikipedia.org/wiki/Centers_for_Disease_Control_and_Prevention",
+        "directContribution": "The Center began as an operating branch of the Public Health Service; this direct administrative placement is distinct from inheriting the malaria-control program through its predecessor."
+      }
+    ]
+  },
+  {
+    "id": "weekly-morbidity-report",
+    "title": "Weekly Morbidity Report",
+    "wiki": "Morbidity and Mortality Weekly Report",
+    "year": 1950,
+    "domain": "medicine",
+    "kind": "practice",
+    "summary": "A federal weekly publication moved morbidity and mortality statistics into a dedicated report for public-health monitoring and recommendations.",
+    "parents": [
+      {
+        "id": "public-health-reports",
+        "type": "enabler",
+        "reason": "Morbidity and mortality statistics were transferred from Public Health Reports into the new weekly publication.",
+        "source": "https://en.wikipedia.org/wiki/Morbidity_and_Mortality_Weekly_Report"
+      }
+    ]
+  },
+  {
+    "id": "world-health-organization",
+    "title": "World Health Organization",
+    "wiki": "World Health Organization",
+    "year": 1948,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "A UN specialized agency inherited international disease-coordination and public-hygiene functions from earlier health organizations.",
+    "parents": [
+      {
+        "id": "united-nations",
+        "type": "enabler",
+        "reason": "The United Nations established WHO as a specialized agency for international health coordination.",
+        "source": "https://en.wikipedia.org/wiki/World_Health_Organization"
+      },
+      {
+        "id": "office-international-hygiene-publique",
+        "type": "enabler",
+        "reason": "WHO incorporated the Paris office’s staff, assets, and duties into the new international health agency.",
+        "source": "https://en.wikipedia.org/wiki/World_Health_Organization"
+      },
+      {
+        "id": "league-nations-health-organization",
+        "type": "enabler",
+        "reason": "WHO incorporated the League health organization’s staff, assets, and public-health duties.",
+        "source": "https://en.wikipedia.org/wiki/World_Health_Organization"
+      }
+    ]
+  },
+  {
+    "id": "international-health-regulations-1969",
+    "title": "International Health Regulations 1969",
+    "wiki": "Notifiable disease",
+    "year": 1969,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "WHO rules required states to notify the organization about specified international disease threats, including cholera, yellow fever, and plague.",
+    "parents": [
+      {
+        "id": "world-health-organization",
+        "type": "enabler",
+        "reason": "WHO provided the international authority and channel through which member states reported specified disease events.",
+        "source": "https://en.wikipedia.org/wiki/Notifiable_disease"
+      }
+    ]
+  },
+  {
+    "id": "public-health-nursing",
+    "title": "Public health nursing",
+    "wiki": "Public health nursing",
+    "year": 1893,
+    "domain": "medicine",
+    "kind": "practice",
+    "summary": "Lillian Wald established Henry Street Settlement in 1893 and coined public-health nursing for neighborhood service addressing family and community health needs.",
+    "parents": []
+  },
+  {
+    "id": "nyc-school-medical-inspection",
+    "title": "New York City school medical inspection",
+    "wiki": "School health and nutrition services",
+    "year": 1892,
+    "domain": "medicine",
+    "kind": "practice",
+    "summary": "New York City began municipal medical inspections of pupils at school, identifying health conditions that could affect children and their learning.",
+    "parents": [
+      {
+        "id": "public-primary-education",
+        "type": "enabler",
+        "reason": "Public schools brought large groups of children into an organized setting where health inspections could reach them.",
+        "source": "https://en.wikipedia.org/wiki/School_health_and_nutrition_services"
+      }
+    ]
+  },
+  {
+    "id": "office-international-hygiene-publique",
+    "title": "Office International d’Hygiène Publique",
+    "wiki": "World Health Organization",
+    "year": 1907,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "An international public-hygiene office was established in Paris after the sanitary conferences; WHO later incorporated its staff, assets, and duties.",
+    "parents": [
+      {
+        "id": "international-sanitary-conferences",
+        "type": "influence",
+        "reason": "WHO’s history attributes the office’s establishment in part to the achievements of the international sanitary conferences.",
+        "source": "https://en.wikipedia.org/wiki/World_Health_Organization"
+      }
+    ]
+  },
+  {
+    "id": "league-nations-health-organization",
+    "title": "Health Organization of the League of Nations",
+    "wiki": "Health Organization of the League of Nations",
+    "year": 1920,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "The League established a dedicated health organization in 1920; WHO later incorporated its staff, assets, and public-health duties.",
+    "parents": [
+      {
+        "id": "league-nations",
+        "type": "enabler",
+        "reason": "The League established this health organization as a dedicated component of its international work.",
+        "source": "https://en.wikipedia.org/wiki/World_Health_Organization"
+      }
+    ]
+  }
+]

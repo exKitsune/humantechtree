@@ -1,0 +1,318 @@
+[
+  {
+    "id": "radix-sort-computer",
+    "title": "Computerized radix sorting",
+    "wiki": "Radix sort",
+    "year": 1954,
+    "domain": "information",
+    "kind": "technology",
+    "category": "sorting",
+    "summary": "Harold Seward's memory-efficient method made digit-by-digit sorting practical on computers.",
+    "parents": [
+      {
+        "id": "punched-card-data",
+        "type": "foundation",
+        "reason": "Hollerith-style digit passes on punched cards supplied the sorting method Seward adapted for computer memory.",
+        "source": "https://en.wikipedia.org/wiki/Radix_sort"
+      }
+    ]
+  },
+  {
+    "id": "shellsort",
+    "title": "Shellsort",
+    "wiki": "Shellsort",
+    "year": 1959,
+    "domain": "information",
+    "kind": "technology",
+    "category": "sorting",
+    "summary": "Donald Shell's gap-based insertion passes moved distant out-of-order elements before a final ordinary insertion pass.",
+    "parents": []
+  },
+  {
+    "id": "symmetric-binary-btree",
+    "title": "Symmetric binary B-tree",
+    "wiki": "2–3–4 tree",
+    "year": 1972,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "Rudolf Bayer's order-four B-tree form represented balanced multiway search paths in a binary structure.",
+    "parents": [
+      {
+        "id": "b-tree-index",
+        "type": "foundation",
+        "reason": "Bayer's symmetric binary form was explicitly a special order-four case of the B-tree structure.",
+        "source": "https://en.wikipedia.org/wiki/2%E2%80%933%E2%80%934_tree"
+      }
+    ]
+  },
+  {
+    "id": "red-black-tree",
+    "title": "Red–black tree",
+    "wiki": "Red–black tree",
+    "year": 1978,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "Color invariants encoded balanced multiway search trees as binary trees with bounded path lengths.",
+    "parents": [
+      {
+        "id": "symmetric-binary-btree",
+        "type": "foundation",
+        "reason": "Guibas and Sedgewick derived the red–black representation from Bayer's symmetric binary B-tree.",
+        "source": "https://en.wikipedia.org/wiki/Red%E2%80%93black_tree"
+      }
+    ]
+  },
+  {
+    "id": "b-plus-tree",
+    "title": "Leaf-oriented B+ tree indexing",
+    "wiki": "B+ tree",
+    "year": 1973,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "By 1973, B+ tree indexing in VSAM kept records in linked leaves to reduce block reads.",
+    "parents": [
+      {
+        "id": "b-tree-index",
+        "type": "foundation",
+        "reason": "The B+ tree is a B-tree variant retaining high-fanout indexing while placing records in leaves.",
+        "source": "https://en.wikipedia.org/wiki/B%2B_tree"
+      },
+      {
+        "id": "hard-disk",
+        "type": "enabler",
+        "reason": "File blocks were the physical pages B+ trees were designed to index: high-fanout internal nodes locate records stored in leaf pages.",
+        "source": "https://en.wikipedia.org/wiki/B%2B_tree",
+        "directContribution": "Block storage shaped the B+ tree's structure: high-fanout internal nodes reduce page reads, while record values stay in linked leaf pages for indexed retrieval."
+      }
+    ]
+  },
+  {
+    "id": "trie",
+    "title": "Trie string search",
+    "wiki": "Trie",
+    "year": 1959,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "Character-by-character paths indexed variable-length keys by their shared prefixes.",
+    "parents": []
+  },
+  {
+    "id": "bloom-filter",
+    "title": "Bloom filter",
+    "wiki": "Bloom filter",
+    "year": 1970,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "A compact probabilistic membership test avoids many unnecessary exact lookups.",
+    "parents": [
+      {
+        "id": "hash-table",
+        "type": "influence",
+        "reason": "Bloom proposed a much smaller probabilistic alternative where conventional error-free hash tables consumed too much memory.",
+        "source": "https://en.wikipedia.org/wiki/Bloom_filter"
+      }
+    ]
+  },
+  {
+    "id": "linear-hashing",
+    "title": "Linear hashing",
+    "wiki": "Linear hashing",
+    "year": 1980,
+    "domain": "information",
+    "kind": "technology",
+    "category": "search-data-structures",
+    "summary": "Incremental bucket splitting let hash files grow without periodically rebuilding the entire index.",
+    "parents": [
+      {
+        "id": "hash-table",
+        "type": "foundation",
+        "reason": "Linear hashing extends hash-table lookup to growing files by splitting one bucket at a time as records accumulate.",
+        "source": "https://en.wikipedia.org/wiki/Linear_hashing"
+      }
+    ]
+  },
+  {
+    "id": "ims-database",
+    "title": "IBM Information Management System",
+    "wiki": "IBM Information Management System",
+    "year": 1968,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "IMS deployed a hierarchical database and transaction system for engineering and Apollo parts records.",
+    "parents": [
+      {
+        "id": "hard-disk",
+        "type": "enabler",
+        "reason": "The initial DATE system used the recently introduced hard disk to query part numbers and revision relationships across terminals.",
+        "source": "https://en.wikipedia.org/wiki/IBM_Information_Management_System"
+      }
+    ]
+  },
+  {
+    "id": "system-r",
+    "title": "IBM System R",
+    "wiki": "IBM System R",
+    "year": 1974,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "IBM began System R research in 1974 to implement relational databases and demonstrate transaction performance.",
+    "parents": [
+      {
+        "id": "relational-database",
+        "type": "foundation",
+        "reason": "System R was built to implement Codd's relational database ideas as a working system with demonstrated transaction performance.",
+        "source": "https://en.wikipedia.org/wiki/IBM_System_R"
+      }
+    ]
+  },
+  {
+    "id": "ingres-database",
+    "title": "Ingres relational database research system",
+    "wiki": "Ingres (database)",
+    "year": 1973,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "Berkeley published its Ingres relational database research papers in 1973, exploring a DBMS with QUEL.",
+    "parents": [
+      {
+        "id": "relational-database",
+        "type": "influence",
+        "reason": "Berkeley researchers began the project after reading papers on relational databases and pursued a separate research implementation.",
+        "source": "https://en.wikipedia.org/wiki/Ingres_(database)"
+      }
+    ]
+  },
+  {
+    "id": "oracle-database",
+    "title": "Oracle Database",
+    "wiki": "Oracle Database",
+    "year": 1979,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "Oracle brought an early SQL relational database to commercial release.",
+    "parents": [
+      {
+        "id": "relational-database",
+        "type": "foundation",
+        "reason": "Oracle's first commercial release implemented the relational database model as a general-purpose database product.",
+        "source": "https://en.wikipedia.org/wiki/Oracle_Database",
+        "directContribution": "The relational model independently supplies Oracle's table, row, key, and relationship structure; SQL supplies the separate query language used to operate on it."
+      },
+      {
+        "id": "sql",
+        "type": "foundation",
+        "reason": "The 1979 Oracle release was among the earliest commercially available database systems to use SQL.",
+        "source": "https://en.wikipedia.org/wiki/Oracle_Database"
+      }
+    ]
+  },
+  {
+    "id": "higher-normal-forms",
+    "title": "Second and third normal forms",
+    "wiki": "Database normalization",
+    "year": 1971,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "Codd's later normal forms constrained relation dependencies to reduce insertion, update, and deletion anomalies.",
+    "parents": [
+      {
+        "id": "relational-database",
+        "type": "foundation",
+        "reason": "Codd defined second and third normal forms as dependency rules for organizing relations in the relational database model.",
+        "source": "https://en.wikipedia.org/wiki/Database_normalization"
+      }
+    ]
+  },
+  {
+    "id": "entity-relationship-model",
+    "title": "Entity–relationship model",
+    "wiki": "Entity–relationship model",
+    "year": 1976,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "Peter Chen's diagrams represented entities and their relationships before mapping them into database schemas.",
+    "parents": []
+  },
+  {
+    "id": "data-warehouse",
+    "title": "Data warehouse",
+    "wiki": "Data warehouse",
+    "year": 1988,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "In 1988, Devlin and Murphy described an architecture integrating operational data for decision support.",
+    "parents": [
+      {
+        "id": "relational-database",
+        "type": "enabler",
+        "reason": "Warehousing drew together data held in operational databases and separated analytic access from transaction workloads.",
+        "source": "https://en.wikipedia.org/wiki/Data_warehouse"
+      }
+    ]
+  },
+  {
+    "id": "express-olap",
+    "title": "Express OLAP system",
+    "wiki": "Online analytical processing",
+    "year": 1970,
+    "domain": "information",
+    "kind": "technology",
+    "category": "data-representation",
+    "summary": "Released in 1970, Express was the first product to perform online analytical processing queries.",
+    "parents": []
+  },
+  {
+    "id": "introsort",
+    "title": "Introsort",
+    "wiki": "Introsort",
+    "year": 1997,
+    "domain": "information",
+    "kind": "technology",
+    "category": "sorting",
+    "summary": "A depth-limited quicksort falls back to heapsort to bound worst-case running time.",
+    "parents": [
+      {
+        "id": "quicksort",
+        "type": "foundation",
+        "reason": "Musser's hybrid begins with quicksort to retain its fast average performance on typical data.",
+        "source": "https://en.wikipedia.org/wiki/Introsort"
+      },
+      {
+        "id": "heapsort",
+        "type": "foundation",
+        "reason": "Introsort switches to heapsort when recursion grows too deep, bounding the worst-case sort time.",
+        "source": "https://en.wikipedia.org/wiki/Introsort"
+      }
+    ]
+  },
+  {
+    "id": "timsort",
+    "title": "Timsort",
+    "wiki": "Timsort",
+    "year": 2002,
+    "domain": "information",
+    "kind": "technology",
+    "category": "sorting",
+    "summary": "A stable hybrid sort detects existing ordered runs and merges them efficiently.",
+    "parents": [
+      {
+        "id": "merge-sort",
+        "type": "foundation",
+        "reason": "Timsort was derived from merge sort, using run merging as its main operation on ordered subsequences.",
+        "source": "https://en.wikipedia.org/wiki/Timsort"
+      }
+    ]
+  }
+]

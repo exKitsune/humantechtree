@@ -315,5 +315,22 @@
         "source": "https://en.wikipedia.org/wiki/Barcode"
       }
     ]
+  },
+  {
+    "id": "spirit-level",
+    "title": "Spirit level",
+    "wiki": "Spirit level",
+    "year": 1661,
+    "domain": "measurement",
+    "kind": "technology",
+    "summary": "Attested in Thevenot's 1661 correspondence, a liquid-filled glass vial with an air bubble indicated whether a surface was level.",
+    "parents": [
+      {
+        "id": "glassmaking",
+        "type": "enabler",
+        "reason": "Glass formed the transparent, slightly curved vial that contained the liquid and made the leveling bubble visible.",
+        "source": "https://en.wikipedia.org/wiki/Spirit_level"
+      }
+    ]
   }
 ]

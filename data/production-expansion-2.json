@@ -1,0 +1,303 @@
+[
+  {
+    "id": "stamp-mill",
+    "title": "Mechanized stamp milling",
+    "wiki": "Stamp mill",
+    "year": 100,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Cam-lifted trip hammers crushed ore for further processing at Roman mining sites; surviving examples attest the machine in the first and second centuries CE.",
+    "parents": [
+      {
+        "id": "waterwheel",
+        "type": "enabler",
+        "reason": "Water wheels supplied the rotating shafts that lifted and dropped the mill's ore-crushing stamps.",
+        "source": "https://en.wikipedia.org/wiki/Stamp_mill"
+      }
+    ]
+  },
+  {
+    "id": "hydraulic-mining",
+    "title": "Hydraulic placer mining",
+    "wiki": "Hydraulic mining",
+    "year": 1853,
+    "domain": "engineering",
+    "kind": "practice",
+    "summary": "High-pressure water jets dislodged gold-bearing gravel for sluice separation in California's first modern hydraulic mines.",
+    "parents": []
+  },
+  {
+    "id": "patio-process",
+    "title": "Patio silver amalgamation",
+    "wiki": "Patio process",
+    "year": 1554,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Mercury and salt brine recovered silver from ground ores at scale; Medina is credited with adding copper-sulfate magistral, though its necessity is disputed.",
+    "parents": []
+  },
+  {
+    "id": "gold-cyanidation",
+    "title": "Gold cyanidation",
+    "wiki": "Gold cyanidation",
+    "year": 1887,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "The MacArthur–Forrest process dissolved gold from low-grade ores in cyanide solution, making previously refractory Rand ores workable.",
+    "parents": []
+  },
+  {
+    "id": "merrill-zinc-precipitation",
+    "title": "Merrill zinc-dust gold recovery",
+    "wiki": "Merrill–Crowe process",
+    "year": 1900,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Merrill's circa-1900 process replaced zinc shavings with zinc dust to recover dissolved gold from cyanide leach solutions.",
+    "parents": [
+      {
+        "id": "gold-cyanidation",
+        "type": "foundation",
+        "reason": "Cyanide leaching creates the gold-bearing solution; Merrill used zinc dust to precipitate its gold, replacing zinc shavings.",
+        "source": "https://en.wikipedia.org/wiki/Merrill%E2%80%93Crowe_process"
+      }
+    ]
+  },
+  {
+    "id": "ball-mill",
+    "title": "Industrial ball mill",
+    "wiki": "Ball mill",
+    "year": 1870,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Rotating shells and loose grinding media produced fine powders; a reported 1870 use ground flint for pottery.",
+    "parents": []
+  },
+  {
+    "id": "froth-flotation",
+    "title": "Industrial agitation froth flotation",
+    "wiki": "Froth flotation",
+    "year": 1905,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "The Sulman–Picard–Ballot process used limited oil and agitation to create bubbles that carried sulfide minerals into a froth; it succeeded at Broken Hill in 1905.",
+    "parents": []
+  },
+  {
+    "id": "frasch-process",
+    "title": "Frasch sulfur extraction",
+    "wiki": "Frasch process",
+    "year": 1894,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Concentric pipes injected superheated water and air to melt and lift elemental sulfur from deep underground deposits.",
+    "parents": []
+  },
+  {
+    "id": "copper-electrorefining",
+    "title": "Commercial copper electrorefining",
+    "wiki": "Electrowinning",
+    "year": 1870,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Commercial electrolytic refining deposited high-purity copper from impure anodes in the first successful plant at Pembrey, Wales.",
+    "parents": []
+  },
+  {
+    "id": "carding-machine",
+    "title": "Mechanized carding machine",
+    "wiki": "Carding",
+    "year": 1748,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Lewis Paul's patented hand-driven machines used wire-covered surfaces to separate and align fibers before spinning; mill use expanded in the 1780s.",
+    "parents": []
+  },
+  {
+    "id": "wool-combing-machine",
+    "title": "Mechanized wool-combing machine",
+    "wiki": "Wool combing machine",
+    "year": 1790,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Cartwright's patented machine laid wool fibers parallel by length before further treatment, mechanizing a distinct worsted-yarn preparation stage.",
+    "parents": []
+  },
+  {
+    "id": "roller-printing-textiles",
+    "title": "Roller printing on textiles",
+    "wiki": "Roller printing on textiles",
+    "year": 1783,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Thomas Bell's patented cylinder process transferred engraved patterns onto fabric continuously, reducing the cost of copperplate textile printing.",
+    "parents": []
+  },
+  {
+    "id": "ring-spinning-frame",
+    "title": "Ring spinning frame",
+    "wiki": "Ring spinning",
+    "year": 1828,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "The ring frame continuously drew, twisted, and wound yarn; John Thorp's Rhode Island design is credited to 1828 or 1829.",
+    "parents": [
+      {
+        "id": "water-frame",
+        "type": "influence",
+        "reason": "The ring frame descended from the water frame's powered roller drafting and spindle-based twisting arrangement.",
+        "source": "https://en.wikipedia.org/wiki/Ring_spinning"
+      }
+    ]
+  },
+  {
+    "id": "mercerization",
+    "title": "Mercerization of cotton",
+    "wiki": "Mercerisation",
+    "year": 1844,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "John Mercer's caustic-soda treatment strengthened cotton and increased its affinity for dyes; tension-induced luster was a later refinement.",
+    "parents": [
+      {
+        "id": "weaving",
+        "type": "foundation",
+        "reason": "Mercer's finishing treatment acts directly on woven cotton fabric to improve strength and dye uptake.",
+        "source": "https://en.wikipedia.org/wiki/Mercerisation"
+      }
+    ]
+  },
+  {
+    "id": "mauveine",
+    "title": "Mauveine synthetic dye",
+    "wiki": "Mauveine",
+    "year": 1856,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Perkin’s accidental oxidation of aniline impurities produced mauveine, one of the earliest synthetic textile dyes to be mass-produced.",
+    "parents": []
+  },
+  {
+    "id": "synthetic-alizarin",
+    "title": "Synthetic alizarin dye",
+    "wiki": "Alizarin",
+    "year": 1868,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Graebe and Liebermann developed a synthetic route from anthracene to the red madder dye, undercutting cultivation of the natural source.",
+    "parents": []
+  },
+  {
+    "id": "synthetic-indigo",
+    "title": "Pfleger synthetic indigo process",
+    "wiki": "Indigo dye",
+    "year": 1901,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Pfleger’s 1901 route used an alkaline melt of N-phenylglycine to form indoxyl, which was then oxidized in air to produce indigo.",
+    "parents": []
+  },
+  {
+    "id": "nitroglycerin-explosive",
+    "title": "Nitroglycerin explosive",
+    "wiki": "Nitroglycerin",
+    "year": 1846,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Sobrero's nitration of glycerol produced a powerful but shock-sensitive liquid explosive later used in blasting and mining.",
+    "parents": []
+  },
+  {
+    "id": "dynamite",
+    "title": "Dynamite",
+    "wiki": "Dynamite",
+    "year": 1867,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Nobel stabilized nitroglycerin in an absorbent material and patented a more manageable explosive for construction, demolition, and mining.",
+    "parents": [
+      {
+        "id": "nitroglycerin-explosive",
+        "type": "foundation",
+        "reason": "Dynamite's explosive charge is nitroglycerin made safer to handle by absorption into a porous material.",
+        "source": "https://en.wikipedia.org/wiki/Dynamite"
+      }
+    ]
+  },
+  {
+    "id": "wire-rope",
+    "title": "Wire rope for mine hoists",
+    "wiki": "Wire rope",
+    "year": 1834,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Albert's multi-strand iron-wire ropes replaced weaker hemp ropes and failure-prone chains in Harz mining hoists.",
+    "parents": [
+      {
+        "id": "wire-drawing",
+        "type": "foundation",
+        "reason": "Wire drawing supplies the long metal filaments twisted together to form a load-bearing rope.",
+        "source": "https://en.wikipedia.org/wiki/Wire_rope"
+      }
+    ]
+  },
+  {
+    "id": "davy-safety-lamp",
+    "title": "Davy safety lamp",
+    "wiki": "Davy lamp",
+    "year": 1815,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "A flame-surrounding wire gauze prevented a lamp from igniting methane in coal mines; Davy presented his design in November 1815.",
+    "parents": [
+      {
+        "id": "wire-drawing",
+        "type": "foundation",
+        "reason": "Fine drawn wire made the gauze screen that confined the lamp flame while admitting air.",
+        "source": "https://en.wikipedia.org/wiki/Davy_lamp"
+      }
+    ]
+  },
+  {
+    "id": "steam-hammer",
+    "title": "Industrial steam hammer",
+    "wiki": "Steam hammer",
+    "year": 1840,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "The first working steam hammer delivered controlled heavy blows for shaping large iron and steel forgings.",
+    "parents": [
+      {
+        "id": "forging",
+        "type": "foundation",
+        "reason": "Forging supplied the metal-shaping operation that the steam-powered ram enlarged for heavy workpieces.",
+        "source": "https://en.wikipedia.org/wiki/Steam_hammer",
+        "directContribution": "Forging is the work the hammer performs: its steam-driven ram deforms hot metal, independently of the steam engine that supplies power."
+      },
+      {
+        "id": "steam-boiler",
+        "type": "enabler",
+        "reason": "The boiler supplied the working steam admitted to the machine cylinder and directly drove its powered motion.",
+        "source": "https://en.wikipedia.org/wiki/Steam_hammer",
+        "directContribution": "The boiler directly supplied working steam to the hammer cylinder; the atmospheric pumping engine is a separate power-machine milestone."
+      }
+    ]
+  },
+  {
+    "id": "steam-rock-drill",
+    "title": "Steam-powered rock drill",
+    "wiki": "Drifter drill",
+    "year": 1813,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Trevithick's steam drill mechanized boring into rock and was used chiefly in surface quarries where boilers could be brought nearby.",
+    "parents": [
+      {
+        "id": "steam-boiler",
+        "type": "enabler",
+        "reason": "The boiler supplied the working steam admitted to the machine cylinder and directly drove its powered motion.",
+        "source": "https://en.wikipedia.org/wiki/Drifter_drill"
+      }
+    ]
+  }
+]
