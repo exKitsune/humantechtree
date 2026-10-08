@@ -38,3 +38,34 @@ export function sampleRoute(edge, steps = 24) {
   points.push(edge.points.at(-1))
   return points
 }
+const midpoint = (a, b) => ({ x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 })
+function segmentDistance(point, a, b) {
+  const dx = b.x - a.x, dy = b.y - a.y, length = dx * dx + dy * dy
+  const t = length ? Math.max(0, Math.min(1, ((point.x - a.x) * dx + (point.y - a.y) * dy) / length)) : 0
+  return Math.hypot(point.x - a.x - t * dx, point.y - a.y - t * dy)
+}
+
+/** Pointer picking follows the painted cubic, not its orthogonal skeleton.
+ * Subdivide only near the pointer, to a quarter screen pixel of flatness. */
+export function distanceToRoute(edge, point, zoom, maximum = Infinity) {
+  let best = Infinity
+  const line = (a, b) => { best = Math.min(best, segmentDistance(point, a, b)) }
+  if (!edge.curve) {
+    for (let i = 1; i < edge.points.length; i++) line(edge.points[i - 1], edge.points[i])
+    return best
+  }
+  const { from, to } = edge.curve, mid = (from.x + to.x) / 2
+  line(edge.points[0], from); line(to, edge.points.at(-1))
+  const tolerance = .25 / zoom
+  function visit(a, b, c, d, depth) {
+    const left = Math.min(a.x, b.x, c.x, d.x), right = Math.max(a.x, b.x, c.x, d.x)
+    const top = Math.min(a.y, b.y, c.y, d.y), bottom = Math.max(a.y, b.y, c.y, d.y)
+    if (Math.hypot(Math.max(0, left - point.x, point.x - right), Math.max(0, top - point.y, point.y - bottom)) > Math.min(best, maximum)) return
+    if (depth >= 16 || Math.max(segmentDistance(b, a, d), segmentDistance(c, a, d)) <= tolerance) { line(a, d); return }
+    const ab = midpoint(a, b), bc = midpoint(b, c), cd = midpoint(c, d)
+    const abc = midpoint(ab, bc), bcd = midpoint(bc, cd), center = midpoint(abc, bcd)
+    visit(a, ab, abc, center, depth + 1); visit(center, bcd, cd, d, depth + 1)
+  }
+  visit(from, { x: mid, y: from.y }, { x: mid, y: to.y }, to, 0)
+  return best
+}

@@ -1,3 +1,4 @@
+import { distanceToRoute } from './route-geometry.js'
 import { routeIntersectsRect } from './layout.js'
 
 export const MAX_CARDS = 120
@@ -86,5 +87,26 @@ export function hitTest(scene, frame, point, zoom) {
   const radius = Math.max(5, 8 / zoom)
   const matches = scene.nodeIndex.query({ x: point.x - radius, y: point.y - radius, width: radius * 2, height: radius * 2 })
   matches.sort((a, b) => Math.hypot(a.x + a.width / 2 - point.x, a.y + a.height / 2 - point.y) - Math.hypot(b.x + b.width / 2 - point.x, b.y + b.height / 2 - point.y))
-  return matches[0] ? { node: matches[0] } : null
+  if (matches[0]) return { node: matches[0] }
+  const edge = hitLink(frame, point, zoom)
+  return edge ? { edge } : null
+}
+
+
+export const LINK_HIT_RADIUS = 8
+
+// Only painted links are interactive. The budgeted frame bounds pointer work,
+// and paint order resolves exact crossings in favor of the visible top link.
+export function hitLink(frame, point, zoom) {
+  if (frame.mode === 'density') return null
+  let best = null, distance = LINK_HIT_RADIUS
+  for (const edge of frame.edges) {
+    const candidate = distanceToRoute(edge, point, zoom, LINK_HIT_RADIUS / zoom) * zoom
+    if (candidate <= distance + 1e-6) { best = edge; distance = candidate }
+  }
+  return best
+}
+
+export function linkDestination(edge, selected) {
+  return edge.target === selected ? edge.source : edge.target
 }

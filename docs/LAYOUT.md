@@ -48,6 +48,12 @@ Curve metadata holds its start and end, with both cubic control points at their 
 
 `spatial.js` supplies the general scene index and a specialized card index that exploits disjoint rows/columns. The simplifier searches whichever axis spans fewer groups, and uses a mutable coordinate index for collinear runs. Simplification runs in the layout worker, never during panning or zooming. Dense scenes still use the existing LOD budgets.
 
+## Following links
+
+Visible connections are navigable along their full length, including dash gaps. Clicking an incident link visits the other endpoint of the selected capability; clicking an unrelated link follows its arrow to the target. The normal selection flow updates the details and URL, centers the destination, and rebuilds its neighborhood in Connections mode. Hover highlights the route and names the destination. Existing sidebar connection buttons provide keyboard navigation.
+
+Picking checks cards before links and searches only the budgeted, painted edges in the current frame. Hidden LOD links cannot receive clicks. The nearest route within eight screen pixels wins; frame paint order breaks exact ties. Cubics use adaptive subdivision to a quarter-screen-pixel flatness, never the invisible orthogonal skeleton. Hover clears during dragging, scene changes and viewport changes. Selection uses Svelte Flow's existing pane-click gesture handling, preserving the five-pixel drag threshold. No DOM element is added per link.
+
 ## Reproduce and guard
 
 `npm run layout:analyze` is a read-only local command against `public/data/catalog.json`. Compile first after authoring changes. It reports the exact catalog digest, scope, layout duration, dimensions, route length, crossing count, straight/curved link counts, and the ten most-crossed edges. Curves are sampled into 24 chords for crossing/length diagnostics; `curveSamples` reports whether approximation was used. No network or file writes occur. The crossing scan is quadratic in segment count and belongs in offline diagnostics, never the rendering loop; use a bounded view for very large future catalogs.

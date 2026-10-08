@@ -6,7 +6,7 @@
   import CapabilityNode from './CapabilityNode.svelte'
   import ViewportController from './ViewportController.svelte'
   import { createLayoutClient } from './layout-client.js'
-  import { createScene, planFrame, hitTest } from './scene.js'
+  import { createScene, planFrame, hitTest, linkDestination } from './scene.js'
   import { drawScene, drawOverview } from './draw-scene.js'
   import { contentExtent, clampViewport } from './viewport.js'
   import { domainInfo, relations } from './config'
@@ -19,6 +19,8 @@
   let scene = $state.raw<ReturnType<typeof createScene> | null>(null)
   let arranging = $state(true)
   let layoutError = $state('')
+  let hoveredLink = $state.raw<GraphLayout['edges'][number] | null>(null)
+  let linkLabel = $derived(hoveredLink && scene ? `Follow to ${scene.byId.get(linkDestination(hoveredLink, selected))?.entry.title ?? ''}` : '')
   let latestRequest = 0
   let viewport = $state<Viewport>({ x: 50, y: 50, zoom: .85 })
   let requestedViewport = $state.raw<Viewport | null>(null)
@@ -66,11 +68,11 @@
     })
   })
   $effect(() => {
-    const c = canvas, mini = overview, s = scene, f = frame, v = viewport, w = width, h = height, id = selected
+    const c = canvas, mini = overview, s = scene, f = frame, v = viewport, w = width, h = height, id = selected, hover = hoveredLink?.id
     if (!c || !s || !f) return
     const raf = requestAnimationFrame(() => {
       const start = performance.now()
-      drawScene(c, s, f, v, w, h, id, domainInfo, relations)
+      drawScene(c, s, f, v, w, h, id, domainInfo, relations, hover)
       if (mini) drawOverview(mini, s, v, w, h, domainInfo)
       c.dataset.drawMs = (performance.now() - start).toFixed(2)
     })
@@ -99,12 +101,25 @@
     setView({ x: width / 2 - (x + w / 2) * z, y: height / 2 - (y + h / 2) * z, zoom: z })
   }
   function fit() { if (scene) fitRect(0, 0, scene.layout.width, scene.layout.height) }
-  function pick({ event }: { event: MouseEvent }) {
-    if (!scene || !frame) return
+  $effect(() => { scene; viewport; selected; arranging; width; height; hoveredLink = null })
+  function pointerHit(event: MouseEvent) {
+    if (!scene || !frame || arranging) return null
     const bounds = graphElement.getBoundingClientRect()
     const point = { x: (event.clientX - bounds.left - viewport.x) / viewport.zoom, y: (event.clientY - bounds.top - AXIS_HEIGHT - viewport.y) / viewport.zoom }
-    const hit = hitTest(scene, frame, point, viewport.zoom)
+    return hitTest(scene, frame, point, viewport.zoom)
+  }
+  function hoverLink(event: PointerEvent) {
+    hoveredLink = event.buttons ? null : pointerHit(event)?.edge ?? null
+  }
+  function pick({ event }: { event: MouseEvent }) {
+    if (!scene) return
+    const hit = pointerHit(event)
+    hoveredLink = null
     if (hit?.node) { select(hit.node.id); focusNode(hit.node) }
+    else if (hit?.edge) {
+      const node = scene.byId.get(linkDestination(hit.edge, selected))
+      if (node) { select(node.id); focusNode(node) }
+    }
     else if (hit?.cluster) {
       const b = hit.cluster
       if (b.count === 1) {
@@ -133,9 +148,11 @@
 
 <!-- svelte-ignore a11y_no_noninteractive_tabindex, a11y_no_noninteractive_element_interactions (This graph implements keyboard pan/zoom and exposes named button controls.) -->
 <div class="graph" bind:this={graphElement} bind:clientWidth={width} bind:clientHeight={outerHeight} aria-busy={arranging}
-  role="application" aria-label="Technology tree canvas. Arrow keys pan, plus and minus zoom, Home fits the tree. Search above to find any capability."
+  role="application" aria-label="Technology tree canvas. Arrow keys pan, plus and minus zoom, Home fits the tree. Click a connection to follow it. Search above to find any capability."
   tabindex="0" onkeydown={keyboard} data-lod={frame?.mode} data-rendered-cards={frame?.cards.length ?? 0} data-rendered-marks={frame?.marks.length ?? 0} data-rendered-edges={frame?.edges.length ?? 0}>
-  <div class="graph-surface">
+  <!-- svelte-ignore a11y_no_static_element_interactions (Pointer hover only; pane clicks handle navigation and sidebar buttons provide keyboard access.) -->
+  <div class="graph-surface" class:link-hovered={!!hoveredLink} title={linkLabel || undefined}
+    onpointermove={hoverLink} onpointerleave={() => hoveredLink = null} onpointerdown={() => hoveredLink = null}>
   <canvas bind:this={canvas} class="graph-raster" aria-hidden="true"></canvas>
   <SvelteFlow bind:viewport colorMode="dark" {minZoom} maxZoom={1.8} oninit={() => flowReady = true}
     nodesDraggable={false} nodesConnectable={false} elementsSelectable={false} deleteKey={[]}
@@ -188,5 +205,5 @@
     <button onclick={fit} aria-label="Fit visible tree" title="Fit visible tree"><Maximize size={17} /></button>
     <button onclick={center} aria-label="Center selected capability" title="Center selected capability"><LocateFixed size={18} /></button>
   </div>
-  <span class="pan-hint">Scroll or drag to pan <span>·</span> Pinch or Ctrl/⌘ + scroll to zoom</span>
+  <span class="pan-hint">{#if linkLabel}{linkLabel}{:else}Click a link to follow <span>·</span> Scroll or drag to pan{/if} <span>·</span> Pinch or Ctrl/⌘ + scroll to zoom</span>
 </div>

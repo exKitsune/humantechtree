@@ -11,7 +11,7 @@ function prepare(canvas, width, height) {
   return ctx
 }
 
-export function drawScene(canvas, scene, frame, viewport, width, height, selected, domains, relations) {
+export function drawScene(canvas, scene, frame, viewport, width, height, selected, domains, relations, hoveredLink = '') {
   const ctx = prepare(canvas, width, height)
   const z = viewport.zoom, sx = x => x * z + viewport.x, sy = y => y * z + viewport.y
   for (const [i, era] of (scene.layout.timeBands ?? []).entries()) {
@@ -33,15 +33,17 @@ export function drawScene(canvas, scene, frame, viewport, width, height, selecte
     ctx.fillStyle = domains[band.id].color + '48'; ctx.fillRect(0, y, width, 1); ctx.fillRect(0, y + h, width, 1)
   }
   // All paths share one raster surface; no SVG element or listener per edge.
-  for (const edge of frame.edges) {
-    const active = edge.source === selected || edge.target === selected
+  const edges = hoveredLink ? frame.edges.filter(e => e.id !== hoveredLink).concat(frame.edges.filter(e => e.id === hoveredLink)) : frame.edges
+  for (const edge of edges) {
+    const hovered = edge.id === hoveredLink
+    const active = hovered || edge.source === selected || edge.target === selected
     const points = edge.points
     traceRoute(ctx, edge, sx, sy)
     ctx.globalAlpha = 1; ctx.lineCap = 'round'
-    ctx.strokeStyle = '#171c1a'; ctx.lineWidth = active ? 5 : 4; ctx.setLineDash([]); ctx.stroke()
+    ctx.strokeStyle = '#171c1a'; ctx.lineWidth = hovered ? 6 : active ? 5 : 4; ctx.setLineDash([]); ctx.stroke()
     ctx.strokeStyle = relations[edge.type].color
     ctx.globalAlpha = active ? 1 : .8
-    ctx.lineWidth = active ? 2.5 : 1.65
+    ctx.lineWidth = hovered ? 3.25 : active ? 2.5 : 1.65
     ctx.setLineDash(edge.type === 'enabler' ? [11, 6] : edge.type === 'influence' ? [2.5, 6] : [])
     ctx.stroke()
     if (z >= .25) {

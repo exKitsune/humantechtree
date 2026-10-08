@@ -22,7 +22,7 @@ npm ci
 npm run dev
 ```
 
-Use the printed local URL. Search with `/` or Ctrl/Cmd+K. Scroll or drag to pan in any direction; pinch or Ctrl/Cmd+scroll to zoom. Click a capability to inspect it. **Full tree** applies category/era filters across the whole catalog. **Connections** shows two steps upstream and downstream from the selected capability. URL hashes such as `#node=microscope` can be bookmarked or shared without server routing.
+Use the printed local URL. Search with `/` or Ctrl/Cmd+K. Scroll or drag to pan in any direction; pinch or Ctrl/Cmd+scroll to zoom. Click a capability to inspect it. Click a visible connection to jump to its other end and center that capability; links unrelated to the selection follow their arrow direction. Hover highlights the link and names the destination. **Full tree** applies category/era filters across the whole catalog. **Connections** shows two steps upstream and downstream from the selected capability. URL hashes such as `#node=microscope` can be bookmarked or shared without server routing.
 
 ```sh
 npm run check          # Svelte and TypeScript

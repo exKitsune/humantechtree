@@ -19,3 +19,7 @@
 .graph-surface{position:absolute;inset:54px 0 0}
 
 .direct-contribution{display:block;margin-top:8px;padding-top:7px;border-top:1px solid #536049;color:#b9c8ae;font-size:11px;line-height:1.5}.direct-contribution b{display:block;font-size:10px;font-weight:600;color:#d8dcbf;margin-bottom:3px}
+
+.graph-surface.link-hovered .svelte-flow__pane{cursor:pointer}
+
+.pan-hint{max-width:calc(100% - 54px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
