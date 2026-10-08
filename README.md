@@ -53,9 +53,23 @@ Connections answer **“How did this help make that possible?”** They are dire
 
 This is not a game, an unlock system, or a universal sequence every society must follow. Religion, treaties, and institutions are first-class subjects; they are never presumed to be universal requirements for technological development. Nodes occupy chronological periods that expand with their population, rather than a proportional time axis. Same-period prerequisites advance through additional columns. Dates are approximate milestones. Era names are navigation aids and do not describe every region's periodization.
 
-Each capability has one primary branch. Weapons & warfare covers specifically military equipment, fortifications, organization, doctrine, and supply practices; its initial catalog entry is Ironclad warship. Classify the actual milestone: general-purpose tools, materials, propulsion, and diplomatic treaties keep their respective branches even when they have military uses. Connections explain contributions across branches. Cross-cutting themes are a possible future extension, not an implemented filter.
+Each capability has one primary branch. Weapons & warfare covers specifically military equipment, fortifications, organization, doctrine, and supply practices. Classify the actual milestone: general-purpose tools, materials, propulsion, and diplomatic treaties keep their respective branches even when they have military uses. Connections explain contributions across branches. Cross-cutting themes are a possible future extension, not an implemented filter.
 
-The layout is calculated from the current view's nodes and connections in a local web worker. The eleven branches form horizontal bands; prerequisites advance from left to right. Vertical bands use the same eras as the filters. The displayed population determines their subdivisions: periods with more than 24 capabilities split by powers of ten down to individual years. Single years expand into extra columns, with at most six cards from a branch in one column. Empty periods use no columns. Date boundaries, widths, branch heights, and routing corridors are recalculated whenever the displayed graph changes; adding catalog entries requires no hand-positioned bands. Starting points remain inside their own branches.
+Branch boundaries follow the specific milestone rather than every possible use of it:
+
+| Branch | Scope |
+| --- | --- |
+| Construction & settlements | Buildings, civil infrastructure, settlement forms, and urban planning |
+| Measurement & standards | Quantitative instruments, calibration, units, tolerances, and standardization |
+| Logistics & supply | Storage, handling, inventory, distribution, and delivery coordination |
+| Trade & finance | Exchange, markets, money, credit, risk sharing, and commercial organization |
+| Law & governance | Legal systems, public administration, representation, rights, and diplomacy |
+| Education & knowledge institutions | Teaching, libraries, archives, and organized knowledge transmission and research |
+| Religion & belief | Religious traditions, practices, texts, and institutions |
+
+Transport covers vehicles and movement; logistics covers how supplies are handled and coordinated. General materials and manufacturing tools retain their respective branches. Society & institutions covers remaining social organization, welfare, and collective services. A branch is a browsing category, not evidence for a dependency.
+
+The layout is calculated from the current view's nodes and connections in a local web worker. The eighteen branches form horizontal bands; prerequisites advance from left to right. Vertical bands use the same eras as the filters. The displayed population determines their subdivisions: periods with more than 24 capabilities split by powers of ten down to individual years. Single years expand into extra columns, with at most six cards from a branch in one column. Empty periods use no columns. Date boundaries, widths, branch heights, and routing corridors are recalculated whenever the displayed graph changes; adding catalog entries requires no hand-positioned bands. Starting points remain inside their own branches.
 
 Each node's outbound relationships are routed together as an ordered fan-out. Destination bands, columns and heights determine the attachment-point order and nested routing tracks. Long links use reserved horizontal corridors above the cards. Links from the same source remain separate without crossing or touching; unrelated sources can still cross, with a visual break distinguishing crossings from junctions. Filtering or changing the focused neighborhood recalculates the arrangement. Panning and zooming keep positions stable. Dragging, scrolling, keyboard commands, zoom controls and minimap navigation stop at the occupied cards and routed detours plus a 240-world-unit margin on all four sides. A viewport larger than that area centers it. **Fit visible tree** includes the entire current view and its routed connections. Click a branch, era or date label to fit its area. Cyan dashed enablers, pink dotted influences and amber foundations retain their colors even when unselected, with screen-sized strokes and dark crossing outlines.
 
@@ -74,14 +88,15 @@ Node and edge spatial indexes avoid scanning the full graph every frame. Density
 - `data/engineering.json`: 400 material, machine, energy, transport, and food entries.
 - `data/science.json`: 350 science, medicine, and information entries.
 - `data/society.json`: 250 institutional and cultural entries.
-- `data/*-expansion.json`: another 400 engineering/material/energy/transport/food, 350 science/medicine/information, and 250 society/culture entries.
+- The original `data/engineering-expansion.json`, `data/science-expansion.json`, and `data/society-expansion.json` add 400, 350, and 250 entries respectively. Source filenames indicate authoring ownership; each node's `domain` controls its displayed band.
+- `data/warfare-expansion.json`, `data/built-world-expansion.json`, and `data/institutions-expansion.json`: offline-researched topic batches; see the [expansion queue](docs/research/EXPANSION-QUEUE.md) for scope and remaining questions.
 - `data/*-connections.json`: researched intermediate capabilities added while refining the routes between existing milestones.
 - `data/connections.json`: explicit cross-domain contributions.
 - `public/data/catalog.json`: compiled, static application data.
 - `public/data/wikipedia.json`: cached article identifiers, Wikimedia image URLs, and attribution metadata.
 - `public/data/offline-index.json`: article matches in the local ZIM, once imported.
 
-The initial 2,000-node catalog now includes 90 additional intermediate capabilities. All 2,090 article references resolve in the local archive. Connection review revised the parents of 348 existing nodes, replacing remote ancestry with specific contributions and documenting independently used tools and materials.
+The current catalog contains 2,175 nodes and 2,490 connections, including the original 90 connection intermediates and 85 new topic-batch milestones. All 2,175 article references resolve in the local archive. Connection review revised the parents of 348 existing nodes, replacing remote ancestry with specific contributions and documenting independently used tools and materials.
 
 Edit the source catalogs, then run `npm run data:compile` to update the local preview. Production builds also compile the catalogs automatically. Every edge must name an existing node, carry a relationship type, and explain a specific contribution. Validation checks unique IDs and titles, schema, references, chronological direction, cycles, and unresolved connection-review flags. It **does not establish historical truth**.
 

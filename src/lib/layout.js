@@ -5,7 +5,7 @@ export const NODE_WIDTH = 204
 export const MIN_NODE_HEIGHT = 144
 const PORT_SPACING = 12
 const TRACK_SPACING = 26
-export const BAND_ORDER = ['engineering', 'materials', 'energy', 'science', 'medicine', 'information', 'transport', 'warfare', 'food', 'society', 'culture']
+export const BAND_ORDER = ['engineering', 'materials', 'construction', 'energy', 'measurement', 'science', 'medicine', 'information', 'transport', 'logistics', 'warfare', 'food', 'commerce', 'governance', 'society', 'education', 'religion', 'culture']
 
 export function routeIntersectsRect(points, rect) {
   return points.some((point, i) => {

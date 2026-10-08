@@ -1,0 +1,353 @@
+[
+  {
+    "id": "bank-amsterdam",
+    "title": "Amsterdam Wisselbank",
+    "wiki": "Bank of Amsterdam",
+    "year": 1609,
+    "domain": "commerce",
+    "kind": "institution",
+    "summary": "The city-backed Wisselbank exchanged diverse coins for stable bank money and settled local and international payments by book entry.",
+    "parents": [
+      {
+        "id": "money",
+        "type": "enabler",
+        "reason": "The bank valued circulating coin and used a stable account unit to settle obligations.",
+        "source": "https://en.wikipedia.org/wiki/Bank_of_Amsterdam"
+      }
+    ]
+  },
+  {
+    "id": "bank-clearing-house",
+    "title": "London bankers' clearing house",
+    "wiki": "Clearing house (finance)",
+    "year": 1770,
+    "domain": "commerce",
+    "kind": "institution",
+    "summary": "London bankers centralized daily exchange of cheques and bills, replacing clerks' repeated visits to each bank with net settlement among members.",
+    "parents": [
+      {
+        "id": "banking",
+        "type": "enabler",
+        "reason": "Banks supplied the participating institutions whose interbank obligations the clearing house netted.",
+        "source": "https://en.wikipedia.org/wiki/Clearing_house_(finance)",
+        "directContribution": "Member banks directly participated in daily multilateral settlement; this institutional coordination role is separate from the cheques and bills being exchanged."
+      },
+      {
+        "id": "bill-exchange",
+        "type": "enabler",
+        "reason": "Cheques and bills payable at member banks were the instruments exchanged and cleared through the London system.",
+        "source": "https://en.wikipedia.org/wiki/Clearing_house_(finance)"
+      }
+    ]
+  },
+  {
+    "id": "us-federal-deposit-insurance",
+    "title": "FDIC established by 1933 Banking Act",
+    "wiki": "Deposit insurance",
+    "year": 1933,
+    "domain": "commerce",
+    "kind": "institution",
+    "summary": "The 1933 Banking Act created the FDIC; the federal corporation began insuring covered bank deposits in 1934.",
+    "parents": [
+      {
+        "id": "banking",
+        "type": "enabler",
+        "reason": "The insurance protects customer deposits held by banks and became part of the U.S. banking safety net.",
+        "source": "https://en.wikipedia.org/wiki/Deposit_insurance"
+      }
+    ]
+  },
+  {
+    "id": "bankamericard-network",
+    "title": "BankAmericard network",
+    "wiki": "Credit card",
+    "year": 1958,
+    "domain": "commerce",
+    "kind": "institution",
+    "summary": "BankAmericard made revolving bank credit usable through a third-party card accepted by a broad network of merchants.",
+    "parents": [
+      {
+        "id": "banking",
+        "type": "enabler",
+        "reason": "A bank issued and financed the revolving credit behind the card program.",
+        "source": "https://en.wikipedia.org/wiki/Credit_card"
+      }
+    ]
+  },
+  {
+    "id": "fedwire",
+    "title": "Fedwire interbank transfer network",
+    "wiki": "Fedwire",
+    "year": 1918,
+    "domain": "commerce",
+    "kind": "infrastructure",
+    "summary": "The Federal Reserve linked its banks by telegraph so they could transfer funds electronically between member institutions.",
+    "parents": [
+      {
+        "id": "banking",
+        "type": "enabler",
+        "reason": "The network moved funds among participating financial institutions' Federal Reserve accounts.",
+        "source": "https://en.wikipedia.org/wiki/Fedwire"
+      },
+      {
+        "id": "electric-telegraph",
+        "type": "foundation",
+        "reason": "Telegraph lines carried the interbank transfer instructions connecting the Federal Reserve Banks.",
+        "source": "https://en.wikipedia.org/wiki/Fedwire",
+        "directContribution": "Telegraph lines physically connected Reserve Banks; Morse code was the distinct message encoding carried over those lines."
+      },
+      {
+        "id": "morse-code",
+        "type": "enabler",
+        "reason": "The first network transmitted transfer messages using Morse code over its telegraph links.",
+        "source": "https://en.wikipedia.org/wiki/Fedwire"
+      }
+    ]
+  },
+  {
+    "id": "automated-clearing-house",
+    "title": "Automated clearing houses",
+    "wiki": "Automated clearing house",
+    "year": 1968,
+    "domain": "commerce",
+    "kind": "infrastructure",
+    "summary": "Computer-based networks process batches of low-value bank transfers and direct debits, lowering the cost of routine payments.",
+    "parents": [
+      {
+        "id": "banking",
+        "type": "enabler",
+        "reason": "Participating banks create and process the credit transfers and direct debits that the network clears.",
+        "source": "https://en.wikipedia.org/wiki/Automated_clearing_house"
+      }
+    ]
+  },
+  {
+    "id": "academic-degree",
+    "title": "Corporate university degrees",
+    "wiki": "Academic degree",
+    "year": 1180,
+    "domain": "education",
+    "kind": "institution",
+    "summary": "Medieval European universities awarded formal qualifications, including Bologna's late-twelfth-century doctorate in civil law.",
+    "parents": [
+      {
+        "id": "university",
+        "type": "foundation",
+        "reason": "Corporate universities granted degrees that certified graduates' study and qualifications.",
+        "source": "https://en.wikipedia.org/wiki/Academic_degree"
+      }
+    ]
+  },
+  {
+    "id": "research-doctorate",
+    "title": "Research doctorate",
+    "wiki": "Doctor of Philosophy",
+    "year": 1810,
+    "domain": "education",
+    "kind": "institution",
+    "summary": "The reformed University of Berlin tied the Doctor of Philosophy to dissertation-based original research, establishing a research degree later adopted elsewhere.",
+    "parents": [
+      {
+        "id": "academic-degree",
+        "type": "foundation",
+        "reason": "The doctorate extended the university's existing system of formal academic qualifications.",
+        "source": "https://en.wikipedia.org/wiki/Doctor_of_Philosophy"
+      },
+      {
+        "id": "research-university",
+        "type": "enabler",
+        "reason": "Berlin's research-centered university reforms made original research and a dissertation requirements for the new degree.",
+        "source": "https://en.wikipedia.org/wiki/Doctor_of_Philosophy"
+      }
+    ]
+  },
+  {
+    "id": "normal-school",
+    "title": "Normal schools",
+    "wiki": "Normal school",
+    "year": 1685,
+    "domain": "education",
+    "kind": "institution",
+    "summary": "Dedicated normal schools prepare teachers in pedagogy and curriculum; an early French example was established by Jean-Baptiste de La Salle in Reims.",
+    "parents": []
+  },
+  {
+    "id": "monitorial-instruction",
+    "title": "Monitorial instruction",
+    "wiki": "Monitorial system",
+    "year": 1796,
+    "domain": "education",
+    "kind": "practice",
+    "summary": "The Madras and Bell–Lancaster methods trained more advanced pupils to teach peers, allowing one schoolmaster to instruct large classes at low cost.",
+    "parents": []
+  },
+  {
+    "id": "ratio-studiorum",
+    "title": "Jesuit Ratio Studiorum",
+    "wiki": "Ratio Studiorum",
+    "year": 1599,
+    "domain": "education",
+    "kind": "institution",
+    "summary": "The Society of Jesus standardized a curriculum and teaching regulations for its schools across different regions.",
+    "parents": [
+      {
+        "id": "society-jesus",
+        "type": "enabler",
+        "reason": "The Jesuit order's growing school network needed shared rules for its officials and teachers.",
+        "source": "https://en.wikipedia.org/wiki/Ratio_Studiorum"
+      }
+    ]
+  },
+  {
+    "id": "laboratory-oriented-teaching",
+    "title": "Laboratory-oriented chemistry teaching",
+    "wiki": "Justus von Liebig",
+    "year": 1825,
+    "domain": "education",
+    "kind": "practice",
+    "summary": "Liebig's instruction at Giessen made supervised laboratory experimentation a method for teaching chemistry to university students.",
+    "parents": [
+      {
+        "id": "university",
+        "type": "enabler",
+        "reason": "University teaching provided the organized setting in which laboratory experiments became a repeatable part of chemistry instruction.",
+        "source": "https://en.wikipedia.org/wiki/Justus_von_Liebig"
+      }
+    ]
+  },
+  {
+    "id": "royal-society",
+    "title": "Royal Society of London",
+    "wiki": "Royal Society",
+    "year": 1660,
+    "domain": "education",
+    "kind": "institution",
+    "summary": "A chartered learned society organized recurring meetings, experimental demonstrations, scientific papers, and scholarly exchange.",
+    "parents": [
+      {
+        "id": "university",
+        "type": "influence",
+        "reason": "Natural philosophers meeting at Wadham College, part of the University of Oxford, supplied a documented setting and participants for the society’s formation.",
+        "source": "https://en.wikipedia.org/wiki/Royal_Society"
+      },
+      {
+        "id": "scientific-method",
+        "type": "influence",
+        "reason": "Experimental inquiry gave the society a subject and practice for its meetings and demonstrations.",
+        "source": "https://en.wikipedia.org/wiki/Royal_Society"
+      }
+    ]
+  },
+  {
+    "id": "philosophical-transactions",
+    "title": "Philosophical Transactions",
+    "wiki": "Philosophical Transactions of the Royal Society",
+    "year": 1665,
+    "domain": "science",
+    "kind": "institution",
+    "summary": "The Royal Society's journal established a continuing printed channel for registering, reviewing, disseminating, and archiving scientific claims.",
+    "parents": [
+      {
+        "id": "royal-society",
+        "type": "enabler",
+        "reason": "The society's council licensed and reviewed the journal's monthly issues, while its secretary edited and published them.",
+        "source": "https://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society"
+      }
+    ]
+  },
+  {
+    "id": "royal-society-manuscript-review",
+    "title": "Royal Society manuscript review",
+    "wiki": "Peer review",
+    "year": 1665,
+    "domain": "science",
+    "kind": "practice",
+    "summary": "The Royal Society's council required journal papers to be revised by society members before printing, an early framework for scholarly review rather than the later systematic anonymous process.",
+    "parents": [
+      {
+        "id": "philosophical-transactions",
+        "type": "enabler",
+        "reason": "The journal's first publication rules required council licensing and member revision of submitted tracts.",
+        "source": "https://en.wikipedia.org/wiki/Philosophical_Transactions_of_the_Royal_Society"
+      }
+    ]
+  },
+  {
+    "id": "northcote-trevelyan-report",
+    "title": "Northcote–Trevelyan Report",
+    "wiki": "Northcote–Trevelyan Report",
+    "year": 1854,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "The report proposed merit-only appointments by examination and a permanent, politically neutral British civil service; these were recommendations, not the later implementation.",
+    "parents": [
+      {
+        "id": "imperial-examination",
+        "type": "influence",
+        "reason": "The report's authors were influenced by Chinese imperial examinations when recommending civil-service entry by merit and examination.",
+        "source": "https://en.wikipedia.org/wiki/Northcote%E2%80%93Trevelyan_Report"
+      }
+    ]
+  },
+  {
+    "id": "british-merit-civil-service",
+    "title": "British merit-based civil-service recruitment",
+    "wiki": "Civil Service (United Kingdom)",
+    "year": 1870,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "A 1870 Order in Council implemented competitive, merit-based entry to Britain's permanent civil service, reducing reliance on patronage.",
+    "parents": [
+      {
+        "id": "northcote-trevelyan-report",
+        "type": "enabler",
+        "reason": "The Order in Council implemented the report's proposals for open recruitment and appointment on merit.",
+        "source": "https://en.wikipedia.org/wiki/Civil_Service_(United_Kingdom)"
+      }
+    ]
+  },
+  {
+    "id": "french-administrative-court",
+    "title": "French Council of State established",
+    "wiki": "Conseil d'État",
+    "year": 1799,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "The Consulate established the Conseil d’État in 1799 as an executive council that advised on law and adjudicated claims against the state; the Restoration retained it as an administrative court, and an 1872 act later defined its role more precisely.",
+    "parents": []
+  },
+  {
+    "id": "peace-augsburg",
+    "title": "Peace of Augsburg",
+    "wiki": "Peace of Augsburg",
+    "year": 1555,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "The treaty gave Lutheranism legal standing beside Catholicism in the Holy Roman Empire and let territorial rulers choose between those confessions.",
+    "parents": [
+      {
+        "id": "protestant-reformation",
+        "type": "influence",
+        "reason": "The Reformation's religious division and ensuing conflicts created the settlement's immediate problem.",
+        "source": "https://en.wikipedia.org/wiki/Peace_of_Augsburg"
+      }
+    ]
+  },
+  {
+    "id": "nicene-creed",
+    "title": "Nicene Creed",
+    "wiki": "Nicene Creed",
+    "year": 325,
+    "domain": "religion",
+    "kind": "practice",
+    "summary": "First adopted at Nicaea, the creed articulated shared Trinitarian doctrine for Christian communities that accepted its formulation.",
+    "parents": [
+      {
+        "id": "christianity",
+        "type": "influence",
+        "reason": "The creed formulated doctrine within the Christian community and became a defining statement for Nicene Christianity.",
+        "source": "https://en.wikipedia.org/wiki/Nicene_Creed"
+      }
+    ]
+  }
+]

@@ -54,7 +54,7 @@
     "title": "Religion",
     "wiki": "Religion",
     "year": -40000,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Shared beliefs, ritual practices, and sacred narratives organize many communities' relationships with the world.",
     "parents": [
@@ -70,7 +70,7 @@
     "title": "Trade",
     "wiki": "Trade",
     "year": -100000,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "practice",
     "summary": "Exchange moves goods between people and communities beyond their places of production.",
     "parents": []
@@ -80,7 +80,7 @@
     "title": "Gift exchange",
     "wiki": "Gift economy",
     "year": -10000,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "practice",
     "summary": "Giving and reciprocal obligations distribute goods while maintaining social relationships.",
     "parents": []
@@ -90,7 +90,7 @@
     "title": "Sedentary settlements",
     "wiki": "Sedentism",
     "year": -12000,
-    "domain": "society",
+    "domain": "construction",
     "kind": "practice",
     "summary": "Long-term residence allows communities to invest in shared places and durable local institutions.",
     "parents": []
@@ -100,7 +100,7 @@
     "title": "Cities",
     "wiki": "City",
     "year": -4000,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Dense settlements concentrate households, specialized work, exchange, and public institutions.",
     "parents": [
@@ -121,7 +121,7 @@
     "title": "Uruk",
     "wiki": "Uruk",
     "year": -4000,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Uruk became a major Mesopotamian urban center with temple administration and extensive accounting.",
     "parents": [
@@ -137,7 +137,7 @@
     "title": "Early Jericho settlement",
     "wiki": "Tell es-Sultan",
     "year": -9000,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Tell es-Sultan preserves an early permanent settlement with communal monumental structures.",
     "parents": [
@@ -153,7 +153,7 @@
     "title": "Çatalhöyük",
     "wiki": "Çatalhöyük",
     "year": -7100,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Çatalhöyük supported a dense settlement of adjoining houses with elaborate domestic cultural practices.",
     "parents": [
@@ -169,7 +169,7 @@
     "title": "Mohenjo-daro",
     "wiki": "Mohenjo-daro",
     "year": -2600,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Mohenjo-daro organized a large Indus settlement around planned streets and shared urban facilities.",
     "parents": [
@@ -185,7 +185,7 @@
     "title": "Caral",
     "wiki": "Caral",
     "year": -2600,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Caral was an early Andean center with large public complexes and regional exchange connections.",
     "parents": [
@@ -201,7 +201,7 @@
     "title": "Teotihuacan",
     "wiki": "Teotihuacan",
     "year": 100,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Teotihuacan combined monumental precincts with extensive apartment compounds and regional exchange.",
     "parents": [
@@ -217,7 +217,7 @@
     "title": "Angkor",
     "wiki": "Angkor",
     "year": 802,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Angkor developed as a Khmer political and religious center within an extensive settlement landscape.",
     "parents": [
@@ -233,7 +233,7 @@
     "title": "Great Zimbabwe",
     "wiki": "Great Zimbabwe",
     "year": 1100,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Great Zimbabwe linked a regional political center with long-distance trade in southeastern Africa.",
     "parents": [
@@ -249,7 +249,7 @@
     "title": "Timbuktu",
     "wiki": "Timbuktu",
     "year": 1100,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Timbuktu became a Saharan trading center and a major setting for manuscript scholarship.",
     "parents": [
@@ -265,7 +265,7 @@
     "title": "Tenochtitlan",
     "wiki": "Tenochtitlan",
     "year": 1325,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Tenochtitlan organized an island capital with neighborhoods, markets, and ceremonial institutions.",
     "parents": [
@@ -281,7 +281,7 @@
     "title": "Cahokia",
     "wiki": "Cahokia",
     "year": 1050,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Cahokia gathered a large Mississippian population around plazas and monumental earthen mounds.",
     "parents": [
@@ -297,7 +297,7 @@
     "title": "Heian-kyō",
     "wiki": "Heian-kyō",
     "year": 794,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Heian-kyō established a planned Japanese imperial capital that became modern Kyoto.",
     "parents": [
@@ -313,7 +313,7 @@
     "title": "Round City of Baghdad",
     "wiki": "Round City of Baghdad",
     "year": 762,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "The Abbasid foundation of Baghdad created a new administrative capital and scholarly center.",
     "parents": [
@@ -329,7 +329,7 @@
     "title": "Caliphal Córdoba",
     "wiki": "Córdoba, Spain",
     "year": 929,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Córdoba became an Andalusi capital supporting court culture, markets, and scholarship.",
     "parents": [
@@ -345,7 +345,7 @@
     "title": "Chang'an",
     "wiki": "Chang'an",
     "year": -202,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Chang'an served as an imperial capital and an important node of Eurasian exchange.",
     "parents": [
@@ -784,7 +784,7 @@
     "title": "Libraries",
     "wiki": "Library",
     "year": -2600,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Organized collections preserve texts and make them available to a defined community of readers.",
     "parents": [
@@ -800,7 +800,7 @@
     "title": "Library of Alexandria",
     "wiki": "Library of Alexandria",
     "year": -280,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "The Ptolemaic library assembled texts and supported scholarly work in Alexandria.",
     "parents": [
@@ -816,7 +816,7 @@
     "title": "House of Wisdom",
     "wiki": "House of Wisdom",
     "year": 830,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "The Abbasid House of Wisdom is remembered as a court library associated with Baghdad's intellectual life.",
     "parents": [
@@ -832,7 +832,7 @@
     "title": "Graeco-Arabic translation movement",
     "wiki": "Graeco-Arabic translation movement",
     "year": 750,
-    "domain": "culture",
+    "domain": "education",
     "kind": "practice",
     "summary": "Translators rendered Greek scholarly works into Arabic, often through Syriac intermediaries.",
     "parents": [
@@ -853,7 +853,7 @@
     "title": "Nalanda mahavihara",
     "wiki": "Nalanda mahavihara",
     "year": 427,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Nalanda supported a large Buddhist monastic community with teaching and manuscript scholarship.",
     "parents": [
@@ -869,7 +869,7 @@
     "title": "Madrasas",
     "wiki": "Madrasa",
     "year": 1000,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Dedicated Islamic teaching institutions supported study of law, religion, and other subjects.",
     "parents": [
@@ -891,7 +891,7 @@
     "title": "Corporate universities",
     "wiki": "University",
     "year": 1088,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Medieval European associations of teachers or students developed durable institutions for advanced study.",
     "parents": [
@@ -907,7 +907,7 @@
     "title": "Al-Qarawiyyin teaching institution",
     "wiki": "University of al-Qarawiyyin",
     "year": 859,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "A mosque foundation in Fez developed into an enduring center of religious education.",
     "parents": [
@@ -923,7 +923,7 @@
     "title": "Al-Azhar",
     "wiki": "Al-Azhar University",
     "year": 970,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Al-Azhar began as a Cairo mosque and developed a long-lived institution for Islamic scholarship.",
     "parents": [
@@ -939,7 +939,7 @@
     "title": "Sankoré scholarship",
     "wiki": "Sankoré Madrasah",
     "year": 1500,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Sankoré became a center of manuscript learning within Timbuktu's scholarly networks.",
     "parents": [
@@ -960,7 +960,7 @@
     "title": "Chinese imperial examinations",
     "wiki": "Imperial examination",
     "year": 605,
-    "domain": "society",
+    "domain": "education",
     "kind": "institution",
     "summary": "State examinations increasingly selected Chinese officials through assessed mastery of prescribed texts.",
     "parents": [
@@ -977,7 +977,7 @@
     "title": "Platonic Academy",
     "wiki": "Platonic Academy",
     "year": -387,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Plato's school provided a sustained community for philosophical discussion and study.",
     "parents": [
@@ -993,7 +993,7 @@
     "title": "Aristotle's Lyceum",
     "wiki": "Lyceum (classical)",
     "year": -335,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Aristotle's school organized teaching and collaborative inquiry in Athens.",
     "parents": [
@@ -1009,7 +1009,7 @@
     "title": "Cathedral schools",
     "wiki": "Cathedral school",
     "year": 500,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Schools associated with cathedrals trained clergy and supported broader traditions of learning.",
     "parents": [
@@ -1025,7 +1025,7 @@
     "title": "Scholasticism",
     "wiki": "Scholasticism",
     "year": 1100,
-    "domain": "culture",
+    "domain": "education",
     "kind": "practice",
     "summary": "Scholastic teaching used structured questions, arguments, and textual commentary to examine disputed claims.",
     "parents": [
@@ -1048,7 +1048,7 @@
     "title": "Compulsory schooling",
     "wiki": "Compulsory education",
     "year": 1763,
-    "domain": "society",
+    "domain": "education",
     "kind": "institution",
     "summary": "Legal schooling requirements expanded states' responsibility for children's formal education.",
     "parents": [
@@ -1064,7 +1064,7 @@
     "title": "Tax-supported public libraries",
     "wiki": "Public library",
     "year": 1850,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Publicly funded libraries broadened community access to circulating books and reference materials.",
     "parents": [
@@ -1085,7 +1085,7 @@
     "title": "Kindergarten",
     "wiki": "Kindergarten",
     "year": 1837,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Friedrich Fröbel organized early childhood education around guided play and activity.",
     "parents": []
@@ -1095,7 +1095,7 @@
     "title": "Montessori education",
     "wiki": "Montessori education",
     "year": 1907,
-    "domain": "culture",
+    "domain": "education",
     "kind": "practice",
     "summary": "Montessori education organized prepared learning environments around children's self-directed activity.",
     "parents": [
@@ -1111,7 +1111,7 @@
     "title": "Correspondence education",
     "wiki": "Distance education",
     "year": 1840,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Instruction by exchanged lessons allowed learners to study without attending a classroom.",
     "parents": [
@@ -1127,7 +1127,7 @@
     "title": "Braille literacy",
     "wiki": "Braille",
     "year": 1824,
-    "domain": "culture",
+    "domain": "education",
     "kind": "technology",
     "summary": "A compact system of raised dots enables reading and writing through touch.",
     "parents": [
@@ -1143,7 +1143,7 @@
     "title": "Institutional deaf education",
     "wiki": "Deaf education",
     "year": 1760,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Dedicated schools expanded organized education for deaf learners using visual communication.",
     "parents": [
@@ -1159,7 +1159,7 @@
     "title": "Mass literacy campaigns",
     "wiki": "Literacy",
     "year": 1870,
-    "domain": "society",
+    "domain": "education",
     "kind": "practice",
     "summary": "Large-scale schooling and adult instruction broadened the ability to read and write.",
     "parents": [
@@ -1180,7 +1180,7 @@
     "title": "Buddhism",
     "wiki": "Buddhism",
     "year": -500,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Buddhist traditions developed teachings and communities concerned with suffering and liberation.",
     "parents": [
@@ -1196,7 +1196,7 @@
     "title": "Vedic religious traditions",
     "wiki": "Hinduism",
     "year": -1500,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Vedic traditions contributed ritual, textual, and philosophical practices to later Hindu traditions.",
     "parents": [
@@ -1212,7 +1212,7 @@
     "title": "Judaism",
     "wiki": "Judaism",
     "year": -500,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Jewish traditions organized communal life around covenant, law, worship, and textual interpretation.",
     "parents": [
@@ -1228,7 +1228,7 @@
     "title": "Zoroastrianism",
     "wiki": "Zoroastrianism",
     "year": -1000,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Zoroastrian traditions developed teachings concerning ethical choice and the worship of Ahura Mazda.",
     "parents": [
@@ -1244,7 +1244,7 @@
     "title": "Jainism",
     "wiki": "Jainism",
     "year": -500,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Jain communities developed disciplines emphasizing nonviolence, restraint, and liberation.",
     "parents": [
@@ -1260,7 +1260,7 @@
     "title": "Confucian thought",
     "wiki": "Confucianism",
     "year": -500,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "practice",
     "summary": "Confucian traditions examine ethical conduct, learning, ritual, and responsible government.",
     "parents": [
@@ -1276,7 +1276,7 @@
     "title": "Daoist traditions",
     "wiki": "Taoism",
     "year": -400,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "practice",
     "summary": "Daoist traditions developed texts and practices concerned with the Dao and cultivation.",
     "parents": [
@@ -1292,7 +1292,7 @@
     "title": "Christianity",
     "wiki": "Christianity",
     "year": 30,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Christian communities developed worship, teachings, and institutions centered on Jesus of Nazareth.",
     "parents": [
@@ -1308,7 +1308,7 @@
     "title": "Islam",
     "wiki": "Islam",
     "year": 610,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Islamic communities developed religious and social traditions around Qur'anic revelation and prophetic teaching.",
     "parents": []
@@ -1318,7 +1318,7 @@
     "title": "Sikhism",
     "wiki": "Sikhism",
     "year": 1499,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Sikh traditions developed around the teachings of Guru Nanak and subsequent Sikh gurus.",
     "parents": [
@@ -1334,7 +1334,7 @@
     "title": "Buddhist monastic communities",
     "wiki": "Buddhist monasticism",
     "year": -500,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Buddhist monastic communities organized residential life, discipline, teaching, and textual transmission.",
     "parents": [
@@ -1350,7 +1350,7 @@
     "title": "Christian monasticism",
     "wiki": "Christian monasticism",
     "year": 300,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Christian monastic communities developed shared disciplines of prayer, work, and learning.",
     "parents": [
@@ -1366,7 +1366,7 @@
     "title": "Synagogues",
     "wiki": "Synagogue",
     "year": -300,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Synagogues provide communal places for Jewish worship, assembly, and study.",
     "parents": [
@@ -1382,7 +1382,7 @@
     "title": "Mosques",
     "wiki": "Mosque",
     "year": 622,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Mosques provide communal settings for Muslim prayer and often teaching and civic activity.",
     "parents": [
@@ -1398,7 +1398,7 @@
     "title": "Pilgrimage",
     "wiki": "Pilgrimage",
     "year": -2000,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "practice",
     "summary": "Journeys to sacred places connect religious observance with movement and exchange between communities.",
     "parents": [
@@ -1414,7 +1414,7 @@
     "title": "Waqf endowments",
     "wiki": "Waqf",
     "year": 700,
-    "domain": "society",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Islamic endowments dedicate assets or income to lasting religious and charitable purposes.",
     "parents": [
@@ -1430,7 +1430,7 @@
     "title": "Zakat",
     "wiki": "Zakat",
     "year": 622,
-    "domain": "society",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Zakat establishes a religious obligation to transfer a defined portion of wealth to specified recipients.",
     "parents": [
@@ -1446,7 +1446,7 @@
     "title": "Sabbath observance",
     "wiki": "Shabbat",
     "year": -500,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "practice",
     "summary": "A recurring day of rest structures Jewish communal time and religious observance.",
     "parents": [
@@ -1462,7 +1462,7 @@
     "title": "Vedic textual preservation",
     "wiki": "Vedas",
     "year": -1500,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "practice",
     "summary": "Vedic recitation traditions preserve extensive Sanskrit compositions through disciplined memorization.",
     "parents": [
@@ -1478,7 +1478,7 @@
     "title": "Talmudic compilation",
     "wiki": "Talmud",
     "year": 500,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "technology",
     "summary": "Talmudic compilations preserve rabbinic discussion of law, interpretation, and communal practice.",
     "parents": [
@@ -1495,7 +1495,7 @@
     "title": "Qur'anic compilation",
     "wiki": "Quran",
     "year": 650,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "technology",
     "summary": "Written Qur'anic collections established an enduring textual basis for Islamic recitation and interpretation.",
     "parents": [
@@ -1539,7 +1539,7 @@
     "title": "Protestant Reformation",
     "wiki": "Reformation",
     "year": 1517,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "practice",
     "summary": "Reform movements reconfigured Christian institutions through disputes over doctrine and church authority.",
     "parents": [
@@ -1560,7 +1560,7 @@
     "title": "Edict of Nantes",
     "wiki": "Edict of Nantes",
     "year": 1598,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The French edict granted defined protections to Huguenots while retaining Catholic predominance.",
     "parents": [
@@ -1576,7 +1576,7 @@
     "title": "Organized logistics",
     "wiki": "Logistics",
     "year": -2500,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "practice",
     "summary": "Coordinated provisioning organizes storage, supplies, personnel, and movement for sustained collective activity.",
     "parents": [
@@ -1597,7 +1597,7 @@
     "title": "Postal services",
     "wiki": "Mail",
     "year": -550,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Organized messenger systems deliver communications across managed routes.",
     "parents": [
@@ -1613,7 +1613,7 @@
     "title": "Achaemenid courier relays",
     "wiki": "Angarium",
     "year": -500,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Achaemenid relay messengers linked imperial centers through organized stations and personnel.",
     "parents": [
@@ -1634,7 +1634,7 @@
     "title": "Roman cursus publicus",
     "wiki": "Cursus publicus",
     "year": -20,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Rome's state transport service organized official messengers and authorized travel through stations.",
     "parents": [
@@ -1651,7 +1651,7 @@
     "title": "Mongol yam",
     "wiki": "Yam (route)",
     "year": 1234,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "The Mongol yam coordinated relay stations, supplies, and mounts for imperial messengers.",
     "parents": [
@@ -1667,7 +1667,7 @@
     "title": "Inca chasqui relays",
     "wiki": "Chasqui",
     "year": 1438,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Inca runners relayed oral messages, quipus, and small consignments between stations.",
     "parents": [
@@ -1688,7 +1688,7 @@
     "title": "Thurn and Taxis postal network",
     "wiki": "Thurn-und-Taxis Post",
     "year": 1490,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "A contracted relay network developed into a major European postal service.",
     "parents": [
@@ -1704,7 +1704,7 @@
     "title": "Universal Postal Union",
     "wiki": "Universal Postal Union",
     "year": 1874,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "The postal union coordinated international mail exchange under common rules.",
     "parents": [
@@ -1720,7 +1720,7 @@
     "title": "Silk Road exchange networks",
     "wiki": "Silk Road",
     "year": -130,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "practice",
     "summary": "Interlinked Eurasian routes carried goods, travelers, beliefs, and knowledge between regions.",
     "parents": [
@@ -1736,7 +1736,7 @@
     "title": "Indian Ocean trade",
     "wiki": "Indian Ocean trade",
     "year": -2000,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "practice",
     "summary": "Maritime exchange connected ports across the Indian Ocean through recurring commercial networks.",
     "parents": [
@@ -1752,7 +1752,7 @@
     "title": "Trans-Saharan trade",
     "wiki": "Trans-Saharan trade",
     "year": 700,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "practice",
     "summary": "Caravan networks linked Saharan and sub-Saharan markets in commodities including salt and gold.",
     "parents": [
@@ -1768,7 +1768,7 @@
     "title": "Swahili coastal trading towns",
     "wiki": "Swahili coast",
     "year": 1000,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "East African coastal towns linked inland exchange with Indian Ocean commercial networks.",
     "parents": [
@@ -1784,7 +1784,7 @@
     "title": "Caravanserai lodging networks",
     "wiki": "Caravanserai",
     "year": 1000,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Roadside lodging institutions offered merchants shelter, storage, and services along trading routes.",
     "parents": [
@@ -1805,7 +1805,7 @@
     "title": "Hanseatic League",
     "wiki": "Hanseatic League",
     "year": 1356,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Northern European trading towns coordinated privileges, protection, and commercial representation.",
     "parents": [
@@ -1821,7 +1821,7 @@
     "title": "Guilds",
     "wiki": "Guild",
     "year": 1000,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Occupational associations coordinated training, standards, mutual aid, and access to trades.",
     "parents": [
@@ -1837,7 +1837,7 @@
     "title": "Apprenticeship",
     "wiki": "Apprenticeship",
     "year": 1100,
-    "domain": "society",
+    "domain": "education",
     "kind": "institution",
     "summary": "Structured work-based training transmits specialized skills through extended supervised practice.",
     "parents": [
@@ -1853,7 +1853,7 @@
     "title": "Money",
     "wiki": "Money",
     "year": -3000,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Accepted units and media facilitate payment, valuation, and the settlement of obligations.",
     "parents": [
@@ -1869,7 +1869,7 @@
     "title": "Coinage",
     "wiki": "Coin",
     "year": -600,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Stamped currency made issuing authorities and denominations recognizable in portable payments.",
     "parents": [
@@ -1885,7 +1885,7 @@
     "title": "Paper money",
     "wiki": "Banknote",
     "year": 1023,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Authorized paper claims circulated as payment instruments, including Song-era Chinese jiaozi.",
     "parents": [
@@ -1906,7 +1906,7 @@
     "title": "Banking",
     "wiki": "History of banking",
     "year": -1800,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Deposit taking and lending institutions organize custody, credit, and financial obligations.",
     "parents": [
@@ -1927,7 +1927,7 @@
     "title": "Bills of exchange",
     "wiki": "Bill of exchange",
     "year": 1200,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "technology",
     "summary": "Written payment orders let merchants settle obligations across places and currencies.",
     "parents": [
@@ -1943,7 +1943,7 @@
     "title": "Double-entry bookkeeping",
     "wiki": "Double-entry bookkeeping",
     "year": 1340,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "technology",
     "summary": "Paired debit and credit entries represent transactions within an interconnected accounting system.",
     "parents": [
@@ -1960,7 +1960,7 @@
     "title": "Risk-sharing contracts",
     "wiki": "Insurance",
     "year": -1750,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Agreements allocate specified financial risks among contracting parties.",
     "parents": [
@@ -1981,7 +1981,7 @@
     "title": "Marine insurance",
     "wiki": "Marine insurance",
     "year": 1347,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Separate insurance contracts allocated the financial risks of sea voyages and cargo loss.",
     "parents": [
@@ -2003,7 +2003,7 @@
     "title": "Joint-stock companies",
     "wiki": "Joint-stock company",
     "year": 1602,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Shares pooled investment while distributing ownership across multiple investors.",
     "parents": [
@@ -2024,7 +2024,7 @@
     "title": "Stock exchanges",
     "wiki": "Stock exchange",
     "year": 1602,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Organized markets support the purchase and sale of transferable securities.",
     "parents": [
@@ -2040,7 +2040,7 @@
     "title": "Central banking",
     "wiki": "Central bank",
     "year": 1668,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Specialized monetary institutions developed responsibilities for public finance, currency, and banking stability.",
     "parents": [
@@ -2056,7 +2056,7 @@
     "title": "Bank of England",
     "wiki": "Bank of England",
     "year": 1694,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "The Bank of England linked subscribed capital and banking operations with lending to government.",
     "parents": [
@@ -2077,7 +2077,7 @@
     "title": "Credit unions",
     "wiki": "Credit union",
     "year": 1852,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Member-owned financial cooperatives pool savings and provide credit to their members.",
     "parents": [
@@ -2098,7 +2098,7 @@
     "title": "Consumer cooperatives",
     "wiki": "Cooperative",
     "year": 1844,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Member-owned enterprises organize economic activity through shared governance and benefits.",
     "parents": [
@@ -2114,7 +2114,7 @@
     "title": "Fair trade organizations",
     "wiki": "Fair trade",
     "year": 1946,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Fair trade organizations seek trading terms and producer arrangements that address unequal market power.",
     "parents": [
@@ -2130,7 +2130,7 @@
     "title": "Microfinance programs",
     "wiki": "Microfinance",
     "year": 1976,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Small-scale credit and other financial services target people poorly served by conventional banking.",
     "parents": [
@@ -2146,7 +2146,7 @@
     "title": "Hawala transfers",
     "wiki": "Hawala",
     "year": 800,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Trusted intermediaries transfer value by balancing obligations without transporting each payment physically.",
     "parents": [
@@ -2162,7 +2162,7 @@
     "title": "Hundi instruments",
     "wiki": "Hundi",
     "year": 1200,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "technology",
     "summary": "South Asian written instruments facilitated credit, remittance, and commercial payments.",
     "parents": [
@@ -2183,7 +2183,7 @@
     "title": "Commenda partnerships",
     "wiki": "Commenda",
     "year": 1000,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Trading partnerships divided capital provision, voyage management, and returns between participants.",
     "parents": [
@@ -2199,7 +2199,7 @@
     "title": "Susu savings associations",
     "wiki": "Susu (informal loan club)",
     "year": 1800,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Rotating savings arrangements pool members' contributions and distribute funds in turns.",
     "parents": [
@@ -2215,7 +2215,7 @@
     "title": "Chambers of commerce",
     "wiki": "Chamber of commerce",
     "year": 1599,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Commercial associations represent businesses and coordinate local economic interests.",
     "parents": [
@@ -2231,7 +2231,7 @@
     "title": "Law merchant",
     "wiki": "Lex mercatoria",
     "year": 1100,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Mercantile customs and forums developed rules for commercial dealings across local jurisdictions.",
     "parents": [
@@ -2247,7 +2247,7 @@
     "title": "Standardized weights and measures",
     "wiki": "Weights and measures",
     "year": -2500,
-    "domain": "society",
+    "domain": "measurement",
     "kind": "institution",
     "summary": "Shared measurement conventions let administrators and traders compare quantities consistently.",
     "parents": [
@@ -2263,7 +2263,7 @@
     "title": "Metric system",
     "wiki": "Metric system",
     "year": 1795,
-    "domain": "society",
+    "domain": "measurement",
     "kind": "institution",
     "summary": "A decimal system of units established common conventions for measurement and calculation.",
     "parents": [
@@ -2279,7 +2279,7 @@
     "title": "Metre Convention",
     "wiki": "Metre Convention",
     "year": 1875,
-    "domain": "society",
+    "domain": "measurement",
     "kind": "institution",
     "summary": "An international treaty established cooperation for maintaining shared metric measurement standards.",
     "parents": [
@@ -2295,7 +2295,7 @@
     "title": "International Bureau of Weights and Measures",
     "wiki": "International Bureau of Weights and Measures",
     "year": 1875,
-    "domain": "society",
+    "domain": "measurement",
     "kind": "institution",
     "summary": "The BIPM provides a permanent intergovernmental organization for coordinating measurement standards.",
     "parents": [
@@ -2311,7 +2311,7 @@
     "title": "International System of Units",
     "wiki": "International System of Units",
     "year": 1960,
-    "domain": "society",
+    "domain": "measurement",
     "kind": "institution",
     "summary": "International agreement organized a coherent set of measurement units and rules for their use.",
     "parents": [
@@ -2334,7 +2334,7 @@
     "title": "International Organization for Standardization",
     "wiki": "International Organization for Standardization",
     "year": 1947,
-    "domain": "society",
+    "domain": "measurement",
     "kind": "institution",
     "summary": "National standards bodies formed an international organization for developing common technical standards.",
     "parents": [
@@ -2350,7 +2350,7 @@
     "title": "World Trade Organization",
     "wiki": "World Trade Organization",
     "year": 1995,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "The WTO established a standing framework for trade agreements, negotiations, and dispute settlement.",
     "parents": [
@@ -2366,7 +2366,7 @@
     "title": "General Agreement on Tariffs and Trade",
     "wiki": "General Agreement on Tariffs and Trade",
     "year": 1947,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Participating governments agreed rules and negotiations intended to reduce trade barriers.",
     "parents": [
@@ -2382,7 +2382,7 @@
     "title": "Zollverein customs union",
     "wiki": "Zollverein",
     "year": 1834,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "German states coordinated customs rules and removed many internal trade barriers.",
     "parents": [
@@ -2398,7 +2398,7 @@
     "title": "Port of London Authority",
     "wiki": "Port of London Authority",
     "year": 1909,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "A public authority coordinated London's port management and navigation responsibilities.",
     "parents": [
@@ -2414,7 +2414,7 @@
     "title": "Warehouse administration",
     "wiki": "Warehouse",
     "year": -2500,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Managed storage facilities organize custody, inventories, and release of goods.",
     "parents": [
@@ -2430,7 +2430,7 @@
     "title": "Censuses",
     "wiki": "Census",
     "year": -1800,
-    "domain": "society",
+    "domain": "governance",
     "kind": "practice",
     "summary": "Population enumerations supply administrators with structured information about households and obligations.",
     "parents": [
@@ -2446,7 +2446,7 @@
     "title": "Taxation",
     "wiki": "Tax",
     "year": -3000,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Compulsory contributions support governing institutions and collective expenditures.",
     "parents": [
@@ -2462,7 +2462,7 @@
     "title": "Code of Ur-Nammu",
     "wiki": "Code of Ur-Nammu",
     "year": -2100,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A surviving Sumerian law collection recorded offenses and prescribed penalties.",
     "parents": [
@@ -2478,7 +2478,7 @@
     "title": "Code of Hammurabi",
     "wiki": "Code of Hammurabi",
     "year": -1754,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Hammurabi's inscribed law collection presented judgments and royal claims about justice.",
     "parents": [
@@ -2494,7 +2494,7 @@
     "title": "Twelve Tables",
     "wiki": "Twelve Tables",
     "year": -450,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Rome's published legal provisions made important customary rules publicly consultable.",
     "parents": [
@@ -2510,7 +2510,7 @@
     "title": "Roman jurisprudence",
     "wiki": "Roman law",
     "year": -450,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Roman legal practice developed categories, procedures, and juristic interpretation used across a large empire.",
     "parents": [
@@ -2526,7 +2526,7 @@
     "title": "Justinian's legal compilation",
     "wiki": "Corpus Juris Civilis",
     "year": 529,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Imperial compilers organized Roman enactments and juristic writings into a major legal corpus.",
     "parents": [
@@ -2542,7 +2542,7 @@
     "title": "Islamic jurisprudence",
     "wiki": "Sharia",
     "year": 750,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Islamic jurists developed methods for interpreting religious sources into legal and ethical rules.",
     "parents": [
@@ -2558,7 +2558,7 @@
     "title": "Gratian's canon-law compilation",
     "wiki": "Decretum Gratiani",
     "year": 1140,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Gratian organized and reconciled Christian legal authorities into a foundational teaching compilation.",
     "parents": [
@@ -2580,7 +2580,7 @@
     "title": "English common law",
     "wiki": "Common law",
     "year": 1154,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Royal courts developed shared procedures and legal traditions across England.",
     "parents": [
@@ -2596,7 +2596,7 @@
     "title": "Magna Carta",
     "wiki": "Magna Carta",
     "year": 1215,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "An English royal charter recorded negotiated constraints and protections amid a political dispute.",
     "parents": [
@@ -2612,7 +2612,7 @@
     "title": "English representative parliament",
     "wiki": "Parliament of England",
     "year": 1265,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Representatives of counties and towns joined assemblies participating in English political deliberation.",
     "parents": [
@@ -2628,7 +2628,7 @@
     "title": "Althing",
     "wiki": "Althing",
     "year": 930,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Iceland's assembly coordinated lawmaking and dispute resolution among participating communities.",
     "parents": [
@@ -2644,7 +2644,7 @@
     "title": "Athenian democracy",
     "wiki": "Athenian democracy",
     "year": -508,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Athens developed direct citizen participation in assemblies and offices while excluding much of its population.",
     "parents": [
@@ -2660,7 +2660,7 @@
     "title": "Roman Republic",
     "wiki": "Roman Republic",
     "year": -509,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Roman republican institutions distributed authority among magistrates, councils, and citizen assemblies.",
     "parents": [
@@ -2676,7 +2676,7 @@
     "title": "Edicts of Ashoka",
     "wiki": "Edicts of Ashoka",
     "year": -250,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Ashokan inscriptions publicly communicated policies, ethical expectations, and royal concerns across regions.",
     "parents": [
@@ -2697,7 +2697,7 @@
     "title": "Haudenosaunee Great Law of Peace",
     "wiki": "Great Law of Peace",
     "year": 1450,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The Haudenosaunee constitutional tradition coordinates a confederacy through council roles and shared peace obligations.",
     "parents": [
@@ -2729,7 +2729,7 @@
     "title": "Satyagraha",
     "wiki": "Satyagraha",
     "year": 1906,
-    "domain": "society",
+    "domain": "governance",
     "kind": "practice",
     "summary": "Gandhi organized nonviolent resistance around disciplined action and commitment to truth.",
     "parents": [
@@ -2745,7 +2745,7 @@
     "title": "Gadaa governance",
     "wiki": "Gadaa",
     "year": 1500,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Oromo Gadaa institutions rotate leadership through generation-based groups and regulate communal responsibilities.",
     "parents": [
@@ -2761,7 +2761,7 @@
     "title": "Village panchayats",
     "wiki": "Panchayat",
     "year": 500,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Village councils in South Asia organize local deliberation and dispute resolution in varied historical forms.",
     "parents": [
@@ -2777,7 +2777,7 @@
     "title": "Kurultai assemblies",
     "wiki": "Kurultai",
     "year": 1206,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Mongol and Turkic assemblies convened leaders to decide major political and military matters.",
     "parents": [
@@ -2793,7 +2793,7 @@
     "title": "Inca mit'a administration",
     "wiki": "Mit'a",
     "year": 1438,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The Inca state organized rotating labor obligations for public works and state services.",
     "parents": [
@@ -2814,7 +2814,7 @@
     "title": "Andean ayllu communities",
     "wiki": "Ayllu",
     "year": 1000,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Andean kin-based communities coordinate land use, mutual obligations, and collective identity.",
     "parents": [
@@ -2830,7 +2830,7 @@
     "title": "Scandinavian thing assemblies",
     "wiki": "Thing (assembly)",
     "year": 800,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Local and regional assemblies convened participants for legal judgments and collective decisions.",
     "parents": [
@@ -2846,7 +2846,7 @@
     "title": "Municipal charters",
     "wiki": "Municipal charter",
     "year": 1100,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Written grants defined local privileges, obligations, and powers of self-government.",
     "parents": [
@@ -2867,7 +2867,7 @@
     "title": "Magdeburg rights",
     "wiki": "Magdeburg rights",
     "year": 1188,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A family of municipal laws spread rules for urban self-government across central and eastern Europe.",
     "parents": [
@@ -2883,7 +2883,7 @@
     "title": "Habeas Corpus Act",
     "wiki": "Habeas Corpus Act 1679",
     "year": 1679,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The English act strengthened procedures requiring legal scrutiny of detention.",
     "parents": [
@@ -2899,7 +2899,7 @@
     "title": "English Bill of Rights",
     "wiki": "Bill of Rights 1689",
     "year": 1689,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The English settlement set limits on royal powers and affirmed specified parliamentary rights.",
     "parents": [
@@ -2915,7 +2915,7 @@
     "title": "United States Constitution",
     "wiki": "Constitution of the United States",
     "year": 1787,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A written federal constitution distributed powers among institutions and between national and state governments.",
     "parents": [
@@ -2931,7 +2931,7 @@
     "title": "Declaration of the Rights of Man and of the Citizen",
     "wiki": "Declaration of the Rights of Man and of the Citizen",
     "year": 1789,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The French declaration articulated civil rights and principles of political legitimacy.",
     "parents": [
@@ -2947,7 +2947,7 @@
     "title": "Haitian independence",
     "wiki": "Haitian Declaration of Independence",
     "year": 1804,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Haiti's declaration established independence after a revolution that defeated colonial rule and slavery.",
     "parents": [
@@ -2963,7 +2963,7 @@
     "title": "Abolition of the British slave trade",
     "wiki": "Slave Trade Act 1807",
     "year": 1807,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "British legislation prohibited participation in the transatlantic slave trade under British jurisdiction.",
     "parents": [
@@ -2979,7 +2979,7 @@
     "title": "British Slavery Abolition Act",
     "wiki": "Slavery Abolition Act 1833",
     "year": 1833,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The act initiated abolition of slavery in much of the British Empire through a deeply unequal transition.",
     "parents": [
@@ -2995,7 +2995,7 @@
     "title": "New Zealand women's suffrage",
     "wiki": "Women's suffrage in New Zealand",
     "year": 1893,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "New Zealand extended parliamentary voting rights to women after organized campaigning.",
     "parents": [
@@ -3011,7 +3011,7 @@
     "title": "Finland's inclusive parliamentary franchise",
     "wiki": "Parliament of Finland",
     "year": 1906,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Finland's parliamentary reform extended voting and candidacy rights to women as well as men.",
     "parents": [
@@ -3075,7 +3075,7 @@
     "title": "International Labour Organization",
     "wiki": "International Labour Organization",
     "year": 1919,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "An international institution brings governments, employers, and workers into labor-standard negotiations.",
     "parents": [
@@ -3091,7 +3091,7 @@
     "title": "Peace of Westphalia",
     "wiki": "Peace of Westphalia",
     "year": 1648,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Negotiated treaties ended major European conflicts and revised political and religious arrangements.",
     "parents": [
@@ -3107,7 +3107,7 @@
     "title": "Congress of Vienna",
     "wiki": "Congress of Vienna",
     "year": 1815,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Diplomatic negotiations reorganized European territorial and political arrangements after the Napoleonic wars.",
     "parents": [
@@ -3139,7 +3139,7 @@
     "title": "Geneva humanitarian conventions",
     "wiki": "Geneva Conventions",
     "year": 1864,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Treaties established protections for specified people and services affected by armed conflict.",
     "parents": [
@@ -3155,7 +3155,7 @@
     "title": "Hague Conventions",
     "wiki": "Hague Conventions of 1899 and 1907",
     "year": 1899,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "International conferences codified aspects of warfare and promoted peaceful dispute procedures.",
     "parents": [
@@ -3171,7 +3171,7 @@
     "title": "League of Nations",
     "wiki": "League of Nations",
     "year": 1920,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The League created a permanent international organization for collective security and cooperation.",
     "parents": [
@@ -3187,7 +3187,7 @@
     "title": "United Nations",
     "wiki": "United Nations",
     "year": 1945,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The UN established a standing international framework for peace, security, and cooperation.",
     "parents": [
@@ -3203,7 +3203,7 @@
     "title": "Universal Declaration of Human Rights",
     "wiki": "Universal Declaration of Human Rights",
     "year": 1948,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The declaration articulated common civil, political, social, and economic rights.",
     "parents": [
@@ -3224,7 +3224,7 @@
     "title": "Genocide Convention",
     "wiki": "Genocide Convention",
     "year": 1948,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "An international treaty defined genocide and committed parties to prevention and punishment.",
     "parents": [
@@ -3240,7 +3240,7 @@
     "title": "European Convention on Human Rights",
     "wiki": "European Convention on Human Rights",
     "year": 1950,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A regional treaty established enforceable human-rights commitments and a judicial mechanism.",
     "parents": [
@@ -3256,7 +3256,7 @@
     "title": "Anti-Apartheid Movement",
     "wiki": "Anti-Apartheid Movement",
     "year": 1959,
-    "domain": "society",
+    "domain": "governance",
     "kind": "practice",
     "summary": "The British Anti-Apartheid Movement organized international boycotts and pressure against apartheid in South Africa.",
     "parents": [
@@ -3277,7 +3277,7 @@
     "title": "Constitution of India",
     "wiki": "Constitution of India",
     "year": 1950,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "India's constitution established democratic institutions, fundamental rights, and a framework for public authority.",
     "parents": [
@@ -3293,7 +3293,7 @@
     "title": "Slavery Convention",
     "wiki": "1926 Slavery Convention",
     "year": 1926,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "An international agreement committed parties to suppress slavery and the slave trade.",
     "parents": [
@@ -3314,7 +3314,7 @@
     "title": "UNESCO",
     "wiki": "UNESCO",
     "year": 1945,
-    "domain": "society",
+    "domain": "education",
     "kind": "institution",
     "summary": "An international organization coordinates cooperation in education, science, culture, and communication.",
     "parents": [
@@ -3330,7 +3330,7 @@
     "title": "World Heritage Convention",
     "wiki": "World Heritage Convention",
     "year": 1972,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A treaty established cooperation for identifying and protecting cultural and natural heritage.",
     "parents": [
@@ -3346,7 +3346,7 @@
     "title": "Intangible Cultural Heritage Convention",
     "wiki": "Convention for the Safeguarding of the Intangible Cultural Heritage",
     "year": 2003,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The convention organized international support for safeguarding living cultural traditions and practices.",
     "parents": [
@@ -3369,7 +3369,7 @@
     "title": "Nuclear Non-Proliferation Treaty",
     "wiki": "Treaty on the Non-Proliferation of Nuclear Weapons",
     "year": 1968,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A treaty established commitments concerning nuclear weapons proliferation, peaceful use, and disarmament.",
     "parents": [
@@ -3385,7 +3385,7 @@
     "title": "Antarctic Treaty",
     "wiki": "Antarctic Treaty System",
     "year": 1959,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The Antarctic treaty reserved the region for peaceful activities and scientific cooperation.",
     "parents": [
@@ -3401,7 +3401,7 @@
     "title": "Outer Space Treaty",
     "wiki": "Outer Space Treaty",
     "year": 1967,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A treaty established principles governing states' exploration and use of outer space.",
     "parents": [
@@ -3417,7 +3417,7 @@
     "title": "Montreal Protocol",
     "wiki": "Montreal Protocol",
     "year": 1987,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "An international agreement coordinated controls on substances that damage the ozone layer.",
     "parents": [
@@ -3434,7 +3434,7 @@
     "title": "Paris Agreement",
     "wiki": "Paris Agreement",
     "year": 2015,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The climate agreement organized national commitments and recurring international review of mitigation efforts.",
     "parents": [
@@ -3451,7 +3451,7 @@
     "title": "Ramsar Convention",
     "wiki": "Ramsar Convention",
     "year": 1971,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The wetlands treaty coordinated conservation and responsible use of internationally significant wetlands.",
     "parents": [
@@ -3467,7 +3467,7 @@
     "title": "CITES",
     "wiki": "CITES",
     "year": 1973,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A treaty regulates international trade in listed wildlife species through permit systems.",
     "parents": [
@@ -3483,7 +3483,7 @@
     "title": "Bretton Woods institutions",
     "wiki": "Bretton Woods Conference",
     "year": 1944,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "International negotiations established frameworks for monetary cooperation and reconstruction finance.",
     "parents": [
@@ -3499,7 +3499,7 @@
     "title": "European Economic Community",
     "wiki": "European Economic Community",
     "year": 1957,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "European states established institutions for a common market and coordinated economic policies.",
     "parents": [
@@ -3515,7 +3515,7 @@
     "title": "ASEAN",
     "wiki": "ASEAN",
     "year": 1967,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Southeast Asian states created a regional organization for political and economic cooperation.",
     "parents": [
@@ -3531,7 +3531,7 @@
     "title": "Organization of African Unity",
     "wiki": "Organisation of African Unity",
     "year": 1963,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "African states formed a continental organization supporting cooperation, sovereignty, and decolonization.",
     "parents": [
@@ -3547,7 +3547,7 @@
     "title": "African Union",
     "wiki": "African Union",
     "year": 2002,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The African Union established expanded continental institutions for cooperation, peace, and development.",
     "parents": [
@@ -3563,7 +3563,7 @@
     "title": "Pacific Islands Forum",
     "wiki": "Pacific Islands Forum",
     "year": 1971,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Pacific governments established a regional forum for shared political and economic concerns.",
     "parents": []
@@ -3573,7 +3573,7 @@
     "title": "South African Truth and Reconciliation Commission",
     "wiki": "Truth and Reconciliation Commission (South Africa)",
     "year": 1995,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A public commission investigated apartheid-era abuses through testimony and specified reconciliation procedures.",
     "parents": [
@@ -3589,7 +3589,7 @@
     "title": "Restorative justice programs",
     "wiki": "Restorative justice",
     "year": 1974,
-    "domain": "society",
+    "domain": "governance",
     "kind": "practice",
     "summary": "Structured processes bring affected parties into addressing harm, responsibility, and possible repair.",
     "parents": [
@@ -3605,7 +3605,7 @@
     "title": "Statutory copyright",
     "wiki": "Statute of Anne",
     "year": 1710,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The British statute established time-limited legal rights over the printing of books.",
     "parents": [
@@ -3621,7 +3621,7 @@
     "title": "Berne Convention",
     "wiki": "Berne Convention",
     "year": 1886,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "An international convention coordinated protection for authors' literary and artistic works.",
     "parents": [
@@ -4144,7 +4144,7 @@
     "title": "Public museums",
     "wiki": "Museum",
     "year": 1683,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Museums preserve collections and make selected objects accessible for public study and interpretation.",
     "parents": [

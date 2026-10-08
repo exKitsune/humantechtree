@@ -1,0 +1,734 @@
+[
+  {
+    "id": "composite-bow",
+    "title": "Composite bow",
+    "wiki": "Composite bow",
+    "year": -2000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Laminated wood, horn, and sinew made compact bows suited to mounted archery.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Woodworking shaped the composite bow's wooden core and joined pieces into its curved form.",
+        "directContribution": "Woodworking shaped the wood core and joined the laminated bow; animal horn and sinew supplied separate mechanical properties.",
+        "source": "https://en.wikipedia.org/wiki/Composite_bow"
+      }
+    ]
+  },
+  {
+    "id": "longbow",
+    "title": "Longbow",
+    "wiki": "Longbow",
+    "year": -3300,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Tall self bows stored energy along a long stave for hunting and warfare.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Woodworking shaped the long, gradually bending stave used by a self bow.",
+        "directContribution": "Woodworking formed the long flexible stave itself; the wider bow-and-arrow system separately names the type of launcher and projectile.",
+        "source": "https://en.wikipedia.org/wiki/Longbow"
+      }
+    ]
+  },
+  {
+    "id": "sling-weapon",
+    "title": "Sling weapon",
+    "wiki": "Sling (weapon)",
+    "year": -2000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Two-cord slings extended the distance at which people could throw stones and shaped projectiles.",
+    "parents": [
+      {
+        "id": "weaving",
+        "type": "enabler",
+        "reason": "Plant-fiber cordage and woven pouches supplied the flexible cradle used to launch sling projectiles.",
+        "source": "https://en.wikipedia.org/wiki/Sling_(weapon)"
+      }
+    ]
+  },
+  {
+    "id": "crossbow",
+    "title": "Crossbow",
+    "wiki": "Crossbow",
+    "year": -500,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "A trigger-held bow mounted on a stock let a shooter aim after spanning the string.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Woodworking supplied the tiller that mounted the bow and carried its trigger mechanism.",
+        "source": "https://en.wikipedia.org/wiki/Crossbow",
+        "directContribution": "Woodworking made the tiller and stock, while cast bronze separately supplied working components in early Chinese trigger assemblies."
+      },
+      {
+        "id": "bronze",
+        "type": "enabler",
+        "reason": "Cast bronze components formed the Chinese crossbow trigger assembly that retained and released the drawn string.",
+        "directContribution": "Bronze supplied the working trigger pieces in early Chinese crossbows; shaping the wooden tiller was a separate structural contribution.",
+        "source": "https://en.wikipedia.org/wiki/Crossbow"
+      }
+    ]
+  },
+  {
+    "id": "mounted-archery",
+    "title": "Mounted archery",
+    "wiki": "Horse archer",
+    "year": -700,
+    "domain": "warfare",
+    "kind": "practice",
+    "summary": "Mounted archers combined mobility with shooting bows from horseback.",
+    "parents": [
+      {
+        "id": "horse-domestication",
+        "type": "foundation",
+        "reason": "Domesticated horses provided the mounts from which mobile archers fought.",
+        "source": "https://en.wikipedia.org/wiki/Composite_bow"
+      },
+      {
+        "id": "composite-bow",
+        "type": "enabler",
+        "reason": "Compact composite bows enabled effective archery from horseback across steppe warfare traditions.",
+        "directContribution": "The Scythian-style composite bow was specifically suited to mounted archery; domesticated horses independently supplied the mobile platform.",
+        "source": "https://en.wikipedia.org/wiki/Composite_bow"
+      }
+    ]
+  },
+  {
+    "id": "catapult",
+    "title": "Mechanical catapult",
+    "wiki": "Catapult",
+    "year": -399,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "Mechanical siege engines stored energy to launch projectiles beyond hand-thrown range.",
+    "parents": []
+  },
+  {
+    "id": "counterweight-trebuchet",
+    "title": "Counterweight trebuchet",
+    "wiki": "Trebuchet",
+    "year": 1100,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "A falling counterweight swung a throwing arm to launch heavy siege projectiles.",
+    "parents": []
+  },
+  {
+    "id": "chain-mail",
+    "title": "Mail armor",
+    "wiki": "Chain mail",
+    "year": -300,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "Interlinked iron or steel rings formed flexible protective clothing for soldiers.",
+    "parents": [
+      {
+        "id": "iron-smelting",
+        "type": "foundation",
+        "reason": "Smelted iron supplied the metal worked into the linked rings of early mail armor.",
+        "source": "https://en.wikipedia.org/wiki/Chain_mail"
+      }
+    ]
+  },
+  {
+    "id": "plate-armor",
+    "title": "Full plate armor",
+    "wiki": "Plate armour",
+    "year": 1400,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "Articulated metal plates covered most of a wearer's body while allowing movement.",
+    "parents": [
+      {
+        "id": "steel",
+        "type": "foundation",
+        "reason": "Iron-carbon steel supplied the plates used in late medieval full suits of armor.",
+        "source": "https://en.wikipedia.org/wiki/Plate_armour"
+      },
+      {
+        "id": "chain-mail",
+        "type": "influence",
+        "reason": "Full plate suits developed from transitional armor worn over mail, retaining mail in joints and gaps.",
+        "source": "https://en.wikipedia.org/wiki/Plate_armour"
+      }
+    ]
+  },
+  {
+    "id": "european-cannon",
+    "title": "European cannon",
+    "wiki": "Gunpowder artillery in the Middle Ages",
+    "year": 1346,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "European armies used primitive cannons at the Battle of Crécy in 1346 as gunpowder artillery entered battlefield warfare.",
+    "parents": [
+      {
+        "id": "gunpowder",
+        "type": "foundation",
+        "reason": "Gunpowder supplied the propellant used by European cannons in battlefield service.",
+        "source": "https://en.wikipedia.org/wiki/Gunpowder_artillery_in_the_Middle_Ages"
+      }
+    ]
+  },
+  {
+    "id": "hand-cannon",
+    "title": "Hand cannon",
+    "wiki": "Hand cannon",
+    "year": 1288,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "Portable metal-barrel firearms extended gunpowder weapons to individual soldiers.",
+    "parents": [
+      {
+        "id": "gunpowder",
+        "type": "foundation",
+        "reason": "Gunpowder supplied the propellant that made early metal-barrel hand firearms possible.",
+        "source": "https://en.wikipedia.org/wiki/Hand_cannon"
+      }
+    ]
+  },
+  {
+    "id": "matchlock-firearm",
+    "title": "Matchlock firearm",
+    "wiki": "Matchlock",
+    "year": 1411,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "A trigger-linked holder brought a smoldering match to a firearm's priming charge.",
+    "parents": [
+      {
+        "id": "hand-cannon",
+        "type": "influence",
+        "reason": "Matchlocks added a trigger-operated ignition mechanism to the earlier hand cannon.",
+        "source": "https://en.wikipedia.org/wiki/Matchlock"
+      }
+    ]
+  },
+  {
+    "id": "rifling",
+    "title": "Firearm barrel rifling",
+    "wiki": "Rifling",
+    "year": 1498,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "Spiral grooves in a firearm barrel stabilized projectiles and improved accuracy.",
+    "parents": []
+  },
+  {
+    "id": "flintlock-firearm",
+    "title": "Flintlock firearm",
+    "wiki": "Flintlock",
+    "year": 1610,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "A flint-striking lock replaced the continuously burning match as a firearm's ignition source.",
+    "parents": []
+  },
+  {
+    "id": "breechloader",
+    "title": "Breech-loading firearm",
+    "wiki": "Breechloader",
+    "year": 1300,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "Loading a firearm from the rear of its barrel reduced the time and space required to reload.",
+    "parents": []
+  },
+  {
+    "id": "percussion-cap",
+    "title": "Percussion-cap ignition",
+    "wiki": "Percussion cap",
+    "year": 1822,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "A struck percussion cap gave muzzle-loading firearms a compact, weather-resistant ignition source.",
+    "parents": []
+  },
+  {
+    "id": "firearm-cartridge",
+    "title": "Self-contained firearm cartridge",
+    "wiki": "Cartridge (firearms)",
+    "year": 1808,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "Pauly and Prelat developed an integrated cartridge in 1808, combining the ammunition into a unit loaded through a firearm breech.",
+    "parents": [
+      {
+        "id": "breechloader",
+        "type": "enabler",
+        "reason": "Pauly designed the integrated cartridge for loading through the rear chamber of a breech-loading firearm.",
+        "source": "https://en.wikipedia.org/wiki/Cartridge_(firearms)"
+      }
+    ]
+  },
+  {
+    "id": "repeating-firearm",
+    "title": "Cartridge-fed repeating rifles",
+    "wiki": "Repeating firearm",
+    "year": 1860,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "Metallic-cartridge repeating rifles entered American Civil War service in the early 1860s, allowing multiple shots between reloads.",
+    "parents": [
+      {
+        "id": "firearm-cartridge",
+        "type": "enabler",
+        "reason": "Compact cartridges could be stored and fed from magazines or cylinders for repeated firing.",
+        "source": "https://en.wikipedia.org/wiki/Repeating_firearm"
+      }
+    ]
+  },
+  {
+    "id": "machine-gun",
+    "title": "Gatling mechanical rapid-fire gun",
+    "wiki": "Gatling gun",
+    "year": 1862,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "The 1862 Gatling design mechanized repeated ammunition feeding while remaining hand-powered; fully automatic machine guns followed later.",
+    "parents": []
+  },
+  {
+    "id": "smokeless-propellant",
+    "title": "Smokeless firearm propellant",
+    "wiki": "Smokeless powder",
+    "year": 1884,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "Smokeless propellant reduced battlefield smoke and fouling and enabled automatic firearms.",
+    "parents": []
+  },
+  {
+    "id": "bastion-fort",
+    "title": "Bastion fortification",
+    "wiki": "Bastion fort",
+    "year": 1450,
+    "domain": "warfare",
+    "kind": "infrastructure",
+    "summary": "Low, thick angled fortifications reduced cannon damage and covered defensive blind spots.",
+    "parents": [
+      {
+        "id": "european-cannon",
+        "type": "influence",
+        "reason": "European cannon fire made tall medieval masonry walls vulnerable, prompting lower and thicker angled bastion defenses.",
+        "source": "https://en.wikipedia.org/wiki/Bastion_fort"
+      }
+    ]
+  },
+  {
+    "id": "roman-legion",
+    "title": "Roman legion",
+    "wiki": "Roman legion",
+    "year": -500,
+    "domain": "warfare",
+    "kind": "institution",
+    "summary": "The Roman legion organized citizen soldiers into the Republic’s principal military unit; its exact early formation date remains uncertain.",
+    "parents": []
+  },
+  {
+    "id": "cohort-legion",
+    "title": "Cohort-based Roman legion",
+    "wiki": "Roman legion",
+    "year": -100,
+    "domain": "warfare",
+    "kind": "practice",
+    "summary": "Late Republican reforms organized Roman legions into ten cohorts for sustained field service.",
+    "parents": [
+      {
+        "id": "roman-legion",
+        "type": "influence",
+        "reason": "The cohort structure reorganized the established Roman legion into ten larger tactical subunits.",
+        "source": "https://en.wikipedia.org/wiki/Roman_legion"
+      }
+    ]
+  },
+  {
+    "id": "standing-army",
+    "title": "Neo-Assyrian standing army",
+    "wiki": "Standing army",
+    "year": -745,
+    "domain": "warfare",
+    "kind": "institution",
+    "summary": "Tiglath-Pileser III's reign began in 745 BCE and developed a permanent professional force able to serve beyond seasonal campaigns.",
+    "parents": []
+  },
+  {
+    "id": "conscription",
+    "title": "Mass national conscription",
+    "wiki": "Conscription",
+    "year": 1793,
+    "domain": "warfare",
+    "kind": "practice",
+    "summary": "Revolutionary France mobilized eligible citizens through near-universal national military service.",
+    "parents": []
+  },
+  {
+    "id": "military-logistics",
+    "title": "Institutional military logistics",
+    "wiki": "Military logistics",
+    "year": 1670,
+    "domain": "warfare",
+    "kind": "practice",
+    "summary": "Dedicated officers planned troop movement, camps, supply, and equipment support for armies.",
+    "parents": []
+  },
+  {
+    "id": "military-academy",
+    "title": "Military academy",
+    "wiki": "Military academy",
+    "year": 1678,
+    "domain": "warfare",
+    "kind": "institution",
+    "summary": "Formal schools trained officers for military engineering, artillery, and command service.",
+    "parents": []
+  },
+  {
+    "id": "general-staff",
+    "title": "Professional general staff",
+    "wiki": "Staff (military)",
+    "year": 1814,
+    "domain": "warfare",
+    "kind": "institution",
+    "summary": "Specialized staff officers coordinated planning, intelligence, logistics, and personnel for field commands.",
+    "parents": [
+      {
+        "id": "prussian-staff-college",
+        "type": "enabler",
+        "reason": "Graduation from the Prussian Staff College was a prerequisite for appointment to the Prussian General Staff.",
+        "source": "https://en.wikipedia.org/wiki/Prussian_Staff_College"
+      }
+    ]
+  },
+  {
+    "id": "military-aviation",
+    "title": "Military aviation",
+    "wiki": "Military aviation",
+    "year": 1794,
+    "domain": "warfare",
+    "kind": "practice",
+    "summary": "Military forces used airborne observation and later powered aircraft for reconnaissance and combat roles.",
+    "parents": [
+      {
+        "id": "balloon",
+        "type": "enabler",
+        "reason": "The French observation balloon used at Fleurus in 1794 provided the first documented military aviation capability.",
+        "source": "https://en.wikipedia.org/wiki/Military_aviation"
+      }
+    ]
+  },
+  {
+    "id": "dreadnought-battleship",
+    "title": "Dreadnought battleship",
+    "wiki": "Dreadnought",
+    "year": 1906,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "All-big-gun battleships paired heavy armament with steam-turbine propulsion.",
+    "parents": [
+      {
+        "id": "steam-turbine",
+        "type": "enabler",
+        "reason": "Steam turbines provided the propulsion system used in HMS Dreadnought's revolutionary 1906 design.",
+        "source": "https://en.wikipedia.org/wiki/Dreadnought"
+      }
+    ]
+  },
+  {
+    "id": "full-deck-aircraft-carrier",
+    "title": "Full-deck aircraft carrier",
+    "wiki": "HMS Argus (I49)",
+    "year": 1918,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "HMS Argus became the first aircraft carrier with a full-length flight deck for wheeled aircraft to take off and land.",
+    "parents": [
+      {
+        "id": "powered-airplane",
+        "type": "enabler",
+        "reason": "The full-length deck was designed to launch and recover powered wheeled aircraft at sea.",
+        "source": "https://en.wikipedia.org/wiki/HMS_Argus_(I49)"
+      }
+    ]
+  },
+  {
+    "id": "radio-ship-detection",
+    "title": "Radio ship-detection experiment",
+    "wiki": "Radar",
+    "year": 1904,
+    "domain": "measurement",
+    "kind": "discovery",
+    "summary": "Hülsmeyer demonstrated radio-wave detection of ships in fog, but his 1904 instrument could not determine their distance and was rejected by military officials.",
+    "parents": [
+      {
+        "id": "radio",
+        "type": "foundation",
+        "reason": "The Telemobiloscope transmitted radio waves and detected their reflection from a distant ship.",
+        "source": "https://en.wikipedia.org/wiki/Radar"
+      }
+    ]
+  },
+  {
+    "id": "tank",
+    "title": "Tank",
+    "wiki": "Tank",
+    "year": 1916,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "Armored tracked vehicles crossed difficult ground while carrying weapons and crews.",
+    "parents": [
+      {
+        "id": "internal-combustion",
+        "type": "enabler",
+        "reason": "The internal-combustion engine enabled rapid movement of the heavy armored vehicles developed during the First World War.",
+        "source": "https://en.wikipedia.org/wiki/Tank"
+      }
+    ]
+  },
+  {
+    "id": "v-2-rocket",
+    "title": "V-2 ballistic rocket",
+    "wiki": "V-2 rocket",
+    "year": 1942,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "The V-2 became the first practical modern ballistic missile and a suborbital launch vehicle.",
+    "parents": [
+      {
+        "id": "liquid-fuel-rocket",
+        "type": "enabler",
+        "reason": "Liquid-fuel propulsion powered the V-2's ascent and made it capable of suborbital flight.",
+        "source": "https://en.wikipedia.org/wiki/V-2_rocket"
+      }
+    ]
+  },
+  {
+    "id": "r-7-semyorka",
+    "title": "R-7 Semyorka missile",
+    "wiki": "R-7 Semyorka",
+    "year": 1957,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "The first successful ICBM design was adapted into the Sputnik and Vostok launch vehicles.",
+    "parents": [
+      {
+        "id": "liquid-fuel-rocket",
+        "type": "enabler",
+        "reason": "The R-7 used liquid oxygen and kerosene propulsion to deliver its payload on an intercontinental trajectory.",
+        "source": "https://en.wikipedia.org/wiki/R-7_Semyorka"
+      }
+    ]
+  },
+  {
+    "id": "redstone-missile",
+    "title": "Redstone ballistic missile",
+    "wiki": "PGM-11 Redstone",
+    "year": 1953,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "The U.S. Army's Redstone missile continued V-2 engineering and later supported early U.S. crewed spaceflight.",
+    "parents": [
+      {
+        "id": "v-2-rocket",
+        "type": "influence",
+        "reason": "Redstone was a direct descendant of the V-2, developed by a team that included German V-2 engineers brought to the United States.",
+        "source": "https://en.wikipedia.org/wiki/PGM-11_Redstone"
+      },
+      {
+        "id": "liquid-fuel-rocket",
+        "type": "enabler",
+        "reason": "Liquid-fueled rocket propulsion powered the Redstone missile and its later space-launch derivatives.",
+        "directContribution": "Liquid-fuel propulsion powered Redstone's flight; the V-2 separately supplied a direct engineering lineage.",
+        "source": "https://en.wikipedia.org/wiki/PGM-11_Redstone"
+      }
+    ]
+  },
+  {
+    "id": "atlas-icbm",
+    "title": "Atlas intercontinental missile",
+    "wiki": "SM-65 Atlas",
+    "year": 1959,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "The Atlas was the first operational U.S. ICBM and later served as a family of orbital launch vehicles.",
+    "parents": [
+      {
+        "id": "liquid-fuel-rocket",
+        "type": "enabler",
+        "reason": "Liquid-fuel rocket propulsion supplied the Atlas missile's long-range ascent and was retained in its launch-vehicle derivatives.",
+        "directContribution": "Liquid-fuel propulsion supplied the Atlas's launch capability, while the missile's airframe and stage architecture were directly reused in space launchers.",
+        "source": "https://en.wikipedia.org/wiki/SM-65_Atlas"
+      }
+    ]
+  },
+  {
+    "id": "spear",
+    "title": "Spear",
+    "wiki": "Spear",
+    "year": -400000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Wooden shafts with sharpened ends or attached points extended human reach in hunting and combat.",
+    "parents": []
+  },
+  {
+    "id": "spear-thrower",
+    "title": "Spear-thrower",
+    "wiki": "Spear-thrower",
+    "year": -15000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "A lever extended the thrower's reach and increased the energy imparted to a dart or spear.",
+    "parents": [
+      {
+        "id": "spear",
+        "type": "enabler",
+        "reason": "Spear-throwers extended a hand-thrown spear or dart's launch distance and velocity.",
+        "source": "https://en.wikipedia.org/wiki/Spear-thrower"
+      }
+    ]
+  },
+  {
+    "id": "bow-and-arrow",
+    "title": "Bow and arrow",
+    "wiki": "Bow and arrow",
+    "year": -60000,
+    "domain": "engineering",
+    "kind": "technology",
+    "summary": "Likely arrowheads found at Sibudu Cave point to a bow-and-arrow system by about 60,000 years ago.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Woodworking shaped bows and arrow shafts into the elastic launcher and projectile system.",
+        "source": "https://en.wikipedia.org/wiki/Bow_and_arrow"
+      }
+    ]
+  },
+  {
+    "id": "english-longbow-warfare",
+    "title": "Massed English longbow warfare",
+    "wiki": "Longbow",
+    "year": 1346,
+    "domain": "warfare",
+    "kind": "practice",
+    "summary": "English and Welsh forces used massed longbow archers in major battles of the Hundred Years’ War.",
+    "parents": [
+      {
+        "id": "longbow",
+        "type": "enabler",
+        "reason": "English and Welsh forces used massed longbow archers at battles including Crécy in 1346.",
+        "source": "https://en.wikipedia.org/wiki/Longbow"
+      }
+    ]
+  },
+  {
+    "id": "sputnik-launch-vehicle",
+    "title": "Sputnik orbital launch vehicle",
+    "wiki": "Sputnik (rocket)",
+    "year": 1957,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "The Sputnik-PS launch vehicle adapted the R-7 design to place Sputnik 1 into orbit.",
+    "parents": [
+      {
+        "id": "r-7-semyorka",
+        "type": "influence",
+        "reason": "Sputnik-PS was a derivative of the R-7 Semyorka adapted for the first satellite launch.",
+        "source": "https://en.wikipedia.org/wiki/Sputnik_(rocket)"
+      }
+    ]
+  },
+  {
+    "id": "vostok-launch-vehicle",
+    "title": "Vostok-K crewed launch vehicle",
+    "wiki": "Vostok-K",
+    "year": 1960,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "The Vostok-K variant modified an R-7-derived launch vehicle for crewed missions, first flying in 1960 and launching Yuri Gagarin in 1961.",
+    "parents": [
+      {
+        "id": "r-7-semyorka",
+        "type": "influence",
+        "reason": "The R-7 core and strap-on booster architecture supplied the lower-stage platform adapted for the crew-rated Vostok-K.",
+        "source": "https://en.wikipedia.org/wiki/Vostok_(rocket_family)"
+      }
+    ]
+  },
+  {
+    "id": "mercury-redstone-launch-vehicle",
+    "title": "Mercury-Redstone launch vehicle",
+    "wiki": "Mercury-Redstone Launch Vehicle",
+    "year": 1960,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "A crew-rated Redstone derivative launched the first American astronauts on suborbital Mercury flights.",
+    "parents": [
+      {
+        "id": "jupiter-c-launch-vehicle",
+        "type": "influence",
+        "reason": "The Mercury-Redstone design used the Jupiter-C first stage as its starting vehicle for crewed suborbital flight.",
+        "source": "https://en.wikipedia.org/wiki/Mercury-Redstone_Launch_Vehicle"
+      },
+      {
+        "id": "redstone-missile",
+        "type": "enabler",
+        "reason": "The latest military Redstone supplied the engine selected for the crewed Mercury booster.",
+        "directContribution": "The Redstone missile supplied the A-7 engine and the flight history of an established propulsion unit, while the Jupiter-C supplied the starting first-stage vehicle architecture.",
+        "source": "https://en.wikipedia.org/wiki/Mercury-Redstone_Launch_Vehicle"
+      }
+    ]
+  },
+  {
+    "id": "prussian-staff-college",
+    "title": "Prussian Staff College",
+    "wiki": "Prussian Staff College",
+    "year": 1810,
+    "domain": "warfare",
+    "kind": "institution",
+    "summary": "Prussia re-founded a staff college to educate and train officers for General Staff appointments.",
+    "parents": []
+  },
+  {
+    "id": "chain-home-radar",
+    "title": "Chain Home early-warning radar",
+    "wiki": "Chain Home",
+    "year": 1938,
+    "domain": "warfare",
+    "kind": "technology",
+    "summary": "Britain’s Chain Home network provided operational coastal warning and tracking of incoming aircraft.",
+    "parents": [
+      {
+        "id": "radio",
+        "type": "foundation",
+        "reason": "The Chain Home stations transmitted radio waves and detected their reflections from aircraft to provide early warning.",
+        "source": "https://en.wikipedia.org/wiki/Chain_Home"
+      }
+    ]
+  },
+  {
+    "id": "jupiter-c-launch-vehicle",
+    "title": "Jupiter-C research launch vehicle",
+    "wiki": "Jupiter-C",
+    "year": 1956,
+    "domain": "transport",
+    "kind": "technology",
+    "summary": "A modified Redstone research vehicle tested reentry systems and led to the Juno I satellite launcher.",
+    "parents": [
+      {
+        "id": "redstone-missile",
+        "type": "influence",
+        "reason": "Jupiter-C was a modified Redstone ballistic missile with additional upper stages for research flights.",
+        "source": "https://en.wikipedia.org/wiki/Jupiter-C"
+      }
+    ]
+  }
+]

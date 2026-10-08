@@ -822,7 +822,7 @@
     "title": "Thermometer",
     "wiki": "Thermometer",
     "year": 1612,
-    "domain": "science",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "Temperature-sensitive materials provided instruments for comparing thermal conditions.",
     "parents": []
@@ -832,7 +832,7 @@
     "title": "Mercury barometer",
     "wiki": "Barometer",
     "year": 1643,
-    "domain": "science",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "Torricelli's mercury column measured changes in atmospheric pressure.",
     "parents": [
@@ -848,7 +848,7 @@
     "title": "Pendulum clock",
     "wiki": "Pendulum clock",
     "year": 1656,
-    "domain": "science",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "Huygens used a pendulum oscillator to regulate more accurate clocks.",
     "parents": [
@@ -896,7 +896,7 @@
     "title": "Sextant",
     "wiki": "Sextant",
     "year": 1731,
-    "domain": "science",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "A double-reflection instrument measured angular separation between visible objects.",
     "parents": [
@@ -912,7 +912,7 @@
     "title": "Marine chronometer",
     "wiki": "Marine chronometer",
     "year": 1761,
-    "domain": "science",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "Stable portable timekeeping enabled longitude determination during ocean voyages.",
     "parents": [
@@ -944,7 +944,7 @@
     "title": "Photometer",
     "wiki": "Photometer",
     "year": 1760,
-    "domain": "science",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "Instruments compared light intensity using calibrated reference sources.",
     "parents": [
@@ -960,7 +960,7 @@
     "title": "Interferometer",
     "wiki": "Interferometry",
     "year": 1881,
-    "domain": "science",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "Combining light paths made minute differences in distance detectable through interference.",
     "parents": [
@@ -976,7 +976,7 @@
     "title": "Polarimeter",
     "wiki": "Polarimeter",
     "year": 1815,
-    "domain": "science",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "Polarimeters measured optical rotation caused by materials in polarized light.",
     "parents": [
@@ -1034,7 +1034,7 @@
     "title": "Galvanometer",
     "wiki": "Galvanometer",
     "year": 1820,
-    "domain": "science",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "Magnetic needle deflection measured electric current.",
     "parents": [
@@ -1050,7 +1050,7 @@
     "title": "Oscilloscope",
     "wiki": "Oscilloscope",
     "year": 1897,
-    "domain": "science",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "Cathode-ray displays made changing electrical signals visible as traces.",
     "parents": [
@@ -1274,7 +1274,7 @@
     "title": "Atomic clock",
     "wiki": "Atomic clock",
     "year": 1949,
-    "domain": "science",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "Atomic or molecular resonances supplied reproducible frequency references for timekeeping.",
     "parents": [

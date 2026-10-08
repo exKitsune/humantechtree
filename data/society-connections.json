@@ -150,7 +150,7 @@
     "title": "Five Classics examination corpus",
     "wiki": "Four Books and Five Classics",
     "year": -136,
-    "domain": "society",
+    "domain": "education",
     "kind": "practice",
     "summary": "Han institutions recognized the Five Classics as an authoritative body of texts for scholarly teaching.",
     "parents": [
@@ -167,7 +167,7 @@
     "title": "Mishnah compilation",
     "wiki": "Mishnah",
     "year": 200,
-    "domain": "society",
+    "domain": "religion",
     "kind": "practice",
     "summary": "Rabbinic scholars organized Jewish oral legal traditions into a written collection of topical tractates.",
     "parents": [
@@ -184,7 +184,7 @@
     "title": "Ivo’s canonical collections",
     "wiki": "Ivo of Chartres",
     "year": 1095,
-    "domain": "society",
+    "domain": "governance",
     "kind": "practice",
     "summary": "Collections associated with Ivo of Chartres assembled church rulings for legal consultation and reconciliation.",
     "parents": []
@@ -214,7 +214,7 @@
     "title": "Partial Test Ban Treaty",
     "wiki": "Partial Nuclear Test Ban Treaty",
     "year": 1963,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The treaty prohibited nuclear test explosions in the atmosphere, outer space, and underwater.",
     "parents": []
@@ -224,7 +224,7 @@
     "title": "Vienna ozone convention",
     "wiki": "Vienna Convention for the Protection of the Ozone Layer",
     "year": 1985,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "States agreed a framework for research and cooperation on protecting the ozone layer.",
     "parents": []
@@ -234,7 +234,7 @@
     "title": "UN climate framework convention",
     "wiki": "United Nations Framework Convention on Climate Change",
     "year": 1992,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The convention established continuing international negotiations and reporting on climate change.",
     "parents": [
@@ -251,7 +251,7 @@
     "title": "Caribbean Free Trade Association",
     "wiki": "Caribbean Free Trade Association",
     "year": 1968,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Caribbean governments operated a regional free-trade association later replaced by CARICOM.",
     "parents": []
@@ -261,7 +261,7 @@
     "title": "Original East African Community",
     "wiki": "East African Community",
     "year": 1967,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Kenya, Tanzania, and Uganda established a community to administer regional cooperation and shared services.",
     "parents": []
@@ -271,7 +271,7 @@
     "title": "Trans-Pacific Partnership agreement",
     "wiki": "Trans-Pacific Partnership",
     "year": 2016,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Twelve governments signed a proposed Pacific trade agreement that did not enter into force.",
     "parents": []
@@ -281,7 +281,7 @@
     "title": "American rights declaration",
     "wiki": "American Declaration of the Rights and Duties of Man",
     "year": 1948,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "American states adopted a regional declaration defining individual rights and duties.",
     "parents": [
@@ -298,7 +298,7 @@
     "title": "UN child-rights declaration",
     "wiki": "Declaration of the Rights of the Child",
     "year": 1959,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The UN adopted ten principles addressing children’s protection, development, and access to education.",
     "parents": [
@@ -315,7 +315,7 @@
     "title": "Inter caetera demarcation bull",
     "wiki": "Inter caetera",
     "year": 1493,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A papal bull asserted a demarcation of Spanish overseas claims that Spain and Portugal subsequently renegotiated.",
     "parents": []
@@ -325,7 +325,7 @@
     "title": "International Law Commission",
     "wiki": "International Law Commission",
     "year": 1947,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The UN established an expert commission to draft and codify international legal rules.",
     "parents": [
@@ -342,7 +342,7 @@
     "title": "European recovery coordination organization",
     "wiki": "OECD",
     "year": 1948,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "The OEEC coordinated European allocation of Marshall Plan assistance before its reconstitution as the OECD.",
     "parents": [
@@ -359,7 +359,7 @@
     "title": "Sufi devotional practice",
     "wiki": "Sufism",
     "year": 800,
-    "domain": "society",
+    "domain": "religion",
     "kind": "practice",
     "summary": "Sufi communities developed disciplines of remembrance, spiritual instruction, and devotional participation.",
     "parents": [
@@ -396,7 +396,7 @@
     "title": "UN declaration on women’s equality",
     "wiki": "Declaration on the Elimination of Discrimination Against Women",
     "year": 1967,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The UN proclaimed principles against discrimination that preceded a binding women’s rights convention.",
     "parents": [

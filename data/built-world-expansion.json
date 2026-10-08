@@ -1,0 +1,319 @@
+[
+  {
+    "id": "scaffolding",
+    "title": "Scaffolding",
+    "wiki": "Scaffolding",
+    "year": -500,
+    "domain": "construction",
+    "kind": "technology",
+    "summary": "Temporary timber frameworks give builders access to elevated work and materials.",
+    "parents": [
+      {
+        "id": "woodworking",
+        "type": "enabler",
+        "reason": "Shaped timber members supplied the poles and platforms from which early scaffolds were built.",
+        "source": "https://en.wikipedia.org/wiki/Scaffolding"
+      }
+    ]
+  },
+  {
+    "id": "falsework",
+    "title": "Falsework",
+    "wiki": "Falsework",
+    "year": 100,
+    "domain": "construction",
+    "kind": "technology",
+    "summary": "Temporary supports hold arches, concrete forms, and other structures until they can carry their own loads.",
+    "parents": [
+      {
+        "id": "timber-framing",
+        "type": "enabler",
+        "reason": "Assembled timber members formed temporary load-bearing frames used in ancient bridge and viaduct work.",
+        "source": "https://en.wikipedia.org/wiki/Falsework"
+      }
+    ]
+  },
+  {
+    "id": "formwork",
+    "title": "Concrete formwork",
+    "wiki": "Formwork",
+    "year": 126,
+    "domain": "construction",
+    "kind": "technology",
+    "summary": "Temporary or reusable molds shape concrete before it hardens into structural members.",
+    "parents": [
+      {
+        "id": "concrete",
+        "type": "enabler",
+        "reason": "Concrete's moldable wet state allowed builders to cast slabs, vaults, and domes in shaped forms.",
+        "source": "https://en.wikipedia.org/wiki/Formwork"
+      },
+      {
+        "id": "falsework",
+        "type": "enabler",
+        "reason": "Falsework supports shuttering molds while fresh concrete is placed and gains strength.",
+        "source": "https://en.wikipedia.org/wiki/Formwork"
+      }
+    ]
+  },
+  {
+    "id": "slipforming",
+    "title": "Slipform construction",
+    "wiki": "Slip forming",
+    "year": 1900,
+    "domain": "construction",
+    "kind": "technology",
+    "summary": "Moving or incrementally raised forms cast continuous concrete structures without separate construction joints.",
+    "parents": [
+      {
+        "id": "concrete",
+        "type": "foundation",
+        "reason": "Concrete's controlled workability and setting let a moving form leave material that could support itself.",
+        "source": "https://en.wikipedia.org/wiki/Slip_forming",
+        "directContribution": "Slipforming depends on freshly placed concrete gaining enough early strength to support the advancing form; this material behavior controls the process rate and feasibility, beyond concrete's general role as a moldable material."
+      },
+      {
+        "id": "formwork",
+        "type": "foundation",
+        "reason": "Slipforming advances or raises concrete molds continuously instead of placing discrete stationary forms.",
+        "source": "https://en.wikipedia.org/wiki/Slip_forming"
+      }
+    ]
+  },
+  {
+    "id": "building-information-modeling",
+    "title": "Building information modeling",
+    "wiki": "Building information modeling",
+    "year": 1970,
+    "domain": "construction",
+    "kind": "practice",
+    "summary": "BIM's concept emerged in the 1970s as digital building representations began linking geometry with functional data for design, construction, and operation; software implementations appeared from the late 1970s into the early 1980s.",
+    "parents": [
+      {
+        "id": "computer",
+        "type": "enabler",
+        "reason": "Computer systems made it possible to create, store, and exchange information-rich digital building models.",
+        "source": "https://en.wikipedia.org/wiki/Building_information_modeling"
+      }
+    ]
+  },
+  {
+    "id": "surveying",
+    "title": "Land surveying",
+    "wiki": "Surveying",
+    "year": -2700,
+    "domain": "measurement",
+    "kind": "practice",
+    "summary": "Surveyors determine terrestrial positions and boundaries from measured distances and angles for maps, property, and construction.",
+    "parents": []
+  },
+  {
+    "id": "triangulation-surveying",
+    "title": "Triangulation surveying",
+    "wiki": "Triangulation",
+    "year": 1615,
+    "domain": "measurement",
+    "kind": "practice",
+    "summary": "Measured angles in linked triangles establish distant positions and large-area maps without measuring every baseline directly.",
+    "parents": [
+      {
+        "id": "geometry",
+        "type": "foundation",
+        "reason": "Geometric relations convert measured triangle angles and a known baseline into estimated distances.",
+        "source": "https://en.wikipedia.org/wiki/Triangulation"
+      }
+    ]
+  },
+  {
+    "id": "theodolite",
+    "title": "Theodolite",
+    "wiki": "Theodolite",
+    "year": 1725,
+    "domain": "measurement",
+    "kind": "technology",
+    "summary": "Jonathan Sisson's 1725 instrument combined a sighting telescope, horizontal and vertical axes, and graduated scales to read both angle directions.",
+    "parents": []
+  },
+  {
+    "id": "gunters-chain-surveying",
+    "title": "Gunter's chain surveying",
+    "wiki": "Gunter's chain",
+    "year": 1620,
+    "domain": "measurement",
+    "kind": "technology",
+    "summary": "A 66-foot chain divided into 100 links made land distances and areas easier to measure and calculate consistently.",
+    "parents": [
+      {
+        "id": "surveying",
+        "type": "enabler",
+        "reason": "Chain measurements let surveyors record parcel boundaries and plot land from field distances.",
+        "source": "https://en.wikipedia.org/wiki/Gunter%27s_chain"
+      },
+      {
+        "id": "weights-measures",
+        "type": "foundation",
+        "reason": "The fixed chain and link lengths reconciled customary land units with decimal calculations of acreage.",
+        "source": "https://en.wikipedia.org/wiki/Gunter%27s_chain"
+      }
+    ]
+  },
+  {
+    "id": "roman-cadastral-survey",
+    "title": "Roman cadastral survey",
+    "wiki": "Cadastre",
+    "year": 77,
+    "domain": "measurement",
+    "kind": "practice",
+    "summary": "A Roman land survey recorded state parcel boundaries in Campania in AD 77, supporting recovery of public land and renewed taxation.",
+    "parents": [
+      {
+        "id": "surveying",
+        "type": "foundation",
+        "reason": "Measured and mapped parcel boundaries made land records geographically specific.",
+        "source": "https://en.wikipedia.org/wiki/Cadastre"
+      },
+      {
+        "id": "taxation",
+        "type": "enabler",
+        "reason": "Land surveys identified state holdings and taxable property for reassessment and collection.",
+        "source": "https://en.wikipedia.org/wiki/Cadastre"
+      }
+    ]
+  },
+  {
+    "id": "geometric-dimensioning-tolerancing",
+    "title": "Geometric dimensioning and tolerancing",
+    "wiki": "Geometric dimensioning and tolerancing",
+    "year": 1940,
+    "domain": "measurement",
+    "kind": "practice",
+    "summary": "A symbolic drawing language specifies the allowed variation in a part's size, shape, orientation, and feature location.",
+    "parents": [
+      {
+        "id": "interchangeable-parts",
+        "type": "enabler",
+        "reason": "Interchangeable production required explicit limits describing which dimensional and geometric variations still permit parts to fit.",
+        "source": "https://en.wikipedia.org/wiki/Geometric_dimensioning_and_tolerancing"
+      }
+    ]
+  },
+  {
+    "id": "coordinate-measuring-machine",
+    "title": "Coordinate-measuring machine",
+    "wiki": "Coordinate-measuring machine",
+    "year": 1950,
+    "domain": "measurement",
+    "kind": "technology",
+    "summary": "Ferranti's early two-axis coordinate-measuring machine used a probe and coordinate readings to measure precision military components.",
+    "parents": []
+  },
+  {
+    "id": "palletized-unit-loads",
+    "title": "Palletized unit loads",
+    "wiki": "Pallet",
+    "year": 1924,
+    "domain": "logistics",
+    "kind": "technology",
+    "summary": "A flat reusable platform groups goods into stable loads that can be lifted, stored, and moved together.",
+    "parents": [
+      {
+        "id": "forklift",
+        "type": "enabler",
+        "reason": "Forklift forks lift and move the stable platform together with its grouped goods.",
+        "source": "https://en.wikipedia.org/wiki/Pallet"
+      }
+    ]
+  },
+  {
+    "id": "barcode-identification",
+    "title": "Barcode identification",
+    "wiki": "Barcode",
+    "year": 1952,
+    "domain": "logistics",
+    "kind": "technology",
+    "summary": "Machine-readable bar patterns identify goods or vehicles for automatic recording and tracking.",
+    "parents": [
+      {
+        "id": "morse-code",
+        "type": "influence",
+        "reason": "Woodland and Silver adapted Morse code's short and long marks into narrow and wide bars for machine-readable product identification.",
+        "source": "https://en.wikipedia.org/wiki/Barcode"
+      }
+    ]
+  },
+  {
+    "id": "electronic-data-interchange",
+    "title": "Heathrow LACES cargo-data interchange",
+    "wiki": "Electronic data interchange",
+    "year": 1971,
+    "domain": "logistics",
+    "kind": "technology",
+    "summary": "London Airport Cargo EDP Scheme (LACES), introduced at Heathrow in 1971, let forwarding agents enter cargo data into customs processing and reduced clearance time.",
+    "parents": [
+      {
+        "id": "computer",
+        "type": "enabler",
+        "reason": "Electronic computers processed structured cargo and customs records automatically.",
+        "source": "https://en.wikipedia.org/wiki/Electronic_data_interchange"
+      }
+    ]
+  },
+  {
+    "id": "just-in-time-inventory-control",
+    "title": "Just-in-time inventory control",
+    "wiki": "Lean manufacturing",
+    "year": 1950,
+    "domain": "logistics",
+    "kind": "practice",
+    "summary": "Production draws and replenishes materials in response to actual demand, reducing stocks held between operations.",
+    "parents": [
+      {
+        "id": "logistics",
+        "type": "foundation",
+        "reason": "The practice reorganized replenishment and in-process stock so materials arrived as actual production demand required them.",
+        "source": "https://en.wikipedia.org/wiki/Lean_manufacturing"
+      }
+    ]
+  },
+  {
+    "id": "supply-chain-management",
+    "title": "Supply-chain management",
+    "wiki": "Supply chain management",
+    "year": 1982,
+    "domain": "logistics",
+    "kind": "practice",
+    "summary": "Organizations coordinate sourcing, production, logistics, information, and delivery across suppliers and customers.",
+    "parents": [
+      {
+        "id": "logistics",
+        "type": "foundation",
+        "reason": "Supply-chain management explicitly integrates the storage and transport of goods into wider sourcing, production, and demand plans.",
+        "directContribution": "Logistics remains a direct component of supply-chain management across storage, movement, and delivery; freight forwarding covers only shipment arrangement and does not account for the integrated sourcing, production, and demand functions.",
+        "source": "https://en.wikipedia.org/wiki/Supply_chain_management"
+      },
+      {
+        "id": "electronic-data-interchange",
+        "type": "enabler",
+        "reason": "Electronic exchange of structured business and shipping documents supports the information flows coordinated across supply-chain partners.",
+        "source": "https://en.wikipedia.org/wiki/Supply_chain_management"
+      }
+    ]
+  },
+  {
+    "id": "upc-retail-scanning",
+    "title": "Universal Product Code retail scanning",
+    "wiki": "Barcode",
+    "year": 1974,
+    "domain": "logistics",
+    "kind": "technology",
+    "summary": "Retail scanners read standardized UPC labels to identify products automatically at checkout.",
+    "parents": [
+      {
+        "id": "barcode-identification",
+        "type": "foundation",
+        "reason": "UPC retail scanning applied machine-readable barcodes to standardized product identification at checkout.",
+        "source": "https://en.wikipedia.org/wiki/Barcode"
+      }
+    ]
+  }
+]

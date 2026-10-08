@@ -1609,7 +1609,7 @@
     "title": "Micrometer (device)",
     "wiki": "Micrometer (device)",
     "year": 1848,
-    "domain": "engineering",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "Fine screw movement enabled precise dimensional measurement in workshops.",
     "parents": [
@@ -1625,7 +1625,7 @@
     "title": "Vernier caliper",
     "wiki": "Calipers",
     "year": 1631,
-    "domain": "engineering",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "Sliding jaws and graduated scales measured internal and external dimensions.",
     "parents": [
@@ -1641,7 +1641,7 @@
     "title": "Gauge block",
     "wiki": "Gauge block",
     "year": 1896,
-    "domain": "engineering",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "Precision blocks established reproducible reference lengths in manufacturing.",
     "parents": [
@@ -1657,7 +1657,7 @@
     "title": "Surface plate",
     "wiki": "Surface plate",
     "year": 1830,
-    "domain": "engineering",
+    "domain": "measurement",
     "kind": "technology",
     "summary": "Flat reference tables supported accurate marking and inspection.",
     "parents": [
@@ -1689,7 +1689,7 @@
     "title": "Standard screw threads",
     "wiki": "British Standard Whitworth",
     "year": 1841,
-    "domain": "engineering",
+    "domain": "measurement",
     "kind": "practice",
     "summary": "Standard thread profiles improved compatibility of mechanical fasteners.",
     "parents": [
@@ -2496,7 +2496,7 @@
     "title": "Masonry arch",
     "wiki": "Arch",
     "year": -2000,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Curved compression structures spanned openings using masonry units.",
     "parents": [
@@ -2512,7 +2512,7 @@
     "title": "Masonry vault",
     "wiki": "Vault (architecture)",
     "year": -1500,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Extended arch forms roofed enclosed spaces in masonry.",
     "parents": [
@@ -2528,7 +2528,7 @@
     "title": "Structural dome",
     "wiki": "Dome",
     "year": -1000,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Curved roofs enclosed broad spaces through shell-like load paths.",
     "parents": [
@@ -2544,7 +2544,7 @@
     "title": "Truss",
     "wiki": "Truss",
     "year": -500,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Triangulated frameworks spanned spaces with efficient load-carrying members.",
     "parents": [
@@ -2560,7 +2560,7 @@
     "title": "Suspension bridge",
     "wiki": "Suspension bridge",
     "year": 1801,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Suspended decks crossed long spans using tensile cables or chains.",
     "parents": [
@@ -2576,7 +2576,7 @@
     "title": "Arch bridge",
     "wiki": "Arch bridge",
     "year": -1300,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Compression arches carried bridge decks across waterways and valleys.",
     "parents": [
@@ -2592,7 +2592,7 @@
     "title": "Cantilever bridge",
     "wiki": "Cantilever bridge",
     "year": 1867,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Projecting structural arms supported bridges without continuous falsework.",
     "parents": [
@@ -2608,7 +2608,7 @@
     "title": "Cable-stayed bridge",
     "wiki": "Cable-stayed bridge",
     "year": 1955,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Direct stays connected bridge decks to supporting towers.",
     "parents": [
@@ -2629,7 +2629,7 @@
     "title": "Skyscraper",
     "wiki": "Skyscraper",
     "year": 1885,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Metal frames supported tall occupied buildings with lighter walls.",
     "parents": [
@@ -2650,7 +2650,7 @@
     "title": "Curtain wall (architecture)",
     "wiki": "Curtain wall (architecture)",
     "year": 1900,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Independent exterior envelopes enclosed buildings around structural frames.",
     "parents": [
@@ -2666,7 +2666,7 @@
     "title": "Geodesic dome",
     "wiki": "Geodesic dome",
     "year": 1926,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Triangulated networks formed light domed structures.",
     "parents": [
@@ -2687,7 +2687,7 @@
     "title": "Reed mudhif buildings",
     "wiki": "Mudhif",
     "year": -3000,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Mesopotamian reed builders formed large arched communal structures.",
     "parents": [
@@ -2703,7 +2703,7 @@
     "title": "Inca rope bridge",
     "wiki": "Inca rope bridge",
     "year": 1400,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Andean communities built suspension crossings from bundled plant fibers.",
     "parents": [
@@ -2719,7 +2719,7 @@
     "title": "Stepwell",
     "wiki": "Stepwell",
     "year": 600,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Stepped masonry wells provided access to groundwater as levels changed.",
     "parents": [
@@ -2735,7 +2735,7 @@
     "title": "Qanat",
     "wiki": "Qanat",
     "year": -800,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Gently sloping underground channels transported groundwater by gravity.",
     "parents": [
@@ -2756,7 +2756,7 @@
     "title": "Roman aqueduct",
     "wiki": "Roman aqueduct",
     "year": -312,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Engineered channels delivered water across varied terrain to settlements.",
     "parents": [
@@ -2772,7 +2772,7 @@
     "title": "Dujiangyan",
     "wiki": "Dujiangyan",
     "year": -256,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "A Chinese diversion system distributed river water while managing floods.",
     "parents": [
@@ -2788,7 +2788,7 @@
     "title": "Polder",
     "wiki": "Polder",
     "year": 1100,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Diked and drained land expanded usable low-lying terrain.",
     "parents": [
@@ -2809,7 +2809,7 @@
     "title": "Drainage",
     "wiki": "Drainage",
     "year": -4000,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "practice",
     "summary": "Constructed channels removed excess water from fields and occupied areas.",
     "parents": [
@@ -2825,7 +2825,7 @@
     "title": "Cofferdam",
     "wiki": "Cofferdam",
     "year": -500,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Temporary enclosures allowed construction below surrounding water levels.",
     "parents": [
@@ -2841,7 +2841,7 @@
     "title": "Engineered harbor",
     "wiki": "Port",
     "year": -2000,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Sheltered harbors and landing structures supported waterborne cargo handling.",
     "parents": [
@@ -2857,7 +2857,7 @@
     "title": "Lock (water navigation)",
     "wiki": "Lock (water navigation)",
     "year": 984,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Chambers with gates moved boats between different water levels.",
     "parents": [
@@ -2873,7 +2873,7 @@
     "title": "Water-control dams",
     "wiki": "Dam",
     "year": -3000,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Water-retaining barriers stored and diverted flows for human use.",
     "parents": [
@@ -2889,7 +2889,7 @@
     "title": "Covered wastewater sewers",
     "wiki": "Sanitary sewer",
     "year": -2500,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Networks of covered conduits carried wastewater away from occupied spaces.",
     "parents": [
@@ -2905,7 +2905,7 @@
     "title": "Septic tank",
     "wiki": "Septic tank",
     "year": 1860,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Settling tanks treated wastewater locally before soil dispersal.",
     "parents": [
@@ -2942,7 +2942,7 @@
     "title": "Central heating",
     "wiki": "Central heating",
     "year": -100,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "A common heat source warmed multiple rooms through distribution systems.",
     "parents": [
@@ -2958,7 +2958,7 @@
     "title": "Air conditioning",
     "wiki": "Air conditioning",
     "year": 1902,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Mechanical systems controlled indoor temperature and humidity.",
     "parents": [
@@ -2996,7 +2996,7 @@
     "title": "Fire sprinkler",
     "wiki": "Fire sprinkler",
     "year": 1874,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Heat-responsive sprinkler systems applied water automatically at fires.",
     "parents": [
@@ -3012,7 +3012,7 @@
     "title": "Water conveyance pipes",
     "wiki": "Pipe (fluid conveyance)",
     "year": -3000,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Tubular conduits transported water and other fluids through built networks.",
     "parents": [
@@ -4860,7 +4860,7 @@
     "title": "Containerization",
     "wiki": "Containerization",
     "year": 1956,
-    "domain": "transport",
+    "domain": "logistics",
     "kind": "practice",
     "summary": "Standard cargo boxes transferred efficiently among ships, trains, and trucks.",
     "parents": [
@@ -4876,7 +4876,7 @@
     "title": "Forklift",
     "wiki": "Forklift",
     "year": 1917,
-    "domain": "transport",
+    "domain": "logistics",
     "kind": "technology",
     "summary": "Powered industrial vehicles lifted and positioned palletized loads.",
     "parents": [
@@ -5222,9 +5222,10 @@
     "summary": "Artificial spacecraft maintained orbital motion around Earth.",
     "parents": [
       {
-        "id": "multistage-rocket",
+        "id": "sputnik-launch-vehicle",
         "type": "foundation",
-        "reason": "Staged launch rockets supplied sufficient speed to enter orbit."
+        "reason": "The Sputnik-PS launch vehicle directly placed Sputnik 1, the first artificial Earth satellite, into orbit in October 1957.",
+        "source": "https://en.wikipedia.org/wiki/Sputnik_(rocket)"
       }
     ]
   },
@@ -5238,9 +5239,16 @@
     "summary": "Life-supported spacecraft carried humans beyond Earth's atmosphere.",
     "parents": [
       {
-        "id": "liquid-fuel-rocket",
-        "type": "enabler",
-        "reason": "Liquid-fuel launch vehicles supplied the required ascent capability."
+        "id": "vostok-launch-vehicle",
+        "type": "foundation",
+        "reason": "Vostok-K launched Vostok 1 with Yuri Gagarin in April 1961, providing the first crewed orbital flight.",
+        "source": "https://en.wikipedia.org/wiki/Vostok-K"
+      },
+      {
+        "id": "mercury-redstone-launch-vehicle",
+        "type": "foundation",
+        "reason": "Mercury-Redstone launched the first American crewed suborbital flights in 1961, a separate implementation of human spaceflight from the Vostok orbital flights.",
+        "source": "https://en.wikipedia.org/wiki/Mercury-Redstone_Launch_Vehicle"
       }
     ]
   },
@@ -6604,7 +6612,7 @@
     "title": "Granary",
     "wiki": "Granary",
     "year": -9000,
-    "domain": "food",
+    "domain": "logistics",
     "kind": "infrastructure",
     "summary": "Dedicated stores protected accumulated grain harvests between growing seasons.",
     "parents": [
@@ -6620,7 +6628,7 @@
     "title": "Large bulk-storage silos",
     "wiki": "Silo",
     "year": 1873,
-    "domain": "food",
+    "domain": "logistics",
     "kind": "infrastructure",
     "summary": "Large enclosed stores supported bulk grain and fermented fodder management.",
     "parents": [
@@ -6636,7 +6644,7 @@
     "title": "Refrigerated food distribution",
     "wiki": "Cold chain",
     "year": 1870,
-    "domain": "food",
+    "domain": "logistics",
     "kind": "infrastructure",
     "summary": "Temperature-controlled storage and transport connected producers with distant consumers.",
     "parents": [

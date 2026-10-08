@@ -2975,7 +2975,7 @@
     "title": "Buttress",
     "wiki": "Buttress",
     "year": -1000,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "External masses resisted sideways loads from roofs and masonry spans.",
     "parents": [
@@ -2991,7 +2991,7 @@
     "title": "Flying buttress",
     "wiki": "Flying buttress",
     "year": 1100,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Arched external supports carried upper wall thrust across open spaces.",
     "parents": [
@@ -3007,7 +3007,7 @@
     "title": "Pointed arch",
     "wiki": "Pointed arch",
     "year": 700,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Intersecting curved arch segments enabled varied spans and heights.",
     "parents": [
@@ -3023,7 +3023,7 @@
     "title": "Groin vault",
     "wiki": "Groin vault",
     "year": -100,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Intersecting barrel vaults covered spaces while concentrating supports.",
     "parents": [
@@ -3039,7 +3039,7 @@
     "title": "Rib vault",
     "wiki": "Rib vault",
     "year": 1100,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Structural ribs organized the construction and support of vaulted ceilings.",
     "parents": [
@@ -3055,7 +3055,7 @@
     "title": "Timber framing",
     "wiki": "Timber framing",
     "year": -500,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Joined timber skeletons carried building loads through beams and posts.",
     "parents": [
@@ -3071,7 +3071,7 @@
     "title": "Balloon framing",
     "wiki": "Balloon framing",
     "year": 1830,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Standard light lumber and nails accelerated timber building construction.",
     "parents": [
@@ -3087,7 +3087,7 @@
     "title": "Prefabrication",
     "wiki": "Prefabrication",
     "year": 1900,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Factory-made building components reduced work required at construction sites.",
     "parents": [
@@ -3103,7 +3103,7 @@
     "title": "Caisson (engineering)",
     "wiki": "Caisson (engineering)",
     "year": 1841,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Pressurized underwater work chambers enabled construction of deep foundations.",
     "parents": [
@@ -3119,7 +3119,7 @@
     "title": "Diaphragm wall",
     "wiki": "Diaphragm wall",
     "year": 1950,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Deep cast walls retained soil and supported constrained underground construction.",
     "parents": [
@@ -3135,7 +3135,7 @@
     "title": "Secant pile retaining wall",
     "wiki": "Retaining wall",
     "year": 1960,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Overlapping bored piles formed retaining barriers for deep excavations.",
     "parents": [
@@ -3151,7 +3151,7 @@
     "title": "Gabion",
     "wiki": "Gabion",
     "year": 1500,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Filled woven cages restrained soil and protected banks against erosion.",
     "parents": [
@@ -3167,7 +3167,7 @@
     "title": "Mechanically stabilized earth",
     "wiki": "Mechanically stabilized earth",
     "year": 1963,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Embedded tensile elements strengthened soil embankments and retaining structures.",
     "parents": [
@@ -3183,7 +3183,7 @@
     "title": "Base isolation",
     "wiki": "Base isolation",
     "year": 1969,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Flexible supports reduced transmission of ground shaking into structures.",
     "parents": [
@@ -3199,7 +3199,7 @@
     "title": "Tuned mass damper",
     "wiki": "Tuned mass damper",
     "year": 1909,
-    "domain": "engineering",
+    "domain": "construction",
     "kind": "technology",
     "summary": "Suspended tuned masses reduced resonant vibration of machines and structures.",
     "parents": [
@@ -6440,7 +6440,7 @@
     "title": "Grain elevator",
     "wiki": "Grain elevator",
     "year": 1842,
-    "domain": "food",
+    "domain": "logistics",
     "kind": "technology",
     "summary": "Powered conveyors lifted bulk grain into large storage and transfer facilities.",
     "parents": [

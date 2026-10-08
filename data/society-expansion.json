@@ -4,7 +4,7 @@
     "title": "Jury trial",
     "wiki": "Jury trial",
     "year": 1166,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Groups of lay participants assess facts within formal legal proceedings.",
     "parents": [
@@ -20,7 +20,7 @@
     "title": "Equity jurisdiction",
     "wiki": "Equity (law)",
     "year": 1485,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Equity courts developed remedies addressing claims poorly served by ordinary common-law procedures.",
     "parents": [
@@ -36,7 +36,7 @@
     "title": "Constitutional judicial review",
     "wiki": "Judicial review",
     "year": 1803,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Courts can examine whether government actions comply with a governing constitution.",
     "parents": [
@@ -52,7 +52,7 @@
     "title": "Separation of powers",
     "wiki": "Separation of powers",
     "year": 1748,
-    "domain": "society",
+    "domain": "governance",
     "kind": "practice",
     "summary": "Political theory distinguishes legislative, executive, and judicial functions to constrain concentrated authority.",
     "parents": [
@@ -68,7 +68,7 @@
     "title": "Parliamentary ombudsman",
     "wiki": "Ombudsman",
     "year": 1809,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "An independent parliamentary official investigates complaints about public administration.",
     "parents": [
@@ -84,7 +84,7 @@
     "title": "Swedish Freedom of the Press Act",
     "wiki": "Swedish Freedom of the Press Act",
     "year": 1766,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Swedish legislation protected publication and established access to official documents.",
     "parents": [
@@ -100,7 +100,7 @@
     "title": "Freedom of information law",
     "wiki": "Freedom of information laws by country",
     "year": 1766,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Legal access rights allow people to request specified records held by public authorities.",
     "parents": [
@@ -116,7 +116,7 @@
     "title": "Secret ballot",
     "wiki": "Secret ballot",
     "year": 1856,
-    "domain": "society",
+    "domain": "governance",
     "kind": "practice",
     "summary": "Private voting procedures reduce opportunities for coercion based on how an individual votes.",
     "parents": [
@@ -132,7 +132,7 @@
     "title": "Proportional parliamentary representation",
     "wiki": "Proportional representation",
     "year": 1899,
-    "domain": "society",
+    "domain": "governance",
     "kind": "practice",
     "summary": "Electoral rules allocate seats in relation to participating groups' shares of votes.",
     "parents": [
@@ -148,7 +148,7 @@
     "title": "Constitutional referendums",
     "wiki": "Referendum",
     "year": 1848,
-    "domain": "society",
+    "domain": "governance",
     "kind": "practice",
     "summary": "Eligible voters decide specified public questions directly through a formal ballot.",
     "parents": []
@@ -158,7 +158,7 @@
     "title": "Citizens' assemblies",
     "wiki": "Citizens' assembly",
     "year": 2004,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Selected members of the public deliberate together and recommend responses to policy questions.",
     "parents": [
@@ -174,7 +174,7 @@
     "title": "Participatory budgeting",
     "wiki": "Participatory budgeting",
     "year": 1989,
-    "domain": "society",
+    "domain": "governance",
     "kind": "practice",
     "summary": "Residents take part in deciding how defined portions of public budgets are spent.",
     "parents": [
@@ -190,7 +190,7 @@
     "title": "Right of petition",
     "wiki": "Right to petition",
     "year": 1689,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A protected petition allows people to request action or redress from public authorities.",
     "parents": [
@@ -206,7 +206,7 @@
     "title": "Organized legal aid",
     "wiki": "Legal aid",
     "year": 1851,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Supported legal services improve access to representation for people unable to pay ordinary fees.",
     "parents": [
@@ -222,7 +222,7 @@
     "title": "Public defender offices",
     "wiki": "Public defender",
     "year": 1914,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Publicly supported lawyers represent eligible defendants in criminal proceedings.",
     "parents": [
@@ -238,7 +238,7 @@
     "title": "Civil marriage",
     "wiki": "Civil marriage",
     "year": 1792,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Public law recognizes marriages through a civil procedure independent of religious solemnization.",
     "parents": [
@@ -254,7 +254,7 @@
     "title": "Civil registration",
     "wiki": "Civil registration",
     "year": 1539,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Authorities maintain systematic official records of births, deaths, and other civil-status events.",
     "parents": [
@@ -270,7 +270,7 @@
     "title": "Passports",
     "wiki": "Passport",
     "year": 1414,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Authorities issue travel documents identifying holders and requesting or authorizing passage.",
     "parents": [
@@ -286,7 +286,7 @@
     "title": "Napoleonic Civil Code",
     "wiki": "Napoleonic Code",
     "year": 1804,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A national legal compilation organized rules governing persons, property, and private obligations.",
     "parents": [
@@ -302,7 +302,7 @@
     "title": "Codified nationality law",
     "wiki": "Nationality law",
     "year": 1804,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Legal rules determine membership in a state and how that status is acquired or lost.",
     "parents": [
@@ -318,7 +318,7 @@
     "title": "Constitutional monarchy",
     "wiki": "Constitutional monarchy",
     "year": 1689,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Constitutional rules limit royal authority and specify its relationship with other governing institutions.",
     "parents": [
@@ -334,7 +334,7 @@
     "title": "Constitutional federal government",
     "wiki": "Federalism",
     "year": 1787,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A constitutional framework divides governing powers between a central authority and constituent units.",
     "parents": [
@@ -350,7 +350,7 @@
     "title": "Municipal Corporations Act reform",
     "wiki": "Municipal Corporations Act 1835",
     "year": 1835,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "British legislation reorganized many municipal corporations around elected councils and administrative rules.",
     "parents": [
@@ -366,7 +366,7 @@
     "title": "Metropolitan Police Service",
     "wiki": "Metropolitan Police",
     "year": 1829,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "London established a professional civilian force organized for regular policing.",
     "parents": [
@@ -382,7 +382,7 @@
     "title": "Organized prison reform",
     "wiki": "Prison reform",
     "year": 1787,
-    "domain": "society",
+    "domain": "governance",
     "kind": "practice",
     "summary": "Reform associations investigated confinement and advocated changes to treatment and prison conditions.",
     "parents": [
@@ -430,7 +430,7 @@
     "title": "Public urban parks",
     "wiki": "Urban park",
     "year": 1847,
-    "domain": "society",
+    "domain": "construction",
     "kind": "infrastructure",
     "summary": "Publicly accessible landscaped spaces provide recreation within growing urban settlements.",
     "parents": [
@@ -446,7 +446,7 @@
     "title": "Statutory town planning",
     "wiki": "Urban planning",
     "year": 1909,
-    "domain": "society",
+    "domain": "construction",
     "kind": "institution",
     "summary": "Planning legislation coordinates future land use and settlement development through public procedures.",
     "parents": [
@@ -462,7 +462,7 @@
     "title": "Land-use zoning",
     "wiki": "Zoning",
     "year": 1916,
-    "domain": "society",
+    "domain": "construction",
     "kind": "institution",
     "summary": "Public rules distinguish areas by permitted development and land uses.",
     "parents": [
@@ -478,7 +478,7 @@
     "title": "Tenant right to counsel",
     "wiki": "Tenant right to counsel",
     "year": 2017,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Local laws provide eligible tenants with legal representation in eviction proceedings.",
     "parents": [
@@ -494,7 +494,7 @@
     "title": "National parks",
     "wiki": "National park",
     "year": 1872,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Public authorities designate areas for conservation and managed public enjoyment.",
     "parents": [
@@ -526,7 +526,7 @@
     "title": "Publicly supported housing programs",
     "wiki": "Public housing",
     "year": 1919,
-    "domain": "society",
+    "domain": "construction",
     "kind": "institution",
     "summary": "Public programs fund or provide housing under defined affordability and allocation rules.",
     "parents": [
@@ -542,7 +542,7 @@
     "title": "Housing cooperatives",
     "wiki": "Housing cooperative",
     "year": 1900,
-    "domain": "society",
+    "domain": "construction",
     "kind": "institution",
     "summary": "Residents collectively govern an organization that owns or manages their housing.",
     "parents": [
@@ -590,7 +590,7 @@
     "title": "Statutory minimum wages",
     "wiki": "Minimum wage",
     "year": 1894,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Public rules establish a wage floor for specified employment.",
     "parents": [
@@ -606,7 +606,7 @@
     "title": "Eight-hour working-day standards",
     "wiki": "Eight-hour day movement",
     "year": 1919,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "International labor standards limited working hours in specified forms of industrial employment.",
     "parents": [
@@ -622,7 +622,7 @@
     "title": "Statutory paid annual leave",
     "wiki": "Annual leave",
     "year": 1936,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Labor law grants eligible workers time away from work with continued pay.",
     "parents": [
@@ -638,7 +638,7 @@
     "title": "Factory Act child protections",
     "wiki": "Factory Act 1833",
     "year": 1833,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "British factory legislation limited children's work and introduced an inspection system.",
     "parents": [
@@ -654,7 +654,7 @@
     "title": "Maternity protection standards",
     "wiki": "Maternity Protection Convention, 1919",
     "year": 1919,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "International labor standards established specified leave and protection around childbirth.",
     "parents": [
@@ -670,7 +670,7 @@
     "title": "Convention on the Rights of Persons with Disabilities",
     "wiki": "Convention on the Rights of Persons with Disabilities",
     "year": 2006,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The treaty established rights commitments concerning accessibility, equality, and participation for disabled people.",
     "parents": [
@@ -686,7 +686,7 @@
     "title": "Civil marriage equality",
     "wiki": "Same-sex marriage",
     "year": 2001,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Legal reforms extended civil marriage to couples of the same sex.",
     "parents": [
@@ -702,7 +702,7 @@
     "title": "Convention against racial discrimination",
     "wiki": "International Convention on the Elimination of All Forms of Racial Discrimination",
     "year": 1965,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The treaty committed parties to measures against racial discrimination.",
     "parents": [
@@ -718,7 +718,7 @@
     "title": "Convention on the Rights of the Child",
     "wiki": "Convention on the Rights of the Child",
     "year": 1989,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "An international treaty articulated children's rights and corresponding public responsibilities.",
     "parents": [
@@ -735,7 +735,7 @@
     "title": "Convention on women's equality",
     "wiki": "Convention on the Elimination of All Forms of Discrimination Against Women",
     "year": 1979,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The treaty committed parties to address discrimination against women in public and private life.",
     "parents": [
@@ -752,7 +752,7 @@
     "title": "Declaration on the Rights of Indigenous Peoples",
     "wiki": "Declaration on the Rights of Indigenous Peoples",
     "year": 2007,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The declaration articulated collective and individual rights of Indigenous peoples.",
     "parents": [
@@ -768,7 +768,7 @@
     "title": "International data-protection convention",
     "wiki": "Convention for the Protection of Individuals with Regard to Automatic Processing of Personal Data",
     "year": 1981,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A Council of Europe treaty established protections governing automated personal-data processing.",
     "parents": [
@@ -784,7 +784,7 @@
     "title": "Consumer rights policy",
     "wiki": "Consumer protection",
     "year": 1962,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Consumer policy establishes protections concerning safety, information, choice, and redress.",
     "parents": []
@@ -794,7 +794,7 @@
     "title": "Egyptian–Hittite peace treaty",
     "wiki": "Egyptian–Hittite peace treaty",
     "year": -1259,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Egyptian and Hittite rulers recorded reciprocal peace, assistance, and extradition commitments.",
     "parents": [
@@ -810,7 +810,7 @@
     "title": "Treaty of Tordesillas",
     "wiki": "Treaty of Tordesillas",
     "year": 1494,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Castile and Portugal negotiated a demarcation of competing claims beyond Europe.",
     "parents": [
@@ -827,7 +827,7 @@
     "title": "Treaty of Zaragoza",
     "wiki": "Treaty of Zaragoza",
     "year": 1529,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Portugal and Castile negotiated the eastern division of their competing overseas claims.",
     "parents": [
@@ -843,7 +843,7 @@
     "title": "Peace of Utrecht",
     "wiki": "Peace of Utrecht",
     "year": 1713,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A series of agreements settled major disputes arising from the War of the Spanish Succession.",
     "parents": []
@@ -853,7 +853,7 @@
     "title": "Treaty of Paris of 1763",
     "wiki": "Treaty of Paris (1763)",
     "year": 1763,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The treaty redistributed colonial territories after the Seven Years' War.",
     "parents": [
@@ -869,7 +869,7 @@
     "title": "Treaty of Paris of 1783",
     "wiki": "Treaty of Paris (1783)",
     "year": 1783,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Britain recognized United States independence and agreed territorial and other settlement terms.",
     "parents": [
@@ -885,7 +885,7 @@
     "title": "Treaty of Ghent",
     "wiki": "Treaty of Ghent",
     "year": 1814,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Britain and the United States agreed to end the War of 1812 and restore occupied territories.",
     "parents": [
@@ -901,7 +901,7 @@
     "title": "Vienna Convention on Diplomatic Relations",
     "wiki": "Vienna Convention on Diplomatic Relations",
     "year": 1961,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The treaty codified diplomatic functions, privileges, and immunities.",
     "parents": [
@@ -918,7 +918,7 @@
     "title": "Vienna Convention on Consular Relations",
     "wiki": "Vienna Convention on Consular Relations",
     "year": 1963,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The treaty codified consular functions and protections for consular personnel.",
     "parents": [
@@ -935,7 +935,7 @@
     "title": "Vienna Convention on the Law of Treaties",
     "wiki": "Vienna Convention on the Law of Treaties",
     "year": 1969,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The convention organized rules for making, interpreting, and ending treaties between states.",
     "parents": [
@@ -952,7 +952,7 @@
     "title": "United Nations Convention on the Law of the Sea",
     "wiki": "United Nations Convention on the Law of the Sea",
     "year": 1982,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A comprehensive treaty allocated maritime rights and established rules for ocean uses.",
     "parents": [
@@ -968,7 +968,7 @@
     "title": "Refugee Convention",
     "wiki": "Convention Relating to the Status of Refugees",
     "year": 1951,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The treaty defined refugee status and specified protections owed to qualifying refugees.",
     "parents": [
@@ -984,7 +984,7 @@
     "title": "Convention on stateless persons",
     "wiki": "Convention Relating to the Status of Stateless Persons",
     "year": 1954,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A treaty established a legal status and specified protections for qualifying stateless people.",
     "parents": [
@@ -1000,7 +1000,7 @@
     "title": "Convention on the Reduction of Statelessness",
     "wiki": "Convention on the Reduction of Statelessness",
     "year": 1961,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The treaty set nationality rules intended to prevent and reduce statelessness.",
     "parents": [
@@ -1016,7 +1016,7 @@
     "title": "Covenant on Civil and Political Rights",
     "wiki": "International Covenant on Civil and Political Rights",
     "year": 1966,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The covenant established treaty obligations concerning civil and political rights.",
     "parents": [
@@ -1032,7 +1032,7 @@
     "title": "Covenant on Economic, Social and Cultural Rights",
     "wiki": "International Covenant on Economic, Social and Cultural Rights",
     "year": 1966,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The covenant established commitments concerning work, social protection, education, health, and culture.",
     "parents": [
@@ -1048,7 +1048,7 @@
     "title": "Convention against Torture",
     "wiki": "United Nations Convention Against Torture",
     "year": 1984,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The treaty committed parties to prevent torture and address specified related abuses.",
     "parents": [
@@ -1064,7 +1064,7 @@
     "title": "Convention against enforced disappearance",
     "wiki": "International Convention for the Protection of All Persons from Enforced Disappearance",
     "year": 2006,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The treaty established obligations addressing enforced disappearance and affected people's rights.",
     "parents": [
@@ -1080,7 +1080,7 @@
     "title": "Migrant Workers Convention",
     "wiki": "Migrant Workers Convention",
     "year": 1990,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The convention articulated rights protections for migrant workers and their families.",
     "parents": [
@@ -1096,7 +1096,7 @@
     "title": "International Criminal Court",
     "wiki": "International Criminal Court",
     "year": 1998,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The Rome Statute established a permanent court for specified serious international crimes.",
     "parents": [
@@ -1112,7 +1112,7 @@
     "title": "Permanent Court of International Justice",
     "wiki": "Permanent Court of International Justice",
     "year": 1922,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A permanent international court heard disputes and issued advisory opinions within the League-era system.",
     "parents": [
@@ -1128,7 +1128,7 @@
     "title": "International Court of Justice",
     "wiki": "International Court of Justice",
     "year": 1945,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The UN's principal judicial organ adjudicates eligible interstate disputes and gives advisory opinions.",
     "parents": [
@@ -1144,7 +1144,7 @@
     "title": "European Social Charter",
     "wiki": "European Social Charter",
     "year": 1961,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A regional treaty articulated employment and social rights alongside European civil-rights commitments.",
     "parents": [
@@ -1160,7 +1160,7 @@
     "title": "African Charter on Human and Peoples' Rights",
     "wiki": "African Charter on Human and Peoples' Rights",
     "year": 1981,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The charter articulated individual and peoples' rights within an African regional system.",
     "parents": [
@@ -1176,7 +1176,7 @@
     "title": "American Convention on Human Rights",
     "wiki": "American Convention on Human Rights",
     "year": 1969,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A regional treaty established human-rights commitments and mechanisms for the Americas.",
     "parents": [
@@ -1193,7 +1193,7 @@
     "title": "Organization of American States",
     "wiki": "Organization of American States",
     "year": 1948,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "American states organized regional cooperation and institutions through a shared charter.",
     "parents": [
@@ -1209,7 +1209,7 @@
     "title": "Helsinki Final Act",
     "wiki": "Helsinki Accords",
     "year": 1975,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Participating states recorded commitments concerning security, cooperation, and human rights.",
     "parents": [
@@ -1225,7 +1225,7 @@
     "title": "Good Friday Agreement",
     "wiki": "Good Friday Agreement",
     "year": 1998,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Linked agreements established power-sharing and cooperation arrangements for Northern Ireland.",
     "parents": [
@@ -1241,7 +1241,7 @@
     "title": "Schengen Agreement",
     "wiki": "Schengen Agreement",
     "year": 1985,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Participating European states agreed to reduce checks at their shared borders.",
     "parents": [
@@ -1257,7 +1257,7 @@
     "title": "Maastricht Treaty",
     "wiki": "Maastricht Treaty",
     "year": 1992,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "European governments established the European Union and agreed further integration commitments.",
     "parents": [
@@ -1273,7 +1273,7 @@
     "title": "Treaty of Lisbon",
     "wiki": "Treaty of Lisbon",
     "year": 2007,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The treaty revised European Union institutions and decision procedures.",
     "parents": [
@@ -1289,7 +1289,7 @@
     "title": "Mercosur",
     "wiki": "Mercosur",
     "year": 1991,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "South American states established a regional framework for trade and economic coordination.",
     "parents": []
@@ -1299,7 +1299,7 @@
     "title": "North American Free Trade Agreement",
     "wiki": "North American Free Trade Agreement",
     "year": 1992,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "The agreement set regional commitments governing trade and investment among three North American countries.",
     "parents": [
@@ -1315,7 +1315,7 @@
     "title": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership",
     "wiki": "Comprehensive and Progressive Agreement for Trans-Pacific Partnership",
     "year": 2018,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Participating Pacific-region economies established shared trade and investment commitments.",
     "parents": [
@@ -1332,7 +1332,7 @@
     "title": "Regional Comprehensive Economic Partnership",
     "wiki": "Regional Comprehensive Economic Partnership",
     "year": 2020,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "An Asia-Pacific agreement coordinated trade rules across participating economies.",
     "parents": [
@@ -1348,7 +1348,7 @@
     "title": "Economic Community of West African States",
     "wiki": "ECOWAS",
     "year": 1975,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "West African states established institutions for regional economic integration and cooperation.",
     "parents": []
@@ -1358,7 +1358,7 @@
     "title": "East African Community",
     "wiki": "East African Community",
     "year": 2000,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A renewed regional community organized cooperation and economic integration among East African states.",
     "parents": [
@@ -1375,7 +1375,7 @@
     "title": "Caribbean Community",
     "wiki": "Caribbean Community",
     "year": 1973,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Caribbean states established institutions for economic integration and regional cooperation.",
     "parents": [
@@ -1392,7 +1392,7 @@
     "title": "Gulf Cooperation Council",
     "wiki": "Gulf Cooperation Council",
     "year": 1981,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Participating Gulf states organized regional political and economic coordination.",
     "parents": []
@@ -1402,7 +1402,7 @@
     "title": "Arab League",
     "wiki": "Arab League",
     "year": 1945,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Arab states established a regional organization for coordinating shared political and social concerns.",
     "parents": []
@@ -1412,7 +1412,7 @@
     "title": "Organization of the Petroleum Exporting Countries",
     "wiki": "OPEC",
     "year": 1960,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Petroleum-exporting states formed an organization to coordinate policies affecting oil markets.",
     "parents": [
@@ -1428,7 +1428,7 @@
     "title": "Marshall Plan",
     "wiki": "Marshall Plan",
     "year": 1948,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "A United States assistance program supported European economic reconstruction.",
     "parents": [
@@ -1444,7 +1444,7 @@
     "title": "Organisation for Economic Co-operation and Development",
     "wiki": "OECD",
     "year": 1961,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "A reorganized international body expanded policy cooperation beyond its European reconstruction origins.",
     "parents": [
@@ -1461,7 +1461,7 @@
     "title": "Council of Europe",
     "wiki": "Council of Europe",
     "year": 1949,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "European states created a regional organization focused on rights, democracy, and legal cooperation.",
     "parents": [
@@ -1477,7 +1477,7 @@
     "title": "Strategic Arms Limitation Talks agreements",
     "wiki": "Strategic Arms Limitation Talks",
     "year": 1972,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "United States and Soviet negotiations produced agreements limiting specified strategic weapons arrangements.",
     "parents": []
@@ -1487,7 +1487,7 @@
     "title": "Strategic Arms Reduction Treaty",
     "wiki": "START I",
     "year": 1991,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A bilateral treaty established verified reductions in specified strategic nuclear weapons.",
     "parents": [
@@ -1503,7 +1503,7 @@
     "title": "Comprehensive Nuclear-Test-Ban Treaty",
     "wiki": "Comprehensive Nuclear-Test-Ban Treaty",
     "year": 1996,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A negotiated treaty established a prohibition on nuclear explosions and an international verification framework.",
     "parents": [
@@ -1520,7 +1520,7 @@
     "title": "Ottawa Treaty",
     "wiki": "Ottawa Treaty",
     "year": 1997,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The treaty prohibited specified anti-personnel mines and established clearance and assistance obligations.",
     "parents": [
@@ -1536,7 +1536,7 @@
     "title": "Convention on Cluster Munitions",
     "wiki": "Convention on Cluster Munitions",
     "year": 2008,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "The convention prohibited specified cluster munitions and established clearance and victim-assistance commitments.",
     "parents": [
@@ -1961,7 +1961,7 @@
     "title": "Printed literacy primers",
     "wiki": "Primer (textbook)",
     "year": 1500,
-    "domain": "culture",
+    "domain": "education",
     "kind": "technology",
     "summary": "Short teaching books organize letters, reading exercises, and elementary instruction.",
     "parents": [
@@ -1977,7 +1977,7 @@
     "title": "Orbis Pictus illustrated textbook",
     "wiki": "Orbis Pictus",
     "year": 1658,
-    "domain": "culture",
+    "domain": "education",
     "kind": "technology",
     "summary": "Comenius paired named objects with pictures in a widely used children's learning book.",
     "parents": [
@@ -1993,7 +1993,7 @@
     "title": "Hornbook teaching aids",
     "wiki": "Hornbook",
     "year": 1500,
-    "domain": "culture",
+    "domain": "education",
     "kind": "technology",
     "summary": "Compact teaching aids displayed elementary letters and texts for repeated reading practice.",
     "parents": [
@@ -2009,7 +2009,7 @@
     "title": "French National Archives",
     "wiki": "Archives Nationales (France)",
     "year": 1790,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "A national archival institution organized custody of public records after the French Revolution.",
     "parents": []
@@ -2019,7 +2019,7 @@
     "title": "Diplomatics",
     "wiki": "Diplomatics",
     "year": 1681,
-    "domain": "culture",
+    "domain": "education",
     "kind": "practice",
     "summary": "Systematic analysis of documentary forms assists evaluation of records' origin and authenticity.",
     "parents": [
@@ -2035,7 +2035,7 @@
     "title": "Respect des fonds",
     "wiki": "Respect des fonds",
     "year": 1841,
-    "domain": "culture",
+    "domain": "education",
     "kind": "practice",
     "summary": "Archival arrangement preserves records according to the organizations that produced them.",
     "parents": [
@@ -2051,7 +2051,7 @@
     "title": "Systematic library cataloging rules",
     "wiki": "Library catalog",
     "year": 1841,
-    "domain": "culture",
+    "domain": "education",
     "kind": "technology",
     "summary": "Cataloging rules make descriptions and access points more consistent across library collections.",
     "parents": [
@@ -2067,7 +2067,7 @@
     "title": "Dewey Decimal Classification",
     "wiki": "Dewey Decimal Classification",
     "year": 1876,
-    "domain": "culture",
+    "domain": "education",
     "kind": "technology",
     "summary": "A numbered subject scheme organizes books and their catalog descriptions for retrieval.",
     "parents": [
@@ -2083,7 +2083,7 @@
     "title": "Universal Decimal Classification",
     "wiki": "Universal Decimal Classification",
     "year": 1895,
-    "domain": "culture",
+    "domain": "education",
     "kind": "technology",
     "summary": "An expanded decimal classification uses combinations of notation to describe complex subjects.",
     "parents": [
@@ -2099,7 +2099,7 @@
     "title": "Library of Congress Classification",
     "wiki": "Library of Congress Classification",
     "year": 1897,
-    "domain": "culture",
+    "domain": "education",
     "kind": "technology",
     "summary": "A letter-and-number subject scheme organizes large research-library collections.",
     "parents": [
@@ -2115,7 +2115,7 @@
     "title": "International Standard Book Number",
     "wiki": "ISBN",
     "year": 1967,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "A standardized identifier distinguishes published book editions within distribution systems.",
     "parents": [
@@ -2131,7 +2131,7 @@
     "title": "International Standard Serial Number",
     "wiki": "ISSN",
     "year": 1975,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "A standardized identifier distinguishes continuing publications such as journals and newspapers.",
     "parents": [
@@ -2147,7 +2147,7 @@
     "title": "UNESCO Public Library Manifesto",
     "wiki": "UNESCO Public Library Manifesto",
     "year": 1949,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "An international statement articulated the public library's educational and community roles.",
     "parents": [
@@ -2163,7 +2163,7 @@
     "title": "Educational broadcasters' association",
     "wiki": "National Association of Educational Broadcasters",
     "year": 1925,
-    "domain": "culture",
+    "domain": "education",
     "kind": "practice",
     "summary": "An association coordinated cooperation and exchange among educational radio broadcasters.",
     "parents": [
@@ -2179,7 +2179,7 @@
     "title": "Open University",
     "wiki": "Open University",
     "year": 1969,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "A British university organized large-scale distance study with supported learning materials.",
     "parents": [
@@ -2195,7 +2195,7 @@
     "title": "Organized adult education",
     "wiki": "Adult education",
     "year": 1870,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Programs support learning by adults outside the ordinary childhood schooling sequence.",
     "parents": [
@@ -2211,7 +2211,7 @@
     "title": "Workers' Educational Association",
     "wiki": "Workers' Educational Association",
     "year": 1903,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "An association expanded educational opportunities for working adults through organized courses.",
     "parents": [
@@ -2227,7 +2227,7 @@
     "title": "Women's higher education institutions",
     "wiki": "Women's college",
     "year": 1849,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Dedicated colleges expanded advanced educational opportunities for women excluded from many universities.",
     "parents": [
@@ -2243,7 +2243,7 @@
     "title": "Land-grant colleges",
     "wiki": "Land-grant university",
     "year": 1862,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Public land grants supported institutions teaching agriculture, mechanics, and broader studies.",
     "parents": [
@@ -2259,7 +2259,7 @@
     "title": "Polytechnic higher education",
     "wiki": "Institute of technology",
     "year": 1794,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Institutions organized advanced instruction directed toward technical and applied fields.",
     "parents": []
@@ -2269,7 +2269,7 @@
     "title": "Research university model",
     "wiki": "Research university",
     "year": 1810,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "University organization increasingly combined advanced teaching with sustained scholarly research.",
     "parents": [
@@ -2285,7 +2285,7 @@
     "title": "Rhetorical education",
     "wiki": "Rhetoric",
     "year": -400,
-    "domain": "culture",
+    "domain": "education",
     "kind": "practice",
     "summary": "Systematic instruction develops the composition and delivery of persuasive speech.",
     "parents": [
@@ -2301,7 +2301,7 @@
     "title": "Socratic dialogue",
     "wiki": "Socratic dialogue",
     "year": -400,
-    "domain": "culture",
+    "domain": "education",
     "kind": "practice",
     "summary": "Question-and-answer exchanges examine claims through challenges and attempted definitions.",
     "parents": [
@@ -2317,7 +2317,7 @@
     "title": "Stoic philosophical school",
     "wiki": "Stoicism",
     "year": -300,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Stoic teachers developed traditions of ethical discipline, reasoning, and reflection on nature.",
     "parents": [
@@ -2945,7 +2945,7 @@
     "title": "Music conservatories",
     "wiki": "Music school",
     "year": 1795,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Specialist institutions organize sustained training in musical performance and composition.",
     "parents": []
@@ -3126,7 +3126,7 @@
     "title": "Rule of Saint Benedict",
     "wiki": "Rule of Saint Benedict",
     "year": 516,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "technology",
     "summary": "A written monastic rule organized communal prayer, work, discipline, and leadership.",
     "parents": [
@@ -3142,7 +3142,7 @@
     "title": "Cistercian Order",
     "wiki": "Cistercians",
     "year": 1098,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "A monastic order organized communities around a reform of Benedictine observance.",
     "parents": [
@@ -3158,7 +3158,7 @@
     "title": "Franciscan Order",
     "wiki": "Franciscans",
     "year": 1209,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Franciscan communities organized religious life around poverty, preaching, and service.",
     "parents": [
@@ -3174,7 +3174,7 @@
     "title": "Dominican Order",
     "wiki": "Dominican Order",
     "year": 1216,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "A religious order coordinated preaching, study, and communal life.",
     "parents": [
@@ -3190,7 +3190,7 @@
     "title": "Society of Jesus",
     "wiki": "Jesuits",
     "year": 1540,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "The Jesuit order developed coordinated religious, missionary, and educational activity.",
     "parents": [
@@ -3206,7 +3206,7 @@
     "title": "Khalsa",
     "wiki": "Khalsa",
     "year": 1699,
-    "domain": "culture",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Guru Gobind Singh established an initiated Sikh community with shared commitments and public identity.",
     "parents": [
@@ -3222,7 +3222,7 @@
     "title": "Sikh langar",
     "wiki": "Langar (Sikhism)",
     "year": 1500,
-    "domain": "society",
+    "domain": "religion",
     "kind": "institution",
     "summary": "Communal kitchens provide shared meals open to participants without caste distinction.",
     "parents": [
@@ -3238,7 +3238,7 @@
     "title": "Nizamiyya teaching institutions",
     "wiki": "Nizamiyya",
     "year": 1065,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Patron-supported teaching institutions organized Sunni legal and theological education.",
     "parents": [
@@ -3254,7 +3254,7 @@
     "title": "Public primary education systems",
     "wiki": "Primary education",
     "year": 1833,
-    "domain": "society",
+    "domain": "education",
     "kind": "institution",
     "summary": "Public institutions increasingly organized and financed elementary schooling for broad populations.",
     "parents": [
@@ -3270,7 +3270,7 @@
     "title": "School meal programs",
     "wiki": "School meal",
     "year": 1906,
-    "domain": "society",
+    "domain": "education",
     "kind": "institution",
     "summary": "Organized feeding programs support pupils' access to nutrition during the school day.",
     "parents": [
@@ -3286,7 +3286,7 @@
     "title": "School libraries",
     "wiki": "School library",
     "year": 1900,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Libraries within schools support reading, instruction, and learners' access to information.",
     "parents": [
@@ -3302,7 +3302,7 @@
     "title": "Cuban Literacy Campaign",
     "wiki": "Cuban literacy campaign",
     "year": 1961,
-    "domain": "society",
+    "domain": "education",
     "kind": "practice",
     "summary": "A nationwide campaign mobilized instructors and learners to expand reading and writing skills.",
     "parents": [
@@ -3318,7 +3318,7 @@
     "title": "Nonformal education programs",
     "wiki": "Nonformal learning",
     "year": 1967,
-    "domain": "culture",
+    "domain": "education",
     "kind": "practice",
     "summary": "Organized learning outside ordinary school structures addresses defined community and learner needs.",
     "parents": [
@@ -3334,7 +3334,7 @@
     "title": "Scouting",
     "wiki": "Scouting",
     "year": 1907,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Youth organizations developed shared programs of outdoor activity, service, and practical learning.",
     "parents": []
@@ -3344,7 +3344,7 @@
     "title": "Girl Guiding",
     "wiki": "Girl Guides",
     "year": 1910,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Guiding organizations adapted organized outdoor learning and service programs for girls.",
     "parents": [
@@ -3360,7 +3360,7 @@
     "title": "Credit-rating organizations",
     "wiki": "Credit rating agency",
     "year": 1841,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Commercial agencies collect information and assess borrowers' ability to meet financial obligations.",
     "parents": [
@@ -3376,7 +3376,7 @@
     "title": "Statutory limited liability",
     "wiki": "Limited Liability Act 1855",
     "year": 1855,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "British legislation limited qualifying investors' exposure to company debts.",
     "parents": [
@@ -3392,7 +3392,7 @@
     "title": "Statutory bankruptcy discharge",
     "wiki": "Bankruptcy",
     "year": 1705,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "English reforms allowed qualifying bankrupt debtors to obtain discharge under specified procedures.",
     "parents": [
@@ -3408,7 +3408,7 @@
     "title": "Statute of Monopolies",
     "wiki": "Statute of Monopolies",
     "year": 1624,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "English legislation constrained monopolies while preserving specified privileges for new inventions.",
     "parents": [
@@ -3424,7 +3424,7 @@
     "title": "Statutory trademark registration",
     "wiki": "Trademark",
     "year": 1875,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "Registration systems provide formal protection for signs identifying commercial sources.",
     "parents": [
@@ -3440,7 +3440,7 @@
     "title": "Kitemark certification",
     "wiki": "Kitemark",
     "year": 1903,
-    "domain": "society",
+    "domain": "measurement",
     "kind": "institution",
     "summary": "A standards organization's certification mark identifies products assessed against specified requirements.",
     "parents": [
@@ -3456,7 +3456,7 @@
     "title": "British standards organization",
     "wiki": "BSI Group",
     "year": 1901,
-    "domain": "society",
+    "domain": "measurement",
     "kind": "institution",
     "summary": "A national standards organization coordinated common specifications for industry.",
     "parents": [
@@ -3472,7 +3472,7 @@
     "title": "Educational accreditation",
     "wiki": "Educational accreditation",
     "year": 1885,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Review organizations evaluate educational institutions or programs against agreed criteria.",
     "parents": [
@@ -3488,7 +3488,7 @@
     "title": "Organized quality management",
     "wiki": "Quality management",
     "year": 1951,
-    "domain": "society",
+    "domain": "measurement",
     "kind": "practice",
     "summary": "Organizations coordinate procedures, improvement, and assessment to maintain desired quality.",
     "parents": [
@@ -3504,7 +3504,7 @@
     "title": "Modern occupational safety regulation",
     "wiki": "Occupational Safety and Health Act (United States)",
     "year": 1970,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "United States legislation established a coordinated federal framework for workplace safety and health.",
     "parents": [
@@ -3536,7 +3536,7 @@
     "title": "Humanitarian logistics",
     "wiki": "Humanitarian logistics",
     "year": 1990,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "practice",
     "summary": "Relief operations coordinate purchasing, storage, transport, and distribution under crisis conditions.",
     "parents": [
@@ -3552,7 +3552,7 @@
     "title": "Prepaid adhesive postage",
     "wiki": "Postage stamp",
     "year": 1840,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Standardized stamps document advance payment for mail delivery.",
     "parents": [
@@ -3568,7 +3568,7 @@
     "title": "Registered mail",
     "wiki": "Registered mail",
     "year": 1841,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Postal procedures record acceptance and handling of designated consignments.",
     "parents": [
@@ -3584,7 +3584,7 @@
     "title": "Parcel post",
     "wiki": "Parcel post",
     "year": 1883,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Postal services organize delivery of packages through standardized public arrangements.",
     "parents": [
@@ -3600,7 +3600,7 @@
     "title": "Freight forwarding organizations",
     "wiki": "Freight forwarder",
     "year": 1836,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Intermediaries arrange shipment and related services across carriers and jurisdictions.",
     "parents": [
@@ -3616,7 +3616,7 @@
     "title": "Liner shipping conferences",
     "wiki": "Liner Conference System",
     "year": 1875,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Shipping operators formed associations to coordinate specified services and commercial terms.",
     "parents": [
@@ -3632,7 +3632,7 @@
     "title": "Incoterms",
     "wiki": "Incoterms",
     "year": 1936,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Standard commercial terms allocate specified delivery responsibilities between trading parties.",
     "parents": [
@@ -3648,7 +3648,7 @@
     "title": "International Chamber of Commerce",
     "wiki": "International Chamber of Commerce",
     "year": 1919,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "An international business organization coordinates commercial rules, representation, and dispute services.",
     "parents": [
@@ -3664,7 +3664,7 @@
     "title": "International Air Transport Association",
     "wiki": "International Air Transport Association",
     "year": 1945,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Airlines formed an association to coordinate commercial aviation practices and services.",
     "parents": [
@@ -3680,7 +3680,7 @@
     "title": "International Civil Aviation Organization",
     "wiki": "International Civil Aviation Organization",
     "year": 1944,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "An international organization coordinates civil aviation standards and cooperation.",
     "parents": [
@@ -3696,7 +3696,7 @@
     "title": "International Maritime Organization",
     "wiki": "International Maritime Organization",
     "year": 1948,
-    "domain": "society",
+    "domain": "governance",
     "kind": "institution",
     "summary": "A specialized international organization coordinates maritime safety and related shipping rules.",
     "parents": [
@@ -3712,7 +3712,7 @@
     "title": "Intermodal shipment documentation",
     "wiki": "Combined transport",
     "year": 1975,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "technology",
     "summary": "Coordinated documents describe consignments moving through multiple transport modes.",
     "parents": [
@@ -3728,7 +3728,7 @@
     "title": "International time-zone coordination",
     "wiki": "Time zone",
     "year": 1884,
-    "domain": "society",
+    "domain": "measurement",
     "kind": "institution",
     "summary": "Coordinated time conventions reduce ambiguity in schedules and communication between regions.",
     "parents": [
@@ -3744,7 +3744,7 @@
     "title": "International Date Line convention",
     "wiki": "International Date Line",
     "year": 1884,
-    "domain": "society",
+    "domain": "measurement",
     "kind": "institution",
     "summary": "A shared convention distinguishes calendar dates across an approximate Pacific boundary.",
     "parents": [
@@ -3760,7 +3760,7 @@
     "title": "Postal codes",
     "wiki": "Postal code",
     "year": 1941,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "technology",
     "summary": "Area codes assist postal sorting and routing within delivery networks.",
     "parents": [
@@ -3776,7 +3776,7 @@
     "title": "Systematic addressing",
     "wiki": "Address",
     "year": 1750,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Organized place identifiers allow people, goods, and services to locate destinations reliably.",
     "parents": [
@@ -3792,7 +3792,7 @@
     "title": "Street numbering",
     "wiki": "House numbering",
     "year": 1750,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "technology",
     "summary": "Assigned building numbers distinguish destinations along named streets.",
     "parents": [
@@ -3808,7 +3808,7 @@
     "title": "Postal money orders",
     "wiki": "Money order",
     "year": 1838,
-    "domain": "society",
+    "domain": "commerce",
     "kind": "institution",
     "summary": "Postal arrangements transfer designated funds through issued payment instruments.",
     "parents": [
@@ -3824,7 +3824,7 @@
     "title": "International reply coupons",
     "wiki": "International reply coupon",
     "year": 1906,
-    "domain": "society",
+    "domain": "logistics",
     "kind": "institution",
     "summary": "Exchangeable postal coupons let senders provide return postage usable in participating foreign postal services.",
     "parents": [
@@ -3888,7 +3888,7 @@
     "title": "Mechanics' institutes",
     "wiki": "Mechanics' institute",
     "year": 1821,
-    "domain": "culture",
+    "domain": "education",
     "kind": "institution",
     "summary": "Educational associations provided workers with lectures, libraries, and practical opportunities for learning.",
     "parents": [
@@ -3904,7 +3904,7 @@
     "title": "Oral-history interviewing",
     "wiki": "Oral history",
     "year": 1948,
-    "domain": "culture",
+    "domain": "education",
     "kind": "practice",
     "summary": "Researchers preserve interviews about remembered experience for later historical interpretation.",
     "parents": [

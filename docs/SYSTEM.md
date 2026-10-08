@@ -18,11 +18,11 @@ Inspected on 2026-10-07. These are a dated baseline, not counters to maintain af
 
 | Area | Implemented | Limit |
 | --- | --- | --- |
-| Canonical graph | Nine node files plus `data/connections.json`, combined by `scripts/lib/catalog.mjs` | Explicit file registration; no general inspection or patch CLI |
-| Content | 2,090 capabilities, 2,410 edges | Editorial catalog, not fully verified history |
-| Provenance | Node `wiki`, optional edge `source`/`reviewed`, offline article index | 65 edges have `source`; none has `reviewed: true`; this excludes research performed but unrecorded |
-| Directness | Alternate-path/remote-observation audit; 57 edges carry `directContribution` | Text length satisfies a flag; no evidence fingerprint or invalidation of an old explanation |
-| Sources/media | Local ZIM, ignored article cache, 1,766 CDN images | Cache is not durable editorial memory; live media revisions differ from archived text versions |
+| Canonical graph | Twelve node files plus `data/connections.json`, combined by `scripts/lib/catalog.mjs` | Explicit file registration; no general inspection or patch CLI |
+| Content | 2,175 capabilities, 2,490 edges | Editorial catalog, not fully verified history |
+| Provenance | Node `wiki`, optional edge `source`/`reviewed`, offline article index | 147 edges have `source`; none has `reviewed: true`; this excludes research performed but unrecorded |
+| Directness | Alternate-path/remote-observation audit; 69 edges carry `directContribution` | Text length satisfies a flag; no evidence fingerprint or invalidation of an old explanation |
+| Sources/media | Local ZIM, ignored article cache, 1,838 CDN images | Cache is not durable editorial memory; live media revisions differ from archived text versions |
 | Publication | Version-1 catalog JSON, metadata files, relative assets, hash navigation | `generated` is a date, not content identity; source/build equivalence and metadata freshness are not fully enforced |
 | Rendering | Worker layout, spatial indexes, adaptive bands, bounded LOD and navigation | Rendering scale does not establish historical coverage or authoring-query performance |
 | Verification | Data checks, Svelte check, graph/layout tests, Pages workflow | CI runs tests before compilation; some tests read the previously committed catalog |
