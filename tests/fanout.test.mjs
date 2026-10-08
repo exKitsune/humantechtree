@@ -1,3 +1,4 @@
+import { routeEnvelopes, boxDistance } from '../src/lib/route-geometry.js'
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -23,6 +24,9 @@ export function verifyFanouts(layout) {
   }
   for (const [source, family] of groups) for (let i = 0; i < family.length; i++) for (let j = i + 1; j < family.length; j++) {
     const a = family[i], b = family[j]
+    for (const x of routeEnvelopes(a)) for (const y of routeEnvelopes(b)) {
+      assert(boxDistance(x, y) >= 4, 'Curve/line envelopes lose clearance for ' + a.id + ' and ' + b.id)
+    }
     for (let ai = 1; ai < a.points.length; ai++) for (let bi = 1; bi < b.points.length; bi++) {
       assert(!intersects(a.points[ai - 1], a.points[ai], b.points[bi - 1], b.points[bi]),
         `Outbound routes cross for ${source}: ${a.target} segment ${ai}, ${b.target} segment ${bi}`)

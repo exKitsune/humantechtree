@@ -3,40 +3,8 @@ import { routeIntersectsRect } from './layout.js'
 export const MAX_CARDS = 120
 export const MAX_MARKS = 1800
 export const MAX_EDGES = 700
-const intersects = (a, b) => a.x <= b.x + b.width && a.x + a.width >= b.x && a.y <= b.y + b.height && a.y + a.height >= b.y
-
-/** A static bounding-volume tree. Queries stop at their render budget instead
- * of scanning the complete catalog on every wheel event. */
-export function spatialIndex(entries) {
-  function build(items) {
-    if (!items.length) return null
-    let x = Infinity, y = Infinity, right = -Infinity, bottom = -Infinity
-    for (const item of items) { x = Math.min(x, item.x); y = Math.min(y, item.y); right = Math.max(right, item.x + item.width); bottom = Math.max(bottom, item.y + item.height) }
-    const box = { x, y, width: right - x, height: bottom - y }
-    if (items.length <= 12) return { ...box, items }
-    const axis = box.width > box.height ? 'x' : 'y'
-    items.sort((a, b) => a[axis] - b[axis])
-    const half = items.length >> 1
-    return { ...box, left: build(items.slice(0, half)), right: build(items.slice(half)) }
-  }
-  const root = build([...entries])
-  return {
-    query(rect, limit = Infinity) {
-      const found = []
-      function visit(branch) {
-        if (!branch || found.length >= limit || !intersects(branch, rect)) return
-        if (branch.items) {
-          for (const item of branch.items) {
-            if (intersects(item, rect)) found.push(item)
-            if (found.length >= limit) break
-          }
-        } else { visit(branch.left); visit(branch.right) }
-      }
-      visit(root)
-      return found
-    },
-  }
-}
+import { spatialIndex } from './spatial.js'
+export { spatialIndex } from './spatial.js'
 
 export function createScene(layout, items) {
   const entries = new Map(items.map(n => [n.id, n]))
@@ -96,12 +64,12 @@ export function planFrame(scene, viewport, width, height, selected) {
   }
   const active = []
   if (mode !== 'density') for (const e of scene.incident.get(selected) ?? []) {
-    if (routeIntersectsRect(e.points, rect)) active.push(e)
+    if (routeIntersectsRect(e.points, rect, e.curve)) active.push(e)
     if (active.length > MAX_EDGES) break
   }
   let edges = zoom >= .25 ? scene.edgeIndex.query(rect, MAX_EDGES + 1) : []
   const selectedOnly = zoom < .25 || edges.length > MAX_EDGES
-  edges = mode === 'density' ? [] : selectedOnly ? active : edges.filter(e => routeIntersectsRect(e.points, rect) && e.source !== selected && e.target !== selected).concat(active)
+  edges = mode === 'density' ? [] : selectedOnly ? active : edges.filter(e => routeIntersectsRect(e.points, rect, e.curve) && e.source !== selected && e.target !== selected).concat(active)
   const edgeLimited = edges.length > MAX_EDGES
   return { mode, marks, cards: mode === 'cards' ? marks : [], edges: edges.slice(0, MAX_EDGES), selectedOnly, edgeLimited, rect }
 }

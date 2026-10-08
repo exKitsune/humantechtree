@@ -1,3 +1,5 @@
+import { traceRoute } from './route-geometry.js'
+
 function prepare(canvas, width, height) {
   const dpr = Math.min(window.devicePixelRatio || 1, 2)
   if (canvas.width !== Math.round(width * dpr) || canvas.height !== Math.round(height * dpr)) {
@@ -34,8 +36,7 @@ export function drawScene(canvas, scene, frame, viewport, width, height, selecte
   for (const edge of frame.edges) {
     const active = edge.source === selected || edge.target === selected
     const points = edge.points
-    ctx.beginPath(); ctx.moveTo(sx(points[0].x), sy(points[0].y))
-    for (let i = 1; i < points.length; i++) ctx.lineTo(sx(points[i].x), sy(points[i].y))
+    traceRoute(ctx, edge, sx, sy)
     ctx.globalAlpha = 1; ctx.lineCap = 'round'
     ctx.strokeStyle = '#171c1a'; ctx.lineWidth = active ? 5 : 4; ctx.setLineDash([]); ctx.stroke()
     ctx.strokeStyle = relations[edge.type].color

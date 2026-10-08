@@ -1,3 +1,5 @@
+import { simplifyRoutes } from './simplify-routes.js'
+import { curveBounds } from './route-geometry.js'
 import { placeBranchRows } from './placement.js'
 import { planCorridors, orderFanouts, assignFanoutTracks } from './fanout.js'
 import { assignTimeColumns, placeTimeBands } from './timeline.js'
@@ -8,7 +10,11 @@ const PORT_SPACING = 12
 const TRACK_SPACING = 26
 export const BAND_ORDER = ['engineering', 'materials', 'construction', 'energy', 'measurement', 'science', 'medicine', 'information', 'transport', 'logistics', 'warfare', 'food', 'commerce', 'governance', 'society', 'education', 'religion', 'culture']
 
-export function routeIntersectsRect(points, rect) {
+export function routeIntersectsRect(points, rect, curve) {
+  if (curve) {
+    const b = curveBounds(curve)
+    if (b.x <= rect.x + rect.width && b.x + b.width >= rect.x && b.y <= rect.y + rect.height && b.y + b.height >= rect.y) return true
+  }
   return points.some((point, i) => {
     if (!i) return false
     const previous = points[i - 1]
@@ -84,7 +90,7 @@ export async function layoutGraph(nodes) {
   const placed = [...index.values()].map(n => ({ id: n.id, domain: n.domain, rank: n.rank, x: columnX[n.rank], y: n.y, width: n.width, height: n.height, ports: n.ports }))
   const width = columnX.at(-1) + NODE_WIDTH + 100
   const boundaries = [0, ...columnX.slice(1).map((x, i) => (columnX[i] + NODE_WIDTH + x) / 2), width]
-  return {
+  return simplifyRoutes({
     width, height: top, bands: bands.map(({ contentBottom, ...band }) => band), timeBands: placeTimeBands(periods, boundaries), nodes: placed,
     edges: edges.map(e => {
       const source = index.get(e.source), target = index.get(e.target)
@@ -94,5 +100,5 @@ export async function layoutGraph(nodes) {
       points.push({ x: columnX[target.rank], y: e.targetY })
       return { id: e.id, source: e.source, target: e.target, type: e.type, sourceHandle: e.sourceHandle, targetHandle: e.targetHandle, points }
     }),
-  }
+  })
 }

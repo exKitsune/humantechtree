@@ -1,3 +1,5 @@
+import { curveBounds, traceRoute } from '../src/lib/route-geometry.js'
+import { cardIndex } from '../src/lib/spatial.js'
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -31,6 +33,15 @@ function verifyGeometry(layout, items) {
       assert(port && !usedPorts.has(handle), `Missing or shared port ${handle}`)
       usedPorts.add(handle)
       assert(close(node.x + port.x, point.x) && close(node.y + port.y, point.y), `Detached route ${edge.id}`)
+    }
+    if (edge.curve) {
+      const r = curveBounds(edge.curve)
+      assert(r.width > 0 && r.height > 0)
+      assert(edge.curve.from.x >= edge.points[0].x && edge.curve.to.x <= edge.points.at(-1).x)
+      assert.equal(edge.curve.from.y, edge.points[0].y)
+      assert.equal(edge.curve.to.y, edge.points.at(-1).y)
+      for (const n of layout.nodes) assert(!(overlap(r.x, r.x + r.width, n.x, n.x + n.width)
+        && overlap(r.y, r.y + r.height, n.y, n.y + n.height)), edge.id + ' curve envelope crosses ' + n.id)
     }
     for (let i = 1; i < edge.points.length; i++) {
       const a = edge.points[i - 1], b = edge.points[i]
@@ -90,6 +101,15 @@ test('Dirac neighborhood follows its connected spine without a Bohr detour or cr
   assert.equal(new Set(spine.map(id => byId.get(id).y)).size, 1)
   assert.notEqual(byId.get('bohr-atomic-model').y, byId.get('matter-waves').y)
   assert.equal(measureLayout(layout).properCrossings, 0)
+  for (let i = 1; i < spine.length; i++) {
+    const e = layout.edges.find(e => e.source === spine[i - 1] && e.target === spine[i])
+    assert.equal(e.points.length, 2, e.id + ' should be straight')
+    assert.equal(e.points[0].y, e.points[1].y)
+  }
+  const bohr = layout.edges.find(e => e.source === 'bohr-atomic-model')
+  assert(bohr.curve, 'Bohr reaches quantum mechanics with one smooth change of height')
+  const detour = layout.edges.find(e => e.source === 'special-relativity' && e.target === 'dirac-equation')
+  assert(detour.points.length > 2 && !detour.curve, 'The blocked direct route retains its detour')
   verifyGeometry(layout, near)
   const scrambled = [...near].reverse().map(n => ({ ...n, parents: [...n.parents].reverse() }))
   assert.deepEqual(await layoutGraph(scrambled), layout, 'Record or parent-array order must not change routing')
@@ -120,4 +140,29 @@ test('crossing diagnostics distinguish interior crossings from endpoints and ove
   assert.equal(result.properCrossings, 1)
   assert.equal(result.routeLength, 34)
   assert.deepEqual(result.mostCrossedEdges.map(e => e.id).sort(), ['crossing', 'horizontal'])
+})
+
+
+test('curve culling includes the bend, and canvas draws one cubic transition', () => {
+  const edge = { points: [{ x: 0, y: 100 }, { x: 100, y: 100 }, { x: 100, y: 0 }, { x: 200, y: 0 }],
+    curve: { from: { x: 0, y: 100 }, to: { x: 200, y: 0 } } }
+  const rect = { x: 55, y: 80, width: 10, height: 10 }
+  assert(!routeIntersectsRect(edge.points, rect))
+  assert(routeIntersectsRect(edge.points, rect, edge.curve))
+  const calls = [], ctx = Object.fromEntries(['beginPath', 'moveTo', 'lineTo', 'bezierCurveTo'].map(method => [method, (...args) => calls.push([method, ...args])]))
+  traceRoute(ctx, edge, x => x * 2, y => y * 2)
+  assert.deepEqual(calls.filter(c => c[0] === 'bezierCurveTo'), [['bezierCurveTo', 200, 200, 200, 0, 400, 0]])
+})
+
+test('card obstacle index agrees with exhaustive queries, including tall cards and empty gaps', () => {
+  const index = cardIndex(full.nodes)
+  let seed = 719
+  const random = () => ((seed = (1664525 * seed + 1013904223) >>> 0) / 2 ** 32)
+  const queries = full.nodes.slice(0, 40).map(n => ({ x: n.x - 12, y: n.y + n.height - 12, width: n.width + 24, height: 24 }))
+  for (let i = 0; i < 120; i++) queries.push({ x: random() * full.width, y: random() * full.height,
+    width: random() * full.width / 5, height: random() * full.height / 5 })
+  for (const r of queries) {
+    const expected = full.nodes.filter(n => n.x <= r.x + r.width && n.x + n.width >= r.x && n.y <= r.y + r.height && n.y + n.height >= r.y)
+    assert.deepEqual(index.query(r).map(n => n.id).sort(), expected.map(n => n.id).sort())
+  }
 })

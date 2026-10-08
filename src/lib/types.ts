@@ -35,7 +35,8 @@ export type TimePeriod = { id: string; label: string; min: number; max: number; 
 export type TimeBand = TimePeriod & { subdivisions: TimePeriod[] }
 export type GraphLayout = {
   nodes: LayoutNode[]
-  edges: { id: string; source: string; target: string; type: Relation; sourceHandle: string; targetHandle: string; points: Point[] }[]
+  // points is the orthogonal skeleton; an optional cubic stays inside its bounds.
+  edges: { id: string; source: string; target: string; type: Relation; sourceHandle: string; targetHandle: string; points: Point[]; curve?: { from: Point; to: Point } }[]
   bands: { id: Domain; y: number; height: number; count: number }[]
   timeBands: TimeBand[]
   width: number
