@@ -1,14 +1,68 @@
 # Implementation roadmap
 
-Status: plan only, 2026-10-07. P0 is the documentation delivered in this change. P1–P6 are **not implemented**. Existing code remains governed by current `AGENTS.md` and runnable commands in `package.json`. [SYSTEM.md](SYSTEM.md) owns the design; [AGENT-WORKFLOW.md](AGENT-WORKFLOW.md) owns operation contracts and the current manual fallback.
+Status: plan revised 2026-10-10. P0 is the delivered documentation. P1–P6 are **not implemented**. This revision turns the design into dependency-ordered work packages; it does not implement a queue or start a swarm. Existing code remains governed by current `AGENTS.md` and runnable commands in `package.json`. [SYSTEM.md](SYSTEM.md) owns the design; [AGENT-WORKFLOW.md](AGENT-WORKFLOW.md) owns the command-interface envelope and current manual fallback. [RESEARCH-SYSTEM.md](RESEARCH-SYSTEM.md) owns article accounting, work scheduling, ownership, claim review, and integration protocols.
 
 ## Delivery strategy
 
-Build a local vertical slice that resolves a real editorial question before adding more infrastructure. Keep Svelte, static GitHub Pages delivery, stable IDs, offline-first research, existing source files, and current rendering invariants. Introduce reusable pure modules behind commands; avoid a parallel agent-only implementation of graph rules.
+Build a local vertical slice that resolves a real editorial question before adding more infrastructure. Keep Svelte, static GitHub Pages delivery, stable IDs, offline-first research, existing source files, and current rendering invariants. Introduce reusable pure modules behind commands; avoid a parallel agent-only implementation of graph rules. Use the [migration and pilot gates](RESEARCH-SYSTEM.md#migration-and-proving-the-system) as the release test matrix; the detailed P1–P6 gates below remain cumulative.
 
 Each milestone includes implementation, a concrete user/agent task, migration or compatibility behavior, verification, and a documentation status update. A task is not complete merely because its CLI prints JSON. Code and generated artifacts must describe the same snapshot. Do not mark a milestone implemented until its acceptance gates pass.
 
-Dependency order: **P0 → P1 → P2 → P3 → P4**. P5 uses P1–P3 and feeds evidence into P4. P6 follows measurements from P4/P5, not a speculative node-count target.
+Expansion critical path: **P0 → P1 → P2 → P3 → P5**. P4 (public provenance) can proceed after P3 alongside P5, using the same contracts. P6 follows measured bottlenecks from the P5 pilot and P4 publication work. P1–P3 must pass before automated catalog admission; bounded manual research may continue under the current guide. A docs milestone is not an authoring-tool release.
+
+## Delivery ledger and dependencies
+
+This table is the implementation backlog, not a running research queue. `Ready` means sufficiently specified to implement next; `Planned` means its listed prerequisites must first pass. All statuses below describe future code. Keep these IDs stable in implementation commits and test evidence. Do not assign completion percentages or dates without an actual work estimate.
+
+| ID / status | Deliverable and owner boundary | Depends on | Acceptance evidence |
+| --- | --- | --- | --- |
+| P1.1 / Ready | Shared graph contracts, canonical serialization/digests, read-only source validator | P0 | Current graph preserved; unknown fields/types and duplicate source-target definitions fail; digest is unaffected by JSON formatting or wall-clock date |
+| P1.2 / Planned | Status, node/edge inspect, search and directed trace on the complete loader | P1.1 | Exact file/record locations; deterministic bounded output; unknown/ambiguous/stale-cursor errors; zero writes/network; every intermediate visible |
+| P1.3 / Planned | Deterministic compilation, source/output identity, CI ordering and artifact verification | P1.1 | Compile on different dates yields identical content; stale committed catalog fails a fixture; tests exercise newly compiled source; production artifact matches manifest |
+| P2.1 / Planned | Versioned source/evidence/review/decision/work-item schemas and derived indexes | P1.2, P1.3 | Referential integrity, schema migration/rejection, canonical article aliases, unknown versus pending states; no automatic support inferred from legacy data |
+| P2.2 / Planned | Read-only ZIM/title/section lookup plus explicit cache and attempt recording | P2.1 | Section redirects, loops, missing source, extractor change, idempotent receipts; no public index mutation; CI uses small synthetic sources |
+| P2.3 / Planned | Pilot migration of accepted and rejected findings with reviewed-input fingerprints | P2.2 | Fresh worker recovers DNA, vacuum-pump, H4, La Salle, and Borough Road findings with exact source locators and limits; unrelated media edits leave historical reviews unchanged |
+| P3.1 / Planned | Typed proposals, semantic diff and combined impact/review disposition | P2.3 | Scope/date/parent/evidence changes reopen affected claims; cross-file conflicts and alternate-path effects identified; no silent legacy promotion |
+| P3.2 / Planned | Single-coordinator claims, checkpoints, fencing and bounded reviewer work-in-progress | P3.1 | Concurrent claim race has one winner; expired worker cannot write; checkpoints survive restart; cross-clone exclusivity is not assumed |
+| P3.3 / Planned | Staged validation, journaled application, idempotent receipts and recovery | P3.1, P3.2 | Combined cycle and stale base refused; crash/user-edit recovery preserves changes; repeated apply is a no-op; no partial snapshot published |
+| P5.1 / Planned | Deduplicated question frontier, explicit priorities and coverage accounting | P3.3 | Same queue snapshot/policy gives same ranking with reasons; rejected attempts suppress duplicate work until a reopening trigger; no invented coverage denominator |
+| P5.2 / Planned | Human/agent work packets, review routing, role handoff and bounded dispatch | P5.1 | One researcher cannot approve their own historical proposal; review backlog throttles intake; budget stops checkpoint safely; read failures stay separate from historical verdicts |
+| P5.3 / Planned | Controlled swarm pilot and measured operating policy | P5.2 | At least 12 questions across three domains; rejection/interrupt/conflict cases exercised; second-pass reuse measured; full release criteria in RESEARCH-SYSTEM pass |
+| P4.1 / Planned | Public provenance projection and existing detail-panel integration | P3.3 | Same evidence/snapshot as authoring; legacy/unassessed and contested/stale states distinguished; no full research store or private coordination data shipped |
+| P4.2 / Planned | Browser, repository-subpath and bookmarked navigation checks | P4.1 | Current graph/geometry/LOD/navigation invariants preserved; unavailable images and stale worker results handled |
+| P6.1 / Planned | Profile measured research, integration and delivery bottlenecks | P5.3; P4.2 for browser work | Reproducible cold/warm baselines, p50/p95, memory and resource measures; costs per reviewed outcome, not per generated node |
+| P6.2 / Planned | Only the optimization selected by P6.1; compare with a full-build/full-audit oracle | P6.1 | Accuracy and failure-recovery fixtures unchanged; measured cost improvement and explicit operating limits |
+
+One implementation owner owns shared schemas and the core interfaces in each phase. After P1.1, P1.2 inspection and P1.3 publication checks may be developed in separate modules by authorized contributors against that contract. The article adapter and record migration need the settled P2.1 schema. UI and queue work can run in parallel after P3.3. Avoid concurrent changes to shared record semantics without an agreed schema revision and integration owner.
+
+Each package ends with an evidence entry here: commit ID, test/fixture commands that actually exist at that time, passed/failed/not-run results, compatibility or migration changes, measured costs where applicable, and remaining limits. When implemented, add the actual operation to `package.json`/help and update the current guide in the same change. There are no new executable command names in this plan.
+
+## First implementation handoff
+
+Start with P1.1, then complete P1.2 and P1.3 as one usable inspection/validation release. Relevant current inputs are `scripts/lib/catalog.mjs`, `scripts/compile-data.mjs`, `scripts/validate-data.mjs`, `scripts/lib/connection-audit.mjs`, `src/lib/categories.js`, existing tests, and `.github/workflows/pages.yml`. The current workflow runs tests before build/compilation; the release must correct that specific stale-snapshot risk. Confirm file state before editing; this document does not authorize discarding unrelated work.
+
+Deliver one reusable core beneath human-readable and JSON responses. Keep semantic data unchanged. Demonstrate inspecting `dna-heredity` and following its actual ancestry, then deliberately alter a source fixture while leaving its compiled catalog stale and prove the validation/CI path catches it. Record the commands, bytes returned, and elapsed time required before/after. Stop at this release boundary and update its status; do not silently declare P2 evidence tracking available.
+
+## Research seed set for the pilot
+
+Seed questions from existing [research notes](research/EXPANSION-QUEUE.md), with source passages re-read during P2.3. The following are pilot task descriptions, not runtime queue entries or automatically accepted answers:
+
+| Pilot question | Required useful outcome | Initial lane |
+| --- | --- | --- |
+| Why does bacterial observation not directly explain the DNA-heredity experiment? | Recover rejected shortcut and specific experimental inputs | Repair/review |
+| Why is the vacuum pump still a direct input despite another ancestry path? | Preserve independent use with a scoped review | Repair/review |
+| What dates H4 construction versus its Jamaica trial? | Separate date and instrument claims | Repair/review |
+| Which instrument was actually carried on the French voyage? | Establish exact transfer or record the missing identification | Supported expansion |
+| When was lunar-distance chronometer checking actually attested? | Supported date or bounded unresolved result | Supported expansion |
+| Did La Salle's earlier teacher community transfer into the dated normal school? | Evidence of the transfer or retained rejection | Supported expansion |
+| What differs between Borough Road's 1801 and 1809 accounts? | Preserve institution/training scopes and uncertainty | Repair/review |
+| How did the Cattermole patent contribute to the company and later flotation process? | Evidence-backed organizational contribution | Supported expansion |
+| What input can be substantiated for Pembrey copper refining? | Exact dated material/process input or scoped gap | Supported expansion |
+| Which older material or method directly contributes in a second domain? | Test retention of an older independent input | Repair/review |
+| Which dated institutional practice is missing in an underrepresented region? | Source-backed candidate; no date inferred from a vague tradition | Coverage |
+| Which food-preservation chain is absent from a selected era/region? | Deduplicated investigation with explicit source and coverage scope | Coverage |
+
+The coordinator concretizes the last three questions using graph inspection before marking them ready. No topic receives a node quota. Include at least four previously recorded no-change/rejected cases as reuse/regression checks, without imposing an outcome quota on new research. Synthetic concurrency and failure cases are added independently of the historical outcomes. Rejection and uncertainty are valid pilot results and do not count as added coverage.
 
 ## P0 — Shared design and a reliable entry point
 
@@ -17,7 +71,8 @@ Delivered by this documentation change:
 - Root `AGENTS.md`: brief orientation, invariants, current commands, selective reading routes.
 - `docs/SYSTEM.md`: linked abstraction levels, editorial contracts, durable knowledge, freshness, control, and resource priorities.
 - `docs/AGENT-WORKFLOW.md`: practical current loop and clearly planned operation contracts.
-- This roadmap: ordered deliverables, acceptance gates, and deliberate deferrals.
+- [Research coordination system](RESEARCH-SYSTEM.md): records, prioritization, work lifecycle, leases, review and recovery.
+- This roadmap: ordered work packages, dependencies, pilot questions, acceptance gates, and deliberate deferrals.
 - README links the documents while retaining actual installation, browsing, and deployment instructions.
 
 Acceptance: local document links resolve; current commands and paths exist; proposed capabilities are labeled; no catalog, runtime, or source-media behavior changes. Historical authoring requirements remain intact.
@@ -43,7 +98,7 @@ Deliver a before/after measurement of commands, output bytes, and elapsed time f
 
 ## P2 — Preserve evidence, judgments, and rejected alternatives
 
-Introduce versioned schemas for compact evidence, reviews, decisions, and open questions under a dedicated `research/` source area. Define deterministic record lookup and bounded shards before expanding storage; keep Git diffs local. Full article text stays in ignored cache. This directory and its schemas do not exist yet.
+Introduce the versioned source-version, reading-attempt, evidence, review, decision, and work-item schemas specified in [Record contracts](RESEARCH-SYSTEM.md#record-contracts) under a dedicated `research/` source area. Define deterministic record lookup and bounded shards before expanding storage; keep Git diffs local. Full article text stays in ignored cache. This directory and its schemas do not exist yet.
 
 Add read-only source lookup by either catalog ID or article title, separate from the current importer's mutation of the public index. Include archive UUID, article path, section/fallback locator, extraction version, and content digest. Reuse cached sections; report missing/ambiguous results without changing claim status.
 
@@ -94,7 +149,7 @@ Acceptance gates:
 
 ## P5 — Expand through an inspectable research queue
 
-Create a persistent queue of precise questions and candidate milestones, linked to evidence and prior decisions. Separate discovery of a candidate from admission to the canonical graph. Give each queue item an understandable priority reason, scope, status, attempts, and next useful action.
+Implement [question selection](RESEARCH-SYSTEM.md#choosing-the-next-question) and the [work lifecycle](RESEARCH-SYSTEM.md#work-lifecycle-and-concurrent-ownership): a persistent queue of precise questions and candidate milestones, linked to evidence and prior decisions. Separate discovery of a candidate from admission to the canonical graph. Give each queue item an understandable priority reason, scope, status, attempts, and next useful action.
 
 Prioritize user corrections and high-impact ambiguity while reserving attention for neglected eras, regions, and institutional/cultural branches. Shared Wikipedia links or similarity may suggest investigations; they cannot create accepted edges. Deduplicate by scope and aliases, not title alone. No arbitrary promise to turn all Wikipedia articles into capabilities.
 

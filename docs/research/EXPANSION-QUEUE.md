@@ -2,6 +2,8 @@
 
 Status: fourth coordinated expansion batch integrated, 2026-10-10. The graph is an editorial selection of capabilities, not a complete representation of Wikipedia. Resolving an article is not validation of its historical claims or every relationship.
 
+The next tooling priority is the [inspection and validation release](../ROADMAP.md#first-implementation-handoff), followed by the planned [research coordination system](../RESEARCH-SYSTEM.md). This file remains the manual topic queue and a source of pilot questions; it is not a live scheduler, article-visit registry, or task-claim store. Preserve its rejected alternatives during later migration without automatically treating them as structured reviews.
+
 ## First coordinated batch (2026-10-07)
 
 Three Luna agents with high reasoning researched disjoint files. One integration owner reviewed scope and contribution direction, corrected unsupported or reversed links, compiled the combined graph, and refreshed source/image metadata. Full article bodies were read only from the local archive; network requests fetched Wikimedia image/credit metadata.

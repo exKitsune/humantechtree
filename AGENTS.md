@@ -11,6 +11,7 @@ Start with `git status --short` and the relevant source files; preserve unrelate
 | Run, browse, or deploy the current app | [README.md](README.md) |
 | Author or correct a milestone/connection | The authoring rules below, then the relevant steps in [AGENT-WORKFLOW.md](docs/AGENT-WORKFLOW.md) |
 | Change architecture, schema, provenance, or agent tooling | [SYSTEM.md](docs/SYSTEM.md), then the relevant [roadmap milestone](docs/ROADMAP.md) |
+| Design research tracking, prioritization, or concurrent work | [Research coordination system](docs/RESEARCH-SYSTEM.md), then the dependency ledger in [ROADMAP.md](docs/ROADMAP.md) |
 | Implement a planned operation | Its contract in [AGENT-WORKFLOW.md](docs/AGENT-WORKFLOW.md#planned-operation-contracts) and its roadmap acceptance gates |
 | Change layout or rendering | [Layout pipeline and diagnostics](docs/LAYOUT.md), README project map, and the affected `src/lib/` modules/tests; keep historical semantics separate from geometry |
 

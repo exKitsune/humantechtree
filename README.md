@@ -9,7 +9,8 @@ The next development phase treats this as one inspectable knowledge system: vers
 - [Agent entry point](AGENTS.md): current rules and a short reading map.
 - [System design](docs/SYSTEM.md): abstraction boundaries, evidence, review freshness, and coherent control.
 - [Agent workflow](docs/AGENT-WORKFLOW.md): today's operating loop and clearly labeled future interface contracts.
-- [Implementation roadmap](docs/ROADMAP.md): ordered milestones, migrations, and measurable acceptance gates.
+- [Research coordination system](docs/RESEARCH-SYSTEM.md): planned article ledger, question priorities, task ownership, evidence review, and safe integration for humans and agents.
+- [Implementation roadmap](docs/ROADMAP.md): dependency-ordered work packages, pilot questions, migrations, and measurable acceptance gates.
 
 These documents distinguish implemented behavior from planned tooling. They do not add a backend or change the current catalog or frontend.
 

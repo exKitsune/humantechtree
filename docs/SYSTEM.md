@@ -1,6 +1,6 @@
 # System design: an accumulating, inspectable atlas
 
-Status: accepted design direction, 2026-10-07. The baseline below describes current implementation. All future records, operations, and guarantees are **planned**, not available APIs. See [ROADMAP.md](ROADMAP.md) for delivery gates and [AGENT-WORKFLOW.md](AGENT-WORKFLOW.md) for current operating instructions.
+Status: accepted design direction, revised 2026-10-10. The baseline below describes current implementation. All future records, operations, and guarantees are **planned**, not available APIs. See [ROADMAP.md](ROADMAP.md) for delivery gates, [RESEARCH-SYSTEM.md](RESEARCH-SYSTEM.md) for the proposed research/coordination protocols, and [AGENT-WORKFLOW.md](AGENT-WORKFLOW.md) for current operating instructions.
 
 ## Purpose and priorities
 
@@ -28,6 +28,10 @@ Inspected on 2026-10-07. These are a dated baseline, not counters to maintain af
 | Verification | Data checks, Svelte check, graph/layout tests, Pages workflow | CI runs tests before compilation; some tests read the previously committed catalog |
 
 Category browsing was added on 2026-10-08: optional node `category` IDs reference the shared registry in `src/lib/categories.js`. Sixteen categories organize the Information branch, its filters, search, development lists, worker placement, and density aggregation. This is implemented presentation metadata with compile-time validation; it makes no causal claims. Assign one primary category within the node's branch, preserving cross-category and cross-domain contributions. Unclassified additions remain visible. See [layout contracts](LAYOUT.md#categories-within-branches). The planned inspection, evidence, and proposal operations below remain unimplemented.
+
+Current authoring-tool check, 2026-10-10: the catalog has 2,313 nodes and 2,624 edges; all nodes have an offline match, 283 edges carry a source URL, and no edge has `reviewed: true`. All offline-index records use `claimReview: pending` from the importer. These are recording facts, not counts of historically verified claims. Article visits outside catalog matching remain scattered across ignored cache and topic notes. The structured ledger, scheduler, leases, and transactional proposal tools remain planned.
+
+The planned system distinguishes the historical capability graph from the work dependency graph. Researching one question before another does not imply a historical contribution. The [research contracts](RESEARCH-SYSTEM.md) give source versions, located evidence, scoped claims, work items, proposals, and receipts stable links while keeping their meanings separate. They refine this design rather than creating a second catalog authority.
 
 ## Linked levels of meaning
 
@@ -100,10 +104,12 @@ Compact records belong in Git; full articles and derived search indexes remain r
 
 | Planned record | Required information |
 | --- | --- |
+| Source version and reading attempt | Canonical archive/article identity, aliases and sections actually returned; question and actor; explicit lookup/read outcome; no article-wide completion flag |
 | Evidence reference | Stable ID; URL; archive UUID/article path or known document revision; section/locator; extracted-content digest and extractor version; concise paraphrase; attribution; exact supported/contradicted proposition |
 | Claim review | Stable ID; subject node/edge and field/proposition; evidence IDs; assessment; rationale; reviewer/date; input fingerprint; objections |
 | Decision | Accepted/rejected alternative; affected IDs; reason; evidence/review references; conditions for reopening |
-| Open question | Missing fact; affected IDs; searches/sources tried and their limits; next useful investigation; priority rationale |
+| Work item and open question | Missing fact; affected IDs; searches/sources tried and their limits; dependencies; bounded scope; next action; priority reason; durable outcome |
+| Proposal and integration receipt | Typed intended edits versus actual edits; expected record fingerprints; reviewed revision; validation and output identities; recoverable application result |
 
 A digest detects change, not reliability. Section anchors need fallback locators because extraction changes. Failure to relocate evidence after an archive update must be explicit. Never use a live image-metadata revision as the provenance for offline article text.
 
@@ -129,7 +135,7 @@ Writes use proposed operations against expected record fingerprints. Review the 
 
 Multi-file application needs logical transactions: stage a complete proposed snapshot, validate it, check preconditions, journal the operation, use per-file atomic replacements, and refuse publication while a transaction is incomplete. Multiple filesystem renames are not globally atomic. Recovery restores only files still matching the transaction's writes; otherwise preserve both versions and report a conflict.
 
-When parallel work is explicitly authorized, assign disjoint files or proposals and one integration owner. Contributors return affected IDs, evidence, decisions, verification, and open questions. The integrator audits the combined result because adding an intermediate can affect someone else's edges. More agents are not inherently cheaper or more accurate.
+When parallel work is explicitly authorized, assign disjoint files or proposals and one integration owner. The proposed [coordination protocol](RESEARCH-SYSTEM.md#work-lifecycle-and-concurrent-ownership) uses one coordinator with fenced task leases; it explicitly does not treat Git branches or separate clones as a global lock. Contributors return affected IDs, evidence, decisions, verification, and open questions. The integrator audits the combined result because adding an intermediate can affect someone else's edges. More agents are not inherently cheaper or more accurate.
 
 ## Coherent projections and control
 
@@ -145,7 +151,7 @@ Historical and presentation checks remain distinct: a beautiful graph can be fal
 
 Orient with compact status, inspect the affected neighborhood, reuse cached evidence, and expand only when needed. Prefer the archive; seek external sources for specific unresolved gaps. Refresh only changed reference/media IDs. Builds and visitor requests must not trigger research downloads.
 
-Prioritize with visible reasons: user-reported errors, stale reviews, widely reused ambiguous milestones, missing intermediates blocking several explanations, and underrepresented areas. Balance impact with coverage across regions and social/technical branches. Avoid optimizing only high-degree nodes, recent technologies, or easy Wikipedia topics. Keep priorities inspectable instead of hiding them in one score.
+The proposed [selection policy](RESEARCH-SYSTEM.md#choosing-the-next-question) defines eligibility, repair/expansion/coverage lanes, deterministic ranking reasons, age promotion, and reviewer backpressure. Its initial ratios are pilot hypotheses, not performance claims. Prioritize with visible reasons: user-reported errors, stale reviews, widely reused ambiguous milestones, missing intermediates blocking several explanations, and underrepresented areas. Balance impact with coverage across regions and social/technical branches. Avoid optimizing only high-degree nodes, recent technologies, or easy Wikipedia topics. Keep priorities inspectable instead of hiding them in one score.
 
 Measure resources per resolved claim: repeated source reads, cache reuse, external requests, emitted records/bytes, affected versus rescanned nodes, validation time, stale-review backlog, and recurrence of rejected edges. Measure query/layout latency separately from historical quality. Performance claims identify hardware, fixture size, and warm/cold conditions.
 

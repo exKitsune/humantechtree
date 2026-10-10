@@ -1,6 +1,6 @@
 # Agent workflow and interface contracts
 
-Status: current manual workflow plus explicitly marked planned operations, 2026-10-07. [SYSTEM.md](SYSTEM.md) owns semantics; [ROADMAP.md](ROADMAP.md) owns implementation order. Read only the sections needed for the active task.
+Status: current manual workflow plus explicitly marked planned operations, revised 2026-10-10. [SYSTEM.md](SYSTEM.md) owns semantics; [ROADMAP.md](ROADMAP.md) owns implementation order. [RESEARCH-SYSTEM.md](RESEARCH-SYSTEM.md) defines the planned article ledger, work selection, ownership, review, and integration protocols. Read only the sections needed for the active task.
 
 ## The work unit
 
@@ -94,7 +94,10 @@ Interim note template: question and affected IDs; source/archive identity and se
 | Inspect | Exact node/edge, source file and record location, scope/date, immediate neighbors, available evidence/decisions, applicable flags | ID lookup is exact; search returns disambiguation candidates; expand only requested fields/depth |
 | Trace | Directed paths with every intermediate, edge type, and contribution; omitted-result counts | Mixed types stay visible; a found path does not prove equivalence; no collapsed synthetic dependency |
 | Source/evidence lookup | Matching cached passages or focused ZIM sections, immutable identity/locator, support limits | Registered nodes and arbitrary article titles supported; reading never changes public matching status |
-| Review queue | Stable issue ID, subject, trigger, impact, prior decision, freshness, next useful investigation | Priority has an explanation; truncation and deferred scope are visible |
+| Record findings | Reading-attempt receipt, source/evidence/decision references, durable checkpoint and deduplication result | Explicit write; repeated receipt ID is a no-op; a lookup never silently changes editorial status |
+| Review queue / next | Stable issue ID, scope, dependencies, prior decisions, freshness, lane, ranking components and next action | Read-only recommendation; fixed queue snapshot/policy/round yields deterministic reasons; blocked work stays ineligible |
+| Claim / renew / release | Task revision, actor, coordinator epoch, fencing number, expiry and checkpoint reference | Atomic ownership through one coordinator; no global Git-lock assumption; stale workers cannot submit |
+| Submit / review | Sealed proposal revision, claim-by-claim dispositions, evidence and objections | Historical author and independent reviewer differ; edits invalidate approval of the old revision |
 | Propose | Typed node/edge edits with expected fingerprints, rationale, evidence references, semantic diff, affected review set | No writes; validate IDs and allowed fields; never a free-form shell program |
 | Validate | Proposed snapshot, structural errors, review gaps/staleness, projection impact, commands run/results | Distinguish not-run from pass; same rules as compilation/publication |
 | Apply | Preconditions checked, exact changed files/IDs, transaction and recovery state | Refuse stale bases and unknown fields; preserve unrelated changes; retry identical operation without duplicate edits |
@@ -109,6 +112,12 @@ Initial proposed defaults: 25 search/queue items, at most 50 neighbor records pe
 Diagnostics include a stable code, severity, affected IDs, source location, concise reason, and an actionable next step. Distinguish unknown ID, ambiguous title, missing source, stale review, stale edit base, incomplete transaction, structural invalidity, and tool/environment failure. A source being offline is not a historical verdict. Environmental failure is not a passed check or a user denial.
 
 Schema/version changes must reject incompatible inputs clearly. Read-only outputs are deterministic for the same snapshot/query. Apply uses operation IDs and preconditions; an unknown outcome is inspected before retrying. No CLI, browser adapter, or agent owns a different version of the graph rules.
+
+### Planned worker loop
+
+The [work packet](RESEARCH-SYSTEM.md#the-work-packet) supplies the exact question, scope, snapshot, prior decisions, and source leads. A contributor claims one eligible question; reads focused sections; explicitly saves attempts and evidence; submits a sourced proposal or no-change finding; and responds to review. The integrator applies accepted revisions against a combined snapshot and records a receipt. Budget exhaustion yields a checkpoint, not a completion claim.
+
+These operations are interface contracts only. Until their roadmap gates pass, continue using disjoint source files/proposals, topic notes and one integration owner as above. Do not simulate live leases by writing ad hoc statuses into catalog nodes. The [failure fixtures](RESEARCH-SYSTEM.md#migration-and-proving-the-system) cover repeat work, unsupported dates/transfers, stale workers, conflicting proposals and interrupted writes.
 
 ## Completion and interruption
 
