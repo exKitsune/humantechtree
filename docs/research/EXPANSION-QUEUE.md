@@ -1,6 +1,6 @@
 # Wikipedia expansion queue
 
-Status: third coordinated expansion batch integrated, 2026-10-08. The graph is an editorial selection of capabilities, not a complete representation of Wikipedia. Resolving an article is not validation of its historical claims or every relationship.
+Status: fourth coordinated expansion batch integrated, 2026-10-10. The graph is an editorial selection of capabilities, not a complete representation of Wikipedia. Resolving an article is not validation of its historical claims or every relationship.
 
 ## First coordinated batch (2026-10-07)
 
@@ -60,18 +60,38 @@ Most research used the local archive. Small official-history checks were needed 
 
 Combined verification passed: the complete authoring-source audit has zero unresolved candidates and retains 65 independently explained direct contributions. Compilation and data validation passed; Svelte/TypeScript checks found zero errors or warnings; all 51 tests and the static production build passed. The local development server was checked and serves 2,292 nodes and 2,600 edges. No interactive browser check was performed for this data-only batch.
 
+## Fourth coordinated batch (2026-10-10)
+
+Three Luna High agents researched separate files using the offline archive. Integration reviewed the proposed scope, dates, and actual contributions before applying accepted changes; rejected candidates remain documented in the topic notes.
+
+| Batch | Added nodes | Added edges, including supplements | Evidence |
+| --- | ---: | ---: | --- |
+| Marine longitude, instruments, tables, and sea trials | 8 | 14 | [Navigation](navigation-expansion-4.md) |
+| Monitorial schools, teacher preparation, and institutional succession | 5 | 4 | [Institutions](institutions-expansion-4.md) |
+| Dye manufacture, flotation development, and economical sulfur extraction | 8 | 8 | [Production](production-expansion-4.md) |
+
+**21 nodes and 26 edges added, with two old edges removed: total 2,313 nodes and 2,624 edges.** Five previously isolated milestones gained supported connections: `monitorial-instruction`, `french-administrative-court`, `mauveine`, `frasch-process`, and `froth-flotation`. Every new node participates in at least one connection; roots still have unresolved prerequisites rather than an implied claim of independence.
+
+Three existing milestones were corrected while preserving IDs. `sextant` now dates Bird's brass prototype to 1759, with the 1731 octant represented separately. `marine-chronometer` now describes Harrison's H4 completed in 1759, with its 1761 departure/1762 trial result represented separately and the Jefferys watch's reused features as its immediate input. `monitorial-instruction` now identifies Bell's dated Madras implementation, distinct from Lancaster's school. The broad optical-lens-to-sextant and pendulum-clock-to-H4 links were replaced. The octant's retained instrument design is independently direct despite the alternate route through Campbell's sea trial.
+
+New paths include Cattermole's patented process → the company formed to develop it → the successful 1905 froth-flotation process; Spindletop fuel supply and Frasch extraction → economic sulfur production; and Lancaster's school → teacher training and a society explicitly adopting its method. A date conflict about Borough Road College is preserved by scoping the new node to the 1809 male-apprentice training attestation rather than an undisputed founding date. The French royal council link records documented institutional influence across a revolutionary break, not continuous operation.
+
+All 21 new article references and H4's changed reference resolve in the local archive. Twenty additions have CDN images; the National Society uses the normal image fallback. Historical article-body research stayed offline. Network access fetched image/reference metadata and one Commons file description to recover its omitted author credit. No new image has an unresolved artist or license field after that correction. Article support and clean checks do not amount to independent specialist verification.
+
+Verification passed on the integrated graph: full-source connection audit (zero unresolved flags, 66 independently explained direct contributions), compilation, data validation, all 51 tests, and the static production build. The restarted local preview was checked over HTTP and serves the same 2,313 nodes and 2,624 connections. This data-only batch did not rerun Svelte checking or interactive browser testing; no UI code changed.
+
 ## Next questions, in order
 
-1. **Connect the evidenced but isolated milestones.** Fifteen entries from the first batch still lack both incoming and outgoing edges after connecting the theodolite. This means unresolved research, not proven historical independence. Start with these specific questions rather than adding generic parents:
+1. **Connect the evidenced but isolated milestones.** Thirteen entries from the first batch still lack both incoming and outgoing edges after connecting the theodolite, Bell's monitorial implementation, and the French Council of State. This means unresolved research, not proven historical independence. Start with these specific questions rather than adding generic parents:
    - `catapult`, `counterweight-trebuchet`: which documented mechanisms, construction practices, and intermediates contributed to the selected forms? Do not infer descent from membership in the broad catapult category.
    - `rifling`, `flintlock-firearm`, `percussion-cap`, `machine-gun`, `smokeless-propellant`: identify immediate manufacturing, ignition, feeding, or material contributions at the dated milestone. Distinguish the hand-powered Gatling entry from later fully automatic systems. Keep descriptions at historical capability level.
    - `standing-army`, `conscription`, `military-logistics`, `military-academy`: investigate the specific Neo-Assyrian, French, and Savoyard institutions and their documented administrative support. Avoid a universal military-institution ladder.
    - `coordinate-measuring-machine`: research the early Ferranti two-axis instrument. Later three-axis machines, computer control, and contemporary granite/air-bearing descriptions cannot establish its original inputs. Sisson's theodolite now has telescope, spirit-level, and separately scoped vernier-scale inputs. The Ramsden instrument-manufacturing route is also represented; distinguish its 1787 Royal Society instrument from the later 1791 Board of Ordnance instrument in any national-survey extension.
-   - `normal-school`, `monitorial-instruction`, `french-administrative-court`: locate the particular institutional arrangements that preceded these implementations; do not attach generic education or governance roots just to connect them.
+   - `normal-school`: find an explicit organizational, personnel, or teaching-model transfer into the dated Reims school. The fourth-batch note records why La Salle's earlier teacher community was not enough to establish that edge. Bell's implementation and the French Council of State now have supported outgoing or incoming relationships; reuse their new scopes.
 2. **Refine reusable rocket hardware paths.** The new Sputnik, Vostok-K, Jupiter-C, and Mercury-Redstone entries make the military-to-spaceflight route more legible. Further source work should distinguish retained R-7 stages from changes through Luna/Vostok-L, and add the particular life-support and recovery capabilities needed for human flight. Preserve independent Soviet orbital and American suborbital implementations.
 3. **Expand precision, construction, and supply where dates are supported.** Revisit optical flats, sine bars, dial indicators, calibration traceability, underpinning, and other deferred construction practices. The research note records why some were deferred. Do not manufacture an origin date to fit the current single-year schema.
 4. **Broaden institutional coverage across traditions and regions.** Revisit dated ijazah attestations, regional knowledge-preservation institutions, administrative systems, and trade/credit arrangements with specialist sources when the archive is insufficient. The current omission of an undated ijazah milestone is not a historical absence claim. Do not repeat the rejected claim that a coherent medieval Ottoman millet system existed in its later form.
-5. **Expand other capability clusters by an explanatory question.** Resume the latest second- and third-batch topic notes before expanding mining, textiles, water treatment, computing, or public-health organization. Their rejected candidates and specific missing inputs are the starting queue. Food preservation, navigation, and scientific instruments are additional candidate areas. Inspect the complete current graph first: many obvious subjects already exist in the original expansion files. Article hyperlinks and category membership are discovery aids, never automatically generated edges.
+5. **Expand other capability clusters by an explanatory question.** Resume the latest topic notes, including the fourth-batch navigation, institutions, and production records before expanding mining, textiles, water treatment, computing, or public-health organization. Their rejected candidates and specific missing inputs are the starting queue. Food preservation, navigation, and scientific instruments are additional candidate areas. Inspect the complete current graph first: many obvious subjects already exist in the original expansion files. Article hyperlinks and category membership are discovery aids, never automatically generated edges.
 
 ## How another team resumes
 

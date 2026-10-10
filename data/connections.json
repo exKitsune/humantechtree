@@ -185,5 +185,55 @@
     "type": "enabler",
     "reason": "The secondary vernier scale supplied interpolation between the caliper's main-scale graduations for finer dimensional readings.",
     "source": "https://en.wikipedia.org/wiki/Vernier_scale"
+  },
+  {
+    "id": "harrison-jefferys-precision-watch",
+    "target": "marine-chronometer",
+    "type": "foundation",
+    "reason": "Harrison directly incorporated the Jefferys watch's temperature compensation and miniature fusee maintaining power into his H4 sea watch.",
+    "source": "https://en.wikipedia.org/wiki/John_Harrison"
+  },
+  {
+    "id": "hadley-octant",
+    "target": "sextant",
+    "type": "foundation",
+    "reason": "Campbell's recommended sextant extended the Hadley octant's reflecting-quadrant arc from 45 to 60 degrees, expanding the measurable angle to 120 degrees.",
+    "source": "https://en.wikipedia.org/wiki/John_Campbell_(Royal_Navy_officer)",
+    "directContribution": "The sextant retained the octant's double-reflection instrument design and extended its measuring arc; this design input is distinct from the sea trial that exposed the old range and frame limitations."
+  },
+  {
+    "id": "campbell-mayer-tables-sea-trial",
+    "target": "sextant",
+    "type": "enabler",
+    "reason": "Campbell's 1756 sea trial identified the octant's angle-range and wooden-frame limitations and directly informed the modifications Bird built into the 1759 sextant.",
+    "source": "https://en.wikipedia.org/wiki/John_Campbell_(Royal_Navy_officer)"
+  },
+  {
+    "id": "board-of-longitude",
+    "target": "sextant",
+    "type": "enabler",
+    "reason": "The Board of Longitude commissioned John Bird to build the 1759 brass sextant prototype incorporating Campbell's proposed range and frame changes.",
+    "source": "https://en.wikipedia.org/wiki/John_Campbell_(Royal_Navy_officer)"
+  },
+  {
+    "id": "french-kings-council-state",
+    "target": "french-administrative-court",
+    "type": "influence",
+    "reason": "The 1799 Council was explicitly established as successor to the King's Council; both advised on law and adjudicated claims against the Crown or state, although the Revolution interrupted the institutions between them.",
+    "source": "https://en.wikipedia.org/wiki/Conseil_d%27%C3%89tat"
+  },
+  {
+    "id": "monitorial-instruction",
+    "target": "national-society-education-poor",
+    "type": "enabler",
+    "reason": "The National Society organized schools using Bell's Madras system, making his pupil-teacher method an operating model for Anglican education of poor children.",
+    "source": "https://en.wikipedia.org/wiki/National_Society_for_Promoting_Religious_Education"
+  },
+  {
+    "id": "minerals-separation-ltd-flotation-research",
+    "target": "froth-flotation",
+    "type": "enabler",
+    "reason": "The company's metallurgists tested and combined prior flotation discoveries before patenting the Sulman–Picard–Ballot agitation-froth process that succeeded at Broken Hill in 1905.",
+    "source": "https://en.wikipedia.org/wiki/Froth_flotation"
   }
 ]

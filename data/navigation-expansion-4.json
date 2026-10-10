@@ -1,0 +1,148 @@
+[
+  {
+    "id": "hadley-octant",
+    "title": "Hadley–Godfrey reflecting quadrant (octant)",
+    "wiki": "Octant (instrument)",
+    "year": 1731,
+    "domain": "measurement",
+    "kind": "technology",
+    "summary": "Around 1731, Hadley and Godfrey independently developed reflecting quadrants that used paired mirrors to measure angular distances for navigation.",
+    "parents": [
+      {
+        "id": "telescope",
+        "type": "enabler",
+        "reason": "The Hadley reflecting quadrant mounted a sighting telescope so a navigator could align the directly viewed and reflected objects.",
+        "source": "https://en.wikipedia.org/wiki/Octant_(instrument)"
+      }
+    ]
+  },
+  {
+    "id": "campbell-hadley-quadrant-lunar-observation",
+    "title": "Campbell's lunar-distance observations with a Hadley quadrant",
+    "wiki": "John Campbell (Royal Navy officer)",
+    "year": 1747,
+    "domain": "measurement",
+    "kind": "practice",
+    "summary": "Around 1747, John Campbell used a Hadley quadrant to measure the angular distance between the Moon and fixed stars, demonstrating the instrument in astronomical navigation.",
+    "parents": [
+      {
+        "id": "hadley-octant",
+        "type": "foundation",
+        "reason": "The Hadley quadrant supplied the double-reflection instrument Campbell used to measure lunar distances at sea and at Greenwich.",
+        "source": "https://en.wikipedia.org/wiki/John_Campbell_(Royal_Navy_officer)"
+      }
+    ]
+  },
+  {
+    "id": "tobias-mayer-lunar-tables",
+    "title": "Tobias Mayer's lunar tables",
+    "wiki": "Tobias Mayer",
+    "year": 1755,
+    "domain": "measurement",
+    "kind": "practice",
+    "summary": "Mayer's 1755 manuscript lunar tables predicted the Moon's position accurately enough to support longitude estimates at sea.",
+    "parents": []
+  },
+  {
+    "id": "campbell-mayer-tables-sea-trial",
+    "title": "Campbell's sea trial of Mayer's lunar tables",
+    "wiki": "John Campbell (Royal Navy officer)",
+    "year": 1756,
+    "domain": "measurement",
+    "kind": "practice",
+    "summary": "Campbell successfully tested Mayer's lunar tables and reflecting circle at sea, comparing them with the Hadley octant and recommending a more capable brass instrument.",
+    "parents": [
+      {
+        "id": "tobias-mayer-lunar-tables",
+        "type": "foundation",
+        "reason": "The 1756 trial put Mayer's predicted lunar positions to navigational use aboard Campbell's ship.",
+        "source": "https://en.wikipedia.org/wiki/John_Campbell_(Royal_Navy_officer)"
+      },
+      {
+        "id": "hadley-octant",
+        "type": "enabler",
+        "reason": "Campbell directly compared the wooden Hadley octant with Mayer's heavier reflecting circle while measuring lunar distances at sea.",
+        "source": "https://en.wikipedia.org/wiki/John_Campbell_(Royal_Navy_officer)"
+      }
+    ]
+  },
+  {
+    "id": "nautical-almanac-1767",
+    "title": "Nautical Almanac and Astronomical Ephemeris (1767 issue)",
+    "wiki": "The Nautical Almanac",
+    "year": 1767,
+    "domain": "measurement",
+    "kind": "practice",
+    "summary": "The inaugural 1767 issue tabulated lunar distances and astronomical positions for mariners determining longitude at sea.",
+    "parents": [
+      {
+        "id": "tobias-mayer-lunar-tables",
+        "type": "foundation",
+        "reason": "Mayer's accurate lunar tables supplied the predicted lunar positions used in early almanac longitude data.",
+        "source": "https://en.wikipedia.org/wiki/Board_of_Longitude"
+      }
+    ]
+  },
+  {
+    "id": "lunar-distance-navigation",
+    "title": "Lunar-distance navigation with published almanac tables",
+    "wiki": "Lunar distance (navigation)",
+    "year": 1767,
+    "domain": "measurement",
+    "kind": "practice",
+    "summary": "From the 1767 almanac issue, mariners could correct a sextant measurement between the Moon and another body, match it to predicted values for Greenwich time, and compare that time with local time to calculate longitude.",
+    "parents": [
+      {
+        "id": "sextant",
+        "type": "foundation",
+        "reason": "A sextant measured the lunar angle used to identify the corresponding predicted Greenwich time.",
+        "source": "https://en.wikipedia.org/wiki/Lunar_distance_(navigation)"
+      },
+      {
+        "id": "nautical-almanac-1767",
+        "type": "foundation",
+        "reason": "The almanac supplied predicted lunar distances and their Greenwich times for the observation date.",
+        "source": "https://en.wikipedia.org/wiki/The_Nautical_Almanac"
+      },
+      {
+        "id": "trigonometry",
+        "type": "enabler",
+        "reason": "Clearing the observed angle for parallax and atmospheric refraction required spherical-trigonometric calculations.",
+        "source": "https://en.wikipedia.org/wiki/Lunar_distance_(navigation)"
+      }
+    ]
+  },
+  {
+    "id": "harrison-jefferys-precision-watch",
+    "title": "Harrison's Jefferys precision watch (c. 1752–1753)",
+    "wiki": "John Harrison",
+    "year": 1753,
+    "domain": "measurement",
+    "kind": "technology",
+    "summary": "Made for Harrison by John Jefferys around 1752–1753, the precision watch introduced temperature compensation and a miniature fusee that kept it running while wound.",
+    "parents": []
+  },
+  {
+    "id": "harrison-h4-jamaica-trial",
+    "title": "Harrison H4 transatlantic trial",
+    "wiki": "John Harrison",
+    "year": 1761,
+    "domain": "measurement",
+    "kind": "practice",
+    "summary": "H4 sailed aboard HMS Deptford from Portsmouth in November 1761; on reaching Kingston in 1762, its corrected timekeeping error corresponded to about one nautical mile of longitude.",
+    "parents": [
+      {
+        "id": "marine-chronometer",
+        "type": "foundation",
+        "reason": "The sea trial tested whether Harrison's H4 could retain reference time accurately enough to determine longitude across an ocean voyage.",
+        "source": "https://en.wikipedia.org/wiki/John_Harrison"
+      },
+      {
+        "id": "board-of-longitude",
+        "type": "enabler",
+        "reason": "The Board of Longitude arranged the Portsmouth-to-Jamaica trial that tested H4 at sea.",
+        "source": "https://en.wikipedia.org/wiki/John_Harrison"
+      }
+    ]
+  }
+]

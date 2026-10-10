@@ -899,33 +899,21 @@
     "id": "sextant",
     "title": "Sextant",
     "wiki": "Sextant",
-    "year": 1731,
+    "year": 1759,
     "domain": "measurement",
     "kind": "technology",
-    "summary": "A double-reflection instrument measured angular separation between visible objects.",
-    "parents": [
-      {
-        "id": "optical-lens",
-        "type": "enabler",
-        "reason": "Optical sighting improves alignment of the reflected reference and target."
-      }
-    ]
+    "summary": "John Bird's 1759 brass marine sextant, designed with John Campbell's modifications to the Hadley octant, extended the scale arc to measure up to 120 degrees.",
+    "parents": []
   },
   {
     "id": "marine-chronometer",
-    "title": "Marine chronometer",
-    "wiki": "Marine chronometer",
-    "year": 1761,
+    "title": "Harrison H4 sea watch",
+    "wiki": "John Harrison",
+    "year": 1759,
     "domain": "measurement",
     "kind": "technology",
-    "summary": "Stable portable timekeeping enabled longitude determination during ocean voyages.",
-    "parents": [
-      {
-        "id": "pendulum-clock",
-        "type": "influence",
-        "reason": "Precision clockmaking established techniques later adapted to portable regulators."
-      }
-    ]
+    "summary": "Harrison's first sea watch, marked 1759 and later known as H4, incorporated temperature compensation and maintaining power from his c.1752–1753 Jefferys precision watch.",
+    "parents": []
   },
   {
     "id": "spectroscopy",

@@ -1,6 +1,6 @@
 # Humanity — the technology tree
 
-A purely exploratory atlas of **2,292 human capabilities**: discoveries, tools, machines, infrastructure, institutions, and cultural practices. Built with Svelte 5, TypeScript, Vite, and Svelte Flow. The industrial interface takes inspiration from Factorio; it uses no Factorio assets.
+A purely exploratory atlas of **2,313 human capabilities**: discoveries, tools, machines, infrastructure, institutions, and cultural practices. Built with Svelte 5, TypeScript, Vite, and Svelte Flow. The industrial interface takes inspiration from Factorio; it uses no Factorio assets.
 
 ## Design and agent workflow
 
@@ -98,7 +98,7 @@ Node and edge spatial indexes avoid scanning the full graph every frame. Density
 - `public/data/wikipedia.json`: cached article identifiers, Wikimedia image URLs, and attribution metadata.
 - `public/data/offline-index.json`: article matches in the local ZIM, once imported.
 
-The current catalog contains 2,292 nodes and 2,600 connections, including the original 90 connection intermediates and 202 subsequent topic-batch milestones. All 2,292 article references resolve in the local archive. The latest coordinated batch adds 48 milestones and 57 connections across computing, production, public health, and measurement, connecting eight previously isolated entries. Earlier connection review revised the parents of 348 existing nodes, replacing remote ancestry with specific contributions and documenting independently used tools and materials. Research notes distinguish supported contributions from unresolved prerequisites; title resolution does not verify a historical claim.
+The current catalog contains 2,313 nodes and 2,624 connections, including the original 90 connection intermediates and 223 subsequent topic-batch milestones. All 2,313 article references resolve in the local archive. The latest coordinated batch adds 21 milestones and 26 connections across marine navigation, education and governance, and industrial production, replaces two unsupported connections, and connects five previously isolated entries. Earlier connection review revised the parents of 348 existing nodes, replacing remote ancestry with specific contributions and documenting independently used tools and materials. Research notes distinguish supported contributions from unresolved prerequisites; title resolution does not verify a historical claim.
 
 Nodes may carry one optional `category` ID alongside `domain`. Register category IDs, enclosing domains, labels, scope descriptions, and display order in `src/lib/categories.js`; use an existing category when its scope fits. The compiler and validator reject unknown or mismatched categories. New unclassified nodes remain visible under Other capabilities when sharing a categorized band. Categories are navigation metadata, never dated capability nodes or prerequisites. Classifying a node must not replace its actual parents. See [category layout contracts](docs/LAYOUT.md#categories-within-branches) for the projection behavior.
 

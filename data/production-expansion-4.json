@@ -1,0 +1,130 @@
+[
+  {
+    "id": "perkin-mauveine-dyeworks",
+    "title": "Perkin's mauveine dyeworks",
+    "wiki": "Mauveine",
+    "year": 1857,
+    "domain": "materials",
+    "kind": "infrastructure",
+    "summary": "Perkin opened a dyeworks at Greenford that mass-produced mauveine, turning the 1856 laboratory discovery into a commercial synthetic textile dye.",
+    "parents": [
+      {
+        "id": "mauveine",
+        "type": "foundation",
+        "reason": "The Greenford dyeworks mass-produced Perkin's mauveine dye.",
+        "source": "https://en.wikipedia.org/wiki/Mauveine"
+      }
+    ]
+  },
+  {
+    "id": "cattermole-oil-agitation-flotation",
+    "title": "Cattermole oil-agitation flotation process",
+    "wiki": "Froth flotation",
+    "year": 1902,
+    "domain": "materials",
+    "kind": "technology",
+    "summary": "Arthur Cattermole's process used a small amount of oil and staged agitation to form mineral nodules that could be separated from pulp by gravity; Minerals Separation later acquired its patent, but found it unsuccessful.",
+    "parents": []
+  },
+  {
+    "id": "minerals-separation-ltd-flotation-research",
+    "title": "Minerals Separation Ltd flotation research",
+    "wiki": "Froth flotation",
+    "year": 1903,
+    "domain": "materials",
+    "kind": "institution",
+    "summary": "Formed to acquire Cattermole's patent, Minerals Separation's metallurgists tested and combined flotation discoveries before patenting the Sulman–Picard–Ballot process in 1905.",
+    "parents": [
+      {
+        "id": "cattermole-oil-agitation-flotation",
+        "type": "enabler",
+        "reason": "The company was formed in Britain in 1903 to acquire the Cattermole process patent.",
+        "source": "https://en.wikipedia.org/wiki/Froth_flotation"
+      }
+    ]
+  },
+  {
+    "id": "spindletop-oilfield",
+    "title": "Spindletop oil production",
+    "wiki": "Spindletop",
+    "year": 1901,
+    "domain": "energy",
+    "kind": "infrastructure",
+    "summary": "The 1901 Spindletop discovery opened a major source of cheap regional fuel oil, making energy-intensive industrial production more affordable.",
+    "parents": []
+  },
+  {
+    "id": "frasch-sulphur-mines-production",
+    "title": "Economic Frasch sulfur production at Sulphur Mines",
+    "wiki": "Frasch process",
+    "year": 1903,
+    "domain": "materials",
+    "kind": "infrastructure",
+    "summary": "The Frasch process entered economic production at Sulphur Mines, Louisiana, after cheap regional fuel oil made heating the injected water affordable.",
+    "parents": [
+      {
+        "id": "frasch-process",
+        "type": "foundation",
+        "reason": "The Sulphur Mines operation used Frasch's method to extract sulfur from underground deposits.",
+        "source": "https://en.wikipedia.org/wiki/Frasch_process"
+      },
+      {
+        "id": "spindletop-oilfield",
+        "type": "enabler",
+        "reason": "The 1901 Spindletop discovery supplied cheap fuel oil that made the energy-intensive Frasch process economic in the region.",
+        "source": "https://en.wikipedia.org/wiki/Frasch_process"
+      }
+    ]
+  },
+  {
+    "id": "zinc-corporation-broken-hill-flotation",
+    "title": "Zinc Corporation's Broken Hill froth-flotation conversion",
+    "wiki": "Froth flotation",
+    "year": 1910,
+    "domain": "materials",
+    "kind": "infrastructure",
+    "summary": "The Zinc Corporation replaced its Elmore oil-agglomeration process at Broken Hill with Minerals Separation's agitation froth flotation process.",
+    "parents": [
+      {
+        "id": "froth-flotation",
+        "type": "foundation",
+        "reason": "The plant adopted the Sulman–Picard–Ballot froth-flotation process in place of its earlier Elmore process.",
+        "source": "https://en.wikipedia.org/wiki/Froth_flotation"
+      }
+    ]
+  },
+  {
+    "id": "butte-superior-flotation-test-plant",
+    "title": "Butte and Superior flotation test plant",
+    "wiki": "Froth flotation",
+    "year": 1911,
+    "domain": "materials",
+    "kind": "infrastructure",
+    "summary": "James M. Hyde installed a test plant at the Butte and Superior Mill, the first froth-flotation installation in the United States.",
+    "parents": [
+      {
+        "id": "froth-flotation",
+        "type": "foundation",
+        "reason": "Hyde's test plant applied his modification of the Minerals Separation froth-flotation process.",
+        "source": "https://en.wikipedia.org/wiki/Froth_flotation"
+      }
+    ]
+  },
+  {
+    "id": "butte-superior-flotation-works",
+    "title": "Butte and Superior's large flotation plant",
+    "wiki": "Froth flotation",
+    "year": 1912,
+    "domain": "materials",
+    "kind": "infrastructure",
+    "summary": "Hyde designed the Butte and Superior zinc works, described as the first large flotation plant in America.",
+    "parents": [
+      {
+        "id": "froth-flotation",
+        "type": "foundation",
+        "reason": "The zinc works used froth flotation to process ore at a large American plant.",
+        "source": "https://en.wikipedia.org/wiki/Froth_flotation"
+      }
+    ]
+  }
+]

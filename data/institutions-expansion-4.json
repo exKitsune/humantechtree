@@ -1,0 +1,66 @@
+[
+  {
+    "id": "lancasterian-instruction",
+    "title": "Lancaster's Borough Road school",
+    "wiki": "British and Foreign School Society",
+    "year": 1798,
+    "domain": "education",
+    "kind": "institution",
+    "summary": "Lancaster's Borough Road school used a monitorial method in which older pupils taught younger pupils; it was a specific school implementation of a method distinct from Bell's Madras system.",
+    "parents": []
+  },
+  {
+    "id": "borough-road-college",
+    "title": "Borough Road College male-apprentice training",
+    "wiki": "West London Institute of Higher Education",
+    "year": 1809,
+    "domain": "education",
+    "kind": "institution",
+    "summary": "The teacher-training college developed from Lancaster's Borough Road school and records male-apprentice training beginning in 1809, giving the school network a route to prepare teachers.",
+    "parents": [
+      {
+        "id": "lancasterian-instruction",
+        "type": "enabler",
+        "reason": "The college developed from Lancaster's Borough Road school and began training male apprentices in 1809; the school used Lancaster's monitorial method.",
+        "source": "https://en.wikipedia.org/wiki/West_London_Institute_of_Higher_Education"
+      }
+    ]
+  },
+  {
+    "id": "british-foreign-school-society",
+    "title": "British and Foreign School Society",
+    "wiki": "British and Foreign School Society",
+    "year": 1808,
+    "domain": "education",
+    "kind": "institution",
+    "summary": "Founded in 1808 as the Society for Promoting the Lancasterian System and renamed the British and Foreign School Society in 1814, it organized non-denominational schools using Lancaster's method.",
+    "parents": [
+      {
+        "id": "lancasterian-instruction",
+        "type": "enabler",
+        "reason": "The society was formed to continue Lancaster's lead and promoted his monitorial system through non-denominational British schools.",
+        "source": "https://en.wikipedia.org/wiki/British_and_Foreign_School_Society"
+      }
+    ]
+  },
+  {
+    "id": "national-society-education-poor",
+    "title": "National Society for Education of the Poor",
+    "wiki": "National Society for Promoting Religious Education",
+    "year": 1811,
+    "domain": "education",
+    "kind": "institution",
+    "summary": "The Church of England's National Society organized schools that used Bell's monitorial system for Anglican education of poor children.",
+    "parents": []
+  },
+  {
+    "id": "french-kings-council-state",
+    "title": "French King's Council of State",
+    "wiki": "Conseil du roi",
+    "year": 1557,
+    "domain": "governance",
+    "kind": "institution",
+    "summary": "The French King's Council of State established in 1557 included a judicial section that adjudicated claims against the Crown; the 1799 Conseil d'État was identified as its institutional successor.",
+    "parents": []
+  }
+]
